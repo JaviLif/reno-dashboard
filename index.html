@@ -931,6 +931,8 @@ function initCloud(){
     if(!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
     _db = firebase.firestore();
     _setCloudStatus('connecting');
+    // Detect if this browser has ever saved local data for this origin
+    const _hadLocalData = !!localStorage.getItem('reno_v4');
     _db.collection('reno').doc('v4').get().then(doc=>{
       if(!doc.exists){
         // First launch with cloud: push local data up
@@ -943,8 +945,10 @@ function initCloud(){
       const cloudData = doc.data();
       const cloudTs = cloudData._savedAt || 0;
       const localTs = S._savedAt  || 0;
-      if(cloudTs > localTs + 5000){
-        // Cloud is meaningfully newer — apply it
+      const localEmpty = !_hadLocalData || (S.items||[]).length === 0;
+      const cloudHasData = (cloudData.items||[]).length > 0;
+      // Pull from cloud if: no local data, OR cloud is meaningfully newer, OR local is empty but cloud has data
+      if(!_hadLocalData || cloudTs > localTs + 5000 || (localEmpty && cloudHasData)){
         S = migrateState(cloudData);
         localStorage.setItem('reno_v4', JSON.stringify(S));
         refreshAll();
