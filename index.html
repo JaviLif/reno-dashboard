@@ -3205,18 +3205,35 @@ function exportData(){
 function importData(ev){
   const f=ev.target.files[0]; if(!f)return;
   const r=new FileReader();
-  r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d.project||!d.phases)throw 0;S=d;saveState();refreshAll();alert('Imported!');}catch{alert('Invalid file.');}};
+  r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d.project||!d.phases)throw 0;S=migrateState(d);S.bomImportedV1=true;S.originalBudgetImportedV1=true;saveState();refreshAll();alert('Imported!');}catch{alert('Invalid file.');}};
   r.readAsText(f);
 }
 function clearItemsAndTasks(){
   if(!confirm('Clear ALL items and tasks? Phases, sub-phases and categories will be kept.')) return;
   S.items=[];
   S.tasks=[];
-  saveState();
+  S._savedAt=Date.now();
+  localStorage.setItem('reno_v4',JSON.stringify(S));
+  // Immediate Firestore write (not debounced) so a quick refresh doesn't pull stale cloud data back
+  if(_db){
+    clearTimeout(_cloudSaveTimer);
+    _setCloudStatus('saving');
+    _db.collection('reno').doc('v4').set(S)
+      .then(()=>_setCloudStatus('synced'))
+      .catch(e=>{ console.warn('Cloud save failed:',e); _setCloudStatus('error'); });
+  }
   refreshAll();
   alert('Done — items and tasks cleared.');
 }
-function resetData(){ if(confirm('Full reset — all data including phases?')){S=JSON.parse(JSON.stringify(DEFAULT));saveState();refreshAll();} }
+function resetData(){
+  if(!confirm('Full reset — all data including phases?')) return;
+  S=JSON.parse(JSON.stringify(DEFAULT));
+  // Prevent auto-import from re-running on next page load
+  S.bomImportedV1=true;
+  S.originalBudgetImportedV1=true;
+  saveState();
+  refreshAll();
+}
 
 // ===================== REFRESH =====================
 function refreshAll(){
