@@ -3228,6 +3228,14 @@ function clearItemsAndTasks(){
 function resetData(){
   if(!confirm('Full reset — all data including phases?')) return;
   S=JSON.parse(JSON.stringify(DEFAULT));
+  // Clear items and tasks — DEFAULT has hardcoded demo data we don't want
+  S.items=[];
+  S.tasks=[];
+  S.nextItemId=1;
+  S.nextTaskId=1;
+  S.nextQuoteId=1;
+  S.nextOrderId=1;
+  S.nextDocId=1;
   // Prevent auto-import from re-running on next page load
   S.bomImportedV1=true;
   S.originalBudgetImportedV1=true;
