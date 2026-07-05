@@ -61,7 +61,7 @@
       ],
       "orders": [],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "unit": "pcs",
@@ -1947,7 +1947,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783275399616,
+  "_savedAt": 1783275402132,
   "nextOrderId": 2,
   "nextQuoteId": 73,
   "nextItemId": 178,
