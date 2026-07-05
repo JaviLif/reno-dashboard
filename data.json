@@ -1754,6 +1754,17 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 9,
+      "phaseId": 61,
+      "name": "Quotation Absbest",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 0
+    },
+    {
       "end": null,
       "status": "planned",
       "start": null,
@@ -1765,7 +1776,7 @@
       "id": 1,
       "notes": "",
       "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 0
+      "kanbanOrder": 10
     },
     {
       "notes": "",
@@ -1779,7 +1790,7 @@
       "dueDate": null,
       "status": "planned",
       "end": null,
-      "kanbanOrder": 10
+      "kanbanOrder": 20
     },
     {
       "start": null,
@@ -1793,7 +1804,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 61,
       "priority": "med",
-      "kanbanOrder": 20
+      "kanbanOrder": 30
     },
     {
       "end": null,
@@ -1807,7 +1818,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 30
+      "kanbanOrder": 40
     },
     {
       "start": null,
@@ -1821,7 +1832,7 @@
       "description": "Self Made",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 40
+      "kanbanOrder": 50
     },
     {
       "name": "Removing Existing Walls",
@@ -1835,7 +1846,7 @@
       "assignee": "",
       "end": null,
       "status": "planned",
-      "kanbanOrder": 50
+      "kanbanOrder": 60
     },
     {
       "description": "Self Made",
@@ -1849,23 +1860,12 @@
       "start": null,
       "status": "planned",
       "end": null,
-      "kanbanOrder": 60
+      "kanbanOrder": 70
     },
     {
       "id": 8,
       "phaseId": 61,
       "name": "Quotation for Structure wall",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 70
-    },
-    {
-      "id": 9,
-      "phaseId": 61,
-      "name": "Quotation Absbest",
       "start": "2026-07-05",
       "end": "2026-07-12",
       "status": "planned",
@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783270945508,
+  "_savedAt": 1783270948440,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
