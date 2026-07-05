@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274996673,
+  "_savedAt": 1783275140811,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1921,12 +1921,12 @@
       "name": "Planning and Docs",
       "start": "2026-06-14",
       "parentId": null,
-      "color": "#7C3AED",
+      "color": "#B91C1C",
       "status": "in-progress",
       "end": "2026-08-22"
     },
     {
-      "color": "#2563eb",
+      "color": "#C2410C",
       "status": "planned",
       "end": "2026-10-30",
       "start": "2026-07-27",
@@ -1947,13 +1947,13 @@
       "parentId": null,
       "end": "2026-12-30",
       "status": "planned",
-      "color": "#0891b2"
+      "color": "#A16207"
     },
     {
       "start": "2026-11-02",
       "parentId": null,
       "end": "2027-03-01",
-      "color": "#16A34A",
+      "color": "#15803D",
       "status": "planned",
       "budget": 48000,
       "number": "4",
@@ -1965,7 +1965,7 @@
       "parentId": null,
       "start": "",
       "status": "planned",
-      "color": "#d97706",
+      "color": "#0F766E",
       "end": "",
       "notes": "Rear extension",
       "id": 5,
@@ -1976,7 +1976,7 @@
     {
       "start": "2026-06-01",
       "parentId": 3,
-      "color": "#0d9488",
+      "color": "#EAB308",
       "status": "planned",
       "end": "2026-07-31",
       "notes": "",
@@ -1987,7 +1987,7 @@
     },
     {
       "end": "2026-09-30",
-      "color": "#0369a1",
+      "color": "#FDE047",
       "status": "planned",
       "start": "2026-07-01",
       "parentId": 3,
@@ -2004,7 +2004,7 @@
       "name": "Water",
       "budget": 4000,
       "status": "planned",
-      "color": "#0891b2",
+      "color": "#FEF08A",
       "end": "2026-09-30",
       "parentId": 3,
       "start": "2026-07-01"
@@ -2016,7 +2016,7 @@
       "name": "Heat Pump",
       "budget": 10000,
       "status": "planned",
-      "color": "#059669",
+      "color": "#FEF9C3",
       "end": "2026-10-31",
       "parentId": 3,
       "start": "2026-09-01"
@@ -2029,14 +2029,14 @@
       "number": "3.5",
       "start": "2026-09-01",
       "parentId": 3,
-      "color": "#0f766e",
+      "color": "#FEFCE8",
       "status": "planned",
       "end": "2026-11-30"
     },
     {
       "end": "2026-06-30",
       "status": "planned",
-      "color": "#92400e",
+      "color": "#2DD4BF",
       "start": "2026-04-01",
       "parentId": 5,
       "budget": 3000,
@@ -2053,7 +2053,7 @@
       "notes": "",
       "end": "2026-09-30",
       "status": "planned",
-      "color": "#b45309",
+      "color": "#5EEAD4",
       "start": "2026-06-01",
       "parentId": 5
     },
@@ -2067,14 +2067,14 @@
       "parentId": 5,
       "end": "2026-10-31",
       "status": "planned",
-      "color": "#78350f"
+      "color": "#99F6E4"
     },
     {
       "start": "2026-10-01",
       "parentId": 5,
       "end": "2026-12-31",
       "status": "planned",
-      "color": "#d97706",
+      "color": "#CCFBF1",
       "budget": 1000,
       "number": "5.5",
       "name": "Electricity",
@@ -2090,7 +2090,7 @@
       "parentId": 5,
       "start": "2026-10-01",
       "status": "planned",
-      "color": "#ca8a04",
+      "color": "#14B8A6",
       "end": "2026-12-31"
     },
     {
@@ -2100,7 +2100,7 @@
       "name": "Exterior Finishing",
       "budget": 3000,
       "status": "planned",
-      "color": "#a16207",
+      "color": "#2DD4BF",
       "end": "2027-01-31",
       "parentId": 5,
       "start": "2026-11-01"
@@ -2108,7 +2108,7 @@
     {
       "end": "2027-05-31",
       "status": "planned",
-      "color": "#ea580c",
+      "color": "#5EEAD4",
       "start": "2027-01-01",
       "parentId": 5,
       "budget": 1000,
@@ -2124,14 +2124,14 @@
       "notes": "",
       "id": 60,
       "end": "2026-08-23",
-      "status": "planned",
-      "color": "#7c3aed",
+      "status": "delayed",
+      "color": "#EF4444",
       "parentId": 1,
       "start": "2026-06-29"
     },
     {
       "status": "planned",
-      "color": "#7c3aed",
+      "color": "#F87171",
       "end": "2026-08-23",
       "parentId": 1,
       "start": "2026-06-29",
@@ -2142,7 +2142,7 @@
       "budget": 1000
     },
     {
-      "color": "#7c3aed",
+      "color": "#F97316",
       "status": "planned",
       "end": "",
       "start": "",
@@ -2160,14 +2160,14 @@
       "id": 63,
       "notes": "",
       "end": "",
-      "color": "#7c3aed",
+      "color": "#1D4ED8",
       "status": "planned",
       "parentId": null,
       "start": ""
     },
     {
       "end": "",
-      "color": "#7c3aed",
+      "color": "#EAB308",
       "status": "planned",
       "start": "",
       "parentId": 3,
@@ -2187,7 +2187,7 @@
       "parentId": null,
       "end": "",
       "status": "planned",
-      "color": "#7c3aed"
+      "color": "#6D28D9"
     },
     {
       "notes": "",
@@ -2196,7 +2196,7 @@
       "name": "Walls",
       "budget": 4000,
       "status": "planned",
-      "color": "#7c3aed",
+      "color": "#22C55E",
       "end": "",
       "parentId": 4,
       "start": ""
@@ -2208,7 +2208,7 @@
       "notes": "",
       "id": 68,
       "end": "",
-      "color": "#7c3aed",
+      "color": "#4ADE80",
       "status": "planned",
       "start": "",
       "parentId": 4
@@ -2217,7 +2217,7 @@
       "start": "",
       "parentId": 4,
       "status": "planned",
-      "color": "#7c3aed",
+      "color": "#86EFAC",
       "end": "",
       "notes": "",
       "id": 69,
@@ -2232,7 +2232,7 @@
       "number": "4.4",
       "name": "Bath",
       "status": "planned",
-      "color": "#7c3aed",
+      "color": "#BBF7D0",
       "end": "",
       "start": "",
       "parentId": 4
@@ -2244,7 +2244,7 @@
       "number": "5.1",
       "budget": 3000,
       "status": "planned",
-      "color": "#7c3aed",
+      "color": "#14B8A6",
       "end": "",
       "parentId": 5,
       "start": ""
@@ -2257,7 +2257,7 @@
       "start": "",
       "end": "",
       "status": "planned",
-      "color": "#14b8a6",
+      "color": "#FDE047",
       "notes": "",
       "budget": 3000
     }
