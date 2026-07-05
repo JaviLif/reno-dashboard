@@ -1873,9 +1873,19 @@
       "status": "planned",
       "assignee": "",
       "notes": ""
+    },
+    {
+      "id": 11,
+      "phaseId": 1,
+      "name": "Quotation for Extension",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
     }
   ],
-  "nextTaskId": 11,
+  "nextTaskId": 12,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -1886,7 +1896,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783258010457,
+  "_savedAt": 1783258036312,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
