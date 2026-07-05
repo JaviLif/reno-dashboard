@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274620891,
+  "_savedAt": 1783274626232,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2024,12 +2024,12 @@
     {
       "notes": "Underfloor heating distribution",
       "id": 35,
-      "budget": 8000,
+      "budget": 5000,
       "name": "Heating",
       "number": "3.5",
       "start": "2026-09-01",
       "parentId": 3,
-      "color": "#0F766E",
+      "color": "#0f766e",
       "status": "planned",
       "end": "2026-11-30"
     },
