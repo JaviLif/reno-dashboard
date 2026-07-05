@@ -176,7 +176,7 @@ body.col-resizing *{cursor:col-resize!important}
 .gantt-wrap{overflow-x:auto;overflow-y:auto;max-height:calc(100vh - 210px);cursor:grab}
 .gantt-wrap.gd-active{cursor:grabbing!important;user-select:none!important}
 .gantt-inner{min-width:860px}
-.gantt-col-hdrs{display:flex;border-bottom:1px solid var(--g200)}
+.gantt-col-hdrs{display:flex;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:5;background:#fff}
 .gantt-col-hdr{flex:1;text-align:center;padding:6px 2px;font-size:11px;font-weight:600;color:var(--g400);border-right:1px solid var(--g100)}
 .gantt-row{display:flex;align-items:center;border-bottom:1px solid var(--g100);min-height:42px;position:relative}
 .gantt-row.parent-row{background:var(--g50);min-height:34px}
@@ -665,8 +665,8 @@ body.col-resizing *{cursor:col-resize!important}
       </div>
       <div class="fm-grp"><label class="fm-lbl">Phase name *</label><input class="fm-inp" id="ph-name" type="text" placeholder="e.g. Electricity"></div>
       <div class="fm-row">
-        <div class="fm-grp"><label class="fm-lbl">Start date</label><input class="fm-inp" id="ph-start" type="date"></div>
-        <div class="fm-grp"><label class="fm-lbl">End date</label><input class="fm-inp" id="ph-end" type="date"></div>
+        <div class="fm-grp"><label class="fm-lbl">Start date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="ph-start" type="date" style="flex:1"><button type="button" onclick="C('ph-start').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
+        <div class="fm-grp"><label class="fm-lbl">End date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="ph-end" type="date" style="flex:1"><button type="button" onclick="C('ph-end').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
       </div>
       <div class="fm-row">
         <div class="fm-grp">
@@ -719,8 +719,8 @@ body.col-resizing *{cursor:col-resize!important}
         <select class="fm-sel" id="tk-phase"></select>
       </div>
       <div class="fm-row">
-        <div class="fm-grp"><label class="fm-lbl">Start date</label><input class="fm-inp" id="tk-start" type="date"></div>
-        <div class="fm-grp"><label class="fm-lbl">End date</label><input class="fm-inp" id="tk-end" type="date"></div>
+        <div class="fm-grp"><label class="fm-lbl">Start date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="tk-start" type="date" style="flex:1"><button type="button" onclick="C('tk-start').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
+        <div class="fm-grp"><label class="fm-lbl">End date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="tk-end" type="date" style="flex:1"><button type="button" onclick="C('tk-end').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
       </div>
       <div class="fm-row">
         <div class="fm-grp"><label class="fm-lbl">Status</label>
@@ -1822,10 +1822,10 @@ function renderGantt(){
   C('gantt-inner').style.minWidth=Math.round(Math.max(wrapW,860*ganttZoom))+'px';
 
   const sbc=p=>{
-    if(p.status==='completed') return p.color||'var(--ok)';
-    if(p.status==='in-progress') return p.color||'var(--pri)';
+    if(p.status==='completed') return 'var(--ok)';
+    if(p.status==='in-progress') return 'var(--pri)';
     if(p.status==='delayed') return 'var(--red)';
-    return p.color||'#94A3B8';
+    return '#94A3B8';
   };
   // Draggable leaf bar
   const leafBar=(p,heightPx=22)=>{
@@ -2976,15 +2976,22 @@ C('ph-parent').addEventListener('change',()=>{
 // Each entry: { p: parentColor, c: [child1, child2, ...child5] }
 // Blue family only, dark→light progression within each family
 const PHASE_COLORS=[
-  {p:'#1E3A8A',c:['#2563EB','#3B82F6','#60A5FA','#93C5FD','#BFDBFE']}, // navy
-  {p:'#0C4A6E',c:['#0284C7','#0EA5E9','#38BDF8','#7DD3FC','#BAE6FD']}, // sky
-  {p:'#134E4A',c:['#0D9488','#14B8A6','#2DD4BF','#5EEAD4','#99F6E4']}, // teal
-  {p:'#1E1B4B',c:['#4338CA','#6366F1','#818CF8','#A5B4FC','#C7D2FE']}, // indigo
-  {p:'#0F172A',c:['#334155','#475569','#64748B','#94A3B8','#CBD5E1']}, // slate
-  {p:'#052E16',c:['#166534','#15803D','#16A34A','#22C55E','#4ADE80']}, // green
-  {p:'#431407',c:['#9A3412','#C2410C','#EA580C','#F97316','#FB923C']}, // orange
-  {p:'#4A044E',c:['#86198F','#A21CAF','#C026D3','#D946EF','#E879F9']}, // violet
+  {p:'#B91C1C',c:['#EF4444','#F87171','#FCA5A5','#FECACA','#FEE2E2']}, // red
+  {p:'#C2410C',c:['#F97316','#FB923C','#FDBA74','#FED7AA','#FFEDD5']}, // orange
+  {p:'#A16207',c:['#EAB308','#FDE047','#FEF08A','#FEF9C3','#FEFCE8']}, // yellow
+  {p:'#15803D',c:['#22C55E','#4ADE80','#86EFAC','#BBF7D0','#DCFCE7']}, // green
+  {p:'#0F766E',c:['#14B8A6','#2DD4BF','#5EEAD4','#99F6E4','#CCFBF1']}, // teal
+  {p:'#1D4ED8',c:['#3B82F6','#60A5FA','#93C5FD','#BFDBFE','#DBEAFE']}, // blue
+  {p:'#6D28D9',c:['#8B5CF6','#A78BFA','#C4B5FD','#DDD6FE','#EDE9FE']}, // purple
+  {p:'#BE185D',c:['#EC4899','#F472B6','#F9A8D4','#FBCFE8','#FCE7F3']}, // pink
 ];
+function _syncColors(){
+  topPhases().forEach((p,i)=>{
+    const pal=PHASE_COLORS[i%PHASE_COLORS.length];
+    p.color=pal.p;
+    childrenOf(p.id).forEach((c,j)=>{ c.color=pal.c[j%pal.c.length]; });
+  });
+}
 function normalizePhaseColors(){
   topPhases().forEach((p,i)=>{
     const pal=PHASE_COLORS[i%PHASE_COLORS.length];
@@ -3508,6 +3515,7 @@ function resetData(){
 
 // ===================== REFRESH =====================
 function refreshAll(){
+  _syncColors();
   renderDashboard();
   renderItems();
   const active=document.querySelector('.nav-btn.active')?.dataset?.tab;
@@ -3554,6 +3562,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.6</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.7</div>
 </body>
 </html>
