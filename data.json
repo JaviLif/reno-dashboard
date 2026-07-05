@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274778993,
+  "_savedAt": 1783274785177,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2202,7 +2202,7 @@
       "start": ""
     },
     {
-      "budget": 0,
+      "budget": 5000,
       "name": "Floor",
       "number": "4.2",
       "notes": "",
