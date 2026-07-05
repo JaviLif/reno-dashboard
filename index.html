@@ -1321,6 +1321,7 @@ const ITEM_COLUMNS=[
   {key:'status',label:'Status',minWidth:110,sortable:true},
   {key:'delivery',label:'Delivery'},
   {key:'netspent',label:'Net Spent',align:'right'},
+  {key:'link',label:'Link',minWidth:70},
 ];
 function loadItemsUI(){
   const validKeys=ITEM_COLUMNS.map(c=>c.key);
@@ -2428,6 +2429,8 @@ function itemCellHtml(it,key,ctx){
       return `<td class="muted" style="font-size:11px">${ctx.delivStr}</td>`;
     case 'netspent':
       return `<td style="text-align:right;font-weight:600">${fmt(itemNetSpent(it))}</td>`;
+    case 'link':
+      return `<td style="text-align:center">${it.link?`<a href="${escapeAttr(it.link)}" target="_blank" rel="noopener" title="${escapeAttr(it.link)}" style="color:var(--pri);font-size:16px;text-decoration:none">&#x1F517;</a>`:`<span class="muted">-</span>`}</td>`;
     default:
       return '<td></td>';
   }
