@@ -1768,20 +1768,6 @@
       "kanbanOrder": 0
     },
     {
-      "start": null,
-      "dueDate": null,
-      "assignee": "",
-      "end": null,
-      "status": "planned",
-      "name": "Preliminary Layout Rooms & Zoning",
-      "notes": "",
-      "id": 2,
-      "description": "Preliminary Simple Layout Rooms & Zoning",
-      "phaseId": 61,
-      "priority": "med",
-      "kanbanOrder": 20
-    },
-    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -1794,6 +1780,20 @@
       "status": "planned",
       "end": null,
       "kanbanOrder": 10
+    },
+    {
+      "start": null,
+      "dueDate": null,
+      "assignee": "",
+      "end": null,
+      "status": "planned",
+      "name": "Preliminary Layout Rooms & Zoning",
+      "notes": "",
+      "id": 2,
+      "description": "Preliminary Simple Layout Rooms & Zoning",
+      "phaseId": 61,
+      "priority": "med",
+      "kanbanOrder": 20
     },
     {
       "end": null,
@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783258341519,
+  "_savedAt": 1783270945508,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
