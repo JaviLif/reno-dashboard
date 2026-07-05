@@ -1851,17 +1851,22 @@ function renderGantt(){
 
     let barHtml='';
     if(hasSubs){
-      // span bar derived from children — draggable (shifts all children)
-      const starts=kids.map(c=>c.start).filter(Boolean).sort();
-      const ends=kids.map(c=>c.end).filter(Boolean).sort();
-      if(starts.length&&ends.length){
-        const l=pct(starts[0]), w=Math.max(.5,pct(ends[ends.length-1])-l);
-        barHtml=`<div class="gantt-bar parent-bar" data-bph="${tp.id}" style="left:${l}%;width:${w}%;background:${tp.color||'#94A3B8'}"
-          onmousedown="_gbDown(event,${tp.id},'move-parent');event.stopPropagation()"
-          onclick="if(Date.now()-_gDragEndAt>120){openPhaseModal(${tp.id});}event.stopPropagation()"
-          title="${tp.name} · drag to shift all sub-phases">
-          <span style="pointer-events:none;padding:0 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:10px;font-weight:700;flex:1;min-width:0;line-height:10px;opacity:.9">${tp.name}</span>
-        </div>`;
+      if(tp.start&&tp.end){
+        // Parent has explicit dates -- independent bar, not derived from children
+        barHtml=leafBar(tp,22);
+      } else {
+        // No explicit parent dates -- derive span bar from children
+        const starts=kids.map(c=>c.start).filter(Boolean).sort();
+        const ends=kids.map(c=>c.end).filter(Boolean).sort();
+        if(starts.length&&ends.length){
+          const l=pct(starts[0]), w=Math.max(.5,pct(ends[ends.length-1])-l);
+          barHtml=`<div class="gantt-bar parent-bar" data-bph="${tp.id}" style="left:${l}%;width:${w}%;background:${tp.color||'#94A3B8'}"
+            onmousedown="_gbDown(event,${tp.id},'move-parent');event.stopPropagation()"
+            onclick="if(Date.now()-_gDragEndAt>120){openPhaseModal(${tp.id});}event.stopPropagation()"
+            title="${tp.name} · drag to shift all sub-phases">
+            <span style="pointer-events:none;padding:0 5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:10px;font-weight:700;flex:1;min-width:0;line-height:10px;opacity:.9">${tp.name}</span>
+          </div>`;
+        }
       }
     } else {
       barHtml=leafBar(tp,22);
@@ -3549,6 +3554,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.5</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.6</div>
 </body>
 </html>
