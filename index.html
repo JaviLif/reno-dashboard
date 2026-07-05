@@ -400,6 +400,7 @@ body.col-resizing *{cursor:col-resize!important}
       <button class="btn btn-ghost btn-sm" onclick="changeGanttZoom(0.5)" title="Zoom in">+</button>
       <button class="btn btn-ghost btn-sm" onclick="ganttZoom=1;renderGantt()" title="Reset zoom" style="font-size:10px">↺</button>
     </div>
+    <button class="btn btn-ghost btn-sm" id="gantt-exp-btn" onclick="toggleAllGantt()" title="Expand or collapse all phases">&#9660;&#9660; Expand All</button>
     <button class="btn btn-ghost btn-sm" onclick="normalizePhaseColors()" title="Auto-assign color family per phase">🎨 Auto-color</button>
     <button class="btn btn-ghost btn-sm" onclick="openPhaseModal()">+ Add Phase</button>
   </div>
@@ -668,6 +669,12 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="fm-grp"><label class="fm-lbl">Start date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="ph-start" type="date" style="flex:1"><button type="button" onclick="C('ph-start').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
         <div class="fm-grp"><label class="fm-lbl">End date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="ph-end" type="date" style="flex:1"><button type="button" onclick="C('ph-end').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
       </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:0 0 10px">
+        <span style="font-size:11px;color:var(--g400)">Duration:</span>
+        <input type="number" id="ph-dur" min="1" max="999" placeholder="e.g. 8" oninput="calcPhDur()" style="width:64px;padding:4px 8px;border:1px solid var(--g200);border-radius:6px;font-size:12px">
+        <select id="ph-dur-unit" onchange="calcPhDur()" style="padding:4px 8px;border:1px solid var(--g200);border-radius:6px;font-size:12px;background:#fff"><option value="1">days</option><option value="7" selected>weeks</option></select>
+        <span style="font-size:11px;color:var(--g300)">sets end from start</span>
+      </div>
       <div class="fm-row">
         <div class="fm-grp">
           <label class="fm-lbl">Budget (€)</label>
@@ -721,6 +728,12 @@ body.col-resizing *{cursor:col-resize!important}
       <div class="fm-row">
         <div class="fm-grp"><label class="fm-lbl">Start date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="tk-start" type="date" style="flex:1"><button type="button" onclick="C('tk-start').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
         <div class="fm-grp"><label class="fm-lbl">End date</label><div style="display:flex;gap:4px"><input class="fm-inp" id="tk-end" type="date" style="flex:1"><button type="button" onclick="C('tk-end').value=''" title="Clear" style="padding:0 7px;height:38px;border:1px solid var(--g200);border-radius:6px;background:var(--g50);color:var(--g400);cursor:pointer;font-size:15px;flex-shrink:0">x</button></div></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:0 0 10px">
+        <span style="font-size:11px;color:var(--g400)">Duration:</span>
+        <input type="number" id="tk-dur" min="1" max="999" placeholder="e.g. 8" oninput="calcTkDur()" style="width:64px;padding:4px 8px;border:1px solid var(--g200);border-radius:6px;font-size:12px">
+        <select id="tk-dur-unit" onchange="calcTkDur()" style="padding:4px 8px;border:1px solid var(--g200);border-radius:6px;font-size:12px;background:#fff"><option value="1">days</option><option value="7" selected>weeks</option></select>
+        <span style="font-size:11px;color:var(--g300)">sets end from start</span>
       </div>
       <div class="fm-row">
         <div class="fm-grp"><label class="fm-lbl">Status</label>
@@ -1688,6 +1701,24 @@ function toggleGanttPhase(id,e){
   else _ganttExpanded.add(id);
   renderGantt();
 }
+function toggleAllGantt(){
+  const tops=topPhases().filter(p=>childrenOf(p.id).length);
+  const allExp=tops.every(p=>_ganttExpanded.has(p.id));
+  if(allExp){_ganttExpanded.clear();}else{tops.forEach(p=>_ganttExpanded.add(p.id));}
+  renderGantt();
+}
+function calcPhDur(){
+  const s=C('ph-start').value,v=parseInt(C('ph-dur').value)||0,u=parseInt(C('ph-dur-unit').value)||7;
+  if(!s||!v)return;
+  const d=new Date(s+'T00:00:00');d.setDate(d.getDate()+v*u);
+  C('ph-end').value=d.toISOString().slice(0,10);
+}
+function calcTkDur(){
+  const s=C('tk-start').value,v=parseInt(C('tk-dur').value)||0,u=parseInt(C('tk-dur-unit').value)||7;
+  if(!s||!v)return;
+  const d=new Date(s+'T00:00:00');d.setDate(d.getDate()+v*u);
+  C('tk-end').value=d.toISOString().slice(0,10);
+}
 function _gbDown(e,phaseId,dtype){
   e.preventDefault(); e.stopPropagation();
   const track=document.querySelector('#gantt-rows .gantt-track');
@@ -1852,6 +1883,8 @@ function renderGantt(){
   };
 
   if(!_ganttExpanded.size) topPhases().forEach(p=>{if(childrenOf(p.id).length)_ganttExpanded.add(p.id);});
+  const _allExp2=topPhases().filter(p=>childrenOf(p.id).length).every(p=>_ganttExpanded.has(p.id));
+  const _expBtn=C('gantt-exp-btn'); if(_expBtn)_expBtn.innerHTML=_allExp2?'&#9650;&#9650; Collapse All':'&#9660;&#9660; Expand All';
   let html='';
   for(const tp of topPhases()){
     const kids=childrenOf(tp.id);
@@ -1883,7 +1916,7 @@ function renderGantt(){
     const isExp=!hasSubs||_ganttExpanded.has(tp.id);
     html+=`<div class="gantt-row${hasSubs?' parent-row':''}" onclick="openPhaseModal(${tp.id})" style="cursor:pointer">
       <div class="gantt-lbl" style="cursor:pointer;gap:4px">
-        ${hasSubs?`<button onclick="toggleGanttPhase(${tp.id},event)" style="background:none;border:none;cursor:pointer;padding:0;font-size:10px;color:var(--g400);flex-shrink:0;width:14px;text-align:center;transition:transform .15s;display:inline-block;transform:rotate(${isExp?0:-90}deg)">${'&#9660;'}</button>`:'<span style="width:14px;flex-shrink:0"></span>'}
+        ${hasSubs?`<button onclick="toggleGanttPhase(${tp.id},event)" style="background:none;border:none;cursor:pointer;padding:2px;font-size:16px;color:var(--g500);flex-shrink:0;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:5px;transition:transform .2s;transform:rotate(${isExp?0:-90}deg)">${'&#9660;'}</button>`:'<span style="width:26px;flex-shrink:0"></span>'}
         <span class="gantt-num">${tp.number||''}</span>
         <div class="gantt-lbl-inner">
           <div class="gantt-lbl-name">${tp.name}</div>
@@ -2934,6 +2967,7 @@ function openPhaseModal(id){
     C('ph-start').value=p.start;
     updatePhaseNumHint(); // show siblings for context even when editing
     C('ph-end').value=p.end;
+    if(p.start&&p.end){const _ms=new Date(p.end+'T00:00:00')-new Date(p.start+'T00:00:00');const _d=Math.round(_ms/86400000);if(_d>0&&_d%7===0){C('ph-dur').value=_d/7;C('ph-dur-unit').value='7';}else if(_d>0){C('ph-dur').value=_d;C('ph-dur-unit').value='1';}}else{C('ph-dur').value='';}
     const parentHasSubs=p.parentId?true:isParent(p.id);
     if(isParent(p.id)){
       C('ph-budget').value=getPhaseBudget(p.id);
@@ -2951,7 +2985,7 @@ function openPhaseModal(id){
     renderPhaseTaskList(id);
   } else {
     C('ph-parent').value=''; C('ph-name').value='';
-    C('ph-start').value=''; C('ph-end').value=''; C('ph-budget').value='';
+    C('ph-start').value=''; C('ph-end').value=''; C('ph-budget').value=''; C('ph-dur').value='';
     C('ph-budget').disabled=false; C('ph-budget-hint').textContent='';
     C('ph-status').value='planned'; C('ph-notes').value='';
     C('ph-tasks-section').style.display='none';
@@ -3136,13 +3170,14 @@ function openTaskModal(id, presetPhaseId, presetStatus){
     C('tk-name').value=t.name;
     C('tk-start').value=t.start||'';
     C('tk-end').value=t.end||'';
+    if(t.start&&t.end){const _ms=new Date(t.end+'T00:00:00')-new Date(t.start+'T00:00:00');const _d=Math.round(_ms/86400000);if(_d>0&&_d%7===0){C('tk-dur').value=_d/7;C('tk-dur-unit').value='7';}else if(_d>0){C('tk-dur').value=_d;C('tk-dur-unit').value='1';}}else{C('tk-dur').value='';}
     C('tk-status').value=t.status;
     C('tk-assignee').value=t.assignee||'';
     C('tk-notes').value=t.notes||'';
   } else {
     C('tk-phase').innerHTML=taskPhaseSelectHtml(presetPhaseId);
     if(presetPhaseId) C('tk-phase').value=presetPhaseId;
-    C('tk-name').value=''; C('tk-start').value=''; C('tk-end').value='';
+    C('tk-name').value=''; C('tk-start').value=''; C('tk-end').value=''; C('tk-dur').value='';
     C('tk-status').value=presetStatus||'planned'; C('tk-assignee').value=''; C('tk-notes').value='';
   }
   C('task-overlay').classList.add('open');
@@ -3574,6 +3609,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.8</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.9</div>
 </body>
 </html>
