@@ -1087,6 +1087,34 @@ function ghOpenHistory(){ window.open(`https://github.com/${GH_REPO}/commits/mai
 
 // ===================== STATE =====================
 let S = loadState();
+// Migration: fix mojibake in any string field caused by old atob/JSON.parse UTF-8 bug
+(function fixMojibake(){
+  function repairStr(s){
+    if(!s||typeof s!=='string') return s;
+    if(![...s].every(c=>c.charCodeAt(0)<=0xFF)) return s; // has real Unicode, skip
+    if(![...s].some(c=>c.charCodeAt(0)>0x7F)) return s;   // pure ASCII, skip
+    try{
+      const fixed=new TextDecoder('utf-8').decode(Uint8Array.from(s,c=>c.charCodeAt(0)));
+      return fixed;
+    }catch(e){return s;}
+  }
+  let changed=false;
+  if(S.project){
+    ['currency','name','address'].forEach(k=>{
+      const f=repairStr(S.project[k]);
+      if(f!==S.project[k]){S.project[k]=f;changed=true;}
+    });
+  }
+  ['phases','categories','items','tasks'].forEach(arr=>{
+    (S[arr]||[]).forEach(obj=>{
+      ['name','note','description','label','unit'].forEach(k=>{
+        const f=repairStr(obj[k]);
+        if(f!==obj[k]){obj[k]=f;changed=true;}
+      });
+    });
+  });
+  if(changed){saveState();console.log('[migration] Fixed mojibake fields');}
+})();
 let calDate = new Date();
 let donutChart = null, donutMode = 'phase';
 let budgetChart = null, catChart = null;
