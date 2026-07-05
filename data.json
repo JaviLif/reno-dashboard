@@ -1756,21 +1756,6 @@
       "name": "Plaster (Stuc-Concurrent b.v.)"
     },
     {
-      "notes": "",
-      "name": "Stairs",
-      "qty": 1,
-      "categoryId": 5,
-      "orders": [],
-      "quotes": [],
-      "phaseId": 64,
-      "unit": "pcs",
-      "id": 170,
-      "description": "",
-      "documents": [],
-      "status": "not-ordered",
-      "link": ""
-    },
-    {
       "status": "not-ordered",
       "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
       "phaseId": 2,
@@ -1901,7 +1886,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783256799641,
+  "_savedAt": 1783256804058,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
