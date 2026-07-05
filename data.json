@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274534400,
+  "_savedAt": 1783274540194,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2139,7 +2139,7 @@
       "notes": "",
       "number": "1.2",
       "name": "Renovation",
-      "budget": 0
+      "budget": 1000
     },
     {
       "color": "#7c3aed",
