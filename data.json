@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274421767,
+  "_savedAt": 1783274425948,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2130,7 +2130,7 @@
       "start": "2026-06-29"
     },
     {
-      "status": "delayed",
+      "status": "planned",
       "color": "#7c3aed",
       "end": "2026-08-23",
       "parentId": 1,
