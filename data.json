@@ -1,1 +1,2332 @@
-{"project":{"name":"House Renovation","address":"","budget":0,"currency":"EUR","start":"","end":""},"phases":[],"categories":[],"items":[],"tasks":[],"nextPhaseId":1,"nextCategoryId":1,"nextItemId":1,"nextTaskId":1,"nextQuoteId":1,"nextOrderId":1,"nextDocId":1,"_savedAt":0}
+{
+  "categories": [
+    {
+      "color": "#7C3AED",
+      "id": 1,
+      "name": "Permits & Fees"
+    },
+    {
+      "name": "Design & Architecture",
+      "id": 2,
+      "color": "#9333EA"
+    },
+    {
+      "color": "#2563EB",
+      "id": 3,
+      "name": "Materials"
+    },
+    {
+      "color": "#0891b2",
+      "id": 4,
+      "name": "Labor / Contractors / Quotations"
+    },
+    {
+      "id": 5,
+      "color": "#d97706",
+      "name": "Consumables"
+    },
+    {
+      "name": "Other",
+      "color": "#64748B",
+      "id": 7
+    },
+    {
+      "color": "#7c3aed",
+      "id": 8,
+      "name": "Tools"
+    }
+  ],
+  "nextPhaseId": 72,
+  "originalBudgetImportedV1": true,
+  "items": [
+    {
+      "unit": "pcs",
+      "phaseId": 60,
+      "documents": [],
+      "id": 97,
+      "description": "Structural inspection — MANDATORY",
+      "link": "https://www.bouwkeuringvergelijk.nl/zoeken/Amsterdam/390/",
+      "status": "not-ordered",
+      "name": "(Bouwkundig Inspecteur)",
+      "notes": "",
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 1,
+          "notes": "",
+          "unitPrice": 1073.24,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "categoryId": 1
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "id": 98,
+      "description": "Asbestreport",
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 61,
+      "categoryId": 1,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 1000,
+          "id": 2,
+          "notes": ""
+        }
+      ],
+      "orders": [],
+      "qty": 1,
+      "notes": "",
+      "name": "Asbestreport"
+    },
+    {
+      "documents": [],
+      "description": "Rent Container",
+      "id": 99,
+      "phaseId": 62,
+      "unit": "pcs",
+      "link": "https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten",
+      "status": "not-ordered",
+      "name": "Rent Container",
+      "notes": "",
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 3,
+          "unitPrice": 600
+        }
+      ],
+      "categoryId": 1,
+      "qty": 2
+    },
+    {
+      "notes": "",
+      "name": "Tools (Shell)",
+      "qty": 1,
+      "categoryId": 8,
+      "quotes": [
+        {
+          "unitPrice": 1000,
+          "notes": "",
+          "id": 4,
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "phaseId": 62,
+      "unit": "pcs",
+      "description": "Tools",
+      "id": 100,
+      "documents": [],
+      "status": "not-ordered",
+      "link": ""
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 32,
+      "unit": "pcs",
+      "description": "Heat Pump and Electrical Oven",
+      "id": 101,
+      "documents": [],
+      "qty": 1,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "notes": "",
+          "id": 5,
+          "unitPrice": 1500,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Electric Cables, Fuses"
+    },
+    {
+      "notes": "",
+      "name": "Renovation Sockets & Lighting",
+      "categoryId": 3,
+      "quotes": [
+        {
+          "unitPrice": 1000,
+          "id": 6,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "qty": 1,
+      "description": "Optional",
+      "id": 102,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 32,
+      "status": "not-ordered",
+      "link": ""
+    },
+    {
+      "categoryId": 3,
+      "quotes": [
+        {
+          "unitPrice": 1500,
+          "notes": "",
+          "id": 7,
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "qty": 1,
+      "notes": "",
+      "name": "Water Supply & Drainage Pipes",
+      "status": "not-ordered",
+      "link": "",
+      "description": "Bathroom, Kitchen, Heating",
+      "id": 103,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 33
+    },
+    {
+      "id": 104,
+      "description": "Tools",
+      "documents": [],
+      "phaseId": 3,
+      "unit": "pcs",
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Tools (Installations)",
+      "categoryId": 8,
+      "orders": [],
+      "quotes": [
+        {
+          "unitPrice": 1500,
+          "id": 8,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "qty": 1
+    },
+    {
+      "description": "Rd 4; 90mm",
+      "id": 105,
+      "documents": [],
+      "unit": "m²",
+      "phaseId": 31,
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Floor Isolation",
+      "categoryId": 3,
+      "quotes": [
+        {
+          "unitPrice": 16,
+          "id": 9,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "qty": 90
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2",
+      "phaseId": 31,
+      "unit": "m²",
+      "id": 106,
+      "description": "Rd 3,6; 80mm",
+      "documents": [],
+      "qty": 90,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "id": 10,
+          "notes": "",
+          "unitPrice": 15,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Outside Wall Isolation"
+    },
+    {
+      "qty": 50,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 11,
+          "notes": "",
+          "unitPrice": 15,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "notes": "",
+      "name": "Roof Isolation",
+      "status": "not-ordered",
+      "link": "",
+      "unit": "m²",
+      "phaseId": 31,
+      "id": 107,
+      "description": "Rd 3,6; 80mm",
+      "documents": []
+    },
+    {
+      "documents": [],
+      "description": "Only boards",
+      "id": 108,
+      "phaseId": 67,
+      "unit": "pcs",
+      "link": "https://www.isolatiemateriaal.nl/p/gipsplaten-3000x600x125mm-ak-180-m2",
+      "status": "not-ordered",
+      "name": "Plaster Boards",
+      "notes": "",
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 12,
+          "unitPrice": 6,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "categoryId": 3,
+      "qty": 200
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 13,
+          "notes": "",
+          "unitPrice": 1000
+        }
+      ],
+      "categoryId": 3,
+      "name": "Filler etc",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 67,
+      "documents": [],
+      "id": 109,
+      "description": "Filler etc"
+    },
+    {
+      "name": "Extras, Glue, Material (Isolation)",
+      "notes": "",
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 14,
+          "unitPrice": 1500,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "categoryId": 5,
+      "phaseId": 31,
+      "unit": "pcs",
+      "documents": [],
+      "id": 110,
+      "description": "",
+      "link": "https://www.isolatiemateriaal.nl/purschuim-lijmen/pur-set-de-isolatieshop-purschuim-reiniger-pistool",
+      "status": "not-ordered"
+    },
+    {
+      "qty": 1,
+      "quotes": [
+        {
+          "id": 15,
+          "notes": "",
+          "unitPrice": 6664,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "name": "Heat Pump + 200L Tank",
+      "notes": "",
+      "link": "https://klimatime.com/products/lg-5kw-therma-v-r32-split-iwt-air-water-heat-pump-with-200l-tank-hu051mr-hn0913t",
+      "status": "not-ordered",
+      "phaseId": 34,
+      "unit": "pcs",
+      "documents": [],
+      "id": 111,
+      "description": "LG 5kW Therma V R32"
+    },
+    {
+      "qty": 1,
+      "categoryId": 8,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 16,
+          "notes": "",
+          "unitPrice": 1000
+        }
+      ],
+      "notes": "",
+      "name": "Tools (Heat Pump)",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 34,
+      "unit": "pcs",
+      "id": 112,
+      "description": "",
+      "documents": []
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "description": "",
+      "id": 113,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 34,
+      "categoryId": 5,
+      "quotes": [
+        {
+          "unitPrice": 1000,
+          "id": 17,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "qty": 1,
+      "notes": "",
+      "name": "Extras, Glue, Material (Heat Pump)"
+    },
+    {
+      "notes": "",
+      "name": "MVHR Unit",
+      "qty": 1,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "unitPrice": 1890,
+          "notes": "",
+          "id": 18,
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate"
+        }
+      ],
+      "phaseId": 65,
+      "unit": "pcs",
+      "description": "Vent-Axia Sentinel Kinetic Advance 250m³/h",
+      "id": 114,
+      "documents": [],
+      "status": "not-ordered",
+      "link": "https://www.lueftungsland.de/de_DE/p/vent-axia-sentinel-kinetic-advance-einschliesslich-vorwarmer-250-m3-h-rechts/9985/"
+    },
+    {
+      "name": "Tools Extras (MVHR)",
+      "notes": "",
+      "qty": 1,
+      "quotes": [
+        {
+          "unitPrice": 1000,
+          "notes": "",
+          "id": 19,
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "categoryId": 8,
+      "unit": "pcs",
+      "phaseId": 65,
+      "documents": [],
+      "id": 115,
+      "description": "",
+      "link": "",
+      "status": "not-ordered"
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "",
+      "id": 116,
+      "unit": "pcs",
+      "phaseId": 64,
+      "quotes": [],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 1,
+      "name": "First Step Isolation (Heating)",
+      "notes": ""
+    },
+    {
+      "documents": [],
+      "description": "For 100 sqm",
+      "id": 117,
+      "phaseId": 35,
+      "unit": "m²",
+      "link": "https://www.vloerverwarming-direct.nl/p/25mm-systeem-dbs14-25mm-droogbouw-isolatieplaat-doos-7-50m2",
+      "status": "not-ordered",
+      "name": "Underfloor Gips DBS14 Magnumboard",
+      "notes": "",
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 20,
+          "unitPrice": 104
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 13
+    },
+    {
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "id": 21,
+          "notes": "",
+          "unitPrice": 3
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 130,
+      "name": "Mega Plate (Omega DBS14)",
+      "notes": "",
+      "link": "https://www.vloerverwarming-direct.nl/p/omega-profielen-dbs14-aluminium-1000mm-x-120mm",
+      "status": "not-ordered",
+      "documents": [],
+      "id": 118,
+      "description": "",
+      "unit": "pcs",
+      "phaseId": 35
+    },
+    {
+      "unit": "pcs",
+      "phaseId": 35,
+      "documents": [],
+      "id": 119,
+      "description": "Magnum 5-laags PE-RT 12x1,5mm",
+      "link": "https://www.elektramat.nl/magnum-universele-vloerverwarmingsbuis-5-laags-pe-rt-12x1-5-mm-komo-rol-van-300-meter-w12300/",
+      "status": "not-ordered",
+      "name": "Pipe Line (Heating)",
+      "notes": "",
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 120,
+          "notes": "",
+          "id": 22
+        }
+      ],
+      "categoryId": 3
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://www.elektramat.nl/magnum-adaptor-euroconus-aansluitkoppeling-12x1-5mm-x-3-4-2-stuks-w90012/",
+      "phaseId": 35,
+      "unit": "pcs",
+      "description": "Magnum Euroconus 12x1,5mm",
+      "id": 120,
+      "documents": [],
+      "qty": 16,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "id": 23,
+          "notes": "",
+          "unitPrice": 3.23,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Adaptor (Heating)"
+    },
+    {
+      "notes": "",
+      "name": "Manifold + Pump",
+      "qty": 1,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "unitPrice": 421,
+          "id": 24,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "phaseId": 35,
+      "unit": "pcs",
+      "id": 121,
+      "description": "Magnum Basic staal 5-groeps",
+      "documents": [],
+      "status": "not-ordered",
+      "link": "https://www.elektramat.nl/magnum-basic-staal-vloerverwarming-verdeler-5-groeps-incl-a-label-pomp-w40005/"
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "",
+      "id": 122,
+      "unit": "pcs",
+      "phaseId": 35,
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 25,
+          "unitPrice": 1500,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "categoryId": 8,
+      "qty": 1,
+      "name": "Tools Extras (Heating)",
+      "notes": ""
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 26,
+          "notes": "",
+          "unitPrice": 5000
+        }
+      ],
+      "categoryId": 3,
+      "name": "Floor",
+      "notes": "",
+      "link": "https://www.berlin-parkett.de/Forbo-Marmoleum-Walton-Linoleum-3369-titanium",
+      "status": "not-ordered",
+      "phaseId": 68,
+      "unit": "pcs",
+      "documents": [],
+      "id": 123,
+      "description": "Forbo Marmoleum Walton Linoleum"
+    },
+    {
+      "id": 124,
+      "description": "",
+      "documents": [],
+      "phaseId": 4,
+      "unit": "pcs",
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Tools Extras (Interior)",
+      "categoryId": 8,
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 27,
+          "unitPrice": 1000,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "qty": 1
+    },
+    {
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [],
+      "qty": 1,
+      "notes": "",
+      "name": "First Step Isolation (Interior)",
+      "status": "not-ordered",
+      "link": "",
+      "description": "",
+      "id": 125,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 64
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html",
+      "unit": "m²",
+      "phaseId": 70,
+      "id": 126,
+      "description": "Jabo Gobi Nude 60x60cm — 20 sqm",
+      "documents": [],
+      "qty": 20,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 28,
+          "notes": "",
+          "unitPrice": 50,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "notes": "",
+      "name": "Tiles (Bathroom)"
+    },
+    {
+      "link": "https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "Saniclear Cube 180x80cm",
+      "id": 127,
+      "unit": "pcs",
+      "phaseId": 70,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 400,
+          "id": 29,
+          "notes": ""
+        }
+      ],
+      "categoryId": 3,
+      "qty": 1,
+      "name": "Ligbad",
+      "notes": ""
+    },
+    {
+      "name": "Toilette",
+      "notes": "",
+      "qty": 2,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 325,
+          "notes": "",
+          "id": 30
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "phaseId": 70,
+      "unit": "pcs",
+      "documents": [],
+      "description": "Sanigoods Andes toiletset",
+      "id": 128,
+      "link": "https://sanitairkamer.nl/sanigoods-andes-toiletset-met-saniclear-itsie-randloos-toilet-wit-glans-sk101869.html",
+      "status": "not-ordered"
+    },
+    {
+      "categoryId": 3,
+      "quotes": [
+        {
+          "id": 31,
+          "notes": "",
+          "unitPrice": 1000,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "qty": 1,
+      "notes": "",
+      "name": "Shower",
+      "status": "not-ordered",
+      "link": "https://www.hornbach.nl/p/qboard-liquid-douche-element-1200x900x40-mm/12234114/",
+      "description": "Qboard liquid douche element 1200x900",
+      "id": 129,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 70
+    },
+    {
+      "notes": "",
+      "name": "Gips  Toilet (Interior)",
+      "categoryId": 3,
+      "quotes": [
+        {
+          "id": 32,
+          "notes": "",
+          "unitPrice": 18.59,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "qty": 20,
+      "id": 130,
+      "description": "",
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 70,
+      "status": "not-ordered",
+      "link": ""
+    },
+    {
+      "qty": 1,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 300,
+          "id": 33,
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "name": "Douchebak (Teller)",
+      "status": "not-ordered",
+      "link": "https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html",
+      "unit": "pcs",
+      "phaseId": 70,
+      "description": "Soho antislip SMC hars",
+      "id": 131,
+      "documents": []
+    },
+    {
+      "qty": 1,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 284,
+          "id": 34,
+          "notes": ""
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Kran Small Toilet",
+      "status": "not-ordered",
+      "link": "https://sanitairkamer.nl/fontana-alaska-toiletmeubel-mat-zwart-40x22cm-met-solid-surface-fontein-links-sk79995.html",
+      "unit": "pcs",
+      "phaseId": 70,
+      "id": 132,
+      "description": "Fontana Alaska 40x22cm mat zwart",
+      "documents": []
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 384,
+          "id": 35,
+          "notes": ""
+        }
+      ],
+      "categoryId": 3,
+      "name": "Kran Big Toilet",
+      "notes": "",
+      "link": "https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html",
+      "status": "not-ordered",
+      "phaseId": 70,
+      "unit": "pcs",
+      "documents": [],
+      "id": 133,
+      "description": "Mueller single flat 80x46cm"
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "notes": "",
+          "id": 36,
+          "unitPrice": 400
+        }
+      ],
+      "categoryId": 3,
+      "name": "Bathtub Cornelis",
+      "notes": "",
+      "link": "https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/",
+      "status": "not-ordered",
+      "phaseId": 70,
+      "unit": "pcs",
+      "documents": [],
+      "description": "Pianosa corner bath 160x85cm",
+      "id": 134
+    },
+    {
+      "link": "https://www.warmteservice.nl/Installatiemateriaal/Leidingsystemen/Meerlagenbuis/Henco-Alupex-meerlagenbuis-met-mantel-blauw/p/48670334",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "Henco Alupex meerlagenbuis",
+      "id": 135,
+      "unit": "pcs",
+      "phaseId": 33,
+      "orders": [],
+      "quotes": [
+        {
+          "unitPrice": 133,
+          "id": 37,
+          "notes": "",
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate"
+        }
+      ],
+      "categoryId": 3,
+      "qty": 2,
+      "name": "Water Pipe Cold & Hot",
+      "notes": ""
+    },
+    {
+      "qty": 20,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 6.8,
+          "notes": "",
+          "id": 38
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Water Pipe Fittings (Perskoppeling)",
+      "status": "not-ordered",
+      "link": "https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710",
+      "phaseId": 33,
+      "unit": "pcs",
+      "description": "Henco Press T-stuk",
+      "id": 136,
+      "documents": []
+    },
+    {
+      "qty": 1,
+      "categoryId": 8,
+      "quotes": [],
+      "orders": [],
+      "notes": "",
+      "name": "Persstange",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 33,
+      "unit": "pcs",
+      "id": 137,
+      "description": "Crimping tool for pipe fittings",
+      "documents": []
+    },
+    {
+      "documents": [],
+      "description": "",
+      "id": 138,
+      "phaseId": 33,
+      "unit": "pcs",
+      "link": "",
+      "status": "not-ordered",
+      "name": "Tools Extras (Kitchen/Bath)",
+      "notes": "",
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 2000,
+          "notes": "",
+          "id": 39
+        }
+      ],
+      "categoryId": 8,
+      "qty": 1
+    },
+    {
+      "qty": 1,
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 40,
+          "unitPrice": 900
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "name": "Induction Plate",
+      "notes": "",
+      "link": "https://www.elektroshopwagner.de/de/p/326929",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 69,
+      "documents": [],
+      "id": 139,
+      "description": ""
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://www.bemmelenkroon.nl/merken/siemens/hb272abb3-sies/",
+      "unit": "pcs",
+      "phaseId": 69,
+      "id": 140,
+      "description": "Siemens HB272ABB3",
+      "documents": [],
+      "qty": 1,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 629,
+          "notes": "",
+          "id": 41
+        }
+      ],
+      "notes": "",
+      "name": "Oven"
+    },
+    {
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "id": 42,
+          "notes": "",
+          "unitPrice": 338
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 1,
+      "name": "Spoelbak",
+      "notes": "",
+      "link": "https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "Sapho 97x50cm zwart graniet",
+      "id": 141,
+      "phaseId": 70,
+      "unit": "pcs"
+    },
+    {
+      "phaseId": 69,
+      "unit": "pcs",
+      "id": 142,
+      "description": "Samsung RB34C600CSA",
+      "documents": [],
+      "status": "not-ordered",
+      "link": "https://www.mediamarkt.nl/nl/product/_samsung-rb34c600csaef-1762331.html",
+      "notes": "",
+      "name": "Fridge",
+      "qty": 1,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "unitPrice": 600,
+          "id": 43,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": []
+    },
+    {
+      "description": "",
+      "id": 143,
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 69,
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Furniture",
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 5000,
+          "notes": "",
+          "id": 44
+        }
+      ],
+      "qty": 1
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "",
+      "id": 144,
+      "unit": "pcs",
+      "phaseId": 4,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 45,
+          "notes": "",
+          "unitPrice": 1000
+        }
+      ],
+      "categoryId": 8,
+      "qty": 1,
+      "name": "Tools Extras (Finishes)",
+      "notes": ""
+    },
+    {
+      "link": "https://www.verfwinkel.nl/powerdek-muren-plafonds-muurverf-wit.html",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "Powerdek muurverf wit — 235m² wall",
+      "id": 145,
+      "unit": "pcs",
+      "phaseId": 67,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 46,
+          "notes": "",
+          "unitPrice": 79,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "categoryId": 5,
+      "qty": 3,
+      "name": "Paint",
+      "notes": ""
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "unit": "pcs",
+      "phaseId": 67,
+      "description": "",
+      "id": 146,
+      "documents": [],
+      "qty": 1,
+      "categoryId": 8,
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 47,
+          "notes": "",
+          "unitPrice": 1000
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Tools Extras (Paint)"
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "id": 147,
+      "description": "Construction drawing",
+      "documents": [],
+      "phaseId": 71,
+      "unit": "pcs",
+      "categoryId": 2,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 48,
+          "notes": "",
+          "unitPrice": 2000
+        }
+      ],
+      "qty": 1,
+      "notes": "",
+      "name": "Bouwtekening (Extension)"
+    },
+    {
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 79,
+          "notes": "",
+          "id": 49
+        }
+      ],
+      "categoryId": 4,
+      "qty": 3,
+      "name": "Excavation",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "id": 148,
+      "description": "Price per day + transport",
+      "unit": "day",
+      "phaseId": 50
+    },
+    {
+      "qty": 1,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 1100,
+          "notes": "",
+          "id": 50
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "name": "Cement",
+      "notes": "",
+      "link": "https://www.betonstorten.nl/offerte-aanvragen",
+      "status": "not-ordered",
+      "phaseId": 50,
+      "unit": "pcs",
+      "documents": [],
+      "description": "2 m³ with pump",
+      "id": 149
+    },
+    {
+      "link": "https://www.bouwbestel.nl/funderingsbekisting-piepschuim-tempex.html",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "3,5x3,5x4,7m = 12m",
+      "id": 150,
+      "unit": "pcs",
+      "phaseId": 50,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 500,
+          "id": 51,
+          "notes": ""
+        }
+      ],
+      "categoryId": 3,
+      "qty": 1,
+      "name": "Funderingsbekisting",
+      "notes": ""
+    },
+    {
+      "qty": 1,
+      "quotes": [
+        {
+          "unitPrice": 300,
+          "notes": "",
+          "id": 52,
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "name": "Wapeningskorf",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 50,
+      "documents": [],
+      "id": 151,
+      "description": "12m"
+    },
+    {
+      "description": "10 funderingsbekisting, 7 dak, 12 walls",
+      "id": 152,
+      "documents": [],
+      "phaseId": 51,
+      "unit": "pcs",
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "OSB 2440x1220x11mm",
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 53,
+          "unitPrice": 16.9,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "qty": 30
+    },
+    {
+      "id": 153,
+      "description": "",
+      "documents": [],
+      "phaseId": 51,
+      "unit": "pcs",
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Extra wood + screws",
+      "categoryId": 3,
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "id": 54,
+          "notes": "",
+          "unitPrice": 1000
+        }
+      ],
+      "orders": [],
+      "qty": 1
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://www.toeleveringonline.nl/product/2-delige-schuifpui-aluminium/",
+      "id": 154,
+      "description": "3,6x2,4 — 3 windows all open",
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 55,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "unitPrice": 6000,
+          "id": 55,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "qty": 1,
+      "notes": "",
+      "name": "Windows / Schuifpuien"
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 56,
+          "unitPrice": 400
+        }
+      ],
+      "categoryId": 3,
+      "name": "EPDM Folie",
+      "notes": "",
+      "link": "https://mein-dach24.de/epdm-dachfolie-1-5mm-457#",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 52,
+      "documents": [],
+      "id": 155,
+      "description": "1,5mm 4mx4,5m"
+    },
+    {
+      "name": "Kleber (EPDM)",
+      "notes": "",
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 57,
+          "notes": "",
+          "unitPrice": 120
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 1,
+      "documents": [],
+      "id": 156,
+      "description": "",
+      "unit": "pcs",
+      "phaseId": 52,
+      "link": "",
+      "status": "not-ordered"
+    },
+    {
+      "phaseId": 52,
+      "unit": "pcs",
+      "documents": [],
+      "id": 157,
+      "description": "EPDM Dachgully",
+      "link": "https://mein-dach24.de/EPDM-Dachgully",
+      "status": "not-ordered",
+      "name": "Gullys (Roof)",
+      "notes": "",
+      "qty": 2,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 58,
+          "unitPrice": 40
+        }
+      ],
+      "categoryId": 3
+    },
+    {
+      "qty": 1,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 300,
+          "notes": "",
+          "id": 59
+        }
+      ],
+      "notes": "",
+      "name": "Extras (Shell Extension)",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 51,
+      "unit": "pcs",
+      "id": 158,
+      "description": "",
+      "documents": []
+    },
+    {
+      "quotes": [
+        {
+          "notes": "",
+          "id": 60,
+          "unitPrice": 1000,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "categoryId": 8,
+      "qty": 1,
+      "name": "Tools Extras (Extension)",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "id": 159,
+      "description": "",
+      "phaseId": 71,
+      "unit": "pcs"
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 66,
+      "documents": [],
+      "id": 160,
+      "description": "ISDE subsidy — negative cost",
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "notes": "",
+          "id": 61,
+          "unitPrice": -400,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "categoryId": 7,
+      "name": "MVHR Subsidy",
+      "notes": ""
+    },
+    {
+      "qty": 1,
+      "categoryId": 7,
+      "quotes": [
+        {
+          "notes": "",
+          "id": 62,
+          "unitPrice": -2500,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Heat Pump Subsidy",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 66,
+      "unit": "pcs",
+      "description": "ISDE Subsidie",
+      "id": 161,
+      "documents": []
+    },
+    {
+      "name": "Isolation Floor Subsidy",
+      "notes": "",
+      "quotes": [
+        {
+          "notes": "",
+          "id": 63,
+          "unitPrice": -610,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true
+        }
+      ],
+      "orders": [],
+      "categoryId": 7,
+      "qty": 1,
+      "documents": [],
+      "description": "40 sqm @ €14/m² ISDE",
+      "id": 162,
+      "phaseId": 66,
+      "unit": "m²",
+      "link": "",
+      "status": "not-ordered"
+    },
+    {
+      "documents": [],
+      "description": "50m² @ €25/m² ISDE",
+      "id": 163,
+      "unit": "m²",
+      "phaseId": 66,
+      "link": "",
+      "status": "not-ordered",
+      "name": "Wall Isolation Subsidy",
+      "notes": "",
+      "quotes": [
+        {
+          "unitPrice": -1250,
+          "notes": "",
+          "id": 64,
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "categoryId": 7,
+      "qty": 1
+    },
+    {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": -1500,
+          "id": 65,
+          "notes": ""
+        }
+      ],
+      "categoryId": 7,
+      "name": "Roof Subsidy",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "unit": "m²",
+      "phaseId": 66,
+      "documents": [],
+      "id": 164,
+      "description": "60m² @ €25/m² ISDE"
+    },
+    {
+      "id": 165,
+      "description": "Gemeente Amsterdam — APPLY FIRST!",
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 66,
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Isolation Gemeente Subsidy",
+      "categoryId": 7,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "notes": "",
+          "id": 66,
+          "unitPrice": -2500
+        }
+      ],
+      "qty": 1
+    },
+    {
+      "qty": 1,
+      "quotes": [],
+      "orders": [],
+      "categoryId": 3,
+      "name": "Solar Panels",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "unit": "pcs",
+      "phaseId": 32,
+      "documents": [],
+      "id": 166,
+      "description": "NO BTW — placeholder"
+    },
+    {
+      "orders": [],
+      "quotes": [
+        {
+          "id": 67,
+          "notes": "",
+          "unitPrice": 25000,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true
+        }
+      ],
+      "categoryId": 4,
+      "qty": 1,
+      "name": "Rene (Contractor)",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "id": 167,
+      "description": "Works per project",
+      "unit": "lump sum",
+      "phaseId": 63
+    },
+    {
+      "qty": 120,
+      "categoryId": 4,
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 55,
+          "id": 68,
+          "notes": ""
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Kevin (Contractor)",
+      "status": "not-ordered",
+      "link": "",
+      "unit": "hr",
+      "phaseId": 63,
+      "id": 168,
+      "description": "~220 hrs @ €55/hr",
+      "documents": []
+    },
+    {
+      "status": "not-ordered",
+      "link": "",
+      "description": "90sqm walls + 40sqm ceiling incl BTW",
+      "id": 169,
+      "documents": [],
+      "unit": "m²",
+      "phaseId": 31,
+      "categoryId": null,
+      "orders": [],
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "id": 69,
+          "notes": "",
+          "unitPrice": 2637.8
+        }
+      ],
+      "qty": 1,
+      "notes": "",
+      "name": "Plaster (Stuc-Concurrent b.v.)"
+    },
+    {
+      "notes": "",
+      "name": "Stairs",
+      "qty": 1,
+      "categoryId": 5,
+      "orders": [],
+      "quotes": [],
+      "phaseId": 64,
+      "unit": "pcs",
+      "id": 170,
+      "description": "",
+      "documents": [],
+      "status": "not-ordered",
+      "link": ""
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "HBM table saw",
+      "id": 171,
+      "phaseId": 64,
+      "unit": "pcs",
+      "quotes": [],
+      "orders": [],
+      "categoryId": 5,
+      "qty": 1,
+      "name": "Tischkreissäge",
+      "notes": ""
+    },
+    {
+      "notes": "",
+      "name": "Muurfreess",
+      "qty": 1,
+      "categoryId": 5,
+      "quotes": [],
+      "orders": [],
+      "unit": "pcs",
+      "phaseId": 64,
+      "id": 172,
+      "description": "Vonroc muurfrees 1700W 150mm",
+      "documents": [],
+      "status": "not-ordered",
+      "link": "https://www.praxis.nl/gereedschap-werkplaats/elektrisch-gereedschap/freesmachines/sleuvenfrezen/vonroc-muurfrees-sleufmachine-1700w-150mm-incl-1-stuks-diamantschijven-opbergtas/10137637"
+    },
+    {
+      "unit": "pcs",
+      "phaseId": 64,
+      "description": "Reciprocating saw",
+      "id": 173,
+      "documents": [],
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Säbelsäge",
+      "qty": 1,
+      "categoryId": 5,
+      "orders": [],
+      "quotes": []
+    },
+    {
+      "phaseId": 64,
+      "unit": "pcs",
+      "id": 174,
+      "description": "",
+      "documents": [],
+      "status": "not-ordered",
+      "link": "",
+      "notes": "",
+      "name": "Nailgun",
+      "qty": 1,
+      "categoryId": 5,
+      "quotes": [],
+      "orders": []
+    },
+    {
+      "status": "not-ordered",
+      "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
+      "phaseId": 2,
+      "unit": "pcs",
+      "description": "HBM 1700W sloophamer SDS-max",
+      "id": 175,
+      "documents": [],
+      "qty": 1,
+      "categoryId": 8,
+      "quotes": [
+        {
+          "unitPrice": 1100,
+          "id": 70,
+          "notes": "",
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04"
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "HBM ALL Tools"
+    },
+    {
+      "documents": [],
+      "description": "Ryobi slagschroevendraaier",
+      "id": 176,
+      "unit": "pcs",
+      "phaseId": 64,
+      "link": "https://nl.ryobitools.eu/elektrisch-gereedschap/boormachines-schroevendraaiers/slagschroevendraaiers/",
+      "status": "not-ordered",
+      "name": "Bohrer Ryobi",
+      "notes": "",
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 100,
+          "notes": "",
+          "id": 71
+        }
+      ],
+      "orders": [],
+      "categoryId": 5,
+      "qty": 1
+    }
+  ],
+  "bomImportedV1": true,
+  "_exportedAt": "2026-07-04T10:00:00.000Z",
+  "tasks": [
+    {
+      "end": null,
+      "status": "planned",
+      "start": null,
+      "dueDate": null,
+      "assignee": "",
+      "phaseId": 61,
+      "priority": "med",
+      "name": "Preliminary Layout Kitchen & Bath",
+      "id": 1,
+      "notes": "",
+      "description": "Preliminary simple Layout Kitchen & Bath"
+    },
+    {
+      "start": null,
+      "dueDate": null,
+      "assignee": "",
+      "end": null,
+      "status": "planned",
+      "name": "Preliminary Layout Rooms & Zoning",
+      "notes": "",
+      "id": 2,
+      "description": "Preliminary Simple Layout Rooms & Zoning",
+      "phaseId": 61,
+      "priority": "med"
+    },
+    {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 61,
+      "priority": "med",
+      "start": null,
+      "assignee": "",
+      "dueDate": null,
+      "status": "planned",
+      "end": null
+    },
+    {
+      "end": null,
+      "status": "planned",
+      "assignee": "",
+      "dueDate": null,
+      "start": null,
+      "priority": "med",
+      "phaseId": 61,
+      "name": "Ask Street Work Permits (Dumpster/Container)",
+      "description": "Street work Permits",
+      "id": 4,
+      "notes": ""
+    },
+    {
+      "start": null,
+      "assignee": "",
+      "dueDate": null,
+      "end": null,
+      "status": "planned",
+      "name": "Removing Existing Floor",
+      "id": 5,
+      "notes": "",
+      "description": "Self Made",
+      "phaseId": 62,
+      "priority": "med"
+    },
+    {
+      "name": "Removing Existing Walls",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 62,
+      "priority": "med",
+      "start": null,
+      "dueDate": null,
+      "assignee": "",
+      "end": null,
+      "status": "planned"
+    },
+    {
+      "description": "Self Made",
+      "notes": "",
+      "id": 7,
+      "name": "Remove Bathroom & Kitchen",
+      "priority": "med",
+      "phaseId": 62,
+      "assignee": "",
+      "dueDate": null,
+      "start": null,
+      "status": "planned",
+      "end": null
+    }
+  ],
+  "nextTaskId": 8,
+  "project": {
+    "address": "",
+    "name": "HR Nido",
+    "startDate": "2026-01-01",
+    "currency": "€",
+    "totalBudget": 99999,
+    "endDate": "2027-06-30"
+  },
+  "nextCategoryId": 10,
+  "nextDocId": 1,
+  "_savedAt": 1783252701056,
+  "nextOrderId": 1,
+  "nextQuoteId": 72,
+  "nextItemId": 177,
+  "_version": "dashboard-v1",
+  "phases": [
+    {
+      "notes": "Permits, legal, architect brief",
+      "id": 1,
+      "budget": 9500,
+      "number": "1",
+      "name": "Planning and Docs",
+      "start": "2026-01-01",
+      "parentId": null,
+      "color": "#7C3AED",
+      "status": "in-progress",
+      "end": "2026-03-31"
+    },
+    {
+      "color": "#2563EB",
+      "status": "planned",
+      "end": "2026-07-31",
+      "start": "2026-03-01",
+      "parentId": null,
+      "id": 2,
+      "notes": "Demolition, structure, roof",
+      "budget": 42000,
+      "name": "Shell Creation",
+      "number": "2"
+    },
+    {
+      "budget": 0,
+      "number": "3",
+      "name": "Installations",
+      "id": 3,
+      "notes": "All MEP + insulation work",
+      "start": "2026-06-01",
+      "parentId": null,
+      "end": "2026-11-30",
+      "status": "planned",
+      "color": "#0891B2"
+    },
+    {
+      "start": "2026-11-01",
+      "parentId": null,
+      "end": "2027-02-28",
+      "color": "#16A34A",
+      "status": "planned",
+      "budget": 48000,
+      "number": "4",
+      "name": "Interior Finishing",
+      "id": 4,
+      "notes": "Floors, paint, kitchen, bathrooms"
+    },
+    {
+      "parentId": null,
+      "start": "2026-04-01",
+      "status": "planned",
+      "color": "#D97706",
+      "end": "2027-05-31",
+      "notes": "Rear extension",
+      "id": 5,
+      "number": "5",
+      "name": "House Extension",
+      "budget": 0
+    },
+    {
+      "start": "2026-06-01",
+      "parentId": 3,
+      "color": "#0D9488",
+      "status": "planned",
+      "end": "2026-07-31",
+      "notes": "",
+      "id": 31,
+      "budget": 15000,
+      "name": "Isolation",
+      "number": "3.1"
+    },
+    {
+      "end": "2026-09-30",
+      "color": "#0369A1",
+      "status": "planned",
+      "start": "2026-07-01",
+      "parentId": 3,
+      "budget": 22000,
+      "number": "3.2",
+      "name": "Electricity",
+      "notes": "",
+      "id": 32
+    },
+    {
+      "notes": "",
+      "id": 33,
+      "number": "3.3",
+      "name": "Water",
+      "budget": 13000,
+      "status": "planned",
+      "color": "#0891B2",
+      "end": "2026-09-30",
+      "parentId": 3,
+      "start": "2026-07-01"
+    },
+    {
+      "id": 34,
+      "notes": "Air-to-water heat pump",
+      "number": "3.4",
+      "name": "Heat Pump",
+      "budget": 16000,
+      "status": "planned",
+      "color": "#059669",
+      "end": "2026-10-31",
+      "parentId": 3,
+      "start": "2026-09-01"
+    },
+    {
+      "notes": "Underfloor heating distribution",
+      "id": 35,
+      "budget": 8000,
+      "name": "Heating",
+      "number": "3.5",
+      "start": "2026-09-01",
+      "parentId": 3,
+      "color": "#0F766E",
+      "status": "planned",
+      "end": "2026-11-30"
+    },
+    {
+      "end": "2026-06-30",
+      "status": "planned",
+      "color": "#92400e",
+      "start": "2026-04-01",
+      "parentId": 5,
+      "budget": 24000,
+      "name": "Foundation",
+      "number": "5.2",
+      "notes": "",
+      "id": 50
+    },
+    {
+      "budget": 32000,
+      "name": "Shell Creation",
+      "number": "5.3",
+      "id": 51,
+      "notes": "",
+      "end": "2026-09-30",
+      "status": "planned",
+      "color": "#b45309",
+      "start": "2026-06-01",
+      "parentId": 5
+    },
+    {
+      "budget": 14000,
+      "number": "5.4",
+      "name": "Isolation & Water Protection",
+      "notes": "",
+      "id": 52,
+      "start": "2026-08-01",
+      "parentId": 5,
+      "end": "2026-10-31",
+      "status": "planned",
+      "color": "#78350f"
+    },
+    {
+      "start": "2026-10-01",
+      "parentId": 5,
+      "end": "2026-12-31",
+      "status": "planned",
+      "color": "#d97706",
+      "budget": 14000,
+      "number": "5.5",
+      "name": "Electricity",
+      "notes": "",
+      "id": 53
+    },
+    {
+      "id": 54,
+      "notes": "",
+      "number": "5.6",
+      "name": "Water",
+      "budget": 9000,
+      "parentId": 5,
+      "start": "2026-10-01",
+      "status": "planned",
+      "color": "#ca8a04",
+      "end": "2026-12-31"
+    },
+    {
+      "id": 55,
+      "notes": "",
+      "number": "5.7",
+      "name": "Exterior Finishing",
+      "budget": 19000,
+      "status": "planned",
+      "color": "#a16207",
+      "end": "2027-01-31",
+      "parentId": 5,
+      "start": "2026-11-01"
+    },
+    {
+      "end": "2027-05-31",
+      "status": "planned",
+      "color": "#ea580c",
+      "start": "2027-01-01",
+      "parentId": 5,
+      "budget": 36000,
+      "number": "5.8",
+      "name": "Interior Finishing",
+      "id": 56,
+      "notes": ""
+    },
+    {
+      "number": "1.1",
+      "name": "Buying",
+      "budget": 0,
+      "notes": "",
+      "id": 60,
+      "end": "",
+      "status": "planned",
+      "color": "#7c3aed",
+      "parentId": 1,
+      "start": ""
+    },
+    {
+      "status": "planned",
+      "color": "#7c3aed",
+      "end": "",
+      "parentId": 1,
+      "start": "",
+      "id": 61,
+      "notes": "",
+      "number": "1.2",
+      "name": "Renovation",
+      "budget": 0
+    },
+    {
+      "color": "#7c3aed",
+      "status": "planned",
+      "end": "",
+      "start": "",
+      "parentId": 2,
+      "id": 62,
+      "notes": "",
+      "budget": 0,
+      "number": "2.1",
+      "name": "Preparation Work"
+    },
+    {
+      "number": "6",
+      "name": "Contractors",
+      "budget": 0,
+      "id": 63,
+      "notes": "",
+      "end": "",
+      "color": "#7c3aed",
+      "status": "planned",
+      "parentId": null,
+      "start": ""
+    },
+    {
+      "end": "",
+      "color": "#7c3aed",
+      "status": "planned",
+      "start": "",
+      "parentId": 3,
+      "budget": 0,
+      "number": "3.6",
+      "name": "Ventilation",
+      "notes": "",
+      "id": 65
+    },
+    {
+      "budget": 0,
+      "name": "Subsidie",
+      "number": "7",
+      "notes": "",
+      "id": 66,
+      "start": "",
+      "parentId": null,
+      "end": "",
+      "status": "planned",
+      "color": "#7c3aed"
+    },
+    {
+      "notes": "",
+      "id": 67,
+      "number": "4.1",
+      "name": "Walls",
+      "budget": 0,
+      "status": "planned",
+      "color": "#7c3aed",
+      "end": "",
+      "parentId": 4,
+      "start": ""
+    },
+    {
+      "budget": 0,
+      "name": "Floor",
+      "number": "4.2",
+      "notes": "",
+      "id": 68,
+      "end": "",
+      "color": "#7c3aed",
+      "status": "planned",
+      "start": "",
+      "parentId": 4
+    },
+    {
+      "start": "",
+      "parentId": 4,
+      "status": "planned",
+      "color": "#7c3aed",
+      "end": "",
+      "notes": "",
+      "id": 69,
+      "budget": 0,
+      "name": "Kitchen",
+      "number": "4.3"
+    },
+    {
+      "id": 70,
+      "notes": "",
+      "budget": 0,
+      "number": "4.4",
+      "name": "Bath",
+      "status": "planned",
+      "color": "#7c3aed",
+      "end": "",
+      "start": "",
+      "parentId": 4
+    },
+    {
+      "notes": "",
+      "id": 71,
+      "name": "Planning",
+      "number": "5.1",
+      "budget": 0,
+      "status": "planned",
+      "color": "#7c3aed",
+      "end": "",
+      "parentId": 5,
+      "start": ""
+    }
+  ],
+  "_source": "converted-from-classifier-v3"
+}
