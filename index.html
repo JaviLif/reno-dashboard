@@ -1,13 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🏠 Renovation Dashboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<!-- Firebase SDK (compat) -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -118,7 +115,25 @@ th.sortable{cursor:pointer;user-select:none}
 th.sortable:hover{color:var(--g700)}
 #items-table{table-layout:fixed}
 #items-table th{position:relative}
-#tab-items .tbl-wrap{max-height:calc(100vh - 210px);overflow:auto}
+#tab-items .tbl-wrap{overflow:auto}
+/* BOM sidebar layout */
+.bom-wrap{display:flex;flex:1;min-height:0;overflow:hidden;border-radius:0}
+.bom-sidebar{width:196px;flex-shrink:0;border-right:1px solid var(--g200);overflow-y:auto;background:var(--g50);padding:6px 0;max-height:calc(100vh - 200px)}
+.bom-main{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+.bom-topbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--g100);background:#fff}
+.bom-hint{padding:6px 14px;font-size:11.5px;color:var(--g400);border-bottom:1px solid var(--g100)}
+.bom-table-area{flex:1;overflow:auto;max-height:calc(100vh - 248px)}
+.bom-footer{display:flex;align-items:center;border-top:2px solid var(--g200);background:#fff;height:40px;flex-shrink:0;overflow-x:auto}
+.bom-ft-block{display:flex;align-items:center;gap:7px;padding:0 14px;border-right:1px solid var(--g200);height:100%;white-space:nowrap;flex-shrink:0}
+.bom-ft-lbl{font-size:10px;color:var(--g400);text-transform:uppercase;letter-spacing:.04em}
+.bom-ft-val{font-size:13px;font-weight:700;color:#D97706}
+.bom-ft-val-n{font-size:13px;font-weight:700;color:var(--g700)}
+.bom-sb-sec{font-size:10px;font-weight:700;color:var(--g400);text-transform:uppercase;letter-spacing:.06em;padding:6px 12px 2px;margin-top:4px}
+.bom-sb-item{display:flex;align-items:center;gap:7px;padding:5px 10px;cursor:pointer;color:var(--g600);font-size:12px;border-left:2px solid transparent;line-height:1.3}
+.bom-sb-item:hover{background:var(--g100);color:var(--g800)}
+.bom-sb-item.active{color:#92400E;background:#FEF3C7;border-left-color:#F59E0B;font-weight:600}
+.bom-sb-item.child{padding-left:22px;font-size:11px}
+.bom-sb-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 #items-table thead th{position:sticky;top:0;background:#fff;z-index:5;box-shadow:0 1px 0 var(--g200)}
 .col-resize-handle{position:absolute;top:0;right:-4px;bottom:0;width:8px;cursor:col-resize;z-index:3}
 .col-resize-handle:hover{background:var(--pri)}
@@ -486,10 +501,7 @@ body.col-resizing *{cursor:col-resize!important}
 <div id="tab-items" class="tab">
   <div class="sec-hdr">
     <div class="sec-title">BOM</div>
-    <div class="flex flex-wrap">
-      <select class="fm-sel" style="width:170px;font-size:12px" id="it-filter-phase" onchange="renderItems()">
-        <option value="">All phases</option>
-      </select>
+    <div class="flex flex-wrap" style="gap:6px">
       <select class="fm-sel" style="width:150px;font-size:12px" id="it-filter-cat" onchange="renderItems()">
         <option value="">All categories</option>
       </select>
@@ -501,6 +513,7 @@ body.col-resizing *{cursor:col-resize!important}
         <option value="delivered">Delivered</option>
         <option value="cancelled">Cancelled</option>
       </select>
+      <select id="it-filter-phase" style="display:none"><option value="">All phases</option></select>
       <div style="position:relative">
         <button class="btn btn-ghost btn-sm" id="col-panel-btn" onclick="toggleColPanel(event)">⚙ Columns</button>
         <div id="col-panel" class="col-panel" style="display:none"></div>
@@ -508,16 +521,21 @@ body.col-resizing *{cursor:col-resize!important}
       <button class="btn btn-pri btn-sm" onclick="addItem()">+ Add Item</button>
     </div>
   </div>
-  <div class="card">
-    <div class="muted" style="padding:9px 18px;font-size:11.5px;border-bottom:1px solid var(--g100)">Click ▸ to manage quotes &amp; orders for an item. Click a sortable column header (Phase, Category, Status) to sort. Use ⚙ Columns to show/hide or reorder columns. All fields save automatically — no popups.</div>
-    <div class="tbl-wrap">
-      <table id="items-table">
-        <colgroup id="items-colgroup"></colgroup>
-        <thead id="items-thead"></thead>
-        <tbody id="items-body"></tbody>
-      </table>
+  <div class="card" style="padding:0;overflow:hidden;display:flex;flex-direction:column">
+    <div class="bom-wrap">
+      <div class="bom-sidebar" id="bom-sidebar"></div>
+      <div class="bom-main">
+        <div class="bom-hint">Click ▸ to manage quotes &amp; orders. Click a column header to sort. Use ⚙ Columns to show/hide. All fields save automatically.</div>
+        <div class="bom-table-area">
+          <table id="items-table">
+            <colgroup id="items-colgroup"></colgroup>
+            <thead id="items-thead"></thead>
+            <tbody id="items-body"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <div id="items-total" style="padding:11px 18px;border-top:2px solid var(--g200);display:flex;justify-content:flex-end;gap:6px;font-size:13px;font-weight:700"></div>
+    <div class="bom-footer" id="bom-footer"></div>
   </div>
 </div>
 
@@ -583,6 +601,23 @@ body.col-resizing *{cursor:col-resize!important}
             <label class="btn btn-ghost btn-sm" style="cursor:pointer">⬆ Import JSON<input type="file" accept=".json" style="display:none" onchange="importData(event)"></label>
             <button class="btn btn-danger btn-sm" onclick="clearItemsAndTasks()">🧹 Clear Items & Tasks</button>
             <button class="btn btn-danger btn-sm" onclick="resetData()">🗑 Full Reset</button>
+          </div>
+        </div></div>
+      </div>
+      <div style="margin-top:20px">
+        <div class="set-title">GitHub Sync</div>
+        <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:12px">
+          <div style="font-size:12px;color:var(--g500);line-height:1.6">Stores your data in <strong>JaviLif/reno-dashboard</strong> on GitHub. Documents go to <code>quotes/</code>. History is full git commit log. Token stays in <em>your</em> browser only.</div>
+          <div class="fm-row" style="align-items:flex-end;gap:8px">
+            <div class="fm-grp" style="margin:0;flex:1">
+              <label class="fm-lbl">GitHub PAT <span style="font-weight:400;color:var(--g400)">(repo scope)</span></label>
+              <input class="fm-inp" id="gh-token-input" type="password" placeholder="ghp_...">
+            </div>
+            <button class="btn btn-pri btn-sm" onclick="ghSaveToken()">Connect</button>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn btn-ghost btn-sm" onclick="ghOpenHistory()">View commit history</button>
+            <button class="btn btn-danger btn-sm" onclick="ghClearToken()">Disconnect</button>
           </div>
         </div></div>
       </div>
@@ -882,31 +917,23 @@ const BOM_IMPORT=[
 // Deliberately left unclassified (no phaseId/categoryId) — Javi classifies each item himself in the dashboard.
 const ORIGINAL_BUDGET_IMPORT=[{name:'(Bouwkundig Inspecteur)',qty:1.0,unitPrice:1073.24,link:'https://www.bouwkeuringvergelijk.nl/zoeken/Amsterdam/390/',notes:'Structural inspection Building Inspector (Bouwkundig Inspecteur) — MANDATORY'},{name:'Asbestreport',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Preliminary simple Layout Kitchen & Bath',qty:1,unitPrice:0,link:'',notes:''},{name:'Preliminary Simple Layout Rooms & Zoning',qty:1,unitPrice:0,link:'',notes:''},{name:'Preliminary simple Layout Electricity',qty:1,unitPrice:0,link:'',notes:''},{name:'Street wokr Permits. (Dumpster/Container)',qty:1,unitPrice:0,link:'',notes:''},{name:'Removing Existing FLoor',qty:1,unitPrice:0,link:'',notes:'Self Made'},{name:'Removing Existing Walls (If necessary!)',qty:1,unitPrice:0,link:'',notes:'Self Made'},{name:'Remove Bathroom & Kitchen',qty:1,unitPrice:0,link:'',notes:'Self Made'},{name:'Rent Container',qty:2.0,unitPrice:600.0,link:'https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten',notes:''},{name:'Tools',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Electric Cbales, Fuses...',qty:1.0,unitPrice:1500.0,link:'',notes:'Heat Pump and Electrical Oven'},{name:'Renovation of (Sockets & Lighting)',qty:1.0,unitPrice:1000.0,link:'',notes:'Optional'},{name:'Water supply & Drainage Pipes installation',qty:1.0,unitPrice:1500.0,link:'',notes:'Bathroom, Kitchen, Heating'},{name:'Tools',qty:1.0,unitPrice:1500.0,link:'',notes:''},{name:'Floor insolation',qty:90.0,unitPrice:16.0,link:'PIR 80mm Isolatieplaat | 2-Zijdig Aluminium (1200x600x80mm) - De Isolatieshop BV',notes:'Rd 4; 90mm Price per sqm'},{name:'Outside Wall Isolation',qty:90.0,unitPrice:15.0,link:'https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2',notes:'Rd 3,6; 80mm Price per sqm'},{name:'Roof Isolation',qty:50.0,unitPrice:15.0,link:'',notes:'Rd 3,6; 80mm Price per sqm'},{name:'Plaster Boards',qty:200.0,unitPrice:6.0,link:'https://www.isolatiemateriaal.nl/p/gipsplaten-3000x600x125mm-ak-180-m2?utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=19643236460&gbraid=0AAAAADxVveE6MjWj_uypRqIlvQYR1V3Tz&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsY9EhYWrdfmXthiXcRAfMbDXsS11dZrooPGwACYXcXZcyXXTE0BQ9YaAk2PEALw_wcB',notes:'Only Boards, not including filler and so on'},{name:'Filler etc',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Extras, Glue, Material',qty:1.0,unitPrice:1500.0,link:'https://www.isolatiemateriaal.nl/purschuim-lijmen/pur-set-de-isolatieshop-purschuim-reiniger-pistool?_gl=1*1aphokc*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAssfLBhBDEiwAcLpwfjIggjyLW2O-2YH6Y_JLK0LEPHJ1t4BPMjXZi7kjU9zDzHPH7mUYLBoCQ7kQAvD_BwE&gbraid=0AAAAADxVveE9-2YaOXFNeaNq8bQMLVYBJ',notes:''},{name:'Heat Pump + 200L Tank',qty:1.0,unitPrice:6664.0,link:'https://klimatime.com/products/lg-5kw-therma-v-r32-split-iwt-air-water-heat-pump-with-200l-tank-hu051mr-hn0913t?variant=49050367787335&country=DE&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOorkKZ3jJSyJ78m1EWcSZOOAAYaGDhqxcoB7uQZrkaHJhPSRKatE4H8',notes:''},{name:'Tools',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Extras, Glue, Material',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'MVHR Unit',qty:1.0,unitPrice:1890.0,link:'https://www.lueftungsland.de/de_DE/p/vent-axia-sentinel-kinetic-advance-einschliesslich-vorwarmer-250-m3-h-rechts/9985/',notes:'List with subside approved ventialtion systems https://www.rvo.nl/onderwerpen/isde/meldcodelijsten/ventilatiesystemen?sortBy=created&sortOrder=DESC'},{name:'Tools Extras, Glue, Material',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'First Step isolation (see phase 1)',qty:1,unitPrice:0,link:'',notes:''},{name:'Underfloor Gips DBs14 system Magnumboard',qty:13.0,unitPrice:104.0,link:'https://www.vloerverwarming-direct.nl/p/25mm-systeem-dbs14-25mm-droogbouw-isolatieplaat-doos-7-50m2?utm_source=google&utm_medium=cpc&utm_campaign=FC_NL_NL_SHOP_PUR_CONV_BESTSELLERSQ424&gad_source=1&gad_campaignid=23277490225&gbraid=0AAAAADyq6tSzGK0p-Qz1Z_ayzduM5FMrQ&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCI5TdsWLuy4TOx0MXfb2rov05WusVCJJl-hNT71ND8DGxH9-P0DmrxoCZigQAvD_BwE',notes:'For 100 sqm. Each panel 7,5 sqm'},{name:'Mega plate',qty:130.0,unitPrice:3.0,link:'https://www.vloerverwarming-direct.nl/p/omega-profielen-dbs14-aluminium-1000mm-x-120mm?_gl=1*1qo18i4*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCI5TdsWLuy4TOx0MXfb2rov05WusVCJJl-hNT71ND8DGxH9-P0DmrxoCZigQAvD_BwE&gbraid=0AAAAADyq6tSzGK0p-Qz1Z_ayzduM5FMrQ',notes:''},{name:'Pipe Line',qty:1.0,unitPrice:120.0,link:'https://www.elektramat.nl/magnum-universele-vloerverwarmingsbuis-5-laags-pe-rt-12x1-5-mm-komo-rol-van-300-meter-w12300/?_gl=1*vzoi6e*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCBs8Y9yGXBhhHVSntySiLKJplta7KHBoAmdkODIcKErmgF2gyayIlRoCf5gQAvD_BwE&gbraid=0AAAAAD5RVIdmMMQMn-aP_0pVJhxKtk9-4',notes:''},{name:'Adaptor',qty:16.0,unitPrice:3.23,link:'https://www.elektramat.nl/magnum-adaptor-euroconus-aansluitkoppeling-12x1-5mm-x-3-4-2-stuks-w90012/?_gl=1*vzoi6e*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCBs8Y9yGXBhhHVSntySiLKJplta7KHBoAmdkODIcKErmgF2gyayIlRoCf5gQAvD_BwE&gbraid=0AAAAAD5RVIdmMMQMn-aP_0pVJhxKtk9-4',notes:''},{name:'Manifold + Pump',qty:1.0,unitPrice:421.0,link:'https://www.elektramat.nl/magnum-basic-staal-vloerverwarming-verdeler-5-groeps-incl-a-label-pomp-w40005/?_gl=1*1ytr542*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCBs8Y9yGXBhhHVSntySiLKJplta7KHBoAmdkODIcKErmgF2gyayIlRoCf5gQAvD_BwE&gbraid=0AAAAAD5RVIdmMMQMn-aP_0pVJhxKtk9-4',notes:''},{name:'Tools Extras, Glue, Material',qty:1.0,unitPrice:1500.0,link:'',notes:''},{name:'Floor',qty:1.0,unitPrice:5000.0,link:'https://www.berlin-parkett.de/Forbo-Marmoleum-Walton-Linoleum-3369-titanium',notes:''},{name:'Tools Extras, Glue, Material',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'First Step isolation (see phase 1)',qty:1,unitPrice:0,link:'',notes:''},{name:'Tales',qty:20.0,unitPrice:50.0,link:'https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html',notes:'20 sqm'},{name:'Ligbadde',qty:1.0,unitPrice:400.0,link:'https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html',notes:''},{name:'Toilette',qty:2.0,unitPrice:325.0,link:'https://sanitairkamer.nl/sanigoods-andes-toiletset-met-saniclear-itsie-randloos-toilet-wit-glans-sk101869.html',notes:''},{name:'Shower',qty:1.0,unitPrice:1000.0,link:'https://www.hornbach.nl/p/qboard-liquid-douche-element-1200x900x40-mm/12234114/?wt_mc=nl.paid.sea.google.alwayson_lia.bau.product.14491879814.166764485654.&gad_source=1&gad_campaignid=14491879814&gbraid=0AAAAADkpB3U45h96YcoypAE_4EDR9ZBaT&gclid=CjwKCAiAnoXNBhAZEiwAnItcG3pALPp1YK6XH59YEERUyQk_RwT_IVk1TSdxU9aGdSX7CQDpC9MI9hoC_WAQAvD_BwE',notes:''},{name:'Gips',qty:20.0,unitPrice:18.59,link:'',notes:''},{name:'Teller',qty:1.0,unitPrice:300.0,link:'https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html?id_c=573327',notes:''},{name:'Kran small toilet',qty:1.0,unitPrice:284.0,link:'https://sanitairkamer.nl/fontana-alaska-toiletmeubel-mat-zwart-40x22cm-met-solid-surface-fontein-links-sk79995.html',notes:''},{name:'Kran big toilet',qty:1.0,unitPrice:384.0,link:'https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html',notes:''},{name:'Bathtub cornelis',qty:1.0,unitPrice:400.0,link:'https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/',notes:''},{name:'Water Pipe Cold & Hot',qty:2.0,unitPrice:133.0,link:'https://www.warmteservice.nl/Installatiemateriaal/Leidingsystemen/Meerlagenbuis/Henco-Alupex-meerlagenbuis-met-mantel-blauw/p/48670334',notes:''},{name:'Water Pipe Fittings (Perskoppeling)',qty:20.0,unitPrice:6.8,link:'https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710?gclsrc=aw.ds&&ctgaid=Cj0KCQjwornRBhCrARIsAON5exFj4VCnUqBHw0roTKBaeNJNL28aEthbBmKxOCiopf0yKnrokqtDASoaAlTbEALw_wcB&gad_source=1&gad_campaignid=21086553268&gbraid=0AAAAADgSUFUJ9W0vhWx8lA-9_7VBL3Lom&gclid=Cj0KCQjwornRBhCrARIsAON5exFj4VCnUqBHw0roTKBaeNJNL28aEthbBmKxOCiopf0yKnrokqtDASoaAlTbEALw_wcB',notes:''},{name:'Persstange',qty:1,unitPrice:0,link:'',notes:''},{name:'Tools Extras, Glue, Material',qty:1.0,unitPrice:2000.0,link:'',notes:''},{name:'Iduction Plate',qty:1.0,unitPrice:900.0,link:'https://www.elektroshopwagner.de/de/p/326929?utm_campaign=froogle_326929&utm_source=froogle&utm_medium=CPC&utm_content=textanzeige&campaign=froogle&gad_source=1&gad_campaignid=22319801995&gbraid=0AAAAAD_RZfyFbl5ea0h2s_mgLX8E1cQc-&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsbvw5Qmv4ZYwgtHhil7DFl6Sos7U7O7oLUwbf1CMZOP4Y0toYoi0EoaAoQ3EALw_wcB',notes:''},{name:'Oven',qty:1.0,unitPrice:629.0,link:'https://www.bemmelenkroon.nl/merken/siemens/hb272abb3-sies/?gad_source=1&gad_campaignid=215085475&gbraid=0AAAAADtnj80Q04PEH76MuMrO63MHHwykZ&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsZkxT7qtX4hFHJNteh_-oVYJBFXx5SKZlmQtMhj8M9GbWWNIj9lLXUaAnFBEALw_wcB',notes:''},{name:'Spoelbak',qty:1.0,unitPrice:338.0,link:'https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html',notes:''},{name:'Fridge',qty:1.0,unitPrice:600.0,link:'https://www.mediamarkt.nl/nl/product/_samsung-rb34c600csaef-1762331.html?utm_source=google&utm_medium=cpc&utm_campaign=rt_shopping_generic_sp_nl-W8-9-MDA-Samsung-IBTNG-2026&utm_term=&utm_content=&utm_content=TCID23571866157-TAID197259997630&gad_source=1&gad_campaignid=23571866157&gbraid=0AAAAADoGBO6h4uKdtVlIEUgNM9-eH1RQA&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsYUvjU-9EXl5x1mOLzmasE89xl2Fx4JqExEpTGtB2GezUyGyi8AhgYaAlXHEALw_wcB',notes:''},{name:'Forniture',qty:1.0,unitPrice:5000.0,link:'',notes:''},{name:'Tools Extras, Glue, Material',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Paint',qty:3.0,unitPrice:79.0,link:'https://www.verfwinkel.nl/powerdek-muren-plafonds-muurverf-wit.html?channable=02c96b696400333634353267&select=VW-FL1011.10&utm_source=google&utm_medium=cpc&utm_campaign={campaignname}&utm_id=22495205671&utm_term=&utm_content=749693406602&utm_source_platform=Google+Ads&gad_source=1&gad_campaignid=22495205671&gbraid=0AAAAADhCR3MgDW7x3qxfXShsSZ65bzkVt&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsZnj-nylLtkeaLYMuMKliz1s6cQ1flf05Ux9eCIHXjhZKBt_muTlxAaAsH3EALw_wcB',notes:'for 235m2 wall. 1L= 10m2; aprox 30 L'},{name:'Tools Extras',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Bouwtekening',qty:1.0,unitPrice:2000.0,link:'',notes:''},{name:'Excavation',qty:3.0,unitPrice:79.0,link:'',notes:'Price per day/ + Transport'},{name:'Cement',qty:1.0,unitPrice:1100.0,link:'https://www.betonstorten.nl/offerte-aanvragen',notes:'2 m3. with pump'},{name:'Fundieeringbekisting',qty:1.0,unitPrice:500.0,link:'https://www.bouwbestel.nl/funderingsbekisting-piepschuim-tempex.html',notes:'3,5x3,5x4,7 m =  12m'},{name:'Wapeningskorf',qty:1.0,unitPrice:300.0,link:'',notes:'12m'},{name:'OSB 2440x1220x11 mm',qty:30.0,unitPrice:16.9,link:'',notes:'10 for fundiereingbekisting,  7 for dak(), 12 for walls(35m")'},{name:'Extra wood + screws...',qty:1.0,unitPrice:1000.0,link:'',notes:''},{name:'Windows / Schuifpuien',qty:1.0,unitPrice:6000.0,link:'https://www.toeleveringonline.nl/product/2-delige-schuifpui-aluminium/?s=ventilation&w=m84w4000h2400p116jt0pc1469wc2112s2114sl0gt1025gi271gl324rt0rd0%7Ecp377cg2046c2109-x0y0w3868h2268f317dh0gr0ho0kac0mb0o1sd1who0wso0%7Ecp1566cg2298c4815%7Ecp396cg2046c2106.v1.v1',notes:'3,6x2,4 3 windows all open'},{name:'EPDM Folie',qty:1.0,unitPrice:400.0,link:'https://mein-dach24.de/epdm-dachfolie-1-5mm-457#',notes:'1,5 mm 4mx4,5m'},{name:'Kleber',qty:1.0,unitPrice:120.0,link:'',notes:''},{name:'Gullys',qty:2.0,unitPrice:40.0,link:'https://mein-dach24.de/EPDM-Dachgully?_gl=1*1510go*_up*MQ..*_ga*MTI0NzY2NzAzNi4xNzgxMzczOTc4*_ga_8GN11EHM1V*czE3ODEzNzM5NzgkbzEkZzEkdDE3ODEzNzQxMzUkajYwJGwwJGgxNDc3NzY2MTI3',notes:''},{name:'Extras',qty:1.0,unitPrice:300.0,link:'',notes:''},{name:'Tools Extras',qty:1.0,unitPrice:0,link:'',notes:''},{name:'MVHR',qty:1.0,unitPrice:-400.0,link:'',notes:'One time for following products https://www.rvo.nl/onderwerpen/isde/meldcodelijsten/ventilatiesystemen?sortBy=created&sortOrder=DESC'},{name:'Heatpump',qty:1.0,unitPrice:-2500.0,link:'',notes:'5kwh Air to Water. ISDe Subsidie https://www.rvo.nl/subsidies-financiering/isde/woningeigenaren/isolatiemaatregelen#voorwaarden-isolatie'},{name:'Isolation Floor 40sqm2',qty:1.0,unitPrice:-610.0,link:'',notes:'40 sqm @ 14/m2 subsidie ISDE Subsidie'},{name:'Wall Isoation 50sqm2',qty:1.0,unitPrice:-1250.0,link:'',notes:'50m2 @ 25/m2 subsidie ISDE Subsidie'},{name:'Roof 60sqm2',qty:1.0,unitPrice:-1500.0,link:'',notes:'60m2 @ 25/m2 subsidie ISDE Subsidie'},{name:'Isolation gemeende Subsidie',qty:1.0,unitPrice:-2500.0,link:'',notes:'Gemeende Subside Amsterdam. APPLY FIRST THEN DO THE WORK!'},{name:'Solar Panels',qty:1.0,unitPrice:0.0,link:'',notes:'NO BTW'},{name:'Rene',qty:1.0,unitPrice:25000.0,link:'',notes:'Rene works per project'},{name:'Kevin',qty:120.0,unitPrice:55.0,link:'',notes:'Kevin wokrs per hour. calculation based on 6 weeks @ 37h/week  = 230 hours'},{name:'Plaster Quotation Stuc-Concurrent b.v',qty:1.0,unitPrice:2637.8,link:'',notes:'90sqm Wanden + 40sqm Celing. Work + Materials. ink BTW  https://www.stuc-concurrent.nl/'},{name:'Stairs',qty:1.0,unitPrice:0,link:'',notes:''},{name:'Tischkreissäge',qty:1.0,unitPrice:0,link:'',notes:'HBM'},{name:'Muurfeess',qty:1.0,unitPrice:0,link:'https://www.praxis.nl/gereedschap-werkplaats/elektrisch-gereedschap/freesmachines/sleuvenfrezen/vonroc-muurfrees-sleufmachine-1700w-150mm-incl-1-stuks-diamantschijven-opbergtas/10137637?channable=02490e6964003130313337363337a3&gad=Cj0KCQjwornRBhCrARIsAON5exHFnF2BDRPq_D74vq-yb2bLoHo1uZrSNNvKMDpyFVgO8Ja_c_WUMK0aAkbAEALw_wcB&utm_source=google&utm_medium=cpc_btl&utm_campaign=SHOP%20%7C%20Marketplace%20%7C%20Low%20Margin&utm_id=23683097657&gad_source=1&gad_campaignid=23683097657&gclid=Cj0KCQjwornRBhCrARIsAON5exHFnF2BDRPq_D74vq-yb2bLoHo1uZrSNNvKMDpyFVgO8Ja_c_WUMK0aAkbAEALw_wcB',notes:'Praxis'},{name:'Säbelsäge',qty:1.0,unitPrice:0,link:'',notes:''},{name:'Nailgun',qty:1.0,unitPrice:0,link:'',notes:''},{name:'HBM ALL Tools',qty:1.0,unitPrice:1100.0,link:'https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max?sku=10924&utm_source=google&utm_medium=cpc&utm_campaign=18574139443&utm_content=bouw&kb=ga_pm_18574139443_&gad_source=1&gad_campaignid=18576853373&gclid=Cj0KCQjw_7PRBhDcARIsAMjV7jnZ_xOvSVfIX9tCRYXPBxjT50DM7EXjGoguEiDASApAGd5--XMOjVMaAkeoEALw_wcB',notes:'HBM'},{name:'Bohrer Ryobi',qty:1.0,unitPrice:100.0,link:'https://nl.ryobitools.eu/elektrisch-gereedschap/boormachines-schroevendraaiers/slagschroevendraaiers/',notes:''}];
 
-// ===================== FIREBASE CONFIG =====================
-// 👇 Paste your Firebase config here (from console.firebase.google.com → your project → Project settings → Web app)
-const FIREBASE_CONFIG = {
-  apiKey:            "AIzaSyALZwfxD0FW_yTdmlY_vVCmUJsgI2T-JYc",
-  authDomain:        "hr-nido.firebaseapp.com",
-  projectId:         "hr-nido",
-  storageBucket:     "hr-nido.firebasestorage.app",
-  messagingSenderId: "294762210981",
-  appId:             "1:294762210981:web:78bbef2bbbc4a88235cf4c"
-};
-// ==========================================================
-
-let _db = null;
-let _cloudSaveTimer = null;
+// ===================== GITHUB SYNC =====================
+let _ghToken = localStorage.getItem('gh_sync_token') || '';
+let _ghDataSha = null;
+let _ghSaveTimer = null;
+let _ghPushing = false;
 
 function _setCloudStatus(status){
   const el = document.getElementById('cloud-status');
   if(!el) return;
   const cfg = {
     off:        {dot:'#CBD5E1', text:''},
-    connecting: {dot:'#94A3B8', text:'Connecting…'},
-    synced:     {dot:'#16A34A', text:'Synced ✓'},
-    saving:     {dot:'#2563EB', text:'Saving…'},
-    newer:      {dot:'#D97706', text:'Updated ↺'},
-    error:      {dot:'#DC2626', text:'Offline ⚠'}
+    connecting: {dot:'#94A3B8', text:'Connecting...'},
+    synced:     {dot:'#16A34A', text:'Synced'},
+    saving:     {dot:'#2563EB', text:'Saving...'},
+    newer:      {dot:'#D97706', text:'Updated'},
+    error:      {dot:'#DC2626', text:'Error'},
+    notoken:    {dot:'#F59E0B', text:'No token'},
   };
   const s = cfg[status] || cfg.off;
   el.innerHTML = s.text
@@ -914,58 +941,147 @@ function _setCloudStatus(status){
     : '';
 }
 
-function _cloudSave(){
-  if(!_db) return;
-  clearTimeout(_cloudSaveTimer);
+const GH_REPO = 'JaviLif/reno-dashboard';
+const GH_DATA_FILE = 'data.json';
+const GH_DOCS_PATH = 'quotes/';
+
+async function _ghGetDataSha(){
+  if(!_ghToken) return null;
+  try{
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_DATA_FILE}`,
+      {headers:{Authorization:`token ${_ghToken}`,Accept:'application/vnd.github.v3+json'}});
+    if(r.ok){ const d=await r.json(); return d.sha||null; }
+  }catch{}
+  return null;
+}
+
+async function _ghLoadData(){
+  try{
+    if(_ghToken){
+      const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_DATA_FILE}`,
+        {headers:{Authorization:`token ${_ghToken}`,Accept:'application/vnd.github.v3+json'}});
+      if(!r.ok) throw new Error('api error');
+      const meta = await r.json();
+      _ghDataSha = meta.sha;
+      return JSON.parse(atob(meta.content.replace(/\n/g,'')));
+    } else {
+      const url = `https://raw.githubusercontent.com/${GH_REPO}/main/${GH_DATA_FILE}?t=${Date.now()}`;
+      const r = await fetch(url);
+      if(!r.ok) throw new Error('not found');
+      return await r.json();
+    }
+  }catch{ return null; }
+}
+
+async function _ghPushData(msg){
+  if(!_ghToken || _ghPushing) return false;
+  _ghPushing = true;
+  try{
+    if(!_ghDataSha) _ghDataSha = await _ghGetDataSha();
+    const json = JSON.stringify(S, null, 2);
+    const content = btoa(unescape(encodeURIComponent(json)));
+    const body = {message: msg||`Sync: ${new Date().toISOString().slice(0,16).replace('T',' ')}`, content};
+    if(_ghDataSha) body.sha = _ghDataSha;
+    const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_DATA_FILE}`, {
+      method:'PUT',
+      headers:{Authorization:`token ${_ghToken}`,'Content-Type':'application/json',Accept:'application/vnd.github.v3+json'},
+      body:JSON.stringify(body)
+    });
+    if(r.ok){ const d=await r.json(); _ghDataSha=d.content?.sha; return true; }
+    if(r.status===409){ _ghDataSha=await _ghGetDataSha(); }
+    return false;
+  }catch{ return false; }
+  finally{ _ghPushing=false; }
+}
+
+function _ghSave(){
+  if(!_ghToken){ _setCloudStatus('notoken'); return; }
+  clearTimeout(_ghSaveTimer);
   _setCloudStatus('saving');
-  _cloudSaveTimer = setTimeout(()=>{
-    _db.collection('reno').doc('v4').set(S)
-      .then(()=>_setCloudStatus('synced'))
-      .catch(e=>{ console.warn('Cloud save failed:',e); _setCloudStatus('error'); });
+  _ghSaveTimer = setTimeout(async ()=>{
+    const ok = await _ghPushData();
+    _setCloudStatus(ok?'synced':'error');
   }, 1500);
 }
 
-function initCloud(){
-  if(!FIREBASE_CONFIG.projectId){ _setCloudStatus('off'); return; }
-  try{
-    if(!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
-    _db = firebase.firestore();
-    _setCloudStatus('connecting');
-    // Detect if this browser has ever saved local data for this origin
-    const _hadLocalData = !!localStorage.getItem('reno_v4');
-    _db.collection('reno').doc('v4').get().then(doc=>{
-      if(!doc.exists){
-        // First launch with cloud: push local data up
-        S._savedAt = Date.now();
-        localStorage.setItem('reno_v4', JSON.stringify(S));
-        return _db.collection('reno').doc('v4').set(S)
-          .then(()=>_setCloudStatus('synced'))
-          .catch(e=>{ console.warn('First cloud push failed:',e); _setCloudStatus('error'); });
-      }
-      const cloudData = doc.data();
-      const cloudTs = cloudData._savedAt || 0;
-      const localTs = S._savedAt  || 0;
-      const localEmpty = !_hadLocalData || (S.items||[]).length === 0;
-      const cloudHasData = (cloudData.items||[]).length > 0;
-      // Pull from cloud if: no local data, OR cloud is meaningfully newer, OR local is empty but cloud has data
-      if(!_hadLocalData || cloudTs > localTs + 5000 || (localEmpty && cloudHasData)){
-        S = migrateState(cloudData);
-        localStorage.setItem('reno_v4', JSON.stringify(S));
-        refreshAll();
-        _setCloudStatus('newer');
-        setTimeout(()=>_setCloudStatus('synced'), 3000);
-      } else if(localTs > cloudTs){
-        // Local is newer — push to cloud
-        return _db.collection('reno').doc('v4').set(S)
-          .then(()=>_setCloudStatus('synced'))
-          .catch(e=>{ console.warn('Cloud push failed:',e); _setCloudStatus('error'); });
-      } else {
-        _setCloudStatus('synced');
-      }
-    }).catch(e=>{ console.warn('Cloud connect failed:',e); _setCloudStatus('error'); });
-  }catch(e){ console.warn('Firebase init failed:',e); _setCloudStatus('error'); }
+async function _ghSaveImmediate(){
+  if(!_ghToken) return;
+  clearTimeout(_ghSaveTimer);
+  _setCloudStatus('saving');
+  const ok = await _ghPushData();
+  _setCloudStatus(ok?'synced':'error');
 }
-// ===========================================================
+
+async function _ghInit(){
+  if(!_ghToken){ _setCloudStatus('notoken'); return; }
+  _setCloudStatus('connecting');
+  const remoteData = await _ghLoadData();
+  if(!remoteData){ _setCloudStatus('error'); return; }
+  const remoteTs = remoteData._savedAt || 0;
+  const localTs = S._savedAt || 0;
+  const localEmpty = (S.items||[]).length === 0;
+  const remoteHasData = (remoteData.items||[]).length > 0;
+  const _hadLocalData = !!localStorage.getItem('reno_v4');
+  if(!_hadLocalData || remoteTs > localTs + 5000 || (localEmpty && remoteHasData)){
+    S = migrateState(remoteData);
+    localStorage.setItem('reno_v4', JSON.stringify(S));
+    refreshAll();
+    _setCloudStatus('newer');
+    setTimeout(()=>_setCloudStatus('synced'), 3000);
+  } else if(localTs > remoteTs + 5000){
+    const ok = await _ghPushData('Sync: local newer on startup');
+    _setCloudStatus(ok?'synced':'error');
+  } else {
+    _setCloudStatus('synced');
+  }
+}
+
+async function _ghUploadFile(file){
+  if(!_ghToken){ alert('Connect your GitHub token in Settings first.'); return null; }
+  return new Promise(resolve=>{
+    const reader = new FileReader();
+    reader.onload = async (e)=>{
+      try{
+        const bytes = new Uint8Array(e.target.result);
+        let binary=''; bytes.forEach(b=>{ binary+=String.fromCharCode(b); });
+        const base64 = btoa(binary);
+        const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+        const path = GH_DOCS_PATH + safeName;
+        let existingSha = null;
+        try{
+          const check = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${path}`,
+            {headers:{Authorization:`token ${_ghToken}`,Accept:'application/vnd.github.v3+json'}});
+          if(check.ok){ const d=await check.json(); existingSha=d.sha; }
+        }catch{}
+        const body = {message:`Add document: ${safeName}`, content: base64};
+        if(existingSha) body.sha = existingSha;
+        const r = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${path}`,{
+          method:'PUT',
+          headers:{Authorization:`token ${_ghToken}`,'Content-Type':'application/json',Accept:'application/vnd.github.v3+json'},
+          body:JSON.stringify(body)
+        });
+        if(r.ok) resolve(path); else { console.warn('Upload failed'); resolve(null); }
+      }catch(err){ console.warn('Upload error:',err); resolve(null); }
+    };
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+function _ghFileUrl(path){ return `https://raw.githubusercontent.com/${GH_REPO}/main/${path}`; }
+
+function ghSaveToken(){
+  const input=document.getElementById('gh-token-input');
+  const val=(input?.value||'').trim();
+  if(!val){ alert('Enter a token first.'); return; }
+  _ghToken=val; localStorage.setItem('gh_sync_token',val);
+  input.value=''; _ghInit();
+}
+function ghClearToken(){
+  if(!confirm('Disconnect GitHub sync? Your data stays in localStorage.')) return;
+  _ghToken=''; localStorage.removeItem('gh_sync_token'); _setCloudStatus('notoken');
+}
+function ghOpenHistory(){ window.open(`https://github.com/${GH_REPO}/commits/main/${GH_DATA_FILE}`,'_blank'); }
+
 
 // ===================== STATE =====================
 let S = loadState();
@@ -1079,7 +1195,7 @@ function loadState(){
 function saveState(){
   S._savedAt = Date.now();
   localStorage.setItem('reno_v4', JSON.stringify(S));
-  _cloudSave();
+  _ghSave();
 }
 
 // ===================== UTILS =====================
@@ -1337,7 +1453,7 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
     if(btn.dataset.tab==='timeline') renderGantt();
     if(btn.dataset.tab==='tasks') renderTasksTab();
     if(btn.dataset.tab==='budget') renderBudget();
-    if(btn.dataset.tab==='items') renderItems();
+    if(btn.dataset.tab==='items'){ renderItems(); renderBomSidebar(); }
     if(btn.dataset.tab==='calendar') renderCalendar();
     if(btn.dataset.tab==='settings') renderSettings();
   });
@@ -2131,14 +2247,18 @@ function deleteOrderInline(itemId,oid){
 
 function documentsPanelHtml(it){
   const docs=it.documents||[];
-  const rows=docs.map(d=>`
+  const rows=docs.map(d=>{
+    const url = d.ghPath ? _ghFileUrl(d.ghPath) : (d.dataUrl||'#');
+    const dlAttr = d.ghPath ? 'target="_blank" rel="noopener"' : `download="${escapeAttr(d.name)}"`;
+    return `
     <div class="cat-row" style="gap:8px">
       <span style="font-size:14px">📄</span>
-      <a href="${d.dataUrl}" download="${escapeAttr(d.name)}" style="flex:1;font-size:12px;color:var(--pri);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeAttr(d.name)}">${escapeAttr(d.name)}</a>
+      <a href="${url}" ${dlAttr} style="flex:1;font-size:12px;color:var(--pri);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escapeAttr(d.name)}">${escapeAttr(d.name)}</a>
       <span class="muted" style="font-size:11px">${d.size?Math.round(d.size/1024)+' KB':''}</span>
       <span class="muted" style="font-size:11px">${fmtDate(d.uploadedDate)}</span>
       <button class="btn btn-ghost btn-icon btn-sm" onclick="deleteDocumentInline(${it.id},${d.id})" title="Delete document">×</button>
-    </div>`).join('');
+    </div>`;
+  }).join('');
   return `<div style="margin-bottom:14px">
     <div class="flex" style="justify-content:space-between;margin-bottom:6px">
       <span class="fw6" style="font-size:12px">Documents</span>
@@ -2147,18 +2267,27 @@ function documentsPanelHtml(it){
     ${rows||'<div class="empty" style="padding:8px;font-size:12px">No documents yet</div>'}
   </div>`;
 }
-function handleDocumentUpload(event,itemId){
+async function handleDocumentUpload(event,itemId){
   const file=event.target.files&&event.target.files[0];
   if(!file) return;
   const it=itemById(itemId); if(!it) return;
+  if(!Array.isArray(it.documents)) it.documents=[];
+  if(_ghToken){
+    const ghPath = await _ghUploadFile(file);
+    if(ghPath){
+      it.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,ghPath,uploadedDate:new Date().toISOString().slice(0,10)});
+      saveState(); renderItems(); return;
+    }
+  }
+  // Fallback: store as base64 if no token or upload failed
   const reader=new FileReader();
   reader.onload=()=>{
-    if(!Array.isArray(it.documents)) it.documents=[];
     it.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,dataUrl:reader.result,uploadedDate:new Date().toISOString().slice(0,10)});
     saveState(); renderItems();
   };
   reader.readAsDataURL(file);
 }
+
 function deleteDocumentInline(itemId,docId){
   const it=itemById(itemId); if(!it) return;
   if(!confirm('Delete this document?')) return;
@@ -2311,8 +2440,53 @@ function itemRowHtml(it,idx){
   return html;
 }
 
+function _bomSetPhase(id){
+  _bomPhaseId=id;
+  C('it-filter-cat').value='';
+  C('it-filter-status').value='';
+  renderItems();
+}
+function _bomSetCat(id){
+  _bomPhaseId=null;
+  C('it-filter-cat').value=id;
+  C('it-filter-status').value='';
+  renderItems();
+}
+function renderBomSidebar(){
+  const sb=C('bom-sidebar'); if(!sb) return;
+  const activeCat=C('it-filter-cat').value;
+  const tops=topPhases();
+  let html=`<div class="bom-sb-sec">Phases</div>`;
+  html+=`<div class="bom-sb-item${_bomPhaseId===null&&!activeCat?' active':''}" onclick="_bomSetPhase(null)">
+    <span class="bom-sb-dot" style="background:#94A3B8"></span>All
+  </div>`;
+  tops.forEach(tp=>{
+    const clr=tp.color||'#94A3B8';
+    html+=`<div class="bom-sb-item${_bomPhaseId===tp.id?' active':''}" onclick="_bomSetPhase(${tp.id})">
+      <span class="bom-sb-dot" style="background:${clr}"></span>${tp.number?tp.number+' ':''}${tp.name}
+    </div>`;
+    childrenOf(tp.id).forEach(k=>{
+      html+=`<div class="bom-sb-item child${_bomPhaseId===k.id?' active':''}" onclick="_bomSetPhase(${k.id})">
+        <span class="bom-sb-dot" style="background:${k.color||clr}"></span>${k.number?k.number+' ':''}${k.name}
+      </div>`;
+    });
+  });
+  html+=`<div class="bom-sb-sec" style="margin-top:10px">Categories</div>`;
+  S.categories.forEach(c=>{
+    const cnt=S.items.filter(it=>it.categoryId===c.id).length;
+    const isActive=activeCat===String(c.id);
+    html+=`<div class="bom-sb-item${isActive?' active':''}" style="justify-content:space-between" onclick="_bomSetCat('${c.id}')">
+      <div style="display:flex;align-items:center;gap:7px">
+        <span class="bom-sb-dot" style="background:${c.color||'#94A3B8'}"></span>${c.name}
+      </div>
+      <span style="font-size:10px;color:var(--g400)">${cnt}</span>
+    </div>`;
+  });
+  sb.innerHTML=html;
+}
+
 function renderItems(){
-  const fPhase=C('it-filter-phase').value;
+  const fPhase=_bomPhaseId?String(_bomPhaseId):'';
   const fCat=C('it-filter-cat').value;
   const fStatus=C('it-filter-status').value;
 
@@ -2352,17 +2526,23 @@ function renderItems(){
   if(fCat) items=items.filter(it=>it.categoryId===Number(fCat));
   if(fStatus) items=items.filter(it=>itemStatus(it).key===fStatus);
 
-  // Group by phase when no explicit sort and no phase filter active
+  // Group by phase whenever no phase filter active (always, even when sorted)
   let bodyHtml='';
   const cols=visibleColumnOrder();
-  if(!itemsUI.sortKey && !fPhase && items.length){
-    // Sort by phase order, then reverse-id within each phase
+  if(!fPhase && items.length){
+    // Sort by phase order first, then by sortKey within each phase
     const phOrder=[];
     const addPh=p=>{phOrder.push(p.id);childrenOf(p.id).forEach(c=>addPh(c));};
     topPhases().forEach(tp=>addPh(tp));
     items.sort((a,b)=>{
       const oa=phOrder.indexOf(a.phaseId),ob=phOrder.indexOf(b.phaseId);
       if(oa!==ob) return oa-ob;
+      if(itemsUI.sortKey){
+        const va=itemSortValue(a,itemsUI.sortKey),vb=itemSortValue(b,itemsUI.sortKey);
+        let cmp=typeof va==='number'&&typeof vb==='number'?va-vb:String(va).localeCompare(String(vb),undefined,{numeric:true,sensitivity:'base'});
+        if(cmp===0) cmp=b.id-a.id;
+        return itemsUI.sortDir==='asc'?cmp:-cmp;
+      }
       return b.id-a.id;
     });
     let lastPhId=null; let gIdx=0;
@@ -2372,20 +2552,15 @@ function renderItems(){
         const ph=phaseById(it.phaseId);
         const phItems=items.filter(x=>x.phaseId===it.phaseId);
         const phPlan=phItems.reduce((s,x)=>s+itemBudget(x),0);
-        const phAct=phItems.reduce((s,x)=>s+itemNetSpent(x),0);
+        const phTaskCount=S.tasks.filter(t=>t.phaseId===it.phaseId).length;
         const clr=ph?.color||'#94A3B8';
         bodyHtml+=`<tr style="background:${clr}18;border-top:2px solid ${clr}55;user-select:none">
-          <td colspan="${cols.length+3}" style="padding:7px 14px 5px">
-            <div class="flex" style="justify-content:space-between;align-items:center">
-              <div class="flex" style="gap:7px;align-items:center">
-                <span style="width:9px;height:9px;border-radius:50%;background:${clr};flex-shrink:0"></span>
-                <span style="font-size:12px;font-weight:700;color:var(--g700);letter-spacing:-.01em">${ph?.number?ph.number+' ':''}${ph?.name||'Unassigned'}</span>
-                <span style="font-size:11px;color:var(--g400)">${phItems.length} item${phItems.length!==1?'s':''}</span>
-              </div>
-              <div class="flex" style="gap:20px;font-size:12px;color:var(--g500)">
-                <span>Budget <strong style="color:var(--g700)">${fmt(phPlan)}</strong></span>
-                <span>Actual <strong style="color:var(--g700)">${fmt(phAct)}</strong></span>
-              </div>
+          <td colspan="${cols.length+3}" style="padding:6px 14px">
+            <div class="flex" style="align-items:center;gap:10px">
+              <span style="width:9px;height:9px;border-radius:50%;background:${clr};flex-shrink:0"></span>
+              <span style="font-size:12px;font-weight:700;color:var(--g700);letter-spacing:-.01em">${ph?.number?ph.number+' — ':'— '}${ph?.name||'Unassigned'}</span>
+              <span style="font-size:11px;color:var(--g500)">&#128230; ${phItems.length} BOM &middot; ${fmt(phPlan)}</span>
+              ${phTaskCount?`<span style="font-size:11px;color:var(--g500)">&middot; &#128203; ${phTaskCount} task${phTaskCount!==1?'s':''}</span>`:''}
             </div>
           </td>
         </tr>`;
@@ -2401,7 +2576,18 @@ function renderItems(){
 
   const subBudget=items.reduce((a,it)=>a+itemBudget(it),0);
   const subSpent=items.reduce((a,it)=>a+itemNetSpent(it),0);
-  C('items-total').innerHTML=`<span style="font-weight:400;font-size:12px;color:var(--g400)">${items.length} item${items.length!==1?'s':''}</span><span>Total: ${fmt(subBudget)}</span><span>Net Spent: ${fmt(subSpent)}</span>`;
+  const allBomTotal=S.items.reduce((a,it)=>a+itemBudget(it),0);
+  const allSpent=S.items.reduce((a,it)=>a+itemNetSpent(it),0);
+  const phLabel=_bomPhaseId?(phaseById(_bomPhaseId)?.name||'Phase'):'All phases';
+  const bomFt=C('bom-footer');
+  if(bomFt) bomFt.innerHTML=
+    `<div class="bom-ft-block"><span class="bom-ft-lbl">BOM Total</span><span class="bom-ft-val">${fmt(allBomTotal)}</span></div>`+
+    `<div class="bom-ft-block"><span class="bom-ft-lbl">Items</span><span class="bom-ft-val-n">${S.items.length}</span></div>`+
+    `<div class="bom-ft-block"><span class="bom-ft-lbl">Showing</span><span class="bom-ft-val-n">${items.length}</span></div>`+
+    `<div class="bom-ft-block"><span class="bom-ft-lbl">Actual spent</span><span class="bom-ft-val-n">${fmt(allSpent)}</span></div>`+
+    `<div class="bom-ft-block"><span class="bom-ft-lbl">Remaining</span><span class="bom-ft-val">${fmt(allBomTotal-allSpent)}</span></div>`+
+    `<span style="font-size:11px;color:var(--g400);margin-left:auto;padding:0 14px;flex-shrink:0">${phLabel}</span>`;
+  renderBomSidebar();
 }
 
 // ===================== CALENDAR =====================
@@ -2896,6 +3082,7 @@ function deleteTask(){
   refreshAll();
 }
 let _kanbanPhaseId = null; // null = All phases
+let _bomPhaseId    = null; // null = All phases (BOM sidebar filter)
 let _taskView = 'kanban';  // 'kanban' | 'gantt'
 let _calView  = 'month';   // 'month'  | 'gantt'
 let ganttZoom     = 1;      // timeline phase Gantt zoom multiplier
@@ -3214,14 +3401,7 @@ function clearItemsAndTasks(){
   S.tasks=[];
   S._savedAt=Date.now();
   localStorage.setItem('reno_v4',JSON.stringify(S));
-  // Immediate Firestore write (not debounced) so a quick refresh doesn't pull stale cloud data back
-  if(_db){
-    clearTimeout(_cloudSaveTimer);
-    _setCloudStatus('saving');
-    _db.collection('reno').doc('v4').set(S)
-      .then(()=>_setCloudStatus('synced'))
-      .catch(e=>{ console.warn('Cloud save failed:',e); _setCloudStatus('error'); });
-  }
+  _ghSaveImmediate();
   refreshAll();
   alert('Done — items and tasks cleared.');
 }
@@ -3288,7 +3468,7 @@ function refreshAll(){
 // INIT
 renderDashboard();
 renderItems();
-initCloud(); // connect to Firebase after first render (non-blocking)
+_ghInit(); // connect to GitHub after first render
 </script>
 </body>
 </html>
