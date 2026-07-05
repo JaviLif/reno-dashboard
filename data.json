@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783270948440,
+  "_savedAt": 1783273880498,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1926,10 +1926,10 @@
       "end": "2026-03-31"
     },
     {
-      "color": "#2563EB",
+      "color": "#2563eb",
       "status": "planned",
-      "end": "2026-07-31",
-      "start": "2026-03-01",
+      "end": "2026-10-31",
+      "start": "2026-09-01",
       "parentId": null,
       "id": 2,
       "notes": "Demolition, structure, roof",
