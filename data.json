@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274986687,
+  "_savedAt": 1783274996673,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1950,9 +1950,9 @@
       "color": "#0891b2"
     },
     {
-      "start": "2026-11-01",
+      "start": "2026-11-02",
       "parentId": null,
-      "end": "2027-02-28",
+      "end": "2027-03-01",
       "color": "#16A34A",
       "status": "planned",
       "budget": 48000,
