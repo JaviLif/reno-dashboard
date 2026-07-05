@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274785177,
+  "_savedAt": 1783274791014,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2221,7 +2221,7 @@
       "end": "",
       "notes": "",
       "id": 69,
-      "budget": 0,
+      "budget": 6000,
       "name": "Kitchen",
       "number": "4.3"
     },
