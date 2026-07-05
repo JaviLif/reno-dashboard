@@ -703,21 +703,6 @@
       "qty": 1
     },
     {
-      "categoryId": 3,
-      "orders": [],
-      "quotes": [],
-      "qty": 1,
-      "notes": "",
-      "name": "First Step Isolation (Interior)",
-      "status": "not-ordered",
-      "link": "",
-      "description": "",
-      "id": 125,
-      "documents": [],
-      "unit": "pcs",
-      "phaseId": 64
-    },
-    {
       "status": "not-ordered",
       "link": "https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html",
       "unit": "mÂ²",
@@ -1886,7 +1871,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783256804058,
+  "_savedAt": 1783256941146,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
