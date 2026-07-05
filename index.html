@@ -1681,6 +1681,13 @@ function ganttCols(pStart,pEnd,zoom){
 
 // ── Gantt bar drag-and-drop ───────────────────────────────────────────────────
 let _gDrag=null, _gDragEndAt=0;
+let _ganttExpanded=new Set();
+function toggleGanttPhase(id,e){
+  e.stopPropagation();
+  if(_ganttExpanded.has(id))_ganttExpanded.delete(id);
+  else _ganttExpanded.add(id);
+  renderGantt();
+}
 function _gbDown(e,phaseId,dtype){
   e.preventDefault(); e.stopPropagation();
   const track=document.querySelector('#gantt-rows .gantt-track');
@@ -1844,6 +1851,7 @@ function renderGantt(){
     </div>`;
   };
 
+  if(!_ganttExpanded.size) topPhases().forEach(p=>{if(childrenOf(p.id).length)_ganttExpanded.add(p.id);});
   let html='';
   for(const tp of topPhases()){
     const kids=childrenOf(tp.id);
@@ -1872,8 +1880,10 @@ function renderGantt(){
       barHtml=leafBar(tp,22);
     }
 
+    const isExp=!hasSubs||_ganttExpanded.has(tp.id);
     html+=`<div class="gantt-row${hasSubs?' parent-row':''}" onclick="openPhaseModal(${tp.id})" style="cursor:pointer">
-      <div class="gantt-lbl" style="cursor:pointer">
+      <div class="gantt-lbl" style="cursor:pointer;gap:4px">
+        ${hasSubs?`<button onclick="toggleGanttPhase(${tp.id},event)" style="background:none;border:none;cursor:pointer;padding:0;font-size:10px;color:var(--g400);flex-shrink:0;width:14px;text-align:center;transition:transform .15s;display:inline-block;transform:rotate(${isExp?0:-90}deg)">${'&#9660;'}</button>`:'<span style="width:14px;flex-shrink:0"></span>'}
         <span class="gantt-num">${tp.number||''}</span>
         <div class="gantt-lbl-inner">
           <div class="gantt-lbl-name">${tp.name}</div>
@@ -1883,9 +1893,10 @@ function renderGantt(){
       <div class="gantt-track">${gridLines}${todayLine}${barHtml}</div>
     </div>`;
 
+    if(isExp){
     for(const c of kids){
       html+=`<div class="gantt-row" style="cursor:pointer" onclick="if(Date.now()-_gDragEndAt>120)openPhaseModal(${c.id})">
-        <div class="gantt-lbl" style="padding-left:28px">
+        <div class="gantt-lbl" style="padding-left:36px">
           <span class="gantt-num" style="color:${c.color||'#94A3B8'};font-size:9px">${c.number||''}</span>
           <div class="gantt-lbl-inner">
             <div class="gantt-lbl-name child">${c.name}</div>
@@ -1894,6 +1905,7 @@ function renderGantt(){
         </div>
         <div class="gantt-track">${gridLines}${todayLine}${leafBar(c,22)}</div>
       </div>`;
+    }
     }
   }
   C('gantt-rows').innerHTML=html;
@@ -3562,6 +3574,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.7</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.8</div>
 </body>
 </html>
