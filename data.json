@@ -1771,21 +1771,6 @@
       "link": ""
     },
     {
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "description": "HBM table saw",
-      "id": 171,
-      "phaseId": 64,
-      "unit": "pcs",
-      "quotes": [],
-      "orders": [],
-      "categoryId": 5,
-      "qty": 1,
-      "name": "TischkreissÃ¤ge",
-      "notes": ""
-    },
-    {
       "status": "not-ordered",
       "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
       "phaseId": 2,
@@ -1916,7 +1901,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783256796020,
+  "_savedAt": 1783256799641,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
