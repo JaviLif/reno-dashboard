@@ -1863,9 +1863,19 @@
       "status": "planned",
       "assignee": "",
       "notes": ""
+    },
+    {
+      "id": 10,
+      "phaseId": 1,
+      "name": "Make Appointment for Samenlevingscontract",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
     }
   ],
-  "nextTaskId": 10,
+  "nextTaskId": 11,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -1876,7 +1886,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783257963756,
+  "_savedAt": 1783257991928,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
