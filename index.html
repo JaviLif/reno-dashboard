@@ -424,37 +424,41 @@ body.col-resizing *{cursor:col-resize!important}
 
 <!-- TASKS -->
 <div id="tab-tasks" class="tab">
-  <div class="flex" style="justify-content:space-between;align-items:center;gap:12px;flex-shrink:0;flex-wrap:wrap">
-    <div class="kanban-phase-tabs" id="kanban-phase-tabs"></div>
-    <div class="flex" style="gap:8px;flex-shrink:0">
-      <div class="inner-tabs" id="task-view-tabs" style="margin:0">
-        <button class="inner-tab active" id="tv-kanban" onclick="setTaskView('kanban')">Kanban</button>
-        <button class="inner-tab" id="tv-gantt" onclick="setTaskView('gantt')">Gantt</button>
+  <div class="bom-wrap">
+  <div class="bom-sidebar" id="task-sidebar"></div>
+  <div class="bom-main">
+    <div class="bom-topbar" style="padding:8px 12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+      <div id="task-summary-bar" class="task-summary" style="flex:1;min-width:0"></div>
+      <div class="flex" style="gap:8px;flex-shrink:0;align-items:center">
+        <div class="inner-tabs" id="task-view-tabs" style="margin:0">
+          <button class="inner-tab active" id="tv-kanban" onclick="setTaskView('kanban')">Kanban</button>
+          <button class="inner-tab" id="tv-gantt" onclick="setTaskView('gantt')">Gantt</button>
+        </div>
+        <div id="task-gantt-zoom" style="display:none;gap:4px;align-items:center" class="flex">
+          <span style="font-size:11px;color:var(--g400)">Zoom</span>
+          <button class="btn btn-ghost btn-sm" onclick="changeTaskGanttZoom(-0.5)">-</button>
+          <button class="btn btn-ghost btn-sm" onclick="changeTaskGanttZoom(0.5)">+</button>          <button class="btn btn-ghost btn-sm" onclick="taskGanttZoom=1;renderTasksTab()" style="font-size:10px">↺</button>
+        </div>
+        <button class="btn btn-pri btn-sm" onclick="openTaskModal(null, kanbanActivePhaseId())">+ Add Task</button>
       </div>
-      <div id="task-gantt-zoom" style="display:none;gap:4px;align-items:center" class="flex">
-        <span style="font-size:11px;color:var(--g400)">Zoom</span>
-        <button class="btn btn-ghost btn-sm" onclick="changeTaskGanttZoom(-0.5)">−</button>
-        <button class="btn btn-ghost btn-sm" onclick="changeTaskGanttZoom(0.5)">+</button>
-        <button class="btn btn-ghost btn-sm" onclick="taskGanttZoom=1;renderTasksTab()" style="font-size:10px">↺</button>
-      </div>
-      <button class="btn btn-pri btn-sm" onclick="openTaskModal(null, kanbanActivePhaseId())">+ Add Task</button>
     </div>
-  </div>
-  <div id="task-summary-bar" class="task-summary"></div>
-  <div id="task-kanban-wrap" style="display:flex;flex:1;min-height:0">
-    <div class="kanban-board" id="kanban-board"></div>
-  </div>
-  <div id="task-gantt-wrap" style="display:none" class="card">
-    <div class="card-body" style="padding:10px">
-      <div class="gantt-wrap">
-        <div class="gantt-inner" id="task-gantt-inner">
-          <div class="gantt-col-hdrs" id="task-gantt-hdrs"></div>
-          <div id="task-gantt-rows"></div>
+    <div id="task-kanban-wrap" style="display:flex;flex:1;min-height:0;overflow:hidden;padding:12px;box-sizing:border-box">
+      <div class="kanban-board" id="kanban-board"></div>
+    </div>
+    <div id="task-gantt-wrap" style="display:none" class="card">
+      <div class="card-body" style="padding:10px">
+        <div class="gantt-wrap">
+          <div class="gantt-inner" id="task-gantt-inner">
+            <div class="gantt-col-hdrs" id="task-gantt-hdrs"></div>
+            <div id="task-gantt-rows"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 </div>
+
 
 <!-- BUDGET -->
 <div id="tab-budget" class="tab">
@@ -2488,6 +2492,27 @@ function _bomSetCat(id){
   C('it-filter-status').value='';
   renderItems();
 }
+function renderTaskSidebar(){
+  const sb=C('task-sidebar'); if(!sb) return;
+  const tops=topPhases();
+  let html=`<div class="bom-sb-sec">Phases</div>`;
+  html+=`<div class="bom-sb-item${_kanbanPhaseId===null?' active':''}" onclick="kanbanSetPhase(null)">
+    <span class="bom-sb-dot" style="background:#94A3B8"></span>All
+  </div>`;
+  tops.forEach(tp=>{
+    const clr=tp.color||'#94A3B8';
+    html+=`<div class="bom-sb-item${_kanbanPhaseId===tp.id?' active':''}" onclick="kanbanSetPhase(${tp.id})">
+      <span class="bom-sb-dot" style="background:${clr}"></span>${tp.number?tp.number+' ':''}${tp.name}
+    </div>`;
+    childrenOf(tp.id).forEach(k=>{
+      html+=`<div class="bom-sb-item child${_kanbanPhaseId===k.id?' active':''}" onclick="kanbanSetPhase(${k.id})">
+        <span class="bom-sb-dot" style="background:${k.color||clr}"></span>${k.number?k.number+' ':''}${k.name}
+      </div>`;
+    });
+  });
+  sb.innerHTML=html;
+}
+
 function renderBomSidebar(){
   const sb=C('bom-sidebar'); if(!sb) return;
   const activeCat=C('it-filter-cat').value;
@@ -3177,11 +3202,7 @@ function renderTasksTab(){
   if(kanbanWrap) kanbanWrap.style.display=_taskView==='kanban'?'flex':'none';
   if(ganttWrap) ganttWrap.style.display=_taskView==='gantt'?'':'none';
 
-  // --- Phase tab strip: top-level phases only ---
-  const tops=topPhases();
-  C('kanban-phase-tabs').innerHTML=
-    `<button class="kp-tab${_kanbanPhaseId===null?' active':''}" onclick="kanbanSetPhase(null)">All</button>`
-    +tops.map(p=>`<button class="kp-tab${_kanbanPhaseId===p.id?' active':''}" onclick="kanbanSetPhase(${p.id})">${p.number||''} ${p.name}</button>`).join('');
+    renderTaskSidebar();
 
   // --- Filter tasks (include sub-phases when top-level selected) ---
   let tasks=S.tasks.slice();
@@ -3531,6 +3552,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.3.0</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.4.0</div>
 </body>
 </html>
