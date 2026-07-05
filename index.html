@@ -1694,7 +1694,7 @@ function ganttCols(pStart,pEnd,zoom){
 
 // ── Gantt bar drag-and-drop ───────────────────────────────────────────────────
 let _gDrag=null, _gDragEndAt=0;
-let _ganttExpanded=new Set();
+let _ganttExpanded=new Set(),_ganttInitDone=false;
 function toggleGanttPhase(id,e){
   e.stopPropagation();
   if(_ganttExpanded.has(id))_ganttExpanded.delete(id);
@@ -1882,7 +1882,7 @@ function renderGantt(){
     </div>`;
   };
 
-  if(!_ganttExpanded.size) topPhases().forEach(p=>{if(childrenOf(p.id).length)_ganttExpanded.add(p.id);});
+  if(!_ganttInitDone){_ganttInitDone=true;topPhases().forEach(p=>{if(childrenOf(p.id).length)_ganttExpanded.add(p.id);});}
   const _allExp2=topPhases().filter(p=>childrenOf(p.id).length).every(p=>_ganttExpanded.has(p.id));
   const _expBtn=C('gantt-exp-btn'); if(_expBtn)_expBtn.innerHTML=_allExp2?'&#9650;&#9650; Collapse All':'&#9660;&#9660; Expand All';
   let html='';
@@ -3609,6 +3609,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.9</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.10</div>
 </body>
 </html>
