@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274946608,
+  "_savedAt": 1783274950367,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1919,11 +1919,11 @@
       "budget": 9500,
       "number": "1",
       "name": "Planning and Docs",
-      "start": "2025-12-31",
+      "start": "2026-06-14",
       "parentId": null,
       "color": "#7C3AED",
       "status": "in-progress",
-      "end": "2026-08-23"
+      "end": "2026-08-22"
     },
     {
       "color": "#2563eb",
