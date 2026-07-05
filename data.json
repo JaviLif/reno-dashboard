@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 72,
+  "nextPhaseId": 73,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274632225,
+  "_savedAt": 1783274658359,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2248,6 +2248,18 @@
       "end": "",
       "parentId": 5,
       "start": ""
+    },
+    {
+      "id": 72,
+      "name": "Solar Panels",
+      "parentId": 3,
+      "number": "3.7",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#14b8a6",
+      "notes": "",
+      "budget": 3000
     }
   ],
   "_source": "converted-from-classifier-v3"
