@@ -50,7 +50,23 @@
       "name": "(Bouwkundig Inspecteur)",
       "notes": "",
       "qty": 1,
-      "orders": [],
+      "orders": [
+        {
+          "id": 1,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 1073.24,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "quotes": [
         {
           "id": 1,
@@ -1907,8 +1923,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783275153040,
-  "nextOrderId": 1,
+  "_savedAt": 1783275310653,
+  "nextOrderId": 2,
   "nextQuoteId": 72,
   "nextItemId": 177,
   "_version": "dashboard-v1",
