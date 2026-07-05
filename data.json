@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274554889,
+  "_savedAt": 1783274564643,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1976,12 +1976,12 @@
     {
       "start": "2026-06-01",
       "parentId": 3,
-      "color": "#0D9488",
+      "color": "#0d9488",
       "status": "planned",
       "end": "2026-07-31",
       "notes": "",
       "id": 31,
-      "budget": 15000,
+      "budget": 10000,
       "name": "Isolation",
       "number": "3.1"
     },
