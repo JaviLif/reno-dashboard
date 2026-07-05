@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783273880498,
+  "_savedAt": 1783273897841,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -1943,11 +1943,11 @@
       "name": "Installations",
       "id": 3,
       "notes": "All MEP + insulation work",
-      "start": "2026-06-01",
+      "start": "2026-10-01",
       "parentId": null,
-      "end": "2026-11-30",
+      "end": "2026-12-31",
       "status": "planned",
-      "color": "#0891B2"
+      "color": "#0891b2"
     },
     {
       "start": "2026-11-01",
