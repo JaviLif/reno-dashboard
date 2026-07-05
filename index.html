@@ -3096,10 +3096,9 @@ function deletePhase(){
 function taskPhaseSelectHtml(selectedId){
   let html='<option value="">- Unassigned -</option>';
   for(const {phase:p,depth} of phaseDisplayOrder()){
-    html+=`<option value="${p.id}"${Number(selectedId)===p.id?' selected':''}">${depth?'  ↪ ':''}"${p.number?p.number+' ':''}"${p.name}</option>`;
+    html+=`<option value="${p.id}"${Number(selectedId)===p.id?' selected':''}>${depth?'  ↳ ':''}${p.number?p.number+' ':''}${p.name}</option>`;
   }
   return html;
-}"${Number(selectedId)===p.id?' selected':''}>${p.number?p.number+' ':''}${p.name}</option>`).join('');
 }
 function openTaskModal(id, presetPhaseId, presetStatus){
   const phaseModalWasOpen=C('phase-overlay').classList.contains('open');
