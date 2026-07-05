@@ -496,21 +496,6 @@
       "status": "not-ordered"
     },
     {
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "description": "",
-      "id": 116,
-      "unit": "pcs",
-      "phaseId": 64,
-      "quotes": [],
-      "orders": [],
-      "categoryId": 3,
-      "qty": 1,
-      "name": "First Step Isolation (Heating)",
-      "notes": ""
-    },
-    {
       "documents": [],
       "description": "For 100 sqm",
       "id": 117,
@@ -1871,7 +1856,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783256941146,
+  "_savedAt": 1783256943233,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
