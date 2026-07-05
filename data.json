@@ -1853,9 +1853,19 @@
       "status": "planned",
       "assignee": "",
       "notes": ""
+    },
+    {
+      "id": 9,
+      "phaseId": 61,
+      "name": "Quotation Absbest",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
     }
   ],
-  "nextTaskId": 9,
+  "nextTaskId": 10,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -1866,7 +1876,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783257701047,
+  "_savedAt": 1783257963756,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
