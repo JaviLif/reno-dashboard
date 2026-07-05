@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783274791014,
+  "_savedAt": 1783274796339,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2228,7 +2228,7 @@
     {
       "id": 70,
       "notes": "",
-      "budget": 0,
+      "budget": 5000,
       "number": "4.4",
       "name": "Bath",
       "status": "planned",
