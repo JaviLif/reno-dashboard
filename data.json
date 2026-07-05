@@ -1907,7 +1907,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783275148099,
+  "_savedAt": 1783275153040,
   "nextOrderId": 1,
   "nextQuoteId": 72,
   "nextItemId": 177,
@@ -2124,7 +2124,7 @@
       "notes": "",
       "id": 60,
       "end": "2026-08-23",
-      "status": "in-progress",
+      "status": "planned",
       "color": "#EF4444",
       "parentId": 1,
       "start": "2026-06-29"
