@@ -250,6 +250,7 @@ body.col-resizing *{cursor:col-resize!important}
 .kp-tab.active{border-color:var(--pri);background:var(--pri);color:#fff}
 .kanban-board{display:flex;gap:14px;overflow-x:auto;flex:1;min-height:0;padding-bottom:8px}
 .kanban-col{flex:0 0 240px;display:flex;flex-direction:column;gap:0;background:var(--g50);border-radius:12px;overflow:hidden}
+.kanban-card{position:relative}.kanban-card-actions{display:flex;gap:1px;position:absolute;top:4px;right:4px;opacity:0;transition:opacity .15s}.kanban-card:hover .kanban-card-actions{opacity:1}.kc-move{background:none;border:none;padding:1px 5px;cursor:pointer;color:var(--g400);font-size:9px;line-height:1;border-radius:3px}.kc-move:hover{background:var(--g200);color:var(--g700)}
 .kanban-col-hdr{padding:12px 14px 10px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--g200)}
 .kanban-col-title{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--g600);text-transform:uppercase;letter-spacing:.04em}
 .kanban-col-count{font-size:11px;font-weight:700;background:var(--g200);color:var(--g500);border-radius:100px;padding:1px 8px;min-width:22px;text-align:center}
@@ -3169,11 +3170,10 @@ function renderTasksTab(){
   if(kanbanWrap) kanbanWrap.style.display=_taskView==='kanban'?'flex':'none';
   if(ganttWrap) ganttWrap.style.display=_taskView==='gantt'?'':'none';
 
-  // --- Phase tab strip: top-level phases only ---
-  const tops=topPhases();
+  // --- Phase tab strip: hierarchical phase order (parents then children) ---
   C('kanban-phase-tabs').innerHTML=
     `<button class="kp-tab${_kanbanPhaseId===null?' active':''}" onclick="kanbanSetPhase(null)">All</button>`
-    +tops.map(p=>`<button class="kp-tab${_kanbanPhaseId===p.id?' active':''}" onclick="kanbanSetPhase(${p.id})">${p.number||''} ${p.name}</button>`).join('');
+    +phaseDisplayOrder().map(({phase:p,depth})=>`<button class="kp-tab${_kanbanPhaseId===p.id?' active':''}" onclick="kanbanSetPhase(${p.id})" style="${depth?'padding-left:20px;font-size:11px':''}">${p.number||''} ${p.name}</button>`).join('');
 
   // --- Filter tasks (include sub-phases when top-level selected) ---
   let tasks=S.tasks.slice();
@@ -3205,14 +3205,14 @@ function renderTasksTab(){
 
   // --- Build Kanban columns with drag-and-drop ---
   C('kanban-board').innerHTML=KANBAN_COLS.map(col=>{
-    const colTasks=tasks.filter(t=>t.status===col.status);
+    const colTasks=tasks.filter(t=>t.status===col.status).sort((a,b)=>(a.kanbanOrder??a.id*10)-(b.kanbanOrder??b.id*10));
     const cards=colTasks.length
       ? colTasks.map(t=>{
           const p=phaseById(t.phaseId);
           const tp=p?.parentId?phaseById(p.parentId):p;
           const accent=tp?.color||p?.color||'var(--g300)';
           const dateStr=(t.start||t.end)?`${fmtDate(t.start)||'?'} → ${fmtDate(t.end)||'?'}`:'';
-          const phaseLabel=_kanbanPhaseId===null&&p
+          const phaseLabel=p&&(_kanbanPhaseId===null||Number(p.id)!==_kanbanPhaseId)
             ?`<span class="card-phase-lbl" style="color:${accent};background:${accent}20;border:1px solid ${accent}40">${p.number||''} ${p.name}</span>`:'';
           const meta=[
             phaseLabel,
@@ -3224,7 +3224,7 @@ function renderTasksTab(){
             ondragstart="taskDragStart(event,${t.id})"
             ondragend="this.classList.remove('dragging')"
             onclick="openTaskModal(${t.id})">
-            <div class="kanban-card-name">${t.name}</div>
+            <div class="kanban-card-actions"><button class="kc-move" onclick="event.stopPropagation();moveTaskInKanban(${t.id},-1)" title="Move up">▲</button><button class="kc-move" onclick="event.stopPropagation();moveTaskInKanban(${t.id},1)" title="Move down">▼</button></div><div class="kanban-card-name">${t.name}</div>
             ${meta?`<div class="kanban-card-meta">${meta}</div>`:''}
           </div>`;
         }).join('')
@@ -3401,6 +3401,15 @@ function renderTaskGantt(tasks){
 function taskDragStart(e, id){
   e.dataTransfer.setData('text/plain', String(id));
   e.currentTarget.classList.add('dragging');
+}
+function moveTaskInKanban(id,dir){
+  const t=S.tasks.find(x=>x.id===id); if(!t) return;
+  const col=S.tasks.filter(x=>x.status===t.status).sort((a,b)=>(a.kanbanOrder??a.id*10)-(b.kanbanOrder??b.id*10));
+  col.forEach((task,i)=>{ if(task.kanbanOrder==null) task.kanbanOrder=i*10; });
+  const idx=col.findIndex(x=>x.id===id);
+  const si=idx+dir; if(si<0||si>=col.length) return;
+  const tmp=col[idx].kanbanOrder; col[idx].kanbanOrder=col[si].kanbanOrder; col[si].kanbanOrder=tmp;
+  saveState(); refreshAll();
 }
 function taskDrop(e, newStatus, colEl){
   e.preventDefault();
