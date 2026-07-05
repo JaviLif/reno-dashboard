@@ -51,7 +51,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "unit": "pcs",
@@ -1937,7 +1938,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783275346857,
+  "_savedAt": 1783275352435,
   "nextOrderId": 2,
   "nextQuoteId": 72,
   "nextItemId": 178,
