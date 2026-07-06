@@ -149,7 +149,7 @@
         {
           "id": 73,
           "supplier": "Buro Sprinweg",
-          "unitPrice": 0,
+          "unitPrice": 798.6,
           "date": "",
           "notes": "",
           "chosen": false
@@ -1980,7 +1980,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783335898016,
+  "_savedAt": 1783335907752,
   "nextOrderId": 4,
   "nextQuoteId": 74,
   "nextItemId": 178,
