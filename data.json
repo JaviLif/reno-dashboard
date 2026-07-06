@@ -141,7 +141,7 @@
         {
           "chosen": true,
           "date": "2026-07-04",
-          "supplier": "Classifier estimate",
+          "supplier": "van Ekeren ",
           "unitPrice": 1000,
           "id": 2,
           "notes": ""
@@ -1972,7 +1972,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783335483690,
+  "_savedAt": 1783335774744,
   "nextOrderId": 4,
   "nextQuoteId": 73,
   "nextItemId": 178,
