@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336387464,
+  "_savedAt": 1783336391680,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
@@ -2169,10 +2169,10 @@
       "name": "Water",
       "budget": 1000,
       "parentId": 5,
-      "start": "2026-10-01",
+      "start": "",
       "status": "planned",
       "color": "#14B8A6",
-      "end": "2026-12-31"
+      "end": ""
     },
     {
       "id": 55,
