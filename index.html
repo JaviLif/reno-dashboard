@@ -635,6 +635,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
+          <div class="ver-row"><span class="ver-tag">v1.0.13</span><span>Document attachments on quotes and orders with inline thumbnail preview</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.12</span><span>Fix euro symbol display; dashboard changelog added</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.11</span><span>Cross-device sync overwrite fix; in-app version history restore</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.10</span><span>Fix Gantt collapse state resetting to all-expanded</span></div>
@@ -1257,8 +1258,8 @@ function migrateState(state){
     if(!Array.isArray(it.documents)) it.documents=[];
     if(it.name==null) it.name='';
     if(it.link==null) it.link='';
-    it.quotes.forEach(q=>{ if(q.chosen==null) q.chosen=false; });
-    it.orders.forEach(o=>{ if(o.qtyDelivered==null)o.qtyDelivered=0; if(o.qtyReturned==null)o.qtyReturned=0; if(!o.status)o.status='ordered'; });
+    it.quotes.forEach(q=>{ if(q.chosen==null) q.chosen=false; if(!Array.isArray(q.documents)) q.documents=[]; });
+    it.orders.forEach(o=>{ if(o.qtyDelivered==null)o.qtyDelivered=0; if(o.qtyReturned==null)o.qtyReturned=0; if(!o.status)o.status='ordered'; if(!Array.isArray(o.documents)) o.documents=[]; });
     if(it.status==null) it.status=deriveStatusFromOrders(it);
   });
   if(state.nextItemId==null) state.nextItemId=Math.max(0,...state.items.map(it=>it.id||0),0)+1;
@@ -2416,6 +2417,109 @@ function deleteOrderInline(itemId,oid){
   saveState(); renderItems();
 }
 
+function showDocPreview(url,name){
+  if(!url||url==='#'){return;}
+  const isImg=/\.(png|jpe?g|gif|webp|svg|bmp)$/i.test(url)||url.startsWith('data:image');
+  if(!isImg){window.open(url,'_blank');return;}
+  const ov=document.getElementById('doc-preview-overlay');
+  const img=document.getElementById('doc-preview-img');
+  const nm=document.getElementById('doc-preview-name');
+  img.src=url;
+  nm.textContent=name||'';
+  ov.style.display='flex';
+}
+function showQDoc(itemId,qid,docId){
+  const it=itemById(itemId); if(!it) return;
+  const q=it.quotes.find(x=>x.id===Number(qid)); if(!q) return;
+  const d=(q.documents||[]).find(x=>x.id===Number(docId)); if(!d) return;
+  const url=d.ghPath?_ghFileUrl(d.ghPath):(d.dataUrl||'#');
+  showDocPreview(url,d.name||'');
+}
+function showODoc(itemId,oid,docId){
+  const it=itemById(itemId); if(!it) return;
+  const o=it.orders.find(x=>x.id===Number(oid)); if(!o) return;
+  const d=(o.documents||[]).find(x=>x.id===Number(docId)); if(!d) return;
+  const url=d.ghPath?_ghFileUrl(d.ghPath):(d.dataUrl||'#');
+  showDocPreview(url,d.name||'');
+}
+async function handleQuoteDocUpload(event,itemId,qid){
+  const file=event.target.files&&event.target.files[0];
+  if(!file) return;
+  const it=itemById(itemId); if(!it) return;
+  const q=it.quotes.find(x=>x.id===Number(qid)); if(!q) return;
+  if(!Array.isArray(q.documents)) q.documents=[];
+  if(_ghToken){
+    const ghPath=await _ghUploadFile(file);
+    if(ghPath){
+      q.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,ghPath,uploadedDate:new Date().toISOString().slice(0,10)});
+      saveState(); renderItems(); return;
+    }
+  }
+  const reader=new FileReader();
+  reader.onload=()=>{
+    q.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,dataUrl:reader.result,uploadedDate:new Date().toISOString().slice(0,10)});
+    saveState(); renderItems();
+  };
+  reader.readAsDataURL(file);
+}
+async function handleOrderDocUpload(event,itemId,oid){
+  const file=event.target.files&&event.target.files[0];
+  if(!file) return;
+  const it=itemById(itemId); if(!it) return;
+  const o=it.orders.find(x=>x.id===Number(oid)); if(!o) return;
+  if(!Array.isArray(o.documents)) o.documents=[];
+  if(_ghToken){
+    const ghPath=await _ghUploadFile(file);
+    if(ghPath){
+      o.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,ghPath,uploadedDate:new Date().toISOString().slice(0,10)});
+      saveState(); renderItems(); return;
+    }
+  }
+  const reader=new FileReader();
+  reader.onload=()=>{
+    o.documents.push({id:S.nextDocId++,name:file.name,type:file.type||'',size:file.size||0,dataUrl:reader.result,uploadedDate:new Date().toISOString().slice(0,10)});
+    saveState(); renderItems();
+  };
+  reader.readAsDataURL(file);
+}
+function deleteQuoteDoc(itemId,qid,docId){
+  const it=itemById(itemId); if(!it) return;
+  const q=it.quotes.find(x=>x.id===Number(qid)); if(!q) return;
+  if(!confirm('Delete this document?')) return;
+  q.documents=(q.documents||[]).filter(d=>d.id!==Number(docId));
+  saveState(); renderItems();
+}
+function deleteOrderDoc(itemId,oid,docId){
+  const it=itemById(itemId); if(!it) return;
+  const o=it.orders.find(x=>x.id===Number(oid)); if(!o) return;
+  if(!confirm('Delete this document?')) return;
+  o.documents=(o.documents||[]).filter(d=>d.id!==Number(docId));
+  saveState(); renderItems();
+}
+function qdocThumbsHtml(itemId,qid,docs){
+  if(!docs||!docs.length) return '';
+  return docs.map(d=>{
+    const url=d.ghPath?_ghFileUrl(d.ghPath):(d.dataUrl||'#');
+    const isImg=/\.(png|jpe?g|gif|webp|svg|bmp)$/i.test(d.name||'')||url.startsWith('data:image');
+    const nm=escapeAttr(d.name||'');
+    const thumb=isImg
+      ? `<img src="${url}" title="${nm}" onclick="showQDoc(${itemId},${qid},${d.id})" style="width:36px;height:36px;object-fit:cover;border-radius:4px;cursor:pointer;border:1px solid var(--g200)">`
+      : `<span title="${nm}" onclick="showQDoc(${itemId},${qid},${d.id})" style="font-size:22px;cursor:pointer;line-height:36px">&#128196;</span>`;
+    return `<span style="position:relative;display:inline-flex;align-items:center">${thumb}<button onclick="deleteQuoteDoc(${itemId},${qid},${d.id})" title="Remove" style="position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border:none;border-radius:50%;width:14px;height:14px;font-size:9px;line-height:14px;cursor:pointer;padding:0;text-align:center">x</button></span>`;
+  }).join('');
+}
+function odocsThumbsHtml(itemId,oid,docs){
+  if(!docs||!docs.length) return '';
+  return docs.map(d=>{
+    const url=d.ghPath?_ghFileUrl(d.ghPath):(d.dataUrl||'#');
+    const isImg=/\.(png|jpe?g|gif|webp|svg|bmp)$/i.test(d.name||'')||url.startsWith('data:image');
+    const nm=escapeAttr(d.name||'');
+    const thumb=isImg
+      ? `<img src="${url}" title="${nm}" onclick="showODoc(${itemId},${oid},${d.id})" style="width:36px;height:36px;object-fit:cover;border-radius:4px;cursor:pointer;border:1px solid var(--g200)">`
+      : `<span title="${nm}" onclick="showODoc(${itemId},${oid},${d.id})" style="font-size:22px;cursor:pointer;line-height:36px">&#128196;</span>`;
+    return `<span style="position:relative;display:inline-flex;align-items:center">${thumb}<button onclick="deleteOrderDoc(${itemId},${oid},${d.id})" title="Remove" style="position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border:none;border-radius:50%;width:14px;height:14px;font-size:9px;line-height:14px;cursor:pointer;padding:0;text-align:center">x</button></span>`;
+  }).join('');
+}
 function documentsPanelHtml(it){
   const docs=it.documents||[];
   const rows=docs.map(d=>{
@@ -2475,6 +2579,10 @@ function quotesPanelHtml(it){
       <input class="fm-inp" type="date" style="width:130px;font-size:12px;padding:5px 6px" value="${q.date||''}" onchange="updateQuoteField(${it.id},${q.id},'date',this.value)">
       <input class="fm-inp" style="flex:1;min-width:110px;font-size:12px;padding:5px 6px" value="${escapeAttr(q.notes||'')}" placeholder="Notes" onchange="updateQuoteField(${it.id},${q.id},'notes',this.value)">
       <button class="btn btn-ghost btn-icon btn-sm" onclick="deleteQuoteInline(${it.id},${q.id})" title="Delete quote">×</button>
+    </div>
+    <div style="padding:2px 0 6px 22px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+      ${qdocThumbsHtml(it.id,q.id,q.documents||[])}
+      <label style="cursor:pointer;font-size:11px;color:var(--pri);white-space:nowrap" title="Attach document to quote">&#128206; <input type="file" style="display:none" accept="image/*,.pdf,.docx,.xlsx" onchange="handleQuoteDocUpload(event,${it.id},${q.id})"></label>
     </div>`).join('');
   return `<div style="margin-bottom:14px">
     <div class="flex" style="justify-content:space-between;margin-bottom:6px"><span class="fw6" style="font-size:12px">Quotes</span><button class="btn btn-ghost btn-sm" onclick="addQuoteInline(${it.id})">+ Add Quote</button></div>
@@ -2499,6 +2607,10 @@ function ordersPanelHtml(it){
       <input class="fm-inp" type="date" style="width:120px;font-size:12px;padding:5px 6px" title="Return date" value="${o.returnDate||''}" onchange="updateOrderField(${it.id},${o.id},'returnDate',this.value)">
       <input class="fm-inp" style="width:130px;font-size:12px;padding:5px 6px" value="${escapeAttr(o.returnReason||'')}" placeholder="Return reason" onchange="updateOrderField(${it.id},${o.id},'returnReason',this.value)">
       <button class="btn btn-ghost btn-icon btn-sm" onclick="deleteOrderInline(${it.id},${o.id})" title="Delete order">×</button>
+    </div>
+    <div style="padding:2px 0 6px 22px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+      ${odocsThumbsHtml(it.id,o.id,o.documents||[])}
+      <label style="cursor:pointer;font-size:11px;color:var(--pri);white-space:nowrap" title="Attach document to order">&#128206; <input type="file" style="display:none" accept="image/*,.pdf,.docx,.xlsx" onchange="handleOrderDocUpload(event,${it.id},${o.id})"></label>
     </div>`).join('');
   return `<div>
     <div class="flex" style="justify-content:space-between;margin-bottom:6px"><span class="fw6" style="font-size:12px">Orders</span><button class="btn btn-ghost btn-sm" onclick="addOrderInline(${it.id})">+ Add Order</button></div>
@@ -3693,7 +3805,11 @@ renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
+<div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
+  <img id="doc-preview-img" style="max-width:92vw;max-height:88vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.7);display:block" onclick="event.stopPropagation()">
+  <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
+</div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.12</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.13</div>
 </body>
 </html>
