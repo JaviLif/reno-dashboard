@@ -2023,16 +2023,6 @@
       "kanbanOrder": 100
     },
     {
-      "id": 13,
-      "phaseId": 61,
-      "name": "Call with Rene",
-      "start": "2026-07-06",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": ""
-    },
-    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2053,6 +2043,16 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 90
+    },
+    {
+      "id": 13,
+      "phaseId": 61,
+      "name": "Call with Rene",
+      "start": "2026-07-06",
+      "end": "2026-07-12",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": ""
     }
   ],
   "nextTaskId": 14,
@@ -2066,7 +2066,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783337793178,
+  "_savedAt": 1783337796500,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
