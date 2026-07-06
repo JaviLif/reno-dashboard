@@ -2098,6 +2098,16 @@
       "notes": ""
     },
     {
+      "id": 15,
+      "phaseId": 73,
+      "name": "Remove fake ceiling",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2130,7 +2140,7 @@
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 15,
+  "nextTaskId": 16,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2141,7 +2151,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783367778400,
+  "_savedAt": 1783367799223,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
