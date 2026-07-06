@@ -56,7 +56,8 @@
           "unitPrice": 140.26,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
@@ -2087,6 +2088,16 @@
       "kanbanOrder": 100
     },
     {
+      "id": 14,
+      "phaseId": 2,
+      "name": "Remove bath",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2119,7 +2130,7 @@
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 14,
+  "nextTaskId": 15,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2130,7 +2141,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783351875391,
+  "_savedAt": 1783367643915,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
