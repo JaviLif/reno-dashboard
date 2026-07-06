@@ -76,7 +76,16 @@
           "notes": ""
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 1,
+          "name": "Taxatierapport (2).pdf",
+          "type": "application/pdf",
+          "size": 10252649,
+          "ghPath": "quotes/Taxatierapport__2_.pdf",
+          "uploadedDate": "2026-07-06"
+        }
+      ],
       "status": "delivered"
     },
     {
@@ -1962,8 +1971,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 10,
-  "nextDocId": 1,
-  "_savedAt": 1783335423442,
+  "nextDocId": 2,
+  "_savedAt": 1783335483690,
   "nextOrderId": 4,
   "nextQuoteId": 73,
   "nextItemId": 178,
