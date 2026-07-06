@@ -43,13 +43,22 @@
       "id": 186,
       "phaseId": 65,
       "categoryId": null,
-      "name": "",
+      "name": "Itho Daalderop AUTO RFT",
       "description": "",
       "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-auto-rft-n-draadloze-bediening-wit/19765/",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 77,
+          "supplier": "",
+          "unitPrice": 84.51,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2118,9 +2127,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783350975644,
+  "_savedAt": 1783350981452,
   "nextOrderId": 7,
-  "nextQuoteId": 77,
+  "nextQuoteId": 78,
   "nextItemId": 187,
   "_version": "dashboard-v1",
   "phases": [
