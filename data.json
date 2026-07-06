@@ -40,29 +40,6 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 184,
-      "phaseId": 60,
-      "categoryId": null,
-      "name": "Amazon.com: Hanes Paquetes de camisetas interiores para hombre, camisetas interiores de algodón suave Stay-Tucked, las mejores camisetas interiores para hombres, multipaq",
-      "description": "",
-      "link": "amazon.com/-/es/Hanes-camisetas-interiores-Stay-Tucked-multipaquetes/dp/B00D1ARZMC/?_encoding=UTF8&pd_rd_w=kqRoR&content-id=amzn1.sym.9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_p=9929d3ab-edb7-4ef5-a232-26d90f828fa5&pf_rd_r=69TS02NT1N2E8GSVXJ2V&pd_rd_wg=r04op&pd_rd_r=c339053a-9346-49b9-a88d-a75acf7cd27e&ref_=pd_hp_d_btf_crs_zg_bs_7141123011",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 75,
-          "supplier": "",
-          "unitPrice": 38.5,
-          "date": "",
-          "notes": "",
-          "chosen": true
-        }
-      ],
-      "orders": [],
-      "documents": []
-    },
-    {
       "id": 183,
       "phaseId": 60,
       "categoryId": null,
@@ -2104,7 +2081,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783350360691,
+  "_savedAt": 1783350369227,
   "nextOrderId": 7,
   "nextQuoteId": 76,
   "nextItemId": 185,
