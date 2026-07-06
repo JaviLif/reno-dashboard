@@ -1950,9 +1950,19 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 100
+    },
+    {
+      "id": 12,
+      "phaseId": 1,
+      "name": "Test",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
     }
   ],
-  "nextTaskId": 12,
+  "nextTaskId": 13,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -1963,7 +1973,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783275409193,
+  "_savedAt": 1783331490524,
   "nextOrderId": 3,
   "nextQuoteId": 73,
   "nextItemId": 178,
