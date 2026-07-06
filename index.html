@@ -2528,37 +2528,50 @@ async function prefillFromLink(itemId){
   const it=itemById(itemId); if(!it||!it.link) return;
   const btn=document.getElementById('pfbtn-'+itemId);
   if(btn){btn.disabled=true;btn.textContent='...';}
-  async function tryFetch(url){
+  async function go(url,isJson){
     const ctrl=new AbortController();
     const tid=setTimeout(()=>ctrl.abort(),9000);
     try{
       const res=await fetch(url,{signal:ctrl.signal});
       clearTimeout(tid);
       if(!res.ok) throw new Error('HTTP '+res.status);
-      return await res.text();
+      return isJson ? await res.json() : await res.text();
     }finally{clearTimeout(tid);}
   }
-  const enc=encodeURIComponent(it.link);
-  const proxies=[
-    'https://api.allorigins.win/raw?url='+enc,
-    'https://corsproxy.io/?url='+enc,
-    'https://thingproxy.freeboard.io/fetch/'+it.link,
-  ];
-  let html=null,lastErr='';
-  for(const u of proxies){try{html=await tryFetch(u);if(html)break;}catch(e){lastErr=e.message||String(e);}}
+  let name='',price=null;
+  const errors=[];
+  // Strategy 1: jsonlink.io — pure JSON metadata API, very CORS-friendly
   try{
-    if(!html){alert('Prefill failed ('+lastErr+'). Paste name & price manually.');return;}
-    const doc=new DOMParser().parseFromString(html,'text/html');
-    const name=(doc.querySelector('meta[property="og:title"]')?.content||doc.title||'').replace(/\s*[|\-–—]\s*.{0,50}$/,'').trim();
-    let price=null;
-    doc.querySelectorAll('script[type="application/ld+json"]').forEach(s=>{try{const d=JSON.parse(s.textContent);const p=d?.offers?.price||d?.offers?.[0]?.price;if(p&&!price)price=parseFloat(String(p).replace(',','.'))||null;}catch(e){}});
-    if(!price){const m=doc.querySelector('meta[property="product:price:amount"]')||doc.querySelector('meta[itemprop="price"]');if(m?.content)price=parseFloat(m.content.replace(',','.'))||null;}
-    if(!price){const t=(doc.body?.textContent||'');const m=t.match(/(\d{1,3}(?:\.\d{3})*,\d{2})/);if(m)price=parseFloat(m[1].replace(/\./g,'').replace(',','.'))||null;}
+    const d=await go('https://jsonlink.io/api/extract?url='+encodeURIComponent(it.link),true);
+    if(d?.title) name=d.title.replace(/\s*[|\-\\u2013\\u2014]\s*.{0,60}$/,'').trim();
+  }catch(e){errors.push('jsonlink:'+e.message);}
+  // Strategy 2: Jina AI reader — renders page, returns markdown
+  try{
+    const md=await go('https://r.jina.ai/'+it.link,false);
+    if(!name){const m=md.match(/^Title:\s*(.+)$/m);if(m)name=m[1].replace(/\s*[|\-\\u2013\\u2014]\s*.{0,60}$/,'').trim();}
+    if(!price){const m=md.match(/(\d{1,3}(?:\.\d{3})*,\d{2})/);if(m)price=parseFloat(m[1].replace(/\./g,'').replace(',','.'))||null;}
+  }catch(e){errors.push('jina:'+e.message);}
+  // Strategy 3-4: raw HTML via proxies
+  if(!name||!price){
+    const enc=encodeURIComponent(it.link);
+    for(const [label,u] of [['allorigins','https://api.allorigins.win/raw?url='+enc],['corsproxy','https://corsproxy.io/?url='+enc]]){
+      try{
+        const html=await go(u,false);
+        const doc=new DOMParser().parseFromString(html,'text/html');
+        if(!name){const og=doc.querySelector('meta[property="og:title"]')?.content||doc.title||'';name=og.replace(/\s*[|\-\\u2013\\u2014]\s*.{0,60}$/,'').trim();}
+        if(!price){doc.querySelectorAll('script[type="application/ld+json"]').forEach(s=>{try{const d=JSON.parse(s.textContent);const p=d?.offers?.price||d?.offers?.[0]?.price;if(p&&!price)price=parseFloat(String(p).replace(',','.'))||null;}catch(e){}});}
+        if(!price){const m=doc.querySelector('meta[property="product:price:amount"]')||doc.querySelector('meta[itemprop="price"]');if(m?.content)price=parseFloat(m.content.replace(',','.'))||null;}
+        if(!price){const t=doc.body?.textContent||'';const m=t.match(/(\d{1,3}(?:\.\d{3})*,\d{2})/);if(m)price=parseFloat(m[1].replace(/\./g,'').replace(',','.'))||null;}
+        if(name||price) break;
+      }catch(e){errors.push(label+':'+e.message);}
+    }
+  }
+  try{
     let changed=false;
     if(name){it.name=name;changed=true;}
     if(price){let q=it.quotes.find(x=>x.chosen)||it.quotes[0];if(!q){q={id:S.nextQuoteId++,supplier:'',unitPrice:price,date:'',notes:'',chosen:true};it.quotes.push(q);}else{q.unitPrice=price;}changed=true;}
     if(changed){saveState();renderItems();}
-    if(!name&&!price)alert('No product data found. The page may require JavaScript to load prices.');
+    else alert('No data found.\nErrors: '+errors.join(' | ')+'\n\nIf you have an ad blocker, try pausing it on this page.');
   }finally{const b=document.getElementById('pfbtn-'+itemId);if(b){b.disabled=false;b.textContent='✨ Prefill';}}
 }
 function documentsPanelHtml(it){
@@ -3847,6 +3860,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.17</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.18</div>
 </body>
 </html>
