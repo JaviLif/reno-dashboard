@@ -1966,6 +1966,16 @@
       "kanbanOrder": 100
     },
     {
+      "id": 13,
+      "phaseId": 61,
+      "name": "Call with Rene",
+      "start": "2026-07-06",
+      "end": "2026-07-12",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -1977,7 +1987,7 @@
       "kanbanOrder": 0
     }
   ],
-  "nextTaskId": 13,
+  "nextTaskId": 14,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -1988,7 +1998,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336401409,
+  "_savedAt": 1783336439272,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
