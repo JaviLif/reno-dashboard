@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336309384,
+  "_savedAt": 1783336373544,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
@@ -2115,10 +2115,10 @@
       "end": "2026-11-30"
     },
     {
-      "end": "2026-06-30",
+      "end": "",
       "status": "planned",
       "color": "#2DD4BF",
-      "start": "2026-04-01",
+      "start": "",
       "parentId": 5,
       "budget": 3000,
       "name": "Foundation",
