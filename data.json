@@ -43,13 +43,22 @@
       "id": 187,
       "phaseId": 65,
       "categoryId": null,
-      "name": "",
+      "name": "Itho Daalderop RFT vochtsensor opbo",
       "description": "",
       "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 78,
+          "supplier": "",
+          "unitPrice": 140.26,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": [],
       "status": "not-ordered"
@@ -2146,9 +2155,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783351059371,
+  "_savedAt": 1783351066105,
   "nextOrderId": 7,
-  "nextQuoteId": 78,
+  "nextQuoteId": 79,
   "nextItemId": 188,
   "_version": "dashboard-v1",
   "phases": [
