@@ -163,23 +163,7 @@
           "chosen": true
         }
       ],
-      "orders": [
-        {
-          "id": 6,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 689.65,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
+      "orders": [],
       "qty": 1,
       "notes": "",
       "name": "Asbestreport"
@@ -2004,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336148952,
+  "_savedAt": 1783336155361,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
