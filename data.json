@@ -2052,7 +2052,7 @@
       "end": "2026-07-12",
       "status": "in-progress",
       "assignee": "",
-      "notes": ""
+      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips"
     }
   ],
   "nextTaskId": 14,
@@ -2066,7 +2066,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783345792628,
+  "_savedAt": 1783346362568,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
