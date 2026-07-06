@@ -313,6 +313,8 @@ body.col-resizing *{cursor:col-resize!important}
 
 /* Indent for sub-phase in table */
 .indent{padding-left:28px!important}
+.ver-row{display:flex;gap:8px;align-items:baseline;font-size:11px;color:var(--g600);padding:2px 0}
+.ver-tag{font-size:10px;font-weight:700;background:var(--g100);color:var(--pri);border-radius:4px;padding:1px 6px;flex-shrink:0;font-family:monospace}
 </style>
 </head>
 <body>
@@ -629,6 +631,24 @@ body.col-resizing *{cursor:col-resize!important}
       </div>
     </div>
     <div>
+      <div style="margin-bottom:20px">
+        <div class="set-title">Version History</div>
+        <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
+          <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
+          <div class="ver-row"><span class="ver-tag">v1.0.12</span><span>Fix euro symbol display; dashboard changelog added</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.11</span><span>Cross-device sync overwrite fix; in-app version history restore</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.10</span><span>Fix Gantt collapse state resetting to all-expanded</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.9</span><span>Bigger toggle arrow; Expand All; date duration calculator</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.8</span><span>Collapsible sub-phases in Timeline Gantt</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.7</span><span>Distinct phase color families; sticky Gantt header; clear date buttons</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.6</span><span>Gantt parent bars independent from children dates</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.5</span><span>Blank-view and data sync bug fixes on launch</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.4</span><span>UTF-8 BOM fix; clean JSON data migration</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.3</span><span>BOM tab redesign: classifier sidebar with phase grouping</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.2</span><span>Migrated sync from Firebase to GitHub API</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.1</span><span>Initial launch on GitHub Pages</span></div>
+        </div></div>
+      </div>
       <div class="set-title">Expense Categories</div>
       <div class="card"><div class="card-body">
         <div id="cat-list" style="margin-bottom:14px"></div>
@@ -1228,6 +1248,8 @@ function migrateState(state){
     state.nextItemId=Math.max(0,...state.items.map(it=>it.id||0),0)+1;
     delete state.expenses; delete state.nextExpenseId;
   }
+  if(state.project&&state.project.currency&&!/^[â‚¬$Â£Â¥A-Za-z]{1,4}$/.test(state.project.currency))
+    state.project.currency='â‚¬';
   if(!Array.isArray(state.items)) state.items=[];
   state.items.forEach(it=>{
     if(!Array.isArray(it.quotes)) it.quotes=[];
@@ -1312,7 +1334,7 @@ function saveState(){
 // ===================== UTILS =====================
 const C = id => document.getElementById(id);
 const escapeAttr = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
-const cur = () => S.project.currency||'€';
+const cur = () => '€';
 const fmt = n => cur()+Number(n||0).toLocaleString('nl-NL',{minimumFractionDigits:0,maximumFractionDigits:0});
 const fmtDate = d => { if(!d)return''; const[y,m,day]=d.split('-'); return`${day}/${m}/${y}`; };
 const phaseById = id => S.phases.find(p=>p.id===Number(id));
@@ -3672,6 +3694,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.11</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.12</div>
 </body>
 </html>
