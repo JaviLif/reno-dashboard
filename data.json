@@ -152,7 +152,7 @@
           "unitPrice": 798.6,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": false
         },
         {
           "id": 74,
@@ -160,10 +160,26 @@
           "unitPrice": 689.65,
           "date": "",
           "notes": "Plm 45, SEM 135",
-          "chosen": false
+          "chosen": true
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 6,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 689.65,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "qty": 1,
       "notes": "",
       "name": "Asbestreport"
@@ -1988,8 +2004,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336144801,
-  "nextOrderId": 6,
+  "_savedAt": 1783336148952,
+  "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
   "_version": "dashboard-v1",
