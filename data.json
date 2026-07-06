@@ -2012,17 +2012,6 @@
       "kanbanOrder": 80
     },
     {
-      "id": 10,
-      "phaseId": 1,
-      "name": "Make Appointment for Samenlevingscontract",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 90
-    },
-    {
       "id": 11,
       "phaseId": 1,
       "name": "Quotation for Extension",
@@ -2053,6 +2042,17 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 0
+    },
+    {
+      "id": 10,
+      "phaseId": 1,
+      "name": "Make Appointment for Samenlevingscontract",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 90
     }
   ],
   "nextTaskId": 14,
@@ -2066,7 +2066,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783336924477,
+  "_savedAt": 1783337793178,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
