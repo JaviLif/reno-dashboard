@@ -52,7 +52,7 @@
       "quotes": [
         {
           "id": 72,
-          "supplier": "",
+          "supplier": "Flem´s",
           "unitPrice": 1000,
           "date": "",
           "notes": "",
@@ -1963,7 +1963,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783331520979,
+  "_savedAt": 1783335395520,
   "nextOrderId": 3,
   "nextQuoteId": 73,
   "nextItemId": 178,
