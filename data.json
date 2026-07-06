@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 73,
+  "nextPhaseId": 74,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -2141,7 +2141,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783367643915,
+  "_savedAt": 1783367674632,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
@@ -2494,6 +2494,18 @@
       "color": "#FDE047",
       "notes": "",
       "budget": 3000
+    },
+    {
+      "id": 73,
+      "name": "Destruction",
+      "parentId": 2,
+      "number": "2.2",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#FB923C",
+      "notes": "",
+      "budget": 0
     }
   ],
   "_source": "converted-from-classifier-v3"
