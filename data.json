@@ -193,30 +193,6 @@
       "qty": 2
     },
     {
-      "notes": "",
-      "name": "Tools (Shell)",
-      "qty": 1,
-      "categoryId": 8,
-      "quotes": [
-        {
-          "unitPrice": 1000,
-          "notes": "",
-          "id": 4,
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "phaseId": 62,
-      "unit": "pcs",
-      "description": "Tools",
-      "id": 100,
-      "documents": [],
-      "status": "not-ordered",
-      "link": ""
-    },
-    {
       "status": "not-ordered",
       "link": "",
       "phaseId": 32,
@@ -1818,7 +1794,7 @@
       "categoryId": 8,
       "quotes": [
         {
-          "unitPrice": 1100,
+          "unitPrice": 2000,
           "id": 70,
           "notes": "",
           "chosen": true,
@@ -1998,7 +1974,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336439272,
+  "_savedAt": 1783336598122,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
