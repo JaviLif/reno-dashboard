@@ -42,7 +42,7 @@
     {
       "id": 187,
       "phaseId": 65,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Itho Daalderop RFT vochtsensor opbo",
       "description": "Humidity Remote",
       "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
@@ -2130,7 +2130,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783351789848,
+  "_savedAt": 1783351793248,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
