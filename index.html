@@ -2528,11 +2528,26 @@ async function prefillFromLink(itemId){
   const it=itemById(itemId); if(!it||!it.link) return;
   const btn=document.getElementById('pfbtn-'+itemId);
   if(btn){btn.disabled=true;btn.textContent='...';}
+  async function tryFetch(url){
+    const ctrl=new AbortController();
+    const tid=setTimeout(()=>ctrl.abort(),9000);
+    try{
+      const res=await fetch(url,{signal:ctrl.signal});
+      clearTimeout(tid);
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      return await res.text();
+    }finally{clearTimeout(tid);}
+  }
+  const enc=encodeURIComponent(it.link);
+  const proxies=[
+    'https://api.allorigins.win/raw?url='+enc,
+    'https://corsproxy.io/?url='+enc,
+    'https://thingproxy.freeboard.io/fetch/'+it.link,
+  ];
+  let html=null,lastErr='';
+  for(const u of proxies){try{html=await tryFetch(u);if(html)break;}catch(e){lastErr=e.message||String(e);}}
   try{
-    const proxy='https://corsproxy.io/?url='+encodeURIComponent(it.link);
-    const res=await fetch(proxy,{signal:AbortSignal.timeout(10000)});
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const html=await res.text();
+    if(!html){alert('Prefill failed ('+lastErr+'). Paste name & price manually.');return;}
     const doc=new DOMParser().parseFromString(html,'text/html');
     const name=(doc.querySelector('meta[property="og:title"]')?.content||doc.title||'').replace(/\s*[|\-–—]\s*.{0,50}$/,'').trim();
     let price=null;
@@ -2543,9 +2558,8 @@ async function prefillFromLink(itemId){
     if(name){it.name=name;changed=true;}
     if(price){let q=it.quotes.find(x=>x.chosen)||it.quotes[0];if(!q){q={id:S.nextQuoteId++,supplier:'',unitPrice:price,date:'',notes:'',chosen:true};it.quotes.push(q);}else{q.unitPrice=price;}changed=true;}
     if(changed){saveState();renderItems();}
-    if(!name&&!price)alert('No product data found on this page.');
-  }catch(e){alert('Could not fetch: '+(e.message||'network error'));}
-  finally{const b=document.getElementById('pfbtn-'+itemId);if(b){b.disabled=false;b.textContent='✨ Prefill';}}
+    if(!name&&!price)alert('No product data found. The page may require JavaScript to load prices.');
+  }finally{const b=document.getElementById('pfbtn-'+itemId);if(b){b.disabled=false;b.textContent='✨ Prefill';}}
 }
 function documentsPanelHtml(it){
   const docs=it.documents||[];
@@ -3833,6 +3847,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.16</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.17</div>
 </body>
 </html>
