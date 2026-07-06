@@ -621,8 +621,10 @@ body.col-resizing *{cursor:col-resize!important}
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
             <button class="btn btn-ghost btn-sm" onclick="ghOpenHistory()">View commit history</button>
+            <button class="btn btn-ghost btn-sm" id="gh-hist-btn" onclick="loadGhHistory()">&#128203; Version History</button>
             <button class="btn btn-danger btn-sm" onclick="ghClearToken()">Disconnect</button>
           </div>
+          <div id="gh-history-panel" style="display:none;margin-top:12px;max-height:320px;overflow-y:auto;border:1px solid var(--g200);border-radius:8px;padding:10px;font-size:12px"></div>
         </div></div>
       </div>
     </div>
@@ -1037,19 +1039,21 @@ async function _ghInit(){
   _setCloudStatus('connecting');
   const remoteData = await _ghLoadData();
   if(!remoteData){ _setCloudStatus('error'); return; }
-  const remoteTs = remoteData._savedAt || 0;
-  const localTs = S._savedAt || 0;
-  const localEmpty = (S.items||[]).length === 0;
-  const remoteHasData = (remoteData.items||[]).length > 0;
-  const _hadLocalData = !!localStorage.getItem('reno_v4');
-  if(!_hadLocalData || remoteTs > localTs + 5000 || (localEmpty && remoteHasData)){
-    S = migrateState(remoteData);
-    localStorage.setItem('reno_v4', JSON.stringify(S));
+  // Use cumulative ID scores as primary signal of "most work done".
+  // A device with stale cached data may have a newer _savedAt timestamp,
+  // which was causing it to wrongly overwrite cloud data on first open.
+  const remoteScore=(remoteData.nextPhaseId||1)+(remoteData.nextTaskId||1)+(remoteData.nextItemId||1);
+  const localScore=(S.nextPhaseId||1)+(S.nextTaskId||1)+(S.nextItemId||1);
+  const remoteTs=remoteData._savedAt||0, localTs=S._savedAt||0;
+  const _hadLocalData=!!localStorage.getItem('reno_v4');
+  if(!_hadLocalData||remoteScore>localScore||(remoteScore===localScore&&remoteTs>localTs+5000)){
+    S=migrateState(remoteData);
+    localStorage.setItem('reno_v4',JSON.stringify(S));
     refreshAll();
     _setCloudStatus('newer');
-    setTimeout(()=>_setCloudStatus('synced'), 3000);
-  } else if(localTs > remoteTs + 5000){
-    const ok = await _ghPushData('Sync: local newer on startup');
+    setTimeout(()=>_setCloudStatus('synced'),3000);
+  } else if(localScore>remoteScore||localTs>remoteTs+5000){
+    const ok=await _ghPushData('Sync: local newer on startup');
     _setCloudStatus(ok?'synced':'error');
   } else {
     _setCloudStatus('synced');
@@ -1101,6 +1105,65 @@ function ghClearToken(){
   _ghToken=''; localStorage.removeItem('gh_sync_token'); _setCloudStatus('notoken');
 }
 function ghOpenHistory(){ window.open(`https://github.com/${GH_REPO}/commits/main/${GH_DATA_FILE}`,'_blank'); }
+async function loadGhHistory(){
+  const panel=C('gh-history-panel');
+  if(!panel) return;
+  if(panel.style.display!=='none'){panel.style.display='none';C('gh-hist-btn').textContent='&#128203; Version History';return;}
+  if(!_ghToken){alert('Connect your GitHub token first.');return;}
+  C('gh-hist-btn').textContent='&#128203; Hide History';
+  panel.style.display='block';
+  panel.innerHTML='<div style="color:var(--g400)">Loading history...</div>';
+  try{
+    const r=await fetch(`https://api.github.com/repos/${GH_REPO}/commits?path=${GH_DATA_FILE}&per_page=25`,{
+      headers:{Authorization:`token ${_ghToken}`,Accept:'application/vnd.github.v3+json'}
+    });
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const commits=await r.json();
+    let html='<div style="font-weight:700;color:var(--g500);margin-bottom:8px;font-size:11px">Last 25 saves â€” click Restore to roll back</div>';
+    commits.forEach((cm,i)=>{
+      const d=new Date(cm.commit.author.date);
+      const ts=d.toLocaleDateString('nl-NL',{day:'2-digit',month:'2-digit',year:'numeric'})+' '+d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+      const msg=cm.commit.message.replace(/^Sync: /,'').replace('local newer on startup','auto-push on open').slice(0,60);
+      html+=`<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--g100)">
+        <div style="flex:1;min-width:0">
+          <span style="font-weight:600;color:var(--g700)">${ts}</span>
+          <span style="color:var(--g400);margin-left:6px">${msg}</span>
+        </div>
+        ${i===0?'<span style="background:var(--ok);color:#fff;padding:1px 7px;border-radius:4px;font-size:10px;flex-shrink:0">Current</span>'
+          :`<button class="btn btn-ghost btn-sm" style="font-size:11px;flex-shrink:0;padding:2px 8px" onclick="ghRestoreVersion('${cm.sha}','${ts}')">Restore</button>`}
+      </div>`;
+    });
+    panel.innerHTML=html;
+  }catch(e){
+    panel.innerHTML=`<div style="color:var(--red)">Failed to load history: ${e.message}</div>`;
+  }
+}
+async function ghRestoreVersion(sha,label){
+  if(!confirm(`Restore to save from ${label}?\n\nThis will replace your current data. A new commit will be created so you can always come back.`)) return;
+  if(!_ghToken){alert('Token required.');return;}
+  const panel=C('gh-history-panel');
+  if(panel) panel.innerHTML='<div style="color:var(--g400)">Restoring...</div>';
+  try{
+    const r=await fetch(`https://api.github.com/repos/${GH_REPO}/contents/${GH_DATA_FILE}?ref=${sha}`,{
+      headers:{Authorization:`token ${_ghToken}`,Accept:'application/vnd.github.v3+json'}
+    });
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const meta=await r.json();
+    const bytes=Uint8Array.from(atob(meta.content.replace(/\n/g,'')),c=>c.charCodeAt(0));
+    const data=JSON.parse(new TextDecoder().decode(bytes));
+    S=migrateState(data);
+    localStorage.setItem('reno_v4',JSON.stringify(S));
+    refreshAll();
+    _setCloudStatus('saving');
+    const ok=await _ghPushData(`Restore: version from ${label}`);
+    _setCloudStatus(ok?'synced':'error');
+    alert(`Restored to ${label}`);
+    loadGhHistory();
+  }catch(e){
+    alert('Restore failed: '+e.message);
+    console.error(e);
+  }
+}
 
 
 // ===================== STATE =====================
@@ -3609,6 +3672,6 @@ renderItems();
 _ghInit(); // connect to GitHub after first render
 </script>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.10</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.11</div>
 </body>
 </html>
