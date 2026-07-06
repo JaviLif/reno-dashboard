@@ -176,7 +176,16 @@
           "date": "",
           "notes": "Plm 45, SEM 135",
           "chosen": false,
-          "documents": []
+          "documents": [
+            {
+              "id": 3,
+              "name": "Offerte_ASBD-03072026-1188-1_Cornelis de Grootpad 1 te Amsterdam.pdf",
+              "type": "application/pdf",
+              "size": 319596,
+              "ghPath": "quotes/Offerte_ASBD-03072026-1188-1_Cornelis_de_Grootpad_1_te_Amsterdam.pdf",
+              "uploadedDate": "2026-07-06"
+            }
+          ]
         }
       ],
       "orders": [],
@@ -2056,8 +2065,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 10,
-  "nextDocId": 3,
-  "_savedAt": 1783336908419,
+  "nextDocId": 4,
+  "_savedAt": 1783336924477,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
