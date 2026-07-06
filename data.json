@@ -156,7 +156,7 @@
         },
         {
           "id": 74,
-          "supplier": "",
+          "supplier": "Perfectkeur",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336028752,
+  "_savedAt": 1783336038607,
   "nextOrderId": 4,
   "nextQuoteId": 75,
   "nextItemId": 178,
