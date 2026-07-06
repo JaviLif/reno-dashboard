@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 74,
+  "nextPhaseId": 75,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -2141,7 +2141,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783367674632,
+  "_savedAt": 1783367687808,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
@@ -2504,6 +2504,18 @@
       "end": "",
       "status": "planned",
       "color": "#FB923C",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 74,
+      "name": "Construction",
+      "parentId": 2,
+      "number": "2.3",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#FDBA74",
       "notes": "",
       "budget": 0
     }
