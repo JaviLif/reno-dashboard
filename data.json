@@ -1835,17 +1835,6 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
-      "id": 9,
-      "phaseId": 61,
-      "name": "Quotation Absbest",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 0
-    },
-    {
       "end": null,
       "status": "planned",
       "start": null,
@@ -1975,6 +1964,17 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 100
+    },
+    {
+      "id": 9,
+      "phaseId": 61,
+      "name": "Quotation Absbest",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 0
     }
   ],
   "nextTaskId": 13,
@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336306161,
+  "_savedAt": 1783336309384,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
