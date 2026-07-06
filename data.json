@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336373544,
+  "_savedAt": 1783336379240,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
@@ -2132,10 +2132,10 @@
       "number": "5.3",
       "id": 51,
       "notes": "",
-      "end": "2026-09-30",
+      "end": "",
       "status": "planned",
       "color": "#5EEAD4",
-      "start": "2026-06-01",
+      "start": "",
       "parentId": 5
     },
     {
