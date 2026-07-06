@@ -53,7 +53,7 @@
         {
           "id": 72,
           "supplier": "Flem´s",
-          "unitPrice": 1000,
+          "unitPrice": 849.99,
           "date": "",
           "notes": "",
           "chosen": true
@@ -1963,7 +1963,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783335395520,
+  "_savedAt": 1783335399240,
   "nextOrderId": 3,
   "nextQuoteId": 73,
   "nextItemId": 178,
