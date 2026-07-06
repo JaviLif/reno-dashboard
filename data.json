@@ -74,6 +74,21 @@
           "returnDate": "",
           "returnReason": "",
           "notes": ""
+        },
+        {
+          "id": 3,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 849.99,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
         }
       ],
       "documents": [],
@@ -1963,8 +1978,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 1,
-  "_savedAt": 1783335399240,
-  "nextOrderId": 3,
+  "_savedAt": 1783335407216,
+  "nextOrderId": 4,
   "nextQuoteId": 73,
   "nextItemId": 178,
   "_version": "dashboard-v1",
