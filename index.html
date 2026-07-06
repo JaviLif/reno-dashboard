@@ -1426,6 +1426,7 @@ const ITEM_COLUMNS=[
   {key:'status',label:'Status',minWidth:110,sortable:true},
   {key:'delivery',label:'Delivery'},
   {key:'netspent',label:'Net Spent',align:'right'},
+  {key:'link',label:'Link',minWidth:70},
 ];
 function loadItemsUI(){
   const validKeys=ITEM_COLUMNS.map(c=>c.key);
@@ -1456,12 +1457,12 @@ function colGroupHtml(){
   const cols=visibleColumnOrder();
   let html='<col style="width:36px">';
   cols.forEach(key=>{ html+=`<col style="width:${colWidthOf(key)}px">`; });
-  html+='<col style="width:40px"><col style="width:36px">';
+  html+='<col style="width:36px">';
   return html;
 }
 function totalColsWidthPx(){
   const cols=visibleColumnOrder();
-  let total=36+40+36;
+  let total=36+36;
   cols.forEach(key=>{ total+=colWidthOf(key); });
   return total;
 }
@@ -2631,7 +2632,7 @@ function itemsTheadHtml(){
     }
     return `<th style="${style}">${col.label}${handle}</th>`;
   }).join('');
-  return `<tr><th style="width:36px"></th>${ths}<th style="width:40px;text-align:center">Link</th><th style="width:36px"></th></tr>`;
+  return `<tr><th style="width:36px"></th>${ths}<th style="width:36px"></th></tr>`;
 }
 function categoryIcon(name){
   const n=(name||'').toLowerCase();
@@ -2700,19 +2701,15 @@ function itemRowHtml(it,idx){
   const ctx={cq,st,sc,delivStr};
   const cols=visibleColumnOrder();
   const expanded=expandedItems.has(it.id);
-  const linkCell=it.link
-    ? `<td style="text-align:center"><a href="${escapeAttr(it.link)}" target="_blank" rel="noopener" class="link-btn" title="Open link">🔗</a></td>`
-    : `<td style="text-align:center"><span class="muted" style="font-size:11px">—</span></td>`;
   const accent=phaseById(it.phaseId)?.color||'#CBD5E1';
   const altClass=(idx%2===1)?' tr-alt':'';
   let html=`<tr data-item-row="${it.id}" class="${altClass.trim()}">
     <td style="border-left:3px solid ${accent}"><button class="btn btn-ghost btn-icon btn-sm" onclick="toggleExpand(${it.id})" title="Quotes &amp; orders">${expanded?'▾':'▸'}</button></td>
     ${cols.map(key=>itemCellHtml(it,key,ctx)).join('')}
-    ${linkCell}
     <td><button class="btn btn-ghost btn-icon btn-sm" onclick="deleteItemRow(${it.id})" title="Delete item">×</button></td>
   </tr>`;
   if(expanded){
-    html+=`<tr class="item-detail-row"><td></td><td colspan="${cols.length+2}" style="background:var(--g50);padding:14px 16px">
+    html+=`<tr class="item-detail-row"><td></td><td colspan="${cols.length+1}" style="background:var(--g50);padding:14px 16px">
       <div class="fm-row" style="margin-bottom:14px">
         <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Item notes</label><input class="fm-inp" style="font-size:12px" value="${escapeAttr(it.notes||'')}" placeholder="Any notes…" onchange="updateItemField(${it.id},'notes',this.value)"></div>
         <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Link</label><input class="fm-inp" style="font-size:12px" value="${escapeAttr(it.link||'')}" placeholder="https://…" onchange="updateItemField(${it.id},'link',this.value)"></div>
@@ -3810,6 +3807,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.14</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.15</div>
 </body>
 </html>
