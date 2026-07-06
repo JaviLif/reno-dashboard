@@ -159,7 +159,7 @@
           "supplier": "Perfectkeur",
           "unitPrice": 689.65,
           "date": "",
-          "notes": "Extra PLM (polarisatiemicroscopi) monster De extra PLM monsters zullen achteraf in rekening worden gebracht (zonder nader overleg), indien van toepassing. € 45,00 Extra SEM monster SEM monsters zullen achteraf in rekening worden gebracht (zonder nader overleg), indien van toepassing. € 135,00",
+          "notes": "Plm 45, SEM 135",
           "chosen": false
         }
       ],
@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336071288,
+  "_savedAt": 1783336084247,
   "nextOrderId": 4,
   "nextQuoteId": 75,
   "nextItemId": 178,
