@@ -633,31 +633,6 @@
       "name": "Extras, Glue, Material (Heat Pump)"
     },
     {
-      "notes": "",
-      "name": "MVHR Unit",
-      "qty": 1,
-      "categoryId": 3,
-      "orders": [],
-      "quotes": [
-        {
-          "unitPrice": 1890,
-          "notes": "",
-          "id": 18,
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "documents": []
-        }
-      ],
-      "phaseId": 65,
-      "unit": "pcs",
-      "description": "Vent-Axia Sentinel Kinetic Advance 250m∩┐╜/h",
-      "id": 114,
-      "documents": [],
-      "status": "not-ordered",
-      "link": "https://www.lueftungsland.de/de_DE/p/vent-axia-sentinel-kinetic-advance-einschliesslich-vorwarmer-250-m3-h-rechts/9985/"
-    },
-    {
       "name": "Tools Extras (MVHR)",
       "notes": "",
       "qty": 1,
@@ -2155,7 +2130,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783351740984,
+  "_savedAt": 1783351789848,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
