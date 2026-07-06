@@ -1944,6 +1944,17 @@
       "kanbanOrder": 70
     },
     {
+      "id": 8,
+      "phaseId": 61,
+      "name": "Quotation for Structure wall",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 80
+    },
+    {
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
@@ -1964,17 +1975,6 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 100
-    },
-    {
-      "id": 8,
-      "phaseId": 61,
-      "name": "Quotation for Structure wall",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "in-progress",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 80
     }
   ],
   "nextTaskId": 13,
@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336300472,
+  "_savedAt": 1783336306161,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
