@@ -152,7 +152,7 @@
           "unitPrice": 798.6,
           "date": "",
           "notes": "",
-          "chosen": false
+          "chosen": true
         },
         {
           "id": 74,
@@ -160,7 +160,7 @@
           "unitPrice": 689.65,
           "date": "",
           "notes": "Plm 45, SEM 135",
-          "chosen": true
+          "chosen": false
         }
       ],
       "orders": [],
@@ -1988,7 +1988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336164648,
+  "_savedAt": 1783336190256,
   "nextOrderId": 7,
   "nextQuoteId": 75,
   "nextItemId": 178,
