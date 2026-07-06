@@ -142,7 +142,7 @@
           "chosen": true,
           "date": "2026-07-04",
           "supplier": "van Ekeren ",
-          "unitPrice": 1000,
+          "unitPrice": 450,
           "id": 2,
           "notes": ""
         }
@@ -1972,7 +1972,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783335774744,
+  "_savedAt": 1783335800054,
   "nextOrderId": 4,
   "nextQuoteId": 73,
   "nextItemId": 178,
