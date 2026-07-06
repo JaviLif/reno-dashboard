@@ -163,7 +163,23 @@
           "chosen": false
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 4,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 450,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "qty": 1,
       "notes": "",
       "name": "Asbestreport"
@@ -1988,8 +2004,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783336084247,
-  "nextOrderId": 4,
+  "_savedAt": 1783336130424,
+  "nextOrderId": 5,
   "nextQuoteId": 75,
   "nextItemId": 178,
   "_version": "dashboard-v1",
