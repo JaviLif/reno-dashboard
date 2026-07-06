@@ -2024,16 +2024,16 @@
       "kanbanOrder": 40
     },
     {
-      "start": null,
+      "start": "",
       "assignee": "",
       "dueDate": null,
-      "end": null,
+      "end": "",
       "status": "planned",
       "name": "Removing Existing Floor",
       "id": 5,
       "notes": "",
       "description": "Self Made",
-      "phaseId": 62,
+      "phaseId": 73,
       "priority": "med",
       "kanbanOrder": 50
     },
@@ -2141,7 +2141,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783367687808,
+  "_savedAt": 1783367712652,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
