@@ -2330,7 +2330,8 @@ function renderPhaseCatBudget(){
 function addItem(){
   const id=S.nextItemId++;
   const ph=topPhases()[0];
-  S.items.unshift({id,phaseId:ph?(childrenOf(ph.id)[0]?.id||ph.id):null,categoryId:null,name:'',description:'',link:'',qty:1,unit:'',notes:'',quotes:[],orders:[],documents:[]});
+  const defPhase=_bomPhaseId?Number(_bomPhaseId):(ph?(childrenOf(ph.id)[0]?.id||ph.id):null);
+  S.items.unshift({id,phaseId:defPhase,categoryId:null,name:'',description:'',link:'',qty:1,unit:'',notes:'',quotes:[],orders:[],documents:[]});
   expandedItems.add(id);
   saveState();
   const navItems=document.querySelector('.nav-btn[data-tab="items"]');
@@ -2360,7 +2361,9 @@ function updateItemField(id,field,value){
   if(field==='phaseId') value=value?Number(value):null;
   if(field==='categoryId') value=value?Number(value):null;
   it[field]=value;
+  if(field==='phaseId'&&_bomPhaseId) _bomPhaseId=null;
   saveState(); refreshAll();
+  if(field==='phaseId') setTimeout(()=>{const r=document.querySelector(`[data-item-row="${id}"]`);if(r)r.scrollIntoView({behavior:'smooth',block:'center'});},50);
 }
 function updateItemPrice(itemId,value){
   const it=itemById(itemId); if(!it) return;
@@ -2520,6 +2523,29 @@ function odocsThumbsHtml(itemId,oid,docs){
       : `<span title="${nm}" onclick="showODoc(${itemId},${oid},${d.id})" style="font-size:22px;cursor:pointer;line-height:36px">&#128196;</span>`;
     return `<span style="position:relative;display:inline-flex;align-items:center">${thumb}<button onclick="deleteOrderDoc(${itemId},${oid},${d.id})" title="Remove" style="position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border:none;border-radius:50%;width:14px;height:14px;font-size:9px;line-height:14px;cursor:pointer;padding:0;text-align:center">x</button></span>`;
   }).join('');
+}
+async function prefillFromLink(itemId){
+  const it=itemById(itemId); if(!it||!it.link) return;
+  const btn=document.getElementById('pfbtn-'+itemId);
+  if(btn){btn.disabled=true;btn.textContent='...';}
+  try{
+    const proxy='https://corsproxy.io/?url='+encodeURIComponent(it.link);
+    const res=await fetch(proxy,{signal:AbortSignal.timeout(10000)});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const html=await res.text();
+    const doc=new DOMParser().parseFromString(html,'text/html');
+    const name=(doc.querySelector('meta[property="og:title"]')?.content||doc.title||'').replace(/\s*[|\-–—]\s*.{0,50}$/,'').trim();
+    let price=null;
+    doc.querySelectorAll('script[type="application/ld+json"]').forEach(s=>{try{const d=JSON.parse(s.textContent);const p=d?.offers?.price||d?.offers?.[0]?.price;if(p&&!price)price=parseFloat(String(p).replace(',','.'))||null;}catch(e){}});
+    if(!price){const m=doc.querySelector('meta[property="product:price:amount"]')||doc.querySelector('meta[itemprop="price"]');if(m?.content)price=parseFloat(m.content.replace(',','.'))||null;}
+    if(!price){const t=(doc.body?.textContent||'');const m=t.match(/(\d{1,3}(?:\.\d{3})*,\d{2})/);if(m)price=parseFloat(m[1].replace(/\./g,'').replace(',','.'))||null;}
+    let changed=false;
+    if(name){it.name=name;changed=true;}
+    if(price){let q=it.quotes.find(x=>x.chosen)||it.quotes[0];if(!q){q={id:S.nextQuoteId++,supplier:'',unitPrice:price,date:'',notes:'',chosen:true};it.quotes.push(q);}else{q.unitPrice=price;}changed=true;}
+    if(changed){saveState();renderItems();}
+    if(!name&&!price)alert('No product data found on this page.');
+  }catch(e){alert('Could not fetch: '+(e.message||'network error'));}
+  finally{const b=document.getElementById('pfbtn-'+itemId);if(b){b.disabled=false;b.textContent='✨ Prefill';}}
 }
 function documentsPanelHtml(it){
   const docs=it.documents||[];
@@ -2712,7 +2738,7 @@ function itemRowHtml(it,idx){
     html+=`<tr class="item-detail-row"><td></td><td colspan="${cols.length+1}" style="background:var(--g50);padding:14px 16px">
       <div class="fm-row" style="margin-bottom:14px">
         <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Item notes</label><input class="fm-inp" style="font-size:12px" value="${escapeAttr(it.notes||'')}" placeholder="Any notes…" onchange="updateItemField(${it.id},'notes',this.value)"></div>
-        <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Link</label><input class="fm-inp" style="font-size:12px" value="${escapeAttr(it.link||'')}" placeholder="https://…" onchange="updateItemField(${it.id},'link',this.value)"></div>
+        <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Link</label><div class="flex" style="gap:6px"><input class="fm-inp" style="font-size:12px;flex:1" value="${escapeAttr(it.link||'')}" placeholder="https://…" onchange="updateItemField(${it.id},'link',this.value)">${it.link?`<button id="pfbtn-${it.id}" class="btn btn-ghost btn-sm" onclick="prefillFromLink(${it.id})" title="Prefill name & price from URL" style="white-space:nowrap">✨ Prefill</button>`:''}</div></div>
       </div>
       ${documentsPanelHtml(it)}
       ${quotesPanelHtml(it)}
@@ -3807,6 +3833,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.15</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.16</div>
 </body>
 </html>
