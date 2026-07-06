@@ -145,6 +145,14 @@
           "unitPrice": 450,
           "id": 2,
           "notes": ""
+        },
+        {
+          "id": 73,
+          "supplier": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": false
         }
       ],
       "orders": [],
@@ -1972,9 +1980,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 2,
-  "_savedAt": 1783335800054,
+  "_savedAt": 1783335886671,
   "nextOrderId": 4,
-  "nextQuoteId": 73,
+  "nextQuoteId": 74,
   "nextItemId": 178,
   "_version": "dashboard-v1",
   "phases": [
