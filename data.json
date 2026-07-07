@@ -16,7 +16,7 @@
       "name": "Materials"
     },
     {
-      "color": "#0891b2",
+      "color": "#000000",
       "id": 4,
       "name": "Labor / Contractors / Quotations"
     },
@@ -2232,7 +2232,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428067674,
+  "_savedAt": 1783428072157,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
