@@ -2358,7 +2358,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453656116,
+  "_savedAt": 1783453660472,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
@@ -2643,7 +2643,7 @@
     {
       "notes": "",
       "id": 67,
-      "number": "4.2",
+      "number": "4.1",
       "name": "Walls",
       "budget": 4000,
       "status": "planned",
@@ -2655,7 +2655,7 @@
     {
       "budget": 7000,
       "name": "Floor",
-      "number": "4.3",
+      "number": "4.2",
       "notes": "",
       "id": 68,
       "end": "",
@@ -2674,7 +2674,7 @@
       "id": 69,
       "budget": 6000,
       "name": "Kitchen",
-      "number": "4.1"
+      "number": "4.3"
     },
     {
       "id": 70,
