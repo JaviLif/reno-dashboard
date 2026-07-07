@@ -531,23 +531,7 @@
           "documents": []
         }
       ],
-      "orders": [
-        {
-          "id": 10,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 1500,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
+      "orders": [],
       "qty": 1,
       "notes": "",
       "name": "Water Supply & Drainage Pipes",
@@ -2379,7 +2363,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454434427,
+  "_savedAt": 1783454452566,
   "nextOrderId": 11,
   "nextQuoteId": 86,
   "nextItemId": 195,
