@@ -2118,6 +2118,16 @@
       "notes": ""
     },
     {
+      "id": 17,
+      "phaseId": 62,
+      "name": "Decide electrical installation (Lights and sockets)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2150,7 +2160,7 @@
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 17,
+  "nextTaskId": 18,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2161,7 +2171,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783410596347,
+  "_savedAt": 1783410624770,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
