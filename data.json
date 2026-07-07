@@ -31,7 +31,7 @@
       "id": 7
     },
     {
-      "color": "#7c3aed",
+      "color": "#3ad0ee",
       "id": 8,
       "name": "Tools"
     }
@@ -2232,7 +2232,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428062548,
+  "_savedAt": 1783428067674,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
