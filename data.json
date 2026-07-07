@@ -2145,6 +2145,20 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "name": "Removing Existing Walls",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "planned",
+      "kanbanOrder": 0
+    },
+    {
       "end": null,
       "status": "planned",
       "start": null,
@@ -2215,20 +2229,6 @@
       "kanbanOrder": 50
     },
     {
-      "name": "Removing Existing Walls",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "planned",
-      "kanbanOrder": 60
-    },
-    {
       "description": "Self Made",
       "notes": "",
       "id": 7,
@@ -2240,7 +2240,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 70
+      "kanbanOrder": 60
     },
     {
       "id": 8,
@@ -2251,7 +2251,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80
+      "kanbanOrder": 70
     },
     {
       "id": 11,
@@ -2262,7 +2262,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100
+      "kanbanOrder": 80
     },
     {
       "id": 14,
@@ -2272,7 +2272,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 90
     },
     {
       "id": 15,
@@ -2282,7 +2283,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 100
     },
     {
       "id": 16,
@@ -2292,7 +2294,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 110
     },
     {
       "id": 17,
@@ -2302,7 +2305,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 120
     },
     {
       "id": 18,
@@ -2312,7 +2316,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 130
     },
     {
       "id": 9,
@@ -2358,7 +2363,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453823306,
+  "_savedAt": 1783453828448,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
