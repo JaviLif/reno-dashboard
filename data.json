@@ -1070,23 +1070,7 @@
     },
     {
       "qty": 1,
-      "orders": [
-        {
-          "id": 7,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 500,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
+      "orders": [],
       "quotes": [
         {
           "chosen": true,
@@ -2232,7 +2216,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783427820546,
+  "_savedAt": 1783427841650,
   "nextOrderId": 8,
   "nextQuoteId": 81,
   "nextItemId": 190,
