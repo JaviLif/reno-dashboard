@@ -1084,7 +1084,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "quotes": [
@@ -1817,7 +1818,7 @@
       "categoryId": 7,
       "qty": 1,
       "documents": [],
-      "description": "40 sqm @ Γé¼14/m┬▓ ISDE",
+      "description": " 40 sqm @ 14/m2 subsidie ISDE Subsidie ",
       "id": 162,
       "phaseId": 66,
       "unit": "m∩┐╜",
@@ -2232,7 +2233,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428072157,
+  "_savedAt": 1783428316083,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
