@@ -42,7 +42,7 @@
     {
       "id": 196,
       "phaseId": 60,
-      "categoryId": null,
+      "categoryId": 1,
       "name": "Hypotheek Adviseur",
       "description": "Mark De Kredieter",
       "link": "",
@@ -2387,7 +2387,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454731801,
+  "_savedAt": 1783454739498,
   "nextOrderId": 11,
   "nextQuoteId": 88,
   "nextItemId": 197,
