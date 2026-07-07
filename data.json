@@ -2128,6 +2128,16 @@
       "notes": ""
     },
     {
+      "id": 18,
+      "phaseId": 62,
+      "name": "Decide ceiling storage space",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2160,7 +2170,7 @@
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 18,
+  "nextTaskId": 19,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2171,7 +2181,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783410624770,
+  "_savedAt": 1783410673059,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
