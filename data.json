@@ -43,13 +43,22 @@
       "id": 193,
       "phaseId": 51,
       "categoryId": null,
-      "name": "",
+      "name": "Cellenbetonblokken G",
       "description": "",
       "link": "https://www.sleiderink.nl/cellenbetonblokken-g4-600",
-      "qty": 1,
+      "qty": 2,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 84,
+          "supplier": "",
+          "unitPrice": 1.84,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2318,9 +2327,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783435466999,
+  "_savedAt": 1783435475911,
   "nextOrderId": 9,
-  "nextQuoteId": 84,
+  "nextQuoteId": 85,
   "nextItemId": 194,
   "_version": "dashboard-v1",
   "phases": [
