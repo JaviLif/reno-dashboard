@@ -2387,7 +2387,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454739498,
+  "_savedAt": 1783454777243,
   "nextOrderId": 11,
   "nextQuoteId": 88,
   "nextItemId": 197,
@@ -2600,7 +2600,7 @@
     {
       "number": "1.1",
       "name": "Buying",
-      "budget": 1000,
+      "budget": 5000,
       "notes": "",
       "id": 60,
       "end": "2026-08-25",
