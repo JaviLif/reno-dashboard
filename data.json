@@ -43,13 +43,22 @@
       "id": 194,
       "phaseId": 51,
       "categoryId": null,
-      "name": "",
+      "name": "ProfPartner Cellenbetonlijm",
       "description": "",
       "link": "https://www.sleiderink.nl/profpartner-cellenbetonlijm",
-      "qty": 1,
+      "qty": 4,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 85,
+          "supplier": "",
+          "unitPrice": 1.84,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2341,9 +2350,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783435527039,
+  "_savedAt": 1783435534398,
   "nextOrderId": 9,
-  "nextQuoteId": 85,
+  "nextQuoteId": 86,
   "nextItemId": 195,
   "_version": "dashboard-v1",
   "phases": [
