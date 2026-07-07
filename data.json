@@ -2181,7 +2181,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783410698094,
+  "_savedAt": 1783410703215,
   "nextOrderId": 7,
   "nextQuoteId": 79,
   "nextItemId": 188,
@@ -2257,7 +2257,7 @@
       "id": 31,
       "budget": 10000,
       "name": "Isolation",
-      "number": "3.2"
+      "number": "3.1"
     },
     {
       "end": "2026-09-30",
@@ -2266,7 +2266,7 @@
       "start": "2026-07-01",
       "parentId": 3,
       "budget": 2000,
-      "number": "3.3",
+      "number": "3.2",
       "name": "Electricity",
       "notes": "",
       "id": 32
@@ -2274,7 +2274,7 @@
     {
       "notes": "",
       "id": 33,
-      "number": "3.4",
+      "number": "3.3",
       "name": "Water",
       "budget": 4000,
       "status": "planned",
@@ -2286,7 +2286,7 @@
     {
       "id": 34,
       "notes": "Air-to-water heat pump",
-      "number": "3.1",
+      "number": "3.4",
       "name": "Heat Pump",
       "budget": 10000,
       "status": "planned",
