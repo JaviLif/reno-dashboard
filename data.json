@@ -1858,7 +1858,7 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "unitPrice": -1500,
+          "unitPrice": -25,
           "id": 65,
           "notes": "",
           "documents": []
@@ -2233,7 +2233,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428439090,
+  "_savedAt": 1783428448155,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
