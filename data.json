@@ -26,7 +26,7 @@
       "name": "Consumables"
     },
     {
-      "name": "Other",
+      "name": "Subsidies",
       "color": "#64748B",
       "id": 7
     },
@@ -2212,7 +2212,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783418720825,
+  "_savedAt": 1783418743972,
   "nextOrderId": 7,
   "nextQuoteId": 81,
   "nextItemId": 190,
