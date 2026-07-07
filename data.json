@@ -43,13 +43,22 @@
       "id": 188,
       "phaseId": 67,
       "categoryId": null,
-      "name": "",
+      "name": "Shadow gaps for walls, ceilings, and floors with the option to integrate LED lighting.",
       "description": "",
       "link": "https://enup.lv/shadowgaps?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAS26e9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAady1HKrnhqtlxXYZLUS6Tc8GXLvKJ_QOOuVpaJHLemoo8I5frdRdXCp0OKsxQ_aem_6Audi4E5CTSR09_ykslIyQ",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 79,
+          "supplier": "",
+          "unitPrice": 255.25,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2195,9 +2204,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783417935091,
+  "_savedAt": 1783417954111,
   "nextOrderId": 7,
-  "nextQuoteId": 79,
+  "nextQuoteId": 80,
   "nextItemId": 189,
   "_version": "dashboard-v1",
   "phases": [
