@@ -27,7 +27,7 @@
     },
     {
       "name": "Subsidies",
-      "color": "#64748B",
+      "color": "#2ad71d",
       "id": 7
     },
     {
@@ -2212,7 +2212,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783418743972,
+  "_savedAt": 1783418747086,
   "nextOrderId": 7,
   "nextQuoteId": 81,
   "nextItemId": 190,
