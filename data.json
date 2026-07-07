@@ -56,11 +56,13 @@
           "unitPrice": 1.84,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 193,
@@ -79,11 +81,13 @@
           "unitPrice": 4.7,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 192,
@@ -102,11 +106,13 @@
           "unitPrice": 37,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 191,
@@ -125,11 +131,13 @@
           "unitPrice": 1.84,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 190,
@@ -2350,7 +2358,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783435534398,
+  "_savedAt": 1783453649459,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
@@ -2622,7 +2630,7 @@
     },
     {
       "budget": 0,
-      "name": "Subsidie",
+      "name": "Subsidies",
       "number": "7",
       "notes": "",
       "id": 66,
