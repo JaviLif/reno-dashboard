@@ -1837,7 +1837,7 @@
       "notes": "",
       "quotes": [
         {
-          "unitPrice": -50,
+          "unitPrice": -25,
           "notes": "",
           "id": 64,
           "chosen": true,
@@ -2233,7 +2233,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428429514,
+  "_savedAt": 1783428439090,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
