@@ -8,7 +8,7 @@
     {
       "name": "Design & Architecture",
       "id": 2,
-      "color": "#9333EA"
+      "color": "#ead134"
     },
     {
       "color": "#2563EB",
@@ -2232,7 +2232,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783427848530,
+  "_savedAt": 1783428062548,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
