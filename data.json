@@ -56,11 +56,13 @@
           "unitPrice": 13,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 188,
@@ -79,11 +81,13 @@
           "unitPrice": 255.25,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 187,
@@ -1920,7 +1924,7 @@
       "phaseId": 63
     },
     {
-      "qty": 120,
+      "qty": 120.01,
       "categoryId": 4,
       "quotes": [
         {
@@ -2212,7 +2216,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783418747086,
+  "_savedAt": 1783426065409,
   "nextOrderId": 7,
   "nextQuoteId": 81,
   "nextItemId": 190,
