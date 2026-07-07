@@ -2145,20 +2145,6 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
-      "end": null,
-      "status": "planned",
-      "start": null,
-      "dueDate": null,
-      "assignee": "",
-      "phaseId": 61,
-      "priority": "med",
-      "name": "Preliminary Layout Kitchen & Bath",
-      "id": 1,
-      "notes": "",
-      "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 10
-    },
-    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -2345,6 +2331,20 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
+    },
+    {
+      "end": null,
+      "status": "delayed",
+      "start": null,
+      "dueDate": null,
+      "assignee": "",
+      "phaseId": 61,
+      "priority": "med",
+      "name": "Preliminary Layout Kitchen & Bath",
+      "id": 1,
+      "notes": "",
+      "description": "Preliminary simple Layout Kitchen & Bath",
+      "kanbanOrder": 10
     }
   ],
   "nextTaskId": 19,
@@ -2358,7 +2358,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453792094,
+  "_savedAt": 1783453820285,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
