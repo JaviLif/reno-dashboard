@@ -161,21 +161,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 183,
-      "phaseId": 60,
-      "categoryId": null,
-      "name": "",
-      "description": "",
-      "link": "https://www.elektramat.nl/itho-daalderop-cve-s-pak-se-rft-n-mechanische-ventilatie-unit-375-m3-h-met-geintegreerde-rv-sensor-en-draadloze-afstandsbediening-eurostekker-03-00838/?_gl=1*1d0b8fl*_up*MQ..*_gs*MQ..*_ga*NDc4NTIwMTM1LjE3ODMzNDU5MjQ.*_ga_WPXDT6EWYX*czE3ODMzNDU5MjMkbzEkZzAkdDE3ODMzNDU5MjMkajYwJGwwJGgxNjA3NTcwODc.&gclid=CjwKCAjwpK3SBhASEiwAtV1SPJ7dS5M8onMB9oBRH4_LvQPVabDi8yqVu7wLK5NNJ30c32QIQAuKUBoCwJ0QAvD_BwE&gbraid=0AAAAAD5RVIfPTeRpMYAImJDT5rx3pq7j3",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 177,
       "phaseId": 60,
       "categoryId": 1,
@@ -2227,7 +2212,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783418577349,
+  "_savedAt": 1783418720825,
   "nextOrderId": 7,
   "nextQuoteId": 81,
   "nextItemId": 190,
