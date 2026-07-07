@@ -2320,16 +2320,6 @@
       "kanbanOrder": 130
     },
     {
-      "id": 19,
-      "phaseId": 34,
-      "name": "Insztalllation of HP",
-      "start": "2026-09-01",
-      "end": "2026-09-02",
-      "status": "planned",
-      "assignee": "",
-      "notes": ""
-    },
-    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2373,7 +2363,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453996869,
+  "_savedAt": 1783454024380,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
