@@ -1848,7 +1848,7 @@
       ],
       "orders": [],
       "categoryId": 7,
-      "qty": 1
+      "qty": 50
     },
     {
       "qty": 1,
@@ -2233,7 +2233,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783428398011,
+  "_savedAt": 1783428411946,
   "nextOrderId": 9,
   "nextQuoteId": 81,
   "nextItemId": 190,
