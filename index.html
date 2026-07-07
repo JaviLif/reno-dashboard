@@ -635,6 +635,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
+          <div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -2899,7 +2900,7 @@ function renderItems(){
   // Group by phase whenever no phase filter active (always, even when sorted)
   let bodyHtml='';
   const cols=visibleColumnOrder();
-  if((!fPhase||childrenOf(Number(fPhase)).length>0) && items.length){
+  if(items.length){
     // Sort by phase order first, then by sortKey within each phase
     const phOrder=[];
     const addPh=p=>{phOrder.push(p.id);childrenOf(p.id).forEach(c=>addPh(c));};
@@ -3877,6 +3878,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.22</div>
+<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.23</div>
 </body>
 </html>
