@@ -2180,20 +2180,6 @@
       "kanbanOrder": 10
     },
     {
-      "notes": "",
-      "id": 3,
-      "description": "Preliminary simple Layout Electricity",
-      "name": "Preliminary Layout Electricity",
-      "phaseId": 61,
-      "priority": "med",
-      "start": null,
-      "assignee": "",
-      "dueDate": null,
-      "status": "planned",
-      "end": null,
-      "kanbanOrder": 20
-    },
-    {
       "start": null,
       "dueDate": null,
       "assignee": "",
@@ -2357,6 +2343,20 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
+    },
+    {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 61,
+      "priority": "med",
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "status": "completed",
+      "end": "",
+      "kanbanOrder": 20
     }
   ],
   "nextTaskId": 20,
@@ -2370,7 +2370,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454947241,
+  "_savedAt": 1783455167508,
   "nextOrderId": 11,
   "nextQuoteId": 88,
   "nextItemId": 197,
