@@ -1299,23 +1299,7 @@
           "documents": []
         }
       ],
-      "orders": [
-        {
-          "id": 9,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 6.8,
-          "qtyOrdered": 20,
-          "status": "ordered",
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
+      "orders": [],
       "notes": "",
       "name": "Water Pipe Fittings (Perskoppeling)",
       "status": "not-ordered",
@@ -2379,7 +2363,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454322200,
+  "_savedAt": 1783454404397,
   "nextOrderId": 10,
   "nextQuoteId": 86,
   "nextItemId": 195,
