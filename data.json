@@ -2358,7 +2358,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453780941,
+  "_savedAt": 1783453792094,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
@@ -2373,7 +2373,7 @@
       "start": "2026-06-13",
       "parentId": null,
       "color": "#B91C1C",
-      "status": "delayed",
+      "status": "in-progress",
       "end": "2026-08-25"
     },
     {
