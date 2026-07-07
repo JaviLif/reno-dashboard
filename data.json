@@ -43,13 +43,22 @@
       "id": 191,
       "phaseId": 31,
       "categoryId": null,
-      "name": "",
+      "name": "PIR",
       "description": "",
       "link": "https://www.sleiderink.nl/pir-2-zijdig-aluminium",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 82,
+          "supplier": "",
+          "unitPrice": 1.84,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2272,9 +2281,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783430758812,
+  "_savedAt": 1783430767236,
   "nextOrderId": 9,
-  "nextQuoteId": 82,
+  "nextQuoteId": 83,
   "nextItemId": 192,
   "_version": "dashboard-v1",
   "phases": [
