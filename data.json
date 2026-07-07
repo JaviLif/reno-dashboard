@@ -2358,7 +2358,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783453660472,
+  "_savedAt": 1783453699162,
   "nextOrderId": 9,
   "nextQuoteId": 86,
   "nextItemId": 195,
@@ -2437,10 +2437,10 @@
       "number": "3.1"
     },
     {
-      "end": "2026-09-30",
+      "end": "2026-09-08",
       "color": "#FDE047",
       "status": "planned",
-      "start": "2026-07-01",
+      "start": "2026-06-09",
       "parentId": 3,
       "budget": 2000,
       "number": "3.2",
