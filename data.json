@@ -40,29 +40,6 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 195,
-      "phaseId": 60,
-      "categoryId": null,
-      "name": "öonödso",
-      "description": "",
-      "link": "https://www.warmteservice.nl/Huis-%26-Gereedschap/Airconditioning/Single-split-airco/Atlantic-Murao-Smart-Single-split-airco-wandmodel/p/L1000463",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 86,
-          "supplier": "",
-          "unitPrice": 658,
-          "date": "",
-          "notes": "",
-          "chosen": true
-        }
-      ],
-      "orders": [],
-      "documents": []
-    },
-    {
       "id": 194,
       "phaseId": 51,
       "categoryId": null,
@@ -2386,7 +2363,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783454536749,
+  "_savedAt": 1783454542719,
   "nextOrderId": 11,
   "nextQuoteId": 87,
   "nextItemId": 196,
