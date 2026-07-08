@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 76,
+  "nextPhaseId": 77,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -2371,7 +2371,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783500676060,
+  "_savedAt": 1783500720803,
   "nextOrderId": 11,
   "nextQuoteId": 88,
   "nextItemId": 197,
@@ -2531,14 +2531,14 @@
       "parentId": 5,
       "end": "",
       "status": "planned",
-      "color": "#CCFBF1"
+      "color": "#14B8A6"
     },
     {
       "start": "",
       "parentId": 5,
       "end": "",
       "status": "planned",
-      "color": "#14B8A6",
+      "color": "#2DD4BF",
       "budget": 1000,
       "number": "5.5",
       "name": "Electricity",
@@ -2554,7 +2554,7 @@
       "parentId": 5,
       "start": "",
       "status": "planned",
-      "color": "#2DD4BF",
+      "color": "#5EEAD4",
       "end": ""
     },
     {
@@ -2564,7 +2564,7 @@
       "name": "Exterior Finishing",
       "budget": 3000,
       "status": "planned",
-      "color": "#5EEAD4",
+      "color": "#99F6E4",
       "end": "",
       "parentId": 5,
       "start": ""
@@ -2572,7 +2572,7 @@
     {
       "end": "",
       "status": "planned",
-      "color": "#99F6E4",
+      "color": "#CCFBF1",
       "start": "",
       "parentId": 5,
       "budget": 1000,
@@ -2758,6 +2758,18 @@
       "end": "",
       "status": "planned",
       "color": "#99F6E4",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 76,
+      "name": "Shell creation (Timber Wood)",
+      "parentId": 5,
+      "number": "5.3.2",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#CCFBF1",
       "notes": "",
       "budget": 0
     }
