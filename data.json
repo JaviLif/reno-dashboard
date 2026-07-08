@@ -831,7 +831,7 @@
       "categoryId": 3,
       "quotes": [
         {
-          "unitPrice": 16,
+          "unitPrice": 25,
           "id": 9,
           "notes": "",
           "chosen": true,
@@ -2571,7 +2571,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507721682,
+  "_savedAt": 1783507806414,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
