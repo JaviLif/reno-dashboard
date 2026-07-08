@@ -134,7 +134,7 @@
     {
       "id": 200,
       "phaseId": 76,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Wood beams for walls",
       "description": "Balken 20x120 @ 60cm spacing",
       "link": "https://www.sleiderink.nl/vuren-geschaafd-50x125",
@@ -157,7 +157,7 @@
     {
       "id": 197,
       "phaseId": 76,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "OSB 2440x1220x11mm",
       "description": "12 walls",
       "link": "",
@@ -2511,7 +2511,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783502564096,
+  "_savedAt": 1783502570232,
   "nextOrderId": 11,
   "nextQuoteId": 95,
   "nextItemId": 206,
