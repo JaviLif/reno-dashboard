@@ -43,13 +43,22 @@
       "id": 200,
       "phaseId": 76,
       "categoryId": null,
-      "name": "",
+      "name": "V",
       "description": "",
       "link": "https://www.sleiderink.nl/vuren-geschaafd-50x125",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 90,
+          "supplier": "",
+          "unitPrice": 1.84,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -2425,9 +2434,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783501260668,
+  "_savedAt": 1783501269720,
   "nextOrderId": 11,
-  "nextQuoteId": 90,
+  "nextQuoteId": 91,
   "nextItemId": 201,
   "_version": "dashboard-v1",
   "phases": [
