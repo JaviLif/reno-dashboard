@@ -853,31 +853,6 @@
       "name": "Outside Wall Isolation"
     },
     {
-      "qty": 50,
-      "categoryId": 3,
-      "orders": [],
-      "quotes": [
-        {
-          "id": 11,
-          "notes": "",
-          "unitPrice": 25,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": []
-        }
-      ],
-      "notes": "",
-      "name": "Roof Isolation",
-      "status": "not-ordered",
-      "link": "",
-      "unit": "m∩┐╜",
-      "phaseId": 31,
-      "id": 107,
-      "description": "Rd 5,45; 120mm Price per sqm",
-      "documents": []
-    },
-    {
       "documents": [],
       "description": "Only boards",
       "id": 108,
@@ -2580,7 +2555,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507585734,
+  "_savedAt": 1783507650063,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
