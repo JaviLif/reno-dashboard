@@ -1954,7 +1954,7 @@
           "chosen": true,
           "notes": "",
           "id": 56,
-          "unitPrice": 400,
+          "unitPrice": 220,
           "documents": []
         }
       ],
@@ -2557,7 +2557,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783504178703,
+  "_savedAt": 1783504180318,
   "nextOrderId": 11,
   "nextQuoteId": 97,
   "nextItemId": 208,
