@@ -109,20 +109,6 @@
       "documents": []
     },
     {
-      "id": 201,
-      "phaseId": 76,
-      "categoryId": null,
-      "name": "",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": []
-    },
-    {
       "id": 200,
       "phaseId": 76,
       "categoryId": null,
@@ -2517,7 +2503,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783502261194,
+  "_savedAt": 1783502304811,
   "nextOrderId": 11,
   "nextQuoteId": 94,
   "nextItemId": 205,
