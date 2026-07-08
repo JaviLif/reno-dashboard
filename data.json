@@ -155,21 +155,6 @@
       "documents": []
     },
     {
-      "id": 199,
-      "phaseId": 55,
-      "categoryId": 3,
-      "name": "",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 197,
       "phaseId": 76,
       "categoryId": null,
@@ -2526,7 +2511,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783502450872,
+  "_savedAt": 1783502538576,
   "nextOrderId": 11,
   "nextQuoteId": 95,
   "nextItemId": 206,
