@@ -40,6 +40,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 200,
+      "phaseId": 76,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 199,
       "phaseId": 55,
       "categoryId": 3,
@@ -51,7 +65,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 197,
@@ -70,11 +85,13 @@
           "unitPrice": 16.9,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 196,
@@ -2408,10 +2425,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783500986545,
+  "_savedAt": 1783501255572,
   "nextOrderId": 11,
   "nextQuoteId": 90,
-  "nextItemId": 200,
+  "nextItemId": 201,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -2560,7 +2577,7 @@
     },
     {
       "budget": 1000,
-      "number": "5.4",
+      "number": "5.6",
       "name": "Isolation & Water Protection",
       "notes": "",
       "id": 52,
@@ -2577,7 +2594,7 @@
       "status": "planned",
       "color": "#2DD4BF",
       "budget": 1000,
-      "number": "5.5",
+      "number": "5.7",
       "name": "Electricity",
       "notes": "",
       "id": 53
@@ -2585,7 +2602,7 @@
     {
       "id": 54,
       "notes": "",
-      "number": "5.6",
+      "number": "5.8",
       "name": "Water",
       "budget": 1000,
       "parentId": 5,
@@ -2597,7 +2614,7 @@
     {
       "id": 55,
       "notes": "",
-      "number": "5.7",
+      "number": "5.9",
       "name": "Exterior Finishing",
       "budget": 3000,
       "status": "planned",
@@ -2613,7 +2630,7 @@
       "start": "",
       "parentId": 5,
       "budget": 1000,
-      "number": "5.8",
+      "number": "5.10",
       "name": "Interior Finishing",
       "id": 56,
       "notes": ""
@@ -2790,7 +2807,7 @@
       "id": 75,
       "name": "Shell creation (Cellen Beton)",
       "parentId": 5,
-      "number": "5.3.1",
+      "number": "5.4",
       "start": "",
       "end": "",
       "status": "planned",
@@ -2802,7 +2819,7 @@
       "id": 76,
       "name": "Shell creation (Timber Wood)",
       "parentId": 5,
-      "number": "5.3.2",
+      "number": "5.5",
       "start": "",
       "end": "",
       "status": "planned",
