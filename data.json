@@ -49,16 +49,7 @@
       "qty": 12,
       "unit": "",
       "notes": "",
-      "quotes": [
-        {
-          "id": 88,
-          "supplier": "",
-          "unitPrice": 16.9,
-          "date": "",
-          "notes": "",
-          "chosen": true
-        }
-      ],
+      "quotes": [],
       "orders": [],
       "documents": []
     },
@@ -2394,7 +2385,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783500789914,
+  "_savedAt": 1783500799138,
   "nextOrderId": 11,
   "nextQuoteId": 89,
   "nextItemId": 198,
