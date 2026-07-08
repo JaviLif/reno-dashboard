@@ -46,7 +46,7 @@
       "name": "Wood beams roof",
       "description": "75x175 ",
       "link": "",
-      "qty": 1,
+      "qty": 8,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -2494,7 +2494,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783502121379,
+  "_savedAt": 1783502124259,
   "nextOrderId": 11,
   "nextQuoteId": 93,
   "nextItemId": 204,
