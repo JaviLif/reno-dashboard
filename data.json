@@ -1967,7 +1967,7 @@
       "phaseId": 52,
       "documents": [],
       "id": 155,
-      "description": "1,5mm 4mx4,5m"
+      "description": "1,14mm 4,58mx4m"
     },
     {
       "name": "Kleber (EPDM)",
@@ -2557,7 +2557,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783504159094,
+  "_savedAt": 1783504178703,
   "nextOrderId": 11,
   "nextQuoteId": 97,
   "nextItemId": 208,
