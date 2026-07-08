@@ -844,7 +844,7 @@
       "name": "Outside Wall Isolation"
     },
     {
-      "qty": 50,
+      "qty": 45,
       "categoryId": 3,
       "orders": [],
       "quotes": [
@@ -2546,7 +2546,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783508497790,
+  "_savedAt": 1783508500214,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
