@@ -825,7 +825,7 @@
         }
       ],
       "orders": [],
-      "qty": 90
+      "qty": 40
     },
     {
       "status": "not-ordered",
@@ -2580,7 +2580,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783504304494,
+  "_savedAt": 1783507443734,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
