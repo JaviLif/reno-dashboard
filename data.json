@@ -98,7 +98,7 @@
       "name": "OSB 2440x1220x11mm",
       "description": "12 walls",
       "link": "",
-      "qty": 12.01,
+      "qty": 13,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -2448,7 +2448,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783501907040,
+  "_savedAt": 1783501911301,
   "nextOrderId": 11,
   "nextQuoteId": 91,
   "nextItemId": 202,
