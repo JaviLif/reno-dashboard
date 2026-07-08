@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 75,
+  "nextPhaseId": 76,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -56,7 +56,8 @@
           "unitPrice": 3500,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
@@ -2370,7 +2371,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783455178044,
+  "_savedAt": 1783500676060,
   "nextOrderId": 11,
   "nextQuoteId": 88,
   "nextItemId": 197,
@@ -2530,14 +2531,14 @@
       "parentId": 5,
       "end": "",
       "status": "planned",
-      "color": "#99F6E4"
+      "color": "#CCFBF1"
     },
     {
       "start": "",
       "parentId": 5,
       "end": "",
       "status": "planned",
-      "color": "#CCFBF1",
+      "color": "#14B8A6",
       "budget": 1000,
       "number": "5.5",
       "name": "Electricity",
@@ -2553,7 +2554,7 @@
       "parentId": 5,
       "start": "",
       "status": "planned",
-      "color": "#14B8A6",
+      "color": "#2DD4BF",
       "end": ""
     },
     {
@@ -2563,7 +2564,7 @@
       "name": "Exterior Finishing",
       "budget": 3000,
       "status": "planned",
-      "color": "#2DD4BF",
+      "color": "#5EEAD4",
       "end": "",
       "parentId": 5,
       "start": ""
@@ -2571,7 +2572,7 @@
     {
       "end": "",
       "status": "planned",
-      "color": "#5EEAD4",
+      "color": "#99F6E4",
       "start": "",
       "parentId": 5,
       "budget": 1000,
@@ -2745,6 +2746,18 @@
       "end": "",
       "status": "planned",
       "color": "#FDBA74",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 75,
+      "name": "Shell creation (Cellen Beton)",
+      "parentId": 5,
+      "number": "5.3,1",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#99F6E4",
       "notes": "",
       "budget": 0
     }
