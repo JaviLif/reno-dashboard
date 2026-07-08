@@ -46,7 +46,7 @@
       "name": "Wood beams Window Lintel",
       "description": "75x220",
       "link": "",
-      "qty": 1.01,
+      "qty": 2,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -2517,7 +2517,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783502258674,
+  "_savedAt": 1783502261194,
   "nextOrderId": 11,
   "nextQuoteId": 94,
   "nextItemId": 205,
