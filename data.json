@@ -56,11 +56,13 @@
           "unitPrice": 1000,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 207,
@@ -79,11 +81,13 @@
           "unitPrice": 1000,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 206,
@@ -102,11 +106,13 @@
           "unitPrice": 25,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 205,
@@ -125,11 +131,13 @@
           "unitPrice": 21.36,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 204,
@@ -148,11 +156,13 @@
           "unitPrice": 47.04,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 203,
@@ -171,11 +181,13 @@
           "unitPrice": 31.59,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 202,
@@ -194,11 +206,13 @@
           "unitPrice": 13,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 200,
@@ -217,11 +231,13 @@
           "unitPrice": 17.47,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 197,
@@ -851,6 +867,31 @@
       "orders": [],
       "notes": "",
       "name": "Outside Wall Isolation"
+    },
+    {
+      "qty": 50,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 11,
+          "notes": "",
+          "unitPrice": 25,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "notes": "",
+      "name": "Roof Isolation",
+      "status": "not-ordered",
+      "link": "",
+      "unit": "m∩┐╜",
+      "phaseId": 31,
+      "id": 107,
+      "description": "Rd 5,45; 120mm Price per sqm",
+      "documents": []
     },
     {
       "documents": [],
@@ -2555,7 +2596,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507650063,
+  "_savedAt": 1783507585734,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
