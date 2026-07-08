@@ -936,7 +936,7 @@
         {
           "notes": "",
           "id": 14,
-          "unitPrice": 1500,
+          "unitPrice": 1000,
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
@@ -2580,7 +2580,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507578815,
+  "_savedAt": 1783507585734,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
