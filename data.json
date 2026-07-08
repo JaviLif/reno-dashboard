@@ -835,7 +835,7 @@
       "id": 106,
       "description": "Rd 3,6; 80mm Price per sqm",
       "documents": [],
-      "qty": 90,
+      "qty": 0,
       "categoryId": 3,
       "quotes": [
         {
@@ -2580,7 +2580,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507443734,
+  "_savedAt": 1783507454871,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
