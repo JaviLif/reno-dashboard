@@ -2013,7 +2013,7 @@
           "chosen": true,
           "notes": "",
           "id": 58,
-          "unitPrice": 40,
+          "unitPrice": 30,
           "documents": []
         }
       ],
@@ -2557,7 +2557,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783504180318,
+  "_savedAt": 1783504252886,
   "nextOrderId": 11,
   "nextQuoteId": 97,
   "nextItemId": 208,
