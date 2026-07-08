@@ -2325,31 +2325,6 @@
     },
     {
       "status": "not-ordered",
-      "link": "",
-      "description": "90sqm walls + 40sqm ceiling incl BTW",
-      "id": 169,
-      "documents": [],
-      "unit": "m∩┐╜",
-      "phaseId": 31,
-      "categoryId": null,
-      "orders": [],
-      "quotes": [
-        {
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "id": 69,
-          "notes": "",
-          "unitPrice": 2637.8,
-          "documents": []
-        }
-      ],
-      "qty": 1,
-      "notes": "",
-      "name": "Plaster (Stuc-Concurrent b.v.)"
-    },
-    {
-      "status": "not-ordered",
       "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
       "phaseId": 62,
       "unit": "pcs",
@@ -2596,7 +2571,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507585734,
+  "_savedAt": 1783507721682,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
