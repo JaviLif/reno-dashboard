@@ -46,7 +46,7 @@
       "name": "Wood beams",
       "description": "Balken 20x120",
       "link": "https://www.sleiderink.nl/vuren-geschaafd-50x125",
-      "qty": 1,
+      "qty": 20,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -2434,7 +2434,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783501445226,
+  "_savedAt": 1783501754654,
   "nextOrderId": 11,
   "nextQuoteId": 91,
   "nextItemId": 201,
