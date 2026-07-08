@@ -874,7 +874,7 @@
       "unit": "m∩┐╜",
       "phaseId": 31,
       "id": 107,
-      "description": "Rd 3,6; 80mm Price per sqm",
+      "description": "Rd 5,45; 120mm Price per sqm",
       "documents": []
     },
     {
@@ -2580,7 +2580,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783507454871,
+  "_savedAt": 1783507575559,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
