@@ -2091,7 +2091,7 @@
       "documents": [],
       "id": 160,
       "description": "ISDE subsidy ΓÇö negative cost",
-      "qty": 1,
+      "qty": 3,
       "orders": [],
       "quotes": [
         {
@@ -2546,7 +2546,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783592274834,
+  "_savedAt": 1783592279059,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
