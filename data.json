@@ -121,7 +121,7 @@
       "name": "Isolation Foam PIR",
       "description": "Aiming Rd 5,45 @ 120mm 48sqm",
       "link": "https://www.sleiderink.nl/eurowall-spouwisolatie",
-      "qty": 67,
+      "qty": 42,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -2546,7 +2546,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783592417496,
+  "_savedAt": 1783592523448,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
