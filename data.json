@@ -2546,7 +2546,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783592390275,
+  "_savedAt": 1783592402698,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
@@ -2620,7 +2620,7 @@
       "end": "2026-07-31",
       "notes": "",
       "id": 31,
-      "budget": 10000,
+      "budget": 5000,
       "name": "Isolation",
       "number": "3.1"
     },
