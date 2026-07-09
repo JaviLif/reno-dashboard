@@ -2546,7 +2546,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783592382834,
+  "_savedAt": 1783592390275,
   "nextOrderId": 11,
   "nextQuoteId": 98,
   "nextItemId": 209,
@@ -2922,7 +2922,7 @@
       "status": "planned",
       "color": "#FDBA74",
       "notes": "",
-      "budget": 0
+      "budget": 2000
     },
     {
       "id": 75,
