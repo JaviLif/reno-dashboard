@@ -39,7 +39,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .nav{background:#fff;border-right:1px solid var(--g200);display:flex;flex-direction:column;padding:8px 0;position:fixed;left:0;top:0;height:100vh;width:52px;overflow:hidden;z-index:150;transition:width .2s ease}.nav:hover{width:200px;box-shadow:4px 0 16px rgba(0,0,0,.08)}
 .nav-btn{display:flex;align-items:center;gap:12px;padding:13px 14px;border:none;border-left:3px solid transparent;background:none;cursor:pointer;font-size:13px;font-weight:500;color:var(--g500);white-space:nowrap;overflow:hidden;width:100%;text-align:left;transition:all .15s}
 .nav-btn:hover{color:var(--g800);background:var(--g50)}
-.nav-btn.active{color:var(--pri);background:var(--pri-l);border-left-color:var(--pri)}.nav-icon{font-size:20px;flex-shrink:0;width:26px;text-align:center;line-height:1}.nav-lbl{white-space:nowrap;min-width:0}.nav-btn[data-tab="settings"]{margin-top:auto}
+.nav-btn.active{color:var(--pri);background:var(--pri-l);border-left-color:var(--pri)}.nav-icon{font-size:20px;flex-shrink:0;width:26px;text-align:center;line-height:1}.nav-lbl{white-space:nowrap;min-width:0}.nav-btn[data-tab="settings"]{margin-top:auto}.nav-ver{display:flex;align-items:center;gap:12px;padding:5px 14px 10px;cursor:pointer;overflow:hidden;border-top:1px solid var(--g100);opacity:0;transition:opacity 0.2s}.nav:hover .nav-ver{opacity:1}.nav-ver:hover .nav-ver-lbl{color:var(--pri)}
 
 /* MAIN */
 .main{padding:22px;max-width:1440px;margin:0 auto;width:100%}
@@ -344,6 +344,7 @@ body.col-resizing *{cursor:col-resize!important}
   <button class="nav-btn" data-tab="items">📦 BOM</button>
   <button class="nav-btn" data-tab="calendar">🗓 Calendar</button>
   <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
+  <div class="nav-ver" onclick="document.querySelector('.nav-btn[data-tab=settings]').click()" title="Changelog"><span style="font-size:14px;flex-shrink:0;width:26px;text-align:center">&#x1F4CB;</span><span class="nav-ver-lbl" style="white-space:nowrap;font-size:10px;color:var(--g500)"></span></div>
 </nav>
 
 <div class="main">
@@ -470,6 +471,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div id="budget-phases">
     <div class="g2">
       <div class="card">
+        <div id="bud-phase-hdr" class="flex" style="padding:8px 14px 0;gap:8px;align-items:center;min-height:28px"></div>
         <div class="tbl-wrap">
           <table id="budget-tbl">
             <thead><tr><th>Phase</th><th>Status</th><th style="text-align:right">Budget</th><th style="text-align:right">Planned</th><th style="text-align:right">Actual</th><th style="text-align:right">Variance</th></tr></thead>
@@ -635,7 +637,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.26</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1259,8 +1261,8 @@ function migrateState(state){
     state.nextItemId=Math.max(0,...state.items.map(it=>it.id||0),0)+1;
     delete state.expenses; delete state.nextExpenseId;
   }
-  if(state.project&&state.project.currency&&!/^[â‚¬$Â£Â¥A-Za-z]{1,4}$/.test(state.project.currency))
-    state.project.currency='â‚¬';
+  if(state.project&&state.project.currency&&!/^[$€£¥A-Za-z]{1,4}$/.test(state.project.currency))
+    state.project.currency='€';
   if(!Array.isArray(state.items)) state.items=[];
   state.items.forEach(it=>{
     if(!Array.isArray(it.quotes)) it.quotes=[];
@@ -1346,7 +1348,7 @@ function saveState(){
 const C = id => document.getElementById(id);
 const escapeAttr = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const cur = () => '€';
-const fmt = n => cur()+Number(n||0).toLocaleString('nl-NL',{minimumFractionDigits:0,maximumFractionDigits:0});
+const fmt = n => { const _v=Number(n||0); return (_v<0?'-':'')+cur()+Math.abs(_v).toLocaleString('nl-NL',{minimumFractionDigits:0,maximumFractionDigits:0}); };
 const fmtDate = d => { if(!d)return''; const[y,m,day]=d.split('-'); return`${day}/${m}/${y}`; };
 const phaseById = id => S.phases.find(p=>p.id===Number(id));
 const catById = id => S.categories.find(c=>c.id===Number(id));
@@ -1609,6 +1611,8 @@ document.querySelectorAll('.nav-btn').forEach(function(btn){
   var t=btn.textContent.trim(), sp=t.indexOf(' ');
   if(sp>0){btn.innerHTML='<span class="nav-icon">'+t.slice(0,sp)+'</span><span class="nav-lbl">'+t.slice(sp+1)+'</span>';}
 });
+const _nvl=document.querySelector('.nav-ver-lbl');
+if(_nvl){const _vt=document.querySelector('.ver-tag');if(_vt)_nvl.textContent=_vt.textContent;}
 
 // ===================== HEADER =====================
 function renderHeader(){
@@ -2068,30 +2072,32 @@ function renderBudget(){
     const diff=act-bud;
 
     rows+=`<tr class="tr-parent" style="cursor:pointer" onclick="openPhaseModal(${tp.id})">
-      <td><div class="flex" style="gap:6px"><span class="color-dot" style="background:${tp.color||'#94A3B8'}"></span><strong>${tp.number||''} ${tp.name}</strong>${hasSubs?` <span style="font-size:10px;color:var(--g400)">(${kids.length} sub-phases)</span>`:''}</div></td>
+      <td><div class="flex" style="gap:6px">${hasSubs?`<button id="bud-tog-${tp.id}" class="btn btn-ghost btn-sm" onclick="event.stopPropagation();budToggle(${tp.id})" style="padding:0 3px;font-size:11px;width:16px;height:16px;line-height:1;flex-shrink:0">${_budCollapsed.has(tp.id)?'▸':'▾'}</button>`:''}<span class="color-dot" style="background:${tp.color||'#94A3B8'}"></span><strong>${tp.number||''} ${tp.name}</strong>${hasSubs?` <span style="font-size:10px;color:var(--g400)">(${kids.length} sub-phases)</span>`:''}</div></td>
       <td><span class="badge s-${tp.status}">${statusLabel(tp.status)}</span></td>
-      <td style="text-align:right">${fmt(bud)}</td>
-      <td style="text-align:right;color:var(--g600)">${plan>0?fmt(plan):'—'}</td>
-      <td style="text-align:right;font-weight:700">${act>0?fmt(act):'—'}</td>
-      <td style="text-align:right" class="${diff>0?'over':diff<0&&act>0?'under':'muted'}">${act>0?(diff>0?'+':'')+fmt(diff):'—'}</td>
+      <td style="text-align:right;color:${bud<0?'var(--ok)':'inherit'}">${fmt(bud)}</td>
+      <td style="text-align:right;color:${plan<0?'var(--ok)':'var(--g600)'}">${plan!==0?fmt(plan):'—'}</td>
+      <td style="text-align:right;font-weight:700;color:${act<0?'var(--ok)':'inherit'}">${act!==0?fmt(act):'—'}</td>
+      <td style="text-align:right" class="${diff>0?'over':diff<0&&act!==0?'under':'muted'}">${act!==0?(diff>0?'+':'')+fmt(diff):'—'}</td>
     </tr>`;
 
     if(hasSubs){
       for(const c of kids){
         const cb=Number(c.budget||0), cp=getPhaseItemBudget(c.id), ca=getPhaseActual(c.id), cd=ca-cb;
         leafB+=cb; leafP+=cp; if(ca>0) leafA+=ca;
-        rows+=`<tr class="tr-child" style="cursor:pointer" onclick="openPhaseModal(${c.id})">
+        rows+=`<tr class="tr-child" data-bc="${tp.id}" style="cursor:pointer${_budCollapsed.has(tp.id)?';display:none':''}" onclick="openPhaseModal(${c.id})">
           <td class="indent"><div class="flex" style="gap:5px"><span class="color-dot" style="background:${c.color||'#94A3B8'}"></span><span style="color:var(--g400);font-size:11px">${c.number||''}</span> ${c.name}</div></td>
           <td><span class="badge s-${c.status}" style="font-size:10px">${statusLabel(c.status)}</span></td>
-          <td style="text-align:right">${fmt(cb)}</td>
-          <td style="text-align:right;color:var(--g600)">${cp>0?fmt(cp):'—'}</td>
-          <td style="text-align:right;font-weight:600">${ca>0?fmt(ca):'—'}</td>
-          <td style="text-align:right" class="${cd>0?'over':cd<0&&ca>0?'under':'muted'}">${ca>0?(cd>0?'+':'')+fmt(cd):'—'}</td>
+          <td style="text-align:right;color:${cb<0?'var(--ok)':'inherit'}">${fmt(cb)}</td>
+          <td style="text-align:right;color:${cp<0?'var(--ok)':'var(--g600)'}">${cp!==0?fmt(cp):'—'}</td>
+          <td style="text-align:right;font-weight:600;color:${ca<0?'var(--ok)':'inherit'}">${ca!==0?fmt(ca):'—'}</td>
+          <td style="text-align:right" class="${cd>0?'over':cd<0&&ca!==0?'under':'muted'}">${ca!==0?(cd>0?'+':'')+fmt(cd):'—'}</td>
         </tr>`;
       }
     } else { leafB+=bud; leafP+=plan; if(act>0) leafA+=act; }
   }
   C('budget-body').innerHTML=rows;
+  const _phdrEl=C('bud-phase-hdr');
+  if(_phdrEl){const _hs=topPhases().some(function(p){return childrenOf(p.id).length>0;});_phdrEl.innerHTML=_hs?'<button class="btn btn-ghost btn-sm" onclick="budToggleAll()" id="bud-all-btn" style="font-size:11px;padding:3px 8px">'+(topPhases().some(function(p){return childrenOf(p.id).length>0&&!_budCollapsed.has(p.id);})?'▾ Collapse All':'▸ Expand All')+'</button>':'';}
   // Totals: use global aggregates to avoid loop-depth bugs (phases can be nested >2 levels)
   const footB=S.phases.filter(p=>!isParent(p.id)).reduce((a,p)=>a+Number(p.budget||0),0);
   const footP=totalItemBudget();
@@ -2100,10 +2106,10 @@ function renderBudget(){
   C('budget-foot').innerHTML=`
     <tr style="background:var(--g100);font-weight:700;font-size:13px">
       <td colspan="2" style="padding:11px 12px">Total (all phases)</td>
-      <td style="text-align:right;padding:11px 12px">${fmt(footB)}</td>
-      <td style="text-align:right;padding:11px 12px;color:var(--g600)">${footP>0?fmt(footP):'—'}</td>
-      <td style="text-align:right;padding:11px 12px">${footA>0?fmt(footA):'—'}</td>
-      <td style="text-align:right;padding:11px 12px" class="${diffT>0?'over':diffT<0&&footA>0?'under':'muted'}">${footA>0?(diffT>0?'+':'')+fmt(diffT):'—'}</td>
+      <td style="text-align:right;padding:11px 12px;color:${footB<0?'var(--ok)':'inherit'}">${fmt(footB)}</td>
+      <td style="text-align:right;padding:11px 12px;color:${footP<0?'var(--ok)':'var(--g600)'}">${footP!==0?fmt(footP):'—'}</td>
+      <td style="text-align:right;padding:11px 12px;color:${footA<0?'var(--ok)':'inherit'}">${footA!==0?fmt(footA):'—'}</td>
+      <td style="text-align:right;padding:11px 12px" class="${diffT>0?'over':diffT<0&&footA!==0?'under':'muted'}">${footA!==0?(diffT>0?'+':'')+fmt(diffT):'—'}</td>
     </tr>
     <tr><td colspan="6" style="padding:7px 12px;font-size:11px;color:var(--g500)">Project budget: <strong>${fmt(S.project.totalBudget)}</strong> · Contingency: <strong>${fmt(Number(S.project.totalBudget)-footB)}</strong></td></tr>`;
 
@@ -2127,7 +2133,22 @@ function renderBudget(){
 }
 
 
-let _phaseCatChart=null, _phaseCatSel=null, _pcExpanded=new Set();
+let _phaseCatChart=null, _phaseCatSel=null, _pcExpanded=new Set(), _budCollapsed=new Set();
+function budToggle(id){
+  if(_budCollapsed.has(id)) _budCollapsed.delete(id); else _budCollapsed.add(id);
+  const collapsed=_budCollapsed.has(id);
+  document.querySelectorAll('#budget-body tr[data-bc="'+id+'"]').forEach(function(tr){tr.style.display=collapsed?'none':'';});
+  const btn=document.getElementById('bud-tog-'+id);
+  if(btn) btn.textContent=collapsed?'▸':'▾';
+  const allBtn=document.getElementById('bud-all-btn');
+  if(allBtn) allBtn.textContent=topPhases().some(function(p){return childrenOf(p.id).length>0&&!_budCollapsed.has(p.id);})?'▾ Collapse All':'▸ Expand All';
+}
+function budToggleAll(){
+  var parents=topPhases().filter(function(p){return childrenOf(p.id).length>0;});
+  var anyExpanded=parents.some(function(p){return !_budCollapsed.has(p.id);});
+  if(anyExpanded){parents.forEach(function(p){_budCollapsed.add(p.id);});}else{_budCollapsed.clear();}
+  renderBudget();
+}
 function pcToggle(phId){
   if(_pcExpanded.has(phId)) _pcExpanded.delete(phId); else _pcExpanded.add(phId);
   const open=_pcExpanded.has(phId);
@@ -3034,7 +3055,7 @@ function renderCalGantt(y,m){
   const months=[new Date(y,m-1,1),new Date(y,m,1),new Date(y,m+1,1)];
   const cInnerEl=C('cal-gantt-inner');
   const cWrapW=cInnerEl?.closest('.gantt-wrap')?.clientWidth||600;
-  cInnerEl.style.minWidth=Math.round(Math.max(cWrapW,860*calGanttZoom))+'px';
+  cInnerEl.style.minWidth=Math.round(Math.max(cWrapW,cWrapW*calGanttZoom))+'px';
   const {top:cTop,bot:cBot}=ganttCols(gStart,gEnd,calGanttZoom);
   const cHasBotRow=cBot.length>0;
   const cTopH=cHasBotRow?22:30;
@@ -3878,6 +3899,6 @@ _ghInit(); // connect to GitHub after first render
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
 </div>
 <!-- Version badge -->
-<div id="versionBadge" style="position:fixed;bottom:10px;right:14px;font-size:10.5px;font-weight:700;color:var(--g400);background:var(--g800);border:1px solid var(--g700);border-radius:20px;padding:3px 9px;z-index:300;letter-spacing:.3px;box-shadow:0 1px 4px rgba(0,0,0,.18);user-select:none">v1.0.23</div>
+
 </body>
 </html>
