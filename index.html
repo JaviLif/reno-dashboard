@@ -649,7 +649,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.28</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1096,6 +1096,7 @@ async function _ghInit(){
   if(!_hadLocalData||remoteScore>localScore||(remoteScore===localScore&&remoteTs>localTs+5000)){
     S=migrateState(remoteData);
     localStorage.setItem('reno_v4',JSON.stringify(S));
+    if(S.bomUiPrefs){itemsUI=loadItemsUI();try{localStorage.setItem('reno_items_ui',JSON.stringify(itemsUI));}catch(e){}}
     refreshAll();
     _setCloudStatus('newer');
     setTimeout(()=>_setCloudStatus('synced'),3000);
@@ -1459,7 +1460,7 @@ function loadItemsUI(){
   const validKeys=ITEM_COLUMNS.map(c=>c.key);
   let prefs={colOrder:[...validKeys],colHidden:[],colWidths:{},sortKey:null,sortDir:'asc'};
   try{
-    const raw=localStorage.getItem('reno_items_ui');
+    const raw=localStorage.getItem('reno_items_ui')||(typeof S!=="undefined"&&S&&S.bomUiPrefs?JSON.stringify(S.bomUiPrefs):null);
     if(raw){
       const saved=JSON.parse(raw)||{};
       let order=(Array.isArray(saved.colOrder)?saved.colOrder:[]).filter(k=>validKeys.includes(k));
@@ -1473,8 +1474,8 @@ function loadItemsUI(){
   }catch(e){}
   return prefs;
 }
-let itemsUI=loadItemsUI();
-function saveItemsUI(){ try{ localStorage.setItem('reno_items_ui',JSON.stringify(itemsUI)); }catch(e){} }
+let itemsUI=loadItemsUI(); if(typeof S!=="undefined"&&S&&!S.bomUiPrefs){try{S.bomUiPrefs=Object.assign({},itemsUI);S._savedAt=Date.now();localStorage.setItem("reno_v4",JSON.stringify(S));}catch(e){}}
+function saveItemsUI(){ try{ localStorage.setItem('reno_items_ui',JSON.stringify(itemsUI)); if(typeof S!=="undefined"&&S){S.bomUiPrefs=Object.assign({},itemsUI);S._savedAt=Date.now();localStorage.setItem('reno_v4',JSON.stringify(S));} }catch(e){} }
 function visibleColumnOrder(){ return itemsUI.colOrder.filter(k=>!itemsUI.colHidden.includes(k)); }
 function colWidthOf(key){
   const col=ITEM_COLUMNS.find(c=>c.key===key);
@@ -3893,7 +3894,7 @@ function exportData(){
 function importData(ev){
   const f=ev.target.files[0]; if(!f)return;
   const r=new FileReader();
-  r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d.project||!d.phases)throw 0;S=migrateState(d);S.bomImportedV1=true;S.originalBudgetImportedV1=true;saveState();refreshAll();alert('Imported!');}catch{alert('Invalid file.');}};
+  r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d.project||!d.phases)throw 0;S=migrateState(d);S.bomImportedV1=true;S.originalBudgetImportedV1=true;if(S.bomUiPrefs){itemsUI=loadItemsUI();try{localStorage.setItem('reno_items_ui',JSON.stringify(itemsUI));}catch(e){}}saveState();refreshAll();alert('Imported!');}catch{alert('Invalid file.');}};
   r.readAsText(f);
 }
 function clearItemsAndTasks(){
