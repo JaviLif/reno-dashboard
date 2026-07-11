@@ -2379,7 +2379,8 @@
       "assignee": "",
       "end": "",
       "status": "planned",
-      "kanbanOrder": 0
+      "kanbanOrder": 0,
+      "assigneeIds": []
     },
     {
       "end": null,
@@ -2393,7 +2394,8 @@
       "id": 1,
       "notes": "",
       "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 10
+      "kanbanOrder": 10,
+      "assigneeIds": []
     },
     {
       "notes": "",
@@ -2407,7 +2409,8 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 20
+      "kanbanOrder": 20,
+      "assigneeIds": []
     },
     {
       "start": null,
@@ -2421,7 +2424,8 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 61,
       "priority": "med",
-      "kanbanOrder": 30
+      "kanbanOrder": 30,
+      "assigneeIds": []
     },
     {
       "end": null,
@@ -2435,7 +2439,8 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 40
+      "kanbanOrder": 40,
+      "assigneeIds": []
     },
     {
       "start": "",
@@ -2449,7 +2454,8 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 50
+      "kanbanOrder": 50,
+      "assigneeIds": []
     },
     {
       "description": "Self Made",
@@ -2463,7 +2469,8 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 60
+      "kanbanOrder": 60,
+      "assigneeIds": []
     },
     {
       "id": 8,
@@ -2474,7 +2481,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70
+      "kanbanOrder": 70,
+      "assigneeIds": []
     },
     {
       "id": 11,
@@ -2485,7 +2493,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80
+      "kanbanOrder": 80,
+      "assigneeIds": []
     },
     {
       "id": 14,
@@ -2496,7 +2505,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90
+      "kanbanOrder": 90,
+      "assigneeIds": []
     },
     {
       "id": 15,
@@ -2507,7 +2517,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100
+      "kanbanOrder": 100,
+      "assigneeIds": []
     },
     {
       "id": 16,
@@ -2518,7 +2529,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 110
+      "kanbanOrder": 110,
+      "assigneeIds": []
     },
     {
       "id": 17,
@@ -2529,7 +2541,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 120
+      "kanbanOrder": 120,
+      "assigneeIds": []
     },
     {
       "id": 18,
@@ -2540,7 +2553,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 130
+      "kanbanOrder": 130,
+      "assigneeIds": []
     },
     {
       "id": 20,
@@ -2550,7 +2564,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "assigneeIds": []
     },
     {
       "id": 21,
@@ -2560,7 +2575,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "assigneeIds": []
     },
     {
       "id": 22,
@@ -2570,7 +2586,8 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": ""
+      "notes": "",
+      "assigneeIds": []
     },
     {
       "id": 9,
@@ -2581,7 +2598,8 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 0
+      "kanbanOrder": 0,
+      "assigneeIds": []
     },
     {
       "id": 10,
@@ -2592,7 +2610,8 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90
+      "kanbanOrder": 90,
+      "assigneeIds": []
     },
     {
       "id": 13,
@@ -2602,7 +2621,8 @@
       "end": "2026-07-12",
       "status": "in-progress",
       "assignee": "",
-      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
+      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension",
+      "assigneeIds": []
     }
   ],
   "nextTaskId": 23,
@@ -2616,7 +2636,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783766666265,
+  "_savedAt": 1783774951344,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3019,5 +3039,14 @@
       "budget": 0
     }
   ],
-  "_source": "converted-from-classifier-v3"
+  "_source": "converted-from-classifier-v3",
+  "people": [
+    {
+      "id": 2,
+      "name": "Rene",
+      "role": "",
+      "color": "#6366f1"
+    }
+  ],
+  "nextPersonId": 3
 }
