@@ -446,6 +446,7 @@ body.col-resizing *{cursor:col-resize!important}
           <button class="btn btn-pri btn-sm" onclick="openTaskModal(null, kanbanActivePhaseId())">+ Add Task</button>
         </div>
       </div>
+      <div id="person-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:6px 16px 4px;align-items:center"></div>
       <div id="task-kanban-wrap" style="display:flex;overflow-x:auto;min-height:0">
         <div class="kanban-board" id="kanban-board"></div>
       </div>
@@ -648,7 +649,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.27</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.28</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -3548,7 +3549,8 @@ function deleteTask(){
 }
 let _kanbanPhaseId = null; // null = All phases
 let _bomPhaseId    = null; // null = All phases (BOM sidebar filter)
-let _taskView = 'kanban';  // 'kanban' | 'gantt'
+let _taskView = 'kanban';
+let _personFilter = null; // null = all, person id = filtered  // 'kanban' | 'gantt'
 let _calView  = 'month';   // 'month'  | 'gantt'
 let ganttZoom     = 1;      // timeline phase Gantt zoom multiplier
 let calGanttZoom  = 1;      // calendar Gantt zoom multiplier
@@ -3590,6 +3592,23 @@ function phaseFamily(topId){
   return ids;
 }
 
+function renderPersonFilter(){
+  const bar=C("person-filter-bar");if(!bar)return;
+  const people=S.people||[];
+  if(!people.length){bar.style.display="none";return;}
+  bar.style.display="flex";
+  bar.innerHTML=
+    "<span style=\"font-size:11px;color:var(--g500);margin-right:4px;flex-shrink:0\">Filter:</span>" +
+    "<div class=\"person-chip"+(_personFilter===null?" selected":"")+"\" style=\"color:var(--pri)\" onclick=\"setPersonFilter(null)\">All</div>" +
+    people.map(function(p){
+      const sel=_personFilter===p.id;
+      return "<div class=\"person-chip"+(sel?" selected":"")+"\" style=\"color:"+personColor(p)+"\" onclick=\"setPersonFilter("+p.id+")\">"+personAvatarHtml(p,16)+"<span style=\"font-size:12px\">"+escapeAttr(p.name)+"</span></div>";
+    }).join("");
+}
+function setPersonFilter(id){
+  _personFilter=id;
+  renderTasksTab();
+}
 function renderTasksTab(){
   // --- Update view toggle button states ---
   const tvKanban=C('tv-kanban'),tvGantt=C('tv-gantt');
@@ -3613,6 +3632,8 @@ function renderTasksTab(){
     tasks=tasks.filter(t=>t.phaseId!=null&&validIds.has(Number(t.phaseId)));
   }
   tasks.sort((a,b)=>(a.start||'').localeCompare(b.start||'')||(a.id-b.id));
+  renderPersonFilter();
+  if(_personFilter!==null) tasks=tasks.filter(function(t){return (t.assigneeIds||[]).includes(_personFilter);});
 
   // --- Summary bar ---
   const bar=C('task-summary-bar');
