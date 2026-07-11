@@ -2636,7 +2636,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783775267412,
+  "_savedAt": 1783802279934,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3060,5 +3060,36 @@
       "color": "#0af55c"
     }
   ],
-  "nextPersonId": 5
+  "nextPersonId": 5,
+  "bomUiPrefs": {
+    "colOrder": [
+      "link",
+      "name",
+      "description",
+      "qty",
+      "price",
+      "total",
+      "quote",
+      "status",
+      "delivery",
+      "netspent",
+      "phase",
+      "category"
+    ],
+    "colHidden": [
+      "delivery"
+    ],
+    "colWidths": {
+      "category": 240,
+      "name": 253,
+      "description": 258,
+      "qty": 72,
+      "phase": 241,
+      "delivery": 71,
+      "price": 60,
+      "link": 60
+    },
+    "sortKey": "category",
+    "sortDir": "asc"
+  }
 }
