@@ -258,7 +258,7 @@ body.col-resizing *{cursor:col-resize!important}
 .kanban-card{background:#fff;border-radius:8px;padding:11px 12px;cursor:pointer;border-left:3px solid var(--g300);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .1s,box-shadow .1s}
 .kanban-card:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.10)}
 .kanban-card-name{font-size:13px;font-weight:600;color:var(--g800);line-height:1.3;margin-bottom:4px}
-.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}.person-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px 3px 4px;border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;border:2px solid transparent;background:var(--g100);color:var(--g700);transition:all .15s;user-select:none}.person-chip.selected{background:rgba(0,0,0,.07);border-color:currentColor}.person-avatar{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;line-height:1}.person-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--g100)}.person-row:last-child{border-bottom:none}.card-who-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}
 .kanban-add{margin:8px 10px;padding:6px;border-radius:6px;border:1.5px dashed var(--g200);background:transparent;color:var(--g400);font-size:12px;font-weight:600;cursor:pointer;text-align:left;transition:border-color .15s,color .15s}
 .kanban-add:hover{border-color:var(--pri);color:var(--pri)}
 .kanban-col.col-planned .kanban-col-hdr{border-top:3px solid var(--g400)}
@@ -613,6 +613,17 @@ body.col-resizing *{cursor:col-resize!important}
         </div></div>
       </div>
       <div style="margin-top:20px">
+      <div style="margin-top:20px">
+        <div class="set-title">Team</div>
+        <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px">
+          <div id="people-list" style="min-height:24px"></div>
+          <div class="fm-row" style="align-items:flex-end;gap:8px">
+            <div class="fm-grp" style="margin:0;flex:2"><label class="fm-lbl">Name</label><input class="fm-inp" id="p-name" type="text" placeholder="e.g. Kevin Smit"></div>
+            <div class="fm-grp" style="margin:0;flex:2"><label class="fm-lbl">Role</label><input class="fm-inp" id="p-role" type="text" placeholder="e.g. Electrician"></div>
+            <button class="btn btn-pri btn-sm" style="flex-shrink:0;height:38px" onclick="addPerson()">+ Add</button>
+          </div>
+        </div></div>
+      </div>
         <div class="set-title">GitHub Sync</div>
         <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:12px">
           <div style="font-size:12px;color:var(--g500);line-height:1.6">Stores your data in <strong>JaviLif/reno-dashboard</strong> on GitHub. Documents go to <code>quotes/</code>. History is full git commit log. Token stays in <em>your</em> browser only.</div>
@@ -637,7 +648,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.26</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.27</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -779,7 +790,7 @@ body.col-resizing *{cursor:col-resize!important}
             <option value="delayed">Delayed</option>
           </select>
         </div>
-        <div class="fm-grp"><label class="fm-lbl">Assignee / contractor</label><input class="fm-inp" id="tk-assignee" type="text" placeholder="e.g. Kevin"></div>
+        <div class="fm-grp"><label class="fm-lbl">Assigned to</label><div id="tk-assignee-picker" style="display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;min-height:36px;align-items:center"></div></div>
       </div>
       <div class="fm-grp"><label class="fm-lbl">Notes</label><textarea class="fm-ta" id="tk-notes" placeholder="Any notes…"></textarea></div>
     </div>
@@ -865,13 +876,15 @@ const DEFAULT = {
       orders:[]},
   ],
   tasks:[],
+  people:[],
   nextPhaseId:60,
   nextItemId:10,
   nextQuoteId:13,
   nextOrderId:9,
   nextCategoryId:8,
   nextDocId:1,
-  nextTaskId:1
+  nextTaskId:1,
+  nextPersonId:1
 };
 
 const BOM_IMPORT=[
@@ -1279,8 +1292,10 @@ function migrateState(state){
   if(state.nextOrderId==null) state.nextOrderId=Math.max(0,...state.items.flatMap(it=>it.orders.map(o=>o.id||0)),0)+1;
   if(state.nextDocId==null) state.nextDocId=Math.max(0,...state.items.flatMap(it=>(it.documents||[]).map(d=>d.id||0)),0)+1;
   if(!Array.isArray(state.tasks)) state.tasks=[];
+  if(!Array.isArray(state.people)) state.people=[];
+  if(!state.nextPersonId) state.nextPersonId=Math.max(1,...state.people.map(function(p){return p.id||0;}).concat([0]))+1;
   state.tasks.forEach(t=>{
-    if(t.assignee==null) t.assignee='';
+    if(!Array.isArray(t.assigneeIds)) t.assigneeIds=[];
     if(t.notes==null) t.notes='';
     if(t.status==null) t.status='planned';
   });
@@ -3137,6 +3152,48 @@ function renderCalGantt(y,m){
 
 function calNav(d){ if(d===0)calDate=new Date();else calDate.setMonth(calDate.getMonth()+d); renderCalendar(); }
 
+// ===================== PEOPLE =====================
+const _pColors=["#6366f1","#ec4899","#f59e0b","#10b981","#3b82f6","#ef4444","#8b5cf6","#14b8a6","#f97316","#84cc16"];
+function personColor(p){return p.color||_pColors[(p.id-1)%_pColors.length];}
+function personInitials(name){const pts=(name||"").trim().split(/\s+/).filter(Boolean);return (pts[0]?pts[0][0].toUpperCase():"")+(pts[1]?pts[1][0].toUpperCase():"");}
+function personById(id){return (S.people||[]).find(function(p){return p.id===Number(id);});}
+function personAvatarHtml(p,size){size=size||22;const col=personColor(p);const lbl=p.name+(p.role?" - "+p.role:"");return "<span class=\"person-avatar\" style=\"width:"+size+"px;height:"+size+"px;background:"+col+"\" title=\""+escapeAttr(lbl)+"\">"+personInitials(p.name)+"</span>";}
+function renderPeopleSettings(){
+  const el=C("people-list");if(!el)return;
+  if(!(S.people||[]).length){el.innerHTML="<div style=\"font-size:12px;color:var(--g400)\">No team members yet.</div>";return;}
+  el.innerHTML=(S.people||[]).map(function(p){return "<div class=\"person-row\">"+personAvatarHtml(p,28)+"<div style=\"flex:1\"><div style=\"font-size:13px;font-weight:600;color:var(--g800)\">"+escapeAttr(p.name)+"</div><div style=\"font-size:11px;color:var(--g500)\">"+escapeAttr(p.role||"")+"</div></div><input type=\"color\" value=\""+personColor(p)+"\" title=\"Colour\" style=\"width:24px;height:24px;border:none;border-radius:4px;cursor:pointer;padding:1px\" onchange=\"updatePersonColor("+p.id+",this.value)\"><button class=\"btn btn-danger btn-sm btn-icon\" onclick=\"deletePerson("+p.id+")\" title=\"Remove\">x</button></div>";}).join("");
+}
+function addPerson(){
+  const name=C("p-name").value.trim(),role=C("p-role").value.trim();
+  if(!name){alert("Name is required.");return;}
+  if(!S.people)S.people=[];
+  const idx=S.people.length;
+  S.people.push({id:S.nextPersonId++,name:name,role:role,color:_pColors[idx%_pColors.length]});
+  C("p-name").value="";C("p-role").value="";
+  saveState();renderPeopleSettings();
+}
+function deletePerson(id){
+  if(!confirm("Remove this person? They will be unassigned from all tasks."))return;
+  S.people=(S.people||[]).filter(function(p){return p.id!==id;});
+  S.tasks.forEach(function(t){if(Array.isArray(t.assigneeIds))t.assigneeIds=t.assigneeIds.filter(function(x){return x!==id;});});
+  saveState();renderPeopleSettings();renderTasksTab();
+}
+function updatePersonColor(id,color){
+  const p=(S.people||[]).find(function(x){return x.id===id;});
+  if(p){p.color=color;saveState();renderPeopleSettings();renderTasksTab();}
+}
+function togglePersonChip(el){el.classList.toggle("selected");}
+function renderTaskAssigneePicker(selectedIds){
+  const el=C("tk-assignee-picker");if(!el)return;
+  if(!(S.people||[]).length){el.innerHTML="<span style=\"font-size:12px;color:var(--g400)\">Add team members in Settings first.</span>";return;}
+  el.innerHTML=(S.people||[]).map(function(p){
+    const sel=(selectedIds||[]).includes(p.id);
+    return "<div class=\"person-chip"+(sel?" selected":"")+"\" style=\"color:"+personColor(p)+"\" onclick=\"togglePersonChip(this)\" data-pid=\""+p.id+"\">"+personAvatarHtml(p)+"<span style=\"font-size:12px\">"+escapeAttr(p.name)+"</span></div>";
+  }).join("");
+}
+function getTaskAssigneeIds(){
+  return Array.from(document.querySelectorAll("#tk-assignee-picker .person-chip.selected")).map(function(el){return Number(el.dataset.pid);});
+}
 // ===================== SETTINGS =====================
 function renderSettings(){
   C('s-name').value=S.project.name||'';
@@ -3145,7 +3202,7 @@ function renderSettings(){
   C('s-currency').value=S.project.currency||'€';
   C('s-start').value=S.project.startDate||'';
   C('s-end').value=S.project.endDate||'';
-  renderCatList();
+  renderCatList(); renderPeopleSettings();
 }
 function saveSettings(){
   S.project.name=C('s-name').value.trim()||'House Renovation';
@@ -3170,7 +3227,7 @@ function addCategory(){
   if(!n){alert('Enter a category name.');return;}
   S.categories.push({id:S.nextCategoryId++,name:n,color:C('new-cat-color').value});
   C('new-cat-name').value='';
-  saveState(); renderCatList();
+  saveState(); renderCatList(); renderPeopleSettings();
 }
 function updateCatName(id,val){
   const c=catById(id); if(c) c.name=val.trim()||c.name; saveState();
@@ -3183,7 +3240,7 @@ function deleteCat(id){
   if(used&&!confirm('This category has items. Items will become uncategorised. Delete?')) return;
   S.items.forEach(it=>{if(it.categoryId===id)it.categoryId=null;});
   S.categories=S.categories.filter(c=>c.id!==id);
-  saveState(); renderCatList();
+  saveState(); renderCatList(); renderPeopleSettings();
 }
 
 // ===================== PHASE MODAL =====================
@@ -3458,13 +3515,13 @@ function openTaskModal(id, presetPhaseId, presetStatus){
     C('tk-end').value=t.end||'';
     if(t.start&&t.end){const _ms=new Date(t.end+'T00:00:00')-new Date(t.start+'T00:00:00');const _d=Math.round(_ms/86400000);if(_d>0&&_d%7===0){C('tk-dur').value=_d/7;C('tk-dur-unit').value='7';}else if(_d>0){C('tk-dur').value=_d;C('tk-dur-unit').value='1';}}else{C('tk-dur').value='';}
     C('tk-status').value=t.status;
-    C('tk-assignee').value=t.assignee||'';
+    renderTaskAssigneePicker(t.assigneeIds||[]);
     C('tk-notes').value=t.notes||'';
   } else {
     C('tk-phase').innerHTML=taskPhaseSelectHtml(presetPhaseId);
     if(presetPhaseId) C('tk-phase').value=presetPhaseId;
     C('tk-name').value=''; C('tk-start').value=''; C('tk-end').value=''; C('tk-dur').value='';
-    C('tk-status').value=presetStatus||'planned'; C('tk-assignee').value=''; C('tk-notes').value='';
+    C('tk-status').value=presetStatus||'planned'; renderTaskAssigneePicker([]); C('tk-notes').value='';
   }
   C('task-overlay').classList.add('open');
 }
@@ -3472,7 +3529,7 @@ function saveTask(){
   const name=C('tk-name').value.trim(),start=C('tk-start').value,end=C('tk-end').value,phaseId=Number(C('tk-phase').value)||null;
   if(!name||!phaseId){alert('Name and phase are required.');return;}
   const id=Number(C('tk-id').value)||null;
-  const data={phaseId,name,start,end,status:C('tk-status').value,assignee:C('tk-assignee').value.trim(),notes:C('tk-notes').value.trim()};
+  const data={phaseId,name,start,end,status:C('tk-status').value,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim()};
   if(id){const idx=S.tasks.findIndex(t=>t.id===id);S.tasks[idx]={...S.tasks[idx],...data};}
   else S.tasks.push({id:S.nextTaskId++,...data});
   const returnToPhase=C('tk-id').dataset.returnToPhase==='1';
@@ -3588,7 +3645,7 @@ function renderTasksTab(){
           const meta=[
             phaseLabel,
             dateStr?`<span class="card-date-lbl">${dateStr}</span>`:'',
-            t.assignee?`<span class="card-who">${t.assignee}</span>`:''
+            (t.assigneeIds||[]).length?`<span class="card-who-chips">${(t.assigneeIds||[]).map(id=>{const p=personById(id);return p?personAvatarHtml(p,20):"";}).filter(Boolean).join("")}</span>`:""
           ].filter(Boolean).join('');
           return `<div class="kanban-card" style="border-left-color:${accent}"
             draggable="true"
