@@ -48,7 +48,7 @@
       "link": "",
       "qty": 1,
       "unit": "",
-      "notes": "",
+      "notes": "Kruiptruimisolation",
       "quotes": [],
       "orders": [],
       "documents": []
@@ -2585,7 +2585,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783733095758,
+  "_savedAt": 1783733114178,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
