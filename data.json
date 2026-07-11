@@ -51,7 +51,8 @@
       "notes": "Kruiptruimisolation",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 209,
@@ -2542,6 +2543,16 @@
       "kanbanOrder": 130
     },
     {
+      "id": 20,
+      "phaseId": 73,
+      "name": "Remove CV kettel",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2574,7 +2585,7 @@
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 20,
+  "nextTaskId": 21,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2585,7 +2596,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783733123798,
+  "_savedAt": 1783766626028,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
