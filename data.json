@@ -2636,7 +2636,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783774955770,
+  "_savedAt": 1783774958719,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3052,7 +3052,13 @@
       "name": "Javi",
       "role": "",
       "color": "#ec4899"
+    },
+    {
+      "id": 4,
+      "name": "Rani",
+      "role": "",
+      "color": "#f59e0b"
     }
   ],
-  "nextPersonId": 4
+  "nextPersonId": 5
 }
