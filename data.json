@@ -2647,6 +2647,16 @@
       "notes": ""
     },
     {
+      "id": 28,
+      "phaseId": 34,
+      "name": "Install piping for Heatpump",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2682,7 +2692,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 28,
+  "nextTaskId": 29,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2693,7 +2703,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847644319,
+  "_savedAt": 1783847758589,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
