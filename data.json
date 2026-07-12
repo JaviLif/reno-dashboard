@@ -2743,7 +2743,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857324431,
+  "_savedAt": 1783857335111,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3195,9 +3195,15 @@
       "name": "Kitchen",
       "role": "",
       "color": "#14b8a6"
+    },
+    {
+      "id": 11,
+      "name": "Upper Floor",
+      "role": "",
+      "color": "#f97316"
     }
   ],
-  "nextPersonId": 11,
+  "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
