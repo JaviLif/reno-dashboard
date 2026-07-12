@@ -2693,7 +2693,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847551818,
+  "_savedAt": 1783847631139,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3097,8 +3097,15 @@
     }
   ],
   "_source": "converted-from-classifier-v3",
-  "people": [],
-  "nextPersonId": 2,
+  "people": [
+    {
+      "id": 2,
+      "name": "Rene",
+      "role": "",
+      "color": "#6366f1"
+    }
+  ],
+  "nextPersonId": 3,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
