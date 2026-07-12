@@ -2368,6 +2368,20 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 14,
+      "phaseId": 73,
+      "name": "Remove bath",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 0,
+      "assigneeIds": [
+        7
+      ]
+    },
+    {
       "name": "Bath: Removing Wall",
       "notes": "",
       "id": 6,
@@ -2379,7 +2393,7 @@
       "assignee": "",
       "end": "",
       "status": "planned",
-      "kanbanOrder": 0,
+      "kanbanOrder": 10,
       "assigneeIds": [
         6,
         7
@@ -2397,7 +2411,7 @@
       "id": 1,
       "notes": "",
       "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 10,
+      "kanbanOrder": 20,
       "assigneeIds": [
         3,
         4
@@ -2415,7 +2429,7 @@
         4
       ],
       "notes": "",
-      "kanbanOrder": 20
+      "kanbanOrder": 30
     },
     {
       "notes": "",
@@ -2429,7 +2443,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": [
         3
       ]
@@ -2446,7 +2460,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": [
         3,
         4
@@ -2464,7 +2478,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": []
     },
     {
@@ -2479,7 +2493,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": []
     },
     {
@@ -2492,7 +2506,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 70
+      "kanbanOrder": 80
     },
     {
       "description": "Self Made",
@@ -2506,7 +2520,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": [
         10
       ]
@@ -2520,7 +2534,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "assigneeIds": []
     },
     {
@@ -2532,22 +2546,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
-      "assigneeIds": []
-    },
-    {
-      "id": 14,
-      "phaseId": 73,
-      "name": "Remove bath",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
       "kanbanOrder": 110,
-      "assigneeIds": [
-        7
-      ]
+      "assigneeIds": []
     },
     {
       "id": 15,
@@ -2710,7 +2710,8 @@
       "assigneeIds": [
         7
       ],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 230
     },
     {
       "id": 30,
@@ -2724,7 +2725,8 @@
         4,
         7
       ],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 240
     },
     {
       "id": 31,
@@ -2738,7 +2740,8 @@
         4,
         7
       ],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 250
     },
     {
       "id": 9,
@@ -2792,7 +2795,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783858823311,
+  "_savedAt": 1783858863655,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
