@@ -2591,7 +2591,10 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 150,
-      "assigneeIds": []
+      "assigneeIds": [
+        3,
+        4
+      ]
     },
     {
       "id": 20,
@@ -2726,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783856797219,
+  "_savedAt": 1783856862823,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
