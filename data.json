@@ -2744,6 +2744,36 @@
       "kanbanOrder": 250
     },
     {
+      "id": 32,
+      "phaseId": 74,
+      "name": "Install ventilation ducts",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
+      "id": 33,
+      "phaseId": 32,
+      "name": "Install electricity to kitchen",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
+      "id": 34,
+      "phaseId": 32,
+      "name": "Install electricity to HeatPump",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2784,7 +2814,7 @@
       ]
     }
   ],
-  "nextTaskId": 32,
+  "nextTaskId": 35,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2795,7 +2825,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783858863655,
+  "_savedAt": 1783859290242,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
