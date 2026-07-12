@@ -2915,6 +2915,17 @@
       "parentTaskId": null
     },
     {
+      "id": 43,
+      "phaseId": 60,
+      "name": "B",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2961,7 +2972,7 @@
       "parentTaskId": null
     }
   ],
-  "nextTaskId": 43,
+  "nextTaskId": 44,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2972,7 +2983,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783878506765,
+  "_savedAt": 1783878534397,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
