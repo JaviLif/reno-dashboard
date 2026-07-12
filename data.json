@@ -2380,7 +2380,8 @@
       "assigneeIds": [
         7
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "name": "Bath: Removing Wall",
@@ -2399,7 +2400,8 @@
         6,
         7
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "end": "",
@@ -2418,7 +2420,8 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 28,
@@ -2433,7 +2436,8 @@
       ],
       "notes": "",
       "kanbanOrder": 30,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "notes": "",
@@ -2451,7 +2455,8 @@
       "assigneeIds": [
         3
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "start": "",
@@ -2470,7 +2475,8 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "end": null,
@@ -2486,7 +2492,8 @@
       "notes": "",
       "kanbanOrder": 60,
       "assigneeIds": [],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "start": "",
@@ -2502,7 +2509,8 @@
       "priority": "med",
       "kanbanOrder": 70,
       "assigneeIds": [],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 21,
@@ -2515,7 +2523,8 @@
       "notes": "",
       "assigneeIds": [],
       "kanbanOrder": 80,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "description": "Self Made",
@@ -2533,7 +2542,8 @@
       "assigneeIds": [
         10
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 8,
@@ -2546,7 +2556,8 @@
       "notes": "",
       "kanbanOrder": 100,
       "assigneeIds": [],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 11,
@@ -2559,7 +2570,8 @@
       "notes": "",
       "kanbanOrder": 110,
       "assigneeIds": [],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 15,
@@ -2577,7 +2589,8 @@
         9,
         10
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 16,
@@ -2593,7 +2606,8 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 17,
@@ -2609,7 +2623,8 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 18,
@@ -2625,7 +2640,8 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 20,
@@ -2638,7 +2654,8 @@
       "notes": "",
       "assigneeIds": [],
       "kanbanOrder": 160,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 22,
@@ -2651,7 +2668,8 @@
       "notes": "",
       "assigneeIds": [],
       "kanbanOrder": 170,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 23,
@@ -2669,7 +2687,8 @@
         9
       ],
       "kanbanOrder": 180,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 24,
@@ -2685,7 +2704,8 @@
         11
       ],
       "kanbanOrder": 190,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 25,
@@ -2697,7 +2717,8 @@
       "assigneeIds": [],
       "notes": "",
       "kanbanOrder": 200,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 26,
@@ -2709,7 +2730,8 @@
       "assigneeIds": [],
       "notes": "",
       "kanbanOrder": 210,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 27,
@@ -2721,7 +2743,8 @@
       "assigneeIds": [],
       "notes": "",
       "kanbanOrder": 220,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 29,
@@ -2735,7 +2758,8 @@
       ],
       "notes": "",
       "kanbanOrder": 230,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 30,
@@ -2751,7 +2775,8 @@
       ],
       "notes": "",
       "kanbanOrder": 240,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 31,
@@ -2767,7 +2792,8 @@
       ],
       "notes": "",
       "kanbanOrder": 250,
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 33,
@@ -2778,7 +2804,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 34,
@@ -2789,7 +2816,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 35,
@@ -2800,7 +2828,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "Outside the roof/ Wall",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 36,
@@ -2811,7 +2840,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 37,
@@ -2822,7 +2852,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 38,
@@ -2833,7 +2864,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 39,
@@ -2844,7 +2876,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 40,
@@ -2855,7 +2888,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 41,
@@ -2866,7 +2900,19 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
+    },
+    {
+      "id": 42,
+      "phaseId": 60,
+      "name": "A",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null
     },
     {
       "id": 9,
@@ -2879,7 +2925,8 @@
       "notes": "",
       "kanbanOrder": 0,
       "assigneeIds": [],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 10,
@@ -2894,7 +2941,8 @@
       "assigneeIds": [
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     },
     {
       "id": 13,
@@ -2909,10 +2957,11 @@
         3,
         4
       ],
-      "subtasks": []
+      "subtasks": [],
+      "parentTaskId": null
     }
   ],
-  "nextTaskId": 42,
+  "nextTaskId": 43,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2923,7 +2972,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783877562022,
+  "_savedAt": 1783878506765,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
