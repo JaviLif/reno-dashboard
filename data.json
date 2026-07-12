@@ -2677,6 +2677,16 @@
       "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office"
     },
     {
+      "id": 31,
+      "phaseId": 65,
+      "name": "Install tubing Externall (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall"
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2712,7 +2722,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 31,
+  "nextTaskId": 32,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2723,7 +2733,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847872476,
+  "_savedAt": 1783847916277,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
