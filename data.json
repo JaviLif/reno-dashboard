@@ -2698,6 +2698,18 @@
       "kanbanOrder": 220
     },
     {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        7
+      ],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2738,7 +2750,7 @@
       ]
     }
   ],
-  "nextTaskId": 29,
+  "nextTaskId": 30,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2749,7 +2761,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857443021,
+  "_savedAt": 1783857490078,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
