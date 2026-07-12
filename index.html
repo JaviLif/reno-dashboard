@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard</title>
+<title>🏠 Renovation Dashboard v1.0.30</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -258,7 +258,7 @@ body.col-resizing *{cursor:col-resize!important}
 .kanban-card{background:#fff;border-radius:8px;padding:11px 12px;cursor:pointer;border-left:3px solid var(--g300);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .1s,box-shadow .1s}
 .kanban-card:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.10)}
 .kanban-card-name{font-size:13px;font-weight:600;color:var(--g800);line-height:1.3;margin-bottom:4px}
-.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}.person-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px 3px 4px;border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;border:2px solid transparent;background:var(--g100);color:var(--g700);transition:all .15s;user-select:none}.person-chip.selected{background:rgba(0,0,0,.07);border-color:currentColor}.person-avatar{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;line-height:1}.person-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--g100)}.person-row:last-child{border-bottom:none}.card-who-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}
+.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}.person-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px 3px 4px;border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;border:2px solid transparent;background:var(--g100);color:var(--g700);transition:all .15s;user-select:none}.person-chip.selected{background:rgba(0,0,0,.07);border-color:currentColor}.person-avatar{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;line-height:1}.person-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--g100)}.person-row:last-child{border-bottom:none}.card-who-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}.kanban-child-wrap{margin-left:22px;position:relative;margin-top:-2px}.kanban-child-wrap::before{content:"\21B3 ";position:absolute;left:-18px;top:13px;color:#f59e0b;font-size:13px;font-weight:700;line-height:1}.kanban-child-wrap .kanban-card{border-left-color:#f59e0b!important;opacity:.95}.card-sub-prog{display:inline-flex;align-items:center;font-size:10px;background:#fef3c7;border-radius:10px;padding:2px 8px;color:#92400e;font-weight:600;margin-top:4px}.child-task-row{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border:1px solid var(--g100);border-radius:6px;margin-bottom:4px;font-size:13px}.child-task-row:hover{background:var(--g050)}
 .kanban-add{margin:8px 10px;padding:6px;border-radius:6px;border:1.5px dashed var(--g200);background:transparent;color:var(--g400);font-size:12px;font-weight:600;cursor:pointer;text-align:left;transition:border-color .15s,color .15s}
 .kanban-add:hover{border-color:var(--pri);color:var(--pri)}
 .kanban-col.col-planned .kanban-col-hdr{border-top:3px solid var(--g400)}
@@ -793,7 +793,7 @@ body.col-resizing *{cursor:col-resize!important}
         </div>
         <div class="fm-grp"><label class="fm-lbl">Assigned to</label><div id="tk-assignee-picker" style="display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;min-height:36px;align-items:center"></div></div>
       </div>
-      <div class="fm-grp"><label class="fm-lbl">Notes</label><textarea class="fm-ta" id="tk-notes" placeholder="Any notes…"></textarea></div>
+      <div class="fm-grp"><label class="fm-lbl">Parent Task</label><select class="fm-inp" id="tk-parent" style="font-size:13px"><option value="">-- none (top-level) --</option></select><div id="tk-parent-link" style="margin-top:6px;display:none"></div></div><div class="fm-grp"><label class="fm-lbl">Child Tasks</label><div id="tk-children-list" style="margin-bottom:4px"></div></div><div class="fm-grp"><label class="fm-lbl">Notes</label><textarea class="fm-ta" id="tk-notes" placeholder="Any notes…"></textarea></div>
     </div>
     <div class="modal-ftr">
       <button class="btn btn-danger btn-sm" id="tk-del-btn" style="display:none;margin-right:auto" onclick="deleteTask()">Delete</button>
@@ -1297,7 +1297,7 @@ function migrateState(state){
   if(!Array.isArray(state.people)) state.people=[];
   if(!state.nextPersonId) state.nextPersonId=Math.max(1,...state.people.map(function(p){return p.id||0;}).concat([0]))+1;
   state.tasks.forEach(t=>{
-    if(!Array.isArray(t.assigneeIds)) t.assigneeIds=[];
+    if(!Array.isArray(t.assigneeIds)) t.assigneeIds=[]; if(t.parentTaskId===undefined) t.parentTaskId=null;
     if(t.notes==null) t.notes='';
     if(t.status==null) t.status='planned';
   });
@@ -3518,20 +3518,75 @@ function openTaskModal(id, presetPhaseId, presetStatus){
     if(t.start&&t.end){const _ms=new Date(t.end+'T00:00:00')-new Date(t.start+'T00:00:00');const _d=Math.round(_ms/86400000);if(_d>0&&_d%7===0){C('tk-dur').value=_d/7;C('tk-dur-unit').value='7';}else if(_d>0){C('tk-dur').value=_d;C('tk-dur-unit').value='1';}}else{C('tk-dur').value='';}
     C('tk-status').value=t.status;
     renderTaskAssigneePicker(t.assigneeIds||[]);
-    C('tk-notes').value=t.notes||'';
+    C('tk-notes').value=t.notes||''; populateParentPicker(t.id); var _ps=C("tk-parent"); if(_ps)_ps.value=t.parentTaskId||""; renderParentLink(t.parentTaskId); renderChildrenList(t.id);
   } else {
     C('tk-phase').innerHTML=taskPhaseSelectHtml(presetPhaseId);
     if(presetPhaseId) C('tk-phase').value=presetPhaseId;
     C('tk-name').value=''; C('tk-start').value=''; C('tk-end').value=''; C('tk-dur').value='';
-    C('tk-status').value=presetStatus||'planned'; renderTaskAssigneePicker([]); C('tk-notes').value='';
+    C('tk-status').value=presetStatus||'planned'; renderTaskAssigneePicker([]); C('tk-notes').value=''; populateParentPicker(null); renderParentLink(null); var _clist=C("tk-children-list"); if(_clist)_clist.innerHTML="<p style=\"font-size:12px;color:var(--g500);margin:0\">Save task first to add children.</p>";
   }
   C('task-overlay').classList.add('open');
+}
+function populateParentPicker(currentId){
+  var sel=C("tk-parent");if(!sel)return;
+  var opts='<option value="">-- none (top-level) --</option>';
+  S.phases.forEach(function(ph){
+    var pLabel=ph.parentId?((phaseById(ph.parentId)||{}).name||'?')+" > "+ph.name:ph.name;
+    var pts=S.tasks.filter(function(t){return t.phaseId===ph.id&&t.id!==currentId&&t.parentTaskId!==currentId;});
+    if(!pts.length)return;
+    opts+='<optgroup label="'+escapeAttr(pLabel)+'">';
+    pts.forEach(function(t){opts+='<option value="'+t.id+'">'+escapeAttr(t.name)+'</option>';});
+    opts+='</optgroup>';
+  });
+  sel.innerHTML=opts;
+}
+function renderParentLink(parentId){
+  var el=C("tk-parent-link");if(!el)return;
+  if(!parentId){el.style.display="none";el.innerHTML="";return;}
+  var par=S.tasks.find(function(p){return p.id==parentId;});
+  if(!par){el.style.display="none";return;}
+  el.style.display="";
+  el.innerHTML="<button class=\"btn btn-ghost btn-sm\" onclick=\"openTaskModal(null,null,"+par.id+")\" style=\"font-size:12px;color:#f59e0b\">\u2191 Open parent: "+escapeAttr(par.name)+"</button>";
+}
+function renderChildrenList(taskId){
+  var el=C("tk-children-list");if(!el)return;
+  var ch=S.tasks.filter(function(t){return t.parentTaskId==taskId;});
+  if(!ch.length){el.innerHTML="<p style=\"font-size:12px;color:var(--g500);margin:0\">No child tasks.</p>";return;}
+  var _dn=ch.filter(function(c){return c.status==="completed";}).length;
+  var h="<div style=\"font-size:11px;color:var(--g500);margin-bottom:4px\">"+_dn+"/"+ch.length+" completed</div>";
+  ch.forEach(function(c){
+    var sc=c.status==="completed"?"#16a34a":c.status==="in-progress"?"#2563eb":"#6b7280";
+    h+="<div class=\"child-task-row\"><span style=\"flex:1\">"+escapeAttr(c.name)+"</span><span style=\"font-size:11px;color:"+sc+";font-weight:500;margin-right:8px\">"+c.status+"</span><button class=\"btn btn-ghost btn-sm\" onclick=\"openTaskModal(null,null,"+c.id+")\">Open</button></div>";
+  });
+  el.innerHTML=h;
+}
+var _kanbanObs=null;
+function _nestKanban(){
+  document.querySelectorAll('.kanban-cards').forEach(function(col){
+    var cards=Array.from(col.querySelectorAll(':scope > .kanban-card[data-taskid]'));
+    var byId={};cards.forEach(function(el){byId[el.dataset.taskid]=el;});
+    cards.forEach(function(el){
+      var pid=el.dataset.parentid;if(!pid)return;
+      var pEl=byId[pid];if(!pEl)return;
+      var wrap=document.createElement('div');
+      wrap.className='kanban-child-wrap';
+      el.parentNode.removeChild(el);wrap.appendChild(el);
+      var after=pEl;
+      while(after.nextElementSibling&&after.nextElementSibling.classList.contains('kanban-child-wrap')){after=after.nextElementSibling;}
+      after.nextElementSibling?col.insertBefore(wrap,after.nextElementSibling):col.appendChild(wrap);
+    });
+  });
+}
+function _initKanbanNest(){
+  var board=C('kanban-board');if(!board)return;
+  _kanbanObs=new MutationObserver(function(){_nestKanban();});
+  _kanbanObs.observe(board,{childList:true});
 }
 function saveTask(){
   const name=C('tk-name').value.trim(),start=C('tk-start').value,end=C('tk-end').value,phaseId=Number(C('tk-phase').value)||null;
   if(!name||!phaseId){alert('Name and phase are required.');return;}
   const id=Number(C('tk-id').value)||null;
-  const data={phaseId,name,start,end,status:C('tk-status').value,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim()};
+  const _sts=C('tk-status').value; const _pidRaw=(C("tk-parent")||{}).value||null; const _pid=_pidRaw?Number(_pidRaw):null; const data={phaseId,name,start,end,status:_sts,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim(),parentTaskId:_pid};
   if(id){const idx=S.tasks.findIndex(t=>t.id===id);S.tasks[idx]={...S.tasks[idx],...data};}
   else S.tasks.push({id:S.nextTaskId++,...data});
   const returnToPhase=C('tk-id').dataset.returnToPhase==='1';
@@ -3669,7 +3724,7 @@ function renderTasksTab(){
             dateStr?`<span class="card-date-lbl">${dateStr}</span>`:'',
             (t.assigneeIds||[]).length?`<span class="card-who-chips">${(t.assigneeIds||[]).map(id=>{const p=personById(id);return p?personAvatarHtml(p,20):"";}).filter(Boolean).join("")}</span>`:""
           ].filter(Boolean).join('');
-          return `<div class="kanban-card" style="border-left-color:${accent}"
+          return `<div class="kanban-card" data-taskid="${t.id}" data-parentid="${t.parentTaskId||""}" style="border-left-color:${accent}"
             draggable="true"
             ondragstart="taskDragStart(event,${t.id})"
             ondragend="this.classList.remove('dragging');this.classList.remove('kc-drag-over')"
@@ -3679,6 +3734,7 @@ function renderTasksTab(){
             onclick="openTaskModal(${t.id})">
             <div class="kanban-card-name">${t.name}</div>
             ${meta?`<div class="kanban-card-meta">${meta}</div>`:''}
+            ${(function(){var cc=S.tasks.filter(function(ch){return ch.parentTaskId==t.id;});return cc.length?('<span class="card-sub-prog">'+cc.filter(function(c){return c.status==="completed";}).length+'/'+cc.length+' done</span>'):'';})()}
           </div>`;
         }).join('')
       : `<div style="padding:16px 4px;font-size:11px;color:var(--g300);text-align:center">Empty</div>`;
@@ -3972,6 +4028,7 @@ function refreshAll(){
 renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
+setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </script>
 <div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
   <img id="doc-preview-img" style="max-width:92vw;max-height:88vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.7);display:block" onclick="event.stopPropagation()">
