@@ -2427,7 +2427,9 @@
       "status": "planned",
       "end": "",
       "kanbanOrder": 30,
-      "assigneeIds": []
+      "assigneeIds": [
+        3
+      ]
     },
     {
       "start": null,
@@ -2718,7 +2720,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783856757617,
+  "_savedAt": 1783856760167,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
