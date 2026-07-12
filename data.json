@@ -2627,6 +2627,16 @@
       "notes": ""
     },
     {
+      "id": 26,
+      "phaseId": 31,
+      "name": "Install Kruipruimte insolation",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2662,7 +2672,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 26,
+  "nextTaskId": 27,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2673,7 +2683,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847447111,
+  "_savedAt": 1783847464114,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
