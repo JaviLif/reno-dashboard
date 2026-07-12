@@ -2657,6 +2657,16 @@
       "notes": ""
     },
     {
+      "id": 29,
+      "phaseId": 65,
+      "name": "Install WTW Unit",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2692,7 +2702,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 29,
+  "nextTaskId": 30,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2703,7 +2713,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847758589,
+  "_savedAt": 1783847775081,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
