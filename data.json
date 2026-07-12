@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857228577,
+  "_savedAt": 1783857235724,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3175,9 +3175,15 @@
       "name": "Big Room",
       "role": "",
       "color": "#8b5cf6"
+    },
+    {
+      "id": 10,
+      "name": "Kitchen",
+      "role": "",
+      "color": "#14b8a6"
     }
   ],
-  "nextPersonId": 10,
+  "nextPersonId": 11,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
