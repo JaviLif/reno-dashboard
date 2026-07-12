@@ -2379,8 +2379,7 @@
       "assignee": "",
       "end": "",
       "status": "planned",
-      "kanbanOrder": 0,
-      "assigneeIds": []
+      "kanbanOrder": 0
     },
     {
       "end": null,
@@ -2394,8 +2393,7 @@
       "id": 1,
       "notes": "",
       "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 10,
-      "assigneeIds": []
+      "kanbanOrder": 10
     },
     {
       "notes": "",
@@ -2409,8 +2407,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 20,
-      "assigneeIds": []
+      "kanbanOrder": 20
     },
     {
       "start": null,
@@ -2424,8 +2421,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 61,
       "priority": "med",
-      "kanbanOrder": 30,
-      "assigneeIds": []
+      "kanbanOrder": 30
     },
     {
       "end": null,
@@ -2439,8 +2435,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 40,
-      "assigneeIds": []
+      "kanbanOrder": 40
     },
     {
       "start": "",
@@ -2454,8 +2449,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 50,
-      "assigneeIds": []
+      "kanbanOrder": 50
     },
     {
       "description": "Self Made",
@@ -2469,8 +2463,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 60,
-      "assigneeIds": []
+      "kanbanOrder": 60
     },
     {
       "id": 8,
@@ -2481,8 +2474,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
-      "assigneeIds": []
+      "kanbanOrder": 70
     },
     {
       "id": 11,
@@ -2493,8 +2485,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80,
-      "assigneeIds": []
+      "kanbanOrder": 80
     },
     {
       "id": 14,
@@ -2505,8 +2496,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
-      "assigneeIds": []
+      "kanbanOrder": 90
     },
     {
       "id": 15,
@@ -2517,8 +2507,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
-      "assigneeIds": []
+      "kanbanOrder": 100
     },
     {
       "id": 16,
@@ -2529,8 +2518,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 110,
-      "assigneeIds": []
+      "kanbanOrder": 110
     },
     {
       "id": 17,
@@ -2541,8 +2529,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 120,
-      "assigneeIds": []
+      "kanbanOrder": 120
     },
     {
       "id": 18,
@@ -2553,8 +2540,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 130,
-      "assigneeIds": []
+      "kanbanOrder": 130
     },
     {
       "id": 20,
@@ -2564,8 +2550,7 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": "",
-      "assigneeIds": []
+      "notes": ""
     },
     {
       "id": 21,
@@ -2575,8 +2560,7 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": "",
-      "assigneeIds": []
+      "notes": ""
     },
     {
       "id": 22,
@@ -2586,8 +2570,27 @@
       "end": "",
       "status": "planned",
       "assignee": "",
-      "notes": "",
-      "assigneeIds": []
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "phaseId": 74,
+      "name": "Build new walls in upper floor",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "phaseId": 74,
+      "name": "Install skyroof",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": ""
     },
     {
       "id": 9,
@@ -2598,8 +2601,7 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 0,
-      "assigneeIds": []
+      "kanbanOrder": 0
     },
     {
       "id": 10,
@@ -2610,8 +2612,7 @@
       "status": "in-progress",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
-      "assigneeIds": []
+      "kanbanOrder": 90
     },
     {
       "id": 13,
@@ -2621,11 +2622,10 @@
       "end": "2026-07-12",
       "status": "in-progress",
       "assignee": "",
-      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension",
-      "assigneeIds": []
+      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension"
     }
   ],
-  "nextTaskId": 23,
+  "nextTaskId": 25,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2636,7 +2636,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847069461,
+  "_savedAt": 1783847190560,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3039,27 +3039,5 @@
       "budget": 0
     }
   ],
-  "_source": "converted-from-classifier-v3",
-  "people": [],
-  "nextPersonId": 2,
-  "bomUiPrefs": {
-    "colOrder": [
-      "phase",
-      "category",
-      "name",
-      "description",
-      "qty",
-      "price",
-      "total",
-      "quote",
-      "status",
-      "delivery",
-      "netspent",
-      "link"
-    ],
-    "colHidden": [],
-    "colWidths": {},
-    "sortKey": null,
-    "sortDir": "asc"
-  }
+  "_source": "converted-from-classifier-v3"
 }
