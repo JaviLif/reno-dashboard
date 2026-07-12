@@ -2401,6 +2401,20 @@
       ]
     },
     {
+      "id": 28,
+      "phaseId": 61,
+      "name": "Preliminary layout bath",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": "",
+      "kanbanOrder": 20
+    },
+    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -2412,7 +2426,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 20,
+      "kanbanOrder": 30,
       "assigneeIds": []
     },
     {
@@ -2427,7 +2441,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 61,
       "priority": "med",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": []
     },
     {
@@ -2442,7 +2456,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": []
     },
     {
@@ -2457,7 +2471,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": []
     },
     {
@@ -2470,7 +2484,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 60
+      "kanbanOrder": 70
     },
     {
       "description": "Self Made",
@@ -2484,7 +2498,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": []
     },
     {
@@ -2496,7 +2510,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": []
     },
     {
@@ -2508,7 +2522,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "assigneeIds": []
     },
     {
@@ -2520,7 +2534,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
+      "kanbanOrder": 110,
       "assigneeIds": []
     },
     {
@@ -2532,7 +2546,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 110,
+      "kanbanOrder": 120,
       "assigneeIds": []
     },
     {
@@ -2544,7 +2558,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 120,
+      "kanbanOrder": 130,
       "assigneeIds": []
     },
     {
@@ -2556,7 +2570,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 130,
+      "kanbanOrder": 140,
       "assigneeIds": []
     },
     {
@@ -2568,7 +2582,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 140,
+      "kanbanOrder": 150,
       "assigneeIds": []
     },
     {
@@ -2581,7 +2595,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 150
+      "kanbanOrder": 160
     },
     {
       "id": 22,
@@ -2593,7 +2607,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 160
+      "kanbanOrder": 170
     },
     {
       "id": 23,
@@ -2605,7 +2619,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 170
+      "kanbanOrder": 180
     },
     {
       "id": 24,
@@ -2617,7 +2631,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 180
+      "kanbanOrder": 190
     },
     {
       "id": 25,
@@ -2627,7 +2641,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 200
     },
     {
       "id": 26,
@@ -2637,7 +2652,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 210
     },
     {
       "id": 27,
@@ -2647,20 +2663,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
-    },
-    {
-      "id": 28,
-      "phaseId": 61,
-      "name": "Preliminary layout bath",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "notes": ""
+      "notes": "",
+      "kanbanOrder": 220
     },
     {
       "id": 9,
@@ -2714,7 +2718,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783856750893,
+  "_savedAt": 1783856757617,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
