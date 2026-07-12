@@ -2892,18 +2892,6 @@
       "parentTaskId": null
     },
     {
-      "id": 41,
-      "phaseId": 1,
-      "name": "A",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null
-    },
-    {
       "id": 42,
       "phaseId": 60,
       "name": "A",
@@ -2983,7 +2971,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783878559494,
+  "_savedAt": 1783878953624,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
