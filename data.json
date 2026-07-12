@@ -2794,6 +2794,16 @@
       "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office"
     },
     {
+      "id": 37,
+      "phaseId": 67,
+      "name": "Remove PopCorn finish from Walls",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2834,7 +2844,7 @@
       ]
     }
   ],
-  "nextTaskId": 37,
+  "nextTaskId": 38,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2845,7 +2855,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783873117442,
+  "_savedAt": 1783873154637,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
