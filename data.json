@@ -2774,6 +2774,16 @@
       "notes": ""
     },
     {
+      "id": 35,
+      "phaseId": 65,
+      "name": "Install tubing EXTERNAL (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall"
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2814,7 +2824,7 @@
       ]
     }
   ],
-  "nextTaskId": 35,
+  "nextTaskId": 36,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2825,7 +2835,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783859290242,
+  "_savedAt": 1783873087447,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
