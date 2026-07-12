@@ -2379,7 +2379,8 @@
       "kanbanOrder": 0,
       "assigneeIds": [
         7
-      ]
+      ],
+      "subtasks": []
     },
     {
       "name": "Bath: Removing Wall",
@@ -2397,7 +2398,8 @@
       "assigneeIds": [
         6,
         7
-      ]
+      ],
+      "subtasks": []
     },
     {
       "end": "",
@@ -2415,7 +2417,8 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 28,
@@ -2429,7 +2432,8 @@
         4
       ],
       "notes": "",
-      "kanbanOrder": 30
+      "kanbanOrder": 30,
+      "subtasks": []
     },
     {
       "notes": "",
@@ -2446,7 +2450,8 @@
       "kanbanOrder": 40,
       "assigneeIds": [
         3
-      ]
+      ],
+      "subtasks": []
     },
     {
       "start": "",
@@ -2464,7 +2469,8 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "end": null,
@@ -2479,7 +2485,8 @@
       "id": 4,
       "notes": "",
       "kanbanOrder": 60,
-      "assigneeIds": []
+      "assigneeIds": [],
+      "subtasks": []
     },
     {
       "start": "",
@@ -2494,7 +2501,8 @@
       "phaseId": 73,
       "priority": "med",
       "kanbanOrder": 70,
-      "assigneeIds": []
+      "assigneeIds": [],
+      "subtasks": []
     },
     {
       "id": 21,
@@ -2506,7 +2514,8 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 80
+      "kanbanOrder": 80,
+      "subtasks": []
     },
     {
       "description": "Self Made",
@@ -2523,7 +2532,8 @@
       "kanbanOrder": 90,
       "assigneeIds": [
         10
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 8,
@@ -2535,7 +2545,8 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 100,
-      "assigneeIds": []
+      "assigneeIds": [],
+      "subtasks": []
     },
     {
       "id": 11,
@@ -2547,7 +2558,8 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 110,
-      "assigneeIds": []
+      "assigneeIds": [],
+      "subtasks": []
     },
     {
       "id": 15,
@@ -2564,7 +2576,8 @@
         8,
         9,
         10
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 16,
@@ -2579,7 +2592,8 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 17,
@@ -2594,7 +2608,8 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 18,
@@ -2609,7 +2624,8 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 20,
@@ -2621,7 +2637,8 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 160
+      "kanbanOrder": 160,
+      "subtasks": []
     },
     {
       "id": 22,
@@ -2633,7 +2650,8 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 170
+      "kanbanOrder": 170,
+      "subtasks": []
     },
     {
       "id": 23,
@@ -2650,7 +2668,8 @@
         8,
         9
       ],
-      "kanbanOrder": 180
+      "kanbanOrder": 180,
+      "subtasks": []
     },
     {
       "id": 24,
@@ -2665,7 +2684,8 @@
         7,
         11
       ],
-      "kanbanOrder": 190
+      "kanbanOrder": 190,
+      "subtasks": []
     },
     {
       "id": 25,
@@ -2676,7 +2696,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 200
+      "kanbanOrder": 200,
+      "subtasks": []
     },
     {
       "id": 26,
@@ -2687,7 +2708,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 210
+      "kanbanOrder": 210,
+      "subtasks": []
     },
     {
       "id": 27,
@@ -2698,7 +2720,8 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 220
+      "kanbanOrder": 220,
+      "subtasks": []
     },
     {
       "id": 29,
@@ -2711,7 +2734,8 @@
         7
       ],
       "notes": "",
-      "kanbanOrder": 230
+      "kanbanOrder": 230,
+      "subtasks": []
     },
     {
       "id": 30,
@@ -2726,7 +2750,8 @@
         7
       ],
       "notes": "",
-      "kanbanOrder": 240
+      "kanbanOrder": 240,
+      "subtasks": []
     },
     {
       "id": 31,
@@ -2741,7 +2766,8 @@
         7
       ],
       "notes": "",
-      "kanbanOrder": 250
+      "kanbanOrder": 250,
+      "subtasks": []
     },
     {
       "id": 33,
@@ -2751,7 +2777,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 34,
@@ -2761,7 +2788,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 35,
@@ -2771,7 +2799,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": "Outside the roof/ Wall"
+      "notes": "Outside the roof/ Wall",
+      "subtasks": []
     },
     {
       "id": 36,
@@ -2781,7 +2810,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office"
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": []
     },
     {
       "id": 37,
@@ -2791,7 +2821,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 38,
@@ -2801,7 +2832,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 39,
@@ -2811,7 +2843,8 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 40,
@@ -2821,7 +2854,19 @@
       "end": "",
       "status": "planned",
       "assigneeIds": [],
-      "notes": ""
+      "notes": "",
+      "subtasks": []
+    },
+    {
+      "id": 41,
+      "phaseId": 1,
+      "name": "A",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": []
     },
     {
       "id": 9,
@@ -2833,7 +2878,8 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 0,
-      "assigneeIds": []
+      "assigneeIds": [],
+      "subtasks": []
     },
     {
       "id": 10,
@@ -2847,7 +2893,8 @@
       "kanbanOrder": 90,
       "assigneeIds": [
         4
-      ]
+      ],
+      "subtasks": []
     },
     {
       "id": 13,
@@ -2861,10 +2908,11 @@
       "assigneeIds": [
         3,
         4
-      ]
+      ],
+      "subtasks": []
     }
   ],
-  "nextTaskId": 41,
+  "nextTaskId": 42,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2875,7 +2923,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783873275765,
+  "_savedAt": 1783877562022,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
