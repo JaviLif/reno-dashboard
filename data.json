@@ -2892,17 +2892,6 @@
       "parentTaskId": null
     },
     {
-      "id": 43,
-      "phaseId": 3,
-      "name": "B",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": "42"
-    },
-    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2960,7 +2949,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783880339230,
+  "_savedAt": 1783880342577,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
