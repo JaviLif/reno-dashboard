@@ -2710,6 +2710,33 @@
       "notes": ""
     },
     {
+      "id": 30,
+      "phaseId": 61,
+      "name": "Decide bathtub",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "phaseId": 61,
+      "name": "Decide tiles",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3,
+        4,
+        7
+      ],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2750,7 +2777,7 @@
       ]
     }
   ],
-  "nextTaskId": 30,
+  "nextTaskId": 32,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2761,7 +2788,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857490078,
+  "_savedAt": 1783857559627,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
