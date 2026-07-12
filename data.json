@@ -2617,6 +2617,16 @@
       "kanbanOrder": 180
     },
     {
+      "id": 25,
+      "phaseId": 31,
+      "name": "Install ceiling isolation",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2652,7 +2662,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 25,
+  "nextTaskId": 26,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2663,7 +2673,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847410237,
+  "_savedAt": 1783847447111,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
