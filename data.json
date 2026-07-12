@@ -2804,6 +2804,16 @@
       "notes": ""
     },
     {
+      "id": 39,
+      "phaseId": 34,
+      "name": "Intsall Piping fot HeatPump",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2844,7 +2854,7 @@
       ]
     }
   ],
-  "nextTaskId": 39,
+  "nextTaskId": 40,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2855,7 +2865,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783873239429,
+  "_savedAt": 1783873257908,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
