@@ -2693,7 +2693,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847638226,
+  "_savedAt": 1783847644319,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3114,7 +3114,7 @@
       "id": 4,
       "name": "Rani",
       "role": "",
-      "color": "#f59e0b"
+      "color": "#1ac745"
     }
   ],
   "nextPersonId": 5,
