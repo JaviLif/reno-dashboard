@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857191794,
+  "_savedAt": 1783857206271,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3157,9 +3157,15 @@
       "name": "Small Room",
       "role": "",
       "color": "#3b82f6"
+    },
+    {
+      "id": 7,
+      "name": "Bath Room",
+      "role": "",
+      "color": "#3b82f6"
     }
   ],
-  "nextPersonId": 7,
+  "nextPersonId": 8,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
