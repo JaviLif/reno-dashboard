@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857033710,
+  "_savedAt": 1783857155162,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3151,9 +3151,15 @@
       "name": "Rani",
       "role": "",
       "color": "#1ac745"
+    },
+    {
+      "id": 5,
+      "name": "Bath",
+      "role": "",
+      "color": "#10b981"
     }
   ],
-  "nextPersonId": 5,
+  "nextPersonId": 6,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
