@@ -2718,7 +2718,8 @@
       "status": "planned",
       "assigneeIds": [
         3,
-        4
+        4,
+        7
       ],
       "notes": ""
     },
@@ -2788,7 +2789,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857559627,
+  "_savedAt": 1783857564666,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
