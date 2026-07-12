@@ -2458,6 +2458,18 @@
       "assigneeIds": []
     },
     {
+      "id": 21,
+      "phaseId": 73,
+      "name": "Remove Floors Lower Floor",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 60
+    },
+    {
       "description": "Self Made",
       "notes": "",
       "id": 7,
@@ -2469,7 +2481,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": []
     },
     {
@@ -2481,7 +2493,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": []
     },
     {
@@ -2493,7 +2505,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": []
     },
     {
@@ -2505,7 +2517,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "assigneeIds": []
     },
     {
@@ -2517,7 +2529,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
+      "kanbanOrder": 110,
       "assigneeIds": []
     },
     {
@@ -2529,7 +2541,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 110,
+      "kanbanOrder": 120,
       "assigneeIds": []
     },
     {
@@ -2541,7 +2553,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 120,
+      "kanbanOrder": 130,
       "assigneeIds": []
     },
     {
@@ -2553,7 +2565,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 130,
+      "kanbanOrder": 140,
       "assigneeIds": []
     },
     {
@@ -2565,18 +2577,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": []
-    },
-    {
-      "id": 21,
-      "phaseId": 73,
-      "name": "Remove Floors Lower Floor",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": []
+      "assigneeIds": [],
+      "kanbanOrder": 150
     },
     {
       "id": 22,
@@ -2587,7 +2589,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": []
+      "assigneeIds": [],
+      "kanbanOrder": 160
     },
     {
       "id": 23,
@@ -2598,7 +2601,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": []
+      "assigneeIds": [],
+      "kanbanOrder": 170
     },
     {
       "id": 24,
@@ -2609,7 +2613,8 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": []
+      "assigneeIds": [],
+      "kanbanOrder": 180
     },
     {
       "id": 9,
@@ -2658,7 +2663,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847385607,
+  "_savedAt": 1783847392932,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
