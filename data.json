@@ -43,7 +43,7 @@
       "id": 210,
       "phaseId": 31,
       "categoryId": null,
-      "name": "Video how to Isolate Krupruimte",
+      "name": "",
       "description": "",
       "link": "https://m.youtube.com/watch?v=BkQ3p13tt50",
       "qty": 1,
@@ -2636,7 +2636,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783802279934,
+  "_savedAt": 1783847069461,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3040,30 +3040,12 @@
     }
   ],
   "_source": "converted-from-classifier-v3",
-  "people": [
-    {
-      "id": 2,
-      "name": "Rene",
-      "role": "",
-      "color": "#6366f1"
-    },
-    {
-      "id": 3,
-      "name": "Javi",
-      "role": "",
-      "color": "#ec4899"
-    },
-    {
-      "id": 4,
-      "name": "Rani",
-      "role": "",
-      "color": "#0af55c"
-    }
-  ],
-  "nextPersonId": 5,
+  "people": [],
+  "nextPersonId": 2,
   "bomUiPrefs": {
     "colOrder": [
-      "link",
+      "phase",
+      "category",
       "name",
       "description",
       "qty",
@@ -3073,23 +3055,11 @@
       "status",
       "delivery",
       "netspent",
-      "phase",
-      "category"
+      "link"
     ],
-    "colHidden": [
-      "delivery"
-    ],
-    "colWidths": {
-      "category": 240,
-      "name": 253,
-      "description": 258,
-      "qty": 72,
-      "phase": 241,
-      "delivery": 71,
-      "price": 60,
-      "link": 60
-    },
-    "sortKey": "category",
+    "colHidden": [],
+    "colWidths": {},
+    "sortKey": null,
     "sortDir": "asc"
   }
 }
