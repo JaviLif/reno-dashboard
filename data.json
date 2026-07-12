@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857206271,
+  "_savedAt": 1783857218637,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3163,9 +3163,15 @@
       "name": "Bath Room",
       "role": "",
       "color": "#3b82f6"
+    },
+    {
+      "id": 8,
+      "name": "Medium Room",
+      "role": "",
+      "color": "#ef4444"
     }
   ],
-  "nextPersonId": 8,
+  "nextPersonId": 9,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
