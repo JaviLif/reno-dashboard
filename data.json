@@ -2637,6 +2637,16 @@
       "notes": ""
     },
     {
+      "id": 27,
+      "phaseId": 73,
+      "name": "CHECK: Possible tonremove chimeney",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2672,7 +2682,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 27,
+  "nextTaskId": 28,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2683,7 +2693,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847464114,
+  "_savedAt": 1783847540179,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
