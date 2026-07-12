@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857171305,
+  "_savedAt": 1783857191794,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3151,12 +3151,6 @@
       "name": "Rani",
       "role": "",
       "color": "#1ac745"
-    },
-    {
-      "id": 5,
-      "name": "Bath",
-      "role": "",
-      "color": "#10b981"
     },
     {
       "id": 6,
