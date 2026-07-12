@@ -2432,10 +2432,10 @@
       ]
     },
     {
-      "start": null,
+      "start": "",
       "dueDate": null,
       "assignee": "",
-      "end": null,
+      "end": "",
       "status": "planned",
       "name": "Preliminary Layout Rooms & Zoning",
       "notes": "",
@@ -2444,7 +2444,10 @@
       "phaseId": 61,
       "priority": "med",
       "kanbanOrder": 40,
-      "assigneeIds": []
+      "assigneeIds": [
+        3,
+        4
+      ]
     },
     {
       "end": null,
@@ -2720,7 +2723,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783856760167,
+  "_savedAt": 1783856768025,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
