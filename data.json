@@ -2729,7 +2729,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857218637,
+  "_savedAt": 1783857228577,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3169,9 +3169,15 @@
       "name": "Medium Room",
       "role": "",
       "color": "#ef4444"
+    },
+    {
+      "id": 9,
+      "name": "Big Room",
+      "role": "",
+      "color": "#8b5cf6"
     }
   ],
-  "nextPersonId": 9,
+  "nextPersonId": 10,
   "bomUiPrefs": {
     "colOrder": [
       "phase",
