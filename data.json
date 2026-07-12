@@ -2687,6 +2687,16 @@
       "notes": "Outside the roof/ Wall"
     },
     {
+      "id": 32,
+      "phaseId": 67,
+      "name": "Remove PopCorn finish from Walls",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Living room walls..."
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2722,7 +2732,7 @@
       "assigneeIds": []
     }
   ],
-  "nextTaskId": 32,
+  "nextTaskId": 33,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2733,7 +2743,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783847937914,
+  "_savedAt": 1783848035640,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
