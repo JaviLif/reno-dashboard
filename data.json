@@ -2814,6 +2814,16 @@
       "notes": ""
     },
     {
+      "id": 40,
+      "phaseId": 34,
+      "name": "Install Heat Pump Unit",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": ""
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2854,7 +2864,7 @@
       ]
     }
   ],
-  "nextTaskId": 40,
+  "nextTaskId": 41,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2865,7 +2875,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783873257908,
+  "_savedAt": 1783873275765,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
