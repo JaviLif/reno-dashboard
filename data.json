@@ -2635,13 +2635,18 @@
     {
       "id": 23,
       "phaseId": 74,
-      "name": "Build new walls in upper floor",
+      "name": "Build new walls",
       "start": "",
       "end": "",
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": [],
+      "assigneeIds": [
+        6,
+        7,
+        8,
+        9
+      ],
       "kanbanOrder": 180
     },
     {
@@ -2744,7 +2749,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783857373110,
+  "_savedAt": 1783857443021,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
