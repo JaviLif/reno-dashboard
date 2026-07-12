@@ -2744,16 +2744,6 @@
       "kanbanOrder": 250
     },
     {
-      "id": 32,
-      "phaseId": 74,
-      "name": "Install ventilation ducts",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": ""
-    },
-    {
       "id": 33,
       "phaseId": 32,
       "name": "Install electricity to kitchen",
@@ -2855,7 +2845,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783873154637,
+  "_savedAt": 1783873205907,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
