@@ -2647,56 +2647,6 @@
       "notes": ""
     },
     {
-      "id": 28,
-      "phaseId": 34,
-      "name": "Install piping for Heatpump",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": ""
-    },
-    {
-      "id": 29,
-      "phaseId": 65,
-      "name": "Install WTW Unit",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": ""
-    },
-    {
-      "id": 30,
-      "phaseId": 65,
-      "name": "Install Tubing INTERNAL  See notes",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office"
-    },
-    {
-      "id": 31,
-      "phaseId": 65,
-      "name": "Install tubing EXTERNAL (Supply + Extraction)",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Outside the roof/ Wall"
-    },
-    {
-      "id": 32,
-      "phaseId": 67,
-      "name": "Remove PopCorn finish from Walls",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Living room walls..."
-    },
-    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -2712,27 +2662,32 @@
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
-      "start": "2026-07-05",
+      "start": "2026-07-06",
       "end": "2026-07-12",
       "status": "in-progress",
       "assignee": "",
       "notes": "",
       "kanbanOrder": 90,
-      "assigneeIds": []
+      "assigneeIds": [
+        4
+      ]
     },
     {
       "id": 13,
       "phaseId": 61,
       "name": "Call with Rene",
-      "start": "2026-07-06",
-      "end": "2026-07-12",
+      "start": "2026-07-07",
+      "end": "2026-07-07",
       "status": "in-progress",
       "assignee": "",
       "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension",
-      "assigneeIds": []
+      "assigneeIds": [
+        3,
+        4
+      ]
     }
   ],
-  "nextTaskId": 33,
+  "nextTaskId": 28,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -2743,7 +2698,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783848035640,
+  "_savedAt": 1783856674024,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
