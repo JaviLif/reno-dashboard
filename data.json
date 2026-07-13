@@ -2377,12 +2377,12 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 0,
-      "assigneeIds": [
-        7
-      ],
+      "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [
+        7
+      ]
     },
     {
       "name": "Bath: Removing Wall",
@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956153679,
+  "_savedAt": 1783956196191,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
