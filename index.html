@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.30</title>
+<title>🏠 Renovation Dashboard v1.0.31</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -258,7 +258,7 @@ body.col-resizing *{cursor:col-resize!important}
 .kanban-card{background:#fff;border-radius:8px;padding:11px 12px;cursor:pointer;border-left:3px solid var(--g300);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .1s,box-shadow .1s}
 .kanban-card:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.10)}
 .kanban-card-name{font-size:13px;font-weight:600;color:var(--g800);line-height:1.3;margin-bottom:4px}
-.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}.person-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px 3px 4px;border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;border:2px solid transparent;background:var(--g100);color:var(--g700);transition:all .15s;user-select:none}.person-chip.selected{background:rgba(0,0,0,.07);border-color:currentColor}.person-avatar{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;line-height:1}.person-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--g100)}.person-row:last-child{border-bottom:none}.card-who-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}.kanban-child-wrap{margin-left:22px;position:relative;margin-top:-2px}.kanban-child-wrap::before{content:"\21B3 ";position:absolute;left:-18px;top:13px;color:#f59e0b;font-size:13px;font-weight:700;line-height:1}.kanban-child-wrap .kanban-card{border-left-color:#f59e0b!important;opacity:.95}.card-sub-prog{display:inline-flex;align-items:center;font-size:10px;background:#fef3c7;border-radius:10px;padding:2px 8px;color:#92400e;font-weight:600;margin-top:4px}.child-task-row{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border:1px solid var(--g100);border-radius:6px;margin-bottom:4px;font-size:13px}.child-task-row:hover{background:var(--g050)}
+.kanban-card-meta{font-size:11px;color:var(--g500);display:flex;flex-wrap:wrap;gap:4px;align-items:center}.person-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 8px 3px 4px;border-radius:16px;font-size:12px;font-weight:500;cursor:pointer;border:2px solid transparent;background:var(--g100);color:var(--g700);transition:all .15s;user-select:none}.person-chip.selected{background:rgba(0,0,0,.07);border-color:currentColor}.person-avatar{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;line-height:1}.person-row{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--g100)}.person-row:last-child{border-bottom:none}.card-who-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}.card-space-chips{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center;margin-top:2px}.space-chip{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:500;white-space:nowrap}.space-chip-sel{user-select:none;cursor:pointer;transition:background .15s;font-size:12px;padding:3px 10px;border-radius:12px}.kanban-child-wrap{margin-left:22px;position:relative;margin-top:-2px}.kanban-child-wrap::before{content:"\21B3 ";position:absolute;left:-18px;top:13px;color:#f59e0b;font-size:13px;font-weight:700;line-height:1}.kanban-child-wrap .kanban-card{border-left-color:#f59e0b!important;opacity:.95}.card-sub-prog{display:inline-flex;align-items:center;font-size:10px;background:#fef3c7;border-radius:10px;padding:2px 8px;color:#92400e;font-weight:600;margin-top:4px}.child-task-row{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border:1px solid var(--g100);border-radius:6px;margin-bottom:4px;font-size:13px}.child-task-row:hover{background:var(--g050)}
 .kanban-add{margin:8px 10px;padding:6px;border-radius:6px;border:1.5px dashed var(--g200);background:transparent;color:var(--g400);font-size:12px;font-weight:600;cursor:pointer;text-align:left;transition:border-color .15s,color .15s}
 .kanban-add:hover{border-color:var(--pri);color:var(--pri)}
 .kanban-col.col-planned .kanban-col-hdr{border-top:3px solid var(--g400)}
@@ -446,7 +446,7 @@ body.col-resizing *{cursor:col-resize!important}
           <button class="btn btn-pri btn-sm" onclick="openTaskModal(null, kanbanActivePhaseId())">+ Add Task</button>
         </div>
       </div>
-      <div id="person-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:6px 16px 4px;align-items:center"></div>
+      <div id="person-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:6px 16px 4px;align-items:center"></div><div id="space-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:0 16px 4px;align-items:center"></div>
       <div id="task-kanban-wrap" style="display:flex;overflow-x:auto;min-height:0">
         <div class="kanban-board" id="kanban-board"></div>
       </div>
@@ -625,7 +625,7 @@ body.col-resizing *{cursor:col-resize!important}
           </div>
         </div></div>
       </div>
-        <div class="set-title">GitHub Sync</div>
+        <div style="margin-top:20px"><div class="set-title">Spaces / Areas</div><div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px"><div id="spaces-list" style="min-height:24px"></div><div class="fm-row" style="align-items:flex-end;gap:8px"><div class="fm-grp" style="margin:0;flex:2"><label class="fm-lbl">Name</label><input class="fm-inp" id="sp-name" type="text" placeholder="e.g. Kitchen, Bathroom..."></div><input type="color" id="sp-color" value="#6366f1" style="height:38px;width:44px;border:1px solid var(--g200);padding:2px;border-radius:6px;cursor:pointer;flex-shrink:0"><button class="btn btn-pri btn-sm" style="flex-shrink:0;height:38px" onclick="addSpace()">+ Add</button></div></div></div></div><div class="set-title">GitHub Sync</div>
         <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:12px">
           <div style="font-size:12px;color:var(--g500);line-height:1.6">Stores your data in <strong>JaviLif/reno-dashboard</strong> on GitHub. Documents go to <code>quotes/</code>. History is full git commit log. Token stays in <em>your</em> browser only.</div>
           <div class="fm-row" style="align-items:flex-end;gap:8px">
@@ -793,7 +793,7 @@ body.col-resizing *{cursor:col-resize!important}
         </div>
         <div class="fm-grp"><label class="fm-lbl">Assigned to</label><div id="tk-assignee-picker" style="display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;min-height:36px;align-items:center"></div></div>
       </div>
-      <div class="fm-grp"><label class="fm-lbl">Parent Task</label><select class="fm-inp" id="tk-parent" style="font-size:13px"><option value="">-- none (top-level) --</option></select><div id="tk-parent-link" style="margin-top:6px;display:none"></div></div><div class="fm-grp"><label class="fm-lbl">Child Tasks</label><div id="tk-children-list" style="margin-bottom:4px"></div></div><div class="fm-grp"><label class="fm-lbl">Notes</label><textarea class="fm-ta" id="tk-notes" placeholder="Any notes…"></textarea></div>
+      <div class="fm-grp"><label class="fm-lbl">Space / Area</label><div id="tk-space-picker" style="display:flex;flex-wrap:wrap;gap:6px;min-height:24px;padding:4px 0"></div></div><div class="fm-grp"><label class="fm-lbl">Parent Task</label><select class="fm-inp" id="tk-parent" style="font-size:13px"><option value="">-- none (top-level) --</option></select><div id="tk-parent-link" style="margin-top:6px;display:none"></div></div><div class="fm-grp"><label class="fm-lbl">Child Tasks</label><div id="tk-children-list" style="margin-bottom:4px"></div></div><div class="fm-grp"><label class="fm-lbl">Notes</label><textarea class="fm-ta" id="tk-notes" placeholder="Any notes…"></textarea></div>
     </div>
     <div class="modal-ftr">
       <button class="btn btn-danger btn-sm" id="tk-del-btn" style="display:none;margin-right:auto" onclick="deleteTask()">Delete</button>
@@ -1297,7 +1297,7 @@ function migrateState(state){
   if(!Array.isArray(state.people)) state.people=[];
   if(!state.nextPersonId) state.nextPersonId=Math.max(1,...state.people.map(function(p){return p.id||0;}).concat([0]))+1;
   state.tasks.forEach(t=>{
-    if(!Array.isArray(t.assigneeIds)) t.assigneeIds=[]; if(t.parentTaskId===undefined) t.parentTaskId=null;
+    if(!Array.isArray(t.assigneeIds)) t.assigneeIds=[]; if(t.parentTaskId===undefined) t.parentTaskId=null; if(!Array.isArray(t.spaceIds)) t.spaceIds=[];
     if(t.notes==null) t.notes='';
     if(t.status==null) t.status='planned';
   });
@@ -3198,6 +3198,7 @@ function getTaskAssigneeIds(){
 }
 // ===================== SETTINGS =====================
 function renderSettings(){
+  renderSpacesSettings();
   C('s-name').value=S.project.name||'';
   C('s-addr').value=S.project.address||'';
   C('s-budget').value=S.project.totalBudget||0;
@@ -3518,12 +3519,12 @@ function openTaskModal(id, presetPhaseId, presetStatus){
     if(t.start&&t.end){const _ms=new Date(t.end+'T00:00:00')-new Date(t.start+'T00:00:00');const _d=Math.round(_ms/86400000);if(_d>0&&_d%7===0){C('tk-dur').value=_d/7;C('tk-dur-unit').value='7';}else if(_d>0){C('tk-dur').value=_d;C('tk-dur-unit').value='1';}}else{C('tk-dur').value='';}
     C('tk-status').value=t.status;
     renderTaskAssigneePicker(t.assigneeIds||[]);
-    C('tk-notes').value=t.notes||''; populateParentPicker(t.id); var _ps=C("tk-parent"); if(_ps)_ps.value=t.parentTaskId||""; renderParentLink(t.parentTaskId); renderChildrenList(t.id);
+    C('tk-notes').value=t.notes||''; populateParentPicker(t.id); var _ps=C("tk-parent"); if(_ps)_ps.value=t.parentTaskId||""; renderParentLink(t.parentTaskId); renderChildrenList(t.id); renderSpacePicker(t.spaceIds||[]);
   } else {
     C('tk-phase').innerHTML=taskPhaseSelectHtml(presetPhaseId);
     if(presetPhaseId) C('tk-phase').value=presetPhaseId;
     C('tk-name').value=''; C('tk-start').value=''; C('tk-end').value=''; C('tk-dur').value='';
-    C('tk-status').value=presetStatus||'planned'; renderTaskAssigneePicker([]); C('tk-notes').value=''; populateParentPicker(null); renderParentLink(null); var _clist=C("tk-children-list"); if(_clist)_clist.innerHTML="<p style=\"font-size:12px;color:var(--g500);margin:0\">Save task first to add children.</p>";
+    C('tk-status').value=presetStatus||'planned'; renderTaskAssigneePicker([]); C('tk-notes').value=''; populateParentPicker(null); renderParentLink(null); renderSpacePicker([]); var _clist=C("tk-children-list"); if(_clist)_clist.innerHTML="<p style=\"font-size:12px;color:var(--g500);margin:0\">Save task first to add children.</p>";
   }
   C('task-overlay').classList.add('open');
 }
@@ -3582,11 +3583,73 @@ function _initKanbanNest(){
   _kanbanObs=new MutationObserver(function(){_nestKanban();});
   _kanbanObs.observe(board,{childList:true});
 }
+var _spaceFilter=null;
+function spaceById(id){return (S.spaces||[]).find(function(s){return s.id==id;});}
+function renderSpacesSettings(){
+  if(!S.spaces)S.spaces=[];
+  var el=C("spaces-list");if(!el)return;
+  if(!S.spaces.length){el.innerHTML="<div style=\"font-size:12px;color:var(--g400)\">No spaces yet.</div>";return;}
+  el.innerHTML=S.spaces.map(function(s){
+    return "<div class=\"person-row\"><span style=\"display:inline-block;width:14px;height:14px;border-radius:3px;background:"+s.color+";margin-right:8px;flex-shrink:0\"></span>"
+      +"<div style=\"flex:1;font-size:13px\">"+escapeAttr(s.name)+"</div>"
+      +"<input type=\"color\" value=\""+s.color+"\" onchange=\"updateSpaceColor("+s.id+",this.value)\" style=\"width:28px;height:28px;border:none;padding:1px;border-radius:4px;cursor:pointer;margin-right:4px\">"
+      +"<button class=\"btn btn-ghost btn-sm\" onclick=\"deleteSpace("+s.id+")\" style=\"opacity:.5\">\xD7</button></div>";
+  }).join('');
+}
+function addSpace(){
+  if(!S.spaces)S.spaces=[];
+  var name=C("sp-name").value.trim(),color=C("sp-color").value;
+  if(!name){alert("Name is required.");return;}
+  if(!S.nextSpaceId)S.nextSpaceId=1;
+  S.spaces.push({id:S.nextSpaceId++,name:name,color:color});
+  C("sp-name").value='';
+  saveState();renderSpacesSettings();renderSpaceFilter();
+}
+function deleteSpace(id){
+  if(!confirm("Remove this space?"))return;
+  S.spaces=(S.spaces||[]).filter(function(s){return s.id!==id;});
+  S.tasks.forEach(function(t){if(Array.isArray(t.spaceIds))t.spaceIds=t.spaceIds.filter(function(x){return x!==id;});});
+  if(_spaceFilter===id)_spaceFilter=null;
+  saveState();renderSpacesSettings();renderTasksTab();
+}
+function updateSpaceColor(id,color){
+  var s=(S.spaces||[]).find(function(x){return x.id===id;});
+  if(s){s.color=color;saveState();renderSpacesSettings();renderTasksTab();}
+}
+function renderSpacePicker(selectedIds){
+  var el=C("tk-space-picker");if(!el)return;
+  if(!(S.spaces||[]).length){el.innerHTML="<span style=\"font-size:12px;color:var(--g400)\">Add spaces in Settings first.</span>";return;}
+  el.innerHTML=(S.spaces||[]).map(function(s){
+    var sel=(selectedIds||[]).some(function(id){return id==s.id;});
+    return "<div class=\"space-chip-sel"+(sel?" selected":"")+"\""
+      +" data-spaceid=\""+s.id+"\" onclick=\"toggleSpaceChip(this)\" style=\"border:1px solid "+s.color+";color:"+s.color+";background:"+(sel?s.color+"33":"transparent")+"\">"+escapeAttr(s.name)+"</div>";
+  }).join('');
+}
+function toggleSpaceChip(el){
+  el.classList.toggle("selected");
+  var s=spaceById(Number(el.dataset.spaceid));
+  if(s)el.style.background=el.classList.contains("selected")?(s.color+"33"):"transparent";
+}
+function getTaskSpaceIds(){
+  return Array.from(document.querySelectorAll('#tk-space-picker .space-chip-sel.selected')).map(function(el){return Number(el.dataset.spaceid);});
+}
+function renderSpaceFilter(){
+  var bar=C("space-filter-bar");if(!bar)return;
+  if(!(S.spaces||[]).length){bar.style.display="none";return;}
+  bar.style.display="flex";
+  bar.innerHTML="<span style=\"font-size:11px;color:var(--g500);margin-right:4px;flex-shrink:0\">Area:</span>"
+    +"<div class=\"person-chip"+(_spaceFilter===null?" selected":"")+"\\" style=\"color:var(--pri)\" onclick=\"setSpaceFilter(null)\">All</div>"
+    +(S.spaces||[]).map(function(s){
+      var sel=_spaceFilter===s.id;
+      return "<div class=\"person-chip"+(sel?" selected":"")+"\\" style=\"color:"+s.color+"\" onclick=\"setSpaceFilter("+s.id+")\">"+escapeAttr(s.name)+"</div>";
+    }).join('');
+}
+function setSpaceFilter(id){_spaceFilter=id;renderTasksTab();}
 function saveTask(){
   const name=C('tk-name').value.trim(),start=C('tk-start').value,end=C('tk-end').value,phaseId=Number(C('tk-phase').value)||null;
   if(!name||!phaseId){alert('Name and phase are required.');return;}
   const id=Number(C('tk-id').value)||null;
-  const _sts=C('tk-status').value; const _pidRaw=(C("tk-parent")||{}).value||null; const _pid=_pidRaw?Number(_pidRaw):null; const data={phaseId,name,start,end,status:_sts,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim(),parentTaskId:_pid};
+  const _sts=C('tk-status').value; const _pidRaw=(C("tk-parent")||{}).value||null; const _pid=_pidRaw?Number(_pidRaw):null; const data={phaseId,name,start,end,status:_sts,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim(),parentTaskId:_pid,spaceIds:getTaskSpaceIds()};
   if(id){const idx=S.tasks.findIndex(t=>t.id===id);S.tasks[idx]={...S.tasks[idx],...data};}
   else S.tasks.push({id:S.nextTaskId++,...data});
   const returnToPhase=C('tk-id').dataset.returnToPhase==='1';
@@ -3688,8 +3751,9 @@ function renderTasksTab(){
     tasks=tasks.filter(t=>t.phaseId!=null&&validIds.has(Number(t.phaseId)));
   }
   tasks.sort((a,b)=>(a.start||'').localeCompare(b.start||'')||(a.id-b.id));
-  renderPersonFilter();
+  renderPersonFilter(); renderSpaceFilter();
   if(_personFilter!==null) tasks=tasks.filter(function(t){return (t.assigneeIds||[]).includes(_personFilter);});
+  if(_spaceFilter!==null) tasks=tasks.filter(function(t){return (t.spaceIds||[]).some(function(id){return id===_spaceFilter;});});
 
   // --- Summary bar ---
   const bar=C('task-summary-bar');
@@ -3723,6 +3787,7 @@ function renderTasksTab(){
             phaseLabel,
             dateStr?`<span class="card-date-lbl">${dateStr}</span>`:'',
             (t.assigneeIds||[]).length?`<span class="card-who-chips">${(t.assigneeIds||[]).map(id=>{const p=personById(id);return p?personAvatarHtml(p,20):"";}).filter(Boolean).join("")}</span>`:""
+          (t.spaceIds||[]).length?(function(){return '<span class="card-space-chips">'+(t.spaceIds||[]).map(function(id){var sp=spaceById(id);return sp?'<span class="space-chip" style="background:'+sp.color+'22;color:'+sp.color+'">'+escapeAttr(sp.name)+'</span>':'';}).join('')+'</span>';})():'',
           ].filter(Boolean).join('');
           return `<div class="kanban-card" data-taskid="${t.id}" data-parentid="${t.parentTaskId||""}" style="border-left-color:${accent}"
             draggable="true"
@@ -4028,6 +4093,7 @@ function refreshAll(){
 renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
+setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </script>
 <div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
