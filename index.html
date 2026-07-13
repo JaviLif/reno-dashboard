@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.31</title>
+<title>🏠 Renovation Dashboard v1.0.32</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -649,7 +649,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -3589,6 +3589,7 @@ function renderSpacesSettings(){
   if(!S.spaces)S.spaces=[];
   var el=C("spaces-list");if(!el)return;
   if(!S.spaces.length){el.innerHTML="<div style=\"font-size:12px;color:var(--g400)\">No spaces yet.</div>";return;}
+  var _nxtClr=C("sp-color");if(_nxtClr)_nxtClr.value=SPACE_PALETTE[((S.spaces||[]).length)%SPACE_PALETTE.length];
   el.innerHTML=S.spaces.map(function(s){
     return "<div class=\"person-row\"><span style=\"display:inline-block;width:14px;height:14px;border-radius:3px;background:"+s.color+";margin-right:8px;flex-shrink:0\"></span>"
       +"<div style=\"flex:1;font-size:13px\">"+escapeAttr(s.name)+"</div>"
@@ -3596,6 +3597,7 @@ function renderSpacesSettings(){
       +"<button class=\"btn btn-ghost btn-sm\" onclick=\"deleteSpace("+s.id+")\" style=\"opacity:.5\">\xD7</button></div>";
   }).join('');
 }
+var SPACE_PALETTE=['#6366f1','#f59e0b','#10b981','#ef4444','#3b82f6','#8b5cf6','#f97316','#06b6d4','#84cc16','#ec4899'];
 function addSpace(){
   if(!S.spaces)S.spaces=[];
   var name=C("sp-name").value.trim(),color=C("sp-color").value;
@@ -3603,6 +3605,7 @@ function addSpace(){
   if(!S.nextSpaceId)S.nextSpaceId=1;
   S.spaces.push({id:S.nextSpaceId++,name:name,color:color});
   C("sp-name").value='';
+  C("sp-color").value=SPACE_PALETTE[(S.spaces.length)%SPACE_PALETTE.length];
   saveState();renderSpacesSettings();renderSpaceFilter();
 }
 function deleteSpace(id){
