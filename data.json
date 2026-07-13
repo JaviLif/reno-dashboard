@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783937917000,
+  "_savedAt": 1783955901261,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3474,11 +3474,6 @@
       "color": "#6366f1"
     },
     {
-      "id": 2,
-      "name": "Bathroom",
-      "color": "#6366f1"
-    },
-    {
       "id": 3,
       "name": "Medium Room",
       "color": "#6366f1"
@@ -3497,7 +3492,12 @@
       "id": 6,
       "name": "Upper Floor",
       "color": "#6366f1"
+    },
+    {
+      "id": 7,
+      "name": "Bathroom",
+      "color": "#f97316"
     }
   ],
-  "nextSpaceId": 7
+  "nextSpaceId": 8
 }
