@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783955901261,
+  "_savedAt": 1783955910711,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3497,7 +3497,12 @@
       "id": 7,
       "name": "Bathroom",
       "color": "#f97316"
+    },
+    {
+      "id": 8,
+      "name": "Medium Room",
+      "color": "#f97316"
     }
   ],
-  "nextSpaceId": 8
+  "nextSpaceId": 9
 }
