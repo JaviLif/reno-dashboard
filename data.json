@@ -2707,7 +2707,12 @@
       "kanbanOrder": 180,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [
+        1,
+        7,
+        9,
+        12
+      ]
     },
     {
       "id": 24,
@@ -2986,7 +2991,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956132023,
+  "_savedAt": 1783956145878,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
