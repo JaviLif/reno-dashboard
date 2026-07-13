@@ -2777,14 +2777,15 @@
       "start": "",
       "end": "",
       "status": "planned",
-      "assigneeIds": [
-        7
-      ],
+      "assigneeIds": [],
       "notes": "",
       "kanbanOrder": 230,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [
+        1,
+        7
+      ]
     },
     {
       "id": 30,
@@ -2987,7 +2988,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956217447,
+  "_savedAt": 1783956228503,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
