@@ -3638,10 +3638,10 @@ function renderSpaceFilter(){
   if(!(S.spaces||[]).length){bar.style.display="none";return;}
   bar.style.display="flex";
   bar.innerHTML="<span style=\"font-size:11px;color:var(--g500);margin-right:4px;flex-shrink:0\">Area:</span>"
-    +"<div class=\"person-chip"+(_spaceFilter===null?" selected":"")+"\\" style=\"color:var(--pri)\" onclick=\"setSpaceFilter(null)\">All</div>"
+    +"<div class=\"person-chip"+(_spaceFilter===null?" selected":"")+"\" style=\"color:var(--pri)\" onclick=\"setSpaceFilter(null)\">All</div>"
     +(S.spaces||[]).map(function(s){
       var sel=_spaceFilter===s.id;
-      return "<div class=\"person-chip"+(sel?" selected":"")+"\\" style=\"color:"+s.color+"\" onclick=\"setSpaceFilter("+s.id+")\">"+escapeAttr(s.name)+"</div>";
+      return "<div class=\"person-chip"+(sel?" selected":"")+"\" style=\"color:"+s.color+"\" onclick=\"setSpaceFilter("+s.id+")\">"+escapeAttr(s.name)+"</div>";
     }).join('');
 }
 function setSpaceFilter(id){_spaceFilter=id;renderTasksTab();}
@@ -3786,7 +3786,7 @@ function renderTasksTab(){
           const meta=[
             phaseLabel,
             dateStr?`<span class="card-date-lbl">${dateStr}</span>`:'',
-            (t.assigneeIds||[]).length?`<span class="card-who-chips">${(t.assigneeIds||[]).map(id=>{const p=personById(id);return p?personAvatarHtml(p,20):"";}).filter(Boolean).join("")}</span>`:""
+            (t.assigneeIds||[]).length?`<span class="card-who-chips">${(t.assigneeIds||[]).map(id=>{const p=personById(id);return p?personAvatarHtml(p,20):"";}).filter(Boolean).join("")}</span>`:"",
           (t.spaceIds||[]).length?(function(){return '<span class="card-space-chips">'+(t.spaceIds||[]).map(function(id){var sp=spaceById(id);return sp?'<span class="space-chip" style="background:'+sp.color+'22;color:'+sp.color+'">'+escapeAttr(sp.name)+'</span>':'';}).join('')+'</span>';})():'',
           ].filter(Boolean).join('');
           return `<div class="kanban-card" data-taskid="${t.id}" data-parentid="${t.parentTaskId||""}" style="border-left-color:${accent}"
@@ -4093,7 +4093,6 @@ function refreshAll(){
 renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
-setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </script>
 <div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
