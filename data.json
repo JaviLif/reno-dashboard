@@ -2595,15 +2595,14 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 120,
-      "assigneeIds": [
-        10
-      ],
+      "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
         7,
         9,
-        12
+        12,
+        13
       ]
     },
     {
@@ -2990,7 +2989,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956252159,
+  "_savedAt": 1783956258519,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
