@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783955928318,
+  "_savedAt": 1783955935591,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3502,7 +3502,12 @@
       "id": 10,
       "name": "Big Room",
       "color": "#f97316"
+    },
+    {
+      "id": 11,
+      "name": "Big Room",
+      "color": "#06b6d4"
     }
   ],
-  "nextSpaceId": 11
+  "nextSpaceId": 12
 }
