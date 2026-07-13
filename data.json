@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783955910711,
+  "_savedAt": 1783955915543,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3502,7 +3502,12 @@
       "id": 8,
       "name": "Medium Room",
       "color": "#f97316"
+    },
+    {
+      "id": 9,
+      "name": "Medium Room",
+      "color": "#06b6d4"
     }
   ],
-  "nextSpaceId": 9
+  "nextSpaceId": 10
 }
