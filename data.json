@@ -2548,12 +2548,12 @@
       "status": "planned",
       "end": "",
       "kanbanOrder": 90,
-      "assigneeIds": [
-        10
-      ],
+      "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [
+        13
+      ]
     },
     {
       "id": 8,
@@ -2990,7 +2990,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956241871,
+  "_savedAt": 1783956252159,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
