@@ -2719,14 +2719,14 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "assigneeIds": [
-        7,
-        11
-      ],
+      "assigneeIds": [],
       "kanbanOrder": 190,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [
+        7,
+        14
+      ]
     },
     {
       "id": 25,
@@ -2987,7 +2987,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956208303,
+  "_savedAt": 1783956217447,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
