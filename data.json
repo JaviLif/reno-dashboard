@@ -2989,7 +2989,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956258519,
+  "_savedAt": 1783956274072,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3411,12 +3411,6 @@
       "name": "Rani",
       "role": "",
       "color": "#1ac745"
-    },
-    {
-      "id": 6,
-      "name": "Small Room",
-      "role": "",
-      "color": "#3b82f6"
     },
     {
       "id": 7,
