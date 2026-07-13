@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956005911,
+  "_savedAt": 1783956010049,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3517,7 +3517,12 @@
       "id": 13,
       "name": "Kitchen",
       "color": "#ec4899"
+    },
+    {
+      "id": 14,
+      "name": "Upper Floor",
+      "color": "#6366f1"
     }
   ],
-  "nextSpaceId": 14
+  "nextSpaceId": 15
 }
