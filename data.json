@@ -2989,7 +2989,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956274072,
+  "_savedAt": 1783956279143,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3411,36 +3411,6 @@
       "name": "Rani",
       "role": "",
       "color": "#1ac745"
-    },
-    {
-      "id": 7,
-      "name": "Bath Room",
-      "role": "",
-      "color": "#3b82f6"
-    },
-    {
-      "id": 8,
-      "name": "Medium Room",
-      "role": "",
-      "color": "#ef4444"
-    },
-    {
-      "id": 9,
-      "name": "Big Room",
-      "role": "",
-      "color": "#8b5cf6"
-    },
-    {
-      "id": 10,
-      "name": "Kitchen",
-      "role": "",
-      "color": "#14b8a6"
-    },
-    {
-      "id": 11,
-      "name": "Upper Floor",
-      "role": "",
-      "color": "#f97316"
     }
   ],
   "nextPersonId": 12,
