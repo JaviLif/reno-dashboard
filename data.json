@@ -2986,7 +2986,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783955998071,
+  "_savedAt": 1783956005911,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3512,7 +3512,12 @@
       "id": 12,
       "name": "Big Room",
       "color": "#84cc16"
+    },
+    {
+      "id": 13,
+      "name": "Kitchen",
+      "color": "#ec4899"
     }
   ],
-  "nextSpaceId": 13
+  "nextSpaceId": 14
 }
