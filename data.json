@@ -36,7 +36,7 @@
       "name": "Tools"
     }
   ],
-  "nextPhaseId": 77,
+  "nextPhaseId": 78,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -2989,7 +2989,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1783956279143,
+  "_savedAt": 1784299625137,
   "nextOrderId": 11,
   "nextQuoteId": 99,
   "nextItemId": 211,
@@ -3388,6 +3388,18 @@
       "end": "",
       "status": "planned",
       "color": "#CCFBF1",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 77,
+      "name": "Security System",
+      "parentId": 3,
+      "number": "3.8",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#FEF08A",
       "notes": "",
       "budget": 0
     }
