@@ -40,6 +40,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 215,
+      "phaseId": 68,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 214,
       "phaseId": 77,
       "categoryId": 8,
@@ -56,11 +70,13 @@
           "unitPrice": 60,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 213,
@@ -79,11 +95,13 @@
           "unitPrice": 130,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 212,
@@ -102,11 +120,13 @@
           "unitPrice": 69,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 211,
@@ -125,11 +145,13 @@
           "unitPrice": 8,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 210,
@@ -3081,10 +3103,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784299850914,
+  "_savedAt": 1784310545850,
   "nextOrderId": 11,
   "nextQuoteId": 103,
-  "nextItemId": 215,
+  "nextItemId": 216,
   "_version": "dashboard-v1",
   "phases": [
     {
