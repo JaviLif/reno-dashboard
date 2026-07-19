@@ -40,6 +40,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 224,
+      "phaseId": 60,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 223,
       "phaseId": 78,
       "categoryId": null,
@@ -51,7 +65,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 222,
@@ -70,11 +85,13 @@
           "unitPrice": 14.39,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 221,
@@ -93,11 +110,13 @@
           "unitPrice": 191,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 220,
@@ -116,11 +135,13 @@
           "unitPrice": 215,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 219,
@@ -139,11 +160,13 @@
           "unitPrice": 824,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 218,
@@ -162,11 +185,13 @@
           "unitPrice": 2848,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 217,
@@ -185,7 +210,8 @@
           "unitPrice": 4260,
           "date": "",
           "notes": "Full Set",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         },
         {
           "id": 105,
@@ -193,7 +219,8 @@
           "unitPrice": 4200,
           "date": "",
           "notes": "Interior + Exterior Unit Only",
-          "chosen": false
+          "chosen": false,
+          "documents": []
         },
         {
           "id": 107,
@@ -201,11 +228,13 @@
           "unitPrice": 2985,
           "date": "",
           "notes": "Only Exterior unit",
-          "chosen": false
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 215,
@@ -3247,10 +3276,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784482018986,
+  "_savedAt": 1784482110650,
   "nextOrderId": 11,
   "nextQuoteId": 112,
-  "nextItemId": 224,
+  "nextItemId": 225,
   "_version": "dashboard-v1",
   "phases": [
     {
