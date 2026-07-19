@@ -55,7 +55,7 @@
           "supplier": "",
           "unitPrice": 4260,
           "date": "",
-          "notes": "Interior + Exterior Unit Only",
+          "notes": "",
           "chosen": true
         }
       ],
@@ -3125,7 +3125,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481220962,
+  "_savedAt": 1784481232776,
   "nextOrderId": 11,
   "nextQuoteId": 105,
   "nextItemId": 218,
