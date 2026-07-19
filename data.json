@@ -42,7 +42,7 @@
     {
       "id": 217,
       "phaseId": 34,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Warmtepomp Remeha Mb400",
       "description": "Full Set",
       "link": "https://www.technim.nl/p/remeha-confida-10-warmtepompset-4-kw-monoblock/",
@@ -3150,7 +3150,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481164335,
+  "_savedAt": 1784481172684,
   "nextOrderId": 11,
   "nextQuoteId": 105,
   "nextItemId": 218,
