@@ -1146,31 +1146,6 @@
     },
     {
       "qty": 1,
-      "quotes": [
-        {
-          "id": 15,
-          "notes": "",
-          "unitPrice": 6664,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "documents": []
-        }
-      ],
-      "orders": [],
-      "categoryId": 3,
-      "name": "Heat Pump + 200L Tank",
-      "notes": "",
-      "link": "https://klimatime.com/products/lg-5kw-therma-v-r32-split-iwt-air-water-heat-pump-with-200l-tank-hu051mr-hn0913t",
-      "status": "not-ordered",
-      "phaseId": 34,
-      "unit": "pcs",
-      "documents": [],
-      "id": 111,
-      "description": "LG 5kW Therma V R32"
-    },
-    {
-      "qty": 1,
       "categoryId": 8,
       "orders": [],
       "quotes": [
@@ -3150,7 +3125,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481174464,
+  "_savedAt": 1784481191210,
   "nextOrderId": 11,
   "nextQuoteId": 105,
   "nextItemId": 218,
