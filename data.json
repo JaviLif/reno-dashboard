@@ -42,7 +42,7 @@
     {
       "id": 218,
       "phaseId": 34,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Warmtrpomo",
       "description": "R32",
       "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Hybride-lucht-water-warmtepomp/Remeha-Confida-10-monoblock-warmtepomp-pakket-2-AWHP/p/03604330",
@@ -3133,7 +3133,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481422838,
+  "_savedAt": 1784481424625,
   "nextOrderId": 11,
   "nextQuoteId": 107,
   "nextItemId": 219,
