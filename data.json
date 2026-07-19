@@ -52,7 +52,7 @@
       "quotes": [
         {
           "id": 104,
-          "supplier": "",
+          "supplier": "Warmtepomp Remeha Mb400",
           "unitPrice": 4260,
           "date": "",
           "notes": "Full Set",
@@ -3125,7 +3125,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481238275,
+  "_savedAt": 1784481246376,
   "nextOrderId": 11,
   "nextQuoteId": 105,
   "nextItemId": 218,
