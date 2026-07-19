@@ -55,7 +55,7 @@
           "supplier": "",
           "unitPrice": 4260,
           "date": "",
-          "notes": "",
+          "notes": "Full Set",
           "chosen": true
         }
       ],
@@ -3125,7 +3125,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481232776,
+  "_savedAt": 1784481238275,
   "nextOrderId": 11,
   "nextQuoteId": 105,
   "nextItemId": 218,
