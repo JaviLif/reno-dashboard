@@ -92,7 +92,7 @@
         {
           "id": 107,
           "supplier": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-buitenunit/Remeha-Confida-warmtepomp-monoblock-buitendeel-MB400-4/p/03601290?_gl=1*mt5rdo*_up*MQ..*_ga*MTMzNDIwMjU2OS4xNzg0MzEzMTQ1*_ga_WV2JXPFN1Z*czE3ODQzMTMxNDQkbzEkZzAkdDE3ODQzMTMxNDQkajYwJGwwJGgxMTY5ODQ3ODE5",
-          "unitPrice": 0,
+          "unitPrice": 2985,
           "date": "",
           "notes": "",
           "chosen": false
@@ -3141,7 +3141,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481487664,
+  "_savedAt": 1784481497715,
   "nextOrderId": 11,
   "nextQuoteId": 108,
   "nextItemId": 219,
