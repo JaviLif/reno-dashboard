@@ -40,11 +40,25 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 218,
+      "phaseId": 34,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 217,
       "phaseId": 34,
       "categoryId": 3,
       "name": "Warmtepomp Remeha Mb400",
-      "description": "Full Set",
+      "description": "R280",
       "link": "https://www.technim.nl/p/remeha-confida-10-warmtepompset-4-kw-monoblock/",
       "qty": 1,
       "unit": "",
@@ -3110,10 +3124,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481299650,
+  "_savedAt": 1784481392191,
   "nextOrderId": 11,
   "nextQuoteId": 106,
-  "nextItemId": 218,
+  "nextItemId": 219,
   "_version": "dashboard-v1",
   "phases": [
     {
