@@ -57,6 +57,14 @@
           "date": "",
           "notes": "Full Set",
           "chosen": true
+        },
+        {
+          "id": 105,
+          "supplier": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": false
         }
       ],
       "orders": [],
@@ -3125,9 +3133,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481246376,
+  "_savedAt": 1784481250471,
   "nextOrderId": 11,
-  "nextQuoteId": 105,
+  "nextQuoteId": 106,
   "nextItemId": 218,
   "_version": "dashboard-v1",
   "phases": [
