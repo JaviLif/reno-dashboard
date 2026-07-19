@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.34</title>
+<title>🏠 Renovation Dashboard v1.0.35</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -344,7 +344,8 @@ body.col-resizing *{cursor:col-resize!important}
   <button class="nav-btn" data-tab="items">📦 BOM</button>
   <button class="nav-btn" data-tab="calendar">🗓 Calendar</button>
   <button class="nav-btn" data-tab="heatpump">🔥 Heat Pump</button>
-  <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
+  <button class="nav-btn" data-tab="vergoeding">⚖️ Vergoeding</button>
+      <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
   <div class="nav-ver" onclick="document.querySelector('.nav-btn[data-tab=settings]').click()" title="Changelog"><span style="font-size:14px;flex-shrink:0;width:26px;text-align:center">&#x1F4CB;</span><span class="nav-ver-lbl" style="white-space:nowrap;font-size:10px;color:var(--g500)"></span></div>
 </nav>
 
@@ -654,7 +655,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -695,11 +696,11 @@ body.col-resizing *{cursor:col-resize!important}
 
 <!-- HEAT PUMP CALC -->
 <style>
-#tab-heatpump{--ground:#10131f;--panel:#181d2e;--panel-2:#1f2639;--line:#2a3348;--line-soft:#222a3d;--text:#e8ecf5;--muted:#8a93a8;--dim:#5d6579;--t3:#e85d2a;--t4:#f59b1f;--t5:#f7d046;--ok:#2fbf87;--warn:#f59b1f;--bad:#e85d2a;background:var(--ground);color:var(--text);font-family:'Archivo',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;border-radius:8px;padding-bottom:64px}
+#tab-heatpump{--ground:#F8FAFC;--panel:#FFFFFF;--panel-2:#F1F5F9;--line:#E2E8F0;--line-soft:#F0F4F8;--text:#1E293B;--muted:#64748B;--dim:#94A3B8;--t3:#e85d2a;--t4:#f59b1f;--t5:#d97706;--ok:#2fbf87;--warn:#f59b1f;--bad:#e85d2a;background:transparent;color:var(--text);font-family:'Archivo',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:64px}
 #tab-heatpump .wrap{max-width:1240px;margin:0 auto;padding:0 4px}
 #tab-heatpump .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding:26px 0 14px}
 #tab-heatpump .eyebrow b{color:var(--t4);font-weight:500}
-#tab-heatpump .pin{position:sticky;top:48px;z-index:60;background:rgba(16,19,31,.93);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:4px;padding:16px 20px 14px;margin-bottom:18px;box-shadow:0 12px 34px -12px rgba(0,0,0,.85)}
+#tab-heatpump .pin{position:sticky;top:48px;z-index:60;background:rgba(248,250,252,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:4px;padding:16px 20px 14px;margin-bottom:18px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
 #tab-heatpump .readouts{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-end}
 #tab-heatpump .ro-label{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;white-space:nowrap}
 #tab-heatpump .ro-big{font-size:44px;font-weight:800;letter-spacing:-.035em;line-height:.92;font-variant-numeric:tabular-nums}
@@ -714,13 +715,13 @@ body.col-resizing *{cursor:col-resize!important}
 #tab-heatpump .seg{transition:flex-grow .45s cubic-bezier(.4,0,.2,1),background-color .45s;display:flex;align-items:center;justify-content:center;min-width:0;border-right:1px solid rgba(16,19,31,.55)}
 #tab-heatpump .seg:last-child{border-right:none}
 #tab-heatpump .seg-txt{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;color:#10131f;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
-#tab-heatpump .seg.cold .seg-txt{color:#e8ecf5}
+#tab-heatpump .seg.cold .seg-txt{color:#334155}
 #tab-heatpump .flow-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted)}
 #tab-heatpump .flow-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 @media(max-width:780px){#tab-heatpump .ro-big{font-size:34px}#tab-heatpump .ro-mid{font-size:18px}#tab-heatpump .readouts{gap:16px}#tab-heatpump .ro-sep{display:none}#tab-heatpump .pin{padding:12px 14px}}
 #tab-heatpump .grid{display:grid;grid-template-columns:430px 1fr;gap:18px;align-items:start}
 @media(max-width:980px){#tab-heatpump .grid{grid-template-columns:1fr}}
-#tab-heatpump .card{border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:20px;margin-bottom:18px;box-shadow:none}
+#tab-heatpump .card{border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:20px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
 #tab-heatpump .card:hover{box-shadow:none;transform:none}
 #tab-heatpump .card h2{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--t4);margin-bottom:6px}
 #tab-heatpump .card .intro{font-size:12.5px;color:var(--dim);line-height:1.5;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line-soft)}
@@ -1824,6 +1825,7 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
     if(btn.dataset.tab==='calendar') renderCalendar();
     if(btn.dataset.tab==='settings') renderSettings();
     if(btn.dataset.tab==='heatpump') initHeatPump();
+    if(btn.dataset.tab==='vergoeding') initVergoeding();
   });
 });
 
@@ -3402,6 +3404,153 @@ function getTaskAssigneeIds(){
 }
 // ===================== HEAT PUMP CALC =====================
 var _hpInited=false;
+let _vgInited=false;
+function initVergoeding(){
+  if(_vgInited)return;
+  _vgInited=true;
+  (function(){
+const BASE={price:541000,javi:50000,rani:218000,kk:0,kkS:50,own:50,rate:4.01,term:30,lump:0,lumpM:12,lumpS:100,cpi:2.5,g:3,yrs:5,mat:true,kkVR:false};
+const S={...BASE};
+const $=id=>document.getElementById('vr-'+id);
+const eur=n=>(n<0?'−':'')+'€'+Math.round(Math.abs(n)).toLocaleString('en-US');
+const eurK=n=>(n<0?'−':'')+'€'+Math.round(Math.abs(n)/1000)+'k';
+const pct=(n,d=1)=>(n*100).toFixed(d)+'%';
+const pmt=(r,n,pv)=>r===0?pv/n:pv*r/(1-Math.pow(1+r,-n));
+
+function model(o){
+  const kkJ=o.kk*o.kkS/100, kkR=o.kk*(1-o.kkS/100);
+  const okJ=o.javi-kkJ, okR=o.rani-kkR;
+  const mortgage=o.price-(okJ+okR);
+  const r=o.rate/100/12, n=o.term*12, saleM=Math.min(o.yrs*12,n);
+  let bal=mortgage, ann=pmt(r,n,mortgage), balSale=0;
+  for(let m=1;m<=n;m++){
+    if(bal<=0.005){ if(m>=saleM){balSale=0;break;} continue; }
+    const int=bal*r;
+    const pay=Math.min(bal+int,ann);
+    const prin=pay-int;
+    let extra=0;
+    if(m===o.lumpM&&o.lump>0) extra=Math.min(o.lump,Math.max(0,bal-prin));
+    bal=Math.max(0,bal-prin-extra);
+    if(m===o.lumpM&&o.lump>0){const rem=n-m; ann=rem>0?pmt(r,rem,bal):0;}
+    if(m===saleM){balSale=bal;break;}
+  }
+  const share=o.own/100;
+  const vrJ=okJ+(o.kkVR?kkJ:0), vrR=okR+(o.kkVR?kkR:0);
+  const cf=Math.pow(1+o.cpi/100,o.yrs);
+  const lJ=o.lump*o.lumpS/100, lR=o.lump*(1-o.lumpS/100);
+  const lcf=o.lump>0?Math.pow(1+o.cpi/100,Math.max(0,(saleM-o.lumpM)/12)):1;
+  const VJ=vrJ*cf+lJ*lcf, VR=vrR*cf+lR*lcf, VT=VJ+VR;
+  const sale=o.price*Math.pow(1+o.g/100,o.yrs);
+  const left=sale-balSale, pot=left-VT;
+  const rawJ=VJ+pot*share, rawR=VR+pot*(1-share);
+  const adjJ=o.mat?Math.max(0,rawJ)-rawJ:0, adjR=o.mat?Math.max(0,rawR)-rawR:0;
+  const finJ=rawJ+adjJ-adjR, finR=rawR+adjR-adjJ;
+  const inJ=o.javi+lJ, inR=o.rani+lR;
+  return{mortgage,balSale,sale,left,pot,VJ,VR,VT,rawJ,rawR,adjJ,adjR,finJ,finR,inJ,inR,share,vrJ,vrR,cf,
+    potZero:balSale+VT, matAt:balSale+VT-(share>0?VJ/share:Infinity)};
+}
+
+const CPI=[['2015',0.6],['2016',0.3],['2017',1.4],['2018',1.7],['2019',2.6],['2020',1.3],['2021',2.7],['2022',10.0],['2023',3.8],['2024',3.3],['2025',3.3]];
+function drawCPI(){
+  const mx=10.6;
+  $('cpiChart').innerHTML=CPI.map(([y,v])=>
+    `<div class="cbar ${v>=8?'hot':''} ${y==='2025'?'cur':''}"><div class="bar" style="height:${v/mx*100}%"><span class="pv">${v.toFixed(1)}</span></div></div>`).join('');
+  $('cpiYears').innerHTML=CPI.map(([y])=>`<div>${y.slice(2)}</div>`).join('');
+}
+
+function bar(id,val,max){const w=max<=0?0:Math.max(0,Math.min(100,Math.abs(val)/max*100));$(id).style.width=w+'%';}
+
+function render(){
+  const M=model(S);
+  const scale=Math.max(M.sale,M.VT,1);
+
+  bar('b_sale',M.sale,scale); $('n_sale').textContent=eur(M.sale);
+  bar('b_mort',M.balSale,scale); $('n_mort').textContent='−'+eur(M.balSale);
+  bar('b_left',M.left,scale); $('n_left').textContent=eur(M.left);
+  bar('b_vr',M.VT,scale); $('n_vr').textContent='−'+eur(M.VT);
+  $('b_vrJ').style.width=(M.VT>0?M.VJ/M.VT*100:0)+'%';
+  $('b_vrR').style.width=(M.VT>0?M.VR/M.VT*100:0)+'%';
+  bar('b_pot',M.pot,scale);
+  $('b_potS').className=M.pot<0?'sw-neg':'sw-pot';
+  const np=$('n_pot'); np.textContent=eur(M.pot); np.className='wf-val'+(M.pot<0?' negv':'');
+  $('potLab').textContent=M.pot<0?'(a shortfall)':'';
+  $('wfYrs').textContent=S.yrs+(S.yrs===1?' year':' years');
+
+  $('potNote').innerHTML = M.pot<0
+    ? `The pot is <b>negative</b>. You are not dividing a gain — you are dividing a <b>${eur(-M.pot)} shortfall</b>. Both indexed claims together exceed what the house yields after the bank is repaid.`
+    : `Only two things feed this pot: <b>${eur(M.sale-S.price)}</b> of house appreciation and <b>${eur(S.price-(S.javi+S.rani-S.kk)-M.balSale)}</b> of mortgage repaid — less the <b>${eur(M.VT-M.vrJ-M.vrR-(S.lump))}</b> of CPI uplift you have promised each other off the top.`;
+
+  // thesis
+  const tot=M.finJ+M.finR;
+  const shJ=tot>0?M.finJ/tot:0;
+  const eqJ=(M.inJ+M.inR)>0?M.inJ/(M.inJ+M.inR):0;
+  $('segJ').style.width=(shJ*100)+'%'; $('segR').style.width=((1-shJ)*100)+'%';
+  $('segJ').textContent=shJ>0.13?'Javi '+pct(shJ):'';
+  $('segR').textContent=(1-shJ)>0.13?'Rani '+pct(1-shJ):'';
+  $('tickJ').style.left=(eqJ*100)+'%';
+  $('tickJ').setAttribute('data-l','Javi funded '+pct(eqJ)+' of equity');
+  const d=shJ-eqJ;
+  $('gapNote').innerHTML = Math.abs(d)<0.005
+    ? `Equity funded — Javi <b>${pct(eqJ)}</b>, Rani <b>${pct(1-eqJ)}</b>. Payout received — Javi <b>${pct(shJ)}</b>, Rani <b>${pct(1-shJ)}</b>. The two match at these settings.`
+    : `Equity funded — Javi <b>${pct(eqJ)}</b>, Rani <b>${pct(1-eqJ)}</b>. Payout received — Javi <b>${pct(shJ)}</b>, Rani <b>${pct(1-shJ)}</b>. Difference: <b>${eur(Math.abs(d)*tot)}</b>.`;
+
+  // cards
+  $('pJ').textContent=eur(M.finJ); $('pR').textContent=eur(M.finR);
+  const gJ=M.finJ-M.inJ, gR=M.finR-M.inR;
+  const ann=(f,i)=>i<=0?'—':pct(Math.pow(Math.max(f,0)/i,1/S.yrs)-1,1)+' p.a.';
+  $('rJ').innerHTML=`<b>${gJ>=0?'+':'−'}${eur(Math.abs(gJ)).replace('−','')}</b> on ${eur(M.inJ)} · ${ann(M.finJ,M.inJ)}`;
+  $('rR').innerHTML=`<b>${gR>=0?'+':'−'}${eur(Math.abs(gR)).replace('−','')}</b> on ${eur(M.inR)} · ${ann(M.finR,M.inR)}`;
+  $('iJ').textContent=eur(M.inJ); $('iR').textContent=eur(M.inR);
+  $('vJ').textContent=eur(M.VJ); $('vR').textContent=eur(M.VR);
+  $('sJ').textContent=eur(M.pot*M.share); $('sR').textContent=eur(M.pot*(1-M.share));
+  $('mJrow').style.display=Math.abs(M.adjJ-M.adjR)>1?'flex':'none';
+  $('mRrow').style.display=Math.abs(M.adjJ-M.adjR)>1?'flex':'none';
+  $('mJ').textContent=eur(M.adjJ-M.adjR); $('mR').textContent=eur(M.adjR-M.adjJ);
+
+  // thresholds
+  $('t1').textContent=eur(M.potZero);
+  const g1=Math.pow(M.potZero/S.price,1/S.yrs)-1;
+  $('t1s').innerHTML=`House growth of <b>${pct(g1,2)}</b> per year. Below this the pot is a shortfall.`;
+  const uplift=M.VT-(M.vrJ+M.vrR+S.lump);
+  $('t2').textContent=eur(uplift);
+  $('t2s').innerHTML=`Inflation compensation on both contributions over ${S.yrs} year${S.yrs===1?'':'s'} — <b>${eur(M.VJ-M.vrJ*(S.lump>0?1:1)-(S.lump*S.lumpS/100))}</b> to Javi, <b>${eur(M.VR-M.vrR-(S.lump*(1-S.lumpS/100)))}</b> to Rani. It leaves the pot before anything is split.`;
+  if(isFinite(M.matAt)&&M.matAt>0){
+    $('t3').textContent=eur(M.matAt);
+    const g3=Math.pow(M.matAt/S.price,1/S.yrs)-1;
+    $('t3s').innerHTML=`<b>${pct(g3,2)}</b> a year — a total fall of <b>${pct(M.matAt/S.price-1,1)}</b>. ${S.mat?'Matiging is <b>on</b>: Javi is floored at €0 and Rani absorbs the rest.':'Matiging is <b>off</b>: below this Javi writes Rani a cheque from private funds.'}`;
+  }else{ $('t3').textContent='—'; $('t3s').textContent='Not reachable at these settings.'; }
+
+  // table
+  const rows=[];
+  for(let gp=-6;gp<=8;gp++){
+    const m2=model({...S,g:gp});
+    rows.push(`<tr class="${gp===Math.round(S.g)?'live':''}">
+      <td>${gp>0?'+':''}${gp}%</td><td>${eurK(m2.sale)}</td><td>${eurK(m2.left)}</td>
+      <td class="${m2.pot<0?'negt':''}">${eurK(m2.pot)}</td>
+      <td>${eurK(m2.finJ)}</td><td>${eurK(m2.finR)}</td></tr>`);
+  }
+  $('tbody').innerHTML=rows.join('');
+
+  // labels
+  $('v_price').textContent=eur(S.price); $('v_javi').textContent=eur(S.javi);
+  $('v_rani').textContent=eur(S.rani); $('v_kk').textContent=eur(S.kk);
+  $('v_kkS').textContent=S.kkS+'%'; $('v_own').textContent=S.own+'%';
+  $('v_rate').textContent=S.rate.toFixed(2)+'%'; $('v_term').textContent=S.term+' yr';
+  $('v_lump').textContent=eur(S.lump); $('v_lumpM').textContent='#'+S.lumpM;
+  $('v_lumpS').textContent=S.lumpS+'%'; $('v_cpi').textContent=S.cpi.toFixed(1)+'%';
+  $('v_g').textContent=(S.g>0?'+':'')+S.g.toFixed(2)+'%'; $('v_yrs').textContent=S.yrs+' yr';
+}
+
+['price','javi','rani','kk','kkS','own','rate','term','lump','lumpM','lumpS','cpi','g','yrs'].forEach(k=>{
+  $(k).addEventListener('input',e=>{const v=parseFloat(e.target.value); if(!isNaN(v)){S[k]=v; render();}});
+});
+['mat','kkVR'].forEach(k=>$(k).addEventListener('change',e=>{S[k]=e.target.checked; render();}));
+$('reset').addEventListener('click',()=>{Object.assign(S,BASE); sync(); render();});
+function sync(){Object.keys(BASE).forEach(k=>{const el=$(k); if(!el)return; if(el.type==='checkbox')el.checked=S[k]; else el.value=S[k];});}
+
+sync(); drawCPI(); render();
+  })();
+}
 function initHeatPump(){
   if(_hpInited)return; _hpInited=true;
   (function(){
@@ -4504,6 +4653,325 @@ setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 <div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
   <img id="doc-preview-img" style="max-width:92vw;max-height:88vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.7);display:block" onclick="event.stopPropagation()">
   <div id="doc-preview-name" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:13px;background:rgba(0,0,0,.5);padding:4px 14px;border-radius:8px;pointer-events:none"></div>
+</div>
+
+<!-- VERGOEDING CALC -->
+<style>
+#tab-vergoeding{--paper:#F8FAFC;--card:#FFFFFF;--ink:#1E293B;--ink-2:#4A5560;--ink-3:#7C8894;--rule:#E2E8F0;--rule-2:#F0F4F8;--javi:#0F5C63;--javi-l:#DCEAEB;--rani:#7A2E4E;--rani-l:#F0E2E8;--bank:#94A0AC;--bank-l:#E4E8EC;--warn:#A8741A;--warn-l:#F7EEDD;--neg:#A32B2B;background:transparent;color:var(--ink);font-family:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.5;padding-bottom:80px}
+#tab-vergoeding .num{font-family:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+#tab-vergoeding .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+#tab-vergoeding header{border-bottom:1px solid var(--rule);background:var(--card);padding:28px 0 0;margin-bottom:0}
+#tab-vergoeding .eyebrow{font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+#tab-vergoeding h1{font-size:clamp(22px,2.8vw,36px);font-weight:700;letter-spacing:-.025em;line-height:1.08;margin:8px 0 6px}
+#tab-vergoeding .sub{color:var(--ink-2);font-size:14px;max-width:65ch}
+#tab-vergoeding .thesis{margin:26px 0 0;border-top:1px solid var(--rule-2);padding:22px 0 26px}
+#tab-vergoeding .thesis-lab{font-size:11px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px}
+#tab-vergoeding .gapbar{position:relative;height:46px;border:1px solid var(--rule);background:var(--bank-l);display:flex;overflow:hidden}
+#tab-vergoeding .gapbar .seg{display:flex;align-items:center;padding:0 12px;font-size:12px;font-weight:600;color:#fff;white-space:nowrap;transition:width .45s cubic-bezier(.2,.7,.3,1)}
+#tab-vergoeding .gapbar .seg.j{background:var(--javi)}
+#tab-vergoeding .gapbar .seg.r{background:var(--rani)}
+#tab-vergoeding .tick{position:absolute;top:-9px;bottom:-9px;width:2px;background:var(--ink);transition:left .45s cubic-bezier(.2,.7,.3,1);z-index:3}
+#tab-vergoeding .tick::after{content:attr(data-l);position:absolute;top:-19px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:600;letter-spacing:.05em;white-space:nowrap;color:var(--ink);background:var(--card);padding:0 5px}
+#tab-vergoeding .gapnote{margin-top:26px;font-size:13px;color:var(--ink-2);display:flex;gap:8px;align-items:baseline}
+#tab-vergoeding .gapnote b{color:var(--ink);font-weight:600}
+#tab-vergoeding .grid{display:grid;grid-template-columns:296px 1fr;gap:32px;margin-top:32px;align-items:start}
+@media(max-width:940px){#tab-vergoeding .grid{grid-template-columns:1fr}}
+#tab-vergoeding .rail{position:sticky;top:48px;max-height:calc(100vh - 96px);overflow-y:auto;overscroll-behavior:contain;padding-right:6px;scrollbar-width:thin;scrollbar-color:var(--rule) transparent}
+#tab-vergoeding .rail::-webkit-scrollbar{width:6px}
+#tab-vergoeding .rail::-webkit-scrollbar-track{background:transparent}
+#tab-vergoeding .rail::-webkit-scrollbar-thumb{background:var(--rule)}
+#tab-vergoeding .rail::-webkit-scrollbar-thumb:hover{background:var(--ink-3)}
+@media(max-width:940px){#tab-vergoeding .rail{position:static;max-height:none;overflow:visible;padding-right:0}}
+#tab-vergoeding .panel{background:var(--card);border:1px solid var(--rule);padding:18px}
+#tab-vergoeding .panel+.panel{margin-top:14px}
+#tab-vergoeding .panel h2{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink);padding-bottom:10px;border-bottom:1px solid var(--rule);margin-bottom:14px}
+#tab-vergoeding .f{margin-bottom:13px}
+#tab-vergoeding .f:last-child{margin-bottom:0}
+#tab-vergoeding .f label{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:var(--ink-2);margin-bottom:5px;gap:8px}
+#tab-vergoeding .f label .v{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--ink);font-size:12px;font-variant-numeric:tabular-nums}
+#tab-vergoeding .f input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:2px;background:var(--rule);outline:none;cursor:pointer}
+#tab-vergoeding .f input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;background:var(--ink);cursor:pointer;border-radius:0}
+#tab-vergoeding .f input[type=range]::-moz-range-thumb{width:15px;height:15px;background:var(--ink);cursor:pointer;border:0;border-radius:0}
+#tab-vergoeding .f input[type=number]{width:100%;padding:7px 9px;border:1px solid var(--rule);background:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink);border-radius:0}
+#tab-vergoeding .f input[type=number]:focus{outline:2px solid var(--ink);outline-offset:-1px}
+#tab-vergoeding .toggles{display:flex;flex-direction:column;gap:9px}
+#tab-vergoeding .tg{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:var(--ink-2);cursor:pointer;line-height:1.35}
+#tab-vergoeding .tg input{margin-top:2px;accent-color:var(--ink);width:14px;height:14px;flex:0 0 auto}
+#tab-vergoeding .reset{width:100%;margin-top:14px;padding:8px;background:var(--paper);border:1px solid var(--rule);font-family:inherit;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2);cursor:pointer}
+#tab-vergoeding .reset:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+#tab-vergoeding section{background:var(--card);border:1px solid var(--rule);padding:24px;margin-bottom:20px}
+#tab-vergoeding .shead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--rule);margin-bottom:20px}
+#tab-vergoeding .shead h2{font-size:17px;font-weight:700;letter-spacing:-.01em}
+#tab-vergoeding .shead .step{font-size:11px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+#tab-vergoeding .note{font-size:12.5px;color:var(--ink-2);line-height:1.55}
+#tab-vergoeding .wf-row{display:grid;grid-template-columns:150px 1fr 118px;gap:14px;align-items:center;margin-bottom:9px}
+@media(max-width:620px){#tab-vergoeding .wf-row{grid-template-columns:106px 1fr 92px;gap:8px}}
+#tab-vergoeding .wf-lab{font-size:12px;color:var(--ink-2);text-align:right;line-height:1.25}
+#tab-vergoeding .wf-lab b{display:block;color:var(--ink);font-weight:600}
+#tab-vergoeding .wf-track{height:30px;background:var(--paper);border:1px solid var(--rule-2);position:relative;overflow:hidden}
+#tab-vergoeding .wf-fill{height:100%;display:flex;transition:width .45s cubic-bezier(.2,.7,.3,1);position:absolute;left:0;top:0}
+#tab-vergoeding .wf-fill span{height:100%;transition:width .45s cubic-bezier(.2,.7,.3,1)}
+#tab-vergoeding .wf-val{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+#tab-vergoeding .wf-val.negv{color:var(--neg)}
+#tab-vergoeding .sw-bank{background:var(--bank)}
+#tab-vergoeding .sw-j{background:var(--javi)}
+#tab-vergoeding .sw-r{background:var(--rani)}
+#tab-vergoeding .sw-pot{background:var(--warn)}
+#tab-vergoeding .sw-neg{background:var(--neg)}
+#tab-vergoeding .key{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--rule-2);font-size:11.5px;color:var(--ink-2)}
+#tab-vergoeding .key i{display:inline-block;width:11px;height:11px;margin-right:5px;vertical-align:-1px}
+#tab-vergoeding .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:620px){#tab-vergoeding .two{grid-template-columns:1fr}}
+#tab-vergoeding .pc{border:1px solid var(--rule);padding:16px}
+#tab-vergoeding .pc.j{background:var(--javi-l);border-color:var(--javi)}
+#tab-vergoeding .pc.r{background:var(--rani-l);border-color:var(--rani)}
+#tab-vergoeding .pc-name{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin-bottom:10px}
+#tab-vergoeding .pc.j .pc-name{color:var(--javi)}
+#tab-vergoeding .pc.r .pc-name{color:var(--rani)}
+#tab-vergoeding .pc-big{font-family:'IBM Plex Mono',monospace;font-size:29px;font-weight:600;letter-spacing:-.035em;line-height:1;margin-bottom:3px;font-variant-numeric:tabular-nums}
+#tab-vergoeding .pc-ret{font-size:12px;color:var(--ink-2);margin-bottom:13px}
+#tab-vergoeding .pc-ret b{font-weight:600;color:var(--ink)}
+#tab-vergoeding .pcl{display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid rgba(0,0,0,.09)}
+#tab-vergoeding .pcl span:last-child{font-family:'IBM Plex Mono',monospace;font-weight:500;font-variant-numeric:tabular-nums}
+#tab-vergoeding .tw{overflow-x:auto;margin:0 -24px;padding:0 24px}
+#tab-vergoeding table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:520px}
+#tab-vergoeding th{font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);text-align:right;padding:0 9px 9px;border-bottom:1px solid var(--rule);white-space:nowrap;vertical-align:bottom}
+#tab-vergoeding th:first-child{text-align:left}
+#tab-vergoeding td{padding:6px 9px;border-bottom:1px solid var(--rule-2);text-align:right;font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
+#tab-vergoeding td:first-child{text-align:left;font-weight:600}
+#tab-vergoeding tr.live{background:var(--warn-l);outline:1px solid var(--warn)}
+#tab-vergoeding tr.live td{font-weight:600}
+#tab-vergoeding .pos{color:var(--javi)}
+#tab-vergoeding .negt{color:var(--neg)}
+#tab-vergoeding .th3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){#tab-vergoeding .th3{grid-template-columns:1fr}}
+#tab-vergoeding .tcard{border:1px solid var(--rule);border-left:3px solid var(--ink);padding:14px}
+#tab-vergoeding .tcard.w{border-left-color:var(--warn)}
+#tab-vergoeding .tcard.n{border-left-color:var(--neg)}
+#tab-vergoeding .tcard h3{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px;line-height:1.35}
+#tab-vergoeding .tcard .big{font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;letter-spacing:-.03em;margin-bottom:4px;font-variant-numeric:tabular-nums}
+#tab-vergoeding .tcard p{font-size:11.5px;color:var(--ink-2);line-height:1.45}
+#tab-vergoeding .cpi-chart{display:flex;align-items:flex-end;gap:5px;height:170px;padding:22px 0 0;border-bottom:1px solid var(--ink);margin-bottom:9px}
+#tab-vergoeding .cbar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;position:relative;min-width:0}
+#tab-vergoeding .cbar .bar{width:100%;background:var(--bank);position:relative;transition:height .5s ease}
+#tab-vergoeding .cbar.hot .bar{background:var(--neg)}
+#tab-vergoeding .cbar.cur .bar{background:var(--ink)}
+#tab-vergoeding .cbar .pv{position:absolute;top:-16px;left:0;right:0;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;font-variant-numeric:tabular-nums}
+#tab-vergoeding .cyr{display:flex;gap:5px;font-size:9.5px;color:var(--ink-3);font-family:'IBM Plex Mono',monospace}
+#tab-vergoeding .cyr div{flex:1;text-align:center;min-width:0}
+#tab-vergoeding .avgline{position:relative;border-top:1px dashed var(--javi);margin:0 0 16px}
+#tab-vergoeding .avgline span{position:absolute;right:0;top:-9px;background:var(--card);padding:0 6px;font-size:10px;font-weight:600;color:var(--javi);letter-spacing:.04em}
+#tab-vergoeding .call{border:1px solid var(--rule);border-left:3px solid var(--warn);background:var(--warn-l);padding:14px 16px;margin-top:16px}
+#tab-vergoeding .call h4{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--warn);margin-bottom:6px}
+#tab-vergoeding .call p{font-size:12.5px;color:var(--ink-2);line-height:1.55}
+#tab-vergoeding .call p+p{margin-top:8px}
+#tab-vergoeding .call b{color:var(--ink);font-weight:600}
+#tab-vergoeding .call a{color:var(--warn);text-decoration:underline;text-underline-offset:2px}
+#tab-vergoeding footer{margin-top:30px;padding:18px 0 0;border-top:1px solid var(--rule);font-size:11.5px;color:var(--ink-3);line-height:1.6}
+#tab-vergoeding footer b{color:var(--ink-2);font-weight:600}
+@media(prefers-reduced-motion:reduce){#tab-vergoeding *{transition:none!important}}
+</style>
+<div id="tab-vergoeding" class="tab">
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Samenlevingscontract · working model</div>
+    <h1>Nominaal vergoedingsrecht,<br>geïndexeerd met CPI</h1>
+    <p class="sub">Cornelis de Grootpad 1, Amsterdam · Javi Franco Linares &amp; Rani Vastenavondt. Each contribution comes back indexed for inflation; whatever is left over is split by ownership share.</p>
+
+    <div class="thesis">
+      <div class="thesis-lab">Share of payout received — against share of equity funded</div>
+      <div class="gapbar" id="vr-gapbar">
+        <div class="seg j" id="vr-segJ"></div>
+        <div class="seg r" id="vr-segR"></div>
+        <div class="tick" id="vr-tickJ" data-l=""></div>
+      </div>
+      <div class="gapnote">
+        <span id="vr-gapNote"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="grid">
+
+  <!-- ══════ INPUTS ══════ -->
+  <div class="rail">
+    <div class="panel">
+      <h2>Contributions</h2>
+      <div class="f"><label>Purchase price <span class="v" id="vr-v_price"></span></label><input type="number" id="vr-price" step="1000"></div>
+      <div class="f"><label>Javi — own money <span class="v" id="vr-v_javi"></span></label><input type="number" id="vr-javi" step="1000"></div>
+      <div class="f"><label>Rani — own money <span class="v" id="vr-v_rani"></span></label><input type="number" id="vr-rani" step="1000"></div>
+      <div class="f"><label>Kosten koper <span class="v" id="vr-v_kk"></span></label><input type="range" id="vr-kk" min="0" max="30000" step="500"></div>
+      <div class="f"><label>Javi's share of k.k. <span class="v" id="vr-v_kkS"></span></label><input type="range" id="vr-kkS" min="0" max="100" step="5"></div>
+      <div class="f"><label>Javi's ownership share <span class="v" id="vr-v_own"></span></label><input type="range" id="vr-own" min="0" max="100" step="1"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Mortgage</h2>
+      <div class="f"><label>Interest rate <span class="v" id="vr-v_rate"></span></label><input type="range" id="vr-rate" min="1" max="8" step="0.01"></div>
+      <div class="f"><label>Term <span class="v" id="vr-v_term"></span></label><input type="range" id="vr-term" min="10" max="30" step="1"></div>
+      <div class="f"><label>Lump-sum repayment <span class="v" id="vr-v_lump"></span></label><input type="range" id="vr-lump" min="0" max="200000" step="5000"></div>
+      <div class="f"><label>…paid in month <span class="v" id="vr-v_lumpM"></span></label><input type="range" id="vr-lumpM" min="1" max="120" step="1"></div>
+      <div class="f"><label>Javi's share of lump sum <span class="v" id="vr-v_lumpS"></span></label><input type="range" id="vr-lumpS" min="0" max="100" step="5"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Indexation &amp; sale</h2>
+      <div class="f"><label>CPI per year <span class="v" id="vr-v_cpi"></span></label><input type="range" id="vr-cpi" min="0" max="8" step="0.1"></div>
+      <div class="f"><label>House growth per year <span class="v" id="vr-v_g"></span></label><input type="range" id="vr-g" min="-8" max="10" step="0.25"></div>
+      <div class="f"><label>Years to sale <span class="v" id="vr-v_yrs"></span></label><input type="range" id="vr-yrs" min="1" max="30" step="1"></div>
+      <div class="toggles" style="margin-top:15px">
+        <label class="tg"><input type="checkbox" id="vr-mat"><span><b>Matiging</b> — cap the claim at what the house yields, so nobody pays out of pocket</span></label>
+        <label class="tg"><input type="checkbox" id="vr-kkVR"><span><b>Kosten koper earns a vergoedingsrecht</b> — most contracts say no</span></label>
+      </div>
+      <button class="reset" id="vr-reset">Reset to base case</button>
+    </div>
+  </div>
+
+  <!-- ══════ READOUT ══════ -->
+  <main>
+
+    <section>
+      <div class="shead">
+        <h2>The waterfall</h2>
+        <div class="step">Sale price → mortgage → vergoedingsrecht → pot</div>
+      </div>
+
+      <div class="wf-row">
+        <div class="wf-lab"><b>Sale price</b>after <span id="vr-wfYrs"></span></div>
+        <div class="wf-track"><div class="wf-fill" id="vr-b_sale"><span class="sw-bank" style="width:100%"></span></div></div>
+        <div class="wf-val" id="vr-n_sale"></div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-lab">less<b>Mortgage balance</b></div>
+        <div class="wf-track"><div class="wf-fill" id="vr-b_mort"><span class="sw-bank" style="width:100%"></span></div></div>
+        <div class="wf-val" id="vr-n_mort"></div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-lab"><b>Leftover</b>after mortgage</div>
+        <div class="wf-track"><div class="wf-fill" id="vr-b_left"><span class="sw-pot" style="width:100%"></span></div></div>
+        <div class="wf-val" id="vr-n_left"></div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-lab">less<b>Indexed contributions</b></div>
+        <div class="wf-track"><div class="wf-fill" id="vr-b_vr"><span class="sw-j" id="vr-b_vrJ"></span><span class="sw-r" id="vr-b_vrR"></span></div></div>
+        <div class="wf-val" id="vr-n_vr"></div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-lab"><b>The 50/50 pot</b><span id="vr-potLab"></span></div>
+        <div class="wf-track"><div class="wf-fill" id="vr-b_pot"><span id="vr-b_potS" style="width:100%"></span></div></div>
+        <div class="wf-val" id="vr-n_pot"></div>
+      </div>
+
+      <div class="key">
+        <span><i class="sw-bank"></i>Bank / gross</span>
+        <span><i class="sw-j"></i>Javi's indexed claim</span>
+        <span><i class="sw-r"></i>Rani's indexed claim</span>
+        <span><i class="sw-pot"></i>Shared</span>
+        <span><i class="sw-neg"></i>Shortfall</span>
+      </div>
+
+      <p class="note" style="margin-top:16px" id="vr-potNote"></p>
+    </section>
+
+    <section>
+      <div class="shead"><h2>What each of you walks away with</h2><div class="step">After the mortgage is repaid</div></div>
+      <div class="two">
+        <div class="pc j">
+          <div class="pc-name">Javi</div>
+          <div class="pc-big" id="vr-pJ"></div>
+          <div class="pc-ret" id="vr-rJ"></div>
+          <div class="pcl"><span>Own money in</span><span id="vr-iJ"></span></div>
+          <div class="pcl"><span>Indexed claim back</span><span id="vr-vJ"></span></div>
+          <div class="pcl"><span>Share of the pot</span><span id="vr-sJ"></span></div>
+          <div class="pcl" id="vr-mJrow" style="display:none"><span>Matiging relief</span><span id="vr-mJ"></span></div>
+        </div>
+        <div class="pc r">
+          <div class="pc-name">Rani</div>
+          <div class="pc-big" id="vr-pR"></div>
+          <div class="pc-ret" id="vr-rR"></div>
+          <div class="pcl"><span>Own money in</span><span id="vr-iR"></span></div>
+          <div class="pcl"><span>Indexed claim back</span><span id="vr-vR"></span></div>
+          <div class="pcl"><span>Share of the pot</span><span id="vr-sR"></span></div>
+          <div class="pcl" id="vr-mRrow" style="display:none"><span>Matiging relief</span><span id="vr-mR"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Thresholds</h2><div class="step">Live — they move with your inputs</div></div>
+      <div class="th3">
+        <div class="tcard">
+          <h3>The pot turns positive at</h3>
+          <div class="big" id="vr-t1"></div>
+          <p id="vr-t1s"></p>
+        </div>
+        <div class="tcard w">
+          <h3>CPI uplift taken off the top</h3>
+          <div class="big" id="vr-t2"></div>
+          <p id="vr-t2s"></p>
+        </div>
+        <div class="tcard n">
+          <h3>Matiging bites (Javi hits €0) at</h3>
+          <div class="big" id="vr-t3"></div>
+          <p id="vr-t3s"></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>If the house does better or worse than expected</h2><div class="step">Everything else held at your current settings</div></div>
+      <p class="note" style="margin-bottom:18px">Each row asks the same question: <b>if the house grows at this rate every year until you sell, what does each of you walk away with?</b> Your current setting is highlighted.</p>
+      <div class="tw">
+        <table>
+          <thead><tr>
+            <th>House growth<br>per year</th><th>Sale price</th><th>Leftover after<br>mortgage</th><th>The 50/50 pot</th>
+            <th>Javi</th><th>Rani</th>
+          </tr></thead>
+          <tbody id="vr-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>What CPI has actually done</h2><div class="step">CBS · consumentenprijsindex, alle huishoudens</div></div>
+      <div class="cpi-chart" id="vr-cpiChart"></div>
+      <div class="cyr" id="vr-cpiYears"></div>
+      <div class="avgline" style="margin-top:20px"><span>10-yr average ≈ 3.0%</span></div>
+
+      <p class="note"><b>2015–2025 annual inflation, %:</b> 0.6 · 0.3 · 1.4 · 1.7 · 2.6 · 1.3 · 2.7 · <b style="color:var(--neg)">10.0</b> · 3.8 · 3.3 · 3.3. December 2025 came in at 2.8%; January 2026 at 2.4%.</p>
+
+      <div class="call">
+        <h4>Realised CPI has averaged about 3.0%</h4>
+        <p>The ten-year average is roughly <b>3.0%</b> — and that is <i>after</i> a decade that included years at 0.3%. The model opens at 2.5%, which is below what has actually happened. The ECB targets 2.0%; the Netherlands has not averaged 2.0% since 2015.</p>
+        <p>Raising CPI from 2.5% to 3.0% moves roughly <b>€2,300 from Javi to Rani</b> over five years, and considerably more over ten. Drag the CPI slider and watch it. The direction is always the same: <b>higher inflation favours the larger contributor.</b></p>
+      </div>
+
+      <div class="call">
+        <h4>2022 is the reason to read the small print</h4>
+        <p>CPI printed <b>10.0%</b> in 2022. On Rani's €218,000 that is <b>€21,800 of indexation in a single year</b> — from one number, published once.</p>
+        <p>CBS later switched to a better method for measuring energy prices (June 2023). Rabobank's reconstruction puts 2022 nearer <b>7.3%</b> under the new method. CBS deliberately did <b>not</b> revise the published figures — precisely because CPI is used to index contracts, and revising it would retroactively rewrite them.</p>
+        <p>So: indexing on CPI means accepting whatever CBS printed at the time, methodological artefacts included. That is arguably the point — it is certain, public, and nobody can renegotiate it after the fact. But it is a choice, not a neutral default. Ask Eva whether the <b>afgeleide CPI</b> (which strips out changes in BTW, accijns and other indirect taxes) suits you better.</p>
+      </div>
+
+      <div class="call">
+        <h4>CBS rebased the index this year — write the clause as a ratio</h4>
+        <p>From 2026 the CPI moved from <b>2015=100</b> to <b>2025=100</b>, with a new classification of goods. Published inflation figures were not revised.</p>
+        <p>This is exactly why the deed must not name a fixed base year. Write it as a ratio, so any future rebasing cancels out:</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;background:var(--card);border:1px solid var(--rule);padding:10px;margin-top:10px">vergoeding = inbreng × (CPI<sub>month of sale</sub> ÷ CPI<sub>month of contribution</sub>)</p>
+      </div>
+    </section>
+
+    <footer>
+      <b>Sources:</b> CBS — inflation 3.8% (2023), 3.3% (2024), 3.3% (2025), 10.0% (2022); rebasing 2015=100 → 2025=100 from 2026. Rabobank inflation monitor — 2022 reconstruction at 7.3%. Wettelijke rente 4% since 1 Jan 2026 (Staatsblad 2025, 438). HR 10 May 2019, ECLI:NL:HR:2019:707 — art. 1:87 BW does not apply to cohabitants.<br><br>
+      <b>Assumptions:</b> annuity mortgage, monthly compounding; lump sum recalculates the annuity over the remaining term, same end date; no transaction costs on sale; CPI and house growth applied as constant annual rates. The erfpacht canon revision of <b>March 2029</b> is not modelled and will weigh on value inside a five-year window.<br><br>
+      Orientation, not legal or financial advice. The notary drafts; the broker prices the mortgage.
+    </footer>
+
+  </main>
+</div>
+</div>
 </div>
 <!-- Version badge -->
 
