@@ -61,7 +61,7 @@
         {
           "id": 105,
           "supplier": "Warmtepomp Remeha Mb400",
-          "unitPrice": 0,
+          "unitPrice": 4200,
           "date": "",
           "notes": "",
           "chosen": false
@@ -3133,7 +3133,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481258545,
+  "_savedAt": 1784481262895,
   "nextOrderId": 11,
   "nextQuoteId": 106,
   "nextItemId": 218,
