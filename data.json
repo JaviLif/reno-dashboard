@@ -88,6 +88,14 @@
           "date": "",
           "notes": "Interior + Exterior Unit Only",
           "chosen": false
+        },
+        {
+          "id": 107,
+          "supplier": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": false
         }
       ],
       "orders": [],
@@ -3133,9 +3141,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481453611,
+  "_savedAt": 1784481478093,
   "nextOrderId": 11,
-  "nextQuoteId": 107,
+  "nextQuoteId": 108,
   "nextItemId": 219,
   "_version": "dashboard-v1",
   "phases": [
