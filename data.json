@@ -49,7 +49,16 @@
       "qty": 1,
       "unit": "",
       "notes": "klokthermostaat ",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 109,
+          "supplier": "",
+          "unitPrice": 215,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -3178,9 +3187,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784481596626,
+  "_savedAt": 1784481654014,
   "nextOrderId": 11,
-  "nextQuoteId": 109,
+  "nextQuoteId": 110,
   "nextItemId": 221,
   "_version": "dashboard-v1",
   "phases": [
