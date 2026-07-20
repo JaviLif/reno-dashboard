@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.37</title>
+<title>🏠 Renovation Dashboard v1.0.38</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -382,7 +382,8 @@ body.col-resizing *{cursor:col-resize!important}
   <div class="sec">
     <div class="sec-hdr">
       <div class="sec-title">Recent Items</div>
-      <button class="btn btn-pri btn-sm" onclick="addItem()">+ Add Item</button>
+      <button class="btn btn-sm" onclick="toggleBmPanel()" style="background:#EFF6FF;color:#2563EB;border-color:#93C5FD">&#128204; Bookmarklet</button>
+<button class="btn btn-pri btn-sm" onclick="addItem()">+ Add Item</button>
     </div>
     <div class="card">
       <div class="tbl-wrap">
@@ -529,10 +530,23 @@ body.col-resizing *{cursor:col-resize!important}
         <button class="btn btn-ghost btn-sm" id="col-panel-btn" onclick="toggleColPanel(event)">⚙ Columns</button>
         <div id="col-panel" class="col-panel" style="display:none"></div>
       </div>
-      <button class="btn btn-pri btn-sm" onclick="addItem()">+ Add Item</button>
+      <button class="btn btn-sm" onclick="toggleBmPanel()" style="background:#EFF6FF;color:#2563EB;border-color:#93C5FD">&#128204; Bookmarklet</button>
+<button class="btn btn-pri btn-sm" onclick="addItem()">+ Add Item</button>
     </div>
   </div>
-  <div class="card" style="padding:0;overflow:hidden;display:flex;flex-direction:column;max-height:calc(100vh - 118px)">
+  <div id="bm-panel" style="display:none;margin-bottom:8px;background:#EFF6FF;border:1px solid #93C5FD;border-radius:8px;padding:16px 20px">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+    <span style="font-weight:700;font-size:13px;color:#1D4ED8">&#128204; BOM Quote Bookmarklet</span>
+    <button onclick="downloadBmPage()" class="btn btn-sm" style="background:#2563EB;color:#fff;border-color:#2563EB;font-size:12px">&#8681; Download install page</button>
+  </div>
+  <p style="font-size:12px;color:#475569;margin-bottom:12px">Drag this button to your bookmarks bar, then click it on any supplier page to capture quotes directly into your BOM.</p>
+  <div style="background:#fff;border:2px dashed #93C5FD;border-radius:8px;padding:14px;text-align:center">
+    <p style="font-size:10px;font-weight:700;color:#3B82F6;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">&#8679; Drag to bookmarks bar</p>
+    <a id="bm-drag-link" class="btn btn-pri btn-sm" style="cursor:grab;user-select:none;text-decoration:none;display:inline-flex;align-items:center;gap:6px" onclick="return false" title="Drag me to your bookmarks bar">&#127968; Add to BOM</a>
+  </div>
+  <p style="font-size:11px;color:#94A3B8;margin-top:8px">Right-click &#8594; Bookmark this link if drag does not work. Share with others via the Download button above.</p>
+</div>
+<div class="card" style="padding:0;overflow:hidden;display:flex;flex-direction:column;max-height:calc(100vh - 118px)">
     <div class="bom-wrap">
       <div class="bom-sidebar" id="bom-sidebar"></div>
       <div class="bom-main">
@@ -655,7 +669,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -4649,6 +4663,7 @@ function openPendingQuotePicker(){
     +'<input oninput="filterPqList(this.value)" placeholder="Search items…" style="margin:10px 14px;padding:7px 10px;border:1px solid #E2E8F0;border-radius:4px;font-size:13px;outline:none;font-family:inherit">'
     +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+(rows||'<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>')+'</div></div>';
   document.body.appendChild(overlay);
+  var _pqM=overlay.querySelector(':scope>div');if(_pqM){var _pqF=document.createElement('div');_pqF.style.cssText='padding:10px 16px;border-top:1px solid #E2E8F0;flex-shrink:0;background:#F8FAFC';var _pqC=document.createElement('button');_pqC.textContent='+ Create new BOM item';_pqC.style.cssText='width:100%;background:none;border:1px solid #2563EB;color:#2563EB;border-radius:4px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';_pqC.onclick=showCreateItemInPicker;_pqF.appendChild(_pqC);_pqM.appendChild(_pqF);}
   overlay.querySelector('input').focus();
 }
 
@@ -4669,6 +4684,116 @@ function applyPendingQuote(itemId){
   document.getElementById('pq-picker')?.remove();
   document.getElementById('pq-banner')?.remove();
   sessionStorage.removeItem('_pendingQuote');
+}
+
+// ===================== BOOKMARKLET PANEL & CREATE-FROM-QUOTE =====================
+function toggleBmPanel(){
+  var p=document.getElementById('bm-panel');
+  if(!p) return;
+  if(p.style.display==='none'||!p.style.display){
+    var a=document.getElementById('bm-drag-link');
+    if(a&&!a.getAttribute('data-set')){
+      a.href='javascript:'+_getBmCode();
+      a.setAttribute('data-set','1');
+    }
+    p.style.display='block';
+  } else {
+    p.style.display='none';
+  }
+}
+
+function _getBmCode(){
+  var c='(function(){';
+  c+="if(document.getElementById('_bm_o')){document.getElementById('_bm_o').remove();return;}";
+  c+="var url=location.href,dom=location.hostname.replace(/^www\\./,''),ttl=document.title,prc='';";
+  c+="['[itemprop=price]','[class*=price]','[class*=prijs]','[data-price]'].forEach(function(s){";
+  c+="if(prc)return;var e=document.querySelector(s);";
+  c+="if(e){var t=(e.getAttribute('content')||e.textContent||'').replace(/\\s/g,''),m=t.match(/\\d+[.,]\\d*/);if(m)prc=m[0].replace(',','.');}});";
+  c+="function mk(tag,css,par){var e=document.createElement(tag);if(css)e.style.cssText=css;if(par)par.appendChild(e);return e;}";
+  c+="function lbl(txt,par){var d=mk('div','font-size:10px;font-weight:700;color:#64748B;margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em',par);d.textContent=txt;}";
+  c+="function inp(id,type,ph,val,par){var i=mk('input','width:100%;box-sizing:border-box;padding:7px 9px;border:1px solid #E2E8F0;border-radius:5px;font-size:13px;outline:none;font-family:inherit',par);i.id=id;if(type)i.type=type;if(ph)i.placeholder=ph;if(val!=null)i.value=val;return i;}";
+  c+="var o=mk('div','all:initial!important;position:fixed!important;top:16px!important;right:16px!important;z-index:2147483647!important;background:#fff!important;border:1px solid #E2E8F0!important;border-radius:10px!important;box-shadow:0 8px 30px rgba(0,0,0,.18)!important;padding:18px 20px!important;width:300px!important;font-family:system-ui,sans-serif!important;font-size:13px!important;color:#1E293B!important;box-sizing:border-box!important');";
+  c+="o.id='_bm_o';";
+  c+="var hdr=mk('div','display:flex;justify-content:space-between;align-items:center;margin-bottom:14px',o),ttlEl=mk('span','font-weight:700;font-size:14px',hdr);ttlEl.textContent='Add to BOM';";
+  c+="var xBtn=mk('button','background:none;border:none;cursor:pointer;font-size:22px;color:#94A3B8;padding:0;line-height:1',hdr);xBtn.textContent='×';xBtn.onclick=function(){o.remove();};";
+  c+="var g1=mk('div','margin-bottom:10px',o);lbl('Supplier',g1);inp('_bm_s',null,null,dom,g1);";
+  c+="var g2=mk('div','margin-bottom:10px',o);lbl('Price',g2);inp('_bm_p','number','0.00',prc,g2);";
+  c+="var g3=mk('div','margin-bottom:14px',o);lbl('Notes',g3);inp('_bm_n',null,'colour, size, delivery...',null,g3);";
+  c+="var goBtn=mk('button','width:100%;padding:10px;background:#2563EB;color:#fff;border:none;border-radius:5px;cursor:pointer;font-size:13px;font-weight:700;font-family:inherit',o);";
+  c+="goBtn.textContent='Open in Dashboard';";
+  c+="goBtn.onclick=function(){var d={supplier:document.getElementById('_bm_s').value,price:document.getElementById('_bm_p').value,notes:document.getElementById('_bm_n').value,link:url,pageTitle:ttl};";
+  c+="var enc=btoa(unescape(encodeURIComponent(JSON.stringify(d))));";
+  c+="window.open('https://javilif.github.io/reno-dashboard/#addquote='+enc,'_blank');o.remove();};";
+  c+="var note=mk('p','margin:8px 0 0;font-size:10px;color:#94A3B8;text-align:center;font-family:inherit',o);";
+  c+="note.textContent='Opens javilif.github.io/reno-dashboard';";
+  c+="document.body.appendChild(o);document.getElementById('_bm_s').focus();";
+  c+='})();';
+  return c;
+}
+
+function downloadBmPage(){
+  var bm='javascript:'+_getBmCode();
+  var safeHref=bm.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+  var html='<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    +'<title>BOM Bookmarklet — Reno Dashboard</title>'
+    +'<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:#F8FAFC;color:#1E293B;display:flex;flex-direction:column;align-items:center;padding:48px 20px}.card{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:32px;max-width:520px;width:100%;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-top:24px}.step{display:flex;gap:14px;margin-bottom:24px}.num{width:28px;height:28px;border-radius:50%;background:#2563EB;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}.step h3{font-size:14px;font-weight:700;margin-bottom:4px}.step p{font-size:13px;color:#475569;line-height:1.6}.zone{background:#EFF6FF;border:2px dashed #93C5FD;border-radius:10px;padding:20px;text-align:center;margin:14px 0}.zone p{font-size:11px;color:#3B82F6;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}.bml{display:inline-flex;align-items:center;gap:8px;background:#2563EB;color:#fff;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;cursor:grab}</style>'
+    +'</head><body>'
+    +'<h1 style="font-size:22px;font-weight:700;margin-bottom:6px">BOM Quote Bookmarklet</h1>'
+    +'<p style="font-size:14px;color:#64748B">Capture quotes from supplier pages into your renovation BOM.</p>'
+    +'<div class="card">'
+    +'<div class="step"><div class="num">1</div><div><h3>Drag to bookmarks bar</h3><p>Show your Chrome bookmarks bar with Ctrl+Shift+B if hidden.</p>'
+    +'<div class="zone"><p>&#8679; Drag to bookmarks bar</p>'
+    +'<a class="bml" href="'+safeHref+'">&#127968; Add to BOM</a></div>'
+    +'<p style="font-size:11px;color:#94A3B8;margin-top:8px">Right-click &#8594; Bookmark this link if drag does not work.</p></div></div>'
+    +'<div class="step"><div class="num">2</div><div><h3>Go to any supplier page</h3><p>e.g. Gamma, Praxis, Remeha, Sanitairwinkel, Amazon.nl. The bookmarklet tries to auto-detect the price.</p></div></div>'
+    +'<div class="step"><div class="num">3</div><div><h3>Click the bookmarklet</h3><p>A form pops up top-right: adjust supplier, price, add notes &#8594; click Open in Dashboard.</p></div></div>'
+    +'<div class="step"><div class="num">4</div><div><h3>Attach or create in the BOM</h3><p>A blue banner appears. Click Attach to BOM item to add to an existing item, or Create new BOM item to make a new one on the spot.</p></div></div>'
+    +'</div></body></html>';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bom-bookmarklet.html';a.click();URL.revokeObjectURL(a.href);
+}
+
+function showCreateItemInPicker(){
+  var existing=document.getElementById('pq-create-form');
+  if(existing){existing.remove();return;}
+  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var modal=document.querySelector('#pq-picker > div');
+  if(!modal) return;
+  var form=document.createElement('div');
+  form.id='pq-create-form';
+  form.style.cssText='padding:12px 16px;border-top:2px solid #2563EB;background:#EFF6FF;flex-shrink:0';
+  var phaseOpts=(S.phases||[]).map(function(p){
+    var indent=p.parentId?'&nbsp;&nbsp;':'';
+    return '<option value="'+p.id+'">'+indent+escapeAttr(p.name)+'</option>';
+  }).join('');
+  form.innerHTML='<div style="font-size:11px;font-weight:700;color:#1D4ED8;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">&#8853; New BOM item</div>'
+    +'<div style="display:flex;flex-direction:column;gap:6px">'
+    +'<input id="pq-new-name" placeholder="Item name (required)" style="padding:7px 9px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;outline:none;width:100%;font-family:inherit">'
+    +'<select id="pq-new-phase" style="padding:7px 9px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;background:#fff;width:100%;font-family:inherit"><option value="">-- No phase --</option>'+phaseOpts+'</select>'
+    +'<button onclick="createAndAttachQuote()" style="width:100%;padding:9px;background:#2563EB;color:#fff;border:none;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">Create item &amp; attach quote &#8594;</button>'
+    +'</div>';
+  modal.appendChild(form);
+  document.getElementById('pq-new-name').focus();
+}
+
+function createAndAttachQuote(){
+  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var nameEl=document.getElementById('pq-new-name');
+  var name=(nameEl?nameEl.value:'').trim();
+  if(!name){if(nameEl)nameEl.style.borderColor='#EF4444';return;}
+  var phaseId=Number((document.getElementById('pq-new-phase')||{}).value)||null;
+  var newId=S.nextItemId++;
+  S.items.unshift({id:newId,phaseId:phaseId,categoryId:null,name:name,description:'',link:'',qty:1,unit:'',notes:'',quotes:[],orders:[],documents:[]});
+  var newQ={id:S.nextQuoteId++,supplier:pq.supplier||'',unitPrice:Number(pq.price)||0,date:new Date().toISOString().slice(0,10),notes:pq.notes||'',link:pq.link||'',chosen:true,documents:[]};
+  S.items[0].quotes.push(newQ);
+  expandedItems.add(newId);
+  saveState(); renderItems();
+  document.getElementById('pq-picker')?.remove();
+  document.getElementById('pq-banner')?.remove();
+  sessionStorage.removeItem('_pendingQuote');
+  var navBtn=document.querySelector('.nav-btn[data-tab="items"]');
+  if(navBtn&&!navBtn.classList.contains('active')) navBtn.click();
+  setTimeout(function(){var row=document.querySelector('[data-item-row="'+newId+'"]');if(row)row.scrollIntoView({behavior:'smooth',block:'center'});},120);
 }
 
 // ===================== GANTT DRAG-TO-PAN =====================
