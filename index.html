@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.36</title>
+<title>🏠 Renovation Dashboard v1.0.37</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -655,7 +655,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -4597,6 +4597,78 @@ function refreshAll(){
   if(active==='budget')renderBudget();
   if(active==='calendar')renderCalendar();
   if(active==='settings')renderSettings();
+}
+
+// ===================== BOOKMARKLET QUOTE INTAKE =====================
+(function(){
+  var h=location.hash;
+  if(h.indexOf('#addquote=')<0) return;
+  try{
+    var enc=h.slice(h.indexOf('#addquote=')+10);
+    var data=JSON.parse(decodeURIComponent(escape(atob(enc))));
+    history.replaceState(null,'',location.pathname+location.search);
+    sessionStorage.setItem('_pendingQuote',JSON.stringify(data));
+    showPendingQuoteBanner(data);
+  }catch(e){console.warn('[BOM] addquote parse error',e);}
+})();
+
+function showPendingQuoteBanner(pq){
+  var existing=document.getElementById('pq-banner');
+  if(existing) existing.remove();
+  var b=document.createElement('div');
+  b.id='pq-banner';
+  b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:#1D4ED8;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:10px;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.2);font-family:inherit';
+  var euro=pq.price?' · €'+Number(pq.price).toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2}):'';
+  var notePart=pq.notes?' · <em style="font-style:normal;color:#BFDBFE">'+escapeAttr(pq.notes)+'</em>':'';
+  b.innerHTML='<span style="flex:1">📋 <strong>Quote pending:</strong> '+escapeAttr(pq.supplier||'?')+euro+notePart+'</span>'
+    +'<button onclick="openPendingQuotePicker()" style="background:#fff;color:#1D4ED8;border:none;border-radius:4px;padding:5px 12px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap">Attach to BOM item →</button>'
+    +'<button onclick="document.getElementById(\'pq-banner\').remove()" style="background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:22px;line-height:1;padding:0 0 0 8px">×</button>';
+  document.body.prepend(b);
+}
+
+function openPendingQuotePicker(){
+  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var navBtn=document.querySelector('.nav-btn[data-tab="items"]');
+  if(navBtn&&!navBtn.classList.contains('active')) navBtn.click();
+  var existing=document.getElementById('pq-picker');
+  if(existing) existing.remove();
+  var overlay=document.createElement('div');
+  overlay.id='pq-picker';
+  overlay.style.cssText='position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center';
+  var sortedItems=(S.items||[]).filter(function(it){return it.name;}).sort(function(a,b){return (a.name||'').localeCompare(b.name||'');});
+  var rows=sortedItems.map(function(it){
+    var ph=(S.phases||[]).find(function(p){return p.id===it.phaseId;});
+    return '<div onclick="applyPendingQuote('+it.id+')" style="padding:10px 16px;cursor:pointer;border-bottom:1px solid #F1F5F9;display:flex;flex-direction:column;gap:2px" onmouseover="this.style.background=\'#EFF6FF\'" onmouseout="this.style.background=\'\'">'
+      +'<span style="font-size:13px;font-weight:600;color:#1E293B">'+escapeAttr(it.name)+'</span>'
+      +'<span style="font-size:11px;color:#94A3B8">'+escapeAttr(ph?ph.name:'No phase')+'</span></div>';
+  }).join('');
+  overlay.innerHTML='<div style="background:#fff;border-radius:8px;width:420px;max-height:70vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3)">'
+    +'<div style="padding:16px 20px;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;justify-content:space-between">'
+    +'<span style="font-weight:700;font-size:14px">📋 Select BOM item for this quote</span>'
+    +'<button onclick="document.getElementById(\'pq-picker\').remove()" style="background:none;border:none;cursor:pointer;font-size:22px;color:#94A3B8;line-height:1">×</button></div>'
+    +'<input oninput="filterPqList(this.value)" placeholder="Search items…" style="margin:10px 14px;padding:7px 10px;border:1px solid #E2E8F0;border-radius:4px;font-size:13px;outline:none;font-family:inherit">'
+    +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+(rows||'<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>')+'</div></div>';
+  document.body.appendChild(overlay);
+  overlay.querySelector('input').focus();
+}
+
+function filterPqList(q){
+  var qq=q.toLowerCase();
+  document.querySelectorAll('#pq-item-list > div[onclick]').forEach(function(r){
+    r.style.display=r.textContent.toLowerCase().indexOf(qq)>=0?'':'none';
+  });
+}
+
+function applyPendingQuote(itemId){
+  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var it=itemById(Number(itemId)); if(!it) return;
+  var newQ={id:S.nextQuoteId++,supplier:pq.supplier||'',unitPrice:Number(pq.price)||0,date:new Date().toISOString().slice(0,10),notes:pq.notes||'',link:pq.link||'',chosen:it.quotes.length===0,documents:[]};
+  it.quotes.push(newQ);
+  expandedItems.add(Number(itemId));
+  saveState(); renderItems();
+  document.getElementById('pq-picker')?.remove();
+  document.getElementById('pq-banner')?.remove();
+  sessionStorage.removeItem('_pendingQuote');
 }
 
 // ===================== GANTT DRAG-TO-PAN =====================
