@@ -51,7 +51,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 225,
@@ -268,7 +269,7 @@
           "notes": "Interior + Exterior Unit Only",
           "chosen": false,
           "documents": [],
-          "link": ""
+          "link": "https://www.technim.nl/p/remeha-confida-monoblock-440e-warmtepompset-4kw-all-electric-r290/"
         },
         {
           "id": 107,
@@ -3428,7 +3429,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784535711998,
+  "_savedAt": 1784550412361,
   "nextOrderId": 11,
   "nextQuoteId": 114,
   "nextItemId": 227,
