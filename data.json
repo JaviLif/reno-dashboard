@@ -56,11 +56,13 @@
           "unitPrice": 300,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 224,
@@ -74,7 +76,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 223,
@@ -253,6 +256,14 @@
           "notes": "Only Exterior unit",
           "chosen": false,
           "documents": []
+        },
+        {
+          "id": 113,
+          "supplier": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": false
         }
       ],
       "orders": [],
@@ -3299,9 +3310,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784483319684,
+  "_savedAt": 1784534938270,
   "nextOrderId": 11,
-  "nextQuoteId": 113,
+  "nextQuoteId": 114,
   "nextItemId": 226,
   "_version": "dashboard-v1",
   "phases": [
