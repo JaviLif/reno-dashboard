@@ -40,6 +40,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 226,
+      "phaseId": 62,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 225,
       "phaseId": 70,
       "categoryId": 3,
@@ -57,7 +71,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -112,7 +127,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -137,7 +153,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -162,7 +179,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -187,7 +205,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -212,7 +231,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -237,7 +257,8 @@
           "date": "",
           "notes": "Full Set",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         },
         {
           "id": 105,
@@ -246,7 +267,8 @@
           "date": "",
           "notes": "Interior + Exterior Unit Only",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "link": ""
         },
         {
           "id": 107,
@@ -255,7 +277,8 @@
           "date": "",
           "notes": "Only Exterior unit",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "link": ""
         },
         {
           "id": 113,
@@ -263,7 +286,9 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "chosen": false
+          "chosen": false,
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -303,7 +328,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -328,7 +354,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -353,7 +380,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -378,7 +406,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -418,7 +447,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -443,7 +473,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -468,7 +499,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -493,7 +525,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -518,7 +551,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -543,7 +577,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -568,7 +603,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -593,7 +629,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -618,7 +655,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -643,7 +681,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -668,7 +707,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -693,7 +733,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -718,7 +759,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -743,7 +785,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -768,7 +811,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -793,7 +837,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -818,7 +863,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -843,7 +889,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -868,7 +915,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -893,7 +941,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -918,7 +967,8 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [
@@ -988,7 +1038,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 1
@@ -1010,7 +1061,8 @@
           "unitPrice": 450,
           "id": 2,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         },
         {
           "id": 73,
@@ -1028,7 +1080,8 @@
               "ghPath": "quotes/OF-03020.pdf",
               "uploadedDate": "2026-07-06"
             }
-          ]
+          ],
+          "link": ""
         },
         {
           "id": 74,
@@ -1046,7 +1099,8 @@
               "ghPath": "quotes/Offerte_ASBD-03072026-1188-1_Cornelis_de_Grootpad_1_te_Amsterdam.pdf",
               "uploadedDate": "2026-07-06"
             }
-          ]
+          ],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1073,7 +1127,8 @@
           "notes": "",
           "id": 3,
           "unitPrice": 600,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 1,
@@ -1097,7 +1152,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1116,7 +1172,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1139,7 +1196,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1174,7 +1232,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1
@@ -1198,7 +1257,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1222,7 +1282,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1241,7 +1302,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -1273,7 +1335,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1290,7 +1353,8 @@
           "id": 13,
           "notes": "",
           "unitPrice": 1000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1317,7 +1381,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 5,
@@ -1341,7 +1406,8 @@
           "id": 16,
           "notes": "",
           "unitPrice": 1000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -1371,7 +1437,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1391,7 +1458,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1422,7 +1490,8 @@
           "notes": "",
           "id": 20,
           "unitPrice": 104,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1438,7 +1507,8 @@
           "id": 21,
           "notes": "",
           "unitPrice": 3,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1474,7 +1544,8 @@
           "unitPrice": 120,
           "notes": "",
           "id": 22,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3
@@ -1497,7 +1568,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1517,7 +1589,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1546,7 +1619,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 8,
@@ -1565,7 +1639,8 @@
           "id": 26,
           "notes": "",
           "unitPrice": 5000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1599,7 +1674,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1
@@ -1623,7 +1699,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -1646,7 +1723,8 @@
           "unitPrice": 400,
           "id": 29,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1666,7 +1744,8 @@
           "unitPrice": 325,
           "notes": "",
           "id": 30,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1689,7 +1768,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1716,7 +1796,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1741,7 +1822,8 @@
           "unitPrice": 300,
           "id": 33,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -1765,7 +1847,8 @@
           "unitPrice": 284,
           "id": 34,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1790,7 +1873,8 @@
           "unitPrice": 384,
           "id": 35,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1815,7 +1899,8 @@
           "notes": "",
           "id": 36,
           "unitPrice": 400,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1846,7 +1931,8 @@
           "chosen": true,
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -1865,7 +1951,8 @@
           "unitPrice": 6.8,
           "notes": "",
           "id": 38,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1913,7 +2000,8 @@
           "unitPrice": 2000,
           "notes": "",
           "id": 39,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 8,
@@ -1929,7 +2017,8 @@
           "notes": "",
           "id": 40,
           "unitPrice": 900,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -1963,7 +2052,8 @@
           "unitPrice": 629,
           "notes": "",
           "id": 41,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -1978,7 +2068,8 @@
           "id": 42,
           "notes": "",
           "unitPrice": 338,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2014,7 +2105,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": []
@@ -2039,7 +2131,8 @@
           "unitPrice": 5000,
           "notes": "",
           "id": 44,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1
@@ -2061,7 +2154,8 @@
           "id": 45,
           "notes": "",
           "unitPrice": 1000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 8,
@@ -2086,7 +2180,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 5,
@@ -2112,7 +2207,8 @@
           "id": 47,
           "notes": "",
           "unitPrice": 1000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2137,7 +2233,8 @@
           "id": 48,
           "notes": "",
           "unitPrice": 2000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1,
@@ -2154,7 +2251,8 @@
           "unitPrice": 79,
           "notes": "",
           "id": 49,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 4,
@@ -2179,7 +2277,8 @@
           "unitPrice": 1100,
           "notes": "",
           "id": 50,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2211,7 +2310,8 @@
           "unitPrice": 500,
           "id": 51,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -2229,7 +2329,8 @@
           "chosen": true,
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2264,7 +2365,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 30
@@ -2288,7 +2390,8 @@
           "id": 54,
           "notes": "",
           "unitPrice": 1000,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2312,7 +2415,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1,
@@ -2330,7 +2434,8 @@
           "notes": "",
           "id": 56,
           "unitPrice": 220,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3,
@@ -2355,7 +2460,8 @@
           "id": 57,
           "notes": "",
           "unitPrice": 120,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2389,7 +2495,8 @@
           "notes": "",
           "id": 58,
           "unitPrice": 30,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 3
@@ -2406,7 +2513,8 @@
           "unitPrice": 300,
           "notes": "",
           "id": 59,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "notes": "",
@@ -2428,7 +2536,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2462,7 +2571,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 7,
@@ -2480,7 +2590,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2505,7 +2616,8 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2537,7 +2649,8 @@
           "chosen": true,
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2555,7 +2668,8 @@
           "unitPrice": -32.5,
           "id": 65,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 7,
@@ -2589,7 +2703,8 @@
           "notes": "",
           "id": 66,
           "unitPrice": -2500,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "qty": 1
@@ -2619,7 +2734,8 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "categoryId": 4,
@@ -2645,7 +2761,8 @@
           "unitPrice": 55,
           "id": 68,
           "notes": "",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -2677,7 +2794,8 @@
           "chosen": true,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
-          "documents": []
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [],
@@ -3310,10 +3428,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784534938270,
+  "_savedAt": 1784535693830,
   "nextOrderId": 11,
   "nextQuoteId": 114,
-  "nextItemId": 226,
+  "nextItemId": 227,
   "_version": "dashboard-v1",
   "phases": [
     {
