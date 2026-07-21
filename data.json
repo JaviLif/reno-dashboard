@@ -40,6 +40,31 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 227,
+      "phaseId": 78,
+      "categoryId": null,
+      "name": "Roof Window",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 116,
+          "supplier": "premiumdakramen.nl",
+          "unitPrice": 544,
+          "date": "2026-07-21",
+          "notes": "50x200",
+          "link": "https://premiumdakramen.nl/products/platdakraam?variant=56790983737669&gad_source=1&gad_campaignid=22521985652&gbraid=0AAAAA94idl_lCBRVBCLY8lhAurppSjEwD&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSu80_OCSjeMvH9Y-IxF9T8iabywW0Ef1UijnZtAAeRHFcx9oooVB0saAo9sEALw_wcB",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 226,
       "phaseId": 62,
       "categoryId": null,
@@ -3414,10 +3439,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628467182,
+  "_savedAt": 1784628545317,
   "nextOrderId": 11,
-  "nextQuoteId": 116,
-  "nextItemId": 227,
+  "nextQuoteId": 117,
+  "nextItemId": 228,
   "_version": "dashboard-v1",
   "phases": [
     {
