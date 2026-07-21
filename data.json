@@ -40,6 +40,31 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 228,
+      "phaseId": 1,
+      "categoryId": null,
+      "name": "test",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 119,
+          "supplier": "glaskoning.nl",
+          "unitPrice": 34.79,
+          "date": "2026-07-21",
+          "notes": "",
+          "link": "https://www.glaskoning.nl/dubbel-glas/hr-isolatieglas/",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 227,
       "phaseId": 78,
       "categoryId": null,
@@ -3460,10 +3485,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784630166162,
+  "_savedAt": 1784630288420,
   "nextOrderId": 11,
-  "nextQuoteId": 119,
-  "nextItemId": 228,
+  "nextQuoteId": 120,
+  "nextItemId": 229,
   "_version": "dashboard-v1",
   "phases": [
     {
