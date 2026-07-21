@@ -325,36 +325,6 @@
       "notes": "",
       "quotes": [
         {
-          "id": 104,
-          "supplier": "Warmtepomp Remeha Mb400",
-          "unitPrice": 4260,
-          "date": "",
-          "notes": "Full Set",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.technim.nl/p/remeha-confida-10-warmtepompset-4-kw-monoblock/"
-        },
-        {
-          "id": 105,
-          "supplier": "",
-          "unitPrice": 4200,
-          "date": "",
-          "notes": "Interior + Exterior Unit Only",
-          "chosen": false,
-          "documents": [],
-          "link": "https://www.technim.nl/p/remeha-confida-monoblock-440e-warmtepompset-4kw-all-electric-r290/"
-        },
-        {
-          "id": 107,
-          "supplier": "",
-          "unitPrice": 2985,
-          "date": "",
-          "notes": "Only Exterior unit",
-          "chosen": false,
-          "documents": [],
-          "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-buitenunit/Remeha-Confida-warmtepomp-monoblock-buitendeel-MB400-4/p/03601290?_gl=1*mt5rdo*_up*MQ..*_ga*MTMzNDIwMjU2OS4xNzg0MzEzMTQ1*_ga_WV2JXPFN1Z*czE3ODQzMTMxNDQkbzEkZzAkdDE3ODQzMTMxNDQkajYwJGwwJGgxMTY5ODQ3ODE5"
-        },
-        {
           "id": 113,
           "supplier": "mb400 + 40E",
           "unitPrice": 0,
@@ -3502,7 +3472,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784666606789,
+  "_savedAt": 1784666636750,
   "nextOrderId": 11,
   "nextQuoteId": 121,
   "nextItemId": 232,
