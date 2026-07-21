@@ -69,6 +69,16 @@
           "link": "https://www.lichtkoepeltje.nl/marktplaats/lichtkoepel-met-daktoegang?gad_source=1&gad_campaignid=17189503157&gbraid=0AAAAADoNKnGjV1LX3AgmrpKDCCwwbEHOS&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpStam0ZU0wq0GgsHnBB1zCcyIuIPzK2PNQeEPnN9qVFYxWFKwwpx0xwaAuUaEALw_wcB",
           "chosen": false,
           "documents": []
+        },
+        {
+          "id": 118,
+          "supplier": "glasmaatje.nl",
+          "unitPrice": 0,
+          "date": "2026-07-21",
+          "notes": "",
+          "link": "https://glasmaatje.nl/isolatieglas-hr/",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -3450,9 +3460,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628728887,
+  "_savedAt": 1784628769791,
   "nextOrderId": 11,
-  "nextQuoteId": 118,
+  "nextQuoteId": 119,
   "nextItemId": 228,
   "_version": "dashboard-v1",
   "phases": [
