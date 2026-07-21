@@ -87,7 +87,7 @@
       "name": "TEST",
       "description": "",
       "link": "",
-      "qty": 1,
+      "qty": 1.01,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -3448,7 +3448,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628274437,
+  "_savedAt": 1784628319774,
   "nextOrderId": 11,
   "nextQuoteId": 116,
   "nextItemId": 227,
