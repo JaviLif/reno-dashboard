@@ -59,10 +59,21 @@
           "link": "https://premiumdakramen.nl/products/platdakraam?variant=56790983737669&gad_source=1&gad_campaignid=22521985652&gbraid=0AAAAA94idl_lCBRVBCLY8lhAurppSjEwD&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSu80_OCSjeMvH9Y-IxF9T8iabywW0Ef1UijnZtAAeRHFcx9oooVB0saAo9sEALw_wcB",
           "chosen": true,
           "documents": []
+        },
+        {
+          "id": 117,
+          "supplier": "lichtkoepeltje.nl",
+          "unitPrice": 167.95,
+          "date": "2026-07-21",
+          "notes": "Dachfenster Mit Öffnung",
+          "link": "https://www.lichtkoepeltje.nl/marktplaats/lichtkoepel-met-daktoegang?gad_source=1&gad_campaignid=17189503157&gbraid=0AAAAADoNKnGjV1LX3AgmrpKDCCwwbEHOS&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpStam0ZU0wq0GgsHnBB1zCcyIuIPzK2PNQeEPnN9qVFYxWFKwwpx0xwaAuUaEALw_wcB",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 226,
@@ -3439,9 +3450,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628545317,
+  "_savedAt": 1784628728887,
   "nextOrderId": 11,
-  "nextQuoteId": 117,
+  "nextQuoteId": 118,
   "nextItemId": 228,
   "_version": "dashboard-v1",
   "phases": [
