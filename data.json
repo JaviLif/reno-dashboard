@@ -81,40 +81,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 224,
-      "phaseId": 60,
-      "categoryId": null,
-      "name": "TEST",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 114,
-          "supplier": "",
-          "unitPrice": 0.01,
-          "date": "",
-          "notes": "",
-          "chosen": true
-        },
-        {
-          "id": 115,
-          "supplier": "glaskoning.nl",
-          "unitPrice": 0,
-          "date": "2026-07-21",
-          "notes": "",
-          "link": "https://www.glaskoning.nl/bezorgen-afhalen/",
-          "chosen": false,
-          "documents": []
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 223,
       "phaseId": 78,
       "categoryId": null,
@@ -3448,7 +3414,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628321628,
+  "_savedAt": 1784628467182,
   "nextOrderId": 11,
   "nextQuoteId": 116,
   "nextItemId": 227,
