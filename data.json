@@ -75,7 +75,7 @@
           "supplier": "glasmaatje.nl",
           "unitPrice": 0,
           "date": "2026-07-21",
-          "notes": "",
+          "notes": "Windows different",
           "link": "https://glasmaatje.nl/isolatieglas-hr/",
           "chosen": false,
           "documents": []
@@ -3460,7 +3460,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628769791,
+  "_savedAt": 1784628785933,
   "nextOrderId": 11,
   "nextQuoteId": 119,
   "nextItemId": 228,
