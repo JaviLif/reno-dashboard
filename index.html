@@ -668,7 +668,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -3555,6 +3555,7 @@ function render(){
   $('v_lump').textContent=eur(S.lump); $('v_lumpM').textContent='#'+S.lumpM;
   $('v_lumpS').textContent=S.lumpS+'%'; $('v_cpi').textContent=S.cpi.toFixed(1)+'%';
   $('v_g').textContent=(S.g>0?'+':'')+S.g.toFixed(2)+'%'; $('v_yrs').textContent=S.yrs+' yr';
+  try{localStorage.setItem('reno_vr',JSON.stringify(S));}catch(e){}
 }
 
 ['price','javi','rani','kk','kkS','own','rate','term','lump','lumpM','lumpS','cpi','g','yrs'].forEach(k=>{
@@ -3564,6 +3565,7 @@ function render(){
 $('reset').addEventListener('click',()=>{Object.assign(S,BASE); sync(); render();});
 function sync(){Object.keys(BASE).forEach(k=>{const el=$(k); if(!el)return; if(el.type==='checkbox')el.checked=S[k]; else el.value=S[k];});}
 
+try{var _vr=JSON.parse(localStorage.getItem('reno_vr'));if(_vr)Object.keys(BASE).forEach(function(k){if(_vr[k]!==undefined)S[k]=_vr[k];});}catch(e){}
 sync(); drawCPI(); render();
   })();
 }
@@ -3710,6 +3712,7 @@ function initHeatPump(){
   function update(){
     Object.keys(LABELS).forEach(function(k){$(LABELS[k][0]).textContent=nf(num(k),LABELS[k][1]);});
     render();
+    try{var _s={};INPUTS.forEach(function(id){var el=$(id);if(el)_s[id]=el.type==='checkbox'?el.checked:el.value;});localStorage.setItem('reno_hp',JSON.stringify(_s));}catch(e){}
   }
   INPUTS.forEach(function(id){
     var el=$(id);if(!el)return;
@@ -3732,6 +3735,7 @@ function initHeatPump(){
       update();
     });
   });
+  try{var _hp=JSON.parse(localStorage.getItem('reno_hp'));if(_hp)INPUTS.forEach(function(id){var el=$(id);if(!el)return;if(el.type==='checkbox')el.checked=!!_hp[id];else if(_hp[id]!==undefined)el.value=_hp[id];});if($('ext'))$('extBlock').style.display=$('ext').checked?'block':'none';}catch(e){}
   update();
   })();
 }
