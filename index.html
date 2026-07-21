@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.38</title>
+<title>🏠 Renovation Dashboard v1.0.39</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -668,7 +668,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -2634,7 +2634,8 @@ function updateItemField(id,field,value){
   if(field==='categoryId') value=value?Number(value):null;
   it[field]=value;
   if(field==='phaseId'&&_bomPhaseId) _bomPhaseId=null;
-  saveState(); refreshAll();
+  saveState();
+  if(['name','description','notes','link'].indexOf(field)===-1) refreshAll();
   if(field==='phaseId') setTimeout(()=>{const r=document.querySelector(`[data-item-row="${id}"]`);if(r)r.scrollIntoView({behavior:'smooth',block:'center'});},50);
 }
 function updateItemPrice(itemId,value){
@@ -2996,7 +2997,7 @@ function itemCellHtml(it,key,ctx){
     case 'description':
       return `<td style="overflow:hidden"><input class="fm-inp" style="font-size:12px;padding:5px 6px" value="${escapeAttr(it.description||'')}" placeholder="Description" onchange="updateItemField(${it.id},'description',this.value)"></td>`;
     case 'qty':
-      return `<td style="text-align:right"><input class="fm-inp" type="number" min="0" step="0.01" style="width:60px;font-size:12px;padding:5px 6px;text-align:right" value="${it.qty}" title="Qty" onchange="updateItemField(${it.id},'qty',this.value)"></td>`;
+      return `<td style="text-align:right"><input class="fm-inp" type="number" min="0" step="any" style="width:60px;font-size:12px;padding:5px 6px;text-align:right" value="${it.qty}" title="Qty" onchange="updateItemField(${it.id},'qty',this.value)"></td>`;
     case 'price':
       return `<td style="text-align:right"><input class="fm-inp" type="number" min="0" step="0.01" style="width:74px;font-size:12px;padding:5px 6px;text-align:right" value="${itemUnitPrice(it)}" title="Price per unit" onchange="updateItemPrice(${it.id},this.value)"></td>`;
     case 'total':
@@ -4614,18 +4615,21 @@ function refreshAll(){
 
 // ===================== BOOKMARKLET QUOTE INTAKE =====================
 (function(){
+  var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
   var h=location.hash;
-  if(h.indexOf('#addquote=')<0) return;
-  try{
-    var enc=h.slice(h.indexOf('#addquote=')+10);
-    var data=JSON.parse(decodeURIComponent(escape(atob(enc))));
-    history.replaceState(null,'',location.pathname+location.search);
-    sessionStorage.setItem('_pendingQuote',JSON.stringify(data));
-    showPendingQuoteBanner(data);
-  }catch(e){console.warn('[BOM] addquote parse error',e);}
+  if(h.indexOf('#addquote=')>=0){
+    try{
+      var enc=h.slice(h.indexOf('#addquote=')+10);
+      var data=JSON.parse(decodeURIComponent(escape(atob(enc))));
+      history.replaceState(null,'',location.pathname+location.search);
+      queue.push(data);
+      localStorage.setItem('_pendingQuotes',JSON.stringify(queue));
+    }catch(e){console.warn('[BOM] addquote parse error',e);}
+  }
+  if(queue.length>0) showPendingQuoteBanner(queue[0],queue.length);
 })();
 
-function showPendingQuoteBanner(pq){
+function showPendingQuoteBanner(pq,total){
   var existing=document.getElementById('pq-banner');
   if(existing) existing.remove();
   var b=document.createElement('div');
@@ -4633,14 +4637,28 @@ function showPendingQuoteBanner(pq){
   b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:#1D4ED8;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:10px;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.2);font-family:inherit';
   var euro=pq.price?' · €'+Number(pq.price).toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2}):'';
   var notePart=pq.notes?' · <em style="font-style:normal;color:#BFDBFE">'+escapeAttr(pq.notes)+'</em>':'';
-  b.innerHTML='<span style="flex:1">📋 <strong>Quote pending:</strong> '+escapeAttr(pq.supplier||'?')+euro+notePart+'</span>'
+  var countBadge=total>1?' <span style="background:rgba(255,255,255,.25);border-radius:10px;padding:1px 7px;font-size:11px;font-weight:700">'+total+' pending</span>':'';
+  b.innerHTML='<span style="flex:1">📋 <strong>Quote pending:</strong> '+escapeAttr(pq.supplier||'?')+euro+notePart+countBadge+'</span>'
     +'<button onclick="openPendingQuotePicker()" style="background:#fff;color:#1D4ED8;border:none;border-radius:4px;padding:5px 12px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap">Attach to BOM item →</button>'
-    +'<button onclick="document.getElementById(\'pq-banner\').remove()" style="background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:22px;line-height:1;padding:0 0 0 8px">×</button>';
+    +'<button onclick="dismissPendingQuote()" style="background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:22px;line-height:1;padding:0 0 0 8px">×</button>';
   document.body.prepend(b);
 }
 
+function dismissPendingQuote(){
+  var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
+  queue.shift();
+  if(queue.length>0){
+    localStorage.setItem('_pendingQuotes',JSON.stringify(queue));
+    showPendingQuoteBanner(queue[0],queue.length);
+  } else {
+    localStorage.removeItem('_pendingQuotes');
+    var b=document.getElementById('pq-banner'); if(b) b.remove();
+  }
+}
+
 function openPendingQuotePicker(){
-  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
+  var pq=queue[0]||{};
   var navBtn=document.querySelector('.nav-btn[data-tab="items"]');
   if(navBtn&&!navBtn.classList.contains('active')) navBtn.click();
   var existing=document.getElementById('pq-picker');
@@ -4655,34 +4673,66 @@ function openPendingQuotePicker(){
       +'<span style="font-size:13px;font-weight:600;color:#1E293B">'+escapeAttr(it.name)+'</span>'
       +'<span style="font-size:11px;color:#94A3B8">'+escapeAttr(ph?ph.name:'No phase')+'</span></div>';
   }).join('');
+  var queueBadge=queue.length>1?'<span style="font-size:11px;color:#3B82F6;font-weight:700;background:#EFF6FF;border-radius:8px;padding:2px 8px;flex-shrink:0">'+queue.length+' queued</span>':'';
   overlay.innerHTML='<div style="background:#fff;border-radius:8px;width:420px;max-height:70vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3)">'
-    +'<div style="padding:16px 20px;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;justify-content:space-between">'
-    +'<span style="font-weight:700;font-size:14px">📋 Select BOM item for this quote</span>'
-    +'<button onclick="document.getElementById(\'pq-picker\').remove()" style="background:none;border:none;cursor:pointer;font-size:22px;color:#94A3B8;line-height:1">×</button></div>'
+    +'<div style="padding:14px 20px;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;gap:8px">'
+    +'<div style="display:flex;flex-direction:column;gap:2px;flex:1;overflow:hidden">'
+    +'<span style="font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">📋 '+escapeAttr(pq.supplier||'Quote')+' — select item</span>'
+    +(pq.pageTitle?'<span style="font-size:11px;color:#64748B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+escapeAttr(pq.pageTitle)+'</span>':'')
+    +'</div>'+queueBadge
+    +'<button onclick="document.getElementById(\'pq-picker\').remove()" style="background:none;border:none;cursor:pointer;font-size:20px;color:#94A3B8;line-height:1;flex-shrink:0">×</button></div>'
     +'<input oninput="filterPqList(this.value)" placeholder="Search items…" style="margin:10px 14px;padding:7px 10px;border:1px solid #E2E8F0;border-radius:4px;font-size:13px;outline:none;font-family:inherit">'
-    +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+(rows||'<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>')+'</div></div>';
+    +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+(rows||'<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>')+'</div>'
+    +'<div style="padding:10px 16px;border-top:1px solid #E2E8F0;flex-shrink:0;background:#F8FAFC">'
+    +'<button onclick="showCreateItemInPicker()" style="width:100%;background:none;border:1px solid #2563EB;color:#2563EB;border-radius:4px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">+ Create new BOM item</button>'
+    +'</div></div>';
   document.body.appendChild(overlay);
-  var _pqM=overlay.querySelector(':scope>div');if(_pqM){var _pqF=document.createElement('div');_pqF.style.cssText='padding:10px 16px;border-top:1px solid #E2E8F0;flex-shrink:0;background:#F8FAFC';var _pqC=document.createElement('button');_pqC.textContent='+ Create new BOM item';_pqC.style.cssText='width:100%;background:none;border:1px solid #2563EB;color:#2563EB;border-radius:4px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit';_pqC.onclick=showCreateItemInPicker;_pqF.appendChild(_pqC);_pqM.appendChild(_pqF);}
   overlay.querySelector('input').focus();
 }
 
 function filterPqList(q){
   var qq=q.toLowerCase();
+  var vis=0;
   document.querySelectorAll('#pq-item-list > div[onclick]').forEach(function(r){
-    r.style.display=r.textContent.toLowerCase().indexOf(qq)>=0?'':'none';
+    var show=r.textContent.toLowerCase().indexOf(qq)>=0;
+    r.style.display=show?'':'none';
+    if(show) vis++;
   });
+  var hint=document.getElementById('pq-no-results');
+  if(vis===0&&qq){
+    if(!hint){
+      hint=document.createElement('div');
+      hint.id='pq-no-results';
+      hint.style.cssText='padding:16px;text-align:center';
+      var list=document.getElementById('pq-item-list');
+      if(list) list.appendChild(hint);
+    }
+    var safe=q.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    hint.innerHTML='<div style="color:#94A3B8;font-size:12px;margin-bottom:10px">No items match &ldquo;'+safe+'&rdquo;</div>'
+      +'<button onclick="showCreateItemInPicker(document.querySelector(\'#pq-picker input\').value)" style="background:#2563EB;color:#fff;border:none;border-radius:4px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">+ Create &ldquo;'+safe+'&rdquo;</button>';
+    hint.style.display='';
+  } else if(hint){
+    hint.style.display='none';
+  }
 }
 
 function applyPendingQuote(itemId){
-  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
+  var pq=queue[0]||{};
   var it=itemById(Number(itemId)); if(!it) return;
   var newQ={id:S.nextQuoteId++,supplier:pq.supplier||'',unitPrice:Number(pq.price)||0,date:new Date().toISOString().slice(0,10),notes:pq.notes||'',link:pq.link||'',chosen:it.quotes.length===0,documents:[]};
   it.quotes.push(newQ);
   expandedItems.add(Number(itemId));
   saveState(); renderItems();
   document.getElementById('pq-picker')?.remove();
-  document.getElementById('pq-banner')?.remove();
-  sessionStorage.removeItem('_pendingQuote');
+  queue.shift();
+  if(queue.length>0){
+    localStorage.setItem('_pendingQuotes',JSON.stringify(queue));
+    showPendingQuoteBanner(queue[0],queue.length);
+  } else {
+    localStorage.removeItem('_pendingQuotes');
+    var b=document.getElementById('pq-banner'); if(b) b.remove();
+  }
 }
 
 // ===================== BOOKMARKLET PANEL & CREATE-FROM-QUOTE =====================
@@ -4744,39 +4794,44 @@ function downloadBmPage(){
     +'<div class="zone"><p>&#8679; Drag to bookmarks bar</p>'
     +'<a class="bml" href="'+safeHref+'">&#127968; Add to BOM</a></div>'
     +'<p style="font-size:11px;color:#94A3B8;margin-top:8px">Right-click &#8594; Bookmark this link if drag does not work.</p></div></div>'
-    +'<div class="step"><div class="num">2</div><div><h3>Go to any supplier page</h3><p>e.g. Gamma, Praxis, Remeha, Sanitairwinkel, Amazon.nl. The bookmarklet tries to auto-detect the price.</p></div></div>'
-    +'<div class="step"><div class="num">3</div><div><h3>Click the bookmarklet</h3><p>A form pops up top-right: adjust supplier, price, add notes &#8594; click Open in Dashboard.</p></div></div>'
-    +'<div class="step"><div class="num">4</div><div><h3>Attach or create in the BOM</h3><p>A blue banner appears. Click Attach to BOM item to add to an existing item, or Create new BOM item to make a new one on the spot.</p></div></div>'
+    +'<div class="step"><div class="num">2</div><div><h3>Go to any supplier page</h3><p>e.g. Gamma, Praxis, Remeha, Sanitairwinkel. The bookmarklet tries to auto-detect the price.</p></div></div>'
+    +'<div class="step"><div class="num">3</div><div><h3>Click the bookmarklet</h3><p>A form pops up top-right. Adjust supplier, price, add notes &#8594; Open in Dashboard. Repeat on multiple pages to queue several quotes.</p></div></div>'
+    +'<div class="step"><div class="num">4</div><div><h3>Attach or create in the BOM</h3><p>The blue banner shows how many quotes are queued. Process them one by one: attach to an existing item, or create a new BOM item on the spot.</p></div></div>'
     +'</div></body></html>';
   var blob=new Blob([html],{type:'text/html;charset=utf-8'});
   var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bom-bookmarklet.html';a.click();URL.revokeObjectURL(a.href);
 }
 
-function showCreateItemInPicker(){
+function showCreateItemInPicker(prefillName){
   var existing=document.getElementById('pq-create-form');
-  if(existing){existing.remove();return;}
-  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
-  var modal=document.querySelector('#pq-picker > div');
-  if(!modal) return;
+  if(existing&&prefillName===undefined){existing.remove();document.querySelectorAll('#pq-item-list > div').forEach(function(r){r.style.display='';});return;}
+  if(existing) existing.remove();
+  var list=document.getElementById('pq-item-list');
+  if(!list) return;
+  list.querySelectorAll('div').forEach(function(r){r.style.display='none';});
   var form=document.createElement('div');
   form.id='pq-create-form';
-  form.style.cssText='padding:12px 16px;border-top:2px solid #2563EB;background:#EFF6FF;flex-shrink:0';
+  form.style.cssText='padding:16px;background:#EFF6FF;min-height:100%';
   var phaseOpts=(S.phases||[]).map(function(p){
-    var indent=p.parentId?'&nbsp;&nbsp;':'';
+    var indent=p.parentId?'  ':'';
     return '<option value="'+p.id+'">'+indent+escapeAttr(p.name)+'</option>';
   }).join('');
-  form.innerHTML='<div style="font-size:11px;font-weight:700;color:#1D4ED8;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">&#8853; New BOM item</div>'
-    +'<div style="display:flex;flex-direction:column;gap:6px">'
-    +'<input id="pq-new-name" placeholder="Item name (required)" style="padding:7px 9px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;outline:none;width:100%;font-family:inherit">'
-    +'<select id="pq-new-phase" style="padding:7px 9px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;background:#fff;width:100%;font-family:inherit"><option value="">-- No phase --</option>'+phaseOpts+'</select>'
-    +'<button onclick="createAndAttachQuote()" style="width:100%;padding:9px;background:#2563EB;color:#fff;border:none;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">Create item &amp; attach quote &#8594;</button>'
+  var safeVal=prefillName?String(prefillName).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):'';
+  form.innerHTML='<div style="font-size:11px;font-weight:700;color:#1D4ED8;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em">&#8853; New BOM item</div>'
+    +'<div style="display:flex;flex-direction:column;gap:8px">'
+    +'<input id="pq-new-name" placeholder="Item name (required)" value="'+safeVal+'" style="padding:8px 10px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;outline:none;width:100%;font-family:inherit;background:#fff">'
+    +'<select id="pq-new-phase" style="padding:8px 10px;border:1px solid #93C5FD;border-radius:4px;font-size:13px;background:#fff;width:100%;font-family:inherit"><option value="">-- No phase --</option>'+phaseOpts+'</select>'
+    +'<button onclick="createAndAttachQuote()" style="width:100%;padding:10px;background:#2563EB;color:#fff;border:none;border-radius:4px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">Create item &amp; attach quote &#8594;</button>'
+    +'<button onclick="document.getElementById(\'pq-create-form\').remove();document.querySelectorAll(\'#pq-item-list>div\').forEach(function(r){r.style.display=\'\';})" style="width:100%;padding:7px;background:none;border:1px solid #CBD5E1;color:#64748B;border-radius:4px;font-size:12px;cursor:pointer;font-family:inherit">&#8592; Back to item list</button>'
     +'</div>';
-  modal.appendChild(form);
-  document.getElementById('pq-new-name').focus();
+  list.appendChild(form);
+  var nameEl=document.getElementById('pq-new-name');
+  if(nameEl){nameEl.focus();nameEl.select();}
 }
 
 function createAndAttachQuote(){
-  var pq=JSON.parse(sessionStorage.getItem('_pendingQuote')||'{}');
+  var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
+  var pq=queue[0]||{};
   var nameEl=document.getElementById('pq-new-name');
   var name=(nameEl?nameEl.value:'').trim();
   if(!name){if(nameEl)nameEl.style.borderColor='#EF4444';return;}
@@ -4788,8 +4843,14 @@ function createAndAttachQuote(){
   expandedItems.add(newId);
   saveState(); renderItems();
   document.getElementById('pq-picker')?.remove();
-  document.getElementById('pq-banner')?.remove();
-  sessionStorage.removeItem('_pendingQuote');
+  queue.shift();
+  if(queue.length>0){
+    localStorage.setItem('_pendingQuotes',JSON.stringify(queue));
+    showPendingQuoteBanner(queue[0],queue.length);
+  } else {
+    localStorage.removeItem('_pendingQuotes');
+    var b=document.getElementById('pq-banner'); if(b) b.remove();
+  }
   var navBtn=document.querySelector('.nav-btn[data-tab="items"]');
   if(navBtn&&!navBtn.classList.contains('active')) navBtn.click();
   setTimeout(function(){var row=document.querySelector('[data-item-row="'+newId+'"]');if(row)row.scrollIntoView({behavior:'smooth',block:'center'});},120);
