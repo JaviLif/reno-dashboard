@@ -668,7 +668,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -3644,7 +3644,7 @@ function initHeatPump(){
   function render(){
     var r=calc(),total=r.Qtot;
     $('ro-kw').innerHTML=nf(total/1000,1)+'<span>kW</span>';
-    $('ro-wm2').innerHTML=(r.GO>0?Math.round(total/r.GO):0)+'<span>W/mÂ²</span>';
+    $('ro-wm2').innerHTML=(r.GO>0?Math.round(total/r.GO):0)+'<span>W/m²</span>';
     $('ro-trans').innerHTML=nf(r.Qtrans/1000,1)+'<span>kW</span>';
     $('ro-vent').innerHTML=nf(r.Qvent/1000,1)+'<span>kW</span>';
     $('ro-ua').innerHTML=Math.round(r.uaTot+r.uaVent+r.uaInf)+'<span>W/K</span>';
@@ -3657,13 +3657,13 @@ function initHeatPump(){
     });
     function sub(name,ua){
       var kw=ua*r.dT*r.rhF/1000;
-      return '<tr class="sub"><td style="padding-left:16px">'+name+'</td><td>â€”</td><td>â€”</td><td>â€”</td><td>'
+      return '<tr class="sub"><td style="padding-left:16px">'+name+'</td><td>—</td><td>—</td><td>—</td><td>'
         +nf(ua,1)+'</td><td>'+nf(kw,2)+'</td><td class="pct">'+nf(total>0?kw*1000/total*100:0,0)+'</td></tr>';
     }
     tb+=sub('Thermal bridges',r.uaBridge);
     tb+=sub('Ventilation (after recovery)',r.uaVent);
     tb+=sub('Infiltration',r.uaInf);
-    tb+='<tr class="total"><td>Design load Â· Î”Tâ€¯=â€¯'+nf(r.dT,0)+'â€¯K</td><td></td><td></td><td></td><td>'
+    tb+='<tr class="total"><td>Design load · ΔT = '+nf(r.dT,0)+' K</td><td></td><td></td><td></td><td>'
       +Math.round(r.uaTot+r.uaVent+r.uaInf)+'</td><td>'+nf(total/1000,2)+'</td><td></td></tr>';
     $('tbody').innerHTML=tb;
     var segs=r.rows.map(function(x){return {n:x.n,kw:x.UA*r.dT*r.rhF,U:x.U};});
@@ -3685,27 +3685,27 @@ function initHeatPump(){
     var pick=classes.find(function(c){return c>=kw;})||Math.ceil(kw);
     var over=kw>0?pick/kw:1;
     $('ro-hp').innerHTML=pick+'<span>kW</span>';
-    setV('v-hp',over>1.55?'warn':'ok',pick+' kW at '+nf(num('te'),0)+'â€¯Â°C',
+    setV('v-hp',over>1.55?'warn':'ok',pick+' kW at '+nf(num('te'),0)+' °C',
       'Need '+nf(kw,1)+' kW. Nearest class: '+pick+' kW ('+nf((over-1)*100,0)+'% margin'
-      +(over>1.55?') â€” oversized; compressor will short-cycle. Use a modulating unit.':') â€” workable.')
+      +(over>1.55?') — oversized; compressor will short-cycle. Use a modulating unit.':') — workable.')
       +' DHW sized separately.');
     var heated=r.foot+r.eA;
     var wm2=heated>0?total/heated:0;
-    setV('v-ufh',wm2>70?'bad':(wm2>50?'warn':'ok'),Math.round(wm2)+' W/mÂ² of floor',
-      wm2>70?'Beyond UFH at 35â€¯Â°C flow. Needs higher flow temp or extra emitters â€” COP suffers.'
+    setV('v-ufh',wm2>70?'bad':(wm2>50?'warn':'ok'),Math.round(wm2)+' W/m² of floor',
+      wm2>70?'Beyond UFH at 35 °C flow. Needs higher flow temp or extra emitters — COP suffers.'
       :(wm2>50?'Tight. Plan 15 cm spacing; coldest rooms may need support.'
-      :'Comfortable for UFH at 35â€¯Â°C flow. Low flow temp = high COP.'));
-    var worst=segs[0]||{n:'â€”',kw:0};
+      :'Comfortable for UFH at 35 °C flow. Low flow temp = high COP.'));
+    var worst=segs[0]||{n:'—',kw:0};
     var wp=total>0?worst.kw/total*100:0;
     setV('v-worst',wp>35?'bad':(wp>22?'warn':'ok'),worst.n,
       nf(wp,0)+'% of loss, '+nf(worst.kw/1000,1)+' kW. '
-      +(wp>30?'Dominates the balance â€” best return on insulation spend.':'Reasonably spread.'));
+      +(wp>30?'Dominates the balance — best return on insulation spend.':'Reasonably spread.'));
     var spec=r.GO>0?total/r.GO:0,lab,cls,txt;
     if(spec<45){lab='Excellent';cls='ok';txt='New-build territory. All-electric without reservation.';}
     else if(spec<70){lab='Good';cls='ok';txt='Sound envelope for a low-temperature heat pump.';}
     else if(spec<100){lab='Moderate';cls='warn';txt='Heat pump works, but at high flow temp and poor COP. Insulate first.';}
     else{lab='Poor';cls='bad';txt='Typical untouched 1950s. Insulate before fitting a heat pump.';}
-    setV('v-label',cls,lab,Math.round(spec)+' W/mÂ². '+txt);
+    setV('v-label',cls,lab,Math.round(spec)+' W/m². '+txt);
   }
   var LABELS={rcw:['v-rcw',2],rcr:['v-rcr',2],rcf:['v-rcf',2],ug:['v-ug',2],ud:['v-ud',2],
               tb:['v-tb',0],bf:['v-bf',2],eta:['v-eta',0],rh:['v-rh',0]};
