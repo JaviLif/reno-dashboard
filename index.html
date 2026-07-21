@@ -668,7 +668,7 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="set-title">Version History</div>
         <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
           <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+          <div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -4656,6 +4656,10 @@ function dismissPendingQuote(){
   }
 }
 
+function _pqPhaseLabel(p){
+  return (p&&p.number?p.number+'. ':'')+escapeAttr(p?p.name:'');
+}
+
 function openPendingQuotePicker(){
   var queue=JSON.parse(localStorage.getItem('_pendingQuotes')||'[]');
   var pq=queue[0]||{};
@@ -4666,13 +4670,33 @@ function openPendingQuotePicker(){
   var overlay=document.createElement('div');
   overlay.id='pq-picker';
   overlay.style.cssText='position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center';
-  var sortedItems=(S.items||[]).filter(function(it){return it.name;}).sort(function(a,b){return (a.name||'').localeCompare(b.name||'');});
-  var rows=sortedItems.map(function(it){
-    var ph=(S.phases||[]).find(function(p){return p.id===it.phaseId;});
-    return '<div onclick="applyPendingQuote('+it.id+')" style="padding:10px 16px;cursor:pointer;border-bottom:1px solid #F1F5F9;display:flex;flex-direction:column;gap:2px" onmouseover="this.style.background=\'#EFF6FF\'" onmouseout="this.style.background=\'\'">'
-      +'<span style="font-size:13px;font-weight:600;color:#1E293B">'+escapeAttr(it.name)+'</span>'
-      +'<span style="font-size:11px;color:#94A3B8">'+escapeAttr(ph?ph.name:'No phase')+'</span></div>';
-  }).join('');
+
+  // Build phase-grouped item list
+  var hdrStyle='padding:5px 16px 4px;font-size:10px;font-weight:700;color:#64748B;text-transform:uppercase;letter-spacing:.06em;background:#F8FAFC;border-bottom:1px solid #F1F5F9;border-top:1px solid #F1F5F9;position:sticky;top:0;z-index:1';
+  var itemHtml=function(it){
+    return '<div onclick="applyPendingQuote('+it.id+')" data-pq-item style="padding:10px 16px;cursor:pointer;border-bottom:1px solid #F1F5F9;display:flex;flex-direction:column;gap:2px" onmouseover="this.style.background=\'#EFF6FF\'" onmouseout="this.style.background=\'\'">'
+      +'<span style="font-size:13px;font-weight:600;color:#1E293B">'+escapeAttr(it.name)+'</span></div>';
+  };
+  var rows='';
+  var seenIds=[];
+  var allItems=(S.items||[]).filter(function(it){return it.name;});
+  var tops=typeof topPhases==='function'?topPhases():(S.phases||[]).filter(function(p){return !p.parentId;});
+  tops.forEach(function(tp){
+    var kids=typeof childrenOf==='function'?childrenOf(tp.id):(S.phases||[]).filter(function(p){return p.parentId===tp.id;});
+    var allSubs=[tp].concat(kids);
+    var subIds=allSubs.map(function(p){return p.id;});
+    var phItems=allItems.filter(function(it){return subIds.indexOf(it.phaseId)>=0;}).sort(function(a,b){return (a.name||'').localeCompare(b.name||'');});
+    if(!phItems.length) return;
+    rows+='<div data-pq-ph style="'+hdrStyle+'">'+_pqPhaseLabel(tp)+'</div>';
+    phItems.forEach(function(it){seenIds.push(it.id);rows+=itemHtml(it);});
+  });
+  var leftOver=allItems.filter(function(it){return seenIds.indexOf(it.id)<0;}).sort(function(a,b){return (a.name||'').localeCompare(b.name||'');});
+  if(leftOver.length){
+    rows+='<div data-pq-ph style="'+hdrStyle+'">Other</div>';
+    leftOver.forEach(function(it){rows+=itemHtml(it);});
+  }
+  if(!rows) rows='<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>';
+
   var queueBadge=queue.length>1?'<span style="font-size:11px;color:#3B82F6;font-weight:700;background:#EFF6FF;border-radius:8px;padding:2px 8px;flex-shrink:0">'+queue.length+' queued</span>':'';
   overlay.innerHTML='<div style="background:#fff;border-radius:8px;width:420px;max-height:70vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3)">'
     +'<div style="padding:14px 20px;border-bottom:1px solid #E2E8F0;display:flex;align-items:center;gap:8px">'
@@ -4682,7 +4706,7 @@ function openPendingQuotePicker(){
     +'</div>'+queueBadge
     +'<button onclick="document.getElementById(\'pq-picker\').remove()" style="background:none;border:none;cursor:pointer;font-size:20px;color:#94A3B8;line-height:1;flex-shrink:0">×</button></div>'
     +'<input oninput="filterPqList(this.value)" placeholder="Search items…" style="margin:10px 14px;padding:7px 10px;border:1px solid #E2E8F0;border-radius:4px;font-size:13px;outline:none;font-family:inherit">'
-    +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+(rows||'<div style="padding:16px;color:#94A3B8;font-size:13px">No BOM items yet</div>')+'</div>'
+    +'<div id="pq-item-list" style="overflow-y:auto;flex:1">'+rows+'</div>'
     +'<div style="padding:10px 16px;border-top:1px solid #E2E8F0;flex-shrink:0;background:#F8FAFC">'
     +'<button onclick="showCreateItemInPicker()" style="width:100%;background:none;border:1px solid #2563EB;color:#2563EB;border-radius:4px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">+ Create new BOM item</button>'
     +'</div></div>';
@@ -4693,10 +4717,20 @@ function openPendingQuotePicker(){
 function filterPqList(q){
   var qq=q.toLowerCase();
   var vis=0;
-  document.querySelectorAll('#pq-item-list > div[onclick]').forEach(function(r){
+  document.querySelectorAll('#pq-item-list [data-pq-item]').forEach(function(r){
     var show=r.textContent.toLowerCase().indexOf(qq)>=0;
     r.style.display=show?'':'none';
     if(show) vis++;
+  });
+  // Hide phase headers with no visible items following them
+  document.querySelectorAll('#pq-item-list [data-pq-ph]').forEach(function(hdr){
+    var next=hdr.nextElementSibling;
+    var hasVis=false;
+    while(next&&!next.hasAttribute('data-pq-ph')){
+      if(next.style.display!=='none') hasVis=true;
+      next=next.nextElementSibling;
+    }
+    hdr.style.display=hasVis?'':'none';
   });
   var hint=document.getElementById('pq-no-results');
   if(vis===0&&qq){
@@ -4794,9 +4828,9 @@ function downloadBmPage(){
     +'<div class="zone"><p>&#8679; Drag to bookmarks bar</p>'
     +'<a class="bml" href="'+safeHref+'">&#127968; Add to BOM</a></div>'
     +'<p style="font-size:11px;color:#94A3B8;margin-top:8px">Right-click &#8594; Bookmark this link if drag does not work.</p></div></div>'
-    +'<div class="step"><div class="num">2</div><div><h3>Go to any supplier page</h3><p>e.g. Gamma, Praxis, Remeha, Sanitairwinkel. The bookmarklet tries to auto-detect the price.</p></div></div>'
-    +'<div class="step"><div class="num">3</div><div><h3>Click the bookmarklet</h3><p>A form pops up top-right. Adjust supplier, price, add notes &#8594; Open in Dashboard. Repeat on multiple pages to queue several quotes.</p></div></div>'
-    +'<div class="step"><div class="num">4</div><div><h3>Attach or create in the BOM</h3><p>The blue banner shows how many quotes are queued. Process them one by one: attach to an existing item, or create a new BOM item on the spot.</p></div></div>'
+    +'<div class="step"><div class="num">2</div><div><h3>Go to any supplier page</h3><p>e.g. Gamma, Praxis, Remeha, Sanitairwinkel.</p></div></div>'
+    +'<div class="step"><div class="num">3</div><div><h3>Click the bookmarklet</h3><p>A form pops up top-right. Adjust supplier, price, notes &#8594; Open in Dashboard. Repeat on multiple pages to queue several quotes.</p></div></div>'
+    +'<div class="step"><div class="num">4</div><div><h3>Attach or create in the BOM</h3><p>The blue banner shows how many quotes are queued. Items in the picker are grouped by phase. Attach to an existing item, or create a new one on the spot.</p></div></div>'
     +'</div></body></html>';
   var blob=new Blob([html],{type:'text/html;charset=utf-8'});
   var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='bom-bookmarklet.html';a.click();URL.revokeObjectURL(a.href);
@@ -4812,10 +4846,16 @@ function showCreateItemInPicker(prefillName){
   var form=document.createElement('div');
   form.id='pq-create-form';
   form.style.cssText='padding:16px;background:#EFF6FF;min-height:100%';
-  var phaseOpts=(S.phases||[]).map(function(p){
-    var indent=p.parentId?'  ':'';
-    return '<option value="'+p.id+'">'+indent+escapeAttr(p.name)+'</option>';
-  }).join('');
+  // Phase options in correct order using topPhases/childrenOf
+  var phaseOpts='';
+  var _pts=typeof topPhases==='function'?topPhases():(S.phases||[]).filter(function(p){return !p.parentId;});
+  _pts.forEach(function(p){
+    phaseOpts+='<option value="'+p.id+'">'+(p.number?p.number+'. ':'')+escapeAttr(p.name)+'</option>';
+    var _kids=typeof childrenOf==='function'?childrenOf(p.id):(S.phases||[]).filter(function(c){return c.parentId===p.id;});
+    _kids.forEach(function(c){
+      phaseOpts+='<option value="'+c.id+'">  '+(c.number?c.number+'. ':'')+escapeAttr(c.name)+'</option>';
+    });
+  });
   var safeVal=prefillName?String(prefillName).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):'';
   form.innerHTML='<div style="font-size:11px;font-weight:700;color:#1D4ED8;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em">&#8853; New BOM item</div>'
     +'<div style="display:flex;flex-direction:column;gap:8px">'
