@@ -98,6 +98,16 @@
           "date": "",
           "notes": "",
           "chosen": true
+        },
+        {
+          "id": 115,
+          "supplier": "glaskoning.nl",
+          "unitPrice": 0,
+          "date": "2026-07-21",
+          "notes": "",
+          "link": "https://www.glaskoning.nl/bezorgen-afhalen/",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -3438,9 +3448,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784628262499,
+  "_savedAt": 1784628274437,
   "nextOrderId": 11,
-  "nextQuoteId": 115,
+  "nextQuoteId": 116,
   "nextItemId": 227,
   "_version": "dashboard-v1",
   "phases": [
