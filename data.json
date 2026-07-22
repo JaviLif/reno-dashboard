@@ -1524,7 +1524,23 @@
           "link": ""
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 11,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 750,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "categoryId": 8,
       "unit": "pcs",
       "phaseId": 65,
@@ -3490,8 +3506,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784733498382,
-  "nextOrderId": 11,
+  "_savedAt": 1784733511990,
+  "nextOrderId": 12,
   "nextQuoteId": 122,
   "nextItemId": 234,
   "_version": "dashboard-v1",
