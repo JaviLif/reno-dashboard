@@ -62,7 +62,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 232,
@@ -1530,7 +1531,7 @@
       "documents": [],
       "id": 115,
       "description": "",
-      "link": "",
+      "link": "https://www.ventilatieland.nl/nl_NL/basket/index/",
       "status": "not-ordered"
     },
     {
@@ -3489,7 +3490,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784728364245,
+  "_savedAt": 1784733498382,
   "nextOrderId": 11,
   "nextQuoteId": 122,
   "nextItemId": 234,
