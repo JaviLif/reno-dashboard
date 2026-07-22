@@ -1514,7 +1514,7 @@
       "qty": 1,
       "quotes": [
         {
-          "unitPrice": 750,
+          "unitPrice": 500,
           "notes": "",
           "id": 19,
           "chosen": true,
@@ -3506,7 +3506,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784733517101,
+  "_savedAt": 1784733528231,
   "nextOrderId": 12,
   "nextQuoteId": 122,
   "nextItemId": 234,
