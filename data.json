@@ -1525,24 +1525,7 @@
           "link": "https://www.ventilatieshop.com/spirobuizen-en-hulpstukken/spiro-hulpstukken-safe/t-stukken-90-graden-safe/?vs_diameter=150+mm"
         }
       ],
-      "orders": [
-        {
-          "id": 11,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 750,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
+      "orders": [],
       "categoryId": 8,
       "unit": "pcs",
       "phaseId": 65,
@@ -3508,7 +3491,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784751776852,
+  "_savedAt": 1784751867335,
   "nextOrderId": 13,
   "nextQuoteId": 122,
   "nextItemId": 234,
