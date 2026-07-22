@@ -40,6 +40,31 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 233,
+      "phaseId": 65,
+      "categoryId": null,
+      "name": "WTW Unit 2 Hand",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 121,
+          "supplier": "deventilatiekoning.nl",
+          "unitPrice": 695,
+          "date": "2026-07-22",
+          "notes": "WTW Unit Second Hand",
+          "link": "https://www.deventilatiekoning.nl/product-page/itho-hru-eco-350-hp-wtw-unit",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 232,
       "phaseId": 34,
       "categoryId": null,
@@ -51,7 +76,8 @@
       "notes": "Frost Protection Valve",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 231,
@@ -65,7 +91,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 230,
@@ -79,7 +106,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 229,
@@ -93,7 +121,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 227,
@@ -3460,10 +3489,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784666756916,
+  "_savedAt": 1784728364245,
   "nextOrderId": 11,
-  "nextQuoteId": 121,
-  "nextItemId": 233,
+  "nextQuoteId": 122,
+  "nextItemId": 234,
   "_version": "dashboard-v1",
   "phases": [
     {
