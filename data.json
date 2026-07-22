@@ -282,7 +282,7 @@
     {
       "id": 220,
       "phaseId": 34,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Remeha",
       "description": "klokthermostaat ",
       "link": "https://www.warmteservice.nl/Verwarming/Thermostaat/Slimme-thermostaat/Remeha-eTwist-slimme-klokthermostaat-incl-Gateway-v-3/p/14256332?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE&gad_source=1&gad_campaignid=21164478438&gbraid=0AAAAADgSUFWgQx0nbVRPq61NQZEn0LPBB&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE",
@@ -3506,7 +3506,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784733710895,
+  "_savedAt": 1784733713007,
   "nextOrderId": 12,
   "nextQuoteId": 122,
   "nextItemId": 234,
