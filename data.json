@@ -230,7 +230,7 @@
     {
       "id": 222,
       "phaseId": 34,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "onluchter",
       "description": "",
       "link": "https://www.warmteservice.nl/Verwarming/CV-aansluitmateriaal/Automatische-ontluchter/BONFIX-Automatische-ontluchter/p/L01106?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE&gad_source=1&gad_campaignid=20800842143&gbraid=0AAAAADgSUFVzN3GHV6TnpOkDAaVR0zf14&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE",
@@ -3506,7 +3506,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784733714783,
+  "_savedAt": 1784733716847,
   "nextOrderId": 12,
   "nextQuoteId": 122,
   "nextItemId": 234,
