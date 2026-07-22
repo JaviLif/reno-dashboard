@@ -98,7 +98,7 @@
     {
       "id": 230,
       "phaseId": 34,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Hydraulische Weiche",
       "description": "",
       "link": "",
@@ -3506,7 +3506,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784733719287,
+  "_savedAt": 1784733722295,
   "nextOrderId": 12,
   "nextQuoteId": 122,
   "nextItemId": 234,
