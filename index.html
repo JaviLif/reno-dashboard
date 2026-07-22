@@ -601,14 +601,14 @@ body.col-resizing *{cursor:col-resize!important}
 
 <!-- SETTINGS -->
 <div id="tab-settings" class="tab">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:960px">
     <div>
-      <div class="set-title">Project Details</div>
+      <div class="set-title">Project</div>
       <div class="card"><div class="card-body">
         <div class="fm-grp"><label class="fm-lbl">Project name</label><input class="fm-inp" id="s-name" type="text"></div>
         <div class="fm-grp"><label class="fm-lbl">Address</label><input class="fm-inp" id="s-addr" type="text" placeholder="e.g. Keizersgracht 123, Amsterdam"></div>
         <div class="fm-row">
-          <div class="fm-grp"><label class="fm-lbl">Total Budget (€)</label><input class="fm-inp" id="s-budget" type="number"></div>
+          <div class="fm-grp"><label class="fm-lbl">Total Budget</label><input class="fm-inp" id="s-budget" type="number"></div>
           <div class="fm-grp"><label class="fm-lbl">Currency</label><input class="fm-inp" id="s-currency" type="text" maxlength="3"></div>
         </div>
         <div class="fm-row">
@@ -617,18 +617,6 @@ body.col-resizing *{cursor:col-resize!important}
         </div>
         <button class="btn btn-pri" onclick="saveSettings()">Save</button>
       </div></div>
-      <div style="margin-top:20px">
-        <div class="set-title">Data</div>
-        <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px">
-          <div class="flex flex-wrap">
-            <button class="btn btn-ghost btn-sm" onclick="exportData()">⬇ Export JSON</button>
-            <label class="btn btn-ghost btn-sm" style="cursor:pointer">⬆ Import JSON<input type="file" accept=".json" style="display:none" onchange="importData(event)"></label>
-            <button class="btn btn-danger btn-sm" onclick="clearItemsAndTasks()">🧹 Clear Items & Tasks</button>
-            <button class="btn btn-danger btn-sm" onclick="resetData()">🗑 Full Reset</button>
-          </div>
-        </div></div>
-      </div>
-      <div style="margin-top:20px">
       <div style="margin-top:20px">
         <div class="set-title">Team</div>
         <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px">
@@ -640,9 +628,45 @@ body.col-resizing *{cursor:col-resize!important}
           </div>
         </div></div>
       </div>
-        <div style="margin-top:20px"><div class="set-title">Spaces / Areas</div><div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px"><div id="spaces-list" style="min-height:24px"></div><div class="fm-row" style="align-items:flex-end;gap:8px"><div class="fm-grp" style="margin:0;flex:2"><label class="fm-lbl">Name</label><input class="fm-inp" id="sp-name" type="text" placeholder="e.g. Kitchen, Bathroom..."></div><input type="color" id="sp-color" value="#6366f1" style="height:38px;width:44px;border:1px solid var(--g200);padding:2px;border-radius:6px;cursor:pointer;flex-shrink:0"><button class="btn btn-pri btn-sm" style="flex-shrink:0;height:38px" onclick="addSpace()">+ Add</button></div></div></div></div><div class="set-title">GitHub Sync</div>
+      <div style="margin-top:20px">
+        <div class="set-title">Spaces / Areas</div>
+        <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px">
+          <div id="spaces-list" style="min-height:24px"></div>
+          <div class="fm-row" style="align-items:flex-end;gap:8px">
+            <div class="fm-grp" style="margin:0;flex:2"><label class="fm-lbl">Name</label><input class="fm-inp" id="sp-name" type="text" placeholder="e.g. Kitchen, Bathroom..."></div>
+            <input type="color" id="sp-color" value="#6366f1" style="height:38px;width:44px;border:1px solid var(--g200);padding:2px;border-radius:6px;cursor:pointer;flex-shrink:0">
+            <button class="btn btn-pri btn-sm" style="flex-shrink:0;height:38px" onclick="addSpace()">+ Add</button>
+          </div>
+        </div></div>
+      </div>
+      <div style="margin-top:20px">
+        <div class="set-title">Expense Categories</div>
+        <div class="card"><div class="card-body">
+          <div id="cat-list" style="margin-bottom:14px"></div>
+          <div class="fm-grp" style="margin:0"><label class="fm-lbl">Name</label><input class="fm-inp" id="new-cat-name" type="text" placeholder="e.g. Materials"></div>
+          <div class="fm-grp" style="margin:0"><label class="fm-lbl">Color</label><input class="fm-inp" id="new-cat-color" type="color" value="#2563EB" style="padding:3px;height:38px"></div>
+          <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategory()">+ Add Category</button>
+        </div></div>
+      </div>
+    </div>
+    <div>
+      <div class="set-title">Storage</div>
+      <div class="card"><div class="card-body" id="storage-info" style="padding:12px 14px"></div></div>
+      <div style="margin-top:20px">
+        <div class="set-title">Data</div>
+        <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:10px">
+          <div class="flex flex-wrap">
+            <button class="btn btn-ghost btn-sm" onclick="exportData()">&#8595; Export JSON</button>
+            <label class="btn btn-ghost btn-sm" style="cursor:pointer">&#8593; Import JSON<input type="file" accept=".json" style="display:none" onchange="importData(event)"></label>
+            <button class="btn btn-danger btn-sm" onclick="clearItemsAndTasks()">Clear Items &amp; Tasks</button>
+            <button class="btn btn-danger btn-sm" onclick="resetData()">Full Reset</button>
+          </div>
+        </div></div>
+      </div>
+      <div style="margin-top:20px">
+        <div class="set-title">GitHub Sync</div>
         <div class="card"><div class="card-body" style="display:flex;flex-direction:column;gap:12px">
-          <div style="font-size:12px;color:var(--g500);line-height:1.6">Stores your data in <strong>JaviLif/reno-dashboard</strong> on GitHub. Documents go to <code>quotes/</code>. History is full git commit log. Token stays in <em>your</em> browser only.</div>
+          <div style="font-size:12px;color:var(--g500);line-height:1.6">Sync your data to a GitHub repository. Documents go to <code>quotes/</code>. History is the full git commit log. Token stays in your browser only.</div>
           <div class="fm-row" style="align-items:flex-end;gap:8px">
             <div class="fm-grp" style="margin:0;flex:1">
               <label class="fm-lbl">GitHub PAT <span style="font-weight:400;color:var(--g400)">(repo scope)</span></label>
@@ -659,16 +683,11 @@ body.col-resizing *{cursor:col-resize!important}
         </div></div>
       </div>
     </div>
-    <div>
-      <div style="margin-bottom:20px">
-        <div class="set-title">Storage</div>
-        <div class="card"><div class="card-body" id="storage-info" style="padding:12px 14px"></div></div>
-      </div>
-      <div style="margin-bottom:20px">
-        <div class="set-title">Version History</div>
-        <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-          <div style="font-size:10px;font-weight:700;color:var(--g400);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px">Amsterdam Renovation Dashboard</div>
-          <div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+  </div>
+  <div style="margin-top:24px;max-width:960px">
+    <div class="set-title">Version History</div>
+    <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
+<div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -691,22 +710,9 @@ body.col-resizing *{cursor:col-resize!important}
           <div class="ver-row"><span class="ver-tag">v1.0.3</span><span>BOM tab redesign: classifier sidebar with phase grouping</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.2</span><span>Migrated sync from Firebase to GitHub API</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.1</span><span>Initial launch on GitHub Pages</span></div>
-        </div></div>
-      </div>
-      <div class="set-title">Expense Categories</div>
-      <div class="card"><div class="card-body">
-        <div id="cat-list" style="margin-bottom:14px"></div>
-        <div class="divider" style="height:1px;background:var(--g100);margin:12px 0"></div>
-        <div class="fm-row" style="align-items:flex-end">
-          <div class="fm-grp" style="margin:0"><label class="fm-lbl">New category name</label><input class="fm-inp" id="new-cat-name" type="text" placeholder="e.g. Materials"></div>
-          <div class="fm-grp" style="margin:0"><label class="fm-lbl">Color</label><input class="fm-inp" id="new-cat-color" type="color" value="#2563EB" style="padding:3px;height:38px"></div>
-        </div>
-        <button class="btn btn-ghost btn-sm" style="margin-top:10px" onclick="addCategory()">+ Add Category</button>
-      </div></div>
-    </div>
+    </div></div>
   </div>
 </div>
-
 <!-- HEAT PUMP CALC -->
 <style>
 #tab-heatpump{--ground:#F8FAFC;--panel:#FFFFFF;--panel-2:#F1F5F9;--line:#E2E8F0;--line-soft:#F0F4F8;--text:#1E293B;--muted:#64748B;--dim:#94A3B8;--t3:#e85d2a;--t4:#f59b1f;--t5:#d97706;--ok:#2fbf87;--warn:#f59b1f;--bad:#e85d2a;background:transparent;color:var(--text);font-family:'Archivo',system-ui,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:64px}
@@ -794,7 +800,7 @@ body.col-resizing *{cursor:col-resize!important}
 </style>
 <div id="tab-heatpump" class="tab">
 <div class="wrap">
-  <div class="eyebrow">ISSO 51 &middot; Cornelis de Grootpad 1 &middot; Corner house, 1955 &middot; <b>Design heat load</b></div>
+  <div class="eyebrow">ISSO 51 &middot; EN 12831 &middot; <b>Design heat load calculator</b></div>
   <div class="pin">
     <div class="readouts">
       <div><div class="ro-label">Design heat load</div><div class="ro-big" id="hp-ro-kw">0.0<span>kW</span></div></div>
@@ -814,18 +820,8 @@ body.col-resizing *{cursor:col-resize!important}
   <div class="grid">
     <div>
       <div class="card">
-        <h2>Scenario</h2>
-        <div class="intro">Four starting points &mdash; load a full set of values, then adjust anything below.</div>
-        <div class="presets">
-          <button class="preset on" data-p="0">Today<span>as the energy label found it</span></button>
-          <button class="preset" data-p="1">Renovated, no SATE<span>internal insulation instead</span></button>
-          <button class="preset" data-p="2">Renovated with SATE<span>for comparison only</span></button>
-          <button class="preset" data-p="3">Roof + floor only<span>the cheap wins</span></button>
-        </div>
-      </div>
-      <div class="card">
         <h2>Geometry</h2>
-        <div class="intro">Estimates, not measurements. Replace once you have real dimensions from archive dossier SQ_12530.</div>
+        <div class="intro">Estimates are fine to start. Replace with actual measurements for best accuracy.</div>
         <div class="row"><div><label>House type</label><div class="help">A <b>corner</b> house loses through front, rear and one side; mid-terrace only front and rear.</div></div><select id="hp-type"><option value="tussen">Mid-terrace</option><option value="hoek" selected>Corner</option><option value="vrij">Detached</option></select></div>
         <div class="row"><div><label>Width (m)</label><div class="help">External footprint, front fa&ccedil;ade.</div></div><input type="number" id="hp-W" value="6.0" step="0.1"></div>
         <div class="row"><div><label>Depth (m)</label><div class="help">External footprint, front to back.</div></div><input type="number" id="hp-D" value="7.5" step="0.1"></div>
@@ -834,15 +830,15 @@ body.col-resizing *{cursor:col-resize!important}
         <div class="row"><div><label>Roof pitch (&deg;)</label><div class="help">0 = flat. At 40&deg; roof area is <b>30% more</b> than footprint.</div></div><input type="number" id="hp-pitch" value="40" step="1" min="0" max="70"></div>
         <div class="row"><div><label>Glazing (m&sup2;)</label><div class="help">Total glass + frame, all exposed fa&ccedil;ades.</div></div><input type="number" id="hp-Ag" value="21" step="0.5"></div>
         <div class="row"><div><label>Doors (m&sup2;)</label><div class="help">Solid external doors only.</div></div><input type="number" id="hp-Ad" value="2" step="0.5"></div>
-        <div class="row"><div><label>Floor area (m&sup2;)</label><div class="help">Dutch <b>gebruiksoppervlak</b>. Your label: 81.</div></div><input type="number" id="hp-GO" value="81" step="1"></div>
+        <div class="row"><div><label>Floor area (m&sup2;)</label><div class="help">Dutch <b>gebruiksoppervlak</b> (NEN 2580).</div></div><input type="number" id="hp-GO" value="81" step="1"></div>
       </div>
       <div class="card">
         <h2>The envelope</h2>
         <div class="intro">Rc = thermal resistance (higher = better). U = 1/Rc (lower = better). Windows quoted in U.</div>
-        <div class="slide-row"><div class="slide-top"><label>Walls &mdash; Rc</label><span class="slide-val"><b id="hp-v-rcw">1.69</b> <em>m&sup2;K/W</em></span></div><input type="range" id="hp-rcw" min="0.2" max="10" step="0.01" value="1.69"><div class="help"><b>0.43</b> bare 1955 cavity &middot; <b>1.69</b> your label (cavity already filled) &middot; <b>4.2</b> +100mm internal lining &middot; <b>6.0</b> full SATE.</div></div>
-        <div class="slide-row"><div class="slide-top"><label>Roof &mdash; Rc</label><span class="slide-val"><b id="hp-v-rcr">0.35</b> <em>m&sup2;K/W</em></span></div><input type="range" id="hp-rcr" min="0.2" max="12" step="0.01" value="0.35"><div class="help"><b>0.35</b> today (uninsulated) &middot; <b>6.0</b> solid renovation &middot; <b>8.0</b> label target. <b>This slider matters most.</b></div></div>
+        <div class="slide-row"><div class="slide-top"><label>Walls &mdash; Rc</label><span class="slide-val"><b id="hp-v-rcw">1.69</b> <em>m&sup2;K/W</em></span></div><input type="range" id="hp-rcw" min="0.2" max="10" step="0.01" value="1.69"><div class="help"><b>0.43</b> bare 1950s cavity &middot; <b>1.69</b> cavity filled &middot; <b>4.2</b> +100mm internal lining &middot; <b>6.0</b> full SATE.</div></div>
+        <div class="slide-row"><div class="slide-top"><label>Roof &mdash; Rc</label><span class="slide-val"><b id="hp-v-rcr">0.35</b> <em>m&sup2;K/W</em></span></div><input type="range" id="hp-rcr" min="0.2" max="12" step="0.01" value="0.35"><div class="help"><b>0.35</b> uninsulated &middot; <b>6.0</b> solid renovation &middot; <b>8.0</b> passive target. <b>This slider matters most.</b></div></div>
         <div class="slide-row"><div class="slide-top"><label>Ground floor &mdash; Rc</label><span class="slide-val"><b id="hp-v-rcf">0.15</b> <em>m&sup2;K/W</em></span></div><input type="range" id="hp-rcf" min="0.1" max="8" step="0.01" value="0.15"><div class="help"><b>0.15</b> today &middot; <b>3.5</b> crawlspace insulation. Cheapest measure per W/K.</div></div>
-        <div class="slide-row"><div class="slide-top"><label>Windows &mdash; U</label><span class="slide-val"><b id="hp-v-ug">2.40</b> <em>W/m&sup2;K</em></span></div><input type="range" id="hp-ug" min="0.6" max="5.8" step="0.05" value="2.4"><div class="help"><b>5.8</b> single &middot; <b>2.8</b> old double &middot; <b>1.8</b> HR++ &middot; <b>1.1</b> triple &middot; <b>0.8</b> passive. Yours: <b>2.4</b>.</div></div>
+        <div class="slide-row"><div class="slide-top"><label>Windows &mdash; U</label><span class="slide-val"><b id="hp-v-ug">2.40</b> <em>W/m&sup2;K</em></span></div><input type="range" id="hp-ug" min="0.6" max="5.8" step="0.05" value="2.4"><div class="help"><b>5.8</b> single &middot; <b>2.8</b> old double &middot; <b>1.8</b> HR++ &middot; <b>1.1</b> triple &middot; <b>0.8</b> passive.</div></div>
         <div class="slide-row"><div class="slide-top"><label>Doors &mdash; U</label><span class="slide-val"><b id="hp-v-ud">3.00</b> <em>W/m&sup2;K</em></span></div><input type="range" id="hp-ud" min="0.8" max="5.5" step="0.05" value="3.0"><div class="help"><b>3.0</b> typical older door &middot; <b>1.4</b> modern insulated.</div></div>
         <div class="slide-row"><div class="slide-top"><label>Thermal bridges</label><span class="slide-val"><b id="hp-v-tb">10</b> <em>% on &Sigma;UA</em></span></div><input type="range" id="hp-tb" min="0" max="25" step="1" value="10"><div class="help"><b>5&ndash;8%</b> new build &middot; <b>10%</b> typical 1950s &middot; <b>12&ndash;15%</b> after internal insulation (makes bridges worse).</div></div>
         <div class="slide-row"><div class="slide-top"><label>Floor b-factor</label><span class="slide-val"><b id="hp-v-bf">0.50</b> <em>&mdash;</em></span></div><input type="range" id="hp-bf" min="0.2" max="1" step="0.05" value="0.5"><div class="help"><b>0.5</b> standard crawlspace &middot; <b>1.0</b> fully exposed to outside.</div></div>
@@ -897,7 +893,7 @@ body.col-resizing *{cursor:col-resize!important}
           <p><b>Design heat load</b> = <code>Q_fabric + Q_ventilation + Q_infiltration</code>, multiplied by reheat allowance.</p>
           <p><b>Fabric</b>: <code>U = 1/(Rc + R_surface)</code> where R_surface = 0.17 walls/doors, 0.14 roof, 0.34 floor over crawlspace. Total = <code>&Sigma;(UA &middot; b) &times; &Delta;T &times; (1 + bridges%)</code>.</p>
           <p><b>Air</b>: <code>0.34 &times; q_v &times; (1 &minus; &eta;) &times; &Delta;T</code> for ventilation + <code>0.34 &times; q_inf &times; &Delta;T</code> for infiltration. 0.34 = volumetric heat capacity of air in Wh/m&sup3;K.</p>
-          <p><b>Starting values (energy label):</b> walls Rc 1.69 (cavity filled) &middot; roof Rc 0.35 (uninsulated) &middot; floor Rc 0.15 &middot; natural ventilation &middot; plastic frames 2000/2010.</p>
+          <p><b>Default starting values:</b> walls Rc 1.69 (cavity filled 1950s) &middot; roof Rc 0.35 (uninsulated) &middot; floor Rc 0.15 &middot; natural ventilation. Adjust all values to match your property.</p>
           <p><b>Heat pump class</b> = output at design outdoor temp, not the A7/W35 nameplate. DHW sized separately. UFH delivers ~60&ndash;70 W/m&sup2; at 35&deg;C flow.</p>
         </div>
       </details>
@@ -3590,13 +3586,7 @@ function initHeatPump(){
   var $=function(id){return document.getElementById('hp-'+id);};
   var nf=function(v,d){return v.toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d});};
   function num(id){var v=parseFloat($(id).value);return isNaN(v)?0:v;}
-  var PRESETS=[
-    {rcw:1.69,rcr:0.35,rcf:0.15,ug:2.40,ud:3.00,tb:10,eta:0,qinf:100,ext:false},
-    {rcw:4.20,rcr:6.00,rcf:3.50,ug:1.10,ud:1.40,tb:12,eta:85,qinf:60,ext:true},
-    {rcw:6.00,rcr:8.00,rcf:3.50,ug:0.90,ud:1.20,tb:8,eta:88,qinf:45,ext:true},
-    {rcw:1.69,rcr:6.00,rcf:3.50,ug:2.40,ud:3.00,tb:10,eta:0,qinf:90,ext:false}
-  ];
-  var INPUTS=['type','W','D','N','H','pitch','Ag','Ad','GO','rcw','rcr','rcf','ug','ud','tb','bf',
+var INPUTS=['type','W','D','N','H','pitch','Ag','Ad','GO','rcw','rcr','rcf','ug','ud','tb','bf',
               'qv','eta','qinf','ti','te','rh','ext','eA','eW','eG','eRcw','eRcr','eRcf','eUg'];
   function calc(){
     var W=num('W'),D=num('D'),N=num('N'),H=num('H'),pitch=num('pitch');
@@ -3722,20 +3712,7 @@ function initHeatPump(){
     });
     el.addEventListener('change',update);
   });
-  var hpTab=document.getElementById('tab-heatpump');
-  if(hpTab)hpTab.querySelectorAll('.preset').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      hpTab.querySelectorAll('.preset').forEach(function(b){b.classList.remove('on');});
-      btn.classList.add('on');
-      var p=PRESETS[+btn.dataset.p];
-      Object.keys(p).forEach(function(k){
-        if(k==='ext'){$('ext').checked=p.ext;$('extBlock').style.display=p.ext?'block':'none';}
-        else{$(k).value=p[k];}
-      });
-      update();
-    });
-  });
-  try{var _hp=JSON.parse(localStorage.getItem('reno_hp'));if(_hp)INPUTS.forEach(function(id){var el=$(id);if(!el)return;if(el.type==='checkbox')el.checked=!!_hp[id];else if(_hp[id]!==undefined)el.value=_hp[id];});if($('ext'))$('extBlock').style.display=$('ext').checked?'block':'none';}catch(e){}
+try{var _hp=JSON.parse(localStorage.getItem('reno_hp'));if(_hp)INPUTS.forEach(function(id){var el=$(id);if(!el)return;if(el.type==='checkbox')el.checked=!!_hp[id];else if(_hp[id]!==undefined)el.value=_hp[id];});if($('ext'))$('extBlock').style.display=$('ext').checked?'block':'none';}catch(e){}
   update();
   })();
 }
