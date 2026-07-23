@@ -40,10 +40,24 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 235,
+      "id": 236,
       "phaseId": 62,
       "categoryId": null,
       "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
+      "id": 235,
+      "phaseId": 62,
+      "categoryId": null,
+      "name": "Fresmachine",
       "description": "",
       "link": "",
       "qty": 1,
@@ -3520,10 +3534,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784820314043,
+  "_savedAt": 1784820322969,
   "nextOrderId": 13,
   "nextQuoteId": 122,
-  "nextItemId": 236,
+  "nextItemId": 237,
   "_version": "dashboard-v1",
   "phases": [
     {
