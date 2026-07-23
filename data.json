@@ -40,10 +40,24 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 236,
+      "id": 237,
       "phaseId": 62,
       "categoryId": null,
       "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
+      "id": 236,
+      "phaseId": 62,
+      "categoryId": null,
+      "name": "Schlagbohrmachine",
       "description": "",
       "link": "",
       "qty": 1,
@@ -3534,10 +3548,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784820322969,
+  "_savedAt": 1784820344129,
   "nextOrderId": 13,
   "nextQuoteId": 122,
-  "nextItemId": 237,
+  "nextItemId": 238,
   "_version": "dashboard-v1",
   "phases": [
     {
