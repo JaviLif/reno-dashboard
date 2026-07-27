@@ -51,7 +51,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 239,
@@ -65,13 +66,14 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 238,
       "phaseId": 62,
       "categoryId": null,
-      "name": "Lasergerät",
+      "name": "Laserger�t",
       "description": "",
       "link": "",
       "qty": 1,
@@ -79,7 +81,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 237,
@@ -93,7 +96,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 236,
@@ -107,7 +111,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 235,
@@ -121,7 +126,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 234,
@@ -135,7 +141,8 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 233,
@@ -3590,7 +3597,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1784820641121,
+  "_savedAt": 1785142677558,
   "nextOrderId": 13,
   "nextQuoteId": 122,
   "nextItemId": 241,
