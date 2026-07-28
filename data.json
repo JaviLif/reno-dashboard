@@ -52,7 +52,7 @@
       "quotes": [
         {
           "id": 123,
-          "supplier": "",
+          "supplier": "Markplaats",
           "unitPrice": 200,
           "date": "",
           "notes": "",
@@ -3644,7 +3644,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785266815258,
+  "_savedAt": 1785266830238,
   "nextOrderId": 13,
   "nextQuoteId": 124,
   "nextItemId": 243,
