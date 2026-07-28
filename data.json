@@ -49,17 +49,24 @@
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [
+      "quotes": [],
+      "orders": [
         {
-          "id": 123,
-          "supplier": "Markplaats",
-          "unitPrice": 200,
-          "date": "",
-          "notes": "",
-          "chosen": true
+          "id": 13,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
         }
       ],
-      "orders": [],
       "documents": [],
       "status": "delivered"
     },
@@ -3645,8 +3652,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785266835114,
-  "nextOrderId": 13,
+  "_savedAt": 1785266920037,
+  "nextOrderId": 14,
   "nextQuoteId": 124,
   "nextItemId": 243,
   "_version": "dashboard-v1",
