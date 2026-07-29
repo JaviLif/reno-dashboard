@@ -53,7 +53,7 @@
         {
           "id": 124,
           "supplier": "",
-          "unitPrice": 0,
+          "unitPrice": 20,
           "shippingCost": 0,
           "date": "",
           "notes": "a",
@@ -3807,7 +3807,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360826728,
+  "_savedAt": 1785360838820,
   "nextOrderId": 15,
   "nextQuoteId": 127,
   "nextItemId": 243,
