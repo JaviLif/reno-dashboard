@@ -60,28 +60,6 @@
           "link": "",
           "chosen": false,
           "documents": []
-        },
-        {
-          "id": 125,
-          "supplier": "",
-          "unitPrice": 30,
-          "shippingCost": 0,
-          "date": "",
-          "notes": "b",
-          "link": "",
-          "chosen": false,
-          "documents": []
-        },
-        {
-          "id": 126,
-          "supplier": "",
-          "unitPrice": 40,
-          "shippingCost": 0,
-          "date": "",
-          "notes": "c",
-          "link": "",
-          "chosen": true,
-          "documents": []
         }
       ],
       "orders": [
@@ -3810,7 +3788,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360927586,
+  "_savedAt": 1785360940173,
   "nextOrderId": 15,
   "nextQuoteId": 127,
   "nextItemId": 243,
