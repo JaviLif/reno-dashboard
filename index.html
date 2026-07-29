@@ -687,7 +687,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1498,7 +1498,7 @@ function migrateState(state){
     if(!Array.isArray(it.documents)) it.documents=[];
     if(it.name==null) it.name='';
     if(it.link==null) it.link='';
-    it.quotes.forEach(q=>{ if(q.chosen==null) q.chosen=false; if(!Array.isArray(q.documents)) q.documents=[]; if(q.link==null) q.link=''; });
+    it.quotes.forEach(q=>{ if(q.chosen==null) q.chosen=false; if(!Array.isArray(q.documents)) q.documents=[]; if(q.link==null) q.link=''; if(q.shippingCost==null) q.shippingCost=0; });
     it.orders.forEach(o=>{ if(o.qtyDelivered==null)o.qtyDelivered=0; if(o.qtyReturned==null)o.qtyReturned=0; if(!o.status)o.status='ordered'; if(!Array.isArray(o.documents)) o.documents=[]; });
     if(it.status==null) it.status=deriveStatusFromOrders(it);
   });
@@ -2648,14 +2648,14 @@ function updateItemPrice(itemId,value){
 }
 function addQuoteInline(itemId){
   const it=itemById(itemId); if(!it) return;
-  it.quotes.push({id:S.nextQuoteId++,supplier:'',unitPrice:0,date:'',notes:'',link:'',chosen:it.quotes.length===0});
+  it.quotes.push({id:S.nextQuoteId++,supplier:'',unitPrice:0,shippingCost:0,date:'',notes:'',link:'',chosen:it.quotes.length===0});
   expandedItems.add(Number(itemId));
   saveState(); renderItems();
 }
 function updateQuoteField(itemId,qid,field,value){
   const it=itemById(itemId); if(!it) return;
   const q=it.quotes.find(x=>x.id===Number(qid)); if(!q) return;
-  if(field==='unitPrice') value=Number(value)||0;
+  if(field==='unitPrice'||field==='shippingCost') value=Number(value)||0;
   q[field]=value;
   saveState(); refreshAll();
 }
@@ -2794,7 +2794,7 @@ function odocsThumbsHtml(itemId,oid,docs){
   }).join('');
 }
 async function prefillFromLink(itemId){
-  const it=itemById(itemId); if(!it||!it.link) return;
+  const it=itemById(itemId); if(!it) return; const _lel=document.getElementById('item-link-'+itemId); if(_lel&&_lel.value.trim()) it.link=_lel.value.trim(); if(!it.link) return;
   const btn=document.getElementById('pfbtn-'+itemId);
   if(btn){btn.disabled=true;btn.textContent='...';}
   async function go(url,isJson){
@@ -2838,7 +2838,7 @@ async function prefillFromLink(itemId){
   try{
     let changed=false;
     if(name){it.name=name;changed=true;}
-    if(price){let q=it.quotes.find(x=>x.chosen)||it.quotes[0];if(!q){q={id:S.nextQuoteId++,supplier:'',unitPrice:price,date:'',notes:'',chosen:true};it.quotes.push(q);}else{q.unitPrice=price;}changed=true;}
+    if(price){let q=it.quotes.find(x=>x.chosen)||it.quotes[0];if(!q){q={id:S.nextQuoteId++,supplier:'',unitPrice:price,shippingCost:0,date:'',notes:'',chosen:true};it.quotes.push(q);}else{q.unitPrice=price;}changed=true;}
     if(changed){saveState();renderItems();}
     else alert('No data found.\nErrors: '+errors.join(' | ')+'\n\nIf you have an ad blocker, try pausing it on this page.');
   }finally{const b=document.getElementById('pfbtn-'+itemId);if(b){b.disabled=false;b.textContent='✨ Prefill';}}
@@ -2898,7 +2898,7 @@ function quotesPanelHtml(it){
     <div class="cat-row" style="gap:6px;flex-wrap:wrap">
       <input type="radio" name="chosen-quote-${it.id}" ${q.chosen?'checked':''} onchange="chooseQuoteInline(${it.id},${q.id})" title="Mark as chosen">
       <input class="fm-inp" style="flex:1;min-width:110px;font-size:12px;padding:5px 6px" value="${escapeAttr(q.supplier)}" placeholder="Supplier" onchange="updateQuoteField(${it.id},${q.id},'supplier',this.value)">
-      <input class="fm-inp" type="number" min="0" step="0.01" style="width:90px;font-size:12px;padding:5px 6px;text-align:right" value="${q.unitPrice}" title="Price" onchange="updateQuoteField(${it.id},${q.id},'unitPrice',this.value)">
+      <input class="fm-inp" type="number" min="0" step="0.01" style="width:90px;font-size:12px;padding:5px 6px;text-align:right" value="${q.unitPrice}" title="Unit price" onchange="updateQuoteField(${it.id},${q.id},'unitPrice',this.value)"><input class="fm-inp" type="number" min="0" step="0.01" style="width:80px;font-size:12px;padding:5px 6px;text-align:right" value="${q.shippingCost||0}" title="Shipping / delivery cost" placeholder="Ship." onchange="updateQuoteField(${it.id},${q.id},'shippingCost',this.value)">
       <input class="fm-inp" type="date" style="width:130px;font-size:12px;padding:5px 6px" value="${q.date||''}" onchange="updateQuoteField(${it.id},${q.id},'date',this.value)">
       <input class="fm-inp" style="flex:1;min-width:110px;font-size:12px;padding:5px 6px" value="${escapeAttr(q.notes||'')}" placeholder="Notes" onchange="updateQuoteField(${it.id},${q.id},'notes',this.value)">
       <input class="fm-inp" style="flex:1;min-width:130px;font-size:12px;padding:5px 6px" value="${escapeAttr(q.link||'')}" placeholder="&#128279; Link URL" onchange="updateQuoteField(${it.id},${q.id},'link',this.value)">
@@ -3036,7 +3036,7 @@ function itemRowHtml(it,idx){
     html+=`<tr class="item-detail-row"><td></td><td colspan="${cols.length+1}" style="background:var(--g50);padding:14px 16px">
       <div class="fm-row" style="margin-bottom:14px">
         <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Item notes</label><input class="fm-inp" style="font-size:12px" value="${escapeAttr(it.notes||'')}" placeholder="Any notes…" onchange="updateItemField(${it.id},'notes',this.value)"></div>
-        <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Link</label><div class="flex" style="gap:6px"><input class="fm-inp" style="font-size:12px;flex:1" value="${escapeAttr(it.link||'')}" placeholder="https://…" onchange="updateItemField(${it.id},'link',this.value)">${it.link?`<button id="pfbtn-${it.id}" class="btn btn-ghost btn-sm" onclick="prefillFromLink(${it.id})" title="Prefill name & price from URL" style="white-space:nowrap">✨ Prefill</button>`:''}</div></div>
+        <div class="fm-grp" style="margin-bottom:0"><label class="fm-lbl">Link</label><div class="flex" style="gap:6px"><input id="item-link-${it.id}" class="fm-inp" style="font-size:12px;flex:1" value="${escapeAttr(it.link||'')}" placeholder="https://…" oninput="(function(el){var b=document.getElementById('pfbtn-'+${it.id});if(b){b.disabled=!el.value;b.style.opacity=el.value?'1':'0.4';}})(this)" onchange="updateItemField(${it.id},'link',this.value)"><button id="pfbtn-${it.id}" class="btn btn-ghost btn-sm" onclick="prefillFromLink(${it.id})" title="Prefill name &amp; price from URL" style="white-space:nowrap${it.link?'':';opacity:0.4'}" ${it.link?'':'disabled'}>&#10024; Prefill</button></div></div>
       </div>
       ${documentsPanelHtml(it)}
       ${quotesPanelHtml(it)}
