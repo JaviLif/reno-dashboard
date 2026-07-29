@@ -58,7 +58,7 @@
           "date": "",
           "notes": "a",
           "link": "",
-          "chosen": false,
+          "chosen": true,
           "documents": []
         },
         {
@@ -69,7 +69,7 @@
           "date": "",
           "notes": "b",
           "link": "",
-          "chosen": true,
+          "chosen": false,
           "documents": []
         },
         {
@@ -3810,7 +3810,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360912760,
+  "_savedAt": 1785360914403,
   "nextOrderId": 15,
   "nextQuoteId": 127,
   "nextItemId": 243,
