@@ -69,6 +69,16 @@
           "notes": "b",
           "link": "",
           "chosen": false
+        },
+        {
+          "id": 126,
+          "supplier": "",
+          "unitPrice": 0,
+          "shippingCost": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false
         }
       ],
       "orders": [
@@ -3797,9 +3807,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360821286,
+  "_savedAt": 1785360822817,
   "nextOrderId": 15,
-  "nextQuoteId": 126,
+  "nextQuoteId": 127,
   "nextItemId": 243,
   "_version": "dashboard-v1",
   "phases": [
