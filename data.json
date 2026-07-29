@@ -56,7 +56,7 @@
           "unitPrice": 0,
           "shippingCost": 0,
           "date": "",
-          "notes": "",
+          "notes": "a",
           "link": "",
           "chosen": true
         }
@@ -3787,7 +3787,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360800558,
+  "_savedAt": 1785360813263,
   "nextOrderId": 15,
   "nextQuoteId": 125,
   "nextItemId": 243,
