@@ -68,7 +68,7 @@
           "date": "",
           "notes": "b",
           "link": "",
-          "chosen": true
+          "chosen": false
         },
         {
           "id": 126,
@@ -78,7 +78,7 @@
           "date": "",
           "notes": "c",
           "link": "",
-          "chosen": false
+          "chosen": true
         }
       ],
       "orders": [
@@ -3807,7 +3807,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785360849754,
+  "_savedAt": 1785360851657,
   "nextOrderId": 15,
   "nextQuoteId": 127,
   "nextItemId": 243,
