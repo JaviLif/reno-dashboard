@@ -3144,7 +3144,7 @@
       "documents": []
     },
     {
-      "status": "delivered",
+      "status": "ordered",
       "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
       "phaseId": 62,
       "unit": "pcs",
@@ -3174,7 +3174,7 @@
           "orderDate": "",
           "unitPrice": 692.57,
           "qtyOrdered": 1,
-          "status": "delivered",
+          "status": "ordered",
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -3814,7 +3814,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785446868656,
+  "_savedAt": 1785446876138,
   "nextOrderId": 17,
   "nextQuoteId": 127,
   "nextItemId": 245,
