@@ -104,7 +104,7 @@
     {
       "id": 241,
       "phaseId": 62,
-      "categoryId": 3,
+      "categoryId": 8,
       "name": "Stoofzuiger",
       "description": "Nat een Droog 1,6 kW",
       "link": "https://www.lidl.nl/p/parkside-nat-en-droog-stofzuiger-1500-w/p100407151#searchTrackingMasterId=Product.100407151&searchTrackingTitle=Nat+en+droog+stofzuiger+1500+W&searchTrackingPageSize=48&searchTrackingPage=1&searchTrackingEvent=click&searchTrackingId=Product.100407151&searchTrackingQuery=stofzuiger&searchTrackingOrigPos=1&searchTrackingPos=2&searchTrackingOrigPageSize=48&searchTrackingChannel=NL&list=search/stofzuiger",
@@ -3807,7 +3807,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785425785023,
+  "_savedAt": 1785425933076,
   "nextOrderId": 17,
   "nextQuoteId": 127,
   "nextItemId": 245,
