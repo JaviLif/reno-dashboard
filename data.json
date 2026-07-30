@@ -95,7 +95,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "documents": []
+          "documents": [],
+          "shippingCost": 0
         }
       ],
       "documents": [],
@@ -139,7 +140,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "documents": []
+          "documents": [],
+          "shippingCost": 0
         }
       ],
       "documents": [],
@@ -273,7 +275,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "documents": []
+          "documents": [],
+          "shippingCost": 0
         }
       ],
       "documents": [],
@@ -1281,7 +1284,8 @@
           "returnDate": "2026-07-05",
           "returnReason": "",
           "notes": "",
-          "documents": []
+          "documents": [],
+          "shippingCost": 0
         }
       ],
       "documents": [
@@ -1322,7 +1326,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "documents": []
+          "documents": [],
+          "shippingCost": 0
         }
       ],
       "quotes": [
@@ -3175,7 +3180,9 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": [],
+          "shippingCost": 20.97
         }
       ],
       "notes": "",
@@ -3807,7 +3814,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785425952306,
+  "_savedAt": 1785427937202,
   "nextOrderId": 17,
   "nextQuoteId": 127,
   "nextItemId": 245,
