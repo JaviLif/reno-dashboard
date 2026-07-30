@@ -3161,7 +3161,23 @@
           "shippingCost": 20.97
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 16,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 692.57,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "notes": "",
       "name": "HBM ALL Tools"
     }
@@ -3791,8 +3807,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785425776041,
-  "nextOrderId": 16,
+  "_savedAt": 1785425785023,
+  "nextOrderId": 17,
   "nextQuoteId": 127,
   "nextItemId": 245,
   "_version": "dashboard-v1",
