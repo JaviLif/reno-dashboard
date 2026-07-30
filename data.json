@@ -146,21 +146,6 @@
       "status": "delivered"
     },
     {
-      "id": 240,
-      "phaseId": 62,
-      "categoryId": null,
-      "name": "Reciprozag",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 239,
       "phaseId": 62,
       "categoryId": null,
@@ -3806,7 +3791,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785361663356,
+  "_savedAt": 1785425689400,
   "nextOrderId": 16,
   "nextQuoteId": 127,
   "nextItemId": 245,
