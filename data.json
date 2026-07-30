@@ -100,7 +100,7 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 241,
@@ -145,7 +145,7 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 239,
@@ -280,7 +280,7 @@
         }
       ],
       "documents": [],
-      "status": "not-ordered"
+      "status": "ordered"
     },
     {
       "id": 231,
@@ -1307,7 +1307,7 @@
       "id": 97,
       "description": "Structural inspection ΓÇö MANDATORY",
       "link": "https://www.bouwkeuringvergelijk.nl/zoeken/Amsterdam/390/",
-      "status": "ordered",
+      "status": "partial",
       "name": "(Bouwkundig Inspecteur)",
       "notes": "",
       "qty": 1,
@@ -1319,7 +1319,7 @@
           "orderDate": "",
           "unitPrice": 1073.24,
           "qtyOrdered": 1,
-          "status": "returned",
+          "status": "shipped",
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -3814,7 +3814,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785444124695,
+  "_savedAt": 1785445947784,
   "nextOrderId": 17,
   "nextQuoteId": 127,
   "nextItemId": 245,
