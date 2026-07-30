@@ -3155,7 +3155,7 @@
           "notes": "",
           "chosen": true,
           "supplier": "Classifier estimate",
-          "date": "2026-08-06",
+          "date": "2026-07-30",
           "documents": [],
           "link": "",
           "shippingCost": 20.97
@@ -3791,7 +3791,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785425772463,
+  "_savedAt": 1785425776041,
   "nextOrderId": 16,
   "nextQuoteId": 127,
   "nextItemId": 245,
