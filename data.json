@@ -3150,7 +3150,7 @@
       "categoryId": 8,
       "quotes": [
         {
-          "unitPrice": 2000,
+          "unitPrice": 692.57,
           "id": 70,
           "notes": "",
           "chosen": true,
@@ -3791,7 +3791,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785425709615,
+  "_savedAt": 1785425764599,
   "nextOrderId": 16,
   "nextQuoteId": 127,
   "nextItemId": 245,
