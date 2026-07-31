@@ -1444,7 +1444,7 @@
       "categoryId": 1
     },
     {
-      "status": "not-ordered",
+      "status": "ordered",
       "link": "",
       "id": 98,
       "description": "Asbestreport Destruktiev",
@@ -3979,7 +3979,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785491370911,
+  "_savedAt": 1785491392042,
   "nextOrderId": 18,
   "nextQuoteId": 127,
   "nextItemId": 245,
