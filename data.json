@@ -1378,7 +1378,7 @@
           "uploadedDate": "2026-07-06"
         }
       ],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "unit": "pcs",
@@ -1387,7 +1387,7 @@
       "id": 97,
       "description": "Structural inspection ΓÇö MANDATORY",
       "link": "",
-      "status": "delivered",
+      "status": "not-ordered",
       "name": "(Bouwkundig Inspecteur)",
       "notes": "",
       "qty": 1,
@@ -1399,7 +1399,7 @@
           "orderDate": "",
           "unitPrice": 1073.24,
           "qtyOrdered": 1,
-          "status": "delivered",
+          "status": "not-ordered",
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -3971,7 +3971,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785515954036,
+  "_savedAt": 1785515991056,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
