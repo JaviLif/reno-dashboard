@@ -166,7 +166,7 @@
     {
       "id": 238,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Laserger�t",
       "description": "",
       "link": "",
@@ -181,7 +181,7 @@
     {
       "id": 237,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Bohrmachhine",
       "description": "",
       "link": "",
@@ -196,7 +196,7 @@
     {
       "id": 236,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Schlagbohrmachine",
       "description": "",
       "link": "",
@@ -211,7 +211,7 @@
     {
       "id": 235,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Fresmachine",
       "description": "",
       "link": "",
@@ -3979,7 +3979,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785491443598,
+  "_savedAt": 1785491449875,
   "nextOrderId": 18,
   "nextQuoteId": 127,
   "nextItemId": 245,
