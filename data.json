@@ -1077,7 +1077,7 @@
           "orderDate": "",
           "unitPrice": 3500,
           "qtyOrdered": 1,
-          "status": "shipped",
+          "status": "ordered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -1088,7 +1088,7 @@
         }
       ],
       "documents": [],
-      "status": "shipped"
+      "status": "ordered"
     },
     {
       "id": 194,
@@ -3979,7 +3979,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785491272380,
+  "_savedAt": 1785491274863,
   "nextOrderId": 18,
   "nextQuoteId": 127,
   "nextItemId": 245,
