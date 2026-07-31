@@ -1067,6 +1067,16 @@
           "link": "",
           "shippingCost": 0,
           "name": ""
+        },
+        {
+          "id": 127,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [
@@ -1084,7 +1094,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -3979,9 +3990,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785491453151,
+  "_savedAt": 1785492788097,
   "nextOrderId": 18,
-  "nextQuoteId": 127,
+  "nextQuoteId": 128,
   "nextItemId": 245,
   "_version": "dashboard-v1",
   "phases": [
