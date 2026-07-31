@@ -1089,7 +1089,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "not-ordered"
     },
     {
       "id": 194,
@@ -3980,7 +3980,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785492881015,
+  "_savedAt": 1785492889488,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
