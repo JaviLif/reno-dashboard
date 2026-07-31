@@ -1067,16 +1067,6 @@
           "link": "",
           "shippingCost": 0,
           "name": ""
-        },
-        {
-          "id": 127,
-          "name": "",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "link": "",
-          "chosen": false,
-          "documents": []
         }
       ],
       "orders": [
@@ -3990,7 +3980,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785492788097,
+  "_savedAt": 1785492799125,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
