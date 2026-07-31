@@ -3297,7 +3297,16 @@
       "unit": "pcs",
       "description": "",
       "id": 175,
-      "documents": [],
+      "documents": [
+        {
+          "id": 4,
+          "name": "Verkoopfactuur_4583337.pdf",
+          "type": "application/pdf",
+          "size": 152219,
+          "ghPath": "quotes/Verkoopfactuur_4583337.pdf",
+          "uploadedDate": "2026-07-31"
+        }
+      ],
       "qty": 1,
       "categoryId": 8,
       "quotes": [
@@ -3961,8 +3970,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 10,
-  "nextDocId": 4,
-  "_savedAt": 1785515381703,
+  "nextDocId": 5,
+  "_savedAt": 1785515954036,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
