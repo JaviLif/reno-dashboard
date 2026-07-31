@@ -395,7 +395,7 @@
     {
       "id": 226,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "MetLl detector",
       "description": "",
       "link": "",
@@ -3979,7 +3979,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785491451443,
+  "_savedAt": 1785491453151,
   "nextOrderId": 18,
   "nextQuoteId": 127,
   "nextItemId": 245,
