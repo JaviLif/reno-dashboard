@@ -1089,7 +1089,7 @@
         }
       ],
       "documents": [],
-      "status": "shipped"
+      "status": "partial"
     },
     {
       "id": 194,
@@ -3980,7 +3980,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785492893160,
+  "_savedAt": 1785492894801,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
