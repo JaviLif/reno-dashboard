@@ -108,7 +108,7 @@
       "categoryId": 8,
       "name": "Stoofzuiger",
       "description": "Nat een Droog 1,6 kW",
-      "link": "https://www.lidl.nl/p/parkside-nat-en-droog-stofzuiger-1500-w/p100407151#searchTrackingMasterId=Product.100407151&searchTrackingTitle=Nat+en+droog+stofzuiger+1500+W&searchTrackingPageSize=48&searchTrackingPage=1&searchTrackingEvent=click&searchTrackingId=Product.100407151&searchTrackingQuery=stofzuiger&searchTrackingOrigPos=1&searchTrackingPos=2&searchTrackingOrigPageSize=48&searchTrackingChannel=NL&list=search/stofzuiger",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -121,8 +121,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.lidl.nl/p/parkside-nat-en-droog-stofzuiger-1500-w/p100407151#searchTrackingMasterId=Product.100407151&searchTrackingTitle=Nat+en+droog+stofzuiger+1500+W&searchTrackingPageSize=48&searchTrackingPage=1&searchTrackingEvent=click&searchTrackingId=Product.100407151&searchTrackingQuery=stofzuiger&searchTrackingOrigPos=1&searchTrackingPos=2&searchTrackingOrigPageSize=48&searchTrackingChannel=NL&list=search/stofzuiger",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [
@@ -257,7 +258,8 @@
           "link": "https://www.deventilatiekoning.nl/product-page/itho-hru-eco-350-hp-wtw-unit",
           "chosen": true,
           "documents": [],
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "deventilatiekoning.nl"
         }
       ],
       "orders": [
@@ -288,11 +290,22 @@
       "categoryId": 3,
       "name": "safety relief valve",
       "description": "",
-      "link": "https://www.caleffi.com/en-int/safety-relief-valve-for-domestic-water-systems-female-connections-531-caleffi-531640",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 123,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.caleffi.com/en-int/safety-relief-valve-for-domestic-water-systems-female-connections-531-caleffi-531640",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
       "status": "not-ordered"
@@ -347,7 +360,8 @@
           "link": "https://premiumdakramen.nl/products/platdakraam?variant=56790983737669&gad_source=1&gad_campaignid=22521985652&gbraid=0AAAAA94idl_lCBRVBCLY8lhAurppSjEwD&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSu80_OCSjeMvH9Y-IxF9T8iabywW0Ef1UijnZtAAeRHFcx9oooVB0saAo9sEALw_wcB",
           "chosen": true,
           "documents": [],
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "premiumdakramen.nl"
         },
         {
           "id": 117,
@@ -358,7 +372,8 @@
           "link": "https://www.lichtkoepeltje.nl/marktplaats/lichtkoepel-met-daktoegang?gad_source=1&gad_campaignid=17189503157&gbraid=0AAAAADoNKnGjV1LX3AgmrpKDCCwwbEHOS&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpStam0ZU0wq0GgsHnBB1zCcyIuIPzK2PNQeEPnN9qVFYxWFKwwpx0xwaAuUaEALw_wcB",
           "chosen": false,
           "documents": [],
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "lichtkoepeltje.nl"
         },
         {
           "id": 118,
@@ -369,7 +384,8 @@
           "link": "https://glasmaatje.nl/isolatieglas-hr/",
           "chosen": false,
           "documents": [],
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "glasmaatje.nl"
         }
       ],
       "orders": [],
@@ -382,11 +398,22 @@
       "categoryId": null,
       "name": "MetLl detector",
       "description": "",
-      "link": "https://www.lidl.nl/p/parkside-performance-leidingzoeker/p100405587?utm_source=google&utm_medium=cpc&utm_campaign=sho-sea_pmax_base-all_notset_ao_ecm_shop_nf_sl_ao_nl.p-google.20-deepsale&utm_content=&utm_term=ac-22665862_&cid=17931394753&gad_source=1&gad_campaignid=17340878560&gbraid=0AAAAAChMZwOpMzXiYkX2Ay13193-WIbDk&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSs_OJdtEBwpKsnSWJo6T0VeyFWDrXnyRQVmTahSKPgAxR5zzn9700UaAmscEALw_wcB",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 124,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.lidl.nl/p/parkside-performance-leidingzoeker/p100405587?utm_source=google&utm_medium=cpc&utm_campaign=sho-sea_pmax_base-all_notset_ao_ecm_shop_nf_sl_ao_nl.p-google.20-deepsale&utm_content=&utm_term=ac-22665862_&cid=17931394753&gad_source=1&gad_campaignid=17340878560&gbraid=0AAAAAChMZwOpMzXiYkX2Ay13193-WIbDk&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSs_OJdtEBwpKsnSWJo6T0VeyFWDrXnyRQVmTahSKPgAxR5zzn9700UaAmscEALw_wcB",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
       "status": "not-ordered"
@@ -397,7 +424,7 @@
       "categoryId": 3,
       "name": "Glass",
       "description": "Geribbeld",
-      "link": "https://glasmaatje.nl/glassoorten/enkelglas/gehard-veiligheidsglas/gehard-moru-glas-op-maat-veiligheidsglas/?srsltid=AfmBOorDHhSH0E56EizVowBLinOGJnGx46iIu7QIZ6M5ki9eqH4JYrJh",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -410,8 +437,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://glasmaatje.nl/glassoorten/enkelglas/gehard-veiligheidsglas/gehard-moru-glas-op-maat-veiligheidsglas/?srsltid=AfmBOorDHhSH0E56EizVowBLinOGJnGx46iIu7QIZ6M5ki9eqH4JYrJh",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -439,7 +467,7 @@
       "categoryId": 3,
       "name": "onluchter",
       "description": "",
-      "link": "https://www.warmteservice.nl/Verwarming/CV-aansluitmateriaal/Automatische-ontluchter/BONFIX-Automatische-ontluchter/p/L01106?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE&gad_source=1&gad_campaignid=20800842143&gbraid=0AAAAADgSUFVzN3GHV6TnpOkDAaVR0zf14&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE",
+      "link": "",
       "qty": 3,
       "unit": "",
       "notes": "",
@@ -452,8 +480,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Verwarming/CV-aansluitmateriaal/Automatische-ontluchter/BONFIX-Automatische-ontluchter/p/L01106?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE&gad_source=1&gad_campaignid=20800842143&gbraid=0AAAAADgSUFVzN3GHV6TnpOkDAaVR0zf14&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6HTZIO0H6juEZd5MJgxCPSm35e4BG_7v38WRk3hzhVZoimcrdnO9RoCb0IQAvD_BwE",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -466,7 +495,7 @@
       "categoryId": 3,
       "name": "Remeha 3-wegklep omschakeling",
       "description": "",
-      "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-toebehoren/Remeha-3-wegklep-omschakeling-CV-tapwater/p/03609000",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -479,8 +508,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-toebehoren/Remeha-3-wegklep-omschakeling-CV-tapwater/p/03609000",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -493,21 +523,22 @@
       "categoryId": 3,
       "name": "Remeha",
       "description": "klokthermostaat ",
-      "link": "https://www.warmteservice.nl/Verwarming/Thermostaat/Slimme-thermostaat/Remeha-eTwist-slimme-klokthermostaat-incl-Gateway-v-3/p/14256332?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE&gad_source=1&gad_campaignid=21164478438&gbraid=0AAAAADgSUFWgQx0nbVRPq61NQZEn0LPBB&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE",
+      "link": "",
       "qty": 1,
       "unit": "",
-      "notes": "klokthermostaat ",
+      "notes": "",
       "quotes": [
         {
           "id": 109,
           "supplier": "",
           "unitPrice": 215,
           "date": "",
-          "notes": "",
+          "notes": "klokthermostaat ",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Verwarming/Thermostaat/Slimme-thermostaat/Remeha-eTwist-slimme-klokthermostaat-incl-Gateway-v-3/p/14256332?gclsrc=aw.ds&&ctgaid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE&gad_source=1&gad_campaignid=21164478438&gbraid=0AAAAADgSUFWgQx0nbVRPq61NQZEn0LPBB&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ6qLLYYw6GXqogJbsFM2TDRBG2aRNl3MRGLJiFixlaBPSqHe2Es_-BoCJS8QAvD_BwE",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -520,7 +551,7 @@
       "categoryId": 3,
       "name": "Remeha Centra buffervat ",
       "description": "",
-      "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-buffervat/Remeha-Centra-buffervat-voor-verwarming-en-koeling/p/V1000135",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -533,8 +564,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-buffervat/Remeha-Centra-buffervat-voor-verwarming-en-koeling/p/V1000135",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -547,7 +579,7 @@
       "categoryId": 3,
       "name": "Warmtepomp Remeha Mb400",
       "description": "R280",
-      "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Hybride-lucht-water-warmtepomp/Remeha-Confida-40H-hybride-monoblock-warmtepomp-pakket-MB400/p/V1000443",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -561,7 +593,8 @@
           "chosen": false,
           "documents": [],
           "link": "https://www.technim.nl/p/remeha-confida-monoblock-440e-warmtepompset-6kw-all-electric-r290/",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "mb400 + 40E"
         }
       ],
       "orders": [],
@@ -574,11 +607,22 @@
       "categoryId": null,
       "name": "Floor link",
       "description": "",
-      "link": "https://decochip.nl/product/gietvloer-pu-m%c2%b2-pakket/?_gl=1*pr2b81*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ5tmUd_KpXhmyREpThOv1s_6WAEU8jxAOL-_R_E6vQYg0nCyhQk3RxoClvMQAvD_BwE&gbraid=0AAAAAD2x9qMwU8GE3fdq5Xcto7kIVRc3o",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 125,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://decochip.nl/product/gietvloer-pu-m%c2%b2-pakket/?_gl=1*pr2b81*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ5tmUd_KpXhmyREpThOv1s_6WAEU8jxAOL-_R_E6vQYg0nCyhQk3RxoClvMQAvD_BwE&gbraid=0AAAAAD2x9qMwU8GE3fdq5Xcto7kIVRc3o",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
       "status": "not-ordered"
@@ -603,7 +647,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -616,7 +661,7 @@
       "categoryId": 3,
       "name": "mini Laptop",
       "description": "",
-      "link": "https://www.refurbed.nl/p/hp-prodesk-400-g5-sff/382972b/?co=nl&lang=nl&utm_cluster=gradeB&utm_content=hp-prodesk-400-g5-sff-382972b&utm_group=hp-prodesk-400-g5-sff&ad_price=129.00&utm_campaign=NL%20-%20PMax%20-%20Near%20Index&utm_medium=cpc&utm_source=google&gad_source=1&gad_campaignid=21391208157&gbraid=0AAAAApnnPXnvJzKSsgx8sN2lGW6CBahoa&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ72RE4H298yT-4mWpPodEmToEDGJTucQVYrXVjCBqgDUW46I73DFyxoCEvwQAvD_BwE",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -629,8 +674,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.refurbed.nl/p/hp-prodesk-400-g5-sff/382972b/?co=nl&lang=nl&utm_cluster=gradeB&utm_content=hp-prodesk-400-g5-sff-382972b&utm_group=hp-prodesk-400-g5-sff&ad_price=129.00&utm_campaign=NL%20-%20PMax%20-%20Near%20Index&utm_medium=cpc&utm_source=google&gad_source=1&gad_campaignid=21391208157&gbraid=0AAAAApnnPXnvJzKSsgx8sN2lGW6CBahoa&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ72RE4H298yT-4mWpPodEmToEDGJTucQVYrXVjCBqgDUW46I73DFyxoCEvwQAvD_BwE",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -643,7 +689,7 @@
       "categoryId": null,
       "name": "Camera",
       "description": "Reolink RLC-520A",
-      "link": "https://www.bol.com/nl/nl/p/reolink-2k-5mp-poe-beveiligingscamera-met-persoons-voertuigdetectie-30-meter-nachtzicht-audio-opname-lokale-opslag-520a/9300000191161838/",
+      "link": "",
       "qty": 2,
       "unit": "",
       "notes": "",
@@ -656,8 +702,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.bol.com/nl/nl/p/reolink-2k-5mp-poe-beveiligingscamera-met-persoons-voertuigdetectie-30-meter-nachtzicht-audio-opname-lokale-opslag-520a/9300000191161838/",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -670,7 +717,7 @@
       "categoryId": 3,
       "name": "PoE Injector",
       "description": "",
-      "link": "https://www.wifishop.nl/p/ubiquiti-gigabit-poe-802-3af-injector-48v-320ma-15w-59133",
+      "link": "",
       "qty": 2,
       "unit": "",
       "notes": "",
@@ -683,8 +730,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.wifishop.nl/p/ubiquiti-gigabit-poe-802-3af-injector-48v-320ma-15w-59133",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -697,11 +745,22 @@
       "categoryId": null,
       "name": "",
       "description": "",
-      "link": "https://m.youtube.com/watch?v=BkQ3p13tt50",
+      "link": "",
       "qty": 1,
       "unit": "",
-      "notes": "Kruiptruimisolation",
-      "quotes": [],
+      "notes": "",
+      "quotes": [
+        {
+          "id": 126,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "Kruiptruimisolation",
+          "link": "https://m.youtube.com/watch?v=BkQ3p13tt50",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
       "status": "not-ordered"
@@ -712,7 +771,7 @@
       "categoryId": 5,
       "name": "Epoxy grout fuge for bath",
       "description": "",
-      "link": "https://www.voegenshop.nl/mapei-kerapoxy-easy-design",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -725,8 +784,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.voegenshop.nl/mapei-kerapoxy-easy-design",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -753,7 +813,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -780,7 +841,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -793,7 +855,7 @@
       "categoryId": 3,
       "name": "Gevelbekleding Houtkoposiet",
       "description": "50sqm",
-      "link": "https://www.mthekwerken.nl/product/composiet-gevelbekleding-rhombus-teak-zwart/?_gl=1*10bbmlu*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw6rfSBhAqEiwA_yocppqrQcc5TkW2Nav7AUCK726E8MF5YMR7y4d3Yo6MYPOFUVoOeTvXwxoCkHwQAvD_BwE&gbraid=0AAAAADFwZ4odfN-ydQUznUcj_UXA41I5z",
+      "link": "",
       "qty": 90,
       "unit": "",
       "notes": "",
@@ -806,8 +868,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.mthekwerken.nl/product/composiet-gevelbekleding-rhombus-teak-zwart/?_gl=1*10bbmlu*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw6rfSBhAqEiwA_yocppqrQcc5TkW2Nav7AUCK726E8MF5YMR7y4d3Yo6MYPOFUVoOeTvXwxoCkHwQAvD_BwE&gbraid=0AAAAADFwZ4odfN-ydQUznUcj_UXA41I5z",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -820,7 +883,7 @@
       "categoryId": 3,
       "name": "Isolation Foam PIR",
       "description": "Aiming Rd 5,45 @ 120mm 48sqm",
-      "link": "https://www.sleiderink.nl/eurowall-spouwisolatie",
+      "link": "",
       "qty": 42,
       "unit": "",
       "notes": "",
@@ -833,8 +896,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sleiderink.nl/eurowall-spouwisolatie",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -861,7 +925,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -888,7 +953,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -901,7 +967,7 @@
       "categoryId": 3,
       "name": "Gipsplatten",
       "description": "",
-      "link": "https://www.sleiderink.nl/siniat-gipsplaten-ak",
+      "link": "",
       "qty": 15,
       "unit": "",
       "notes": "",
@@ -914,8 +980,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sleiderink.nl/siniat-gipsplaten-ak",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -928,7 +995,7 @@
       "categoryId": 3,
       "name": "Wood beams for walls",
       "description": "Balken 20x120 @ 60cm spacing",
-      "link": "https://www.sleiderink.nl/vuren-geschaafd-50x125",
+      "link": "",
       "qty": 20,
       "unit": "",
       "notes": "",
@@ -941,8 +1008,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sleiderink.nl/vuren-geschaafd-50x125",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -969,7 +1037,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -996,10 +1065,28 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 17,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 3500,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
       "status": "ordered"
     },
@@ -1009,7 +1096,7 @@
       "categoryId": 5,
       "name": "ProfPartner Cellenbetonlijm",
       "description": "",
-      "link": "https://www.sleiderink.nl/profpartner-cellenbetonlijm",
+      "link": "",
       "qty": 4,
       "unit": "",
       "notes": "",
@@ -1022,8 +1109,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sleiderink.nl/profpartner-cellenbetonlijm",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1036,7 +1124,7 @@
       "categoryId": 3,
       "name": "Cellenbetonblokken G",
       "description": "For Wall construction",
-      "link": "https://www.sleiderink.nl/cellenbetonblokken-g4-600",
+      "link": "",
       "qty": 230,
       "unit": "",
       "notes": "",
@@ -1049,8 +1137,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sleiderink.nl/cellenbetonblokken-g4-600",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1063,7 +1152,7 @@
       "categoryId": 5,
       "name": "Isolator Plug screws",
       "description": "https://schroef-it.nl/bevestigingsmiddelen/isolatiepluggen/isolatieplug-met-kunststof-nagel-10x140-mm-iso-smart-s-iph",
-      "link": "https://www.jandeisolatieman.nl/smart-ipw-8x14080mm-spouwanker-verzinkt-250st/56261778?utm_source=google&utm_medium=cpc&utm_campaign=NL%20-%20PMX%20-%20Accessoires%20%26%20Toebehoren&utm_id=17506834691&gad_source=1&gad_campaignid=17349329201&gbraid=0AAAAACxozAJC8-b6_447K_Tkqij3BAC8v&gclid=CjwKCAjwx7LSBhB3EiwAjcodxFBieoSOan3Ql9zVHLH2xYopYr0OTL5hHu0-Y1OP-NE4riesStj8RBoCUewQAvD_BwE",
+      "link": "",
       "qty": 3,
       "unit": "",
       "notes": "",
@@ -1076,8 +1165,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.jandeisolatieman.nl/smart-ipw-8x14080mm-spouwanker-verzinkt-250st/56261778?utm_source=google&utm_medium=cpc&utm_campaign=NL%20-%20PMX%20-%20Accessoires%20%26%20Toebehoren&utm_id=17506834691&gad_source=1&gad_campaignid=17349329201&gbraid=0AAAAACxozAJC8-b6_447K_Tkqij3BAC8v&gclid=CjwKCAjwx7LSBhB3EiwAjcodxFBieoSOan3Ql9zVHLH2xYopYr0OTL5hHu0-Y1OP-NE4riesStj8RBoCUewQAvD_BwE",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1104,7 +1194,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1117,7 +1208,7 @@
       "categoryId": 3,
       "name": "Quick releas Panels",
       "description": "",
-      "link": "https://www.fruugo.nl/4-x-quick-release-push-hood-latch-button-auto-pin-lock-zilver/p-373523443-809002772?language=nl&ac=google&utm_source=google&utm_medium=paid&gad_source=1&gad_campaignid=22524301419&gbraid=0AAAAADpXug14TlwZ4FUH7Bs2gC4BMEZDk&gclid=CjwKCAjwu53SBhAhEiwAJzSLNkQSIq0WYlXeX0SNo3Vy4dQuvUohmObC6fkjSsSfEqhIK-lJWk-vzhoCcVEQAvD_BwE",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -1130,8 +1221,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.fruugo.nl/4-x-quick-release-push-hood-latch-button-auto-pin-lock-zilver/p-373523443-809002772?language=nl&ac=google&utm_source=google&utm_medium=paid&gad_source=1&gad_campaignid=22524301419&gbraid=0AAAAADpXug14TlwZ4FUH7Bs2gC4BMEZDk&gclid=CjwKCAjwu53SBhAhEiwAJzSLNkQSIq0WYlXeX0SNo3Vy4dQuvUohmObC6fkjSsSfEqhIK-lJWk-vzhoCcVEQAvD_BwE",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1144,7 +1236,7 @@
       "categoryId": 3,
       "name": "Shadow gaps for walls, ceilings, and floors with the option to integrate LED lighting.",
       "description": "",
-      "link": "https://enup.lv/shadowgaps?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAS26e9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAady1HKrnhqtlxXYZLUS6Tc8GXLvKJ_QOOuVpaJHLemoo8I5frdRdXCp0OKsxQ_aem_6Audi4E5CTSR09_ykslIyQ",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -1157,8 +1249,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://enup.lv/shadowgaps?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAS26e9leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAady1HKrnhqtlxXYZLUS6Tc8GXLvKJ_QOOuVpaJHLemoo8I5frdRdXCp0OKsxQ_aem_6Audi4E5CTSR09_ykslIyQ",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1171,7 +1264,7 @@
       "categoryId": 3,
       "name": "Itho Daalderop RFT vochtsensor opbo",
       "description": "Humidity Remote",
-      "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -1184,8 +1277,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1198,7 +1292,7 @@
       "categoryId": 3,
       "name": "Itho Daalderop AUTO RFT",
       "description": "Fernbedienung",
-      "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-auto-rft-n-draadloze-bediening-wit/19765/",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -1211,8 +1305,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-auto-rft-n-draadloze-bediening-wit/19765/",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1225,7 +1320,7 @@
       "categoryId": 3,
       "name": "Itho Daalderop WTW HRU ECO",
       "description": "WTW",
-      "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-wtw-hru-eco-350-unit-lr-rft-laagbouw-350-m3-h-euro-stekker/9945/",
+      "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
@@ -1238,8 +1333,9 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-wtw-hru-eco-350-unit-lr-rft-laagbouw-350-m3-h-euro-stekker/9945/",
+          "shippingCost": 0,
+          "name": ""
         }
       ],
       "orders": [],
@@ -1266,7 +1362,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Flem´s"
         }
       ],
       "orders": [
@@ -1306,7 +1403,7 @@
       "documents": [],
       "id": 97,
       "description": "Structural inspection ΓÇö MANDATORY",
-      "link": "https://www.bouwkeuringvergelijk.nl/zoeken/Amsterdam/390/",
+      "link": "",
       "status": "delivered",
       "name": "(Bouwkundig Inspecteur)",
       "notes": "",
@@ -1339,8 +1436,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.bouwkeuringvergelijk.nl/zoeken/Amsterdam/390/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 1
@@ -1364,7 +1462,8 @@
           "notes": "",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "van Ekeren "
         },
         {
           "id": 73,
@@ -1384,7 +1483,8 @@
             }
           ],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Buro Sprinweg"
         },
         {
           "id": 74,
@@ -1404,7 +1504,8 @@
             }
           ],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Perfectkeur"
         }
       ],
       "orders": [],
@@ -1418,7 +1519,7 @@
       "id": 99,
       "phaseId": 62,
       "unit": "pcs",
-      "link": "https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten",
+      "link": "",
       "status": "not-ordered",
       "name": "Rent Container",
       "notes": "",
@@ -1432,8 +1533,9 @@
           "id": 3,
           "unitPrice": 600,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 8,
@@ -1459,7 +1561,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1480,7 +1583,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1505,7 +1609,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1542,7 +1647,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1
@@ -1568,7 +1674,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1576,7 +1683,7 @@
     },
     {
       "status": "not-ordered",
-      "link": "https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2",
+      "link": "",
       "phaseId": 31,
       "unit": "m∩┐╜",
       "id": 106,
@@ -1593,8 +1700,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1615,7 +1723,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
@@ -1634,7 +1743,7 @@
       "id": 108,
       "phaseId": 67,
       "unit": "pcs",
-      "link": "https://www.isolatiemateriaal.nl/p/gipsplaten-3000x600x125mm-ak-180-m2",
+      "link": "",
       "status": "not-ordered",
       "name": "Plaster Boards",
       "notes": "",
@@ -1648,8 +1757,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.isolatiemateriaal.nl/p/gipsplaten-3000x600x125mm-ak-180-m2",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
@@ -1668,7 +1778,8 @@
           "unitPrice": 1000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
@@ -1696,8 +1807,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.isolatiemateriaal.nl/purschuim-lijmen/pur-set-de-isolatieshop-purschuim-reiniger-pistool",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 5,
@@ -1706,7 +1818,7 @@
       "documents": [],
       "id": 110,
       "description": "",
-      "link": "https://www.isolatiemateriaal.nl/purschuim-lijmen/pur-set-de-isolatieshop-purschuim-reiniger-pistool",
+      "link": "",
       "status": "not-ordered"
     },
     {
@@ -1723,7 +1835,8 @@
           "unitPrice": 1000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
@@ -1755,7 +1868,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1777,7 +1891,8 @@
           "date": "2026-07-04",
           "documents": [],
           "link": "https://www.ventilatieshop.com/spirobuizen-en-hulpstukken/spiro-hulpstukken-safe/t-stukken-90-graden-safe/?vs_diameter=150+mm",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1787,7 +1902,7 @@
       "documents": [],
       "id": 115,
       "description": "",
-      "link": "https://www.ventilatieland.nl/nl_NL/basket/index/",
+      "link": "",
       "status": "not-ordered"
     },
     {
@@ -1796,7 +1911,7 @@
       "id": 117,
       "phaseId": 35,
       "unit": "m∩┐╜",
-      "link": "https://www.vloerverwarming-direct.nl/p/25mm-systeem-dbs14-25mm-droogbouw-isolatieplaat-doos-7-50m2",
+      "link": "",
       "status": "not-ordered",
       "name": "Underfloor Gips DBS14 Magnumboard",
       "notes": "",
@@ -1809,8 +1924,9 @@
           "id": 20,
           "unitPrice": 104,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.vloerverwarming-direct.nl/p/25mm-systeem-dbs14-25mm-droogbouw-isolatieplaat-doos-7-50m2",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1827,8 +1943,9 @@
           "notes": "",
           "unitPrice": 3,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.vloerverwarming-direct.nl/p/omega-profielen-dbs14-aluminium-1000mm-x-120mm",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1836,7 +1953,7 @@
       "qty": 130,
       "name": "Mega Plate (Omega DBS14)",
       "notes": "",
-      "link": "https://www.vloerverwarming-direct.nl/p/omega-profielen-dbs14-aluminium-1000mm-x-120mm",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "id": 118,
@@ -1850,7 +1967,7 @@
       "documents": [],
       "id": 119,
       "description": "Magnum 5-laags PE-RT 12x1,5mm",
-      "link": "https://www.elektramat.nl/magnum-universele-vloerverwarmingsbuis-5-laags-pe-rt-12x1-5-mm-komo-rol-van-300-meter-w12300/",
+      "link": "",
       "status": "not-ordered",
       "name": "Pipe Line (Heating)",
       "notes": "",
@@ -1865,15 +1982,16 @@
           "notes": "",
           "id": 22,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.elektramat.nl/magnum-universele-vloerverwarmingsbuis-5-laags-pe-rt-12x1-5-mm-komo-rol-van-300-meter-w12300/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3
     },
     {
       "status": "not-ordered",
-      "link": "https://www.elektramat.nl/magnum-adaptor-euroconus-aansluitkoppeling-12x1-5mm-x-3-4-2-stuks-w90012/",
+      "link": "",
       "phaseId": 35,
       "unit": "pcs",
       "description": "Magnum Euroconus 12x1,5mm",
@@ -1890,8 +2008,9 @@
           "date": "2026-07-04",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.elektramat.nl/magnum-adaptor-euroconus-aansluitkoppeling-12x1-5mm-x-3-4-2-stuks-w90012/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1912,8 +2031,9 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.elektramat.nl/magnum-basic-staal-vloerverwarming-verdeler-5-groeps-incl-a-label-pomp-w40005/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -1923,7 +2043,7 @@
       "description": "Magnum Basic staal 5-groeps",
       "documents": [],
       "status": "not-ordered",
-      "link": "https://www.elektramat.nl/magnum-basic-staal-vloerverwarming-verdeler-5-groeps-incl-a-label-pomp-w40005/"
+      "link": ""
     },
     {
       "link": "",
@@ -1944,7 +2064,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 8,
@@ -1964,14 +2085,15 @@
           "notes": "",
           "unitPrice": 5000,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.berlin-parkett.de/Forbo-Marmoleum-Walton-Linoleum-3369-titanium",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
       "name": "Floor",
       "notes": "",
-      "link": "https://www.berlin-parkett.de/Forbo-Marmoleum-Walton-Linoleum-3369-titanium",
+      "link": "",
       "status": "not-ordered",
       "phaseId": 68,
       "unit": "pcs",
@@ -2001,14 +2123,15 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1
     },
     {
       "status": "not-ordered",
-      "link": "https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html",
+      "link": "",
       "unit": "m∩┐╜",
       "phaseId": 70,
       "id": 126,
@@ -2026,15 +2149,16 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
       "name": "Tiles (Bathroom)"
     },
     {
-      "link": "https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "description": "Saniclear Cube 180x80cm",
@@ -2051,8 +2175,9 @@
           "id": 29,
           "notes": "",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
@@ -2073,8 +2198,9 @@
           "notes": "",
           "id": 30,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/sanigoods-andes-toiletset-met-saniclear-itsie-randloos-toilet-wit-glans-sk101869.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2084,7 +2210,7 @@
       "documents": [],
       "description": "Sanigoods Andes toiletset",
       "id": 128,
-      "link": "https://sanitairkamer.nl/sanigoods-andes-toiletset-met-saniclear-itsie-randloos-toilet-wit-glans-sk101869.html",
+      "link": "",
       "status": "not-ordered"
     },
     {
@@ -2098,8 +2224,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.hornbach.nl/p/qboard-liquid-douche-element-1200x900x40-mm/12234114/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2107,7 +2234,7 @@
       "notes": "",
       "name": "Shower",
       "status": "not-ordered",
-      "link": "https://www.hornbach.nl/p/qboard-liquid-douche-element-1200x900x40-mm/12234114/",
+      "link": "",
       "description": "Qboard liquid douche element 1200x900",
       "id": 129,
       "documents": [],
@@ -2128,7 +2255,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2154,14 +2282,15 @@
           "id": 33,
           "notes": "",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
       "name": "Douchebak (Teller)",
       "status": "not-ordered",
-      "link": "https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html",
+      "link": "",
       "unit": "pcs",
       "phaseId": 70,
       "description": "Soho antislip SMC hars",
@@ -2180,15 +2309,16 @@
           "id": 34,
           "notes": "",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/fontana-alaska-toiletmeubel-mat-zwart-40x22cm-met-solid-surface-fontein-links-sk79995.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
       "notes": "",
       "name": "Kran Small Toilet",
       "status": "not-ordered",
-      "link": "https://sanitairkamer.nl/fontana-alaska-toiletmeubel-mat-zwart-40x22cm-met-solid-surface-fontein-links-sk79995.html",
+      "link": "",
       "unit": "pcs",
       "phaseId": 70,
       "id": 132,
@@ -2207,14 +2337,15 @@
           "id": 35,
           "notes": "",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
       "name": "Kraan Big Toilet",
       "notes": "",
-      "link": "https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html",
+      "link": "",
       "status": "not-ordered",
       "phaseId": 70,
       "unit": "pcs",
@@ -2234,14 +2365,15 @@
           "id": 36,
           "unitPrice": 400,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
       "name": "Bathtub Cornelis",
       "notes": "",
-      "link": "https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/",
+      "link": "",
       "status": "not-ordered",
       "phaseId": 70,
       "unit": "pcs",
@@ -2250,7 +2382,7 @@
       "id": 134
     },
     {
-      "link": "https://www.warmteservice.nl/Installatiemateriaal/Leidingsystemen/Meerlagenbuis/Henco-Alupex-meerlagenbuis-met-mantel-blauw/p/48670334",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "description": "Henco Alupex meerlagenbuis",
@@ -2267,8 +2399,9 @@
           "date": "2026-07-04",
           "supplier": "Classifier estimate",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Installatiemateriaal/Leidingsystemen/Meerlagenbuis/Henco-Alupex-meerlagenbuis-met-mantel-blauw/p/48670334",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
@@ -2288,15 +2421,16 @@
           "notes": "",
           "id": 38,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
       "notes": "",
       "name": "Water Pipe Fittings (Perskoppeling)",
       "status": "not-ordered",
-      "link": "https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710",
+      "link": "",
       "phaseId": 33,
       "unit": "pcs",
       "description": "Henco Press T-stuk",
@@ -2339,7 +2473,8 @@
           "id": 39,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 8,
@@ -2356,15 +2491,16 @@
           "id": 40,
           "unitPrice": 900,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.elektroshopwagner.de/de/p/326929",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
       "categoryId": 3,
       "name": "Induction Plate",
       "notes": "",
-      "link": "https://www.elektroshopwagner.de/de/p/326929",
+      "link": "",
       "status": "not-ordered",
       "unit": "pcs",
       "phaseId": 69,
@@ -2374,7 +2510,7 @@
     },
     {
       "status": "not-ordered",
-      "link": "https://www.bemmelenkroon.nl/merken/siemens/hb272abb3-sies/",
+      "link": "",
       "unit": "pcs",
       "phaseId": 69,
       "id": 140,
@@ -2392,8 +2528,9 @@
           "notes": "",
           "id": 41,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.bemmelenkroon.nl/merken/siemens/hb272abb3-sies/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
@@ -2409,8 +2546,9 @@
           "notes": "",
           "unitPrice": 338,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2418,7 +2556,7 @@
       "qty": 1,
       "name": "Spoelbak",
       "notes": "",
-      "link": "https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "description": "Sapho 97x50cm zwart graniet",
@@ -2433,7 +2571,7 @@
       "description": "Samsung RB34C600CSA",
       "documents": [],
       "status": "not-ordered",
-      "link": "https://www.mediamarkt.nl/nl/product/_samsung-rb34c600csaef-1762331.html",
+      "link": "",
       "notes": "",
       "name": "Fridge",
       "qty": 1,
@@ -2447,8 +2585,9 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.mediamarkt.nl/nl/product/_samsung-rb34c600csaef-1762331.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": []
@@ -2475,7 +2614,8 @@
           "id": 44,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1
@@ -2499,7 +2639,8 @@
           "unitPrice": 1000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 8,
@@ -2508,7 +2649,7 @@
       "notes": ""
     },
     {
-      "link": "https://www.verfwinkel.nl/powerdek-muren-plafonds-muurverf-wit.html",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "description": "Powerdek muurverf wit ΓÇö 235m┬▓ wall",
@@ -2525,8 +2666,9 @@
           "supplier": "Classifier estimate",
           "chosen": true,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.verfwinkel.nl/powerdek-muren-plafonds-muurverf-wit.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 5,
@@ -2554,7 +2696,8 @@
           "unitPrice": 1000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2581,7 +2724,8 @@
           "unitPrice": 2000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1,
@@ -2600,7 +2744,8 @@
           "id": 49,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 4,
@@ -2626,15 +2771,16 @@
           "notes": "",
           "id": 50,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.betonstorten.nl/offerte-aanvragen",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
       "categoryId": 3,
       "name": "Cement",
       "notes": "",
-      "link": "https://www.betonstorten.nl/offerte-aanvragen",
+      "link": "",
       "status": "not-ordered",
       "phaseId": 50,
       "unit": "pcs",
@@ -2643,7 +2789,7 @@
       "id": 149
     },
     {
-      "link": "https://www.bouwbestel.nl/funderingsbekisting-piepschuim-tempex.html",
+      "link": "",
       "status": "not-ordered",
       "documents": [],
       "description": "3,5x3,5x4,7m = 12m",
@@ -2660,8 +2806,9 @@
           "id": 51,
           "notes": "",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.bouwbestel.nl/funderingsbekisting-piepschuim-tempex.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
@@ -2681,7 +2828,8 @@
           "supplier": "Classifier estimate",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2718,7 +2866,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 30
@@ -2744,7 +2893,8 @@
           "unitPrice": 1000,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2752,7 +2902,7 @@
     },
     {
       "status": "not-ordered",
-      "link": "https://www.toeleveringonline.nl/product/2-delige-schuifpui-aluminium/",
+      "link": "",
       "id": 154,
       "description": "3,6x2,4 ΓÇö 3 windows all open",
       "documents": [],
@@ -2769,8 +2919,9 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.toeleveringonline.nl/product/2-delige-schuifpui-aluminium/",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1,
@@ -2789,14 +2940,15 @@
           "id": 56,
           "unitPrice": 220,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.xxldirect.nl/epdm-dakbedekking-op-maat-4-58-meter-breed-dikte-1-14-mm.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3,
       "name": "EPDM Folie",
       "notes": "",
-      "link": "https://www.xxldirect.nl/epdm-dakbedekking-op-maat-4-58-meter-breed-dikte-1-14-mm.html",
+      "link": "",
       "status": "not-ordered",
       "unit": "pcs",
       "phaseId": 52,
@@ -2817,7 +2969,8 @@
           "unitPrice": 120,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2837,7 +2990,7 @@
       "documents": [],
       "id": 157,
       "description": "EPDM Dachgully",
-      "link": "https://www.xxldirect.nl/epdm-dakdoorvoer-ronde-pijp-recht-diameter-63-mm-x-300-mm.html",
+      "link": "",
       "status": "not-ordered",
       "name": "Gullys (Roof)",
       "notes": "",
@@ -2852,8 +3005,9 @@
           "id": 58,
           "unitPrice": 30,
           "documents": [],
-          "link": "",
-          "shippingCost": 0
+          "link": "https://www.xxldirect.nl/epdm-dakdoorvoer-ronde-pijp-recht-diameter-63-mm-x-300-mm.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 3
@@ -2872,7 +3026,8 @@
           "id": 59,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "notes": "",
@@ -2896,7 +3051,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2932,7 +3088,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 7,
@@ -2952,7 +3109,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -2979,7 +3137,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -3013,7 +3172,8 @@
           "supplier": "Classifier estimate",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -3033,7 +3193,8 @@
           "notes": "",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 7,
@@ -3069,7 +3230,8 @@
           "unitPrice": -2500,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "qty": 1
@@ -3101,7 +3263,8 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "categoryId": 4,
@@ -3129,7 +3292,8 @@
           "notes": "",
           "documents": [],
           "link": "",
-          "shippingCost": 0
+          "shippingCost": 0,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [],
@@ -3145,7 +3309,7 @@
     },
     {
       "status": "ordered",
-      "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
+      "link": "",
       "phaseId": 62,
       "unit": "pcs",
       "description": "",
@@ -3162,8 +3326,9 @@
           "supplier": "Classifier estimate",
           "date": "2026-07-30",
           "documents": [],
-          "link": "",
-          "shippingCost": 20.97
+          "link": "https://www.hbm-machines.com/nl/p/hbm-professionele-1700-watt-sloophamer-breekhamer-sds-max",
+          "shippingCost": 20.97,
+          "name": "Classifier estimate"
         }
       ],
       "orders": [
@@ -3814,8 +3979,8 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 4,
-  "_savedAt": 1785450478929,
-  "nextOrderId": 17,
+  "_savedAt": 1785491264552,
+  "nextOrderId": 18,
   "nextQuoteId": 127,
   "nextItemId": 245,
   "_version": "dashboard-v1",
