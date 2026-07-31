@@ -687,7 +687,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1463,15 +1463,17 @@ let budgetChart = null, catChart = null;
 let expandedItems = new Set();
 
 function deriveStatusFromOrders(it){
-  const act=(it.orders||[]).filter(o=>o.status!=='cancelled');
-  if((it.orders||[]).length>0 && act.length===0) return 'cancelled';
+  const orders=it.orders||[];
+  const act=orders.filter(o=>o.status!=='cancelled');
+  if(orders.length>0 && act.length===0) return 'cancelled';
   if(act.length===0) return 'not-ordered';
+  if(act.every(o=>o.status==='returned')) return 'returned';
   const ordered=act.reduce((a,o)=>a+Number(o.qtyOrdered||0),0);
   const delivered=act.reduce((a,o)=>a+Number(o.qtyDelivered||0),0);
   if(ordered>0 && delivered>=ordered) return 'delivered';
   if(delivered>0) return 'partial';
-  if(act.every(o=>o.status==='delivered'||o.status==='returned')) return 'delivered';
-  if(act.some(o=>o.status==='delivered')) return 'partial';
+  if(act.every(o=>o.status==='delivered')) return 'delivered';
+  if(act.some(o=>o.status==='delivered'||o.status==='partial')) return 'partial';
   if(act.some(o=>o.status==='shipped')) return 'shipped';
   return 'ordered';
 }
@@ -1503,7 +1505,7 @@ function migrateState(state){
     if(it.link==null) it.link='';
     it.quotes.forEach(q=>{ if(q.chosen==null) q.chosen=false; if(!Array.isArray(q.documents)) q.documents=[]; if(q.link==null) q.link=''; if(q.name==null) q.name=q.supplier||''; });
     it.orders.forEach(o=>{ if(o.qtyDelivered==null)o.qtyDelivered=0; if(o.qtyReturned==null)o.qtyReturned=0; if(!o.status)o.status='ordered'; if(!Array.isArray(o.documents)) o.documents=[]; if(o.shippingCost==null) o.shippingCost=0; });
-    if(it.status==null) it.status=deriveStatusFromOrders(it);
+    if(it.orders&&it.orders.length) it.status=deriveStatusFromOrders(it); else if(it.status==null) it.status='not-ordered';
   });
   // Migrate item notes+link into first quote option
   let _qidBump=Math.max(0,...state.items.flatMap(it=>it.quotes.map(q=>q.id||0)),0)+1;
@@ -2914,9 +2916,9 @@ function documentsPanelHtml(it){
       <button class="btn btn-ghost btn-icon btn-sm" onclick="deleteDocumentInline(${it.id},${d.id})" title="Delete document">×</button>
     </div>`;
   }).join('');
-  return `<div style="margin-bottom:14px">
-    <div class="flex" style="justify-content:space-between;margin-bottom:6px">
-      <span class="fw6" style="font-size:12px">Documents</span>
+  return `<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px;margin-bottom:0">
+    <div class="flex" style="justify-content:space-between;margin-bottom:8px;border-left:3px solid var(--g300);padding-left:8px">
+      <span class="fw6" style="font-size:12px;color:var(--g600)">Documents</span>
       <label class="btn btn-ghost btn-sm" style="cursor:pointer">+ Add Document<input type="file" style="display:none" onchange="handleDocumentUpload(event,${it.id})"></label>
     </div>
     ${rows||'<div class="empty" style="padding:8px;font-size:12px">No documents yet</div>'}
@@ -2964,8 +2966,8 @@ function quotesPanelHtml(it){
       ${qdocThumbsHtml(it.id,q.id,q.documents||[])}
       <label style="cursor:pointer;font-size:11px;color:var(--pri);white-space:nowrap" title="Attach document to option">&#128206; <input type="file" style="display:none" accept="image/*,.pdf,.docx,.xlsx" onchange="handleQuoteDocUpload(event,${it.id},${q.id})"></label>
     </div>`).join('');
-  return `<div style="margin-bottom:14px">
-    <div class="flex" style="justify-content:space-between;margin-bottom:6px"><span class="fw6" style="font-size:12px">Options</span><button class="btn btn-ghost btn-sm" onclick="addQuoteInline(${it.id})">+ Add Option</button></div>
+  return `<div style="background:#f0f4ff;border:1px solid #dbeafe;border-radius:8px;padding:12px;margin-bottom:12px">
+    <div class="flex" style="justify-content:space-between;margin-bottom:8px;border-left:3px solid var(--pri);padding-left:8px"><span class="fw6" style="font-size:12px;color:var(--pri)">Options</span><button class="btn btn-ghost btn-sm" onclick="addQuoteInline(${it.id})">+ Add Option</button></div>
     ${rows||'<div class="empty" style="padding:8px;font-size:12px">No options yet — add one to set the budget price</div>'}
   </div>`;
 }
@@ -2993,8 +2995,8 @@ function ordersPanelHtml(it){
       ${odocsThumbsHtml(it.id,o.id,o.documents||[])}
       <label style="cursor:pointer;font-size:11px;color:var(--pri);white-space:nowrap" title="Attach document to order">&#128206; <input type="file" style="display:none" accept="image/*,.pdf,.docx,.xlsx" onchange="handleOrderDocUpload(event,${it.id},${o.id})"></label>
     </div>`).join('');
-  return `<div>
-    <div class="flex" style="justify-content:space-between;margin-bottom:6px"><span class="fw6" style="font-size:12px">Orders</span><button class="btn btn-ghost btn-sm" onclick="addOrderInline(${it.id})">+ Add Order</button></div>
+  return `<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px;margin-bottom:12px">
+    <div class="flex" style="justify-content:space-between;margin-bottom:8px;border-left:3px solid var(--warn);padding-left:8px"><span class="fw6" style="font-size:12px;color:var(--warn)">Orders</span><button class="btn btn-ghost btn-sm" onclick="addOrderInline(${it.id})">+ Add Order</button></div>
     ${rows||'<div class="empty" style="padding:8px;font-size:12px">No orders yet</div>'}
   </div>`;
 }
@@ -3090,9 +3092,9 @@ function itemRowHtml(it,idx){
   </tr>`;
   if(expanded){
     html+=`<tr class="item-detail-row"><td></td><td colspan="${cols.length+1}" style="background:var(--g50);padding:14px 16px">
-      ${documentsPanelHtml(it)}
       ${quotesPanelHtml(it)}
       ${ordersPanelHtml(it)}
+      ${documentsPanelHtml(it)}
     </td></tr>`;
   }
   return html;
@@ -3165,7 +3167,6 @@ function renderBomSidebar(){
 }
 
 function renderItems(){
-  S.items.forEach(function(it){if(it.orders&&it.orders.length)it.status=deriveStatusFromOrders(it);});
   const fPhase=_bomPhaseId?String(_bomPhaseId):'';
   const fCat=C('it-filter-cat').value;
   const fStatus=C('it-filter-status').value;
