@@ -40,6 +40,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 248,
+      "phaseId": 60,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 247,
       "phaseId": 62,
       "categoryId": null,
@@ -88,7 +102,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 245,
@@ -113,7 +128,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 244,
@@ -4017,10 +4033,10 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785623651162,
+  "_savedAt": 1785624891904,
   "nextOrderId": 18,
   "nextQuoteId": 131,
-  "nextItemId": 248,
+  "nextItemId": 249,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -4496,7 +4512,7 @@
       "status": 137,
       "netspent": 81
     },
-    "sortKey": "phase",
+    "sortKey": "total",
     "sortDir": "desc"
   },
   "spaces": [
