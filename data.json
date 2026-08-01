@@ -56,7 +56,7 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.amsterdam.nl/vergunningen-ontheffingen/werkzaamheden-straat/objectvergunning-aanvragen/",
           "chosen": true,
           "documents": []
         }
@@ -4044,7 +4044,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785624906077,
+  "_savedAt": 1785624911370,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
