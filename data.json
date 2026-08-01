@@ -3314,7 +3314,7 @@
         {
           "id": 67,
           "notes": "",
-          "unitPrice": 25000,
+          "unitPrice": 10000,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625506171,
+  "_savedAt": 1785625520285,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
