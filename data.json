@@ -3361,7 +3361,7 @@
       "unit": "hr",
       "phaseId": 63,
       "id": 168,
-      "description": "~220 hrs @ Γé¼55/hr",
+      "description": "",
       "documents": []
     },
     {
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625479885,
+  "_savedAt": 1785625483247,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
