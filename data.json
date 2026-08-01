@@ -1953,7 +1953,7 @@
         }
       ],
       "orders": [],
-      "categoryId": null,
+      "categoryId": 8,
       "unit": "pcs",
       "phaseId": 65,
       "documents": [],
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625717218,
+  "_savedAt": 1785625736626,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
