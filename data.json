@@ -3361,7 +3361,7 @@
       "unit": "hr",
       "phaseId": 63,
       "id": 168,
-      "description": "",
+      "description": "6 weeks @ 40 h",
       "documents": []
     },
     {
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625485978,
+  "_savedAt": 1785625503491,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
