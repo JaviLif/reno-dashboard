@@ -53,7 +53,7 @@
         {
           "id": 129,
           "name": "rpd18bl1-0",
-          "unitPrice": 0,
+          "unitPrice": 111,
           "date": "",
           "notes": "",
           "link": "",
@@ -4021,7 +4021,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785576842164,
+  "_savedAt": 1785576858997,
   "nextOrderId": 18,
   "nextQuoteId": 130,
   "nextItemId": 247,
