@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625520285,
+  "_savedAt": 1785625566877,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
@@ -4294,7 +4294,7 @@
     {
       "number": "6",
       "name": "Contractors",
-      "budget": 35000,
+      "budget": 20000,
       "id": 63,
       "notes": "",
       "end": "",
