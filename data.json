@@ -52,7 +52,7 @@
       "quotes": [
         {
           "id": 130,
-          "name": "",
+          "name": "R18MT-0",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -4046,7 +4046,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785577145691,
+  "_savedAt": 1785577156103,
   "nextOrderId": 18,
   "nextQuoteId": 131,
   "nextItemId": 248,
