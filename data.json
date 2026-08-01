@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625155266,
+  "_savedAt": 1785625389844,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
@@ -4510,7 +4510,8 @@
       "category"
     ],
     "colHidden": [
-      "delivery"
+      "delivery",
+      "quote"
     ],
     "colWidths": {
       "category": 240,
@@ -4524,7 +4525,7 @@
       "status": 137,
       "netspent": 81
     },
-    "sortKey": "name",
+    "sortKey": "price",
     "sortDir": "desc"
   },
   "spaces": [
