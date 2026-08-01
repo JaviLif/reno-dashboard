@@ -94,7 +94,7 @@
     {
       "id": 246,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Bohrmachine",
       "description": "ideally RDD18X1-0 but nowhere to be found therefore ",
       "link": "",
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625617508,
+  "_savedAt": 1785625620577,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
