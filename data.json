@@ -3971,7 +3971,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785516002457,
+  "_savedAt": 1785516024277,
   "nextOrderId": 18,
   "nextQuoteId": 128,
   "nextItemId": 245,
@@ -4430,21 +4430,28 @@
       "total",
       "quote",
       "status",
+      "delivery",
       "netspent",
       "phase",
-      "category",
-      "delivery"
+      "category"
     ],
     "colHidden": [
       "delivery"
     ],
     "colWidths": {
-      "phase": 178,
-      "category": 210,
-      "name": 220
+      "category": 240,
+      "name": 253,
+      "description": 258,
+      "qty": 72,
+      "phase": 241,
+      "delivery": 71,
+      "price": 60,
+      "link": 60,
+      "status": 137,
+      "netspent": 81
     },
-    "sortKey": null,
-    "sortDir": "asc"
+    "sortKey": "phase",
+    "sortDir": "desc"
   },
   "spaces": [
     {
