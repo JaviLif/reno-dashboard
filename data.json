@@ -204,7 +204,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 241,
@@ -4030,7 +4030,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625813061,
+  "_savedAt": 1785625825593,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
