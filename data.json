@@ -41,7 +41,7 @@
   "items": [
     {
       "id": 245,
-      "phaseId": 2,
+      "phaseId": 62,
       "categoryId": null,
       "name": "Schlagbohrmachine",
       "description": "RID18X1-0",
@@ -3996,7 +3996,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785575640752,
+  "_savedAt": 1785575754646,
   "nextOrderId": 18,
   "nextQuoteId": 129,
   "nextItemId": 246,
