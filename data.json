@@ -49,7 +49,18 @@
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 130,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -4035,9 +4046,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785577136590,
+  "_savedAt": 1785577140422,
   "nextOrderId": 18,
-  "nextQuoteId": 130,
+  "nextQuoteId": 131,
   "nextItemId": 248,
   "_version": "dashboard-v1",
   "phases": [
