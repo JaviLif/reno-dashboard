@@ -255,21 +255,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 237,
-      "phaseId": 62,
-      "categoryId": 8,
-      "name": "Bohrmachhine",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 236,
       "phaseId": 62,
       "categoryId": 8,
@@ -4047,7 +4032,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785623555512,
+  "_savedAt": 1785623615848,
   "nextOrderId": 18,
   "nextQuoteId": 131,
   "nextItemId": 248,
