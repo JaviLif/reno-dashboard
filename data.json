@@ -3337,7 +3337,7 @@
       "phaseId": 63
     },
     {
-      "qty": 120,
+      "qty": 240,
       "categoryId": 4,
       "quotes": [
         {
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625503491,
+  "_savedAt": 1785625506171,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
