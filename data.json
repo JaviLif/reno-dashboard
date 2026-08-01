@@ -56,7 +56,7 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.amazon.nl/RYOBI-Accu-multitool-R18MT-0-oscillatiehoek-snelheidsregeling/dp/B01B6EDVO0/ref=asc_df_B01B6EDVO0?mcid=e42c466a4e3237c2970720c242454252&tag=nlshogostdde-21&linkCode=df0&hvadid=710086527074&hvpos=&hvnetw=g&hvrand=7601825528825780581&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-366864153578&psc=1&hvocijid=7601825528825780581-B01B6EDVO0-&hvexpln=0&gad_source=1",
           "chosen": true,
           "documents": []
         }
@@ -4046,7 +4046,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785577140422,
+  "_savedAt": 1785577145691,
   "nextOrderId": 18,
   "nextQuoteId": 131,
   "nextItemId": 248,
