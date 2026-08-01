@@ -43,13 +43,24 @@
       "id": 248,
       "phaseId": 60,
       "categoryId": null,
-      "name": "",
+      "name": "Rent Container Gemmente",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 131,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -4033,9 +4044,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785624891904,
+  "_savedAt": 1785624906077,
   "nextOrderId": 18,
-  "nextQuoteId": 131,
+  "nextQuoteId": 132,
   "nextItemId": 249,
   "_version": "dashboard-v1",
   "phases": [
