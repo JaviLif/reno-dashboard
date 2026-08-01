@@ -120,7 +120,7 @@
     {
       "id": 245,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Schlagschrauber",
       "description": "RID18X1-0",
       "link": "",
@@ -4045,7 +4045,7 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785625608714,
+  "_savedAt": 1785625617508,
   "nextOrderId": 18,
   "nextQuoteId": 132,
   "nextItemId": 249,
