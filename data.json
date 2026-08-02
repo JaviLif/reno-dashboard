@@ -152,7 +152,7 @@
       "id": 245,
       "phaseId": 62,
       "categoryId": 8,
-      "name": "Schlagschrauber",
+      "name": "Ryobi Schlagschrauber",
       "description": "RID18X1-0",
       "link": "",
       "qty": 1,
@@ -317,7 +317,7 @@
       "id": 236,
       "phaseId": 62,
       "categoryId": 8,
-      "name": "Schlagbohrmachine",
+      "name": "Ryobi Schlagbohrmachine",
       "description": "",
       "link": "",
       "qty": 1,
@@ -332,7 +332,7 @@
       "id": 235,
       "phaseId": 62,
       "categoryId": 8,
-      "name": "Ryobi RyobiFresmachine",
+      "name": "Ryobi Fresmachine",
       "description": "",
       "link": "",
       "qty": 1,
@@ -4061,7 +4061,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785699858214,
+  "_savedAt": 1785699879730,
   "nextOrderId": 18,
   "nextQuoteId": 133,
   "nextItemId": 250,
@@ -4542,7 +4542,7 @@
       "netspent": 81
     },
     "sortKey": "name",
-    "sortDir": "asc"
+    "sortDir": "desc"
   },
   "spaces": [
     {
