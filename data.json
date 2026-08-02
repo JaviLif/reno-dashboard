@@ -43,13 +43,24 @@
       "id": 249,
       "phaseId": 78,
       "categoryId": null,
-      "name": "",
+      "name": "installation video",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 132,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -4044,9 +4055,9 @@
   },
   "nextCategoryId": 10,
   "nextDocId": 5,
-  "_savedAt": 1785697159376,
+  "_savedAt": 1785697167434,
   "nextOrderId": 18,
-  "nextQuoteId": 132,
+  "nextQuoteId": 133,
   "nextItemId": 250,
   "_version": "dashboard-v1",
   "phases": [
