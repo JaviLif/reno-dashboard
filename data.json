@@ -145,7 +145,7 @@
         },
         {
           "id": 133,
-          "name": "Vinted",
+          "name": "RPD18C1",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -4071,7 +4071,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785756771838,
+  "_savedAt": 1785756906272,
   "nextOrderId": 18,
   "nextQuoteId": 134,
   "nextItemId": 250,
