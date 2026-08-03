@@ -146,7 +146,7 @@
         {
           "id": 133,
           "name": "RPD18C1",
-          "unitPrice": 0,
+          "unitPrice": 80,
           "date": "",
           "notes": "Vinted ",
           "link": "",
@@ -4071,7 +4071,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785756910025,
+  "_savedAt": 1785756944357,
   "nextOrderId": 18,
   "nextQuoteId": 134,
   "nextItemId": 250,
