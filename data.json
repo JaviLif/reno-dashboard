@@ -47,7 +47,7 @@
     {
       "id": 250,
       "phaseId": 72,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Solar panel",
       "description": "Cels",
       "link": "",
@@ -4085,7 +4085,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785744629484,
+  "_savedAt": 1785744651053,
   "nextOrderId": 18,
   "nextQuoteId": 134,
   "nextItemId": 251,
