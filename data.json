@@ -1548,7 +1548,16 @@
       "link": "",
       "id": 98,
       "description": "Asbestreport Destruktiev",
-      "documents": [],
+      "documents": [
+        {
+          "id": 5,
+          "name": "Asbest Faktuur.pdf",
+          "type": "application/pdf",
+          "size": 135255,
+          "ghPath": "quotes/Asbest_Faktuur.pdf",
+          "uploadedDate": "2026-08-03"
+        }
+      ],
       "unit": "pcs",
       "phaseId": 61,
       "categoryId": 1,
@@ -4104,8 +4113,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 11,
-  "nextDocId": 5,
-  "_savedAt": 1785757340720,
+  "nextDocId": 6,
+  "_savedAt": 1785757377532,
   "nextOrderId": 20,
   "nextQuoteId": 134,
   "nextItemId": 250,
