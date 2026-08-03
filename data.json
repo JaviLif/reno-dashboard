@@ -61,7 +61,8 @@
           "unitPrice": 68,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.stralendgroen.nl/product/trina-solar-vertex-s-dual-glass-whitebacksheet-465wp/"
         }
       ],
       "orders": [],
@@ -4084,7 +4085,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785744623208,
+  "_savedAt": 1785744629484,
   "nextOrderId": 18,
   "nextQuoteId": 134,
   "nextItemId": 251,
