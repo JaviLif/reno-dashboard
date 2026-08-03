@@ -1544,7 +1544,7 @@
       "categoryId": 1
     },
     {
-      "status": "ordered",
+      "status": "delivered",
       "link": "",
       "id": 98,
       "description": "Asbestreport Destruktiev",
@@ -1616,7 +1616,7 @@
           "orderDate": "",
           "unitPrice": 1156.76,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -4105,7 +4105,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1785757318229,
+  "_savedAt": 1785757320990,
   "nextOrderId": 20,
   "nextQuoteId": 134,
   "nextItemId": 250,
