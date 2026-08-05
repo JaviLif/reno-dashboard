@@ -45,6 +45,33 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 250,
+      "phaseId": 72,
+      "categoryId": 3,
+      "name": "Solar panel",
+      "description": "Cels",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 133,
+          "supplier": "",
+          "unitPrice": 68,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.stralendgroen.nl/product/trina-solar-vertex-s-dual-glass-whitebacksheet-465wp/",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
       "id": 249,
       "phaseId": 78,
       "categoryId": 10,
@@ -140,41 +167,13 @@
           "date": "",
           "notes": "",
           "link": "https://www.amazon.nl/RYOBI-Borstelloze-klopboorschroevendraaier-450-1700-boorhouder/dp/B0CRZ36DSL/ref=asc_df_B0CRZ36DSL?mcid=fdf4fd79ba403b34a060c1f4a3161946&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=5492911712002429878&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2292592272400&hvocijid=5492911712002429878-B0CRZ36DSL-&hvexpln=0&gad_source=1&th=1",
-          "chosen": false,
-          "documents": []
-        },
-        {
-          "id": 133,
-          "name": "RPD18C1",
-          "unitPrice": 80,
-          "date": "",
-          "notes": "Vinted ",
-          "link": "",
           "chosen": true,
           "documents": []
         }
       ],
-      "orders": [
-        {
-          "id": 18,
-          "supplier": "Vinted",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 80,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 10.25,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
+      "orders": [],
       "documents": [],
-      "status": "ordered"
+      "status": "not-ordered"
     },
     {
       "id": 245,
@@ -213,26 +212,9 @@
       "unit": "",
       "notes": "",
       "quotes": [],
-      "orders": [
-        {
-          "id": 20,
-          "supplier": "TileExpert",
-          "poNumber": "",
-          "orderDate": "2026-08-03",
-          "unitPrice": 34.78,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "2026-08-05",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
+      "orders": [],
       "documents": [],
-      "status": "ordered"
+      "status": "not-ordered"
     },
     {
       "id": 243,
@@ -1562,28 +1544,11 @@
       "categoryId": 1
     },
     {
-      "status": "delivered",
+      "status": "ordered",
       "link": "",
       "id": 98,
       "description": "Asbestreport Destruktiev",
-      "documents": [
-        {
-          "id": 5,
-          "name": "Asbest Faktuur.pdf",
-          "type": "application/pdf",
-          "size": 135255,
-          "ghPath": "quotes/Asbest_Faktuur.pdf",
-          "uploadedDate": "2026-08-03"
-        },
-        {
-          "id": 6,
-          "name": "BS60288_Asbestinventarisatie_Cornelis_de_Grootpad_1_te_Amsterdam-V1.pdf",
-          "type": "application/pdf",
-          "size": 2689517,
-          "ghPath": "quotes/BS60288_Asbestinventarisatie_Cornelis_de_Grootpad_1_te_Amsterdam-V1.pdf",
-          "uploadedDate": "2026-08-03"
-        }
-      ],
+      "documents": [],
       "unit": "pcs",
       "phaseId": 61,
       "categoryId": 1,
@@ -1603,7 +1568,7 @@
         {
           "id": 73,
           "supplier": "Buro Sprinweg",
-          "unitPrice": 1156.78,
+          "unitPrice": 798.6,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -1643,25 +1608,7 @@
           "name": "Perfectkeur"
         }
       ],
-      "orders": [
-        {
-          "id": 19,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "",
-          "unitPrice": 1156.76,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
+      "orders": [],
       "qty": 1,
       "notes": "",
       "name": "Asbestreport"
@@ -4140,11 +4087,11 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 11,
-  "nextDocId": 7,
-  "_savedAt": 1785921016696,
-  "nextOrderId": 21,
+  "nextDocId": 5,
+  "_savedAt": 1785744651053,
+  "nextOrderId": 18,
   "nextQuoteId": 134,
-  "nextItemId": 250,
+  "nextItemId": 251,
   "_version": "dashboard-v1",
   "phases": [
     {
