@@ -61,7 +61,10 @@
           "unitPrice": 25.83,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -79,7 +82,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -229,7 +233,7 @@
       "quotes": [
         {
           "id": 128,
-          "name": "",
+          "name": "Vinted",
           "unitPrice": 112,
           "date": "",
           "notes": "",
@@ -4129,7 +4133,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1786002069185,
+  "_savedAt": 1786112703250,
   "nextOrderId": 19,
   "nextQuoteId": 135,
   "nextItemId": 252,
