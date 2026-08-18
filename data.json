@@ -1761,7 +1761,24 @@
           "name": "Perfectkeur"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 23,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 798.6,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "qty": 1,
       "notes": "",
       "name": "Asbestreport"
@@ -4241,8 +4258,8 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787070679808,
-  "nextOrderId": 23,
+  "_savedAt": 1787071166627,
+  "nextOrderId": 24,
   "nextQuoteId": 137,
   "nextItemId": 253,
   "_version": "dashboard-v1",
@@ -4692,8 +4709,7 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "phase",
-      "category",
+      "link",
       "name",
       "description",
       "qty",
@@ -4703,11 +4719,26 @@
       "status",
       "delivery",
       "netspent",
-      "link"
+      "phase",
+      "category"
     ],
-    "colHidden": [],
-    "colWidths": {},
-    "sortKey": "status",
+    "colHidden": [
+      "delivery",
+      "quote"
+    ],
+    "colWidths": {
+      "category": 240,
+      "name": 253,
+      "description": 258,
+      "qty": 72,
+      "phase": 241,
+      "delivery": 71,
+      "price": 60,
+      "link": 60,
+      "status": 137,
+      "netspent": 81
+    },
+    "sortKey": "netspent",
     "sortDir": "asc"
   },
   "spaces": [
