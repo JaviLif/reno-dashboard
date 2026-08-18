@@ -216,7 +216,24 @@
           "documents": []
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 20,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 111,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
       "status": "not-ordered"
     },
@@ -257,11 +274,12 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
-      "status": "not-ordered"
+      "status": "ordered"
     },
     {
       "id": 244,
@@ -4150,8 +4168,8 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1786112727055,
-  "nextOrderId": 20,
+  "_savedAt": 1787067703068,
+  "nextOrderId": 21,
   "nextQuoteId": 135,
   "nextItemId": 252,
   "_version": "dashboard-v1",
@@ -4601,7 +4619,8 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "link",
+      "phase",
+      "category",
       "name",
       "description",
       "qty",
@@ -4611,27 +4630,12 @@
       "status",
       "delivery",
       "netspent",
-      "phase",
-      "category"
+      "link"
     ],
-    "colHidden": [
-      "delivery",
-      "quote"
-    ],
-    "colWidths": {
-      "category": 240,
-      "name": 253,
-      "description": 258,
-      "qty": 72,
-      "phase": 241,
-      "delivery": 71,
-      "price": 60,
-      "link": 60,
-      "status": 137,
-      "netspent": 81
-    },
-    "sortKey": "name",
-    "sortDir": "desc"
+    "colHidden": [],
+    "colWidths": {},
+    "sortKey": "status",
+    "sortDir": "asc"
   },
   "spaces": [
     {
