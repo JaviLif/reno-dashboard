@@ -214,6 +214,16 @@
           "link": "https://www.amazon.nl/RYOBI-Borstelloze-klopboorschroevendraaier-450-1700-boorhouder/dp/B0CRZ36DSL/ref=asc_df_B0CRZ36DSL?mcid=fdf4fd79ba403b34a060c1f4a3161946&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=5492911712002429878&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2292592272400&hvocijid=5492911712002429878-B0CRZ36DSL-&hvexpln=0&gad_source=1&th=1",
           "chosen": true,
           "documents": []
+        },
+        {
+          "id": 135,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [
@@ -4168,9 +4178,9 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787067763889,
+  "_savedAt": 1787067787465,
   "nextOrderId": 21,
-  "nextQuoteId": 135,
+  "nextQuoteId": 136,
   "nextItemId": 252,
   "_version": "dashboard-v1",
   "phases": [
