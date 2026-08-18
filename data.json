@@ -1709,6 +1709,14 @@
           "size": 2689517,
           "ghPath": "quotes/BS60288_Asbestinventarisatie_Cornelis_de_Grootpad_1_te_Amsterdam-V1.pdf",
           "uploadedDate": "2026-08-18"
+        },
+        {
+          "id": 6,
+          "name": "F02624.pdf",
+          "type": "application/pdf",
+          "size": 135255,
+          "ghPath": "quotes/F02624.pdf",
+          "uploadedDate": "2026-08-18"
         }
       ],
       "unit": "pcs",
@@ -4266,8 +4274,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 11,
-  "nextDocId": 6,
-  "_savedAt": 1787071334801,
+  "nextDocId": 7,
+  "_savedAt": 1787071360875,
   "nextOrderId": 24,
   "nextQuoteId": 137,
   "nextItemId": 253,
