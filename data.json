@@ -1697,11 +1697,20 @@
       "categoryId": 1
     },
     {
-      "status": "ordered",
+      "status": "delivered",
       "link": "",
       "id": 98,
       "description": "Asbestreport Destruktiev",
-      "documents": [],
+      "documents": [
+        {
+          "id": 5,
+          "name": "BS60288_Asbestinventarisatie_Cornelis_de_Grootpad_1_te_Amsterdam-V1.pdf",
+          "type": "application/pdf",
+          "size": 2689517,
+          "ghPath": "quotes/BS60288_Asbestinventarisatie_Cornelis_de_Grootpad_1_te_Amsterdam-V1.pdf",
+          "uploadedDate": "2026-08-18"
+        }
+      ],
       "unit": "pcs",
       "phaseId": 61,
       "categoryId": 1,
@@ -1769,7 +1778,7 @@
           "orderDate": "",
           "unitPrice": 798.6,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -4257,8 +4266,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 11,
-  "nextDocId": 5,
-  "_savedAt": 1787071166627,
+  "nextDocId": 6,
+  "_savedAt": 1787071250701,
   "nextOrderId": 24,
   "nextQuoteId": 137,
   "nextItemId": 253,
