@@ -218,7 +218,7 @@
         {
           "id": 135,
           "name": "",
-          "unitPrice": 0,
+          "unitPrice": 80,
           "date": "",
           "notes": "",
           "link": "",
@@ -4178,7 +4178,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787067787465,
+  "_savedAt": 1787067800187,
   "nextOrderId": 21,
   "nextQuoteId": 136,
   "nextItemId": 252,
