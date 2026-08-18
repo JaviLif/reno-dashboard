@@ -49,13 +49,30 @@
       "phaseId": 2,
       "categoryId": 8,
       "name": "Lamps",
-      "description": "",
+      "description": "Vinted",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [],
-      "orders": [],
+      "orders": [
+        {
+          "id": 21,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": []
     },
     {
@@ -4192,8 +4209,8 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787067926802,
-  "nextOrderId": 21,
+  "_savedAt": 1787067953937,
+  "nextOrderId": 22,
   "nextQuoteId": 136,
   "nextItemId": 253,
   "_version": "dashboard-v1",
