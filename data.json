@@ -261,7 +261,7 @@
         {
           "id": 128,
           "name": "Vinted",
-          "unitPrice": 91.25,
+          "unitPrice": 80,
           "date": "",
           "notes": "",
           "link": "https://www.amazon.nl/Ryobi-RID18BL-0-draadloze-borstelloze-slagmoersleutel/dp/B0DCGKCD6K/ref=asc_df_B0DCGKCD6K?mcid=6ed4014632fa32bf9eed436b58938535&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=91698367455844245&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2412577363327&psc=1&hvocijid=91698367455844245-B0DCGKCD6K-&hvexpln=0&gad_source=1",
@@ -4178,7 +4178,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787067842422,
+  "_savedAt": 1787067865466,
   "nextOrderId": 21,
   "nextQuoteId": 136,
   "nextItemId": 252,
