@@ -219,7 +219,7 @@
       "orders": [
         {
           "id": 20,
-          "supplier": "",
+          "supplier": "Vinted",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 111,
@@ -235,7 +235,7 @@
         }
       ],
       "documents": [],
-      "status": "not-ordered"
+      "status": "ordered"
     },
     {
       "id": 245,
@@ -4168,7 +4168,7 @@
   },
   "nextCategoryId": 11,
   "nextDocId": 5,
-  "_savedAt": 1787067703068,
+  "_savedAt": 1787067712272,
   "nextOrderId": 21,
   "nextQuoteId": 135,
   "nextItemId": 252,
