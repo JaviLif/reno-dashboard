@@ -77,7 +77,7 @@
           "orderDate": "",
           "unitPrice": 1020.95,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -87,7 +87,8 @@
           "notes": ""
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "delivered"
     },
     {
       "id": 254,
@@ -4421,7 +4422,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390824846,
+  "_savedAt": 1787390828595,
   "nextOrderId": 28,
   "nextQuoteId": 140,
   "nextItemId": 256,
