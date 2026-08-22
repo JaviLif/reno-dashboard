@@ -39,6 +39,11 @@
       "id": 10,
       "name": "Tutorial/Videos",
       "color": "#eb2442"
+    },
+    {
+      "id": 11,
+      "name": "Buying Costs",
+      "color": "#dd24eb"
     }
   ],
   "nextPhaseId": 79,
@@ -4299,9 +4304,9 @@
     "totalBudget": 0,
     "endDate": "2027-06-30"
   },
-  "nextCategoryId": 11,
+  "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390611841,
+  "_savedAt": 1787390647750,
   "nextOrderId": 24,
   "nextQuoteId": 138,
   "nextItemId": 254,
