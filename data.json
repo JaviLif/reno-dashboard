@@ -1429,7 +1429,7 @@
       ],
       "orders": [],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 194,
@@ -4364,7 +4364,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390714558,
+  "_savedAt": 1787390719704,
   "nextOrderId": 26,
   "nextQuoteId": 139,
   "nextItemId": 255,
