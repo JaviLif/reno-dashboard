@@ -134,7 +134,7 @@
     {
       "id": 254,
       "phaseId": 60,
-      "categoryId": null,
+      "categoryId": 11,
       "name": "Erfpachtscanon  until end of the year",
       "description": " 25-08-2026 tot  einde jaar",
       "link": "",
@@ -4463,7 +4463,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390941198,
+  "_savedAt": 1787390943839,
   "nextOrderId": 29,
   "nextQuoteId": 141,
   "nextItemId": 257,
