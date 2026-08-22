@@ -52,7 +52,7 @@
     {
       "id": 253,
       "phaseId": 60,
-      "categoryId": null,
+      "categoryId": 11,
       "name": "errekening zakelijke lasten",
       "description": " 25-08-2026 tot  einde jaar",
       "link": "",
@@ -4306,7 +4306,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390647750,
+  "_savedAt": 1787390666954,
   "nextOrderId": 24,
   "nextQuoteId": 138,
   "nextItemId": 254,
