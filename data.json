@@ -1753,7 +1753,7 @@
           "uploadedDate": "2026-07-06"
         }
       ],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "unit": "pcs",
@@ -4381,7 +4381,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787390733413,
+  "_savedAt": 1787390741285,
   "nextOrderId": 27,
   "nextQuoteId": 139,
   "nextItemId": 255,
