@@ -69,6 +69,16 @@
           "link": "https://www.hornbach.nl/p/mortelemmer-pe-rond-505-mm-40-l/3868233/",
           "chosen": true,
           "documents": []
+        },
+        {
+          "id": 143,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -4531,9 +4541,9 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787475665015,
+  "_savedAt": 1787475705529,
   "nextOrderId": 30,
-  "nextQuoteId": 143,
+  "nextQuoteId": 144,
   "nextItemId": 259,
   "_version": "dashboard-v1",
   "phases": [
