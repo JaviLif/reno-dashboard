@@ -706,21 +706,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 238,
-      "phaseId": 62,
-      "categoryId": 8,
-      "name": "Laser",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 236,
       "phaseId": 62,
       "categoryId": 8,
@@ -4521,7 +4506,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787475079174,
+  "_savedAt": 1787475363722,
   "nextOrderId": 30,
   "nextQuoteId": 142,
   "nextItemId": 258,
