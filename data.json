@@ -72,7 +72,7 @@
         },
         {
           "id": 143,
-          "name": "",
+          "name": "SCHRAAG",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -4541,7 +4541,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787475705529,
+  "_savedAt": 1787475712345,
   "nextOrderId": 30,
   "nextQuoteId": 144,
   "nextItemId": 259,
