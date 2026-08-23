@@ -72,7 +72,7 @@
       "orders": [
         {
           "id": 29,
-          "supplier": "",
+          "supplier": "Lidl",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 222.9,
@@ -87,7 +87,8 @@
           "notes": ""
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 256,
@@ -4520,7 +4521,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787475058924,
+  "_savedAt": 1787475067454,
   "nextOrderId": 30,
   "nextQuoteId": 142,
   "nextItemId": 258,
