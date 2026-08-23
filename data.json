@@ -62,7 +62,7 @@
       "quotes": [
         {
           "id": 142,
-          "name": "",
+          "name": "MORTELEEMER",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -4531,7 +4531,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787475658681,
+  "_savedAt": 1787475665015,
   "nextOrderId": 30,
   "nextQuoteId": 143,
   "nextItemId": 259,
