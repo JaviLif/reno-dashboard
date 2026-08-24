@@ -4563,6 +4563,18 @@
       "spaceIds": []
     },
     {
+      "id": 45,
+      "phaseId": 61,
+      "name": "Add eachother on Pensionfond",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4629,7 +4641,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 45,
+  "nextTaskId": 46,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -4640,7 +4652,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787594004499,
+  "_savedAt": 1787594067268,
   "nextOrderId": 31,
   "nextQuoteId": 147,
   "nextItemId": 261,
