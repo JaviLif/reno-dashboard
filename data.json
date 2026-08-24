@@ -4041,23 +4041,6 @@
       "spaceIds": []
     },
     {
-      "id": 28,
-      "phaseId": 62,
-      "name": "Preliminary layout bath",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "notes": "",
-      "kanbanOrder": 30,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -4558,6 +4541,23 @@
       "spaceIds": []
     },
     {
+      "id": 28,
+      "phaseId": 62,
+      "name": "Preliminary layout bath",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": "",
+      "kanbanOrder": 30,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
@@ -4603,7 +4603,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787593092294,
+  "_savedAt": 1787593105608,
   "nextOrderId": 31,
   "nextQuoteId": 146,
   "nextItemId": 260,
