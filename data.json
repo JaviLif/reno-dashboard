@@ -68,6 +68,16 @@
           "notes": "",
           "chosen": true,
           "link": "https://www.glashandelonline.com/isolatieglas/hr-plusplus-2-zijdig-gelaagd/"
+        },
+        {
+          "id": 148,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -4676,9 +4686,9 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787595787065,
+  "_savedAt": 1787595791414,
   "nextOrderId": 31,
-  "nextQuoteId": 148,
+  "nextQuoteId": 149,
   "nextItemId": 262,
   "_version": "dashboard-v1",
   "phases": [
