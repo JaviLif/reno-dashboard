@@ -75,9 +75,9 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 0,
+          "unitPrice": 930.76,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -87,7 +87,8 @@
           "notes": ""
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "delivered"
     },
     {
       "id": 258,
@@ -4586,7 +4587,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787591932346,
+  "_savedAt": 1787591949800,
   "nextOrderId": 31,
   "nextQuoteId": 145,
   "nextItemId": 260,
