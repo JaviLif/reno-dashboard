@@ -54,13 +54,39 @@
       "phaseId": 60,
       "categoryId": 11,
       "name": "Notaris Samenlevingscontract",
-      "description": "",
+      "description": "Samenlevingscontract",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
-      "orders": [],
+      "quotes": [
+        {
+          "id": 144,
+          "supplier": "",
+          "unitPrice": 930.76,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
+      "orders": [
+        {
+          "id": 30,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": []
     },
     {
@@ -310,7 +336,7 @@
           "orderDate": "",
           "unitPrice": 194.43,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -322,7 +348,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 252,
@@ -4560,9 +4586,9 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 7,
-  "_savedAt": 1787591899997,
-  "nextOrderId": 30,
-  "nextQuoteId": 144,
+  "_savedAt": 1787591932346,
+  "nextOrderId": 31,
+  "nextQuoteId": 145,
   "nextItemId": 260,
   "_version": "dashboard-v1",
   "phases": [
