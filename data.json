@@ -3858,21 +3858,6 @@
       "qty": 1
     },
     {
-      "qty": 1,
-      "quotes": [],
-      "orders": [],
-      "categoryId": 3,
-      "name": "Solar Panels",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "unit": "pcs",
-      "phaseId": 32,
-      "documents": [],
-      "id": 166,
-      "description": "NO BTW ΓÇö placeholder"
-    },
-    {
       "orders": [],
       "quotes": [
         {
@@ -4609,7 +4594,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787592438684,
+  "_savedAt": 1787592673112,
   "nextOrderId": 31,
   "nextQuoteId": 145,
   "nextItemId": 260,
