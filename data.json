@@ -4543,21 +4543,6 @@
       "spaceIds": []
     },
     {
-      "id": 9,
-      "phaseId": 61,
-      "name": "Quotation Absbest",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "in-progress",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 0,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
@@ -4590,6 +4575,21 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 9,
+      "phaseId": 61,
+      "name": "Quotation Absbest",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 0,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 44,
@@ -4603,7 +4603,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787593079175,
+  "_savedAt": 1787593088022,
   "nextOrderId": 31,
   "nextQuoteId": 146,
   "nextItemId": 260,
