@@ -4543,23 +4543,6 @@
       "spaceIds": []
     },
     {
-      "id": 13,
-      "phaseId": 61,
-      "name": "Call with Rene",
-      "start": "2026-07-07",
-      "end": "2026-07-07",
-      "status": "in-progress",
-      "assignee": "",
-      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension",
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4590,6 +4573,23 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 13,
+      "phaseId": 61,
+      "name": "Call with Rene",
+      "start": "2026-07-07",
+      "end": "2026-07-07",
+      "status": "completed",
+      "assignee": "",
+      "notes": "- Isolation installation\n- WTW Installation\n- Warmtepump Intallation\n- Badkammer & Gips\n- House Extension",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 44,
@@ -4603,7 +4603,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787593089948,
+  "_savedAt": 1787593092294,
   "nextOrderId": 31,
   "nextQuoteId": 146,
   "nextItemId": 260,
