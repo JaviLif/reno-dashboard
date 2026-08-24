@@ -4526,6 +4526,18 @@
       "spaceIds": []
     },
     {
+      "id": 44,
+      "phaseId": 74,
+      "name": "Build Chimeney Holder",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4592,7 +4604,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 44,
+  "nextTaskId": 45,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -4603,7 +4615,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 9,
-  "_savedAt": 1787593105608,
+  "_savedAt": 1787593173685,
   "nextOrderId": 31,
   "nextQuoteId": 146,
   "nextItemId": 260,
