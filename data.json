@@ -66,7 +66,10 @@
           "unitPrice": 930.76,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,10 +87,20 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 7,
+          "name": "Factuur Samenlevencontract.pdf",
+          "type": "application/pdf",
+          "size": 175599,
+          "ghPath": "quotes/Factuur_Samenlevencontract.pdf",
+          "uploadedDate": "2026-08-24"
+        }
+      ],
       "status": "delivered"
     },
     {
@@ -4586,8 +4599,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 7,
-  "_savedAt": 1787591949800,
+  "nextDocId": 8,
+  "_savedAt": 1787592008263,
   "nextOrderId": 31,
   "nextQuoteId": 145,
   "nextItemId": 260,
