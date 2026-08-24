@@ -226,7 +226,16 @@
           "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 8,
+          "name": "Factuur Leveringsacte.pdf",
+          "type": "application/pdf",
+          "size": 309182,
+          "ghPath": "quotes/Factuur_Leveringsacte.pdf",
+          "uploadedDate": "2026-08-24"
+        }
+      ],
       "status": "delivered"
     },
     {
@@ -4599,8 +4608,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 8,
-  "_savedAt": 1787592008263,
+  "nextDocId": 9,
+  "_savedAt": 1787592095417,
   "nextOrderId": 31,
   "nextQuoteId": 145,
   "nextItemId": 260,
