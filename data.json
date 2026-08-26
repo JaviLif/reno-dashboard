@@ -252,6 +252,14 @@
           "size": 44166,
           "ghPath": "quotes/Factuur_3365408211_van_23-08-26.pdf_LIDL.pdf",
           "uploadedDate": "2026-08-26"
+        },
+        {
+          "id": 10,
+          "name": "Factuur 3365408211 van 23-08-26.pdf LIDL 2.pdf",
+          "type": "application/pdf",
+          "size": 69697,
+          "ghPath": "quotes/Factuur_3365408211_van_23-08-26.pdf_LIDL_2.pdf",
+          "uploadedDate": "2026-08-26"
         }
       ],
       "status": "ordered"
@@ -4701,8 +4709,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 10,
-  "_savedAt": 1787740404789,
+  "nextDocId": 11,
+  "_savedAt": 1787740411107,
   "nextOrderId": 31,
   "nextQuoteId": 149,
   "nextItemId": 262,
