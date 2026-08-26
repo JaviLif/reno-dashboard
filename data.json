@@ -67,7 +67,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.glashandelonline.com/isolatieglas/hr-plusplus-2-zijdig-gelaagd/"
+          "link": "https://www.glashandelonline.com/isolatieglas/hr-plusplus-2-zijdig-gelaagd/",
+          "documents": [],
+          "name": ""
         },
         {
           "id": 148,
@@ -81,7 +83,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 260,
@@ -106,7 +109,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 259,
@@ -240,7 +244,16 @@
           "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 9,
+          "name": "Factuur 3365408211 van 23-08-26.pdf LIDL.pdf",
+          "type": "application/pdf",
+          "size": 44166,
+          "ghPath": "quotes/Factuur_3365408211_van_23-08-26.pdf_LIDL.pdf",
+          "uploadedDate": "2026-08-26"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -790,7 +803,10 @@
           "unitPrice": 200,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -950,7 +966,7 @@
         }
       ],
       "documents": [],
-      "status": "shipped"
+      "status": "ordered"
     },
     {
       "id": 231,
@@ -4685,8 +4701,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 9,
-  "_savedAt": 1787595791414,
+  "nextDocId": 10,
+  "_savedAt": 1787740404789,
   "nextOrderId": 31,
   "nextQuoteId": 149,
   "nextItemId": 262,
