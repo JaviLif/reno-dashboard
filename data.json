@@ -66,7 +66,10 @@
           "unitPrice": 40,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -364,7 +368,7 @@
       "phaseId": 60,
       "categoryId": 11,
       "name": "Notaris Hypotheek",
-      "description": "Notaris Leveringakte",
+      "description": "Notaris Hypothek",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -4751,7 +4755,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1787773376523,
+  "_savedAt": 1787990501610,
   "nextOrderId": 32,
   "nextQuoteId": 150,
   "nextItemId": 263,
