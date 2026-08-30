@@ -4209,6 +4209,23 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -4220,7 +4237,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 0,
+      "kanbanOrder": 10,
       "assigneeIds": [
         3
       ],
@@ -4240,7 +4257,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 10,
+      "kanbanOrder": 20,
       "assigneeIds": [
         3,
         4
@@ -4261,7 +4278,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 20,
+      "kanbanOrder": 30,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4279,7 +4296,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4295,7 +4312,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4312,7 +4329,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4329,7 +4346,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4344,7 +4361,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4359,7 +4376,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": [
         3,
         4
@@ -4377,7 +4394,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "assigneeIds": [
         3,
         4
@@ -4395,7 +4412,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
+      "kanbanOrder": 110,
       "assigneeIds": [
         3,
         4
@@ -4414,7 +4431,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 110,
+      "kanbanOrder": 120,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4429,7 +4446,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 120,
+      "kanbanOrder": 130,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4444,7 +4461,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 130,
+      "kanbanOrder": 140,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4464,7 +4481,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 140,
+      "kanbanOrder": 150,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4481,7 +4498,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 150,
+      "kanbanOrder": 160,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4495,7 +4512,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 160,
+      "kanbanOrder": 170,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4509,27 +4526,10 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 170,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
       "kanbanOrder": 180,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
+      "spaceIds": []
     },
     {
       "id": 33,
@@ -4543,7 +4543,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 210
+      "kanbanOrder": 190
     },
     {
       "id": 34,
@@ -4557,7 +4557,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 220
+      "kanbanOrder": 200
     },
     {
       "id": 35,
@@ -4571,7 +4571,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 230
+      "kanbanOrder": 210
     },
     {
       "id": 36,
@@ -4585,7 +4585,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 240
+      "kanbanOrder": 220
     },
     {
       "id": 37,
@@ -4599,7 +4599,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 250
+      "kanbanOrder": 230
     },
     {
       "id": 38,
@@ -4613,7 +4613,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 260
+      "kanbanOrder": 240
     },
     {
       "id": 39,
@@ -4627,7 +4627,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 270
+      "kanbanOrder": 250
     },
     {
       "id": 40,
@@ -4641,7 +4641,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 280
+      "kanbanOrder": 260
     },
     {
       "id": 44,
@@ -4654,7 +4654,7 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 290
+      "kanbanOrder": 270
     },
     {
       "id": 14,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109855813,
+  "_savedAt": 1788109865432,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
