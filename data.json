@@ -4209,23 +4209,6 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
-      "id": 14,
-      "phaseId": 73,
-      "name": "Remove bath",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 0,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ]
-    },
-    {
       "name": "Bath: Removing Wall",
       "notes": "",
       "id": 6,
@@ -4777,6 +4760,23 @@
       "spaceIds": []
     },
     {
+      "id": 14,
+      "phaseId": 73,
+      "name": "Remove bath",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 0,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ]
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4854,7 +4854,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109640452,
+  "_savedAt": 1788109797492,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
