@@ -528,7 +528,8 @@ body.col-resizing *{cursor:col-resize!important}
       <div class="card">
         <div id="bud-phase-hdr" class="flex" style="padding:8px 14px 0;gap:8px;align-items:center;min-height:28px"></div>
         <div class="tbl-wrap">
-          <table id="budget-tbl">
+          <div id="bud-filter-panel"></div>
+      <table id="budget-tbl">
             <thead><tr><th>Phase</th><th>Status</th><th style="text-align:right">Budget</th><th style="text-align:right">Planned</th><th style="text-align:right">Actual</th><th style="text-align:right">Variance</th></tr></thead>
             <tbody id="budget-body"></tbody>
             <tfoot id="budget-foot"></tfoot>
@@ -739,7 +740,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1740,7 +1741,12 @@ const ITEM_COLUMNS=[
 ];
 function loadItemsUI(){
   const validKeys=ITEM_COLUMNS.map(c=>c.key);
-  let prefs={colOrder:[...validKeys],colHidden:[],colWidths:{},sortKey:null,sortDir:'asc'};
+  let prefs={
+    colOrder:['link','name','description','qty','price','total','quote','status','delivery','netspent','phase','category'],
+    colHidden:['delivery','quote'],
+    colWidths:{link:60,name:253,description:258,qty:72,price:60,netspent:81,phase:241,category:240,status:137,delivery:71},
+    sortKey:null,sortDir:'asc'
+  };
   try{
     const raw=localStorage.getItem('reno_items_ui')||(typeof S!=="undefined"&&S&&S.bomUiPrefs?JSON.stringify(S.bomUiPrefs):null);
     if(raw){
@@ -2367,9 +2373,43 @@ function switchBudgetView(view, btn){
 }
 
 function renderBudget(){
+  _loadBudExclude();
+  // Render phase/cat exclusion filter panel
+  (function(){
+    const fp=document.getElementById('bud-filter-panel');
+    if(!fp) return;
+    const hasEx=_budExcludePhases.size>0||_budExcludeCats.size>0;
+    let fh=`<div style="display:flex;flex-wrap:wrap;gap:10px;padding:8px 14px;background:#f8fafc;border-bottom:1px solid var(--g200);font-size:12px;align-items:flex-start">`;
+    fh+=`<div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;color:var(--g500);font-size:11px">PHASES</span><div style="display:flex;flex-wrap:wrap;gap:6px">`;
+    topPhases().forEach(p=>{
+      const ex=_budExcludePhases.has(p.id);
+      fh+=`<label style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.45':''}">`
+          +`<input type="checkbox" ${ex?'':'checked'} onchange="budToggleExcludePhase(${p.id})">`
+          +`<span class="color-dot" style="background:${p.color||'#94A3B8'}"></span>${p.number?p.number+' ':''}${p.name}</label>`;
+    });
+    fh+=`</div></div>`;
+    if(S.categories.length>0){
+      fh+=`<div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;color:var(--g500);font-size:11px">CATEGORIES</span><div style="display:flex;flex-wrap:wrap;gap:6px">`;
+      S.categories.forEach(c=>{
+        const ex=_budExcludeCats.has(c.id);
+        fh+=`<label style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.45':''}">`
+            +`<input type="checkbox" ${ex?'':'checked'} onchange="budToggleExcludeCat(${c.id})">`
+            +`<span class="color-dot" style="background:${c.color||'#94A3B8'}"></span>${c.name}</label>`;
+      });
+      fh+=`</div></div>`;
+    }
+    if(hasEx) fh+=`<button class="btn btn-ghost btn-sm" onclick="_budExcludePhases.clear();_budExcludeCats.clear();_saveBudExclude();renderBudget()" style="align-self:flex-end;margin-left:auto">Reset filters</button>`;
+    fh+=`</div>`;
+    fp.innerHTML=fh;
+  })();
+
+  // Filter helpers
+  const _phExcl=id=>_budExcludePhases.has(id);
+  const _itExcl=it=>_budExcludeCats.has(it.categoryId);
   const totalA=totalSpent();
   let rows='',leafB=0,leafP=0,leafA=0;
 
+  let filtB=0,filtP=0,filtA=0;
   for(const tp of topPhases()){
     const kids=childrenOf(tp.id);
     const hasSubs=kids.length>0;
@@ -2377,8 +2417,10 @@ function renderBudget(){
     const plan=getPhaseItemBudget(tp.id);
     const act=getPhaseActual(tp.id);
     const diff=act-bud;
+    const _excl=_phExcl(tp.id);
+    if(!_excl){filtB+=hasSubs?0:bud;filtP+=plan;filtA+=act;}
 
-    rows+=`<tr class="tr-parent" style="cursor:pointer" onclick="openPhaseModal(${tp.id})">
+    rows+=`<tr class="tr-parent" style="cursor:pointer;${_excl?'opacity:0.35;text-decoration:line-through':''}" onclick="openPhaseModal(${tp.id})">
       <td><div class="flex" style="gap:6px">${hasSubs?`<button id="bud-tog-${tp.id}" class="btn btn-ghost btn-sm" onclick="event.stopPropagation();budToggle(${tp.id})" style="padding:0 3px;font-size:11px;width:16px;height:16px;line-height:1;flex-shrink:0">${_budCollapsed.has(tp.id)?'▸':'▾'}</button>`:''}<span class="color-dot" style="background:${tp.color||'#94A3B8'}"></span><strong>${tp.number||''} ${tp.name}</strong>${hasSubs?` <span style="font-size:10px;color:var(--g400)">(${kids.length} sub-phases)</span>`:''}</div></td>
       <td><span class="badge s-${tp.status}">${statusLabel(tp.status)}</span></td>
       <td style="text-align:right;color:${bud<0?'var(--ok)':'inherit'}">${fmt(bud)}</td>
@@ -2405,10 +2447,11 @@ function renderBudget(){
   C('budget-body').innerHTML=rows;
   const _phdrEl=C('bud-phase-hdr');
   if(_phdrEl){const _hs=topPhases().some(function(p){return childrenOf(p.id).length>0;});_phdrEl.innerHTML=_hs?'<button class="btn btn-ghost btn-sm" onclick="budToggleAll()" id="bud-all-btn" style="font-size:11px;padding:3px 8px">'+(topPhases().some(function(p){return childrenOf(p.id).length>0&&!_budCollapsed.has(p.id);})?'▾ Collapse All':'▸ Expand All')+'</button>':'';}
-  // Totals: use global aggregates to avoid loop-depth bugs (phases can be nested >2 levels)
+  // Totals
   const footB=S.phases.filter(p=>!isParent(p.id)).reduce((a,p)=>a+Number(p.budget||0),0);
   const footP=totalItemBudget();
   const footA=totalSpent();
+  const _hasExcl=_budExcludePhases.size>0||_budExcludeCats.size>0;
   const diffT=footA-footB;
   const _budShip=S.items.reduce((a,it)=>a+itemShipping(it),0);
   C('budget-foot').innerHTML=(_budShip>0?`<tr><td style="padding:8px 12px;font-weight:600"><div class="flex" style="gap:6px"><span>&#x1F4E6;</span><span>Shipping</span></div></td><td></td><td style="text-align:right;padding:8px 12px">—</td><td style="text-align:right;padding:8px 12px">—</td><td style="text-align:right;padding:8px 12px;font-weight:700;color:var(--ok)">${fmt(_budShip)}</td><td style="text-align:right;padding:8px 12px">—</td></tr>`:'')+`
@@ -2419,7 +2462,7 @@ function renderBudget(){
       <td style="text-align:right;padding:11px 12px;color:${footA<0?'var(--ok)':'inherit'}">${footA!==0?fmt(footA):'—'}</td>
       <td style="text-align:right;padding:11px 12px" class="${diffT>0?'over':diffT<0&&footA!==0?'under':'muted'}">${footA!==0?(diffT>0?'+':'')+fmt(diffT):'—'}</td>
     </tr>
-    <tr><td colspan="6" style="padding:7px 12px;font-size:11px;color:var(--g500)">Project budget: <strong>${fmt(S.project.totalBudget)}</strong> · Contingency: <strong>${fmt(Number(S.project.totalBudget)-footB)}</strong></td></tr>`;
+    <tr><td colspan="6" style="padding:7px 12px;font-size:11px;color:var(--g500)">Project budget: <strong>${fmt(S.project.totalBudget)}</strong> · Contingency: <strong>${fmt(Number(S.project.totalBudget)-footB)}</strong></td></tr>${_hasExcl?`<tr style="background:#fef9c3;font-weight:700;font-size:13px"><td colspan="2" style="padding:11px 12px">&#127775; Filtered total (selected phases/cats)</td><td style="text-align:right;padding:11px 12px">${fmt(filtB)}</td><td style="text-align:right;padding:11px 12px;color:var(--g600)">${filtP!==0?fmt(filtP):'—'}</td><td style="text-align:right;padding:11px 12px">${filtA!==0?fmt(filtA):'—'}</td><td style="text-align:right;padding:11px 12px" class="${filtA-filtB>0?'over':filtA-filtB<0&&filtA!==0?'under':'muted'}">${filtA!==0?((filtA-filtB>0?'+':'')+fmt(filtA-filtB)):'—'}</td></tr>`:''}`;
 
   // Bar chart — top-level phases only
   if(budgetChart) budgetChart.destroy();
@@ -2442,6 +2485,24 @@ function renderBudget(){
 
 
 let _phaseCatChart=null, _phaseCatSel=null, _pcExpanded=new Set(), _budCollapsed=new Set();
+let _budExcludePhases=new Set();
+let _budExcludeCats=new Set();
+function _loadBudExclude(){
+  try{const d=JSON.parse(localStorage.getItem('reno_budget_exclude')||'{}');
+  _budExcludePhases=new Set(d.phases||[]);
+  _budExcludeCats=new Set(d.cats||[]);} catch(e){}
+}
+function _saveBudExclude(){
+  localStorage.setItem('reno_budget_exclude',JSON.stringify({phases:[..._budExcludePhases],cats:[..._budExcludeCats]}));
+}
+function budToggleExcludePhase(id){
+  if(_budExcludePhases.has(id)) _budExcludePhases.delete(id); else _budExcludePhases.add(id);
+  _saveBudExclude(); renderBudget();
+}
+function budToggleExcludeCat(id){
+  if(_budExcludeCats.has(id)) _budExcludeCats.delete(id); else _budExcludeCats.add(id);
+  _saveBudExclude(); renderBudget();
+}
 function budToggle(id){
   if(_budCollapsed.has(id)) _budCollapsed.delete(id); else _budCollapsed.add(id);
   const collapsed=_budCollapsed.has(id);
