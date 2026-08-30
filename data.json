@@ -4191,7 +4191,7 @@
       "documents": []
     },
     {
-      "status": "delivered",
+      "status": "ordered",
       "link": "",
       "phaseId": 62,
       "unit": "pcs",
@@ -4229,7 +4229,7 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 692.57,
+          "unitPrice": 542.57,
           "qtyOrdered": 1,
           "status": "ordered",
           "qtyDelivered": 0,
@@ -4905,7 +4905,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788124998165,
+  "_savedAt": 1788125007822,
   "nextOrderId": 35,
   "nextQuoteId": 154,
   "nextItemId": 266,
