@@ -4191,7 +4191,7 @@
       "documents": []
     },
     {
-      "status": "ordered",
+      "status": "delivered",
       "link": "",
       "phaseId": 62,
       "unit": "pcs",
@@ -4905,7 +4905,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788124969145,
+  "_savedAt": 1788124972580,
   "nextOrderId": 35,
   "nextQuoteId": 154,
   "nextItemId": 266,
