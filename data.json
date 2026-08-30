@@ -555,7 +555,7 @@
     {
       "id": 253,
       "phaseId": 60,
-      "categoryId": 11,
+      "categoryId": 1,
       "name": "Taxes until end of the year",
       "description": " 25-08-2026 tot  einde jaar",
       "link": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788110713676,
+  "_savedAt": 1788110718411,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
