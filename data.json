@@ -4888,7 +4888,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127649837,
+  "_savedAt": 1788127701845,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
@@ -5130,7 +5130,7 @@
       "parentId": 2,
       "id": 62,
       "notes": "",
-      "budget": 3000,
+      "budget": 2000,
       "number": "2.1",
       "name": "Preparation Work"
     },
