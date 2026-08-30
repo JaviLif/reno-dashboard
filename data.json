@@ -52,7 +52,7 @@
     {
       "id": 266,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "Leitunfgsdetector",
       "description": "+ pants + extras",
       "link": "",
@@ -66,7 +66,10 @@
           "unitPrice": 55.95,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -4910,7 +4914,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127453988,
+  "_savedAt": 1788127480395,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
