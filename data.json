@@ -1121,21 +1121,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 235,
-      "phaseId": 62,
-      "categoryId": 8,
-      "name": "Ryobi Fresmachine",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 233,
       "phaseId": 65,
       "categoryId": 3,
@@ -4925,7 +4910,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127444498,
+  "_savedAt": 1788127453988,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
