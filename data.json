@@ -4303,24 +4303,6 @@
       "spaceIds": []
     },
     {
-      "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "end": "",
-      "status": "planned",
-      "name": "Removing Existing Floor upper floor",
-      "id": 5,
-      "notes": "",
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "kanbanOrder": 50,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4329,7 +4311,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 50,
       "assigneeIds": [
         3,
         4
@@ -4347,11 +4329,29 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 60,
       "assigneeIds": [
         3,
         4
       ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "end": "",
+      "status": "planned",
+      "name": "Removing Existing Floor upper floor",
+      "id": 5,
+      "notes": "",
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "kanbanOrder": 70,
+      "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109896055,
+  "_savedAt": 1788109898311,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
