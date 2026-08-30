@@ -290,7 +290,7 @@
         {
           "id": 151,
           "name": "",
-          "unitPrice": 0,
+          "unitPrice": 30.35,
           "date": "",
           "notes": "",
           "link": "",
@@ -4810,7 +4810,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788096706032,
+  "_savedAt": 1788096716879,
   "nextOrderId": 33,
   "nextQuoteId": 152,
   "nextItemId": 264,
