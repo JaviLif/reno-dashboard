@@ -4323,6 +4323,24 @@
       "spaceIds": []
     },
     {
+      "id": 24,
+      "phaseId": 74,
+      "name": "Install skyroof",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 60,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7,
+        14
+      ]
+    },
+    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4331,7 +4349,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": [
         3,
         4
@@ -4349,7 +4367,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": [
         3,
         4
@@ -4370,7 +4388,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4386,7 +4404,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4401,28 +4419,10 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 100,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 24,
-      "phaseId": 74,
-      "name": "Install skyroof",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
       "kanbanOrder": 110,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": [
-        7,
-        14
-      ]
+      "spaceIds": []
     },
     {
       "id": 25,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109909754,
+  "_savedAt": 1788109923452,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
