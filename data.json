@@ -2559,7 +2559,24 @@
           "name": "Classifier estimate"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 36,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-08-30",
+          "unitPrice": 25,
+          "qtyOrdered": 45,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "qty": 45
     },
     {
@@ -4888,8 +4905,8 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127701845,
-  "nextOrderId": 36,
+  "_savedAt": 1788127748525,
+  "nextOrderId": 37,
   "nextQuoteId": 155,
   "nextItemId": 267,
   "_version": "dashboard-v1",
