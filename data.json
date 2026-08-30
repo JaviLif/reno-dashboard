@@ -72,7 +72,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 263,
@@ -329,7 +330,7 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 0,
+          "unitPrice": 30.35,
           "qtyOrdered": 30.35,
           "status": "delivered",
           "shippingCost": 0,
@@ -4853,7 +4854,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788103444491,
+  "_savedAt": 1788109611265,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
