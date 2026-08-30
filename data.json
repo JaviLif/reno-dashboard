@@ -286,6 +286,16 @@
           "link": "https://www.hornbach.nl/p/cargo-point-schraag-vouwbaar-staal-200-kg/12603111/",
           "chosen": false,
           "documents": []
+        },
+        {
+          "id": 151,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -4800,9 +4810,9 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788096699143,
+  "_savedAt": 1788096706032,
   "nextOrderId": 33,
-  "nextQuoteId": 151,
+  "nextQuoteId": 152,
   "nextItemId": 264,
   "_version": "dashboard-v1",
   "phases": [
