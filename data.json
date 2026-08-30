@@ -4695,27 +4695,6 @@
       "kanbanOrder": 290
     },
     {
-      "end": "",
-      "status": "planned",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "phaseId": 62,
-      "priority": "med",
-      "name": "Preliminary Layout Kitchen",
-      "id": 1,
-      "notes": "",
-      "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 300,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -4851,6 +4830,27 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 310
+    },
+    {
+      "end": "",
+      "status": "delayed",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "phaseId": 62,
+      "priority": "med",
+      "name": "Preliminary Layout Kitchen",
+      "id": 1,
+      "notes": "",
+      "description": "Preliminary simple Layout Kitchen & Bath",
+      "kanbanOrder": 300,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 46,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109840709,
+  "_savedAt": 1788109844596,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
