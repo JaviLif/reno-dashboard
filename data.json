@@ -4285,6 +4285,24 @@
       "spaceIds": []
     },
     {
+      "id": 18,
+      "phaseId": 62,
+      "name": "Decide ceiling storage space",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 40,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "start": "",
       "assignee": "",
       "dueDate": null,
@@ -4296,7 +4314,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4311,7 +4329,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 60,
       "assigneeIds": [
         3,
         4
@@ -4329,25 +4347,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 18,
-      "phaseId": 62,
-      "name": "Decide ceiling storage space",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 110,
+      "kanbanOrder": 70,
       "assigneeIds": [
         3,
         4
@@ -4366,7 +4366,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 120,
+      "kanbanOrder": 80,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4381,7 +4381,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 130,
+      "kanbanOrder": 90,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4396,7 +4396,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 140,
+      "kanbanOrder": 100,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4416,7 +4416,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 150,
+      "kanbanOrder": 110,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4433,7 +4433,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 160,
+      "kanbanOrder": 120,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4447,7 +4447,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 170,
+      "kanbanOrder": 130,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4461,7 +4461,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 180,
+      "kanbanOrder": 140,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4478,7 +4478,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 190
+      "kanbanOrder": 150
     },
     {
       "id": 34,
@@ -4492,7 +4492,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 200
+      "kanbanOrder": 160
     },
     {
       "id": 35,
@@ -4506,7 +4506,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 210
+      "kanbanOrder": 170
     },
     {
       "id": 36,
@@ -4520,7 +4520,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 220
+      "kanbanOrder": 180
     },
     {
       "id": 37,
@@ -4534,7 +4534,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 230
+      "kanbanOrder": 190
     },
     {
       "id": 38,
@@ -4548,7 +4548,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 240
+      "kanbanOrder": 200
     },
     {
       "id": 39,
@@ -4562,7 +4562,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 250
+      "kanbanOrder": 210
     },
     {
       "id": 40,
@@ -4576,7 +4576,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 260
+      "kanbanOrder": 220
     },
     {
       "id": 44,
@@ -4589,7 +4589,7 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 270
+      "kanbanOrder": 230
     },
     {
       "id": 14,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109887853,
+  "_savedAt": 1788109896055,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
