@@ -708,7 +708,7 @@
           "orderDate": "",
           "unitPrice": 13,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 10,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -720,7 +720,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 251,
@@ -4888,7 +4888,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127545210,
+  "_savedAt": 1788127641608,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
@@ -5368,8 +5368,8 @@
       "status": 137,
       "netspent": 81
     },
-    "sortKey": "netspent",
-    "sortDir": "asc"
+    "sortKey": "status",
+    "sortDir": "desc"
   },
   "spaces": [
     {
