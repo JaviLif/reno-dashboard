@@ -4303,21 +4303,6 @@
       "spaceIds": []
     },
     {
-      "id": 11,
-      "phaseId": 71,
-      "name": "Quotation for Extension",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 80,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4832,6 +4817,21 @@
       "spaceIds": []
     },
     {
+      "id": 11,
+      "phaseId": 71,
+      "name": "Quotation for Extension",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "delayed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 80,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "end": "",
       "status": "delayed",
       "start": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109886023,
+  "_savedAt": 1788109887853,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
