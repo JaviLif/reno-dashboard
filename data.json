@@ -4303,26 +4303,6 @@
       "spaceIds": []
     },
     {
-      "description": "Self Made",
-      "notes": "",
-      "id": 7,
-      "name": "Remove Kitchen ceiling",
-      "priority": "med",
-      "phaseId": 73,
-      "assignee": "",
-      "dueDate": null,
-      "start": "",
-      "status": "planned",
-      "end": "",
-      "kanbanOrder": 60,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        13
-      ]
-    },
-    {
       "id": 8,
       "phaseId": 71,
       "name": "Quotation for Structure wall",
@@ -4832,6 +4812,26 @@
       "spaceIds": []
     },
     {
+      "description": "Self Made",
+      "notes": "",
+      "id": 7,
+      "name": "Remove Kitchen ceiling",
+      "priority": "med",
+      "phaseId": 73,
+      "assignee": "",
+      "dueDate": null,
+      "start": "",
+      "status": "delayed",
+      "end": "",
+      "kanbanOrder": 60,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        13
+      ]
+    },
+    {
       "end": "",
       "status": "delayed",
       "start": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109878032,
+  "_savedAt": 1788109881336,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
