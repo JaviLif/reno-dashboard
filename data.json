@@ -4410,21 +4410,6 @@
       "spaceIds": []
     },
     {
-      "id": 22,
-      "phaseId": 73,
-      "name": "CHECK: crawl space access",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 110,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 25,
       "phaseId": 31,
       "name": "Install ceiling isolation",
@@ -4832,6 +4817,21 @@
       "spaceIds": []
     },
     {
+      "id": 22,
+      "phaseId": 73,
+      "name": "CHECK: crawl space access",
+      "start": "",
+      "end": "",
+      "status": "delayed",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 110,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "end": "",
       "status": "delayed",
       "start": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109926675,
+  "_savedAt": 1788109977842,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
