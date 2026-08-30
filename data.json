@@ -4209,6 +4209,24 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 24,
+      "phaseId": 74,
+      "name": "Install skyroof",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7,
+        14
+      ]
+    },
+    {
       "id": 23,
       "phaseId": 74,
       "name": "Build new walls",
@@ -4218,7 +4236,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 0,
+      "kanbanOrder": 10,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4237,7 +4255,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 10,
+      "kanbanOrder": 20,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4257,7 +4275,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 20,
+      "kanbanOrder": 30,
       "assigneeIds": [
         3
       ],
@@ -4277,7 +4295,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": [
         3,
         4
@@ -4298,7 +4316,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4313,7 +4331,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": [
         3,
         4
@@ -4321,24 +4339,6 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 24,
-      "phaseId": 74,
-      "name": "Install skyroof",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 60,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7,
-        14
-      ]
     },
     {
       "id": 16,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109923452,
+  "_savedAt": 1788109926675,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
