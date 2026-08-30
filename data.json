@@ -4284,6 +4284,20 @@
       "spaceIds": []
     },
     {
+      "id": 27,
+      "phaseId": 73,
+      "name": "CHECK: Removal chimeney",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 40,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "start": "",
       "dueDate": null,
       "assignee": "",
@@ -4295,7 +4309,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": [
         3,
         4
@@ -4316,7 +4330,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4331,7 +4345,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": [
         3,
         4
@@ -4349,7 +4363,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": [
         3,
         4
@@ -4367,7 +4381,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "assigneeIds": [
         3,
         4
@@ -4388,7 +4402,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 90,
+      "kanbanOrder": 100,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4404,7 +4418,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 100,
+      "kanbanOrder": 110,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4438,20 +4452,6 @@
       "spaceIds": []
     },
     {
-      "id": 27,
-      "phaseId": 73,
-      "name": "CHECK: Removal chimeney",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 140,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 33,
       "phaseId": 32,
       "name": "Install electricity to kitchen",
@@ -4463,7 +4463,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 150
+      "kanbanOrder": 140
     },
     {
       "id": 34,
@@ -4477,7 +4477,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 160
+      "kanbanOrder": 150
     },
     {
       "id": 35,
@@ -4491,7 +4491,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 170
+      "kanbanOrder": 160
     },
     {
       "id": 36,
@@ -4505,7 +4505,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 180
+      "kanbanOrder": 170
     },
     {
       "id": 37,
@@ -4519,7 +4519,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 190
+      "kanbanOrder": 180
     },
     {
       "id": 38,
@@ -4533,7 +4533,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 200
+      "kanbanOrder": 190
     },
     {
       "id": 39,
@@ -4547,7 +4547,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 210
+      "kanbanOrder": 200
     },
     {
       "id": 40,
@@ -4561,7 +4561,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 220
+      "kanbanOrder": 210
     },
     {
       "id": 44,
@@ -4574,7 +4574,7 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 230
+      "kanbanOrder": 220
     },
     {
       "id": 14,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109977842,
+  "_savedAt": 1788110005471,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
