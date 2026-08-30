@@ -4716,19 +4716,6 @@
       "spaceIds": []
     },
     {
-      "id": 45,
-      "phaseId": 61,
-      "name": "Add eachother on Pensionfond",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 310
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -4851,6 +4838,19 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 45,
+      "phaseId": 61,
+      "name": "Add eachother on Pensionfond",
+      "start": "",
+      "end": "",
+      "status": "delayed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 310
     }
   ],
   "nextTaskId": 46,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109835179,
+  "_savedAt": 1788109837584,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
