@@ -66,7 +66,10 @@
           "unitPrice": 59.63,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,10 +87,12 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 262,
@@ -258,7 +263,7 @@
       "name": "HORNBACH KOPLIST",
       "description": "Hornbach",
       "link": "",
-      "qty": 1,
+      "qty": 30.35,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -4795,7 +4800,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788079788031,
+  "_savedAt": 1788096699143,
   "nextOrderId": 33,
   "nextQuoteId": 151,
   "nextItemId": 264,
