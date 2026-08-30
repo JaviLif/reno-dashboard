@@ -4372,26 +4372,6 @@
       "spaceIds": []
     },
     {
-      "id": 15,
-      "phaseId": 73,
-      "name": "Remove fake ceiling",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 120,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7,
-        9,
-        12,
-        13
-      ]
-    },
-    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4777,6 +4757,26 @@
       ]
     },
     {
+      "id": 15,
+      "phaseId": 73,
+      "name": "Remove fake ceiling",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 120,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7,
+        9,
+        12,
+        13
+      ]
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4854,7 +4854,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109799224,
+  "_savedAt": 1788109814024,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
