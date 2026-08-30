@@ -4303,6 +4303,26 @@
       "spaceIds": []
     },
     {
+      "id": 23,
+      "phaseId": 74,
+      "name": "Build new walls",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 50,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7,
+        9,
+        12
+      ]
+    },
+    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4311,7 +4331,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "assigneeIds": [
         3,
         4
@@ -4329,7 +4349,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 70,
       "assigneeIds": [
         3,
         4
@@ -4350,7 +4370,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4366,7 +4386,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 80,
+      "kanbanOrder": 90,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4381,30 +4401,10 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 90,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 23,
-      "phaseId": 74,
-      "name": "Build new walls",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
       "kanbanOrder": 100,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7,
-        9,
-        12
-      ]
+      "spaceIds": []
     },
     {
       "id": 24,
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109898311,
+  "_savedAt": 1788109906617,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
