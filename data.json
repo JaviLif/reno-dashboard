@@ -4264,6 +4264,20 @@
       ]
     },
     {
+      "id": 27,
+      "phaseId": 73,
+      "name": "CHECK: Removal chimeney",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 30,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -4275,24 +4289,10 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": [
         3
       ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 27,
-      "phaseId": 73,
-      "name": "CHECK: Removal chimeney",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 40,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788110005471,
+  "_savedAt": 1788110008833,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
