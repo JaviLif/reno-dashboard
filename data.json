@@ -4888,7 +4888,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127833147,
+  "_savedAt": 1788127843643,
   "nextOrderId": 37,
   "nextQuoteId": 155,
   "nextItemId": 267,
@@ -5312,7 +5312,7 @@
       "status": "planned",
       "color": "#FEF9C3",
       "notes": "",
-      "budget": 0
+      "budget": 1000
     }
   ],
   "_source": "converted-from-classifier-v3",
