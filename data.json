@@ -4303,21 +4303,6 @@
       "spaceIds": []
     },
     {
-      "id": 21,
-      "phaseId": 73,
-      "name": "Remove existing Floors Lower Floor",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 50,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "description": "Self Made",
       "notes": "",
       "id": 7,
@@ -4832,6 +4817,21 @@
       "kanbanOrder": 310
     },
     {
+      "id": 21,
+      "phaseId": 73,
+      "name": "Remove existing Floors Lower Floor",
+      "start": "",
+      "end": "",
+      "status": "delayed",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 50,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "end": "",
       "status": "delayed",
       "start": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109865432,
+  "_savedAt": 1788109878032,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
