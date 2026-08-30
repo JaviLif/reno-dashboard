@@ -4209,27 +4209,6 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
-      "end": "",
-      "status": "planned",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "phaseId": 62,
-      "priority": "med",
-      "name": "Preliminary Layout Kitchen",
-      "id": 1,
-      "notes": "",
-      "description": "Preliminary simple Layout Kitchen & Bath",
-      "kanbanOrder": 20,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -4241,7 +4220,7 @@
       "dueDate": null,
       "status": "planned",
       "end": "",
-      "kanbanOrder": 40,
+      "kanbanOrder": 0,
       "assigneeIds": [
         3
       ],
@@ -4261,7 +4240,7 @@
       "description": "Preliminary Simple Layout Rooms & Zoning",
       "phaseId": 62,
       "priority": "med",
-      "kanbanOrder": 50,
+      "kanbanOrder": 10,
       "assigneeIds": [
         3,
         4
@@ -4282,7 +4261,7 @@
       "description": "Street work Permits",
       "id": 4,
       "notes": "",
-      "kanbanOrder": 60,
+      "kanbanOrder": 20,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4300,7 +4279,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 70,
+      "kanbanOrder": 30,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4316,7 +4295,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 80,
+      "kanbanOrder": 40,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4333,7 +4312,7 @@
       "start": "",
       "status": "planned",
       "end": "",
-      "kanbanOrder": 90,
+      "kanbanOrder": 50,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4350,7 +4329,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 100,
+      "kanbanOrder": 60,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4365,7 +4344,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 110,
+      "kanbanOrder": 70,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4380,7 +4359,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 130,
+      "kanbanOrder": 80,
       "assigneeIds": [
         3,
         4
@@ -4398,7 +4377,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 140,
+      "kanbanOrder": 90,
       "assigneeIds": [
         3,
         4
@@ -4416,7 +4395,7 @@
       "status": "planned",
       "assignee": "",
       "notes": "",
-      "kanbanOrder": 150,
+      "kanbanOrder": 100,
       "assigneeIds": [
         3,
         4
@@ -4435,7 +4414,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 160,
+      "kanbanOrder": 110,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4450,7 +4429,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 170,
+      "kanbanOrder": 120,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4465,7 +4444,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 180,
+      "kanbanOrder": 130,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4485,7 +4464,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 190,
+      "kanbanOrder": 140,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4502,7 +4481,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 200,
+      "kanbanOrder": 150,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4516,7 +4495,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 210,
+      "kanbanOrder": 160,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4530,7 +4509,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 220,
+      "kanbanOrder": 170,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4544,7 +4523,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 230,
+      "kanbanOrder": 180,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4564,7 +4543,7 @@
         4
       ],
       "notes": "",
-      "kanbanOrder": 240,
+      "kanbanOrder": 190,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4583,7 +4562,7 @@
         4
       ],
       "notes": "",
-      "kanbanOrder": 250,
+      "kanbanOrder": 200,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4601,7 +4580,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 210
     },
     {
       "id": 34,
@@ -4614,7 +4594,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 220
     },
     {
       "id": 35,
@@ -4627,7 +4608,8 @@
       "notes": "Outside the roof/ Wall",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 230
     },
     {
       "id": 36,
@@ -4640,7 +4622,8 @@
       "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 240
     },
     {
       "id": 37,
@@ -4653,7 +4636,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 250
     },
     {
       "id": 38,
@@ -4666,7 +4650,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 260
     },
     {
       "id": 39,
@@ -4679,7 +4664,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 270
     },
     {
       "id": 40,
@@ -4692,7 +4678,8 @@
       "notes": "",
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 280
     },
     {
       "id": 44,
@@ -4703,6 +4690,28 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 290
+    },
+    {
+      "end": "",
+      "status": "planned",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "phaseId": 62,
+      "priority": "med",
+      "name": "Preliminary Layout Kitchen",
+      "id": 1,
+      "notes": "",
+      "description": "Preliminary simple Layout Kitchen & Bath",
+      "kanbanOrder": 300,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
     },
@@ -4716,7 +4725,8 @@
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 310
     },
     {
       "id": 14,
@@ -4854,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109814024,
+  "_savedAt": 1788109835179,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
