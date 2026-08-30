@@ -52,7 +52,7 @@
     {
       "id": 263,
       "phaseId": 62,
-      "categoryId": null,
+      "categoryId": 7,
       "name": "Ryobi battery",
       "description": "",
       "link": "",
@@ -4795,7 +4795,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788079766409,
+  "_savedAt": 1788079784419,
   "nextOrderId": 33,
   "nextQuoteId": 151,
   "nextItemId": 264,
