@@ -66,7 +66,10 @@
           "unitPrice": 17.45,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -681,7 +685,7 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 251,
@@ -903,7 +907,7 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 245,
@@ -947,7 +951,7 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 244,
@@ -4905,7 +4909,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788125021364,
+  "_savedAt": 1788125083196,
   "nextOrderId": 35,
   "nextQuoteId": 154,
   "nextItemId": 266,
