@@ -125,7 +125,7 @@
           "orderDate": "",
           "unitPrice": 0,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 17.45,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -137,7 +137,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 264,
@@ -4888,7 +4888,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127641608,
+  "_savedAt": 1788127649837,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
