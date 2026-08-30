@@ -4551,25 +4551,6 @@
       ]
     },
     {
-      "id": 31,
-      "phaseId": 62,
-      "name": "Decide tiles",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "notes": "",
-      "kanbanOrder": 200,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ]
-    },
-    {
       "id": 33,
       "phaseId": 32,
       "name": "Install electricity to kitchen",
@@ -4753,6 +4734,25 @@
       ]
     },
     {
+      "id": 31,
+      "phaseId": 62,
+      "name": "Decide tiles",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": "",
+      "kanbanOrder": 200,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ]
+    },
+    {
       "id": 9,
       "phaseId": 61,
       "name": "Quotation Absbest",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109844596,
+  "_savedAt": 1788109851395,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
