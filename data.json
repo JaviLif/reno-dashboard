@@ -4303,21 +4303,6 @@
       "spaceIds": []
     },
     {
-      "id": 8,
-      "phaseId": 71,
-      "name": "Quotation for Structure wall",
-      "start": "2026-07-05",
-      "end": "2026-07-12",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 70,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 11,
       "phaseId": 71,
       "name": "Quotation for Extension",
@@ -4832,6 +4817,21 @@
       ]
     },
     {
+      "id": 8,
+      "phaseId": 71,
+      "name": "Quotation for Structure wall",
+      "start": "2026-07-05",
+      "end": "2026-07-12",
+      "status": "delayed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 70,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "end": "",
       "status": "delayed",
       "start": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109881336,
+  "_savedAt": 1788109886023,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
