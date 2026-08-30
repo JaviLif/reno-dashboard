@@ -4532,25 +4532,6 @@
       ]
     },
     {
-      "id": 30,
-      "phaseId": 62,
-      "name": "Decide bathtub",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "notes": "",
-      "kanbanOrder": 190,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ]
-    },
-    {
       "id": 33,
       "phaseId": 32,
       "name": "Install electricity to kitchen",
@@ -4819,6 +4800,25 @@
       "spaceIds": []
     },
     {
+      "id": 30,
+      "phaseId": 62,
+      "name": "Decide bathtub",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": "",
+      "kanbanOrder": 190,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ]
+    },
+    {
       "id": 45,
       "phaseId": 61,
       "name": "Add eachother on Pensionfond",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788109851395,
+  "_savedAt": 1788109855813,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
