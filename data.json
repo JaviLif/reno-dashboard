@@ -1279,32 +1279,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 226,
-      "phaseId": 62,
-      "categoryId": 8,
-      "name": "MetLl detector",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 124,
-          "name": "",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "link": "https://www.lidl.nl/p/parkside-performance-leidingzoeker/p100405587?utm_source=google&utm_medium=cpc&utm_campaign=sho-sea_pmax_base-all_notset_ao_ecm_shop_nf_sl_ao_nl.p-google.20-deepsale&utm_content=&utm_term=ac-22665862_&cid=17931394753&gad_source=1&gad_campaignid=17340878560&gbraid=0AAAAAChMZwOpMzXiYkX2Ay13193-WIbDk&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSs_OJdtEBwpKsnSWJo6T0VeyFWDrXnyRQVmTahSKPgAxR5zzn9700UaAmscEALw_wcB",
-          "chosen": true,
-          "documents": []
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 225,
       "phaseId": 70,
       "categoryId": 3,
@@ -4914,7 +4888,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788127480395,
+  "_savedAt": 1788127505928,
   "nextOrderId": 36,
   "nextQuoteId": 155,
   "nextItemId": 267,
