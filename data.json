@@ -231,7 +231,7 @@
     {
       "id": 259,
       "phaseId": 60,
-      "categoryId": 11,
+      "categoryId": 1,
       "name": "Notaris Samenlevingscontract",
       "description": "Samenlevingscontract",
       "link": "",
@@ -4864,7 +4864,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788110708987,
+  "_savedAt": 1788110711620,
   "nextOrderId": 34,
   "nextQuoteId": 153,
   "nextItemId": 265,
