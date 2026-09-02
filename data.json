@@ -72,7 +72,7 @@
       "orders": [
         {
           "id": 37,
-          "supplier": "",
+          "supplier": "Marktplaats ",
           "poNumber": "",
           "orderDate": "2026-09-02",
           "unitPrice": 75,
@@ -87,7 +87,8 @@
           "notes": ""
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 266,
@@ -4928,7 +4929,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788374036782,
+  "_savedAt": 1788374044993,
   "nextOrderId": 38,
   "nextQuoteId": 156,
   "nextItemId": 268,
