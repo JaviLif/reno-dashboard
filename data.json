@@ -66,7 +66,10 @@
           "unitPrice": 27.3,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -4725,26 +4729,6 @@
       ]
     },
     {
-      "id": 15,
-      "phaseId": 73,
-      "name": "Remove fake ceiling",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 120,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        7,
-        9,
-        12,
-        13
-      ]
-    },
-    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -4811,6 +4795,26 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 15,
+      "phaseId": 73,
+      "name": "Remove fake ceiling",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 120,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7,
+        9,
+        12,
+        13
+      ]
     },
     {
       "id": 13,
@@ -4974,7 +4978,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788543402003,
+  "_savedAt": 1788613570682,
   "nextOrderId": 39,
   "nextQuoteId": 157,
   "nextItemId": 269,
