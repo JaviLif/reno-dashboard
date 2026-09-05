@@ -4412,27 +4412,6 @@
       "spaceIds": []
     },
     {
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "planned",
-      "name": "Preliminary Layout Rooms & Zoning",
-      "notes": "",
-      "id": 2,
-      "description": "Preliminary Simple Layout Rooms & Zoning",
-      "phaseId": 62,
-      "priority": "med",
-      "kanbanOrder": 50,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "end": null,
       "status": "planned",
       "assignee": "",
@@ -4780,6 +4759,27 @@
       "spaceIds": []
     },
     {
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "completed",
+      "name": "Preliminary Layout Rooms & Zoning",
+      "notes": "",
+      "id": 2,
+      "description": "Preliminary Simple Layout Rooms & Zoning",
+      "phaseId": 62,
+      "priority": "med",
+      "kanbanOrder": 50,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
@@ -4978,7 +4978,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788613586697,
+  "_savedAt": 1788613591894,
   "nextOrderId": 39,
   "nextQuoteId": 157,
   "nextItemId": 269,
