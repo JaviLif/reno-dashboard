@@ -5093,6 +5093,19 @@
       ]
     },
     {
+      "id": 48,
+      "phaseId": 34,
+      "name": "Check routing of HeatPump piping + ventilation",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "id": 44,
       "phaseId": 74,
       "name": "Build Chimeney Holder",
@@ -5103,7 +5116,7 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 20
+      "kanbanOrder": 30
     },
     {
       "notes": "",
@@ -5117,7 +5130,7 @@
       "dueDate": null,
       "status": "this-week",
       "end": "",
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "assigneeIds": [
         3
       ],
@@ -5129,19 +5142,6 @@
       "id": 47,
       "phaseId": 31,
       "name": "Make a hole in the basement  and boroscope.",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 40
-    },
-    {
-      "id": 48,
-      "phaseId": 34,
-      "name": "Check routing of HeatPump piping + ventilation",
       "start": "",
       "end": "",
       "status": "this-week",
@@ -5163,7 +5163,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730063081,
+  "_savedAt": 1788730066754,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
