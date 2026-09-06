@@ -4665,20 +4665,6 @@
       "kanbanOrder": 160
     },
     {
-      "id": 36,
-      "phaseId": 65,
-      "name": "Ventilation: Install Tubing INTERNAL  See notes",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 170
-    },
-    {
       "id": 37,
       "phaseId": 67,
       "name": "Remove PopCorn finish from Walls",
@@ -4691,20 +4677,6 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 180
-    },
-    {
-      "id": 38,
-      "phaseId": 65,
-      "name": "Install WTW -Unit",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 190
     },
     {
       "id": 39,
@@ -5152,6 +5124,34 @@
       "kanbanOrder": 50
     },
     {
+      "id": 36,
+      "phaseId": 65,
+      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 170
+    },
+    {
+      "id": 38,
+      "phaseId": 65,
+      "name": "Install WTW -Unit",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 190
+    },
+    {
       "id": 50,
       "phaseId": 73,
       "name": "Remove conflictig walls to install isolation",
@@ -5177,7 +5177,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730956215,
+  "_savedAt": 1788730984346,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
