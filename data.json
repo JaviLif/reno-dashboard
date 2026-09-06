@@ -5115,7 +5115,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788728958092,
+  "_savedAt": 1788728962480,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5656,11 +5656,6 @@
       "status": "open",
       "label": "Open",
       "color": "#94a3b8"
-    },
-    {
-      "status": "fsdf",
-      "label": "fsdf",
-      "color": "#1665d4"
     },
     {
       "status": "f",
