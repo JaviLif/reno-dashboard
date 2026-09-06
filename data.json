@@ -56,7 +56,7 @@
       "name": "Stuck",
       "description": "Knauf Goldband E 20 kg",
       "link": "",
-      "qty": 1,
+      "qty": 4,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -5015,7 +5015,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788709691779,
+  "_savedAt": 1788709695753,
   "nextOrderId": 39,
   "nextQuoteId": 158,
   "nextItemId": 270,
