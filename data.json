@@ -5135,9 +5135,21 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 49,
+      "phaseId": 73,
+      "name": "Remove lefover ceiling",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
-  "nextTaskId": 49,
+  "nextTaskId": 50,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5148,7 +5160,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729992497,
+  "_savedAt": 1788730055887,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
