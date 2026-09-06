@@ -66,7 +66,10 @@
           "unitPrice": 20,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -127,10 +131,12 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 269,
@@ -5109,7 +5115,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788728858382,
+  "_savedAt": 1788728954546,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5655,6 +5661,11 @@
       "status": "fsdf",
       "label": "fsdf",
       "color": "#1665d4"
+    },
+    {
+      "status": "f",
+      "label": "f",
+      "color": "#94a3b8"
     }
   ]
 }
