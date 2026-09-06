@@ -494,6 +494,7 @@ body.col-resizing *{cursor:col-resize!important}
             <button class="inner-tab active" id="tv-kanban" onclick="setTaskView('kanban')">Kanban</button>
             <button class="inner-tab" id="tv-gantt" onclick="setTaskView('gantt')">Gantt</button>
           </div>
+          <button id="btn-cfg-board" class="btn btn-ghost btn-sm" onclick="toggleKanbanConfig()" title="Configure board columns" style="font-size:12px">⚙ Board</button>
           <div id="task-gantt-zoom" style="display:flex;visibility:hidden;gap:4px;align-items:center">
             <span style="font-size:11px;color:var(--g400)">Zoom</span>
             <button class="btn btn-ghost btn-sm" onclick="changeTaskGanttZoom(-0.5)">-</button>
@@ -503,6 +504,7 @@ body.col-resizing *{cursor:col-resize!important}
         </div>
       </div>
       <div id="person-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:6px 16px 4px;align-items:center"></div><div id="space-filter-bar" style="display:none;flex-wrap:wrap;gap:6px;padding:0 16px 4px;align-items:center"></div>
+      <div id="kanban-col-config" style="display:none"></div>
       <div id="task-kanban-wrap" style="display:flex;overflow-x:auto;min-height:0">
         <div class="kanban-board" id="kanban-board"></div>
       </div>
@@ -742,7 +744,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1052,12 +1054,7 @@ body.col-resizing *{cursor:col-resize!important}
       </div>
       <div class="fm-row">
         <div class="fm-grp"><label class="fm-lbl">Status</label>
-          <select class="fm-sel" id="tk-status">
-            <option value="planned">Planned</option>
-            <option value="in-progress">In Progress</option>
-            <option value="completed">Completed</option>
-            <option value="delayed">Delayed</option>
-          </select>
+          <select class="fm-sel" id="tk-status"></select>
         </div>
         <div class="fm-grp"><label class="fm-lbl">Assigned to</label><div id="tk-assignee-picker" style="display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;min-height:36px;align-items:center"></div></div>
       </div>
@@ -4264,6 +4261,7 @@ function taskPhaseSelectHtml(selectedId){
 function openTaskModal(id, presetPhaseId, presetStatus){
   const phaseModalWasOpen=C('phase-overlay').classList.contains('open');
   C('task-modal-title').textContent=id?'Edit Task':'Add Task';
+  C('tk-status').innerHTML=getKanbanCols().map(c=>`<option value="${c.status}">${c.label}</option>`).join('');
   C('tk-del-btn').style.display=id?'inline-flex':'none';
   C('tk-id').value=id||'';
   C('tk-id').dataset.returnToPhase=phaseModalWasOpen?'1':'';
@@ -4458,11 +4456,66 @@ function setCalView(v){
 }
 
 const KANBAN_COLS=[
-  {status:'planned',    label:'Planned',     cls:'col-planned'},
-  {status:'in-progress',label:'In Progress', cls:'col-in-progress'},
-  {status:'completed',  label:'Completed',   cls:'col-completed'},
-  {status:'delayed',    label:'Delayed',     cls:'col-delayed'},
+  {status:'planned',    label:'Planned',     color:'#94A3B8'},
+  {status:'in-progress',label:'In Progress', color:'var(--pri)'},
+  {status:'completed',  label:'Completed',   color:'var(--ok)'},
+  {status:'delayed',    label:'Delayed',     color:'var(--red)'},
 ];
+function getKanbanCols(){return (S.kanbanCols&&S.kanbanCols.length)?S.kanbanCols:KANBAN_COLS;}
+function _saveKanbanCols(cols){S.kanbanCols=cols;saveState();renderTasks();}
+function addKanbanCol(label,color){
+  label=(label||'').trim();if(!label)return;
+  const status=label.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  if(!status||getKanbanCols().find(c=>c.status===status)){alert('Duplicate or invalid name.');return;}
+  _saveKanbanCols([...getKanbanCols(),{status,label,color:color||'#94A3B8'}]);
+  renderKanbanColConfig();
+}
+function deleteKanbanCol(status){
+  const cols=getKanbanCols();
+  if(cols.length<=1){alert('Need at least one column.');return;}
+  const orphans=S.tasks.filter(t=>t.status===status);
+  const fallback=cols.find(c=>c.status!==status)?.status||cols[0].status;
+  const fallbackLabel=cols.find(c=>c.status===fallback)?.label||fallback;
+  if(orphans.length&&!confirm(orphans.length+' task(s) will move to "'+fallbackLabel+'". Continue?'))return;
+  orphans.forEach(t=>t.status=fallback);
+  _saveKanbanCols(cols.filter(c=>c.status!==status));
+  renderKanbanColConfig();
+}
+function updateKanbanCol(status,label,color){
+  if(!(label||'').trim())return;
+  _saveKanbanCols(getKanbanCols().map(c=>c.status===status?{...c,label:label.trim(),color:color||c.color}:c));
+  renderKanbanColConfig();
+}
+function toggleKanbanConfig(){
+  const el=document.getElementById('kanban-col-config');if(!el)return;
+  const visible=el.style.display==='block';
+  el.style.display=visible?'none':'block';
+  if(!visible) renderKanbanColConfig();
+  const btn=document.getElementById('btn-cfg-board');if(btn)btn.style.fontWeight=visible?'':'700';
+}
+function renderKanbanColConfig(){
+  const el=document.getElementById('kanban-col-config');if(!el||el.style.display==='none')return;
+  const cols=getKanbanCols();
+  let h='<div style="padding:10px 14px;background:#f8fafc;border-bottom:1px solid var(--g200);">';
+  h+='<div style="font-size:11px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Board Columns</div>';
+  h+='<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px">';
+  cols.forEach(function(c){
+    var safeColor=c.color.startsWith('#')?c.color:'#94A3B8';
+    h+='<div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--g200);border-radius:8px;padding:5px 10px">';
+    h+='<input type="color" id="_kcc_'+c.status+'" value="'+safeColor+'" style="width:22px;height:22px;padding:1px;border:none;cursor:pointer;border-radius:3px">';
+    h+='<input type="text" id="_kcl_'+c.status+'" value="'+c.label+'" style="border:none;background:transparent;font-size:12px;font-weight:600;width:90px;outline:none" onkeydown="if(event.key===\'Enter\'){updateKanbanCol(\''+c.status+'\',this.value,document.getElementById(\'_kcc_'+c.status+'\').value);this.blur()}">';
+    h+='<button onclick="updateKanbanCol(\''+c.status+'\',document.getElementById(\'_kcl_'+c.status+'\').value,document.getElementById(\'_kcc_'+c.status+'\').value)" style="border:none;background:transparent;color:var(--ok);cursor:pointer;font-size:13px;padding:0" title="Save">✓</button>';
+    h+='<button onclick="deleteKanbanCol(\''+c.status+'\')" style="border:none;background:transparent;color:var(--g300);cursor:pointer;font-size:12px;padding:0" title="Delete">✕</button>';
+    h+='</div>';
+  });
+  h+='</div>';
+  h+='<div style="display:flex;gap:6px;align-items:center">';
+  h+='<input id="kc-new-name" type="text" placeholder="New column name" style="border:1px solid var(--g200);border-radius:6px;padding:4px 8px;font-size:12px;width:140px" onkeydown="if(event.key===\'Enter\')addKanbanCol(this.value,document.getElementById(\'kc-new-color\').value)">';
+  h+='<input id="kc-new-color" type="color" value="#94A3B8" style="width:28px;height:28px;padding:1px;border:1px solid var(--g200);border-radius:6px;cursor:pointer">';
+  h+='<button class="btn btn-sm btn-primary" onclick="addKanbanCol(document.getElementById(\'kc-new-name\').value,document.getElementById(\'kc-new-color\').value)">+ Add</button>';
+  h+='</div></div>';
+  el.innerHTML=h;
+}
 
 // returns all phase IDs scoped under a top-level phase (itself + children)
 function phaseFamily(topId){
@@ -4518,22 +4571,20 @@ function renderTasksTab(){
   // --- Summary bar ---
   const bar=C('task-summary-bar');
   if(bar){
-    const cnt={planned:0,'in-progress':0,completed:0,delayed:0};
+    const _kcols=getKanbanCols();
+    const cnt={}; _kcols.forEach(c=>{cnt[c.status]=0;});
     tasks.forEach(t=>{if(cnt[t.status]!==undefined)cnt[t.status]++;});
     const tot=tasks.length;
     bar.innerHTML=[
       `<span class="t-chip t-chip-total">${tot} task${tot!==1?'s':''}</span>`,
-      cnt.planned?`<span class="t-chip t-chip-planned"><span class="c-dot" style="background:var(--g400)"></span>${cnt.planned} Planned</span>`:'',
-      cnt['in-progress']?`<span class="t-chip t-chip-progress"><span class="c-dot" style="background:var(--pri)"></span>${cnt['in-progress']} In progress</span>`:'',
-      cnt.completed?`<span class="t-chip t-chip-done"><span class="c-dot" style="background:var(--ok)"></span>${cnt.completed} Done</span>`:'',
-      cnt.delayed?`<span class="t-chip t-chip-delayed"><span class="c-dot" style="background:var(--red)"></span>${cnt.delayed} Delayed</span>`:'',
-    ].filter(Boolean).join('');
+      ..._kcols.filter(c=>cnt[c.status]>0).map(c=>`<span class="t-chip"><span class="c-dot" style="background:${c.color||'#94A3B8'}"></span>${cnt[c.status]} ${c.label}</span>`),
+    ].join('');
   }
 
   if(_taskView==='gantt'){ renderTaskGantt(tasks); return; }
 
   // --- Build Kanban columns with drag-and-drop ---
-  C('kanban-board').innerHTML=KANBAN_COLS.map(col=>{
+  C('kanban-board').innerHTML=getKanbanCols().map(col=>{
     const colTasks=tasks.filter(t=>t.status===col.status).sort((a,b)=>(a.kanbanOrder??a.id*10)-(b.kanbanOrder??b.id*10));
     const cards=colTasks.length
       ? colTasks.map(t=>{
@@ -4563,9 +4614,9 @@ function renderTasksTab(){
           </div>`;
         }).join('')
       : `<div style="padding:16px 4px;font-size:11px;color:var(--g300);text-align:center">Empty</div>`;
-    return `<div class="kanban-col ${col.cls}">
+    return `<div class="kanban-col">
       <div class="kanban-col-hdr">
-        <div class="kanban-col-title"><span class="col-dot"></span>${col.label}</div>
+        <div class="kanban-col-title"><span class="col-dot" style="background:${col.color||'#94A3B8'}"></span>${col.label}</div>
         <span class="kanban-col-count">${colTasks.length}</span>
       </div>
       <div class="kanban-cards"
