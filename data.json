@@ -4735,19 +4735,6 @@
       "kanbanOrder": 210
     },
     {
-      "id": 44,
-      "phaseId": 74,
-      "name": "Build Chimeney Holder",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 220
-    },
-    {
       "id": 46,
       "phaseId": 67,
       "name": "Stucken of walls under the old ceiling",
@@ -5113,6 +5100,19 @@
       "spaceIds": []
     },
     {
+      "id": 44,
+      "phaseId": 74,
+      "name": "Build Chimeney Holder",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 220
+    },
+    {
       "id": 47,
       "phaseId": 31,
       "name": "Make a hole in the basement  and boroscope.",
@@ -5136,7 +5136,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729842093,
+  "_savedAt": 1788729872860,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
