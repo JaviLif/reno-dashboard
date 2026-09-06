@@ -4634,6 +4634,18 @@
       "kanbanOrder": 220
     },
     {
+      "id": 46,
+      "phaseId": 67,
+      "name": "Joins old wall- exposed brick stucken",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -4967,7 +4979,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 46,
+  "nextTaskId": 47,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -4978,7 +4990,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788613605170,
+  "_savedAt": 1788709652828,
   "nextOrderId": 39,
   "nextQuoteId": 157,
   "nextItemId": 269,
