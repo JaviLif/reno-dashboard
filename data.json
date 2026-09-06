@@ -4764,27 +4764,6 @@
       ]
     },
     {
-      "name": "Bath: Removing Wall",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "in-progress",
-      "kanbanOrder": 10,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5080,6 +5059,27 @@
       "spaceIds": []
     },
     {
+      "name": "Bath: Removing Wall",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "this-week",
+      "kanbanOrder": 10,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -5148,7 +5148,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729974241,
+  "_savedAt": 1788729992497,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
