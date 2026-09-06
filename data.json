@@ -5124,7 +5124,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729638911,
+  "_savedAt": 1788729641127,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5663,6 +5663,11 @@
     },
     {
       "status": "this-week",
+      "label": "This Week",
+      "color": "#94a3b8"
+    },
+    {
+      "status": "this-week-2",
       "label": "This Week",
       "color": "#94a3b8"
     }
