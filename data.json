@@ -5124,7 +5124,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729692133,
+  "_savedAt": 1788729714580,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5647,24 +5647,24 @@
       "color": "#94a3b8"
     },
     {
-      "status": "in-progress",
-      "label": "In Progress",
-      "color": "var(--pri)"
-    },
-    {
       "status": "this-week",
       "label": "This Week",
       "color": "#94a3b8"
     },
     {
-      "status": "completed",
-      "label": "Completed",
-      "color": "var(--ok)"
+      "status": "in-progress",
+      "label": "In Progress",
+      "color": "var(--pri)"
     },
     {
       "status": "delayed",
       "label": "Delayed",
       "color": "var(--red)"
+    },
+    {
+      "status": "completed",
+      "label": "Completed",
+      "color": "var(--ok)"
     },
     {
       "status": "this-week-2",
