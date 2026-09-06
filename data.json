@@ -5177,7 +5177,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730954511,
+  "_savedAt": 1788730956215,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5695,13 +5695,13 @@
   "nextSpaceId": 15,
   "kanbanCols": [
     {
-      "status": "this-week",
-      "label": "This Week",
+      "status": "planned",
+      "label": "Backlog",
       "color": "#94a3b8"
     },
     {
-      "status": "planned",
-      "label": "Backlog",
+      "status": "this-week",
+      "label": "This Week",
       "color": "#94a3b8"
     },
     {
