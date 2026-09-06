@@ -5026,7 +5026,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788722648499,
+  "_savedAt": 1788722670437,
   "nextOrderId": 39,
   "nextQuoteId": 159,
   "nextItemId": 270,
@@ -5562,6 +5562,11 @@
       "status": "delayed",
       "label": "Delayed",
       "color": "var(--red)"
+    },
+    {
+      "status": "open",
+      "label": "Open",
+      "color": "#94a3b8"
     }
   ]
 }
