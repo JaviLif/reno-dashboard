@@ -284,7 +284,7 @@
           "chosen": true,
           "documents": [],
           "link": "",
-          "name": ""
+          "name": "Lidl"
         }
       ],
       "orders": [
@@ -5115,7 +5115,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788728984045,
+  "_savedAt": 1788729168155,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
