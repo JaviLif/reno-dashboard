@@ -5150,9 +5150,23 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 50
+    },
+    {
+      "id": 50,
+      "phaseId": 73,
+      "name": "Remove conflictig walls to install isolation",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        12
+      ]
     }
   ],
-  "nextTaskId": 50,
+  "nextTaskId": 51,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5163,7 +5177,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730066754,
+  "_savedAt": 1788730261942,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
