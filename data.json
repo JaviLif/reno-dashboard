@@ -4526,26 +4526,6 @@
       ]
     },
     {
-      "notes": "",
-      "id": 3,
-      "description": "Preliminary simple Layout Electricity",
-      "name": "Preliminary Layout Electricity",
-      "phaseId": 62,
-      "priority": "med",
-      "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "status": "planned",
-      "end": "",
-      "kanbanOrder": 40,
-      "assigneeIds": [
-        3
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -5111,6 +5091,26 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 62,
+      "priority": "med",
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "status": "this-week",
+      "end": "",
+      "kanbanOrder": 40,
+      "assigneeIds": [
+        3
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 47,
@@ -5124,7 +5124,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729714580,
+  "_savedAt": 1788729780011,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
