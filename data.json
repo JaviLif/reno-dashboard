@@ -306,7 +306,16 @@
           "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 11,
+          "name": "Factuur 3365503528 van 30-08-26.pdf",
+          "type": "application/pdf",
+          "size": 58061,
+          "ghPath": "quotes/Factuur_3365503528_van_30-08-26.pdf",
+          "uploadedDate": "2026-09-06"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -5114,8 +5123,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 11,
-  "_savedAt": 1788729168155,
+  "nextDocId": 12,
+  "_savedAt": 1788729181349,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
