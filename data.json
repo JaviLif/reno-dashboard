@@ -5059,6 +5059,19 @@
       "spaceIds": []
     },
     {
+      "id": 49,
+      "phaseId": 73,
+      "name": "Remove lefover ceiling",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 0
+    },
+    {
       "name": "Bath: Removing Wall",
       "notes": "",
       "id": 6,
@@ -5091,7 +5104,7 @@
       "dueDate": null,
       "status": "this-week",
       "end": "",
-      "kanbanOrder": 40,
+      "kanbanOrder": 20,
       "assigneeIds": [
         3
       ],
@@ -5110,7 +5123,7 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 220
+      "kanbanOrder": 30
     },
     {
       "id": 47,
@@ -5122,7 +5135,8 @@
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 40
     },
     {
       "id": 48,
@@ -5134,19 +5148,8 @@
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 49,
-      "phaseId": 73,
-      "name": "Remove lefover ceiling",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 50
     }
   ],
   "nextTaskId": 50,
@@ -5160,7 +5163,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730055887,
+  "_savedAt": 1788730058582,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
