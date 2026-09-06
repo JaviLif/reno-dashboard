@@ -5093,6 +5093,19 @@
       ]
     },
     {
+      "id": 44,
+      "phaseId": 74,
+      "name": "Build Chimeney Holder",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "notes": "",
       "id": 3,
       "description": "Preliminary simple Layout Electricity",
@@ -5104,26 +5117,13 @@
       "dueDate": null,
       "status": "this-week",
       "end": "",
-      "kanbanOrder": 20,
+      "kanbanOrder": 30,
       "assigneeIds": [
         3
       ],
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 44,
-      "phaseId": 74,
-      "name": "Build Chimeney Holder",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 30
     },
     {
       "id": 47,
@@ -5163,7 +5163,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788730058582,
+  "_savedAt": 1788730063081,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
