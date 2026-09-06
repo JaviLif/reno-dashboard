@@ -5026,7 +5026,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788720536754,
+  "_savedAt": 1788722648499,
   "nextOrderId": 39,
   "nextQuoteId": 159,
   "nextItemId": 270,
@@ -5541,5 +5541,27 @@
       "color": "#6366f1"
     }
   ],
-  "nextSpaceId": 15
+  "nextSpaceId": 15,
+  "kanbanCols": [
+    {
+      "status": "planned",
+      "label": "Backlog",
+      "color": "#94a3b8"
+    },
+    {
+      "status": "in-progress",
+      "label": "In Progress",
+      "color": "var(--pri)"
+    },
+    {
+      "status": "completed",
+      "label": "Completed",
+      "color": "var(--ok)"
+    },
+    {
+      "status": "delayed",
+      "label": "Delayed",
+      "color": "var(--red)"
+    }
+  ]
 }
