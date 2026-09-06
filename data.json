@@ -82,7 +82,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 268,
@@ -4671,7 +4672,7 @@
     {
       "id": 46,
       "phaseId": 67,
-      "name": "Joins old wall- exposed brick stucken",
+      "name": "Stucken of walls under the old ceiling",
       "start": "",
       "end": "",
       "status": "planned",
@@ -5025,7 +5026,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 11,
-  "_savedAt": 1788710012477,
+  "_savedAt": 1788720536754,
   "nextOrderId": 39,
   "nextQuoteId": 159,
   "nextItemId": 270,
