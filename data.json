@@ -493,7 +493,7 @@
         {
           "id": 147,
           "supplier": "",
-          "unitPrice": 264,
+          "unitPrice": 266,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -5203,7 +5203,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 13,
-  "_savedAt": 1788885161971,
+  "_savedAt": 1788885165210,
   "nextOrderId": 42,
   "nextQuoteId": 161,
   "nextItemId": 272,
