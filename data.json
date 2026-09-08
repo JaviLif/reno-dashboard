@@ -70,7 +70,24 @@
           "link": "https://glasmaatje.nl/glasbeslag-montage/los-glasbeslag/glasbeslag-op-toepassing-dakbeglazing/klemprofielen-58mm/klemprofielsets-58mm/klemprofielset-zijkant-58-mm/"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 42,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-08",
+          "unitPrice": 222.42,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": []
     },
     {
@@ -5227,8 +5244,8 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 13,
-  "_savedAt": 1788890094684,
-  "nextOrderId": 42,
+  "_savedAt": 1788890120052,
+  "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
   "_version": "dashboard-v1",
