@@ -1391,7 +1391,16 @@
           "shippingCost": 0
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 12,
+          "name": "Factuur-0000181 (1).pdf",
+          "type": "application/pdf",
+          "size": 152310,
+          "ghPath": "quotes/Factuur-0000181__1_.pdf",
+          "uploadedDate": "2026-09-08"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -5176,8 +5185,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 12,
-  "_savedAt": 1788731207372,
+  "nextDocId": 13,
+  "_savedAt": 1788866245586,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
