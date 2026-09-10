@@ -1452,7 +1452,7 @@
           "orderDate": "",
           "unitPrice": 703,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -1473,7 +1473,7 @@
           "uploadedDate": "2026-09-08"
         }
       ],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 231,
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789040529216,
+  "_savedAt": 1789040553431,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
