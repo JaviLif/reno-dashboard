@@ -67,7 +67,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://glasmaatje.nl/glasbeslag-montage/los-glasbeslag/glasbeslag-op-toepassing-dakbeglazing/klemprofielen-58mm/klemprofielsets-58mm/klemprofielset-zijkant-58-mm/"
+          "link": "https://glasmaatje.nl/glasbeslag-montage/los-glasbeslag/glasbeslag-op-toepassing-dakbeglazing/klemprofielen-58mm/klemprofielsets-58mm/klemprofielset-zijkant-58-mm/",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [
@@ -85,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -569,10 +572,20 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 13,
+          "name": "Factuur-26118837_Glas.pdf",
+          "type": "application/pdf",
+          "size": 106888,
+          "ghPath": "quotes/Factuur-26118837_Glas.pdf",
+          "uploadedDate": "2026-09-10"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -5244,8 +5257,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 13,
-  "_savedAt": 1788890131197,
+  "nextDocId": 14,
+  "_savedAt": 1789040498067,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
