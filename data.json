@@ -4869,6 +4869,26 @@
       "kanbanOrder": 30
     },
     {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 62,
+      "priority": "med",
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "status": "completed",
+      "end": "",
+      "kanbanOrder": 40,
+      "assigneeIds": [
+        3
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "start": "",
       "dueDate": null,
       "assignee": "",
@@ -5170,26 +5190,6 @@
       "kanbanOrder": 20
     },
     {
-      "notes": "",
-      "id": 3,
-      "description": "Preliminary simple Layout Electricity",
-      "name": "Preliminary Layout Electricity",
-      "phaseId": 62,
-      "priority": "med",
-      "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "status": "this-week",
-      "end": "",
-      "kanbanOrder": 40,
-      "assigneeIds": [
-        3
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 20,
       "phaseId": 73,
       "name": "Remove CV kettel",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789127250548,
+  "_savedAt": 1789127256451,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
