@@ -4902,6 +4902,19 @@
       "spaceIds": []
     },
     {
+      "id": 47,
+      "phaseId": 31,
+      "name": "Make a hole in the basement  and boroscope.",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 50
+    },
+    {
       "end": null,
       "status": "completed",
       "assignee": "",
@@ -5192,19 +5205,6 @@
       "spaceIds": []
     },
     {
-      "id": 47,
-      "phaseId": 31,
-      "name": "Make a hole in the basement  and boroscope.",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 50
-    },
-    {
       "id": 36,
       "phaseId": 65,
       "name": "Ventilation: Install Tubing INTERNAL  See notes",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789126305416,
+  "_savedAt": 1789126932612,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
