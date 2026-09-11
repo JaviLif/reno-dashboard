@@ -4590,24 +4590,6 @@
       ]
     },
     {
-      "id": 16,
-      "phaseId": 62,
-      "name": "Decide which doors to choose. (We need to know the frame measurements )",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 80,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 17,
       "phaseId": 62,
       "name": "Decide where electrical installation (Lights and sockets)",
@@ -4988,6 +4970,24 @@
       "spaceIds": []
     },
     {
+      "id": 16,
+      "phaseId": 62,
+      "name": "Decide which doors to choose. (We need to know the frame measurements )",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 80,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 10,
       "phaseId": 1,
       "name": "Make Appointment for Samenlevingscontract",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789136688467,
+  "_savedAt": 1789139219547,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
