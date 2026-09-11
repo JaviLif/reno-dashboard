@@ -4661,21 +4661,6 @@
       "spaceIds": []
     },
     {
-      "id": 20,
-      "phaseId": 73,
-      "name": "Remove CV kettel",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 110,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 25,
       "phaseId": 31,
       "name": "Install ceiling isolation",
@@ -5205,6 +5190,21 @@
       "spaceIds": []
     },
     {
+      "id": 20,
+      "phaseId": 73,
+      "name": "Remove CV kettel",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 110,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 36,
       "phaseId": 65,
       "name": "Ventilation: Install Tubing INTERNAL  See notes",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789126967116,
+  "_savedAt": 1789127217540,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
