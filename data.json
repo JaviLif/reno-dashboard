@@ -4817,6 +4817,27 @@
       ]
     },
     {
+      "name": "Bath: Removing Wall",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "in-progress",
+      "kanbanOrder": 10,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5152,27 +5173,6 @@
       "spaceIds": []
     },
     {
-      "name": "Bath: Removing Wall",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "this-week",
-      "kanbanOrder": 10,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 48,
       "phaseId": 34,
       "name": "Check routing of HeatPump piping + ventilation",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789126940932,
+  "_savedAt": 1789126945116,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
