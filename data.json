@@ -4783,20 +4783,6 @@
       "kanbanOrder": 130
     },
     {
-      "id": 51,
-      "phaseId": 74,
-      "name": "Check with Stuckador company",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        3
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -5295,6 +5281,20 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 200
+    },
+    {
+      "id": 51,
+      "phaseId": 74,
+      "name": "Check with Stuckador company",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 52,
@@ -5308,7 +5308,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789146430835,
+  "_savedAt": 1789146432767,
   "nextOrderId": 43,
   "nextQuoteId": 164,
   "nextItemId": 274,
