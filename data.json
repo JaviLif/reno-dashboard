@@ -1737,7 +1737,7 @@
         {
           "id": 113,
           "supplier": "mb400 + 40E",
-          "unitPrice": 4299,
+          "unitPrice": 3625,
           "date": "",
           "notes": "",
           "chosen": false,
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789136673786,
+  "_savedAt": 1789136688467,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
