@@ -5037,6 +5037,20 @@
       "kanbanOrder": 310
     },
     {
+      "id": 50,
+      "phaseId": 73,
+      "name": "Remove conflictig walls to install isolation",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        12
+      ]
+    },
+    {
       "id": 21,
       "phaseId": 73,
       "name": "Remove existing Floors Lower Floor",
@@ -5231,20 +5245,6 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 190
-    },
-    {
-      "id": 50,
-      "phaseId": 73,
-      "name": "Remove conflictig walls to install isolation",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        12
-      ]
     }
   ],
   "nextTaskId": 51,
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789126932612,
+  "_savedAt": 1789126940932,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
