@@ -4851,6 +4851,19 @@
       "spaceIds": []
     },
     {
+      "id": 49,
+      "phaseId": 73,
+      "name": "Remove lefover ceiling",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 0
+    },
+    {
       "id": 28,
       "phaseId": 62,
       "name": "Preliminary layout bath",
@@ -5112,19 +5125,6 @@
       "spaceIds": []
     },
     {
-      "id": 49,
-      "phaseId": 73,
-      "name": "Remove lefover ceiling",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 0
-    },
-    {
       "name": "Bath: Removing Wall",
       "notes": "",
       "id": 6,
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789040553431,
+  "_savedAt": 1789126305416,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
