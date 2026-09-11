@@ -4783,6 +4783,20 @@
       "kanbanOrder": 130
     },
     {
+      "id": 51,
+      "phaseId": 74,
+      "name": "Check with Stuckador company",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -5283,7 +5297,7 @@
       "kanbanOrder": 200
     }
   ],
-  "nextTaskId": 51,
+  "nextTaskId": 52,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5294,7 +5308,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789146387803,
+  "_savedAt": 1789146430835,
   "nextOrderId": 43,
   "nextQuoteId": 164,
   "nextItemId": 274,
