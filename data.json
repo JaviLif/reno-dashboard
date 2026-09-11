@@ -4570,23 +4570,6 @@
       "spaceIds": []
     },
     {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 20,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 23,
       "phaseId": 74,
       "name": "Build new walls",
@@ -5157,6 +5140,23 @@
       "spaceIds": []
     },
     {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 20,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
       "id": 48,
       "phaseId": 34,
       "name": "Check routing of HeatPump piping + ventilation",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789127217540,
+  "_savedAt": 1789127250548,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
