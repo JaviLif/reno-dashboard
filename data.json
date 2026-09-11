@@ -4570,6 +4570,20 @@
       ]
     },
     {
+      "id": 35,
+      "phaseId": 65,
+      "name": "Install tubing EXTERNAL (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "id": 27,
       "phaseId": 73,
       "name": "CHECK: Removal chimeney",
@@ -4578,7 +4592,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 20,
+      "kanbanOrder": 30,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4593,7 +4607,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4615,7 +4629,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 40,
+      "kanbanOrder": 50,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4631,7 +4645,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 50,
+      "kanbanOrder": 60,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4648,7 +4662,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 60
+      "kanbanOrder": 70
     },
     {
       "id": 26,
@@ -4659,7 +4673,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 70,
+      "kanbanOrder": 80,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4673,20 +4687,6 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 80
-    },
-    {
-      "id": 35,
-      "phaseId": 65,
-      "name": "Install tubing EXTERNAL (Supply + Extraction)",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Outside the roof/ Wall",
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
@@ -5259,7 +5259,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789139238950,
+  "_savedAt": 1789139255854,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
