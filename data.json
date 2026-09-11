@@ -4743,6 +4743,20 @@
       "kanbanOrder": 180
     },
     {
+      "id": 38,
+      "phaseId": 65,
+      "name": "Install WTW -Unit",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 190
+    },
+    {
       "id": 40,
       "phaseId": 34,
       "name": "Install Heat Pump Unit",
@@ -5219,20 +5233,6 @@
       "kanbanOrder": 170
     },
     {
-      "id": 38,
-      "phaseId": 65,
-      "name": "Install WTW -Unit",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 190
-    },
-    {
       "id": 39,
       "phaseId": 34,
       "name": "Intsall Piping fot HeatPump",
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789127258181,
+  "_savedAt": 1789127263893,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
