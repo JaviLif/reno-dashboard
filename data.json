@@ -76,7 +76,7 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
           "chosen": false,
           "documents": []
         }
@@ -5294,7 +5294,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789146385851,
+  "_savedAt": 1789146387803,
   "nextOrderId": 43,
   "nextQuoteId": 164,
   "nextItemId": 274,
