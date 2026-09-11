@@ -4538,6 +4538,20 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 25,
+      "phaseId": 31,
+      "name": "Install ceiling isolation",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 24,
       "phaseId": 74,
       "name": "Install skyroof",
@@ -4547,7 +4561,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 0,
+      "kanbanOrder": 10,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4564,7 +4578,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 10,
+      "kanbanOrder": 20,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4601,7 +4615,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 100,
+      "kanbanOrder": 40,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4617,21 +4631,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 110,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 25,
-      "phaseId": 31,
-      "name": "Install ceiling isolation",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 120,
+      "kanbanOrder": 50,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4645,7 +4645,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 130,
+      "kanbanOrder": 60,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4662,7 +4662,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 140
+      "kanbanOrder": 70
     },
     {
       "id": 34,
@@ -4676,7 +4676,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 150
+      "kanbanOrder": 80
     },
     {
       "id": 35,
@@ -4690,7 +4690,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 160
+      "kanbanOrder": 90
     },
     {
       "id": 37,
@@ -4704,7 +4704,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 180
+      "kanbanOrder": 100
     },
     {
       "id": 38,
@@ -4718,7 +4718,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 190
+      "kanbanOrder": 110
     },
     {
       "id": 40,
@@ -4732,7 +4732,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 210
+      "kanbanOrder": 120
     },
     {
       "id": 46,
@@ -4744,7 +4744,8 @@
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 130
     },
     {
       "id": 14,
@@ -5258,7 +5259,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789139222390,
+  "_savedAt": 1789139228829,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
