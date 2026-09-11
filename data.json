@@ -4760,20 +4760,6 @@
       "kanbanOrder": 180
     },
     {
-      "id": 39,
-      "phaseId": 34,
-      "name": "Intsall Piping fot HeatPump",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 200
-    },
-    {
       "id": 40,
       "phaseId": 34,
       "name": "Install Heat Pump Unit",
@@ -5245,6 +5231,20 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 190
+    },
+    {
+      "id": 39,
+      "phaseId": 34,
+      "name": "Intsall Piping fot HeatPump",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 200
     }
   ],
   "nextTaskId": 51,
@@ -5258,7 +5258,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789126948677,
+  "_savedAt": 1789126967116,
   "nextOrderId": 43,
   "nextQuoteId": 162,
   "nextItemId": 273,
