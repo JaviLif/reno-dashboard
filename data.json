@@ -56,7 +56,7 @@
       "name": "tape membrane to wood",
       "description": "Material to cover PU foam on roof",
       "link": "",
-      "qty": 1,
+      "qty": 3,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -5330,7 +5330,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789244797703,
+  "_savedAt": 1789244799457,
   "nextOrderId": 43,
   "nextQuoteId": 166,
   "nextItemId": 276,
