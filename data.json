@@ -69,6 +69,16 @@
           "link": "https://www.youtube.com/watch?v=JdLyWm-cqNQ",
           "chosen": true,
           "documents": []
+        },
+        {
+          "id": 167,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
@@ -5355,9 +5365,9 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789248699254,
+  "_savedAt": 1789248734928,
   "nextOrderId": 43,
-  "nextQuoteId": 167,
+  "nextQuoteId": 168,
   "nextItemId": 277,
   "_version": "dashboard-v1",
   "phases": [
