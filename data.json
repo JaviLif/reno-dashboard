@@ -76,7 +76,7 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.youtube.com/watch?v=0YSVajb2ZXc",
           "chosen": false,
           "documents": []
         }
@@ -5365,7 +5365,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789248734928,
+  "_savedAt": 1789248736730,
   "nextOrderId": 43,
   "nextQuoteId": 168,
   "nextItemId": 277,
