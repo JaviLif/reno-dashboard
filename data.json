@@ -2903,34 +2903,6 @@
       "qty": 45
     },
     {
-      "status": "not-ordered",
-      "link": "",
-      "phaseId": 31,
-      "unit": "m∩┐╜",
-      "id": 106,
-      "description": "Rd 3,6; 80mm Price per sqm",
-      "documents": [],
-      "qty": 0,
-      "categoryId": 3,
-      "quotes": [
-        {
-          "id": 10,
-          "notes": "",
-          "unitPrice": 15,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "notes": "",
-      "name": "Outside Wall Isolation"
-    },
-    {
       "qty": 45,
       "categoryId": 3,
       "orders": [],
@@ -5308,7 +5280,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789146432767,
+  "_savedAt": 1789244005244,
   "nextOrderId": 43,
   "nextQuoteId": 164,
   "nextItemId": 274,
