@@ -82,7 +82,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 275,
@@ -107,7 +108,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 274,
@@ -132,7 +134,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 273,
@@ -167,7 +170,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 272,
@@ -228,7 +232,7 @@
         {
           "id": 160,
           "supplier": "",
-          "unitPrice": 20,
+          "unitPrice": 12.5,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -5365,7 +5369,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789248736730,
+  "_savedAt": 1789311741962,
   "nextOrderId": 43,
   "nextQuoteId": 168,
   "nextItemId": 277,
