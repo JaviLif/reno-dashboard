@@ -52,7 +52,7 @@
     {
       "id": 277,
       "phaseId": 74,
-      "categoryId": null,
+      "categoryId": 8,
       "name": "LAser",
       "description": "",
       "link": "",
@@ -5388,7 +5388,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789381417174,
+  "_savedAt": 1789381419296,
   "nextOrderId": 43,
   "nextQuoteId": 169,
   "nextItemId": 278,
