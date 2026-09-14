@@ -72,7 +72,7 @@
       "orders": [
         {
           "id": 43,
-          "supplier": "",
+          "supplier": "AliExpress",
           "poNumber": "",
           "orderDate": "2026-09-14",
           "unitPrice": 32.65,
@@ -5406,7 +5406,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789381424239,
+  "_savedAt": 1789381428926,
   "nextOrderId": 44,
   "nextQuoteId": 169,
   "nextItemId": 278,
