@@ -70,7 +70,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 276,
@@ -5388,7 +5389,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 14,
-  "_savedAt": 1789381419296,
+  "_savedAt": 1789381422687,
   "nextOrderId": 43,
   "nextQuoteId": 169,
   "nextItemId": 278,
