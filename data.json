@@ -66,7 +66,10 @@
           "unitPrice": 32.65,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -123,7 +127,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 275,
@@ -148,7 +153,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 274,
@@ -173,7 +179,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 273,
@@ -208,7 +215,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 272,
@@ -252,7 +260,16 @@
           "documents": []
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 14,
+          "name": "Factuur-42097.pdf",
+          "type": "application/pdf",
+          "size": 281432,
+          "ghPath": "quotes/Factuur-42097.pdf",
+          "uploadedDate": "2026-09-15"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -5405,8 +5422,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 14,
-  "_savedAt": 1789384921631,
+  "nextDocId": 15,
+  "_savedAt": 1789481461752,
   "nextOrderId": 44,
   "nextQuoteId": 169,
   "nextItemId": 278,
