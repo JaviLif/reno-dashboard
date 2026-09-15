@@ -69,7 +69,24 @@
           "chosen": true
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 44,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-15",
+          "unitPrice": 133.65,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": []
     },
     {
@@ -5470,8 +5487,8 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1789502760482,
-  "nextOrderId": 44,
+  "_savedAt": 1789502765332,
+  "nextOrderId": 45,
   "nextQuoteId": 170,
   "nextItemId": 280,
   "_version": "dashboard-v1",
