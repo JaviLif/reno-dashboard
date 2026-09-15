@@ -61,7 +61,16 @@
       "notes": "",
       "quotes": [],
       "orders": [],
-      "documents": []
+      "documents": [
+        {
+          "id": 15,
+          "name": "Offerte - J. Franco Linares.pdf",
+          "type": "application/pdf",
+          "size": 321967,
+          "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
+          "uploadedDate": "2026-09-15"
+        }
+      ]
     },
     {
       "id": 277,
@@ -5436,8 +5445,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 15,
-  "_savedAt": 1789481507712,
+  "nextDocId": 16,
+  "_savedAt": 1789481522105,
   "nextOrderId": 44,
   "nextQuoteId": 169,
   "nextItemId": 279,
