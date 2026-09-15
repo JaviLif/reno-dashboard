@@ -50,6 +50,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 279,
+      "phaseId": 60,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 278,
       "phaseId": 65,
       "categoryId": null,
@@ -70,7 +84,8 @@
           "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
           "uploadedDate": "2026-09-15"
         }
-      ]
+      ],
+      "status": "not-ordered"
     },
     {
       "id": 277,
@@ -5446,10 +5461,10 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1789481522105,
+  "_savedAt": 1789502719431,
   "nextOrderId": 44,
   "nextQuoteId": 169,
-  "nextItemId": 279,
+  "nextItemId": 280,
   "_version": "dashboard-v1",
   "phases": [
     {
