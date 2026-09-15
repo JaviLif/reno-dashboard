@@ -66,7 +66,10 @@
           "unitPrice": 133.65,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -84,7 +87,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -5488,7 +5492,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1789502778161,
+  "_savedAt": 1789502789420,
   "nextOrderId": 45,
   "nextQuoteId": 170,
   "nextItemId": 280,
@@ -5939,34 +5943,21 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "link",
+      "phase",
+      "category",
       "name",
       "description",
       "qty",
       "price",
       "total",
-      "category",
-      "delivery",
-      "netspent",
       "quote",
       "status",
-      "phase"
+      "delivery",
+      "netspent",
+      "link"
     ],
     "colHidden": [],
-    "colWidths": {
-      "phase": 234,
-      "category": 188,
-      "name": 229,
-      "description": 248,
-      "status": 150,
-      "delivery": 60,
-      "netspent": 124,
-      "price": 60,
-      "total": 91,
-      "quote": 68,
-      "qty": 60,
-      "link": 60
-    },
+    "colWidths": {},
     "sortKey": "status",
     "sortDir": "asc"
   },
