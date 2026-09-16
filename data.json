@@ -50,6 +50,51 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 279,
+      "phaseId": 74,
+      "categoryId": 3,
+      "name": "Wood and screws",
+      "description": "Extension bath and bed",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 169,
+          "supplier": "",
+          "unitPrice": 133.65,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 44,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-15",
+          "unitPrice": 133.65,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
       "id": 278,
       "phaseId": 65,
       "categoryId": null,
@@ -683,7 +728,7 @@
     },
     {
       "id": 262,
-      "phaseId": 73,
+      "phaseId": 62,
       "categoryId": 5,
       "name": "Big bag + Stortslurf",
       "description": "Markplaats",
@@ -938,7 +983,7 @@
         {
           "id": 141,
           "supplier": "",
-          "unitPrice": 101.92,
+          "unitPrice": 168.91,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -953,7 +998,7 @@
           "supplier": "Lidl",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 101.92,
+          "unitPrice": 168.91,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 0,
@@ -1319,6 +1364,32 @@
       "status": "not-ordered"
     },
     {
+      "id": 248,
+      "phaseId": 62,
+      "categoryId": 1,
+      "name": "Rent Container Gemmente Tax",
+      "description": "4 weeks",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 131,
+          "name": "",
+          "unitPrice": 362.3,
+          "date": "",
+          "notes": "",
+          "link": "https://www.amsterdam.nl/vergunningen-ontheffingen/werkzaamheden-straat/objectvergunning-aanvragen/",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
       "id": 247,
       "phaseId": 62,
       "categoryId": 8,
@@ -1583,7 +1654,7 @@
     },
     {
       "id": 239,
-      "phaseId": 74,
+      "phaseId": 62,
       "categoryId": 8,
       "name": "plafondschuurmachine ",
       "description": "",
@@ -2876,51 +2947,16 @@
       "name": "Asbestreport"
     },
     {
-      "documents": [
-        {
-          "id": 16,
-          "name": "2622246.pdf",
-          "type": "application/pdf",
-          "size": 348672,
-          "ghPath": "quotes/2622246.pdf",
-          "uploadedDate": "2026-09-16"
-        },
-        {
-          "id": 17,
-          "name": "_BV_20260916143521000.pdf",
-          "type": "application/pdf",
-          "size": 19902,
-          "ghPath": "quotes/_BV_20260916143521000.pdf",
-          "uploadedDate": "2026-09-16"
-        }
-      ],
+      "documents": [],
       "description": "6m3",
       "id": 99,
-      "phaseId": 73,
+      "phaseId": 62,
       "unit": "pcs",
       "link": "",
-      "status": "ordered",
+      "status": "not-ordered",
       "name": "Rent Container",
       "notes": "",
-      "orders": [
-        {
-          "id": 44,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-09-16",
-          "unitPrice": 572,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
+      "orders": [],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -2928,7 +2964,7 @@
           "chosen": true,
           "notes": "",
           "id": 3,
-          "unitPrice": 572,
+          "unitPrice": 447,
           "documents": [],
           "link": "https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten",
           "shippingCost": 0,
@@ -5455,11 +5491,11 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 18,
-  "_savedAt": 1789562642818,
+  "nextDocId": 16,
+  "_savedAt": 1789502789420,
   "nextOrderId": 45,
-  "nextQuoteId": 169,
-  "nextItemId": 279,
+  "nextQuoteId": 170,
+  "nextItemId": 280,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -5907,34 +5943,21 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "link",
+      "phase",
+      "category",
       "name",
       "description",
       "qty",
       "price",
       "total",
-      "category",
-      "delivery",
-      "netspent",
       "quote",
       "status",
-      "phase"
+      "delivery",
+      "netspent",
+      "link"
     ],
     "colHidden": [],
-    "colWidths": {
-      "phase": 234,
-      "category": 188,
-      "name": 229,
-      "description": 248,
-      "status": 150,
-      "delivery": 60,
-      "netspent": 124,
-      "price": 60,
-      "total": 91,
-      "quote": 68,
-      "qty": 60,
-      "link": 60
-    },
+    "colWidths": {},
     "sortKey": "status",
     "sortDir": "asc"
   },
