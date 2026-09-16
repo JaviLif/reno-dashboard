@@ -4526,26 +4526,6 @@
       ]
     },
     {
-      "notes": "",
-      "id": 3,
-      "description": "Preliminary simple Layout Electricity",
-      "name": "Preliminary Layout Electricity",
-      "phaseId": 62,
-      "priority": "med",
-      "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "status": "planned",
-      "end": "",
-      "kanbanOrder": 40,
-      "assigneeIds": [
-        3
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 16,
       "phaseId": 62,
       "name": "Decide which doors to choose. (We need to know the frame measurements )",
@@ -4755,19 +4735,6 @@
       "kanbanOrder": 210
     },
     {
-      "id": 44,
-      "phaseId": 74,
-      "name": "Build Chimeney Holder",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 220
-    },
-    {
       "id": 46,
       "phaseId": 67,
       "name": "Stucken of walls under the old ceiling",
@@ -4793,27 +4760,6 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
-        7
-      ]
-    },
-    {
-      "name": "Bath: Removing Wall",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "in-progress",
-      "kanbanOrder": 10,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
         7
       ]
     },
@@ -5111,9 +5057,116 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 49,
+      "phaseId": 73,
+      "name": "Remove lefover ceiling",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 0
+    },
+    {
+      "name": "Bath: Removing Wall",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "this-week",
+      "kanbanOrder": 10,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": 48,
+      "phaseId": 34,
+      "name": "Check routing of HeatPump piping + ventilation",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
+      "id": 44,
+      "phaseId": 74,
+      "name": "Build Chimeney Holder",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 30
+    },
+    {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 62,
+      "priority": "med",
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "status": "this-week",
+      "end": "",
+      "kanbanOrder": 40,
+      "assigneeIds": [
+        3
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 47,
+      "phaseId": 31,
+      "name": "Make a hole in the basement  and boroscope.",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 50
+    },
+    {
+      "id": 50,
+      "phaseId": 73,
+      "name": "Remove conflictig walls to install isolation",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        12
+      ]
     }
   ],
-  "nextTaskId": 47,
+  "nextTaskId": 51,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5124,7 +5177,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 12,
-  "_savedAt": 1788729181349,
+  "_savedAt": 1788730261942,
   "nextOrderId": 41,
   "nextQuoteId": 161,
   "nextItemId": 272,
@@ -5644,6 +5697,11 @@
     {
       "status": "planned",
       "label": "Backlog",
+      "color": "#94a3b8"
+    },
+    {
+      "status": "this-week",
+      "label": "This Week",
       "color": "#94a3b8"
     },
     {
