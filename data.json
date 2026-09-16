@@ -4984,27 +4984,6 @@
       ]
     },
     {
-      "name": "Bath: Removing Wall",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "in-progress",
-      "kanbanOrder": 10,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5050,6 +5029,27 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 0
+    },
+    {
+      "name": "Bath: Removing Wall",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "completed",
+      "kanbanOrder": 10,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
     },
     {
       "id": 28,
@@ -5492,7 +5492,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1789563282630,
+  "_savedAt": 1789584854980,
   "nextOrderId": 45,
   "nextQuoteId": 170,
   "nextItemId": 280,
