@@ -50,6 +50,298 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 279,
+      "phaseId": 74,
+      "categoryId": 3,
+      "name": "Wood and screws",
+      "description": "Extension bath and bed",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 169,
+          "supplier": "",
+          "unitPrice": 133.65,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 44,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-15",
+          "unitPrice": 133.65,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 278,
+      "phaseId": 65,
+      "categoryId": null,
+      "name": "Offerete",
+      "description": "Alpha Ventilatie",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [
+        {
+          "id": 15,
+          "name": "Offerte - J. Franco Linares.pdf",
+          "type": "application/pdf",
+          "size": 321967,
+          "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
+          "uploadedDate": "2026-09-15"
+        }
+      ],
+      "status": "not-ordered"
+    },
+    {
+      "id": 277,
+      "phaseId": 74,
+      "categoryId": 8,
+      "name": "Laser Level",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 168,
+          "supplier": "",
+          "unitPrice": 32.65,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 43,
+          "supplier": "AliExpress",
+          "poNumber": "",
+          "orderDate": "2026-09-14",
+          "unitPrice": 32.65,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "ordered"
+    },
+    {
+      "id": 276,
+      "phaseId": 70,
+      "categoryId": null,
+      "name": "video",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 166,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.youtube.com/watch?v=JdLyWm-cqNQ",
+          "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 167,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.youtube.com/watch?v=0YSVajb2ZXc",
+          "chosen": false,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 275,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "tape membrane to wood",
+      "description": "Material to cover PU foam on roof",
+      "link": "",
+      "qty": 3,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 165,
+          "name": "",
+          "unitPrice": 30,
+          "date": "",
+          "notes": "",
+          "link": "https://benz24.nl/pro-clima-hoekplakband-tescon-profil.html?qs301fi=1&utm_content=dakisolatie%20%3E%20dakisolatie%20accessoires&utm_source=google&utm_medium=cpc&mtm_cid=24067499218&utm_content=&utm_term=&utm_campaign=pmax%20feed-only&gad_source=1&gad_campaignid=24057857904&gbraid=0AAAABEJo_BMTWh8sDcve6T0R1C0KCOa-6&gclid=Cj0KCQjw8JPVBhD-ARIsAO691sGzPYZNflKzEOM5r8sxRbXKhpseND52FjW1d96bNGAZI1LI9njtm-gaAnC_EALw_wcB",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 274,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Membrane",
+      "description": "Material to cover PU foam on roof",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 164,
+          "name": "",
+          "unitPrice": 333,
+          "date": "",
+          "notes": "",
+          "link": "https://www.bouwbink.nl/pro-clima-intello-plus-1-5-x-50m/2667010092",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 273,
+      "phaseId": 65,
+      "categoryId": 3,
+      "name": "Ventialtion Unit",
+      "description": "Itho Daalderop CVE-S OPTIMA2 pakket met ventilatie unit 468 m3/h, geintegreerde RV sensor",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 162,
+          "name": "",
+          "unitPrice": 669,
+          "date": "",
+          "notes": "",
+          "link": "https://www.elektramat.nl/itho-daalderop-cve-s-optima2-pakket-met-ventilatie-unit-468-m3-h-geintegreerde-rv-sensor-en-2-co2-sensoren-03-00477/?_gl=1*18xbquh*_up*MQ..*_gs*MQ..*_ga*MjExODczNDQxNC4xNzg5MTQzNTk5*_ga_WPXDT6EWYX*czE3ODkxNDM1OTkkbzEkZzAkdDE3ODkxNDM4MjQkajYwJGwwJGgxNjY5MzYyMDEwJGRCUlNUbXlrMDZMSlllblNCT3NXMWlndUJPMlc3Ql9oUEJR&gclid=Cj0KCQjwzY7VBhDwARIsAFtPvBSVv6qmc_fEJzLYuDbjxQEUAe3EGUELCl0dauP3xgEz84GU_RSUFpEaAl5uEALw_wcB&gbraid=0AAAAAD5RVIckWO1hGkBrFuM0jPWjqd8h-",
+          "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 163,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
+          "chosen": false,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 272,
+      "phaseId": 78,
+      "categoryId": null,
+      "name": "Profiele",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 161,
+          "supplier": "",
+          "unitPrice": 222.42,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://glasmaatje.nl/glasbeslag-montage/los-glasbeslag/glasbeslag-op-toepassing-dakbeglazing/klemprofielen-58mm/klemprofielsets-58mm/klemprofielset-zijkant-58-mm/",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 42,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-08",
+          "unitPrice": 222.42,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 39.95,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [
+        {
+          "id": 14,
+          "name": "Factuur-42097.pdf",
+          "type": "application/pdf",
+          "size": 281432,
+          "ghPath": "quotes/Factuur-42097.pdf",
+          "uploadedDate": "2026-09-15"
+        }
+      ],
+      "status": "ordered"
+    },
+    {
       "id": 271,
       "phaseId": 63,
       "categoryId": 4,
@@ -124,7 +416,7 @@
           "orderDate": "2026-09-06",
           "unitPrice": 88,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -136,7 +428,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 269,
@@ -295,7 +587,7 @@
           "orderDate": "",
           "unitPrice": 55.95,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -316,7 +608,7 @@
           "uploadedDate": "2026-09-06"
         }
       ],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 265,
@@ -403,7 +695,7 @@
         {
           "id": 150,
           "supplier": "",
-          "unitPrice": 59.63,
+          "unitPrice": 36.78,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -418,9 +710,9 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 59.63,
+          "unitPrice": 36.78,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -432,7 +724,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 262,
@@ -493,7 +785,7 @@
         {
           "id": 147,
           "supplier": "",
-          "unitPrice": 204,
+          "unitPrice": 266,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -512,9 +804,36 @@
           "documents": []
         }
       ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
+      "orders": [
+        {
+          "id": 41,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-08",
+          "unitPrice": 266,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 34,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [
+        {
+          "id": 13,
+          "name": "Factuur-26118837_Glas.pdf",
+          "type": "application/pdf",
+          "size": 106888,
+          "ghPath": "quotes/Factuur-26118837_Glas.pdf",
+          "uploadedDate": "2026-09-10"
+        }
+      ],
+      "status": "ordered"
     },
     {
       "id": 260,
@@ -664,7 +983,7 @@
         {
           "id": 141,
           "supplier": "",
-          "unitPrice": 168.91,
+          "unitPrice": 102.92,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -679,7 +998,7 @@
           "supplier": "Lidl",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 168.91,
+          "unitPrice": 102.92,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 0,
@@ -1380,7 +1699,7 @@
           "orderDate": "",
           "unitPrice": 703,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -1391,8 +1710,17 @@
           "shippingCost": 0
         }
       ],
-      "documents": [],
-      "status": "ordered"
+      "documents": [
+        {
+          "id": 12,
+          "name": "Factuur-0000181 (1).pdf",
+          "type": "application/pdf",
+          "size": 152310,
+          "ghPath": "quotes/Factuur-0000181__1_.pdf",
+          "uploadedDate": "2026-09-08"
+        }
+      ],
+      "status": "delivered"
     },
     {
       "id": 231,
@@ -1656,12 +1984,12 @@
         {
           "id": 113,
           "supplier": "mb400 + 40E",
-          "unitPrice": 4299,
+          "unitPrice": 3625,
           "date": "",
           "notes": "",
           "chosen": false,
           "documents": [],
-          "link": "https://www.technim.nl/p/remeha-confida-monoblock-440e-warmtepompset-6kw-all-electric-r290/",
+          "link": "https://www.technim.nl/p/remeha-confida-monoblock-controlbox-mb-warmtepompset-6kw-r290/",
           "shippingCost": 0,
           "name": "mb400 + 40E"
         }
@@ -2785,34 +3113,6 @@
       ],
       "orders": [],
       "qty": 45
-    },
-    {
-      "status": "not-ordered",
-      "link": "",
-      "phaseId": 31,
-      "unit": "m∩┐╜",
-      "id": 106,
-      "description": "Rd 3,6; 80mm Price per sqm",
-      "documents": [],
-      "qty": 0,
-      "categoryId": 3,
-      "quotes": [
-        {
-          "id": 10,
-          "notes": "",
-          "unitPrice": 15,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.isolatiemateriaal.nl/p/insus-pir-2-zijdig-aluminium-1200x600x80mm-rd364-6plpak-432-m2",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "notes": "",
-      "name": "Outside Wall Isolation"
     },
     {
       "qty": 45,
@@ -4457,6 +4757,20 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
+      "id": 25,
+      "phaseId": 31,
+      "name": "Install ceiling isolation",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 24,
       "phaseId": 74,
       "name": "Install skyroof",
@@ -4466,13 +4780,27 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 0,
+      "kanbanOrder": 10,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
         7,
         14
       ]
+    },
+    {
+      "id": 35,
+      "phaseId": 65,
+      "name": "Install tubing EXTERNAL (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
     },
     {
       "id": 27,
@@ -4483,27 +4811,10 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 10,
+      "kanbanOrder": 30,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 20,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
     },
     {
       "id": 23,
@@ -4515,7 +4826,7 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 30,
+      "kanbanOrder": 40,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -4524,42 +4835,6 @@
         9,
         12
       ]
-    },
-    {
-      "id": 16,
-      "phaseId": 62,
-      "name": "Decide which doors to choose. (We need to know the frame measurements )",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 80,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
-      "id": 17,
-      "phaseId": 62,
-      "name": "Decide where electrical installation (Lights and sockets)",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assignee": "",
-      "notes": "",
-      "kanbanOrder": 90,
-      "assigneeIds": [
-        3,
-        4
-      ],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
     },
     {
       "start": "",
@@ -4573,7 +4848,7 @@
       "description": "Self Made",
       "phaseId": 73,
       "priority": "med",
-      "kanbanOrder": 100,
+      "kanbanOrder": 50,
       "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
@@ -4589,24 +4864,24 @@
       "assignee": "",
       "notes": "",
       "assigneeIds": [],
-      "kanbanOrder": 110,
+      "kanbanOrder": 60,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
     },
     {
-      "id": 25,
-      "phaseId": 31,
-      "name": "Install ceiling isolation",
+      "id": 34,
+      "phaseId": 32,
+      "name": "Install electricity to HeatPump",
       "start": "",
       "end": "",
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 120,
       "subtasks": [],
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 70
     },
     {
       "id": 26,
@@ -4617,7 +4892,7 @@
       "status": "planned",
       "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 130,
+      "kanbanOrder": 80,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4634,49 +4909,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 140
-    },
-    {
-      "id": 34,
-      "phaseId": 32,
-      "name": "Install electricity to HeatPump",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 150
-    },
-    {
-      "id": 35,
-      "phaseId": 65,
-      "name": "Install tubing EXTERNAL (Supply + Extraction)",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Outside the roof/ Wall",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 160
-    },
-    {
-      "id": 36,
-      "phaseId": 65,
-      "name": "Ventilation: Install Tubing INTERNAL  See notes",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 170
+      "kanbanOrder": 90
     },
     {
       "id": 37,
@@ -4690,7 +4923,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 180
+      "kanbanOrder": 100
     },
     {
       "id": 38,
@@ -4704,21 +4937,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 190
-    },
-    {
-      "id": 39,
-      "phaseId": 34,
-      "name": "Intsall Piping fot HeatPump",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 200
+      "kanbanOrder": 110
     },
     {
       "id": 40,
@@ -4732,7 +4951,7 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 210
+      "kanbanOrder": 120
     },
     {
       "id": 46,
@@ -4744,7 +4963,8 @@
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": []
+      "spaceIds": [],
+      "kanbanOrder": 130
     },
     {
       "id": 14,
@@ -4760,6 +4980,27 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
+        7
+      ]
+    },
+    {
+      "name": "Bath: Removing Wall",
+      "notes": "",
+      "id": 6,
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "start": "",
+      "dueDate": null,
+      "assignee": "",
+      "end": "",
+      "status": "in-progress",
+      "kanbanOrder": 10,
+      "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
         7
       ]
     },
@@ -4798,6 +5039,19 @@
       "spaceIds": []
     },
     {
+      "id": 49,
+      "phaseId": 73,
+      "name": "Remove lefover ceiling",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 0
+    },
+    {
       "id": 28,
       "phaseId": 62,
       "name": "Preliminary layout bath",
@@ -4810,6 +5064,39 @@
       ],
       "notes": "",
       "kanbanOrder": 30,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 44,
+      "phaseId": 74,
+      "name": "Build Chimeney Holder",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 30
+    },
+    {
+      "notes": "",
+      "id": 3,
+      "description": "Preliminary simple Layout Electricity",
+      "name": "Preliminary Layout Electricity",
+      "phaseId": 62,
+      "priority": "med",
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "status": "completed",
+      "end": "",
+      "kanbanOrder": 40,
+      "assigneeIds": [
+        3
+      ],
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -4834,6 +5121,19 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 47,
+      "phaseId": 31,
+      "name": "Make a hole in the basement  and boroscope.",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 50
     },
     {
       "end": null,
@@ -4863,6 +5163,42 @@
       "assignee": "",
       "notes": "",
       "kanbanOrder": 70,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 16,
+      "phaseId": 62,
+      "name": "Decide which doors to choose. (We need to know the frame measurements )",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 80,
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 17,
+      "phaseId": 62,
+      "name": "Decide where electrical installation (Lights and sockets)",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "kanbanOrder": 90,
       "assigneeIds": [
         3,
         4
@@ -4956,6 +5292,20 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 310
+    },
+    {
+      "id": 50,
+      "phaseId": 73,
+      "name": "Remove conflictig walls to install isolation",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        12
+      ]
     },
     {
       "id": 21,
@@ -5059,32 +5409,15 @@
       "spaceIds": []
     },
     {
-      "id": 49,
-      "phaseId": 73,
-      "name": "Remove lefover ceiling",
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
       "start": "",
       "end": "",
       "status": "this-week",
       "assigneeIds": [],
       "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 0
-    },
-    {
-      "name": "Bath: Removing Wall",
-      "notes": "",
-      "id": 6,
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "start": "",
-      "dueDate": null,
-      "assignee": "",
-      "end": "",
-      "status": "this-week",
-      "kanbanOrder": 10,
-      "assigneeIds": [],
+      "kanbanOrder": 20,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -5106,67 +5439,49 @@
       "kanbanOrder": 20
     },
     {
-      "id": 44,
-      "phaseId": 74,
-      "name": "Build Chimeney Holder",
+      "id": 36,
+      "phaseId": 65,
+      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 170
+    },
+    {
+      "id": 39,
+      "phaseId": 34,
+      "name": "Intsall Piping fot HeatPump",
       "start": "",
       "end": "",
       "status": "this-week",
       "assigneeIds": [],
       "notes": "",
+      "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [],
-      "kanbanOrder": 30
+      "kanbanOrder": 200
     },
     {
-      "notes": "",
-      "id": 3,
-      "description": "Preliminary simple Layout Electricity",
-      "name": "Preliminary Layout Electricity",
-      "phaseId": 62,
-      "priority": "med",
+      "id": 51,
+      "phaseId": 74,
+      "name": "Check with Stuckador company",
       "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "status": "this-week",
       "end": "",
-      "kanbanOrder": 40,
+      "status": "this-week",
       "assigneeIds": [
         3
       ],
-      "subtasks": [],
+      "notes": "",
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 47,
-      "phaseId": 31,
-      "name": "Make a hole in the basement  and boroscope.",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 50
-    },
-    {
-      "id": 50,
-      "phaseId": 73,
-      "name": "Remove conflictig walls to install isolation",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        12
-      ]
     }
   ],
-  "nextTaskId": 51,
+  "nextTaskId": 52,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5176,11 +5491,11 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 12,
-  "_savedAt": 1788730261942,
-  "nextOrderId": 41,
-  "nextQuoteId": 161,
-  "nextItemId": 272,
+  "nextDocId": 16,
+  "_savedAt": 1789563282630,
+  "nextOrderId": 45,
+  "nextQuoteId": 170,
+  "nextItemId": 280,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -5628,7 +5943,8 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "link",
+      "phase",
+      "category",
       "name",
       "description",
       "qty",
@@ -5638,27 +5954,12 @@
       "status",
       "delivery",
       "netspent",
-      "phase",
-      "category"
+      "link"
     ],
-    "colHidden": [
-      "delivery",
-      "quote"
-    ],
-    "colWidths": {
-      "category": 240,
-      "name": 253,
-      "description": 258,
-      "qty": 72,
-      "phase": 241,
-      "delivery": 71,
-      "price": 60,
-      "link": 60,
-      "status": 137,
-      "netspent": 81
-    },
+    "colHidden": [],
+    "colWidths": {},
     "sortKey": "status",
-    "sortDir": "desc"
+    "sortDir": "asc"
   },
   "spaces": [
     {
