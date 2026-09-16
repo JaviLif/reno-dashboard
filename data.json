@@ -70,7 +70,8 @@
           "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
           "uploadedDate": "2026-09-15"
         }
-      ]
+      ],
+      "status": "not-ordered"
     },
     {
       "id": 277,
@@ -2883,6 +2884,14 @@
           "size": 348672,
           "ghPath": "quotes/2622246.pdf",
           "uploadedDate": "2026-09-16"
+        },
+        {
+          "id": 17,
+          "name": "_BV_20260916143521000.pdf",
+          "type": "application/pdf",
+          "size": 19902,
+          "ghPath": "quotes/_BV_20260916143521000.pdf",
+          "uploadedDate": "2026-09-16"
         }
       ],
       "description": "6m3",
@@ -2890,7 +2899,7 @@
       "phaseId": 73,
       "unit": "pcs",
       "link": "",
-      "status": "not-ordered",
+      "status": "ordered",
       "name": "Rent Container",
       "notes": "",
       "orders": [
@@ -2908,7 +2917,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "quotes": [
@@ -5445,8 +5455,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 17,
-  "_savedAt": 1789556009913,
+  "nextDocId": 18,
+  "_savedAt": 1789562173550,
   "nextOrderId": 45,
   "nextQuoteId": 169,
   "nextItemId": 279,
