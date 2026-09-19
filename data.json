@@ -2921,7 +2921,16 @@
       "name": "Asbestreport"
     },
     {
-      "documents": [],
+      "documents": [
+        {
+          "id": 16,
+          "name": "2622246.pdf",
+          "type": "application/pdf",
+          "size": 348672,
+          "ghPath": "quotes/2622246.pdf",
+          "uploadedDate": "2026-09-19"
+        }
+      ],
       "description": "6m3",
       "id": 99,
       "phaseId": 73,
@@ -5482,8 +5491,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 12,
-  "nextDocId": 16,
-  "_savedAt": 1789855807170,
+  "nextDocId": 17,
+  "_savedAt": 1789855821947,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
