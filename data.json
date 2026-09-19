@@ -2930,7 +2930,24 @@
       "status": "not-ordered",
       "name": "Rent Container",
       "notes": "",
-      "orders": [],
+      "orders": [
+        {
+          "id": 45,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-19",
+          "unitPrice": 571,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -5466,8 +5483,8 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1789855784015,
-  "nextOrderId": 45,
+  "_savedAt": 1789855788514,
+  "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
   "_version": "dashboard-v1",
