@@ -492,7 +492,7 @@
       "orders": [
         {
           "id": 38,
-          "supplier": "",
+          "supplier": "Hornbach",
           "poNumber": "",
           "orderDate": "2026-09-04",
           "unitPrice": 27.3,
@@ -5493,7 +5493,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 17,
-  "_savedAt": 1789856869364,
+  "_savedAt": 1789856881986,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
