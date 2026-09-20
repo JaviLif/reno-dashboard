@@ -154,7 +154,7 @@
           "orderDate": "2026-09-14",
           "unitPrice": 32.65,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -166,7 +166,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 276,
@@ -5512,7 +5512,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789922669326,
+  "_savedAt": 1789923389588,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
@@ -6089,5 +6089,6 @@
     "Warmteservice",
     "wifishop.nl"
   ],
-  "supplierBackfillV1": true
+  "supplierBackfillV1": true,
+  "suppliersHidden": []
 }
