@@ -5386,6 +5386,20 @@
       "kanbanOrder": 130
     },
     {
+      "id": 51,
+      "phaseId": 74,
+      "name": "Check with Stuckador company",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5898,20 +5912,6 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 200
-    },
-    {
-      "id": 51,
-      "phaseId": 74,
-      "name": "Check with Stuckador company",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [
-        3
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
     }
   ],
   "nextTaskId": 52,
@@ -5925,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937709314,
+  "_savedAt": 1789937732980,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
