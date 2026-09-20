@@ -91,7 +91,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -100,7 +101,7 @@
     {
       "id": 288,
       "phaseId": 70,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Inbouw Kast",
       "description": "Nich",
       "link": "",
@@ -144,7 +145,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -5923,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789931591964,
+  "_savedAt": 1789937599223,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
