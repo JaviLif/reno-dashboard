@@ -5414,6 +5414,18 @@
       "spaceIds": []
     },
     {
+      "id": 52,
+      "phaseId": 31,
+      "name": "Open space kruipruimte",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -5914,7 +5926,7 @@
       "kanbanOrder": 170
     }
   ],
-  "nextTaskId": 52,
+  "nextTaskId": 53,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5925,7 +5937,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937758618,
+  "_savedAt": 1789937789355,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
