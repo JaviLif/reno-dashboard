@@ -5222,20 +5222,6 @@
       ]
     },
     {
-      "id": 35,
-      "phaseId": 65,
-      "name": "Install tubing EXTERNAL (Supply + Extraction)",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Outside the roof/ Wall",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 20
-    },
-    {
       "id": 27,
       "phaseId": 73,
       "name": "CHECK: Removal chimeney",
@@ -5855,6 +5841,20 @@
       "spaceIds": []
     },
     {
+      "id": 35,
+      "phaseId": 65,
+      "name": "Install tubing EXTERNAL (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -5925,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937686534,
+  "_savedAt": 1789937709314,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
