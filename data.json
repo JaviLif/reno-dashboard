@@ -71,7 +71,8 @@
           "unitPrice": 22.95,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/steelies-ultimate-bevestigingsrozet-doos-a-100-stuks/9300000179614351/"
         }
       ],
       "orders": [
@@ -5800,7 +5801,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789925133370,
+  "_savedAt": 1789925139672,
   "nextOrderId": 54,
   "nextQuoteId": 178,
   "nextItemId": 288,
