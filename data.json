@@ -5414,6 +5414,23 @@
       "spaceIds": []
     },
     {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 20,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5883,23 +5900,6 @@
       "kanbanOrder": 20
     },
     {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 20,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 36,
       "phaseId": 65,
       "name": "Ventilation: Install Tubing INTERNAL  See notes",
@@ -5925,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937735214,
+  "_savedAt": 1789937751389,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
