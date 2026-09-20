@@ -79,7 +79,7 @@
       "orders": [
         {
           "id": 54,
-          "supplier": "",
+          "supplier": "Sanitino",
           "poNumber": "",
           "orderDate": "2026-09-20",
           "unitPrice": 250.46,
@@ -5912,7 +5912,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789931373981,
+  "_savedAt": 1789931390878,
   "nextOrderId": 56,
   "nextQuoteId": 180,
   "nextItemId": 290,
@@ -6475,6 +6475,7 @@
     "premiumdakramen.nl",
     "refurbed.nl",
     "Sanitairkammer",
+    "Sanitino",
     "skylights1.nl",
     "sleiderink.nl",
     "stralendgroen.nl",
