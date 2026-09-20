@@ -44,6 +44,11 @@
       "id": 11,
       "name": "Buying Costs",
       "color": "#b300b3"
+    },
+    {
+      "id": 12,
+      "name": "Others",
+      "color": "#292929"
     }
   ],
   "nextPhaseId": 79,
@@ -5505,9 +5510,9 @@
     "totalBudget": 0,
     "endDate": "2027-06-30"
   },
-  "nextCategoryId": 12,
+  "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789922621385,
+  "_savedAt": 1789922623474,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
