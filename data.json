@@ -78,7 +78,7 @@
       "orders": [
         {
           "id": 46,
-          "supplier": "",
+          "supplier": "Sanitairkammer",
           "poNumber": "",
           "orderDate": "2026-09-20",
           "unitPrice": 95.95,
@@ -93,7 +93,8 @@
           "notes": ""
         }
       ],
-      "documents": []
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 279,
@@ -5553,7 +5554,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923569815,
+  "_savedAt": 1789923584233,
   "nextOrderId": 47,
   "nextQuoteId": 171,
   "nextItemId": 281,
@@ -6119,6 +6120,7 @@
     "R18MT-0",
     "refurbed.nl",
     "rpd18bl1-0",
+    "Sanitairkammer",
     "skylights1.nl",
     "sleiderink.nl",
     "stralendgroen.nl",
