@@ -43,7 +43,7 @@
     {
       "id": 11,
       "name": "Buying Costs",
-      "color": "#151315"
+      "color": "#b300b3"
     }
   ],
   "nextPhaseId": 79,
@@ -5507,7 +5507,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 17,
-  "_savedAt": 1789922613276,
+  "_savedAt": 1789922621385,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
