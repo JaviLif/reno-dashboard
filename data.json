@@ -55,47 +55,6 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 284,
-      "phaseId": 70,
-      "categoryId": 3,
-      "name": "Multimorterl filler",
-      "description": "Hornbach",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 174,
-          "supplier": "",
-          "unitPrice": 9.25,
-          "date": "",
-          "notes": "",
-          "chosen": true
-        }
-      ],
-      "orders": [
-        {
-          "id": 50,
-          "supplier": "Hornbach",
-          "poNumber": "",
-          "orderDate": "2026-09-20",
-          "unitPrice": 9.25,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
-      "documents": [],
-      "status": "delivered"
-    },
-    {
       "id": 283,
       "phaseId": 70,
       "categoryId": 3,
@@ -5718,7 +5677,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789924592949,
+  "_savedAt": 1789924607396,
   "nextOrderId": 51,
   "nextQuoteId": 175,
   "nextItemId": 285,
