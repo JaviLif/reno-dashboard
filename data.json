@@ -48,7 +48,7 @@
     {
       "id": 12,
       "name": "Others",
-      "color": "#292929"
+      "color": "#c92626"
     }
   ],
   "nextPhaseId": 79,
@@ -5512,7 +5512,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789922623474,
+  "_savedAt": 1789922629528,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
