@@ -5554,7 +5554,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923615765,
+  "_savedAt": 1789923620957,
   "nextOrderId": 47,
   "nextQuoteId": 171,
   "nextItemId": 281,
@@ -6115,9 +6115,7 @@
     "mthekwerken.nl",
     "Perfectkeur",
     "premiumdakramen.nl",
-    "R18MT-0",
     "refurbed.nl",
-    "rpd18bl1-0",
     "Sanitairkammer",
     "skylights1.nl",
     "sleiderink.nl",
@@ -6133,6 +6131,8 @@
   "supplierBackfillV1": true,
   "suppliersHidden": [
     "mb400 + 40e",
-    "morteleemer"
+    "morteleemer",
+    "r18mt-0",
+    "rpd18bl1-0"
   ]
 }
