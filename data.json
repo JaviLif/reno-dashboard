@@ -5400,6 +5400,19 @@
       "kanbanOrder": 130
     },
     {
+      "id": 48,
+      "phaseId": 34,
+      "name": "Check routing of HeatPump piping + ventilation",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "id": 31,
       "phaseId": 62,
       "name": "Decide tiles",
@@ -5859,19 +5872,6 @@
       ]
     },
     {
-      "id": 48,
-      "phaseId": 34,
-      "name": "Check routing of HeatPump piping + ventilation",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 20
-    },
-    {
       "id": 36,
       "phaseId": 65,
       "name": "Ventilation: Install Tubing INTERNAL  See notes",
@@ -5925,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937619917,
+  "_savedAt": 1789937642570,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
