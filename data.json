@@ -5414,18 +5414,6 @@
       "spaceIds": []
     },
     {
-      "id": 52,
-      "phaseId": 31,
-      "name": "Open space kruipruimte",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -5924,6 +5912,18 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 170
+    },
+    {
+      "id": 52,
+      "phaseId": 31,
+      "name": "Open space kruipruimte",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 53,
@@ -5937,7 +5937,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937789355,
+  "_savedAt": 1789937793860,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
