@@ -102,7 +102,7 @@
       "phaseId": 70,
       "categoryId": null,
       "name": "Inbouw Kast",
-      "description": "",
+      "description": "Nich",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -116,6 +116,16 @@
           "notes": "",
           "link": "https://absulo.nl/p/balneo-wall-box-led-inox-inbouwplank-30-cm-staal-b0101010109-1",
           "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 180,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
           "documents": []
         }
       ],
@@ -5895,9 +5905,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789931571116,
+  "_savedAt": 1789931581889,
   "nextOrderId": 56,
-  "nextQuoteId": 180,
+  "nextQuoteId": 181,
   "nextItemId": 290,
   "_version": "dashboard-v1",
   "phases": [
