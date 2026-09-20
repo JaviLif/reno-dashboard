@@ -71,7 +71,8 @@
           "unitPrice": 95.95,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://sanitairkamer.nl/mueller-duodrain-douchegoot-met-tegelrooster-70x7cm-rvs-sk500156.html"
         }
       ],
       "orders": [],
@@ -5535,7 +5536,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923528779,
+  "_savedAt": 1789923564769,
   "nextOrderId": 46,
   "nextQuoteId": 171,
   "nextItemId": 281,
