@@ -5386,6 +5386,20 @@
       "kanbanOrder": 130
     },
     {
+      "id": 39,
+      "phaseId": 34,
+      "name": "Intsall Piping fot HeatPump",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 200
+    },
+    {
       "id": 51,
       "phaseId": 74,
       "name": "Check with Stuckador company",
@@ -5898,20 +5912,6 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 170
-    },
-    {
-      "id": 39,
-      "phaseId": 34,
-      "name": "Intsall Piping fot HeatPump",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 200
     }
   ],
   "nextTaskId": 52,
@@ -5925,7 +5925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789937732980,
+  "_savedAt": 1789937735214,
   "nextOrderId": 57,
   "nextQuoteId": 181,
   "nextItemId": 290,
