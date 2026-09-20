@@ -218,7 +218,8 @@
           "notes": "",
           "link": "https://benz24.nl/pro-clima-hoekplakband-tescon-profil.html?qs301fi=1&utm_content=dakisolatie%20%3E%20dakisolatie%20accessoires&utm_source=google&utm_medium=cpc&mtm_cid=24067499218&utm_content=&utm_term=&utm_campaign=pmax%20feed-only&gad_source=1&gad_campaignid=24057857904&gbraid=0AAAABEJo_BMTWh8sDcve6T0R1C0KCOa-6&gclid=Cj0KCQjw8JPVBhD-ARIsAO691sGzPYZNflKzEOM5r8sxRbXKhpseND52FjW1d96bNGAZI1LI9njtm-gaAnC_EALw_wcB",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "benz24.nl"
         }
       ],
       "orders": [],
@@ -244,7 +245,8 @@
           "notes": "",
           "link": "https://www.bouwbink.nl/pro-clima-intello-plus-1-5-x-50m/2667010092",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "bouwbink.nl"
         }
       ],
       "orders": [],
@@ -270,7 +272,8 @@
           "notes": "",
           "link": "https://www.elektramat.nl/itho-daalderop-cve-s-optima2-pakket-met-ventilatie-unit-468-m3-h-geintegreerde-rv-sensor-en-2-co2-sensoren-03-00477/?_gl=1*18xbquh*_up*MQ..*_gs*MQ..*_ga*MjExODczNDQxNC4xNzg5MTQzNTk5*_ga_WPXDT6EWYX*czE3ODkxNDM1OTkkbzEkZzAkdDE3ODkxNDM4MjQkajYwJGwwJGgxNjY5MzYyMDEwJGRCUlNUbXlrMDZMSlllblNCT3NXMWlndUJPMlc3Ql9oUEJR&gclid=Cj0KCQjwzY7VBhDwARIsAFtPvBSVv6qmc_fEJzLYuDbjxQEUAe3EGUELCl0dauP3xgEz84GU_RSUFpEaAl5uEALw_wcB&gbraid=0AAAAAD5RVIckWO1hGkBrFuM0jPWjqd8h-",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Elektramat"
         },
         {
           "id": 163,
@@ -280,7 +283,8 @@
           "notes": "",
           "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "supplier": "bol.com"
         }
       ],
       "orders": [],
@@ -300,7 +304,7 @@
       "quotes": [
         {
           "id": 161,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "unitPrice": 222.42,
           "date": "",
           "notes": "",
@@ -313,7 +317,7 @@
       "orders": [
         {
           "id": 42,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "poNumber": "",
           "orderDate": "2026-09-08",
           "unitPrice": 222.42,
@@ -405,13 +409,14 @@
           "notes": "",
           "link": "https://www.fastarshop.nl/12x-illbruck-fm310-purschuim-purpistool.html?_gl=1*xx0jvm*_up*MQ..*_ga*NTU1OTUzOTIzLjE3ODg3Mjg3MTA.*_ga_2GX0ZHQV52*czE3ODg3Mjg3MTAkbzEkZzAkdDE3ODg3Mjg3MTAkajYwJGwwJGg1MDY0NjQ1MzE.",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "fastarshop.nl"
         }
       ],
       "orders": [
         {
           "id": 39,
-          "supplier": "",
+          "supplier": "fastarshop.nl",
           "poNumber": "",
           "orderDate": "2026-09-06",
           "unitPrice": 88,
@@ -449,7 +454,8 @@
           "notes": "",
           "link": "https://www.gamma.nl/assortiment/knauf-goldband-e-20-kg/p/B303601?store=HOONO&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_campaign=PPC%20-%20PMAX%20(Shopping%20Only)%20-%20NB%20-%20CONSTRUCTIEF%20-%20119%20BOUWMATERIALEN%20-%20High%20Value&utm_id=22773079570&gad_source=1&gad_campaignid=22763396148&gbraid=0AAAAADqUGn_Sud7Rcx7AHWBl--RgcZpDV&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZx_ptsHPNd9mOk-QYKRU_u4XstmlO3BplWblM8Z1ckXSJNBpK4Ja7xoCsRYQAvD_BwE",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Gamma"
         },
         {
           "id": 158,
@@ -674,7 +680,8 @@
           "notes": "",
           "link": "https://dakraam.nl/assortiment/platdakramen/lichtstraat-60x60-cm/",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "dakraam.nl"
         }
       ],
       "orders": [],
@@ -784,7 +791,7 @@
       "quotes": [
         {
           "id": 147,
-          "supplier": "",
+          "supplier": "glashandelonline.com",
           "unitPrice": 266,
           "date": "",
           "notes": "",
@@ -807,7 +814,7 @@
       "orders": [
         {
           "id": 41,
-          "supplier": "",
+          "supplier": "glashandelonline.com",
           "poNumber": "",
           "orderDate": "2026-09-08",
           "unitPrice": 266,
@@ -854,7 +861,8 @@
           "notes": "",
           "link": "https://skylights1.nl/product/geisoleerde-opstand-calculator/?_gl=1*1hen89q*_up*MQ..*ir_ga*MTYyNDA0NzI5Ni4xNzg3NTkzOTU0*ir_ga_0JHEEE6YM4*czE3ODc1OTM5NTMkbzEkZzAkdDE3ODc1OTM5NTMkajYwJGwwJGgxNTY5NzkwMjI5",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "skylights1.nl"
         }
       ],
       "orders": [],
@@ -934,7 +942,8 @@
           "notes": "",
           "link": "https://www.hornbach.nl/p/mortelemmer-pe-rond-505-mm-40-l/3868233/",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Hornbach"
         },
         {
           "id": 151,
@@ -1323,7 +1332,7 @@
       "quotes": [
         {
           "id": 133,
-          "supplier": "",
+          "supplier": "stralendgroen.nl",
           "unitPrice": 68,
           "date": "",
           "notes": "",
@@ -1382,13 +1391,14 @@
           "notes": "",
           "link": "https://www.amazon.nl/RYOBI-Accu-multitool-R18MT-0-oscillatiehoek-snelheidsregeling/dp/B01B6EDVO0/ref=asc_df_B01B6EDVO0?mcid=e42c466a4e3237c2970720c242454252&tag=nlshogostdde-21&linkCode=df0&hvadid=710086527074&hvpos=&hvnetw=g&hvrand=7601825528825780581&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-366864153578&psc=1&hvocijid=7601825528825780581-B01B6EDVO0-&hvexpln=0&gad_source=1",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         }
       ],
       "orders": [
         {
           "id": 22,
-          "supplier": "",
+          "supplier": "Amazon",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 26.98,
@@ -1426,7 +1436,8 @@
           "notes": "",
           "link": "https://www.amazon.nl/RYOBI-Borstelloze-klopboorschroevendraaier-450-1700-boorhouder/dp/B0CRZ36DSL/ref=asc_df_B0CRZ36DSL?mcid=fdf4fd79ba403b34a060c1f4a3161946&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=5492911712002429878&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2292592272400&hvocijid=5492911712002429878-B0CRZ36DSL-&hvexpln=0&gad_source=1&th=1",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         },
         {
           "id": 135,
@@ -1480,13 +1491,14 @@
           "notes": "",
           "link": "https://www.amazon.nl/Ryobi-RID18BL-0-draadloze-borstelloze-slagmoersleutel/dp/B0DCGKCD6K/ref=asc_df_B0DCGKCD6K?mcid=6ed4014632fa32bf9eed436b58938535&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=91698367455844245&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2412577363327&psc=1&hvocijid=91698367455844245-B0DCGKCD6K-&hvexpln=0&gad_source=1",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         }
       ],
       "orders": [
         {
           "id": 19,
-          "supplier": "",
+          "supplier": "Vinted",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 80,
@@ -1593,7 +1605,7 @@
       "quotes": [
         {
           "id": 122,
-          "supplier": "",
+          "supplier": "Lidl",
           "unitPrice": 59.99,
           "date": "",
           "notes": "",
@@ -1607,7 +1619,7 @@
       "orders": [
         {
           "id": 14,
-          "supplier": "",
+          "supplier": "Lidl",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 59.99,
@@ -1715,7 +1727,8 @@
           "notes": "",
           "link": "https://www.caleffi.com/en-int/safety-relief-valve-for-domestic-water-systems-female-connections-531-caleffi-531640",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "caleffi.com"
         }
       ],
       "orders": [],
@@ -1817,7 +1830,7 @@
       "quotes": [
         {
           "id": 112,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "unitPrice": 300,
           "date": "",
           "notes": "",
@@ -1845,7 +1858,7 @@
       "quotes": [
         {
           "id": 111,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 14.39,
           "date": "",
           "notes": "",
@@ -1873,7 +1886,7 @@
       "quotes": [
         {
           "id": 110,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 191,
           "date": "",
           "notes": "",
@@ -1901,7 +1914,7 @@
       "quotes": [
         {
           "id": 109,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 215,
           "date": "",
           "notes": "klokthermostaat ",
@@ -1929,7 +1942,7 @@
       "quotes": [
         {
           "id": 108,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 824,
           "date": "",
           "notes": "",
@@ -1991,7 +2004,8 @@
           "notes": "",
           "link": "https://decochip.nl/product/gietvloer-pu-m%c2%b2-pakket/?_gl=1*pr2b81*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ5tmUd_KpXhmyREpThOv1s_6WAEU8jxAOL-_R_E6vQYg0nCyhQk3RxoClvMQAvD_BwE&gbraid=0AAAAAD2x9qMwU8GE3fdq5Xcto7kIVRc3o",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "decochip.nl"
         }
       ],
       "orders": [],
@@ -2039,7 +2053,7 @@
       "quotes": [
         {
           "id": 101,
-          "supplier": "",
+          "supplier": "refurbed.nl",
           "unitPrice": 130,
           "date": "",
           "notes": "",
@@ -2067,7 +2081,7 @@
       "quotes": [
         {
           "id": 100,
-          "supplier": "",
+          "supplier": "bol.com",
           "unitPrice": 69,
           "date": "",
           "notes": "",
@@ -2095,7 +2109,7 @@
       "quotes": [
         {
           "id": 99,
-          "supplier": "",
+          "supplier": "wifishop.nl",
           "unitPrice": 8,
           "date": "",
           "notes": "",
@@ -2149,7 +2163,7 @@
       "quotes": [
         {
           "id": 98,
-          "supplier": "",
+          "supplier": "voegenshop.nl",
           "unitPrice": 59,
           "date": "",
           "notes": "",
@@ -2233,7 +2247,7 @@
       "quotes": [
         {
           "id": 95,
-          "supplier": "",
+          "supplier": "mthekwerken.nl",
           "unitPrice": 25,
           "date": "",
           "notes": "",
@@ -2261,7 +2275,7 @@
       "quotes": [
         {
           "id": 94,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 21.36,
           "date": "",
           "notes": "",
@@ -2345,7 +2359,7 @@
       "quotes": [
         {
           "id": 91,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 13,
           "date": "",
           "notes": "",
@@ -2373,7 +2387,7 @@
       "quotes": [
         {
           "id": 90,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 17.47,
           "date": "",
           "notes": "",
@@ -2475,7 +2489,7 @@
       "quotes": [
         {
           "id": 85,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 1.84,
           "date": "",
           "notes": "",
@@ -2503,7 +2517,7 @@
       "quotes": [
         {
           "id": 84,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 4.7,
           "date": "",
           "notes": "",
@@ -2531,7 +2545,7 @@
       "quotes": [
         {
           "id": 83,
-          "supplier": "",
+          "supplier": "jandeisolatieman.nl",
           "unitPrice": 37.8,
           "date": "",
           "notes": "",
@@ -2587,7 +2601,7 @@
       "quotes": [
         {
           "id": 80,
-          "supplier": "",
+          "supplier": "fruugo.nl",
           "unitPrice": 13,
           "date": "",
           "notes": "",
@@ -2615,7 +2629,7 @@
       "quotes": [
         {
           "id": 79,
-          "supplier": "",
+          "supplier": "enup.lv",
           "unitPrice": 255.25,
           "date": "",
           "notes": "",
@@ -2643,7 +2657,7 @@
       "quotes": [
         {
           "id": 78,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 140.26,
           "date": "",
           "notes": "",
@@ -2671,7 +2685,7 @@
       "quotes": [
         {
           "id": 77,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 84.51,
           "date": "",
           "notes": "",
@@ -2699,7 +2713,7 @@
       "quotes": [
         {
           "id": 76,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -2741,7 +2755,7 @@
       "orders": [
         {
           "id": 3,
-          "supplier": "",
+          "supplier": "Flem´s",
           "poNumber": "",
           "orderDate": "2026-06-19",
           "unitPrice": 849.99,
@@ -2783,7 +2797,7 @@
       "orders": [
         {
           "id": 1,
-          "supplier": "",
+          "supplier": "bouwkeuringvergelijk.nl",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 1073.24,
@@ -2900,7 +2914,7 @@
       "orders": [
         {
           "id": 23,
-          "supplier": "",
+          "supplier": "Buro Sprinweg",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 1155.76,
@@ -2942,7 +2956,7 @@
       "orders": [
         {
           "id": 45,
-          "supplier": "",
+          "supplier": "afzetbak.nl",
           "poNumber": "",
           "orderDate": "2026-09-19",
           "unitPrice": 571,
@@ -4734,7 +4748,7 @@
       "orders": [
         {
           "id": 16,
-          "supplier": "",
+          "supplier": "hbm-machines.com",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 542.57,
@@ -5493,7 +5507,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 17,
-  "_savedAt": 1789922365585,
+  "_savedAt": 1789922415750,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
@@ -6023,25 +6037,52 @@
     }
   ],
   "suppliers": [
+    "afzetbak.nl",
     "AliExpress",
+    "Amazon",
+    "benz24.nl",
+    "bol.com",
+    "bouwbink.nl",
+    "bouwkeuringvergelijk.nl",
     "Buro Sprinweg",
+    "caleffi.com",
+    "dakraam.nl",
+    "decochip.nl",
     "DeVentilatieKonig",
     "deventilatiekoning.nl",
+    "Elektramat",
+    "enup.lv",
+    "fastarshop.nl",
     "Flem´s",
+    "fruugo.nl",
+    "Gamma",
+    "glashandelonline.com",
     "glasmaatje.nl",
+    "hbm-machines.com",
     "Hornbach",
+    "jandeisolatieman.nl",
     "lichtkoepeltje.nl",
     "Lidl",
     "Markplaats",
     "Marktplaats",
     "mb400 + 40E",
     "MORTELEEMER",
+    "mthekwerken.nl",
     "Perfectkeur",
     "premiumdakramen.nl",
     "R18MT-0",
+    "refurbed.nl",
     "rpd18bl1-0",
+    "skylights1.nl",
+    "sleiderink.nl",
+    "stralendgroen.nl",
     "van Ekeren",
+    "Ventilatieland",
     "Video",
-    "Vinted"
-  ]
+    "Vinted",
+    "voegenshop.nl",
+    "Warmteservice",
+    "wifishop.nl"
+  ],
+  "supplierBackfillV1": true
 }
