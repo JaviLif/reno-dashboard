@@ -57,7 +57,7 @@
     {
       "id": 282,
       "phaseId": 70,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Morterl. OSB, Wood",
       "description": "Hornbach",
       "link": "",
@@ -5618,7 +5618,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789924273982,
+  "_savedAt": 1789924277187,
   "nextOrderId": 48,
   "nextQuoteId": 173,
   "nextItemId": 283,
