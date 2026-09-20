@@ -5554,7 +5554,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923620957,
+  "_savedAt": 1789923626453,
   "nextOrderId": 47,
   "nextQuoteId": 171,
   "nextItemId": 281,
@@ -6122,7 +6122,6 @@
     "stralendgroen.nl",
     "van Ekeren",
     "Ventilatieland",
-    "Video",
     "Vinted",
     "voegenshop.nl",
     "Warmteservice",
@@ -6133,6 +6132,7 @@
     "mb400 + 40e",
     "morteleemer",
     "r18mt-0",
-    "rpd18bl1-0"
+    "rpd18bl1-0",
+    "video"
   ]
 }
