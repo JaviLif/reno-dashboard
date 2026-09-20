@@ -75,7 +75,24 @@
           "link": "https://sanitairkamer.nl/mueller-duodrain-douchegoot-met-tegelrooster-70x7cm-rvs-sk500156.html"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 46,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 95.95,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": []
     },
     {
@@ -5536,8 +5553,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923564769,
-  "nextOrderId": 46,
+  "_savedAt": 1789923569815,
+  "nextOrderId": 47,
   "nextQuoteId": 171,
   "nextItemId": 281,
   "_version": "dashboard-v1",
