@@ -55,6 +55,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 288,
+      "phaseId": 70,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 287,
       "phaseId": 70,
       "categoryId": 3,
@@ -72,7 +86,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.bol.com/nl/nl/p/steelies-ultimate-bevestigingsrozet-doos-a-100-stuks/9300000179614351/"
+          "link": "https://www.bol.com/nl/nl/p/steelies-ultimate-bevestigingsrozet-doos-a-100-stuks/9300000179614351/",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [
@@ -90,7 +106,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -113,7 +130,10 @@
           "unitPrice": 124.4,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -131,7 +151,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -154,7 +175,10 @@
           "unitPrice": 30.55,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -172,7 +196,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -195,7 +220,10 @@
           "unitPrice": 74,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -213,7 +241,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -236,7 +265,10 @@
           "unitPrice": 167.93,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -254,7 +286,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -277,7 +310,10 @@
           "unitPrice": 250,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -295,7 +331,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -319,7 +356,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://sanitairkamer.nl/mueller-duodrain-douchegoot-met-tegelrooster-70x7cm-rvs-sk500156.html"
+          "link": "https://sanitairkamer.nl/mueller-duodrain-douchegoot-met-tegelrooster-70x7cm-rvs-sk500156.html",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [
@@ -337,7 +376,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -5801,10 +5841,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789925280949,
+  "_savedAt": 1789928634927,
   "nextOrderId": 54,
   "nextQuoteId": 178,
-  "nextItemId": 288,
+  "nextItemId": 289,
   "_version": "dashboard-v1",
   "phases": [
     {
