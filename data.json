@@ -55,6 +55,20 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 287,
+      "phaseId": 70,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": []
+    },
+    {
       "id": 286,
       "phaseId": 70,
       "categoryId": 3,
@@ -5759,10 +5773,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789924923050,
+  "_savedAt": 1789924962665,
   "nextOrderId": 53,
   "nextQuoteId": 177,
-  "nextItemId": 287,
+  "nextItemId": 288,
   "_version": "dashboard-v1",
   "phases": [
     {
