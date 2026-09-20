@@ -5554,7 +5554,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789923584233,
+  "_savedAt": 1789923615765,
   "nextOrderId": 47,
   "nextQuoteId": 171,
   "nextItemId": 281,
@@ -6112,8 +6112,6 @@
     "Lidl",
     "Markplaats",
     "Marktplaats",
-    "mb400 + 40E",
-    "MORTELEEMER",
     "mthekwerken.nl",
     "Perfectkeur",
     "premiumdakramen.nl",
@@ -6133,5 +6131,8 @@
     "wifishop.nl"
   ],
   "supplierBackfillV1": true,
-  "suppliersHidden": []
+  "suppliersHidden": [
+    "mb400 + 40e",
+    "morteleemer"
+  ]
 }
