@@ -2950,7 +2950,7 @@
           "uploadedDate": "2026-09-19"
         }
       ],
-      "description": "10",
+      "description": "10 m3",
       "id": 99,
       "phaseId": 73,
       "unit": "pcs",
@@ -5512,7 +5512,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1789922629528,
+  "_savedAt": 1789922669326,
   "nextOrderId": 46,
   "nextQuoteId": 170,
   "nextItemId": 280,
