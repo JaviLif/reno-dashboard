@@ -58,13 +58,24 @@
       "id": 292,
       "phaseId": 70,
       "categoryId": null,
-      "name": "",
+      "name": "Inbouwreservoir",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 183,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": []
     },
@@ -5892,9 +5903,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790074292983,
+  "_savedAt": 1790074302153,
   "nextOrderId": 60,
-  "nextQuoteId": 183,
+  "nextQuoteId": 184,
   "nextItemId": 293,
   "_version": "dashboard-v1",
   "phases": [
