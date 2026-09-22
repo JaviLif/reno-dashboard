@@ -71,12 +71,13 @@
           "unitPrice": 2760,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.docanpower.com/eu-stock"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790082472011
+      "updatedAt": 1790082475650
     },
     {
       "id": 292,
@@ -5936,7 +5937,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790082472011,
+  "_savedAt": 1790082475650,
   "nextOrderId": 60,
   "nextQuoteId": 185,
   "nextItemId": 294,
