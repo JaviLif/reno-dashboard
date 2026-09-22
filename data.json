@@ -4088,34 +4088,6 @@
       "name": "Tiles (Bathroom)"
     },
     {
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "description": "Saniclear Cube 180x80cm",
-      "id": 127,
-      "unit": "pcs",
-      "phaseId": 70,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "unitPrice": 400,
-          "id": 29,
-          "notes": "",
-          "documents": [],
-          "link": "https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "qty": 1,
-      "name": "Ligbad",
-      "notes": ""
-    },
-    {
       "name": "Toilette",
       "notes": "",
       "qty": 2,
@@ -5962,7 +5934,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790074010679,
+  "_savedAt": 1790074070248,
   "nextOrderId": 60,
   "nextQuoteId": 183,
   "nextItemId": 292,
