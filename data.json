@@ -61,7 +61,7 @@
       "name": "ISDE Subsidie",
       "description": "Dak Vloer",
       "link": "",
-      "qty": 0,
+      "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -6029,7 +6029,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790073905623,
+  "_savedAt": 1790073909255,
   "nextOrderId": 59,
   "nextQuoteId": 183,
   "nextItemId": 292,
