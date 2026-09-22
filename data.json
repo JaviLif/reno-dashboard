@@ -64,7 +64,16 @@
       "qty": 0,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 182,
+          "supplier": "",
+          "unitPrice": 1772.5,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [
         {
           "id": 58,
@@ -6020,9 +6029,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790073903703,
+  "_savedAt": 1790073905623,
   "nextOrderId": 59,
-  "nextQuoteId": 182,
+  "nextQuoteId": 183,
   "nextItemId": 292,
   "_version": "dashboard-v1",
   "phases": [
