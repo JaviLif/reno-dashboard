@@ -4228,34 +4228,6 @@
       "description": "Mueller single flat 80x46cm"
     },
     {
-      "qty": 1,
-      "orders": [],
-      "quotes": [
-        {
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "notes": "",
-          "id": 36,
-          "unitPrice": 400,
-          "documents": [],
-          "link": "https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "name": "Bathtub Cornelis",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "phaseId": 70,
-      "unit": "pcs",
-      "documents": [],
-      "description": "Pianosa corner bath 160x85cm",
-      "id": 134
-    },
-    {
       "link": "",
       "status": "not-ordered",
       "documents": [],
@@ -5906,7 +5878,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790074092032,
+  "_savedAt": 1790074097017,
   "nextOrderId": 60,
   "nextQuoteId": 183,
   "nextItemId": 292,
