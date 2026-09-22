@@ -93,7 +93,16 @@
           "notes": ""
         }
       ],
-      "documents": [],
+      "documents": [
+        {
+          "id": 17,
+          "name": "Offerte 27387.pdf",
+          "type": "application/pdf",
+          "size": 435640,
+          "ghPath": "quotes/Offerte_27387.pdf",
+          "uploadedDate": "2026-09-22"
+        }
+      ],
       "status": "ordered"
     },
     {
@@ -5978,8 +5987,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 13,
-  "nextDocId": 17,
-  "_savedAt": 1790073785535,
+  "nextDocId": 18,
+  "_savedAt": 1790073800990,
   "nextOrderId": 58,
   "nextQuoteId": 182,
   "nextItemId": 291,
