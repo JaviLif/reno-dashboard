@@ -5055,90 +5055,6 @@
       "documents": []
     },
     {
-      "name": "Isolation Floor Subsidy",
-      "notes": "",
-      "quotes": [
-        {
-          "notes": "",
-          "id": 63,
-          "unitPrice": -11,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 7,
-      "qty": 40,
-      "documents": [],
-      "description": " 40 sqm @ 14/m2 subsidie ISDE Subsidie ",
-      "id": 162,
-      "phaseId": 66,
-      "unit": "m∩┐╜",
-      "link": "",
-      "status": "not-ordered"
-    },
-    {
-      "documents": [],
-      "description": " 50m2 @ 25/m2 subsidie ISDE Subsidie ",
-      "id": 163,
-      "unit": "m∩┐╜",
-      "phaseId": 66,
-      "link": "",
-      "status": "not-ordered",
-      "name": "Wall Isolation Subsidy",
-      "notes": "",
-      "quotes": [
-        {
-          "unitPrice": -25,
-          "notes": "",
-          "id": 64,
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 7,
-      "qty": 50
-    },
-    {
-      "qty": 60,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "unitPrice": -32.5,
-          "id": 65,
-          "notes": "",
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 7,
-      "name": "Roof Subsidy",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "unit": "m∩┐╜",
-      "phaseId": 66,
-      "documents": [],
-      "id": 164,
-      "description": " 60m2 @ 25/m2 subsidie ISDE Subsidie "
-    },
-    {
       "id": 165,
       "description": " Gemeende Subside Amsterdam. APPLY FIRST THEN DO THE WORK! ",
       "documents": [],
@@ -6046,7 +5962,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790073936967,
+  "_savedAt": 1790073956270,
   "nextOrderId": 60,
   "nextQuoteId": 183,
   "nextItemId": 292,
