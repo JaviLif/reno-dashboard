@@ -58,7 +58,7 @@
       "id": 293,
       "phaseId": 79,
       "categoryId": null,
-      "name": "",
+      "name": "Battery",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790082448658
+      "updatedAt": 1790082452747
     },
     {
       "id": 292,
@@ -5927,7 +5927,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790082448658,
+  "_savedAt": 1790082452747,
   "nextOrderId": 60,
   "nextQuoteId": 184,
   "nextItemId": 294,
