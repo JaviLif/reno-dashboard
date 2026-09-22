@@ -71,7 +71,8 @@
           "unitPrice": 5070,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "name": "IsoGuard"
         }
       ],
       "orders": [],
@@ -5961,7 +5962,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1790073773712,
+  "_savedAt": 1790073782423,
   "nextOrderId": 57,
   "nextQuoteId": 182,
   "nextItemId": 291,
@@ -6514,6 +6515,7 @@
     "glasmaatje.nl",
     "hbm-machines.com",
     "Hornbach",
+    "IsoGuard",
     "jandeisolatieman.nl",
     "lichtkoepeltje.nl",
     "Lidl",
