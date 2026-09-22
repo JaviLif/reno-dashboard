@@ -51,7 +51,7 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 79,
+  "nextPhaseId": 80,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -77,7 +77,8 @@
         }
       ],
       "orders": [],
-      "documents": []
+      "documents": [],
+      "status": "not-ordered"
     },
     {
       "id": 291,
@@ -96,7 +97,10 @@
           "unitPrice": -1772.5,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -114,7 +118,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -138,7 +143,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "name": "IsoGuard"
+          "name": "IsoGuard",
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [
@@ -156,7 +163,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [
@@ -5021,7 +5029,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "quotes": [
@@ -5903,7 +5912,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790074439074,
+  "_savedAt": 1790082442786,
   "nextOrderId": 60,
   "nextQuoteId": 184,
   "nextItemId": 293,
@@ -6328,6 +6337,18 @@
       "color": "#FEF9C3",
       "notes": "",
       "budget": 1000
+    },
+    {
+      "id": 79,
+      "name": "Battery",
+      "parentId": 3,
+      "number": "3.10",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#FEFCE8",
+      "notes": "",
+      "budget": 0
     }
   ],
   "_source": "converted-from-classifier-v3",
@@ -6452,6 +6473,7 @@
     "Flem´s",
     "fruugo.nl",
     "Gamma",
+    "Geberit Duofix Omega inbouwspoelreservoir",
     "Gemeente Amsterdam",
     "glashandelonline.com",
     "glasmaatje.nl",
