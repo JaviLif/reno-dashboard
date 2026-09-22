@@ -4174,34 +4174,6 @@
     {
       "qty": 1,
       "categoryId": 3,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "unitPrice": 300,
-          "id": 33,
-          "notes": "",
-          "documents": [],
-          "link": "https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "notes": "",
-      "name": "Douchebak (Teller)",
-      "status": "not-ordered",
-      "link": "",
-      "unit": "pcs",
-      "phaseId": 70,
-      "description": "Soho antislip SMC hars",
-      "id": 131,
-      "documents": []
-    },
-    {
-      "qty": 1,
-      "categoryId": 3,
       "quotes": [
         {
           "chosen": true,
@@ -5934,7 +5906,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790074070248,
+  "_savedAt": 1790074092032,
   "nextOrderId": 60,
   "nextQuoteId": 183,
   "nextItemId": 292,
