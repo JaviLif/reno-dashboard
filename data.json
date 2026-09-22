@@ -59,7 +59,7 @@
       "phaseId": 79,
       "categoryId": null,
       "name": "Battery",
-      "description": "",
+      "description": "32 kW/h",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790082452747
+      "updatedAt": 1790082465889
     },
     {
       "id": 292,
@@ -5927,7 +5927,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790082452747,
+  "_savedAt": 1790082465889,
   "nextOrderId": 60,
   "nextQuoteId": 184,
   "nextItemId": 294,
