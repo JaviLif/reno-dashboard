@@ -75,7 +75,24 @@
           "name": "IsoGuard"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 57,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-22",
+          "unitPrice": 5070,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
       "status": "ordered"
     },
@@ -5962,8 +5979,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 17,
-  "_savedAt": 1790073782423,
-  "nextOrderId": 57,
+  "_savedAt": 1790073785535,
+  "nextOrderId": 58,
   "nextQuoteId": 182,
   "nextItemId": 291,
   "_version": "dashboard-v1",
