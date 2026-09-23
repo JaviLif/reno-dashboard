@@ -57,17 +57,28 @@
     {
       "id": 296,
       "phaseId": 67,
-      "categoryId": null,
+      "categoryId": 10,
       "name": "spachtel gips tutorial",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 186,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181580023
+      "updatedAt": 1790181583189
     },
     {
       "id": 295,
@@ -5993,9 +6004,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790181580023,
+  "_savedAt": 1790181583189,
   "nextOrderId": 60,
-  "nextQuoteId": 186,
+  "nextQuoteId": 187,
   "nextItemId": 297,
   "_version": "dashboard-v1",
   "phases": [
