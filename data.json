@@ -58,7 +58,7 @@
       "id": 296,
       "phaseId": 67,
       "categoryId": null,
-      "name": "",
+      "name": "spachtel gips tutorial",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181570294
+      "updatedAt": 1790181580023
     },
     {
       "id": 295,
@@ -5993,7 +5993,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790181570294,
+  "_savedAt": 1790181580023,
   "nextOrderId": 60,
   "nextQuoteId": 186,
   "nextItemId": 297,
