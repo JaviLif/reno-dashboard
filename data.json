@@ -71,14 +71,14 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.youtube.com/watch?v=2QvyyS6PmgY",
           "chosen": true,
           "documents": []
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181041991
+      "updatedAt": 1790181045798
     },
     {
       "id": 294,
@@ -5978,7 +5978,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790181041991,
+  "_savedAt": 1790181045798,
   "nextOrderId": 60,
   "nextQuoteId": 186,
   "nextItemId": 296,
