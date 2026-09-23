@@ -58,16 +58,27 @@
       "id": 295,
       "phaseId": 78,
       "categoryId": null,
-      "name": "",
+      "name": "video bitumen folding corners",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 185,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181032437
+      "updatedAt": 1790181041991
     },
     {
       "id": 294,
@@ -5967,9 +5978,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790181032437,
+  "_savedAt": 1790181041991,
   "nextOrderId": 60,
-  "nextQuoteId": 185,
+  "nextQuoteId": 186,
   "nextItemId": 296,
   "_version": "dashboard-v1",
   "phases": [
