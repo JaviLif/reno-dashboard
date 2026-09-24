@@ -6007,9 +6007,21 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 53,
+      "phaseId": 80,
+      "name": "Install under construction ceiling",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
-  "nextTaskId": 53,
+  "nextTaskId": 54,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6020,7 +6032,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790277504904,
+  "_savedAt": 1790277532557,
   "nextOrderId": 60,
   "nextQuoteId": 188,
   "nextItemId": 297,
