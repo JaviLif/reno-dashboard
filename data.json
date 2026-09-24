@@ -51,7 +51,7 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 80,
+  "nextPhaseId": 81,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -5483,6 +5483,20 @@
       "kanbanOrder": 130
     },
     {
+      "id": 36,
+      "phaseId": 65,
+      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 170
+    },
+    {
       "id": 39,
       "phaseId": 34,
       "name": "Intsall Piping fot HeatPump",
@@ -5983,20 +5997,6 @@
       "spaceIds": []
     },
     {
-      "id": 36,
-      "phaseId": 65,
-      "name": "Ventilation: Install Tubing INTERNAL  See notes",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 170
-    },
-    {
       "id": 52,
       "phaseId": 31,
       "name": "Open space kruipruimte",
@@ -6020,7 +6020,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790277465535,
+  "_savedAt": 1790277504904,
   "nextOrderId": 60,
   "nextQuoteId": 188,
   "nextItemId": 297,
@@ -6455,6 +6455,18 @@
       "end": "",
       "status": "planned",
       "color": "#FEFCE8",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 80,
+      "name": "Ceiling",
+      "parentId": 4,
+      "number": "4.5",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#DCFCE7",
       "notes": "",
       "budget": 0
     }
