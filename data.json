@@ -88,7 +88,8 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181913644
+      "updatedAt": 1790181913644,
+      "status": "not-ordered"
     },
     {
       "id": 295,
@@ -114,7 +115,8 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790181045798
+      "updatedAt": 1790181045798,
+      "status": "not-ordered"
     },
     {
       "id": 294,
@@ -129,7 +131,8 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790086364935
+      "updatedAt": 1790086364935,
+      "status": "not-ordered"
     },
     {
       "id": 293,
@@ -149,12 +152,15 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.docanpower.com/eu-stock"
+          "link": "https://www.docanpower.com/eu-stock",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790082475650
+      "updatedAt": 1790082475650,
+      "status": "not-ordered"
     },
     {
       "id": 292,
@@ -5299,6 +5305,20 @@
       ]
     },
     {
+      "id": 35,
+      "phaseId": 65,
+      "name": "Install tubing EXTERNAL (Supply + Extraction)",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Outside the roof/ Wall",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
+    },
+    {
       "id": 27,
       "phaseId": 73,
       "name": "CHECK: Removal chimeney",
@@ -5963,20 +5983,6 @@
       "spaceIds": []
     },
     {
-      "id": 35,
-      "phaseId": 65,
-      "name": "Install tubing EXTERNAL (Supply + Extraction)",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "Outside the roof/ Wall",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 20
-    },
-    {
       "id": 36,
       "phaseId": 65,
       "name": "Ventilation: Install Tubing INTERNAL  See notes",
@@ -6014,7 +6020,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790181913644,
+  "_savedAt": 1790277465535,
   "nextOrderId": 60,
   "nextQuoteId": 188,
   "nextItemId": 297,
