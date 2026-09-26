@@ -51,7 +51,7 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 81,
+  "nextPhaseId": 82,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -6121,7 +6121,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1790456203699,
+  "_savedAt": 1790457949553,
   "nextOrderId": 61,
   "nextQuoteId": 190,
   "nextItemId": 299,
@@ -6568,6 +6568,18 @@
       "end": "",
       "status": "planned",
       "color": "#DCFCE7",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 81,
+      "name": "Others/Various",
+      "parentId": null,
+      "number": "8",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#BE185D",
       "notes": "",
       "budget": 0
     }
