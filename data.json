@@ -71,12 +71,13 @@
           "unitPrice": 30,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/professionele-vochtmeter-incl-batterijen-vochtigheidsmeter-voor-hout-bouwmateriaal-wanden-vochtmeter-brandhout-haardhout/9300000169358603/"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790455975135
+      "updatedAt": 1790455995051
     },
     {
       "id": 296,
@@ -6068,7 +6069,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790455975135,
+  "_savedAt": 1790455995051,
   "nextOrderId": 60,
   "nextQuoteId": 189,
   "nextItemId": 298,
