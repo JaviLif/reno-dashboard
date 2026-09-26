@@ -83,7 +83,7 @@
           "orderDate": "2026-09-26",
           "unitPrice": 30,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -94,7 +94,8 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1790455999179
+      "updatedAt": 1790456004391,
+      "status": "delivered"
     },
     {
       "id": 296,
@@ -6086,7 +6087,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790455999179,
+  "_savedAt": 1790456004391,
   "nextOrderId": 61,
   "nextQuoteId": 189,
   "nextItemId": 298,
