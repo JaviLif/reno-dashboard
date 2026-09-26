@@ -59,7 +59,7 @@
       "phaseId": 80,
       "categoryId": null,
       "name": "Materuials Building Structure",
-      "description": "",
+      "description": "Hornbach",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790458043411
+      "updatedAt": 1790458045924
     },
     {
       "id": 299,
@@ -6178,7 +6178,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1790458043411,
+  "_savedAt": 1790458045924,
   "nextOrderId": 62,
   "nextQuoteId": 191,
   "nextItemId": 301,
