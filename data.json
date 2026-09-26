@@ -449,8 +449,18 @@
           "documents": []
         }
       ],
-      "documents": [],
-      "status": "ordered"
+      "documents": [
+        {
+          "id": 18,
+          "name": "FSE_229_09_26_ANL.pdf",
+          "type": "application/pdf",
+          "size": 60738,
+          "ghPath": "quotes/FSE_229_09_26_ANL.pdf",
+          "uploadedDate": "2026-09-26"
+        }
+      ],
+      "status": "ordered",
+      "updatedAt": 1790456203699
     },
     {
       "id": 287,
@@ -6110,8 +6120,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 13,
-  "nextDocId": 18,
-  "_savedAt": 1790456041353,
+  "nextDocId": 19,
+  "_savedAt": 1790456203699,
   "nextOrderId": 61,
   "nextQuoteId": 190,
   "nextItemId": 299,
