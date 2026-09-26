@@ -58,7 +58,7 @@
       "id": 299,
       "phaseId": 81,
       "categoryId": null,
-      "name": "",
+      "name": "gas Van NE",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790457995153
+      "updatedAt": 1790458004352
     },
     {
       "id": 298,
@@ -6136,7 +6136,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1790457995153,
+  "_savedAt": 1790458004352,
   "nextOrderId": 61,
   "nextQuoteId": 190,
   "nextItemId": 300,
