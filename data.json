@@ -58,7 +58,7 @@
       "id": 297,
       "phaseId": 31,
       "categoryId": null,
-      "name": "",
+      "name": "Hunidity Sensor",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1790455961364
+      "updatedAt": 1790455969112
     },
     {
       "id": 296,
@@ -6059,7 +6059,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 18,
-  "_savedAt": 1790455961364,
+  "_savedAt": 1790455969112,
   "nextOrderId": 60,
   "nextQuoteId": 188,
   "nextItemId": 298,
