@@ -56,7 +56,7 @@
       "name": "Isolation",
       "description": "",
       "link": "",
-      "qty": 1,
+      "qty": 2,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -5489,7 +5489,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1790628985460,
+  "_savedAt": 1790628988201,
   "nextOrderId": 45,
   "nextQuoteId": 171,
   "nextItemId": 281,
