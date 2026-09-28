@@ -66,7 +66,8 @@
           "unitPrice": 17.19,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.bouwmaat.nl/products/iko-enertherm-alu-pir-isolatieplaat-1200x600mm-072m2-f10370?variant=56807732019526"
         }
       ],
       "orders": [],
@@ -5489,7 +5490,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1790628988201,
+  "_savedAt": 1790628992145,
   "nextOrderId": 45,
   "nextQuoteId": 171,
   "nextItemId": 281,
