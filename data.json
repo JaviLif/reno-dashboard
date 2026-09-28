@@ -343,7 +343,7 @@
           "orderDate": "2026-09-08",
           "unitPrice": 222.42,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 39.95,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -364,7 +364,7 @@
           "uploadedDate": "2026-09-15"
         }
       ],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 271,
@@ -5491,7 +5491,7 @@
   },
   "nextCategoryId": 12,
   "nextDocId": 16,
-  "_savedAt": 1790629003506,
+  "_savedAt": 1790629011696,
   "nextOrderId": 45,
   "nextQuoteId": 171,
   "nextItemId": 281,
