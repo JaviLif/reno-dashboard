@@ -43,40 +43,842 @@
     {
       "id": 11,
       "name": "Buying Costs",
-      "color": "#dd24eb"
+      "color": "#b300b3"
+    },
+    {
+      "id": 12,
+      "name": "Others",
+      "color": "#c92626"
     }
   ],
-  "nextPhaseId": 79,
+  "nextPhaseId": 82,
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 280,
-      "phaseId": 78,
+      "id": 300,
+      "phaseId": 80,
       "categoryId": null,
-      "name": "Isolation",
+      "name": "Materuials Building Structure",
+      "description": "Hornbach",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 191,
+          "supplier": "",
+          "unitPrice": 373.34,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 62,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-26",
+          "unitPrice": 373.34,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "updatedAt": 1790458078431,
+      "status": "delivered"
+    },
+    {
+      "id": 299,
+      "phaseId": 81,
+      "categoryId": null,
+      "name": "gas Van NE",
       "description": "",
       "link": "",
-      "qty": 2,
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 190,
+          "supplier": "",
+          "unitPrice": 12.63,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 61,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-26",
+          "unitPrice": 12.63,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "updatedAt": 1790458013306,
+      "status": "delivered"
+    },
+    {
+      "id": 298,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Saw Renting",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 189,
+          "supplier": "",
+          "unitPrice": 39.93,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790456041353,
+      "status": "not-ordered"
+    },
+    {
+      "id": 297,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Hunidity Sensor",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 188,
+          "supplier": "",
+          "unitPrice": 30,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/professionele-vochtmeter-incl-batterijen-vochtigheidsmeter-voor-hout-bouwmateriaal-wanden-vochtmeter-brandhout-haardhout/9300000169358603/",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 60,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-26",
+          "unitPrice": 30,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "updatedAt": 1790456004391,
+      "status": "delivered"
+    },
+    {
+      "id": 296,
+      "phaseId": 67,
+      "categoryId": 10,
+      "name": "spachtel gips tutorial",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 186,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.youtube.com/watch?v=lQo-vVGWe5w",
+          "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 187,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.youtube.com/watch?v=JeaUT639i4Q",
+          "chosen": false,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790181913644,
+      "status": "not-ordered"
+    },
+    {
+      "id": 295,
+      "phaseId": 78,
+      "categoryId": null,
+      "name": "video bitumen folding corners",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 185,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.youtube.com/watch?v=2QvyyS6PmgY",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790181045798,
+      "status": "not-ordered"
+    },
+    {
+      "id": 294,
+      "phaseId": 79,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790086364935,
+      "status": "not-ordered"
+    },
+    {
+      "id": 293,
+      "phaseId": 79,
+      "categoryId": null,
+      "name": "Battery",
+      "description": "32 kW/h",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 184,
+          "supplier": "",
+          "unitPrice": 2760,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.docanpower.com/eu-stock",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790082475650,
+      "status": "not-ordered"
+    },
+    {
+      "id": 292,
+      "phaseId": 70,
+      "categoryId": null,
+      "name": "Inbouwreservoir",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 183,
+          "name": "Geberit Duofix Omega inbouwspoelreservoir",
+          "unitPrice": 255,
+          "date": "",
+          "notes": "",
+          "link": "https://www.sanitino.nl/geberit-duofix-voorwandinstallatie-voor-hangende-toiletten-hoogte-98-cm-111-030-00-2?utm_source=GooglePlatformy&utm_medium=Search&utm_campaign=GoogleMerchant&utm_source=google&utm_medium=cpc&utm_campaign=PER_PMAX_MIX_NL~TOP&utm_id=22851865572&gad_source=1&gad_campaignid=22851868527&gbraid=0AAAAAC6fs7JMP_bJ5SQf6EOBjFcj-U6Ay&gclid=Cj0KCQjwzsjVBhC3ARIsALnMv4memVe9BPbXvjZWtmrfQkzg86tF9MPplIFO2-ZVGO6WBNqtQPuSqDcaAtjOEALw_wcB",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 291,
+      "phaseId": 66,
+      "categoryId": 7,
+      "name": "ISDE Subsidie",
+      "description": "Dak Vloer",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 182,
+          "supplier": "",
+          "unitPrice": -1772.5,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 58,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-22",
+          "unitPrice": -1772.5,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "ordered"
+    },
+    {
+      "id": 290,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Isolation",
+      "description": "Dak & Vloer",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 181,
+          "supplier": "",
+          "unitPrice": 5070,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "name": "IsoGuard",
+          "documents": [],
+          "link": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 57,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-22",
+          "unitPrice": 5070,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [
+        {
+          "id": 17,
+          "name": "Offerte 27387.pdf",
+          "type": "application/pdf",
+          "size": 435640,
+          "ghPath": "quotes/Offerte_27387.pdf",
+          "uploadedDate": "2026-09-22"
+        }
+      ],
+      "status": "ordered"
+    },
+    {
+      "id": 289,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Duschkopf",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 179,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.sanitino.nl/sanitino-doucheset-met-kraan-en-inbouwhuis-grohe-accessoires-kielle-chroom-sani21gkk017",
+          "chosen": true,
+          "documents": []
+        }
+      ],
+      "orders": [
+        {
+          "id": 54,
+          "supplier": "Sanitino",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 250.46,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "ordered"
+    },
+    {
+      "id": 288,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Inbouw Kast",
+      "description": "Nich",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 178,
+          "name": "",
+          "unitPrice": 166.39,
+          "date": "",
+          "notes": "",
+          "link": "https://absulo.nl/p/balneo-wall-box-led-inox-inbouwplank-30-cm-staal-b0101010109-1",
+          "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 180,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
+        }
+      ],
+      "orders": [
+        {
+          "id": 56,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 166.39,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 7.99,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [
+        {
+          "id": 18,
+          "name": "FSE_229_09_26_ANL.pdf",
+          "type": "application/pdf",
+          "size": 60738,
+          "ghPath": "quotes/FSE_229_09_26_ANL.pdf",
+          "uploadedDate": "2026-09-26"
+        }
+      ],
+      "status": "ordered",
+      "updatedAt": 1790456203699
+    },
+    {
+      "id": 287,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Bevestigengrozet",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 177,
+          "supplier": "",
+          "unitPrice": 22.95,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/steelies-ultimate-bevestigingsrozet-doos-a-100-stuks/9300000179614351/",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 53,
+          "supplier": "bol.com",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 22.95,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "ordered"
+    },
+    {
+      "id": 286,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Water Sealing,primer... etc.",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 176,
+          "supplier": "",
+          "unitPrice": 124.4,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 52,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 124.4,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 285,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Qboards XPS Wall and Floor Bathroom",
+      "description": "",
+      "link": "",
+      "qty": 6,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 175,
+          "supplier": "",
+          "unitPrice": 30.55,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 51,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 30.55,
+          "qtyOrdered": 6,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 283,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Eindkaps water pipes, glue pvc, screwa",
+      "description": "Hornbach",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 173,
+          "supplier": "",
+          "unitPrice": 74,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 49,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 74,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 282,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Morterl. OSB, Wood",
+      "description": "Hornbach",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 172,
+          "supplier": "",
+          "unitPrice": 167.93,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 48,
+          "supplier": "Hornbach",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 167.93,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 281,
+      "phaseId": 73,
+      "categoryId": 4,
+      "name": "Crane Rent",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 171,
+          "supplier": "",
+          "unitPrice": 250,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [
+        {
+          "id": 47,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 250,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "delivered"
+    },
+    {
+      "id": 280,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Douchegoot",
+      "description": "",
+      "link": "",
+      "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [
         {
           "id": 170,
           "supplier": "",
-          "unitPrice": 17.19,
+          "unitPrice": 95.95,
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.bouwmaat.nl/products/iko-enertherm-alu-pir-isolatieplaat-1200x600mm-072m2-f10370?variant=56807732019526",
-          "name": "Bouwmaat"
+          "link": "https://sanitairkamer.nl/mueller-duodrain-douchegoot-met-tegelrooster-70x7cm-rvs-sk500156.html",
+          "documents": [],
+          "name": ""
         }
       ],
-      "orders": [],
-      "documents": []
+      "orders": [
+        {
+          "id": 46,
+          "supplier": "Sanitairkammer",
+          "poNumber": "",
+          "orderDate": "2026-09-20",
+          "unitPrice": 95.95,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
+      "documents": [],
+      "status": "ordered"
     },
     {
       "id": 279,
-      "phaseId": 74,
+      "phaseId": 70,
       "categoryId": 3,
       "name": "Wood and screws",
       "description": "Extension bath and bed",
@@ -88,7 +890,7 @@
         {
           "id": 169,
           "supplier": "",
-          "unitPrice": 133.65,
+          "unitPrice": 143.3,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -174,7 +976,7 @@
           "orderDate": "2026-09-14",
           "unitPrice": 32.65,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -186,7 +988,7 @@
         }
       ],
       "documents": [],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 276,
@@ -243,7 +1045,8 @@
           "notes": "",
           "link": "https://benz24.nl/pro-clima-hoekplakband-tescon-profil.html?qs301fi=1&utm_content=dakisolatie%20%3E%20dakisolatie%20accessoires&utm_source=google&utm_medium=cpc&mtm_cid=24067499218&utm_content=&utm_term=&utm_campaign=pmax%20feed-only&gad_source=1&gad_campaignid=24057857904&gbraid=0AAAABEJo_BMTWh8sDcve6T0R1C0KCOa-6&gclid=Cj0KCQjw8JPVBhD-ARIsAO691sGzPYZNflKzEOM5r8sxRbXKhpseND52FjW1d96bNGAZI1LI9njtm-gaAnC_EALw_wcB",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "benz24.nl"
         }
       ],
       "orders": [],
@@ -269,7 +1072,8 @@
           "notes": "",
           "link": "https://www.bouwbink.nl/pro-clima-intello-plus-1-5-x-50m/2667010092",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "bouwbink.nl"
         }
       ],
       "orders": [],
@@ -295,7 +1099,8 @@
           "notes": "",
           "link": "https://www.elektramat.nl/itho-daalderop-cve-s-optima2-pakket-met-ventilatie-unit-468-m3-h-geintegreerde-rv-sensor-en-2-co2-sensoren-03-00477/?_gl=1*18xbquh*_up*MQ..*_gs*MQ..*_ga*MjExODczNDQxNC4xNzg5MTQzNTk5*_ga_WPXDT6EWYX*czE3ODkxNDM1OTkkbzEkZzAkdDE3ODkxNDM4MjQkajYwJGwwJGgxNjY5MzYyMDEwJGRCUlNUbXlrMDZMSlllblNCT3NXMWlndUJPMlc3Ql9oUEJR&gclid=Cj0KCQjwzY7VBhDwARIsAFtPvBSVv6qmc_fEJzLYuDbjxQEUAe3EGUELCl0dauP3xgEz84GU_RSUFpEaAl5uEALw_wcB&gbraid=0AAAAAD5RVIckWO1hGkBrFuM0jPWjqd8h-",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Elektramat"
         },
         {
           "id": 163,
@@ -305,7 +1110,8 @@
           "notes": "",
           "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "supplier": "bol.com"
         }
       ],
       "orders": [],
@@ -325,7 +1131,7 @@
       "quotes": [
         {
           "id": 161,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "unitPrice": 222.42,
           "date": "",
           "notes": "",
@@ -338,12 +1144,12 @@
       "orders": [
         {
           "id": 42,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "poNumber": "",
           "orderDate": "2026-09-08",
           "unitPrice": 222.42,
           "qtyOrdered": 1,
-          "status": "delivered",
+          "status": "ordered",
           "shippingCost": 39.95,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -364,7 +1170,7 @@
           "uploadedDate": "2026-09-15"
         }
       ],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 271,
@@ -430,13 +1236,14 @@
           "notes": "",
           "link": "https://www.fastarshop.nl/12x-illbruck-fm310-purschuim-purpistool.html?_gl=1*xx0jvm*_up*MQ..*_ga*NTU1OTUzOTIzLjE3ODg3Mjg3MTA.*_ga_2GX0ZHQV52*czE3ODg3Mjg3MTAkbzEkZzAkdDE3ODg3Mjg3MTAkajYwJGwwJGg1MDY0NjQ1MzE.",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "fastarshop.nl"
         }
       ],
       "orders": [
         {
           "id": 39,
-          "supplier": "",
+          "supplier": "fastarshop.nl",
           "poNumber": "",
           "orderDate": "2026-09-06",
           "unitPrice": 88,
@@ -474,7 +1281,8 @@
           "notes": "",
           "link": "https://www.gamma.nl/assortiment/knauf-goldband-e-20-kg/p/B303601?store=HOONO&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_campaign=PPC%20-%20PMAX%20(Shopping%20Only)%20-%20NB%20-%20CONSTRUCTIEF%20-%20119%20BOUWMATERIALEN%20-%20High%20Value&utm_id=22773079570&gad_source=1&gad_campaignid=22763396148&gbraid=0AAAAADqUGn_Sud7Rcx7AHWBl--RgcZpDV&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZx_ptsHPNd9mOk-QYKRU_u4XstmlO3BplWblM8Z1ckXSJNBpK4Ja7xoCsRYQAvD_BwE",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Gamma"
         },
         {
           "id": 158,
@@ -517,7 +1325,7 @@
       "orders": [
         {
           "id": 38,
-          "supplier": "",
+          "supplier": "Hornbach",
           "poNumber": "",
           "orderDate": "2026-09-04",
           "unitPrice": 27.3,
@@ -699,7 +1507,8 @@
           "notes": "",
           "link": "https://dakraam.nl/assortiment/platdakramen/lichtstraat-60x60-cm/",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "dakraam.nl"
         }
       ],
       "orders": [],
@@ -732,7 +1541,7 @@
       "orders": [
         {
           "id": 32,
-          "supplier": "",
+          "supplier": "AliExpress",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 36.78,
@@ -809,7 +1618,7 @@
       "quotes": [
         {
           "id": 147,
-          "supplier": "",
+          "supplier": "glashandelonline.com",
           "unitPrice": 266,
           "date": "",
           "notes": "",
@@ -832,7 +1641,7 @@
       "orders": [
         {
           "id": 41,
-          "supplier": "",
+          "supplier": "glashandelonline.com",
           "poNumber": "",
           "orderDate": "2026-09-08",
           "unitPrice": 266,
@@ -879,7 +1688,8 @@
           "notes": "",
           "link": "https://skylights1.nl/product/geisoleerde-opstand-calculator/?_gl=1*1hen89q*_up*MQ..*ir_ga*MTYyNDA0NzI5Ni4xNzg3NTkzOTU0*ir_ga_0JHEEE6YM4*czE3ODc1OTM5NTMkbzEkZzAkdDE3ODc1OTM5NTMkajYwJGwwJGgxNTY5NzkwMjI5",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "skylights1.nl"
         }
       ],
       "orders": [],
@@ -959,7 +1769,8 @@
           "notes": "",
           "link": "https://www.hornbach.nl/p/mortelemmer-pe-rond-505-mm-40-l/3868233/",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Hornbach"
         },
         {
           "id": 151,
@@ -975,7 +1786,7 @@
       "orders": [
         {
           "id": 33,
-          "supplier": "",
+          "supplier": "Hornbach",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 30.35,
@@ -1348,7 +2159,7 @@
       "quotes": [
         {
           "id": 133,
-          "supplier": "",
+          "supplier": "stralendgroen.nl",
           "unitPrice": 68,
           "date": "",
           "notes": "",
@@ -1407,13 +2218,14 @@
           "notes": "",
           "link": "https://www.amazon.nl/RYOBI-Accu-multitool-R18MT-0-oscillatiehoek-snelheidsregeling/dp/B01B6EDVO0/ref=asc_df_B01B6EDVO0?mcid=e42c466a4e3237c2970720c242454252&tag=nlshogostdde-21&linkCode=df0&hvadid=710086527074&hvpos=&hvnetw=g&hvrand=7601825528825780581&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-366864153578&psc=1&hvocijid=7601825528825780581-B01B6EDVO0-&hvexpln=0&gad_source=1",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         }
       ],
       "orders": [
         {
           "id": 22,
-          "supplier": "",
+          "supplier": "Amazon",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 26.98,
@@ -1451,7 +2263,8 @@
           "notes": "",
           "link": "https://www.amazon.nl/RYOBI-Borstelloze-klopboorschroevendraaier-450-1700-boorhouder/dp/B0CRZ36DSL/ref=asc_df_B0CRZ36DSL?mcid=fdf4fd79ba403b34a060c1f4a3161946&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=5492911712002429878&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2292592272400&hvocijid=5492911712002429878-B0CRZ36DSL-&hvexpln=0&gad_source=1&th=1",
           "chosen": false,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         },
         {
           "id": 135,
@@ -1505,13 +2318,14 @@
           "notes": "",
           "link": "https://www.amazon.nl/Ryobi-RID18BL-0-draadloze-borstelloze-slagmoersleutel/dp/B0DCGKCD6K/ref=asc_df_B0DCGKCD6K?mcid=6ed4014632fa32bf9eed436b58938535&tag=nlshogostdde-21&linkCode=df0&hvadid=710054691072&hvpos=&hvnetw=g&hvrand=91698367455844245&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9064672&hvtargid=pla-2412577363327&psc=1&hvocijid=91698367455844245-B0DCGKCD6K-&hvexpln=0&gad_source=1",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "Amazon"
         }
       ],
       "orders": [
         {
           "id": 19,
-          "supplier": "",
+          "supplier": "Vinted",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 80,
@@ -1618,7 +2432,7 @@
       "quotes": [
         {
           "id": 122,
-          "supplier": "",
+          "supplier": "Lidl",
           "unitPrice": 59.99,
           "date": "",
           "notes": "",
@@ -1632,7 +2446,7 @@
       "orders": [
         {
           "id": 14,
-          "supplier": "",
+          "supplier": "Lidl",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 59.99,
@@ -1740,7 +2554,8 @@
           "notes": "",
           "link": "https://www.caleffi.com/en-int/safety-relief-valve-for-domestic-water-systems-female-connections-531-caleffi-531640",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "caleffi.com"
         }
       ],
       "orders": [],
@@ -1842,7 +2657,7 @@
       "quotes": [
         {
           "id": 112,
-          "supplier": "",
+          "supplier": "glasmaatje.nl",
           "unitPrice": 300,
           "date": "",
           "notes": "",
@@ -1870,7 +2685,7 @@
       "quotes": [
         {
           "id": 111,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 14.39,
           "date": "",
           "notes": "",
@@ -1898,7 +2713,7 @@
       "quotes": [
         {
           "id": 110,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 191,
           "date": "",
           "notes": "",
@@ -1926,7 +2741,7 @@
       "quotes": [
         {
           "id": 109,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 215,
           "date": "",
           "notes": "klokthermostaat ",
@@ -1954,7 +2769,7 @@
       "quotes": [
         {
           "id": 108,
-          "supplier": "",
+          "supplier": "Warmteservice",
           "unitPrice": 824,
           "date": "",
           "notes": "",
@@ -2016,7 +2831,8 @@
           "notes": "",
           "link": "https://decochip.nl/product/gietvloer-pu-m%c2%b2-pakket/?_gl=1*pr2b81*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ5tmUd_KpXhmyREpThOv1s_6WAEU8jxAOL-_R_E6vQYg0nCyhQk3RxoClvMQAvD_BwE&gbraid=0AAAAAD2x9qMwU8GE3fdq5Xcto7kIVRc3o",
           "chosen": true,
-          "documents": []
+          "documents": [],
+          "supplier": "decochip.nl"
         }
       ],
       "orders": [],
@@ -2064,7 +2880,7 @@
       "quotes": [
         {
           "id": 101,
-          "supplier": "",
+          "supplier": "refurbed.nl",
           "unitPrice": 130,
           "date": "",
           "notes": "",
@@ -2092,7 +2908,7 @@
       "quotes": [
         {
           "id": 100,
-          "supplier": "",
+          "supplier": "bol.com",
           "unitPrice": 69,
           "date": "",
           "notes": "",
@@ -2120,7 +2936,7 @@
       "quotes": [
         {
           "id": 99,
-          "supplier": "",
+          "supplier": "wifishop.nl",
           "unitPrice": 8,
           "date": "",
           "notes": "",
@@ -2174,7 +2990,7 @@
       "quotes": [
         {
           "id": 98,
-          "supplier": "",
+          "supplier": "voegenshop.nl",
           "unitPrice": 59,
           "date": "",
           "notes": "",
@@ -2258,7 +3074,7 @@
       "quotes": [
         {
           "id": 95,
-          "supplier": "",
+          "supplier": "mthekwerken.nl",
           "unitPrice": 25,
           "date": "",
           "notes": "",
@@ -2286,7 +3102,7 @@
       "quotes": [
         {
           "id": 94,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 21.36,
           "date": "",
           "notes": "",
@@ -2370,7 +3186,7 @@
       "quotes": [
         {
           "id": 91,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 13,
           "date": "",
           "notes": "",
@@ -2398,7 +3214,7 @@
       "quotes": [
         {
           "id": 90,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 17.47,
           "date": "",
           "notes": "",
@@ -2500,7 +3316,7 @@
       "quotes": [
         {
           "id": 85,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 1.84,
           "date": "",
           "notes": "",
@@ -2528,7 +3344,7 @@
       "quotes": [
         {
           "id": 84,
-          "supplier": "",
+          "supplier": "sleiderink.nl",
           "unitPrice": 4.7,
           "date": "",
           "notes": "",
@@ -2556,7 +3372,7 @@
       "quotes": [
         {
           "id": 83,
-          "supplier": "",
+          "supplier": "jandeisolatieman.nl",
           "unitPrice": 37.8,
           "date": "",
           "notes": "",
@@ -2612,7 +3428,7 @@
       "quotes": [
         {
           "id": 80,
-          "supplier": "",
+          "supplier": "fruugo.nl",
           "unitPrice": 13,
           "date": "",
           "notes": "",
@@ -2640,7 +3456,7 @@
       "quotes": [
         {
           "id": 79,
-          "supplier": "",
+          "supplier": "enup.lv",
           "unitPrice": 255.25,
           "date": "",
           "notes": "",
@@ -2668,7 +3484,7 @@
       "quotes": [
         {
           "id": 78,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 140.26,
           "date": "",
           "notes": "",
@@ -2696,7 +3512,7 @@
       "quotes": [
         {
           "id": 77,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 84.51,
           "date": "",
           "notes": "",
@@ -2724,7 +3540,7 @@
       "quotes": [
         {
           "id": 76,
-          "supplier": "",
+          "supplier": "Ventilatieland",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -2766,7 +3582,7 @@
       "orders": [
         {
           "id": 3,
-          "supplier": "",
+          "supplier": "Flem´s",
           "poNumber": "",
           "orderDate": "2026-06-19",
           "unitPrice": 849.99,
@@ -2808,7 +3624,7 @@
       "orders": [
         {
           "id": 1,
-          "supplier": "",
+          "supplier": "bouwkeuringvergelijk.nl",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 1073.24,
@@ -2925,7 +3741,7 @@
       "orders": [
         {
           "id": 23,
-          "supplier": "",
+          "supplier": "Buro Sprinweg",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 1155.76,
@@ -2946,16 +3762,43 @@
       "name": "Asbestreport"
     },
     {
-      "documents": [],
-      "description": "6m3",
+      "documents": [
+        {
+          "id": 16,
+          "name": "2622246.pdf",
+          "type": "application/pdf",
+          "size": 348672,
+          "ghPath": "quotes/2622246.pdf",
+          "uploadedDate": "2026-09-19"
+        }
+      ],
+      "description": "10 m3",
       "id": 99,
-      "phaseId": 62,
+      "phaseId": 73,
       "unit": "pcs",
       "link": "",
-      "status": "not-ordered",
+      "status": "delivered",
       "name": "Rent Container",
       "notes": "",
-      "orders": [],
+      "orders": [
+        {
+          "id": 45,
+          "supplier": "afzetbak.nl",
+          "poNumber": "",
+          "orderDate": "2026-09-19",
+          "unitPrice": 572,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -2963,7 +3806,7 @@
           "chosen": true,
           "notes": "",
           "id": 3,
-          "unitPrice": 447,
+          "unitPrice": 572,
           "documents": [],
           "link": "https://www.afzetbak.nl/en/container-rental/construction-and-demolition-waste/10m3-gesloten",
           "shippingCost": 0,
@@ -3562,34 +4405,6 @@
       "name": "Tiles (Bathroom)"
     },
     {
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "description": "Saniclear Cube 180x80cm",
-      "id": 127,
-      "unit": "pcs",
-      "phaseId": 70,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "unitPrice": 400,
-          "id": 29,
-          "notes": "",
-          "documents": [],
-          "link": "https://sanitairkamer.nl/saniclear-cube-ligbad-180x80cm-wit-sk1116.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "qty": 1,
-      "name": "Ligbad",
-      "notes": ""
-    },
-    {
       "name": "Toilette",
       "notes": "",
       "qty": 2,
@@ -3676,34 +4491,6 @@
     {
       "qty": 1,
       "categoryId": 3,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "unitPrice": 300,
-          "id": 33,
-          "notes": "",
-          "documents": [],
-          "link": "https://www.sklum.com/nl/kopen-douchebakken/208844-soho-rechthoekige-antislip-extra-vlakke-smc-hars-douchebak.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "notes": "",
-      "name": "Douchebak (Teller)",
-      "status": "not-ordered",
-      "link": "",
-      "unit": "pcs",
-      "phaseId": 70,
-      "description": "Soho antislip SMC hars",
-      "id": 131,
-      "documents": []
-    },
-    {
-      "qty": 1,
-      "categoryId": 3,
       "quotes": [
         {
           "chosen": true,
@@ -3756,34 +4543,6 @@
       "documents": [],
       "id": 133,
       "description": "Mueller single flat 80x46cm"
-    },
-    {
-      "qty": 1,
-      "orders": [],
-      "quotes": [
-        {
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "notes": "",
-          "id": 36,
-          "unitPrice": 400,
-          "documents": [],
-          "link": "https://www.maxaro.nl/en-gb/baths/built-in-baths/pianosa-corner-bath-160x85cm-acrylic-gloss-white-left-with-panels-99746/",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "name": "Bathtub Cornelis",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "phaseId": 70,
-      "unit": "pcs",
-      "documents": [],
-      "description": "Pianosa corner bath 160x85cm",
-      "id": 134
     },
     {
       "link": "",
@@ -4529,101 +5288,35 @@
       "documents": []
     },
     {
-      "name": "Isolation Floor Subsidy",
-      "notes": "",
-      "quotes": [
-        {
-          "notes": "",
-          "id": 63,
-          "unitPrice": -11,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 7,
-      "qty": 40,
-      "documents": [],
-      "description": " 40 sqm @ 14/m2 subsidie ISDE Subsidie ",
-      "id": 162,
-      "phaseId": 66,
-      "unit": "m∩┐╜",
-      "link": "",
-      "status": "not-ordered"
-    },
-    {
-      "documents": [],
-      "description": " 50m2 @ 25/m2 subsidie ISDE Subsidie ",
-      "id": 163,
-      "unit": "m∩┐╜",
-      "phaseId": 66,
-      "link": "",
-      "status": "not-ordered",
-      "name": "Wall Isolation Subsidy",
-      "notes": "",
-      "quotes": [
-        {
-          "unitPrice": -25,
-          "notes": "",
-          "id": 64,
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 7,
-      "qty": 50
-    },
-    {
-      "qty": 60,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "unitPrice": -32.5,
-          "id": 65,
-          "notes": "",
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 7,
-      "name": "Roof Subsidy",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "unit": "m∩┐╜",
-      "phaseId": 66,
-      "documents": [],
-      "id": 164,
-      "description": " 60m2 @ 25/m2 subsidie ISDE Subsidie "
-    },
-    {
       "id": 165,
       "description": " Gemeende Subside Amsterdam. APPLY FIRST THEN DO THE WORK! ",
       "documents": [],
       "unit": "pcs",
       "phaseId": 66,
-      "status": "not-ordered",
+      "status": "ordered",
       "link": "",
       "notes": "",
       "name": "Isolation Gemeente Subsidy",
       "categoryId": 7,
-      "orders": [],
+      "orders": [
+        {
+          "id": 59,
+          "supplier": "Gemeente Amsterdam",
+          "poNumber": "",
+          "orderDate": "2026-09-22",
+          "unitPrice": -2500,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "documents": []
+        }
+      ],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -4732,7 +5425,7 @@
       "orders": [
         {
           "id": 16,
-          "supplier": "",
+          "supplier": "hbm-machines.com",
           "poNumber": "",
           "orderDate": "",
           "unitPrice": 542.57,
@@ -4966,21 +5659,61 @@
       "kanbanOrder": 130
     },
     {
-      "id": 31,
-      "phaseId": 62,
-      "name": "Decide tiles",
+      "id": 36,
+      "phaseId": 65,
+      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 170
+    },
+    {
+      "id": 39,
+      "phaseId": 34,
+      "name": "Intsall Piping fot HeatPump",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 200
+    },
+    {
+      "id": 51,
+      "phaseId": 74,
+      "name": "Check with Stuckador company",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
       "start": "",
       "end": "",
       "status": "in-progress",
-      "assigneeIds": [
-        3,
-        4
-      ],
+      "assigneeIds": [],
       "notes": "",
-      "kanbanOrder": 200,
+      "kanbanOrder": 20,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
+        1,
         7
       ]
     },
@@ -5049,6 +5782,19 @@
         1,
         7
       ]
+    },
+    {
+      "id": 48,
+      "phaseId": 34,
+      "name": "Check routing of HeatPump piping + ventilation",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 20
     },
     {
       "id": 28,
@@ -5280,6 +6026,25 @@
       ]
     },
     {
+      "id": 31,
+      "phaseId": 62,
+      "name": "Decide tiles",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [
+        3,
+        4
+      ],
+      "notes": "",
+      "kanbanOrder": 200,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ]
+    },
+    {
       "id": 45,
       "phaseId": 61,
       "name": "Add eachother on Pensionfond",
@@ -5408,79 +6173,43 @@
       "spaceIds": []
     },
     {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 20,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
-      "id": 48,
-      "phaseId": 34,
-      "name": "Check routing of HeatPump piping + ventilation",
+      "id": 52,
+      "phaseId": 31,
+      "name": "Open space kruipruimte",
       "start": "",
       "end": "",
       "status": "this-week",
       "assigneeIds": [],
       "notes": "",
       "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 20
+      "spaceIds": []
     },
     {
-      "id": 36,
+      "id": 53,
+      "phaseId": 80,
+      "name": "Install under construction ceiling",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 54,
       "phaseId": 65,
-      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "name": "Repair air vent toilet",
       "start": "",
       "end": "",
       "status": "this-week",
       "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 170
-    },
-    {
-      "id": 39,
-      "phaseId": 34,
-      "name": "Intsall Piping fot HeatPump",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 200
-    },
-    {
-      "id": 51,
-      "phaseId": 74,
-      "name": "Check with Stuckador company",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [
-        3
-      ],
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
     }
   ],
-  "nextTaskId": 52,
+  "nextTaskId": 55,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -5489,12 +6218,12 @@
     "totalBudget": 0,
     "endDate": "2027-06-30"
   },
-  "nextCategoryId": 12,
-  "nextDocId": 16,
-  "_savedAt": 1790629011696,
-  "nextOrderId": 45,
-  "nextQuoteId": 171,
-  "nextItemId": 281,
+  "nextCategoryId": 13,
+  "nextDocId": 19,
+  "_savedAt": 1790458078431,
+  "nextOrderId": 63,
+  "nextQuoteId": 192,
+  "nextItemId": 301,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -5855,7 +6584,7 @@
       "status": "planned",
       "color": "#FB923C",
       "notes": "",
-      "budget": 0
+      "budget": 1000
     },
     {
       "id": 74,
@@ -5867,7 +6596,7 @@
       "status": "planned",
       "color": "#FDBA74",
       "notes": "",
-      "budget": 2000
+      "budget": 1000
     },
     {
       "id": 75,
@@ -5916,6 +6645,42 @@
       "color": "#FEF9C3",
       "notes": "",
       "budget": 1000
+    },
+    {
+      "id": 79,
+      "name": "Battery",
+      "parentId": 3,
+      "number": "3.10",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#FEFCE8",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 80,
+      "name": "Ceiling",
+      "parentId": 4,
+      "number": "4.5",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#DCFCE7",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 81,
+      "name": "Others/Various",
+      "parentId": null,
+      "number": "8",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#BE185D",
+      "notes": "",
+      "budget": 0
     }
   ],
   "_source": "converted-from-classifier-v3",
@@ -6019,5 +6784,61 @@
       "label": "Delayed",
       "color": "var(--red)"
     }
+  ],
+  "suppliers": [
+    "afzetbak.nl",
+    "AliExpress",
+    "Amazon",
+    "benz24.nl",
+    "bol.com",
+    "bouwbink.nl",
+    "bouwkeuringvergelijk.nl",
+    "Buro Sprinweg",
+    "caleffi.com",
+    "dakraam.nl",
+    "decochip.nl",
+    "DeVentilatieKonig",
+    "deventilatiekoning.nl",
+    "Elektramat",
+    "enup.lv",
+    "fastarshop.nl",
+    "Flem´s",
+    "fruugo.nl",
+    "Gamma",
+    "Geberit Duofix Omega inbouwspoelreservoir",
+    "Gemeente Amsterdam",
+    "glashandelonline.com",
+    "glasmaatje.nl",
+    "hbm-machines.com",
+    "Hornbach",
+    "IsoGuard",
+    "jandeisolatieman.nl",
+    "lichtkoepeltje.nl",
+    "Lidl",
+    "Markplaats",
+    "Marktplaats",
+    "mthekwerken.nl",
+    "Perfectkeur",
+    "premiumdakramen.nl",
+    "refurbed.nl",
+    "Sanitairkammer",
+    "Sanitino",
+    "skylights1.nl",
+    "sleiderink.nl",
+    "stralendgroen.nl",
+    "van Ekeren",
+    "Ventilatieland",
+    "Vinted",
+    "voegenshop.nl",
+    "Warmteservice",
+    "wifishop.nl"
+  ],
+  "supplierBackfillV1": true,
+  "suppliersHidden": [
+    "mb400 + 40e",
+    "morteleemer",
+    "r18mt-0",
+    "rpd18bl1-0",
+    "video"
   ]
 }
