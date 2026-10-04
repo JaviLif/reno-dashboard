@@ -6208,6 +6208,18 @@
       ]
     },
     {
+      "id": 53,
+      "phaseId": 80,
+      "name": "Install under construction ceiling",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 21,
       "phaseId": 73,
       "name": "Remove existing Floors Lower Floor",
@@ -6321,18 +6333,6 @@
       "spaceIds": []
     },
     {
-      "id": 53,
-      "phaseId": 80,
-      "name": "Install under construction ceiling",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 54,
       "phaseId": 65,
       "name": "Repair air vent toilet",
@@ -6356,7 +6356,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137675909,
+  "_savedAt": 1791137682105,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
