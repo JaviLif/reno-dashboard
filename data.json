@@ -58,7 +58,7 @@
       "id": 301,
       "phaseId": 62,
       "categoryId": null,
-      "name": "",
+      "name": "Working Lamp ",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136198561
+      "updatedAt": 1791136213426
     },
     {
       "id": 300,
@@ -6235,7 +6235,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136198561,
+  "_savedAt": 1791136213426,
   "nextOrderId": 63,
   "nextQuoteId": 192,
   "nextItemId": 302,
