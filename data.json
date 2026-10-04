@@ -195,7 +195,7 @@
     {
       "id": 300,
       "phaseId": 80,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Materuials Building Structure",
       "description": "Hornbach. Wood, Screws etc..",
       "link": "",
@@ -235,7 +235,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791137096366,
+      "updatedAt": 1791137126728,
       "status": "delivered",
       "spentOverride": 425.16
     },
@@ -6362,7 +6362,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137096366,
+  "_savedAt": 1791137126728,
   "nextOrderId": 66,
   "nextQuoteId": 196,
   "nextItemId": 304,
