@@ -83,7 +83,7 @@
           "supplier": "Hornbach",
           "poNumber": "",
           "orderDate": "2026-09-26",
-          "unitPrice": 373.34,
+          "unitPrice": 431.16,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 0,
@@ -97,7 +97,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791136147851,
+      "updatedAt": 1791136158330,
       "status": "delivered"
     },
     {
@@ -6220,7 +6220,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136147851,
+  "_savedAt": 1791136158330,
   "nextOrderId": 63,
   "nextQuoteId": 192,
   "nextItemId": 301,
