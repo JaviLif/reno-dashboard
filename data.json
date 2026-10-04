@@ -59,7 +59,7 @@
       "phaseId": 78,
       "categoryId": null,
       "name": "Materials Hornbach",
-      "description": "",
+      "description": "Wood",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136444121
+      "updatedAt": 1791136449257
     },
     {
       "id": 301,
@@ -6278,7 +6278,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136444121,
+  "_savedAt": 1791136449257,
   "nextOrderId": 64,
   "nextQuoteId": 193,
   "nextItemId": 303,
