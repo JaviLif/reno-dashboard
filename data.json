@@ -71,7 +71,10 @@
           "unitPrice": 50.6,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -1296,7 +1300,7 @@
           "supplier": "glasmaatje.nl",
           "poNumber": "",
           "orderDate": "2026-09-08",
-          "unitPrice": 222.42,
+          "unitPrice": 292.37,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 39.95,
@@ -1320,7 +1324,7 @@
         }
       ],
       "status": "delivered",
-      "updatedAt": 1791136733943
+      "updatedAt": 1791138237183
     },
     {
       "id": 271,
@@ -6368,7 +6372,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137816774,
+  "_savedAt": 1791138237183,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
