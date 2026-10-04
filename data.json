@@ -217,7 +217,7 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "2026-09-26",
-          "unitPrice": 12.63,
+          "unitPrice": 27.39,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 0,
@@ -231,7 +231,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791136766057,
+      "updatedAt": 1791136780196,
       "status": "delivered"
     },
     {
@@ -6311,7 +6311,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136766057,
+  "_savedAt": 1791136780196,
   "nextOrderId": 65,
   "nextQuoteId": 194,
   "nextItemId": 303,
