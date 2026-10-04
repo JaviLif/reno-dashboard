@@ -5637,24 +5637,6 @@
       ]
     },
     {
-      "start": "",
-      "assignee": "",
-      "dueDate": null,
-      "end": "",
-      "status": "planned",
-      "name": "Removing Existing Floor upper floor",
-      "id": 5,
-      "notes": "",
-      "description": "Self Made",
-      "phaseId": 73,
-      "priority": "med",
-      "kanbanOrder": 50,
-      "assigneeIds": [],
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 20,
       "phaseId": 73,
       "name": "Remove CV kettel",
@@ -5976,6 +5958,24 @@
       "assigneeIds": [
         3
       ],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "start": "",
+      "assignee": "",
+      "dueDate": null,
+      "end": "",
+      "status": "completed",
+      "name": "Removing Existing Floor upper floor",
+      "id": 5,
+      "notes": "",
+      "description": "Self Made",
+      "phaseId": 73,
+      "priority": "med",
+      "kanbanOrder": 50,
+      "assigneeIds": [],
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
@@ -6368,7 +6368,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137749871,
+  "_savedAt": 1791137756083,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
