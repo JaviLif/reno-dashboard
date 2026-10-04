@@ -5854,6 +5854,18 @@
       ]
     },
     {
+      "id": 54,
+      "phaseId": 65,
+      "name": "Repair air vent toilet",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6331,18 +6343,6 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 54,
-      "phaseId": 65,
-      "name": "Repair air vent toilet",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
     }
   ],
   "nextTaskId": 55,
@@ -6356,7 +6356,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137682105,
+  "_savedAt": 1791137686535,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
