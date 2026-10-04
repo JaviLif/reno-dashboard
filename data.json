@@ -59,7 +59,7 @@
       "phaseId": 31,
       "categoryId": null,
       "name": "Glaswol 800mm",
-      "description": "",
+      "description": "Hornbach",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791137167249
+      "updatedAt": 1791137173261
     },
     {
       "id": 303,
@@ -6377,7 +6377,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137167249,
+  "_savedAt": 1791137173261,
   "nextOrderId": 66,
   "nextQuoteId": 196,
   "nextItemId": 305,
