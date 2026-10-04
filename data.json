@@ -59,7 +59,7 @@
       "phaseId": 81,
       "categoryId": null,
       "name": "Ladder Huren",
-      "description": "",
+      "description": "Bo -Rent",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136977555
+      "updatedAt": 1791136985654
     },
     {
       "id": 302,
@@ -6326,7 +6326,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136977555,
+  "_savedAt": 1791136985654,
   "nextOrderId": 65,
   "nextQuoteId": 194,
   "nextItemId": 304,
