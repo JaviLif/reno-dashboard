@@ -5468,25 +5468,7 @@
       "notes": "",
       "name": "Isolation Gemeente Subsidy",
       "categoryId": 7,
-      "orders": [
-        {
-          "id": 59,
-          "supplier": "Gemeente Amsterdam",
-          "poNumber": "",
-          "orderDate": "2026-09-22",
-          "unitPrice": -2500,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
+      "orders": [],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -5501,7 +5483,8 @@
           "name": "Classifier estimate"
         }
       ],
-      "qty": 1
+      "qty": 1,
+      "updatedAt": 1791137635098
     },
     {
       "orders": [],
@@ -6390,7 +6373,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137630079,
+  "_savedAt": 1791137635098,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
