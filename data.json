@@ -57,7 +57,7 @@
     {
       "id": 302,
       "phaseId": 78,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Materials Hornbach",
       "description": "Wood",
       "link": "",
@@ -93,7 +93,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791136712111,
+      "updatedAt": 1791136723000,
       "status": "delivered"
     },
     {
@@ -6309,7 +6309,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136712111,
+  "_savedAt": 1791136723000,
   "nextOrderId": 65,
   "nextQuoteId": 194,
   "nextItemId": 303,
