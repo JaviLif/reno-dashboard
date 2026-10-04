@@ -1382,7 +1382,8 @@
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1791136405828
+      "updatedAt": 1791137336171,
+      "spentOverride": 43
     },
     {
       "id": 270,
@@ -6388,7 +6389,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137311901,
+  "_savedAt": 1791137336171,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
@@ -6875,8 +6876,7 @@
   "nextPersonId": 12,
   "bomUiPrefs": {
     "colOrder": [
-      "phase",
-      "category",
+      "link",
       "name",
       "description",
       "qty",
@@ -6886,12 +6886,27 @@
       "status",
       "delivery",
       "netspent",
-      "link"
+      "phase",
+      "category"
     ],
-    "colHidden": [],
-    "colWidths": {},
+    "colHidden": [
+      "delivery",
+      "quote"
+    ],
+    "colWidths": {
+      "category": 240,
+      "name": 253,
+      "description": 258,
+      "qty": 72,
+      "phase": 241,
+      "delivery": 71,
+      "price": 60,
+      "link": 60,
+      "status": 137,
+      "netspent": 99
+    },
     "sortKey": "status",
-    "sortDir": "asc"
+    "sortDir": "desc"
   },
   "spaces": [
     {
