@@ -239,7 +239,7 @@
       "id": 300,
       "phaseId": 80,
       "categoryId": 3,
-      "name": "Materuials Building Structure",
+      "name": "Materuials Building Structure for plafond",
       "description": "Hornbach. Wood, Screws etc..",
       "link": "",
       "qty": 1,
@@ -278,7 +278,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791137126728,
+      "updatedAt": 1791137630079,
       "status": "delivered",
       "spentOverride": 425.16
     },
@@ -6390,7 +6390,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137608593,
+  "_savedAt": 1791137630079,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
