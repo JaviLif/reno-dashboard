@@ -68,7 +68,7 @@
         {
           "id": 191,
           "supplier": "",
-          "unitPrice": 415.81,
+          "unitPrice": 431.16,
           "date": "",
           "notes": "",
           "chosen": true,
@@ -97,7 +97,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791136105560,
+      "updatedAt": 1791136147851,
       "status": "delivered"
     },
     {
@@ -6220,7 +6220,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136105560,
+  "_savedAt": 1791136147851,
   "nextOrderId": 63,
   "nextQuoteId": 192,
   "nextItemId": 301,
