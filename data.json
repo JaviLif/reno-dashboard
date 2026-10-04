@@ -1697,7 +1697,7 @@
     {
       "id": 261,
       "phaseId": 78,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "roof glas",
       "description": "HR++ 44.2 44.2 accorfding to CLAUDE",
       "link": "",
@@ -1756,7 +1756,8 @@
           "uploadedDate": "2026-09-10"
         }
       ],
-      "status": "ordered"
+      "status": "ordered",
+      "updatedAt": 1791136725734
     },
     {
       "id": 260,
@@ -6309,7 +6310,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136723000,
+  "_savedAt": 1791136725734,
   "nextOrderId": 65,
   "nextQuoteId": 194,
   "nextItemId": 303,
