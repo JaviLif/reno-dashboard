@@ -956,7 +956,7 @@
       "phaseId": 73,
       "categoryId": 4,
       "name": "Crane Rent",
-      "description": "",
+      "description": "Gitanicos",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -994,7 +994,8 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "delivered",
+      "updatedAt": 1791137451648
     },
     {
       "id": 280,
@@ -6389,7 +6390,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137336171,
+  "_savedAt": 1791137451648,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
