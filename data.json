@@ -75,9 +75,26 @@
           "name": "Bo-Rent"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 65,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-10-04",
+          "unitPrice": 18.33,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1791137002399
+      "updatedAt": 1791137004541
     },
     {
       "id": 302,
@@ -6336,8 +6353,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137002399,
-  "nextOrderId": 65,
+  "_savedAt": 1791137004541,
+  "nextOrderId": 66,
   "nextQuoteId": 196,
   "nextItemId": 304,
   "_version": "dashboard-v1",
