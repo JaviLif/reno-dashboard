@@ -147,7 +147,7 @@
       "phaseId": 78,
       "categoryId": 3,
       "name": "Materials Hornbach",
-      "description": "Wood",
+      "description": "Frame for window",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -185,7 +185,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791137311901,
+      "updatedAt": 1791137608593,
       "status": "delivered",
       "spentOverride": 252.8
     },
@@ -6390,7 +6390,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137501854,
+  "_savedAt": 1791137608593,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
