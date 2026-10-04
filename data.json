@@ -5823,6 +5823,18 @@
       "spaceIds": []
     },
     {
+      "id": 55,
+      "phaseId": 78,
+      "name": "Install frame skylight ceiling",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -6345,7 +6357,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 55,
+  "nextTaskId": 56,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6356,7 +6368,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137691329,
+  "_savedAt": 1791137723762,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
