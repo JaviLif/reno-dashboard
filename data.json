@@ -5617,20 +5617,6 @@
       "kanbanOrder": 20
     },
     {
-      "id": 27,
-      "phaseId": 73,
-      "name": "CHECK: Removal chimeney",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 30,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 23,
       "phaseId": 74,
       "name": "Build new walls",
@@ -5929,6 +5915,20 @@
       "parentTaskId": null,
       "spaceIds": [],
       "kanbanOrder": 20
+    },
+    {
+      "id": 27,
+      "phaseId": 73,
+      "name": "CHECK: Removal chimeney",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 30,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     },
     {
       "id": 28,
@@ -6368,7 +6368,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137742562,
+  "_savedAt": 1791137749871,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
