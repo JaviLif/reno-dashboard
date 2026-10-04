@@ -58,7 +58,7 @@
       "id": 302,
       "phaseId": 78,
       "categoryId": null,
-      "name": "",
+      "name": "Materials Hornbach",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136434422
+      "updatedAt": 1791136444121
     },
     {
       "id": 301,
@@ -6278,7 +6278,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136434422,
+  "_savedAt": 1791136444121,
   "nextOrderId": 64,
   "nextQuoteId": 193,
   "nextItemId": 303,
