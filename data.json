@@ -68,7 +68,7 @@
       "orders": [
         {
           "id": 66,
-          "supplier": "",
+          "supplier": "Hornbach",
           "poNumber": "",
           "orderDate": "2026-10-04",
           "unitPrice": 0,
@@ -84,7 +84,8 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791137175317
+      "updatedAt": 1791137179769,
+      "status": "ordered"
     },
     {
       "id": 303,
@@ -6394,7 +6395,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137175317,
+  "_savedAt": 1791137179769,
   "nextOrderId": 67,
   "nextQuoteId": 196,
   "nextItemId": 305,
