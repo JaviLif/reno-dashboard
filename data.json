@@ -189,9 +189,9 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791138269832,
+      "updatedAt": 1791138275842,
       "status": "delivered",
-      "spentOverride": 352.8
+      "spentOverride": 252.8
     },
     {
       "id": 301,
@@ -6372,7 +6372,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791138269832,
+  "_savedAt": 1791138275842,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
