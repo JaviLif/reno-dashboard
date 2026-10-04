@@ -58,7 +58,7 @@
       "id": 304,
       "phaseId": 31,
       "categoryId": null,
-      "name": "",
+      "name": "Glaswol 800mm",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791137150925
+      "updatedAt": 1791137167249
     },
     {
       "id": 303,
@@ -6377,7 +6377,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137150925,
+  "_savedAt": 1791137167249,
   "nextOrderId": 66,
   "nextQuoteId": 196,
   "nextItemId": 305,
