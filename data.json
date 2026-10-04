@@ -5585,20 +5585,6 @@
   "_exportedAt": "2026-07-04T10:00:00.000Z",
   "tasks": [
     {
-      "id": 25,
-      "phaseId": 31,
-      "name": "Install ceiling isolation",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 0,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 24,
       "phaseId": 74,
       "name": "Install skyroof",
@@ -6343,6 +6329,20 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 25,
+      "phaseId": 31,
+      "name": "Install ceiling isolation",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
     }
   ],
   "nextTaskId": 55,
@@ -6356,7 +6356,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137686535,
+  "_savedAt": 1791137691329,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
