@@ -68,7 +68,7 @@
         {
           "id": 193,
           "supplier": "",
-          "unitPrice": 12,
+          "unitPrice": 56,
           "date": "",
           "notes": "",
           "chosen": true
@@ -76,7 +76,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136501976,
+      "updatedAt": 1791136506426,
       "status": "not-ordered"
     },
     {
@@ -6292,7 +6292,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136501976,
+  "_savedAt": 1791136506426,
   "nextOrderId": 64,
   "nextQuoteId": 194,
   "nextItemId": 303,
