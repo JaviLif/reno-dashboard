@@ -584,7 +584,7 @@
     {
       "id": 290,
       "phaseId": 31,
-      "categoryId": null,
+      "categoryId": 4,
       "name": "Isolation",
       "description": "Dak & Vloer",
       "link": "",
@@ -616,7 +616,7 @@
         }
       ],
       "status": "ordered",
-      "updatedAt": 1791137235932
+      "updatedAt": 1791137501854
     },
     {
       "id": 289,
@@ -6390,7 +6390,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137451648,
+  "_savedAt": 1791137501854,
   "nextOrderId": 67,
   "nextQuoteId": 197,
   "nextItemId": 305,
@@ -6883,10 +6883,10 @@
       "qty",
       "price",
       "total",
+      "netspent",
       "quote",
       "status",
       "delivery",
-      "netspent",
       "phase",
       "category"
     ],
