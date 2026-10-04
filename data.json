@@ -73,11 +73,21 @@
           "notes": "",
           "chosen": true,
           "name": "Bo-Rent"
+        },
+        {
+          "id": 195,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": false,
+          "documents": []
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136997171
+      "updatedAt": 1791136998907
     },
     {
       "id": 302,
@@ -6336,9 +6346,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136997171,
+  "_savedAt": 1791136998907,
   "nextOrderId": 65,
-  "nextQuoteId": 195,
+  "nextQuoteId": 196,
   "nextItemId": 304,
   "_version": "dashboard-v1",
   "phases": [
