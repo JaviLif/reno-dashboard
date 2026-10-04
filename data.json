@@ -59,7 +59,7 @@
       "phaseId": 62,
       "categoryId": null,
       "name": "Working Lamp ",
-      "description": "",
+      "description": "Markplaats",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136213426
+      "updatedAt": 1791136218958
     },
     {
       "id": 300,
@@ -6235,7 +6235,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136213426,
+  "_savedAt": 1791136218958,
   "nextOrderId": 63,
   "nextQuoteId": 192,
   "nextItemId": 302,
