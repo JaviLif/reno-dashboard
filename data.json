@@ -71,12 +71,13 @@
           "unitPrice": 18.33,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "name": "Bo-Rent"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791136988596
+      "updatedAt": 1791136997171
     },
     {
       "id": 302,
@@ -6335,7 +6336,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791136988596,
+  "_savedAt": 1791136997171,
   "nextOrderId": 65,
   "nextQuoteId": 195,
   "nextItemId": 304,
@@ -6905,6 +6906,7 @@
     "AliExpress",
     "Amazon",
     "benz24.nl",
+    "Bo-Rent",
     "bol.com",
     "bouwbink.nl",
     "bouwkeuringvergelijk.nl",
