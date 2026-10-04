@@ -72,7 +72,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "name": "Bo-Rent"
+          "name": "Bo-Rent",
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [
@@ -83,18 +85,20 @@
           "orderDate": "2026-10-04",
           "unitPrice": 18.33,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
-      "updatedAt": 1791137004541
+      "updatedAt": 1791137034155,
+      "status": "delivered"
     },
     {
       "id": 302,
@@ -113,7 +117,10 @@
           "unitPrice": 56,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -131,7 +138,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -6353,7 +6361,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791137004541,
+  "_savedAt": 1791137034155,
   "nextOrderId": 66,
   "nextQuoteId": 196,
   "nextItemId": 304,
