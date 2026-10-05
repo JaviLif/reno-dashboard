@@ -88,7 +88,8 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791172595632
+      "updatedAt": 1791172595632,
+      "status": "not-ordered"
     },
     {
       "id": 304,
@@ -365,8 +366,9 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791137045816,
-      "status": "delivered"
+      "updatedAt": 1791190846280,
+      "status": "delivered",
+      "spentOverride": 37.39
     },
     {
       "id": 298,
@@ -6408,7 +6410,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791172595632,
+  "_savedAt": 1791190846280,
   "nextOrderId": 67,
   "nextQuoteId": 199,
   "nextItemId": 306,
