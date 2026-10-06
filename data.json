@@ -2681,10 +2681,27 @@
           "name": "Markplaats"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 67,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-10-06",
+          "unitPrice": 35,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
       "status": "not-ordered",
-      "updatedAt": 1791317303327
+      "updatedAt": 1791317307093
     },
     {
       "id": 233,
@@ -6421,8 +6438,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791317303327,
-  "nextOrderId": 67,
+  "_savedAt": 1791317307093,
+  "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 306,
   "_version": "dashboard-v1",
