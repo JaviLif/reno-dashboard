@@ -411,19 +411,28 @@ body.col-resizing *{cursor:col-resize!important}
   <div class="g6040">
     <div class="sec">
       <div class="sec-hdr">
-        <div class="sec-title">Phases</div>
-        <button class="btn btn-ghost btn-sm" onclick="openPhaseModal()">+ Add Phase</button>
+        <div class="sec-title" style="cursor:pointer;user-select:none" onclick="togglePhasesPanel()"><span id="phases-caret">&#9662;</span> Phases</div>
+        <div class="flex" style="gap:6px">
+          <button class="btn btn-ghost btn-sm" id="phases-toggle-btn" onclick="togglePhasesPanel()" title="Collapse / expand">&#9662;</button>
+          <button class="btn btn-ghost btn-sm" onclick="openPhaseModal()">+ Add Phase</button>
+        </div>
       </div>
-      <div class="card"><div class="card-body" id="phase-list" style="padding:6px 18px"></div></div>
+      <div class="card" id="phases-card"><div class="card-body" id="phase-list" style="padding:6px 18px"></div></div>
     </div>
     <div class="sec">
       <div class="sec-hdr"><div class="sec-title">Overview</div></div>
       <div class="card">
         <div class="card-hdr">
-          <span class="card-title">Budget by Phase</span>
-          <div class="inner-tabs">
-            <button class="inner-tab active" onclick="switchDonut('phase',this)">Phase</button>
-            <button class="inner-tab" onclick="switchDonut('category',this)">Category</button>
+          <span class="card-title" id="donut-title">Budget by Phase</span>
+          <div class="flex" style="gap:8px;flex-wrap:wrap">
+            <div class="inner-tabs">
+              <button class="inner-tab active" onclick="switchDonut('phase',this)">Phase</button>
+              <button class="inner-tab" onclick="switchDonut('category',this)">Category</button>
+            </div>
+            <div class="inner-tabs">
+              <button class="inner-tab active" onclick="switchDonutMetric('budget',this)">Budget</button>
+              <button class="inner-tab" onclick="switchDonutMetric('spent',this)">Spent</button>
+            </div>
           </div>
         </div>
         <div class="card-body" style="display:flex;flex-direction:column;align-items:center;gap:10px">
@@ -443,6 +452,20 @@ body.col-resizing *{cursor:col-resize!important}
         <table>
           <thead><tr><th>Phase</th><th>Category</th><th>Item</th><th style="text-align:right">Qty</th><th>Status</th><th style="text-align:right">Spent</th><th>Changed</th></tr></thead>
           <tbody id="recent-items-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="sec-hdr">
+      <div class="sec-title">Recent Tasks</div>
+      <button class="btn btn-pri btn-sm" onclick="openTaskModal()">+ Add Task</button>
+    </div>
+    <div class="card">
+      <div class="tbl-wrap" style="max-height:460px;overflow-y:auto">
+        <table>
+          <thead><tr><th>Phase</th><th>Task</th><th>Who</th><th>Status</th><th>Dates</th><th>Changed</th></tr></thead>
+          <tbody id="recent-tasks-body"></tbody>
         </table>
       </div>
     </div>
@@ -558,7 +581,12 @@ body.col-resizing *{cursor:col-resize!important}
         </div>
       </div>
       <div class="card">
-        <div class="card-hdr"><span class="card-title">Planned vs Actual by Category</span></div>
+        <div class="card-hdr"><span class="card-title" id="phasecat-chart-title">Planned vs Actual by Category</span>
+          <div class="inner-tabs">
+            <button class="inner-tab active" id="pc-type-bar" onclick="setPcChartType('bar',this)">Bar</button>
+            <button class="inner-tab" id="pc-type-pie" onclick="setPcChartType('pie',this)">Pie</button>
+          </div>
+        </div>
         <div class="card-body"><canvas id="phasecat-chart" height="340"></canvas></div>
       </div>
     </div>
@@ -755,7 +783,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.82</span><span>Dashboard: Recent Tasks list, Budget/Spent switch on the pie, collapsible Phases panel. Financial: bar/pie switch, excluded filter chips struck through, header Spent/Remaining now follow the filter instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -1521,7 +1549,8 @@ let S = loadState();
   if(changed){saveState();console.log('[migration] Fixed mojibake fields');}
 })();
 let calDate = new Date();
-let donutChart = null, donutMode = 'phase';
+let donutChart = null, donutMode = 'phase', donutMetric = 'budget';
+let _pcChartType = (function(){ try{ return localStorage.getItem('reno_pc_charttype')||'bar'; }catch(e){ return 'bar'; } })();
 let budgetChart = null, catChart = null;
 let expandedItems = new Set();
 
@@ -2240,30 +2269,102 @@ function renderDashboard(){
           <td class="muted" style="font-size:11px;white-space:nowrap">${it.updatedAt?relTime(it.updatedAt):'&mdash;'}</td></tr>`;
       }).join('')
     : '<tr><td colspan="7" class="empty">No items yet</td></tr>';
+
+  applyPhasesPanelState();
+  renderRecentTasks();
+}
+function taskStatusLabel(st){
+  const col=(S.kanbanCols||[]).find(c=>c.status===st);
+  if(col) return {label:col.name||st, color:col.color||'#94A3B8'};
+  return {label:STATUS_LABELS[st]||st||'—', color:'#94A3B8'};
+}
+function renderRecentTasks(){
+  const el=C('recent-tasks-body'); if(!el) return;
+  const list=[...(S.tasks||[])].sort((a,b)=>((b.updatedAt||0)-(a.updatedAt||0))||(b.id-a.id)).slice(0,100);
+  el.innerHTML=list.length?list.map(t=>{
+    const ph=phaseById(t.phaseId);
+    const st=taskStatusLabel(t.status);
+    const who=(t.assigneeIds||[]).map(id=>{const pp=(S.people||[]).find(x=>x.id===id);return pp?pp.name:null;}).filter(Boolean).join(', ');
+    const dates=[t.start?fmtDate(t.start):'',t.end?fmtDate(t.end):''].filter(Boolean).join(' \u2192 ');
+    return `<tr style="cursor:pointer" onclick="openTaskModal(${t.id})">
+      <td>${ph?`<span class="flex" style="gap:5px"><span class="color-dot" style="background:${ph.color||'#94A3B8'}"></span><span style="font-size:11px">${ph.number||''} ${escapeAttr(ph.name)}</span></span>`:'<span class="muted">&mdash;</span>'}</td>
+      <td>${escapeAttr(t.name||'')}</td>
+      <td class="muted" style="font-size:11px">${who?escapeAttr(who):'&mdash;'}</td>
+      <td><span class="cat-chip" style="background:${st.color}22;color:${st.color}"><span class="cat-dot" style="background:${st.color}"></span>${escapeAttr(st.label)}</span></td>
+      <td class="muted" style="font-size:11px;white-space:nowrap">${dates||'&mdash;'}</td>
+      <td class="muted" style="font-size:11px;white-space:nowrap">${t.updatedAt?relTime(t.updatedAt):'&mdash;'}</td>
+    </tr>`;
+  }).join(''):'<tr><td colspan="6" class="empty">No tasks yet</td></tr>';
 }
 
 function switchDonut(mode, btn){
   donutMode=mode;
-  document.querySelectorAll('.inner-tab').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
+  _activateTab(btn);
   renderDonut();
+}
+function switchDonutMetric(metric, btn){
+  donutMetric=metric;
+  _activateTab(btn);
+  renderDonut();
+}
+// activate one tab inside its own group only
+function _activateTab(btn){
+  if(!btn||!btn.parentElement) return;
+  btn.parentElement.querySelectorAll('.inner-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+}
+function togglePhasesPanel(){
+  const card=C('phases-card'); if(!card) return;
+  const hide=card.style.display!=='none';
+  card.style.display=hide?'none':'';
+  const car=hide?'\u25B8':'\u25BE';
+  if(C('phases-caret')) C('phases-caret').innerHTML=car;
+  if(C('phases-toggle-btn')) C('phases-toggle-btn').innerHTML=car;
+  try{ localStorage.setItem('reno_phases_collapsed',hide?'1':'0'); }catch(e){}
+}
+function applyPhasesPanelState(){
+  let collapsed=false;
+  try{ collapsed=localStorage.getItem('reno_phases_collapsed')==='1'; }catch(e){}
+  const card=C('phases-card'); if(!card) return;
+  card.style.display=collapsed?'none':'';
+  const car=collapsed?'\u25B8':'\u25BE';
+  if(C('phases-caret')) C('phases-caret').innerHTML=car;
+  if(C('phases-toggle-btn')) C('phases-toggle-btn').innerHTML=car;
+}
+function setPcChartType(t, btn){
+  _pcChartType=t;
+  try{ localStorage.setItem('reno_pc_charttype',t); }catch(e){}
+  _activateTab(btn);
+  renderPhaseCatBudget();
 }
 
 function renderDonut(){
   if(donutChart) donutChart.destroy();
   let labels,data,colors;
+  const _spentMode=donutMetric==='spent';
+  const _metricOf=it=>_spentMode?itemNetSpent(it):itemBudget(it);
   if(donutMode==='phase'){
     const tl=topPhases();
     labels=tl.map(p=>`${p.number||''} ${p.name}`);
-    data=tl.map(p=>getPhaseActual(p.id)||getPhaseBudget(p.id));
+    data=tl.map(p=>_spentMode?getPhaseActual(p.id):getPhaseBudget(p.id));
     colors=tl.map(p=>p.color||'#94A3B8');
   } else {
     // By category
     labels=S.categories.map(c=>c.name);
-    data=S.categories.map(c=>S.items.filter(it=>it.categoryId===c.id).reduce((a,it)=>a+itemNetSpent(it),0));
+    data=S.categories.map(c=>S.items.filter(it=>it.categoryId===c.id).reduce((a,it)=>a+_metricOf(it),0));
     colors=S.categories.map(c=>c.color);
-    const uncatTotal=S.items.filter(it=>!it.categoryId).reduce((a,it)=>a+itemNetSpent(it),0);
+    const uncatTotal=S.items.filter(it=>!it.categoryId).reduce((a,it)=>a+_metricOf(it),0);
     if(uncatTotal>0){labels.push('Uncategorised');data.push(uncatTotal);colors.push('#94A3B8');}
+  }
+  (function(){
+    const t=C('donut-title');
+    if(t) t.textContent=(_spentMode?'Spent by ':'Budget by ')+(donutMode==='phase'?'Phase':'Category');
+  })();
+  if(!data.some(v=>Number(v)>0)){
+    if(donutChart){donutChart.destroy();donutChart=null;}
+    const _c=C('donut-chart'); if(_c){const _x=_c.getContext('2d');_x.clearRect(0,0,_c.width,_c.height);}
+    C('donut-legend').innerHTML='<div class="empty" style="padding:8px;font-size:12px">Nothing to show yet</div>';
+    return;
   }
   const ctx=C('donut-chart').getContext('2d');
   donutChart=new Chart(ctx,{
@@ -2606,7 +2707,7 @@ function renderBudget(){
     fh+=`<div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;color:var(--g500);font-size:11px">PHASES</span><div style="display:flex;flex-wrap:wrap;gap:6px">`;
     topPhases().forEach(p=>{
       const ex=_budExcludePhases.has(p.id);
-      fh+=`<label style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.45':''}">`
+      fh+=`<label title="${ex?'Excluded from all totals — click to include':'Click to exclude from totals'}" style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.5;text-decoration:line-through;text-decoration-thickness:1.5px;color:var(--g500)':''}">`
           +`<input type="checkbox" ${ex?'':'checked'} onchange="budToggleExcludePhase(${p.id})">`
           +`<span class="color-dot" style="background:${p.color||'#94A3B8'}"></span>${p.number?p.number+' ':''}${p.name}</label>`;
     });
@@ -2615,13 +2716,13 @@ function renderBudget(){
       fh+=`<div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;color:var(--g500);font-size:11px">CATEGORIES</span><div style="display:flex;flex-wrap:wrap;gap:6px">`;
       S.categories.forEach(c=>{
         const ex=_budExcludeCats.has(c.id);
-        fh+=`<label style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.45':''}">`
+        fh+=`<label title="${ex?'Excluded from all totals — click to include':'Click to exclude from totals'}" style="display:flex;align-items:center;gap:4px;cursor:pointer;${ex?'opacity:0.5;text-decoration:line-through;text-decoration-thickness:1.5px;color:var(--g500)':''}">`
             +`<input type="checkbox" ${ex?'':'checked'} onchange="budToggleExcludeCat(${c.id})">`
             +`<span class="color-dot" style="background:${c.color||'#94A3B8'}"></span>${c.name}</label>`;
       });
       fh+=`</div></div>`;
     }
-    if(hasEx) fh+=`<button class="btn btn-ghost btn-sm" onclick="_budExcludePhases.clear();_budExcludeCats.clear();_saveBudExclude();renderBudget()" style="align-self:flex-end;margin-left:auto">Reset filters</button>`;
+    if(hasEx) fh+=`<button class="btn btn-ghost btn-sm" onclick="_budExcludePhases.clear();_budExcludeCats.clear();_budFilterChanged()" style="align-self:flex-end;margin-left:auto">Reset filters</button>`;
     fh+=`</div>`;
     fp.innerHTML=fh;
   })();
@@ -2742,13 +2843,20 @@ function _filtItems(){
   _budExcludePhases.forEach(id=>{excIds.add(id);childrenOf(id).forEach(c=>excIds.add(c.id));});
   return S.items.filter(it=>!excIds.has(it.phaseId)&&!_budExcludeCats.has(it.categoryId));
 }
+// one place for every filter change: persist, then refresh everything that shows filtered numbers
+function _budFilterChanged(){
+  _saveBudExclude();
+  renderBudget();
+  renderHeader();
+  renderDashboard();
+}
 function budToggleExcludePhase(id){
   if(_budExcludePhases.has(id)) _budExcludePhases.delete(id); else _budExcludePhases.add(id);
-  _saveBudExclude(); renderBudget();
+  _budFilterChanged();
 }
 function budToggleExcludeCat(id){
   if(_budExcludeCats.has(id)) _budExcludeCats.delete(id); else _budExcludeCats.add(id);
-  _saveBudExclude(); renderBudget();
+  _budFilterChanged();
 }
 function budToggle(id){
   if(_budCollapsed.has(id)) _budCollapsed.delete(id); else _budCollapsed.add(id);
@@ -2806,9 +2914,13 @@ function pcHighlight(key){
     const ds=_phaseCatChart.data.datasets;
     const keys=_phaseCatChart._pcKeys||[];
     ds.forEach(d=>{
+      const bases=d._baseColors||[];
       d.backgroundColor=keys.map((k,i)=>{
-        const base=d._baseColors[i];
-        return(!_phaseCatSel||k===_phaseCatSel)?base:base.replace(/[\d.]+\)$/,'.15)');
+        const base=bases[i]||'#94A3B8';
+        if(!_phaseCatSel||k===_phaseCatSel) return base;
+        if(/^#[0-9a-f]{6}$/i.test(base)) return base+'26';
+        if(/^#[0-9a-f]{8}$/i.test(base)) return base.slice(0,7)+'26';
+        return String(base).replace(/[\d.]+\)$/,'.15)');
       });
     });
     _phaseCatChart.update('none');
@@ -2952,6 +3064,33 @@ function renderPhaseCatBudget(){
   });
   const actualBase=sortedGlobal.map(([,g])=>g.cat?.color||'#94A3B8');
 
+  (function(){
+    const bb=C('pc-type-bar'), pb=C('pc-type-pie'), tt=C('phasecat-chart-title');
+    if(bb&&pb){ bb.classList.toggle('active',_pcChartType!=='pie'); pb.classList.toggle('active',_pcChartType==='pie'); }
+    if(tt) tt.textContent=_pcChartType==='pie'?'Actual by Category':'Planned vs Actual by Category';
+  })();
+  if(_pcChartType==='pie'){
+    const pieVals=sortedGlobal.map(([,g])=>g.act);
+    const pieHasData=pieVals.some(v=>Number(v)>0);
+    _phaseCatChart=new Chart(ctx,{
+      type:'doughnut',
+      data:{labels, datasets:[{data:pieHasData?pieVals:sortedGlobal.map(([,g])=>g.plan), backgroundColor:[...actualBase], borderWidth:2, borderColor:'#fff', _baseColors:[...actualBase]}]},
+      options:{
+        responsive:true, cutout:'55%',
+        plugins:{
+          legend:{position:'bottom',labels:{boxWidth:11,font:{size:11}}},
+          tooltip:{callbacks:{label:i=>`${i.label}: ${fmt(i.raw)}`}},
+          title:{display:!pieHasData,text:'No actual costs yet — showing planned',font:{size:11}}
+        },
+        onClick:(evt,elements)=>{
+          if(!elements.length){pcHighlight(null);return;}
+          pcHighlight(catKeys[elements[0].index]);
+        }
+      }
+    });
+    _phaseCatChart._pcKeys=catKeys;
+    return;
+  }
   _phaseCatChart=new Chart(ctx,{
     type:'bar',
     data:{
@@ -4644,8 +4783,8 @@ function saveTask(){
   if(!name||!phaseId){alert('Name and phase are required.');return;}
   const id=Number(C('tk-id').value)||null;
   const _sts=C('tk-status').value; const _pidRaw=(C("tk-parent")||{}).value||null; const _pid=_pidRaw?Number(_pidRaw):null; const data={phaseId,name,start,end,status:_sts,assigneeIds:getTaskAssigneeIds(),notes:C('tk-notes').value.trim(),parentTaskId:_pid,spaceIds:getTaskSpaceIds()};
-  if(id){const idx=S.tasks.findIndex(t=>t.id===id);S.tasks[idx]={...S.tasks[idx],...data};}
-  else S.tasks.push({id:S.nextTaskId++,...data});
+  if(id){const idx=S.tasks.findIndex(t=>t.id===id);S.tasks[idx]={...S.tasks[idx],...data,updatedAt:Date.now()};}
+  else S.tasks.push({id:S.nextTaskId++,...data,updatedAt:Date.now()});
   const returnToPhase=C('tk-id').dataset.returnToPhase==='1';
   saveState(); closeModal('task');
   if(returnToPhase && C('ph-id').value) renderPhaseTaskList(C('ph-id').value);
@@ -5060,7 +5199,8 @@ function taskDrop(e, newStatus, colEl){
   const id=Number(e.dataTransfer.getData('text/plain'));
   const t=S.tasks.find(x=>x.id===id); if(!t) return;
   t.status=newStatus;
-  saveState(); renderTasksTab();
+  t.updatedAt=Date.now();
+  saveState(); renderTasksTab(); renderRecentTasks();
 }
 
 function closeModal(t){ C(t+'-overlay').classList.remove('open'); }
