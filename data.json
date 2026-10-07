@@ -6501,7 +6501,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791379303779,
+  "_savedAt": 1791379307918,
   "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 306,
@@ -6874,7 +6874,7 @@
       "number": "2.3",
       "start": "",
       "end": "",
-      "status": "planned",
+      "status": "in-progress",
       "color": "#FDBA74",
       "notes": "",
       "budget": 1000
