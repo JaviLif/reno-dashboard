@@ -5869,6 +5869,61 @@
       "spaceIds": []
     },
     {
+      "id": 56,
+      "phaseId": 32,
+      "name": "Helpers. To carve chanel on the wall for cables",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
+      "id": 57,
+      "phaseId": 73,
+      "name": "Helpers. Remove remaining wooden frame of attic",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": 58,
+      "phaseId": 67,
+      "name": "Helpers. Remove paper wall all rooms",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        14
+      ]
+    },
+    {
+      "id": 59,
+      "phaseId": 80,
+      "name": "Install double beam underconstruction ceiling on window area",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        14
+      ]
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -6435,7 +6490,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 56,
+  "nextTaskId": 60,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6446,7 +6501,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791318332349,
+  "_savedAt": 1791350504195,
   "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 306,
