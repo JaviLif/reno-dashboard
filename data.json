@@ -569,14 +569,15 @@
           "unitPrice": 255,
           "date": "",
           "notes": "",
-          "link": "https://www.sanitino.nl/geberit-duofix-voorwandinstallatie-voor-hangende-toiletten-hoogte-98-cm-111-030-00-2?utm_source=GooglePlatformy&utm_medium=Search&utm_campaign=GoogleMerchant&utm_source=google&utm_medium=cpc&utm_campaign=PER_PMAX_MIX_NL~TOP&utm_id=22851865572&gad_source=1&gad_campaignid=22851868527&gbraid=0AAAAAC6fs7JMP_bJ5SQf6EOBjFcj-U6Ay&gclid=Cj0KCQjwzsjVBhC3ARIsALnMv4memVe9BPbXvjZWtmrfQkzg86tF9MPplIFO2-ZVGO6WBNqtQPuSqDcaAtjOEALw_wcB",
+          "link": "https://www.shkshop.com/nl-nl/geberit-duofix-element-voor-wandcloset-82cm-met-omega-inbouwreservoir-12cm::1965.html?utm_source=google_nl&utm_campaign=standard_traffic_google_nl_no_discount&gad_source=1&gad_campaignid=17190430304&gbraid=0AAAAAD6KYLC4YAe7O0OkvdUTKc-twtVsk&gclid=CjwKCAjwoaLWBhAWEiwAnyitu94uvOhbzhMX5-cz0Sdj7L-2dxzcJZqN79fSgr2_z4vtr5QI97XLYRoC9h8QAvD_BwE",
           "chosen": true,
           "documents": []
         }
       ],
       "orders": [],
       "documents": [],
-      "status": "not-ordered"
+      "status": "not-ordered",
+      "updatedAt": 1791556141417
     },
     {
       "id": 291,
@@ -6502,7 +6503,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791546349868,
+  "_savedAt": 1791556141417,
   "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 306,
