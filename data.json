@@ -566,7 +566,7 @@
         {
           "id": 183,
           "name": "Geberit Duofix Omega inbouwspoelreservoir",
-          "unitPrice": 255,
+          "unitPrice": 274,
           "date": "",
           "notes": "",
           "link": "https://www.shkshop.com/nl-nl/geberit-duofix-element-voor-wandcloset-82cm-met-omega-inbouwreservoir-12cm::1965.html?utm_source=google_nl&utm_campaign=standard_traffic_google_nl_no_discount&gad_source=1&gad_campaignid=17190430304&gbraid=0AAAAAD6KYLC4YAe7O0OkvdUTKc-twtVsk&gclid=CjwKCAjwoaLWBhAWEiwAnyitu94uvOhbzhMX5-cz0Sdj7L-2dxzcJZqN79fSgr2_z4vtr5QI97XLYRoC9h8QAvD_BwE",
@@ -577,7 +577,7 @@
       "orders": [],
       "documents": [],
       "status": "not-ordered",
-      "updatedAt": 1791556141417
+      "updatedAt": 1791556144729
     },
     {
       "id": 291,
@@ -6503,7 +6503,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791556141417,
+  "_savedAt": 1791556144729,
   "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 306,
