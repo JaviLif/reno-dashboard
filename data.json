@@ -58,7 +58,7 @@
       "id": 306,
       "phaseId": 70,
       "categoryId": 3,
-      "name": "",
+      "name": "Vloerverwarming Elektrisch",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791614876013
+      "updatedAt": 1791614885934
     },
     {
       "id": 305,
@@ -6518,7 +6518,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791614876013,
+  "_savedAt": 1791614885934,
   "nextOrderId": 68,
   "nextQuoteId": 200,
   "nextItemId": 307,
