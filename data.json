@@ -71,12 +71,13 @@
           "unitPrice": 130,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://benem.nl/lovak-vloerverwarming-elektrisch.html?utm_campaign=&utm_content=&utm_source=google_shopping&utm_medium=organic&utm_term=&gad_source=1&gad_campaignid=20390047131&gbraid=0AAAAADDxxwCZ-vC_NKF1PuI3SZ5GP3Q7b&gclid=CjwKCAjwoaLWBhAWEiwAnyitu75481cE6hrZ3pDt3UA2CfVIjFHd-HBk4_7r4MZyTwz20qbEi0ZG5RoCh-0QAvD_BwE#250=1791&433=2031"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791614899433
+      "updatedAt": 1791614905496
     },
     {
       "id": 305,
@@ -6527,7 +6528,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791614899433,
+  "_savedAt": 1791614905496,
   "nextOrderId": 68,
   "nextQuoteId": 202,
   "nextItemId": 307,
