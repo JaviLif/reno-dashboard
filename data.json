@@ -6002,6 +6002,21 @@
       "updatedAt": 1791748044407
     },
     {
+      "id": 61,
+      "phaseId": 32,
+      "name": "Choose plugs and switches",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        4
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791748076732
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -6569,7 +6584,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 61,
+  "nextTaskId": 62,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6580,7 +6595,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791748044407,
+  "_savedAt": 1791748076732,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
