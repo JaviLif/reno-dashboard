@@ -631,7 +631,7 @@
         },
         {
           "id": 203,
-          "name": "",
+          "name": "bol.com",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -643,7 +643,7 @@
       "orders": [],
       "documents": [],
       "status": "not-ordered",
-      "updatedAt": 1791740317691
+      "updatedAt": 1791740322248
     },
     {
       "id": 291,
@@ -6544,7 +6544,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791740317691,
+  "_savedAt": 1791740322248,
   "nextOrderId": 69,
   "nextQuoteId": 204,
   "nextItemId": 307,
