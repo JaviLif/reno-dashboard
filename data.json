@@ -6640,9 +6640,22 @@
         7
       ],
       "updatedAt": 1791751943699
+    },
+    {
+      "id": 64,
+      "phaseId": 70,
+      "name": "Cjexk position ventilation duct bathroom",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791752868334
     }
   ],
-  "nextTaskId": 64,
+  "nextTaskId": 65,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6653,7 +6666,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791752811750,
+  "_savedAt": 1791752868334,
   "nextOrderId": 70,
   "nextQuoteId": 205,
   "nextItemId": 308,
