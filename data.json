@@ -61,7 +61,7 @@
       "name": "Ventil",
       "description": "Bathroom",
       "link": "",
-      "qty": 1,
+      "qty": 2,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -76,7 +76,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791752706717
+      "updatedAt": 1791752712113
     },
     {
       "id": 306,
@@ -6652,7 +6652,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791752706717,
+  "_savedAt": 1791752712113,
   "nextOrderId": 70,
   "nextQuoteId": 205,
   "nextItemId": 308,
