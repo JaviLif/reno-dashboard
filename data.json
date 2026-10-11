@@ -6598,9 +6598,26 @@
       "parentTaskId": null,
       "spaceIds": [],
       "updatedAt": 1791751865401
+    },
+    {
+      "id": 63,
+      "phaseId": 70,
+      "name": "Oposite wall shower. Make it straight",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791751943699
     }
   ],
-  "nextTaskId": 63,
+  "nextTaskId": 64,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6611,7 +6628,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791751873477,
+  "_savedAt": 1791751943699,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
