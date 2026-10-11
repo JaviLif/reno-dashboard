@@ -6017,21 +6017,6 @@
       "updatedAt": 1791748076732
     },
     {
-      "id": 62,
-      "phaseId": 73,
-      "name": "Renove toilette wall",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [
-        12
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791751862517
-    },
-    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -6597,6 +6582,21 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 62,
+      "phaseId": 73,
+      "name": "Renove toilette wall",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [
+        12
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791751865401
     }
   ],
   "nextTaskId": 63,
@@ -6610,7 +6610,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791751862517,
+  "_savedAt": 1791751865401,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
