@@ -4659,34 +4659,6 @@
       "qty": 1
     },
     {
-      "status": "not-ordered",
-      "link": "",
-      "unit": "m∩┐╜",
-      "phaseId": 70,
-      "id": 126,
-      "description": "Jabo Gobi Nude 60x60cm ΓÇö 20 sqm",
-      "documents": [],
-      "qty": 20,
-      "categoryId": 3,
-      "orders": [],
-      "quotes": [
-        {
-          "id": 28,
-          "notes": "",
-          "unitPrice": 50,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "https://sanitairkamer.nl/jabo-gobi-nude-vloertegel-60x60cm-gerectificeerd-jb12440-4.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "notes": "",
-      "name": "Tiles (Bathroom)"
-    },
-    {
       "name": "Toilette",
       "notes": "",
       "qty": 2,
@@ -6552,7 +6524,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791738122502,
+  "_savedAt": 1791738131953,
   "nextOrderId": 69,
   "nextQuoteId": 202,
   "nextItemId": 307,
