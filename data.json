@@ -71,12 +71,13 @@
           "unitPrice": 90,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.ventilatieshop.com/pradovent-ventiel-toevoer-afvoer-o-125mm/?yg_src=google&yg_mdm=cpc&yg_cpn=%5BNL%5D%20PMax%20-%20Heroes&yg_nmr=18056148192&yg_gc=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE&gad_source=1&gad_campaignid=17335708722&gclid=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791752712113
+      "updatedAt": 1791752811750
     },
     {
       "id": 306,
@@ -6652,7 +6653,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791752712113,
+  "_savedAt": 1791752811750,
   "nextOrderId": 70,
   "nextQuoteId": 205,
   "nextItemId": 308,
