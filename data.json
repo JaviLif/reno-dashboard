@@ -634,7 +634,7 @@
           "name": "bol.com",
           "unitPrice": 306.72,
           "date": "",
-          "notes": "",
+          "notes": "+ Ibouwscrews ",
           "link": "",
           "chosen": false,
           "documents": []
@@ -643,7 +643,7 @@
       "orders": [],
       "documents": [],
       "status": "not-ordered",
-      "updatedAt": 1791740327998
+      "updatedAt": 1791740340773
     },
     {
       "id": 291,
@@ -6544,7 +6544,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791740327998,
+  "_savedAt": 1791740340773,
   "nextOrderId": 69,
   "nextQuoteId": 204,
   "nextItemId": 307,
