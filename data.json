@@ -59,7 +59,7 @@
       "phaseId": 65,
       "categoryId": null,
       "name": "Ventil",
-      "description": "",
+      "description": "Bathroom",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791752673194
+      "updatedAt": 1791752676452
     },
     {
       "id": 306,
@@ -6643,7 +6643,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791752673194,
+  "_savedAt": 1791752676452,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 308,
