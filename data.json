@@ -655,11 +655,12 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
-      "status": "not-ordered",
+      "status": "ordered",
       "updatedAt": 1791740345907
     },
     {
@@ -6058,6 +6059,21 @@
       "kanbanOrder": 0
     },
     {
+      "id": 25,
+      "phaseId": 31,
+      "name": "Install ceiling isolation",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 0,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791747986887
+    },
+    {
       "name": "Bath: Removing Wall",
       "notes": "",
       "id": 6,
@@ -6534,20 +6550,6 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": []
-    },
-    {
-      "id": 25,
-      "phaseId": 31,
-      "name": "Install ceiling isolation",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 0,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
     }
   ],
   "nextTaskId": 60,
@@ -6561,7 +6563,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791740436745,
+  "_savedAt": 1791747986887,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
