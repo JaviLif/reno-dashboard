@@ -6608,7 +6608,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791751810928,
+  "_savedAt": 1791751820934,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
@@ -7090,9 +7090,15 @@
       "name": "Rani",
       "role": "",
       "color": "#1ac745"
+    },
+    {
+      "id": 12,
+      "name": "Laura",
+      "role": "",
+      "color": "#10b981"
     }
   ],
-  "nextPersonId": 12,
+  "nextPersonId": 13,
   "bomUiPrefs": {
     "colOrder": [
       "link",
