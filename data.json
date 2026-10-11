@@ -5985,6 +5985,23 @@
       ]
     },
     {
+      "id": 60,
+      "phaseId": 70,
+      "name": "Check for toilet and toilet buttons",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [
+        4
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791748044407
+    },
+    {
       "id": 29,
       "phaseId": 74,
       "name": "Build extension for bathroom",
@@ -6552,7 +6569,7 @@
       "spaceIds": []
     }
   ],
-  "nextTaskId": 60,
+  "nextTaskId": 61,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6563,7 +6580,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791747986887,
+  "_savedAt": 1791748044407,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
