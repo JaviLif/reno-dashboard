@@ -6034,18 +6034,6 @@
       ]
     },
     {
-      "id": 54,
-      "phaseId": 65,
-      "name": "Repair air vent toilet",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6584,6 +6572,19 @@
       "spaceIds": []
     },
     {
+      "id": 54,
+      "phaseId": 65,
+      "name": "Repair air vent toilet",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791751873477
+    },
+    {
       "id": 62,
       "phaseId": 73,
       "name": "Renove toilette wall",
@@ -6610,7 +6611,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791751865401,
+  "_savedAt": 1791751873477,
   "nextOrderId": 70,
   "nextQuoteId": 204,
   "nextItemId": 307,
