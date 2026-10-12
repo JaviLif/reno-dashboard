@@ -71,12 +71,13 @@
           "unitPrice": 67.95,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.bol.com/nl/p/-/9200000128652573?Referrer=ENTcli_order_confirmation_01a12747-093d-7c7d-92df-7a5e867122aa&language=nl"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791803795911
+      "updatedAt": 1791803805498
     },
     {
       "id": 307,
@@ -6693,7 +6694,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791803795911,
+  "_savedAt": 1791803805498,
   "nextOrderId": 70,
   "nextQuoteId": 206,
   "nextItemId": 309,
