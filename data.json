@@ -2855,7 +2855,7 @@
           "supplier": "DeVentilatieKonig",
           "poNumber": "",
           "orderDate": "",
-          "unitPrice": 703,
+          "unitPrice": 203,
           "qtyOrdered": 1,
           "status": "returned",
           "qtyDelivered": 0,
@@ -2879,7 +2879,7 @@
         }
       ],
       "status": "returned",
-      "updatedAt": 1791546313493
+      "updatedAt": 1791803626305
     },
     {
       "id": 231,
@@ -6669,7 +6669,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791803539484,
+  "_savedAt": 1791803626305,
   "nextOrderId": 70,
   "nextQuoteId": 205,
   "nextItemId": 308,
