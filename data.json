@@ -55,6 +55,21 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 310,
+      "phaseId": 62,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1791804038074
+    },
+    {
       "id": 309,
       "phaseId": 81,
       "categoryId": 1,
@@ -71,7 +86,10 @@
           "unitPrice": 30,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,11 +107,13 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
-      "updatedAt": 1791803880163
+      "updatedAt": 1791803880163,
+      "status": "ordered"
     },
     {
       "id": 308,
@@ -114,7 +134,8 @@
           "notes": "",
           "chosen": true,
           "link": "https://www.bol.com/nl/p/-/9200000128652573?Referrer=ENTcli_order_confirmation_01a12747-093d-7c7d-92df-7a5e867122aa&language=nl",
-          "name": "bol.com"
+          "name": "bol.com",
+          "documents": []
         }
       ],
       "orders": [
@@ -132,11 +153,13 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
-      "updatedAt": 1791803822585
+      "updatedAt": 1791803822585,
+      "status": "ordered"
     },
     {
       "id": 307,
@@ -6753,10 +6776,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791803880163,
+  "_savedAt": 1791804038074,
   "nextOrderId": 72,
   "nextQuoteId": 207,
-  "nextItemId": 310,
+  "nextItemId": 311,
   "_version": "dashboard-v1",
   "phases": [
     {
