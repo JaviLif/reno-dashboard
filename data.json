@@ -71,7 +71,10 @@
           "unitPrice": 28.19,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -1094,7 +1098,7 @@
       "id": 285,
       "phaseId": 70,
       "categoryId": 3,
-      "name": "Qboards XPS Wall and Floor Bathroom",
+      "name": "Hornbach Materials",
       "description": "",
       "link": "",
       "qty": 6,
@@ -1133,7 +1137,8 @@
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "delivered",
+      "updatedAt": 1791834888972
     },
     {
       "id": 283,
@@ -6803,7 +6808,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791804062364,
+  "_savedAt": 1791834888972,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
