@@ -72,12 +72,15 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.ventilatieshop.com/pradovent-ventiel-toevoer-afvoer-o-125mm/?yg_src=google&yg_mdm=cpc&yg_cpn=%5BNL%5D%20PMax%20-%20Heroes&yg_nmr=18056148192&yg_gc=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE&gad_source=1&gad_campaignid=17335708722&gclid=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE"
+          "link": "https://www.ventilatieshop.com/pradovent-ventiel-toevoer-afvoer-o-125mm/?yg_src=google&yg_mdm=cpc&yg_cpn=%5BNL%5D%20PMax%20-%20Heroes&yg_nmr=18056148192&yg_gc=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE&gad_source=1&gad_campaignid=17335708722&gclid=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791752811750
+      "updatedAt": 1791752811750,
+      "status": "not-ordered"
     },
     {
       "id": 306,
@@ -626,7 +629,7 @@
     {
       "id": 292,
       "phaseId": 70,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Inbouwreservoir",
       "description": "",
       "link": "",
@@ -686,7 +689,7 @@
       ],
       "documents": [],
       "status": "ordered",
-      "updatedAt": 1791740345907
+      "updatedAt": 1791787919629
     },
     {
       "id": 291,
@@ -6666,7 +6669,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791752868334,
+  "_savedAt": 1791787919629,
   "nextOrderId": 70,
   "nextQuoteId": 205,
   "nextItemId": 308,
