@@ -1101,7 +1101,7 @@
       "name": "Hornbach Materials",
       "description": "",
       "link": "",
-      "qty": 6,
+      "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -1138,7 +1138,7 @@
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1791834888972
+      "updatedAt": 1791834897120
     },
     {
       "id": 283,
@@ -6808,7 +6808,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791834888972,
+  "_savedAt": 1791834897120,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
