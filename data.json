@@ -59,7 +59,7 @@
       "phaseId": 62,
       "categoryId": null,
       "name": "Hornbach",
-      "description": "",
+      "description": "Tool",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791804041930
+      "updatedAt": 1791804043913
     },
     {
       "id": 309,
@@ -6776,7 +6776,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791804041930,
+  "_savedAt": 1791804043913,
   "nextOrderId": 72,
   "nextQuoteId": 207,
   "nextItemId": 311,
