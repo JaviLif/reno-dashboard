@@ -72,12 +72,13 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.bol.com/nl/p/-/9200000128652573?Referrer=ENTcli_order_confirmation_01a12747-093d-7c7d-92df-7a5e867122aa&language=nl"
+          "link": "https://www.bol.com/nl/p/-/9200000128652573?Referrer=ENTcli_order_confirmation_01a12747-093d-7c7d-92df-7a5e867122aa&language=nl",
+          "name": "bol.com"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1791803805498
+      "updatedAt": 1791803809748
     },
     {
       "id": 307,
@@ -6694,7 +6695,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791803805498,
+  "_savedAt": 1791803809748,
   "nextOrderId": 70,
   "nextQuoteId": 206,
   "nextItemId": 309,
