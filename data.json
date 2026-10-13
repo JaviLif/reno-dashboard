@@ -6826,9 +6826,24 @@
       "parentTaskId": null,
       "spaceIds": [],
       "updatedAt": 1791920509563
+    },
+    {
+      "id": 67,
+      "phaseId": 70,
+      "name": "Install qboard plates",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923425445
     }
   ],
-  "nextTaskId": 67,
+  "nextTaskId": 68,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6839,7 +6854,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923384594,
+  "_savedAt": 1791923425445,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
