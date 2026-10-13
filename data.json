@@ -6813,9 +6813,22 @@
         7
       ],
       "updatedAt": 1791896184583
+    },
+    {
+      "id": 66,
+      "phaseId": 78,
+      "name": "Bitumen video corners",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "https://m.youtube.com/watch?v=Z1Pl0EDysws",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791920509563
     }
   ],
-  "nextTaskId": 66,
+  "nextTaskId": 67,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6826,7 +6839,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791896184583,
+  "_savedAt": 1791920509563,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
