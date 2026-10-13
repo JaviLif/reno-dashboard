@@ -6891,9 +6891,24 @@
         12
       ],
       "updatedAt": 1791923572341
+    },
+    {
+      "id": 71,
+      "phaseId": 70,
+      "name": "Make carves for electricity in bathroom",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923613723
     }
   ],
-  "nextTaskId": 71,
+  "nextTaskId": 72,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6904,7 +6919,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923572341,
+  "_savedAt": 1791923613723,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
