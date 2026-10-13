@@ -6909,9 +6909,24 @@
       ],
       "updatedAt": 1791923572341,
       "kanbanOrder": 70
+    },
+    {
+      "id": 72,
+      "phaseId": 70,
+      "name": "Fill gap of corner wall and floor entrance with morter",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923711112
     }
   ],
-  "nextTaskId": 72,
+  "nextTaskId": 73,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6922,7 +6937,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923638309,
+  "_savedAt": 1791923711112,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
