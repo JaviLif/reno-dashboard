@@ -6185,23 +6185,6 @@
       "updatedAt": 1791748076732
     },
     {
-      "id": 63,
-      "phaseId": 70,
-      "name": "Oposite wall shower. Make it straight",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [
-        3
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923358874
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6672,6 +6655,23 @@
       "updatedAt": 1791751865401
     },
     {
+      "id": 63,
+      "phaseId": 70,
+      "name": "Oposite wall shower. Make it straight",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923358874
+    },
+    {
       "id": 21,
       "phaseId": 73,
       "name": "Remove existing Floors Lower Floor",
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923912856,
+  "_savedAt": 1791923926403,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
