@@ -6796,9 +6796,26 @@
       "parentTaskId": null,
       "spaceIds": [],
       "updatedAt": 1791752868334
+    },
+    {
+      "id": 65,
+      "phaseId": 70,
+      "name": "Create wooden structure for cent pipe and toilet",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791896184583
     }
   ],
-  "nextTaskId": 65,
+  "nextTaskId": 66,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6809,7 +6826,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791896140534,
+  "_savedAt": 1791896184583,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
