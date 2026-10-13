@@ -6841,9 +6841,24 @@
         7
       ],
       "updatedAt": 1791923425445
+    },
+    {
+      "id": 68,
+      "phaseId": 70,
+      "name": "Install toilet",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923463703
     }
   ],
-  "nextTaskId": 68,
+  "nextTaskId": 69,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6854,7 +6869,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923425445,
+  "_savedAt": 1791923463703,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
