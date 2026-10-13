@@ -6615,6 +6615,19 @@
       "spaceIds": []
     },
     {
+      "id": 54,
+      "phaseId": 65,
+      "name": "Repair air vent toilet",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791923341172
+    },
+    {
       "id": 55,
       "phaseId": 78,
       "name": "Install frame skylight ceiling",
@@ -6755,19 +6768,6 @@
       "spaceIds": []
     },
     {
-      "id": 54,
-      "phaseId": 65,
-      "name": "Repair air vent toilet",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791923341172
-    },
-    {
       "id": 63,
       "phaseId": 70,
       "name": "Oposite wall shower. Make it straight",
@@ -6839,7 +6839,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923345583,
+  "_savedAt": 1791923351252,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
