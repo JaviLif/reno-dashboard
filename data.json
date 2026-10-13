@@ -6861,9 +6861,24 @@
       "spaceIds": [],
       "updatedAt": 1791923497077,
       "kanbanOrder": 40
+    },
+    {
+      "id": 69,
+      "phaseId": 33,
+      "name": "Install shower sink",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923538206
     }
   ],
-  "nextTaskId": 69,
+  "nextTaskId": 70,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6874,7 +6889,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923502928,
+  "_savedAt": 1791923538206,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
