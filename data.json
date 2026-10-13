@@ -6799,22 +6799,6 @@
       "kanbanOrder": 0
     },
     {
-      "id": 68,
-      "phaseId": 70,
-      "name": "Install toilet",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923463703,
-      "kanbanOrder": 10
-    },
-    {
       "id": 72,
       "phaseId": 70,
       "name": "Fill gap of corner wall, chimeney and floor entrance with morter",
@@ -6828,6 +6812,22 @@
         7
       ],
       "updatedAt": 1791923903228,
+      "kanbanOrder": 10
+    },
+    {
+      "id": 68,
+      "phaseId": 70,
+      "name": "Install toilet",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923463703,
       "kanbanOrder": 20
     },
     {
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923903228,
+  "_savedAt": 1791923912856,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
