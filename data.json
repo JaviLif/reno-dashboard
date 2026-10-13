@@ -6185,6 +6185,20 @@
       "updatedAt": 1791748076732
     },
     {
+      "id": 64,
+      "phaseId": 70,
+      "name": "Cjexk position ventilation duct bathroom",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791923930672,
+      "kanbanOrder": 0
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6785,20 +6799,6 @@
       "spaceIds": []
     },
     {
-      "id": 64,
-      "phaseId": 70,
-      "name": "Cjexk position ventilation duct bathroom",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791752868334,
-      "kanbanOrder": 0
-    },
-    {
       "id": 72,
       "phaseId": 70,
       "name": "Fill gap of corner wall, chimeney and floor entrance with morter",
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923926403,
+  "_savedAt": 1791923930672,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
