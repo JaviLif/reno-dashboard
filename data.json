@@ -6627,6 +6627,21 @@
       "spaceIds": []
     },
     {
+      "id": 62,
+      "phaseId": 73,
+      "name": "Renove toilette wall",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [
+        12
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791751865401
+    },
+    {
       "id": 21,
       "phaseId": 73,
       "name": "Remove existing Floors Lower Floor",
@@ -6753,21 +6768,6 @@
       "updatedAt": 1791751873477
     },
     {
-      "id": 62,
-      "phaseId": 73,
-      "name": "Renove toilette wall",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [
-        12
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791751865401
-    },
-    {
       "id": 63,
       "phaseId": 70,
       "name": "Oposite wall shower. Make it straight",
@@ -6809,7 +6809,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791834984342,
+  "_savedAt": 1791896140534,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
