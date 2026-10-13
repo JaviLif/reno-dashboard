@@ -6185,23 +6185,6 @@
       "updatedAt": 1791748076732
     },
     {
-      "id": 29,
-      "phaseId": 74,
-      "name": "Build extension for bathroom",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [],
-      "notes": "",
-      "kanbanOrder": 20,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6275,6 +6258,23 @@
       "status": "completed",
       "kanbanOrder": 10,
       "assigneeIds": [],
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": 29,
+      "phaseId": 74,
+      "name": "Build extension for bathroom",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "kanbanOrder": 20,
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": [
@@ -6839,7 +6839,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923341172,
+  "_savedAt": 1791923345583,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
