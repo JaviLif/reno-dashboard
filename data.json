@@ -6185,6 +6185,23 @@
       "updatedAt": 1791748076732
     },
     {
+      "id": 63,
+      "phaseId": 70,
+      "name": "Oposite wall shower. Make it straight",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [
+        3
+      ],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923358874
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6768,23 +6785,6 @@
       "spaceIds": []
     },
     {
-      "id": 63,
-      "phaseId": 70,
-      "name": "Oposite wall shower. Make it straight",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [
-        3
-      ],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791751943699
-    },
-    {
       "id": 64,
       "phaseId": 70,
       "name": "Cjexk position ventilation duct bathroom",
@@ -6839,7 +6839,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923351252,
+  "_savedAt": 1791923358874,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
