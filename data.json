@@ -6815,6 +6815,22 @@
       "kanbanOrder": 10
     },
     {
+      "id": 72,
+      "phaseId": 70,
+      "name": "Fill gap of corner wall and floor entrance with morter",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923711112,
+      "kanbanOrder": 20
+    },
+    {
       "id": 65,
       "phaseId": 70,
       "name": "Create wooden structure for vent pipe and toilet",
@@ -6830,7 +6846,7 @@
         7
       ],
       "updatedAt": 1791923384594,
-      "kanbanOrder": 20
+      "kanbanOrder": 30
     },
     {
       "id": 71,
@@ -6846,7 +6862,7 @@
         7
       ],
       "updatedAt": 1791923613723,
-      "kanbanOrder": 30
+      "kanbanOrder": 40
     },
     {
       "id": 67,
@@ -6862,7 +6878,7 @@
         7
       ],
       "updatedAt": 1791923425445,
-      "kanbanOrder": 40
+      "kanbanOrder": 50
     },
     {
       "id": 66,
@@ -6876,7 +6892,7 @@
       "parentTaskId": null,
       "spaceIds": [],
       "updatedAt": 1791923497077,
-      "kanbanOrder": 50
+      "kanbanOrder": 60
     },
     {
       "id": 69,
@@ -6892,7 +6908,7 @@
         7
       ],
       "updatedAt": 1791923538206,
-      "kanbanOrder": 60
+      "kanbanOrder": 70
     },
     {
       "id": 70,
@@ -6908,22 +6924,7 @@
         12
       ],
       "updatedAt": 1791923572341,
-      "kanbanOrder": 70
-    },
-    {
-      "id": 72,
-      "phaseId": 70,
-      "name": "Fill gap of corner wall and floor entrance with morter",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923711112
+      "kanbanOrder": 80
     }
   ],
   "nextTaskId": 73,
@@ -6937,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923711112,
+  "_savedAt": 1791923723856,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
