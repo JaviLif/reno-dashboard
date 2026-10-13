@@ -6833,20 +6833,6 @@
       "kanbanOrder": 20
     },
     {
-      "id": 66,
-      "phaseId": 78,
-      "name": "Bitumen video corners",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "https://m.youtube.com/watch?v=Z1Pl0EDysws",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791923497077,
-      "kanbanOrder": 30
-    },
-    {
       "id": 67,
       "phaseId": 70,
       "name": "Install qboard plates",
@@ -6860,6 +6846,20 @@
         7
       ],
       "updatedAt": 1791923425445,
+      "kanbanOrder": 30
+    },
+    {
+      "id": 66,
+      "phaseId": 78,
+      "name": "Bitumen video corners",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "https://m.youtube.com/watch?v=Z1Pl0EDysws",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791923497077,
       "kanbanOrder": 40
     }
   ],
@@ -6874,7 +6874,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1791923497077,
+  "_savedAt": 1791923502928,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
