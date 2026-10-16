@@ -6199,6 +6199,22 @@
       "kanbanOrder": 0
     },
     {
+      "id": 67,
+      "phaseId": 70,
+      "name": "Install qboard plates",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792166609313,
+      "kanbanOrder": 50
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6865,22 +6881,6 @@
       "kanbanOrder": 40
     },
     {
-      "id": 67,
-      "phaseId": 70,
-      "name": "Install qboard plates",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923425445,
-      "kanbanOrder": 50
-    },
-    {
       "id": 66,
       "phaseId": 78,
       "name": "Bitumen video corners",
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792166605341,
+  "_savedAt": 1792166609313,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
