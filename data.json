@@ -6326,6 +6326,22 @@
       "kanbanOrder": 20
     },
     {
+      "id": 68,
+      "phaseId": 70,
+      "name": "Install toilet",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792148863656,
+      "kanbanOrder": 20
+    },
+    {
       "id": 27,
       "phaseId": 73,
       "name": "CHECK: Removal chimeney",
@@ -6815,22 +6831,6 @@
       "spaceIds": []
     },
     {
-      "id": 68,
-      "phaseId": 70,
-      "name": "Install toilet",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923463703,
-      "kanbanOrder": 20
-    },
-    {
       "id": 65,
       "phaseId": 70,
       "name": "Create wooden structure for vent pipe and toilet",
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792088561036,
+  "_savedAt": 1792148863656,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
