@@ -6199,22 +6199,6 @@
       "kanbanOrder": 0
     },
     {
-      "id": 67,
-      "phaseId": 70,
-      "name": "Install qboard plates",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1792166609313,
-      "kanbanOrder": 50
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6489,6 +6473,22 @@
       "notes": "",
       "parentTaskId": null,
       "spaceIds": [],
+      "kanbanOrder": 50
+    },
+    {
+      "id": 67,
+      "phaseId": 70,
+      "name": "Install qboard plates",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792166609313,
       "kanbanOrder": 50
     },
     {
@@ -6938,7 +6938,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792166609313,
+  "_savedAt": 1792327101914,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
