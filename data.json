@@ -6940,9 +6940,24 @@
       ],
       "updatedAt": 1791923572341,
       "kanbanOrder": 80
+    },
+    {
+      "id": 74,
+      "phaseId": 80,
+      "name": "Install reinforcemwnt beams for skylight",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        14
+      ],
+      "updatedAt": 1792327174215
     }
   ],
-  "nextTaskId": 74,
+  "nextTaskId": 75,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6953,7 +6968,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792327131759,
+  "_savedAt": 1792327174215,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
