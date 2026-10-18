@@ -6955,9 +6955,24 @@
         14
       ],
       "updatedAt": 1792327174215
+    },
+    {
+      "id": 75,
+      "phaseId": 70,
+      "name": "Cut beams 2.5degreee for shower floor",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792327827807
     }
   ],
-  "nextTaskId": 75,
+  "nextTaskId": 76,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6968,7 +6983,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792327183733,
+  "_savedAt": 1792327827807,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
