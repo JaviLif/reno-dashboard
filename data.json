@@ -6185,6 +6185,21 @@
       "updatedAt": 1791748076732
     },
     {
+      "id": 73,
+      "phaseId": 70,
+      "name": "Install floor shower",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792327131759
+    },
+    {
       "id": 64,
       "phaseId": 70,
       "name": "Cjexk position ventilation duct bathroom",
@@ -6927,7 +6942,7 @@
       "kanbanOrder": 80
     }
   ],
-  "nextTaskId": 73,
+  "nextTaskId": 74,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -6938,7 +6953,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792327101914,
+  "_savedAt": 1792327131759,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 311,
