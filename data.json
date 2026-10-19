@@ -71,12 +71,13 @@
           "unitPrice": 170.63,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "name": "Elektramat"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792423466750
+      "updatedAt": 1792423478135
     },
     {
       "id": 310,
@@ -7007,7 +7008,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792423466750,
+  "_savedAt": 1792423478135,
   "nextOrderId": 73,
   "nextQuoteId": 209,
   "nextItemId": 312,
