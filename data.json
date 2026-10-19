@@ -59,15 +59,24 @@
       "phaseId": 32,
       "categoryId": null,
       "name": "Wireless Schakelaar diemmer",
-      "description": "",
+      "description": "Shhelly Dimmer",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 210,
+          "supplier": "",
+          "unitPrice": 29,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792434157894
+      "updatedAt": 1792434167387
     },
     {
       "id": 311,
@@ -7044,9 +7053,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792434157894,
+  "_savedAt": 1792434167387,
   "nextOrderId": 74,
-  "nextQuoteId": 210,
+  "nextQuoteId": 211,
   "nextItemId": 313,
   "_version": "dashboard-v1",
   "phases": [
