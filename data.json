@@ -71,12 +71,13 @@
           "unitPrice": 29,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.robbshop.nl/shelly-dimmer-gen3-wifi-bluetooth-2-pack"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792434167387
+      "updatedAt": 1792434174489
     },
     {
       "id": 311,
@@ -7053,7 +7054,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792434167387,
+  "_savedAt": 1792434174489,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
