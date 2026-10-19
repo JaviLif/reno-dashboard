@@ -58,7 +58,7 @@
       "id": 312,
       "phaseId": 32,
       "categoryId": null,
-      "name": "",
+      "name": "Wireless Schakelaar diemmer",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792434146501
+      "updatedAt": 1792434157894
     },
     {
       "id": 311,
@@ -7044,7 +7044,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792434146501,
+  "_savedAt": 1792434157894,
   "nextOrderId": 74,
   "nextQuoteId": 210,
   "nextItemId": 313,
