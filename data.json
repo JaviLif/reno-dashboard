@@ -73,21 +73,28 @@
           "notes": "",
           "chosen": true,
           "name": "Elektramat"
-        },
-        {
-          "id": 209,
-          "name": "",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "link": "",
-          "chosen": false,
-          "documents": []
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 73,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-10-19",
+          "unitPrice": 170.63,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1792423480479
+      "updatedAt": 1792423485389
     },
     {
       "id": 310,
@@ -7018,8 +7025,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792423480479,
-  "nextOrderId": 73,
+  "_savedAt": 1792423485389,
+  "nextOrderId": 74,
   "nextQuoteId": 210,
   "nextItemId": 312,
   "_version": "dashboard-v1",
