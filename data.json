@@ -58,7 +58,7 @@
       "id": 311,
       "phaseId": 32,
       "categoryId": null,
-      "name": "",
+      "name": "Cable ",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792423425478
+      "updatedAt": 1792423435637
     },
     {
       "id": 310,
@@ -6998,7 +6998,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792423425478,
+  "_savedAt": 1792423435638,
   "nextOrderId": 73,
   "nextQuoteId": 208,
   "nextItemId": 312,
