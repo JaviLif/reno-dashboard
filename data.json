@@ -55,6 +55,21 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 312,
+      "phaseId": 32,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1792434146501
+    },
+    {
       "id": 311,
       "phaseId": 32,
       "categoryId": 3,
@@ -72,7 +87,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "name": "Elektramat"
+          "name": "Elektramat",
+          "documents": [],
+          "link": ""
         }
       ],
       "orders": [
@@ -90,7 +107,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -7026,10 +7044,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792423500022,
+  "_savedAt": 1792434146501,
   "nextOrderId": 74,
   "nextQuoteId": 210,
-  "nextItemId": 312,
+  "nextItemId": 313,
   "_version": "dashboard-v1",
   "phases": [
     {
