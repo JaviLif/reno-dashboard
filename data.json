@@ -72,12 +72,15 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.robbshop.nl/shelly-dimmer-gen3-wifi-bluetooth-2-pack"
+          "link": "https://www.robbshop.nl/shelly-dimmer-gen3-wifi-bluetooth-2-pack",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1792434174489
+      "updatedAt": 1792434174489,
+      "status": "not-ordered"
     },
     {
       "id": 311,
@@ -7041,9 +7044,22 @@
         7
       ],
       "updatedAt": 1792327827807
+    },
+    {
+      "id": 76,
+      "phaseId": 32,
+      "name": "Make pics of everything before closing walls",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1792453305387
     }
   ],
-  "nextTaskId": 76,
+  "nextTaskId": 77,
   "project": {
     "address": "",
     "name": "HR Nido",
@@ -7054,7 +7070,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792434174489,
+  "_savedAt": 1792453305387,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
