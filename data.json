@@ -6290,6 +6290,22 @@
       "kanbanOrder": 0
     },
     {
+      "id": 71,
+      "phaseId": 70,
+      "name": "Make carves for electricity in bathroom",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792594892540,
+      "kanbanOrder": 40
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6956,22 +6972,6 @@
       "spaceIds": []
     },
     {
-      "id": 71,
-      "phaseId": 70,
-      "name": "Make carves for electricity in bathroom",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923613723,
-      "kanbanOrder": 40
-    },
-    {
       "id": 66,
       "phaseId": 78,
       "name": "Bitumen video corners",
@@ -7072,7 +7072,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792594600991,
+  "_savedAt": 1792594892540,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
