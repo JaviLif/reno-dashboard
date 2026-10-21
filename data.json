@@ -6306,6 +6306,19 @@
       "kanbanOrder": 40
     },
     {
+      "id": 76,
+      "phaseId": 32,
+      "name": "Make pics of everything before closing walls",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1792594903067
+    },
+    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -7046,19 +7059,6 @@
         7
       ],
       "updatedAt": 1792327827807
-    },
-    {
-      "id": 76,
-      "phaseId": 32,
-      "name": "Make pics of everything before closing walls",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1792453305387
     }
   ],
   "nextTaskId": 77,
@@ -7072,7 +7072,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792594892540,
+  "_savedAt": 1792594903067,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
