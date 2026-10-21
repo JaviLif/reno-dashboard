@@ -87,7 +87,7 @@
       "phaseId": 32,
       "categoryId": 3,
       "name": "Cable ",
-      "description": "",
+      "description": "Materials",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -125,7 +125,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1792423500022,
+      "updatedAt": 1792594543984,
       "status": "ordered"
     },
     {
@@ -7071,7 +7071,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792594527504,
+  "_savedAt": 1792594543984,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
