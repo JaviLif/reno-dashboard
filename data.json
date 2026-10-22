@@ -86,7 +86,7 @@
       "id": 311,
       "phaseId": 32,
       "categoryId": 3,
-      "name": "Cable ",
+      "name": "Elektra Materials",
       "description": "Materials",
       "link": "",
       "qty": 1,
@@ -125,7 +125,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1792594550672,
+      "updatedAt": 1792685459697,
       "status": "ordered",
       "spentOverride": 409.56
     },
@@ -7072,7 +7072,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792594903067,
+  "_savedAt": 1792685459697,
   "nextOrderId": 74,
   "nextQuoteId": 211,
   "nextItemId": 313,
