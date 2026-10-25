@@ -59,15 +59,32 @@
       "phaseId": 67,
       "categoryId": null,
       "name": "Materials",
-      "description": "",
+      "description": "Hornbach",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [],
-      "orders": [],
+      "orders": [
+        {
+          "id": 74,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-10-25",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1792958089726
+      "updatedAt": 1792958099407
     },
     {
       "id": 312,
@@ -7087,8 +7104,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792958089726,
-  "nextOrderId": 74,
+  "_savedAt": 1792958099407,
+  "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
   "_version": "dashboard-v1",
