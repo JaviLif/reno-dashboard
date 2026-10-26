@@ -6162,18 +6162,6 @@
       "spaceIds": []
     },
     {
-      "id": 56,
-      "phaseId": 32,
-      "name": "Helpers. To carve chanel on the wall for cables",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "id": 57,
       "phaseId": 73,
       "name": "Helpers. Remove remaining wooden frame of attic",
@@ -7069,6 +7057,19 @@
       "kanbanOrder": 80
     },
     {
+      "id": 56,
+      "phaseId": 32,
+      "name": "Helpers. To carve chanel on the wall for cables",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1793047157490
+    },
+    {
       "id": 74,
       "phaseId": 80,
       "name": "Install reinforcemwnt beams for skylight",
@@ -7110,7 +7111,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793047147114,
+  "_savedAt": 1793047157490,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
