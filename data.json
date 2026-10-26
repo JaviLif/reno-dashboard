@@ -6343,19 +6343,6 @@
       "kanbanOrder": 40
     },
     {
-      "id": 76,
-      "phaseId": 32,
-      "name": "Make pics of everything before closing walls",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1792594903067
-    },
-    {
       "id": 14,
       "phaseId": 73,
       "name": "Remove bath",
@@ -6909,6 +6896,19 @@
       "updatedAt": 1791923358874
     },
     {
+      "id": 76,
+      "phaseId": 32,
+      "name": "Make pics of everything before closing walls",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1792594903067
+    },
+    {
       "id": 21,
       "phaseId": 73,
       "name": "Remove existing Floors Lower Floor",
@@ -7109,7 +7109,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793047104299,
+  "_savedAt": 1793047111924,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
