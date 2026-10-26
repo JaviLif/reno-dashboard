@@ -6134,20 +6134,6 @@
       "kanbanOrder": 130
     },
     {
-      "id": 36,
-      "phaseId": 65,
-      "name": "Ventilation: Install Tubing INTERNAL  See notes",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 170
-    },
-    {
       "id": 39,
       "phaseId": 34,
       "name": "Intsall Piping fot HeatPump",
@@ -6622,6 +6608,21 @@
       "kanbanOrder": 50
     },
     {
+      "id": 21,
+      "phaseId": 73,
+      "name": "Remove existing Floors Lower Floor",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 50,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": []
+    },
+    {
       "end": null,
       "status": "completed",
       "assignee": "",
@@ -6909,21 +6910,6 @@
       "updatedAt": 1792594903067
     },
     {
-      "id": 21,
-      "phaseId": 73,
-      "name": "Remove existing Floors Lower Floor",
-      "start": "",
-      "end": "",
-      "status": "delayed",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 50,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": []
-    },
-    {
       "description": "Self Made",
       "notes": "",
       "id": 7,
@@ -6987,6 +6973,21 @@
       "subtasks": [],
       "parentTaskId": null,
       "spaceIds": []
+    },
+    {
+      "id": 36,
+      "phaseId": 65,
+      "name": "Ventilation: Install Tubing INTERNAL  See notes",
+      "start": "",
+      "end": "",
+      "status": "delayed",
+      "assigneeIds": [],
+      "notes": "Extraction: Bath, Toilet, kitchen\nSupply;  Room 1,2,3, Living Room, + Office",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 170,
+      "updatedAt": 1793047147114
     },
     {
       "end": "",
@@ -7109,7 +7110,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793047124508,
+  "_savedAt": 1793047147114,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
