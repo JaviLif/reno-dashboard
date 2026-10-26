@@ -6162,38 +6162,9 @@
       "spaceIds": []
     },
     {
-      "id": 57,
-      "phaseId": 73,
-      "name": "Helpers. Remove remaining wooden frame of attic",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7
-      ]
-    },
-    {
       "id": 58,
       "phaseId": 67,
       "name": "Helpers. Remove paper wall all rooms",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        14
-      ]
-    },
-    {
-      "id": 59,
-      "phaseId": 80,
-      "name": "Helpers. Install double beam underconstruction ceiling on window area",
       "start": "",
       "end": "",
       "status": "planned",
@@ -6853,6 +6824,36 @@
       "spaceIds": []
     },
     {
+      "id": 57,
+      "phaseId": 73,
+      "name": "Helpers. Remove remaining wooden frame of attic",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7
+      ],
+      "updatedAt": 1793047160683
+    },
+    {
+      "id": 59,
+      "phaseId": 80,
+      "name": "Helpers. Install double beam underconstruction ceiling on window area",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        14
+      ]
+    },
+    {
       "id": 62,
       "phaseId": 73,
       "name": "Renove toilette wall",
@@ -7111,7 +7112,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793047157490,
+  "_savedAt": 1793047170289,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
