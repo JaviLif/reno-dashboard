@@ -6107,20 +6107,6 @@
       "kanbanOrder": 100
     },
     {
-      "id": 38,
-      "phaseId": 65,
-      "name": "Install WTW -Unit",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "assigneeIds": [],
-      "notes": "",
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [],
-      "kanbanOrder": 110
-    },
-    {
       "id": 40,
       "phaseId": 34,
       "name": "Install Heat Pump Unit",
@@ -6725,6 +6711,20 @@
       "spaceIds": []
     },
     {
+      "id": 38,
+      "phaseId": 65,
+      "name": "Install WTW -Unit",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [],
+      "kanbanOrder": 110
+    },
+    {
       "id": 15,
       "phaseId": 73,
       "name": "Remove fake ceiling",
@@ -7109,7 +7109,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793047111924,
+  "_savedAt": 1793047124508,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
