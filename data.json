@@ -80,12 +80,14 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
       "updatedAt": 1792958106091,
-      "spentOverride": 104.9
+      "spentOverride": 104.9,
+      "status": "ordered"
     },
     {
       "id": 312,
@@ -158,9 +160,9 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1792958015323,
+      "updatedAt": 1793047027617,
       "status": "ordered",
-      "spentOverride": 570.54
+      "spentOverride": 760.62
     },
     {
       "id": 310,
@@ -7106,7 +7108,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1792958208657,
+  "_savedAt": 1793047027617,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
