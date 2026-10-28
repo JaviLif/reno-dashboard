@@ -2951,7 +2951,7 @@
           "supplier": "Tegel Outlet Zaandam",
           "poNumber": "",
           "orderDate": "2026-10-28",
-          "unitPrice": 376,
+          "unitPrice": 356,
           "qtyOrdered": 1,
           "status": "ordered",
           "shippingCost": 0,
@@ -2965,7 +2965,7 @@
       ],
       "documents": [],
       "status": "ordered",
-      "updatedAt": 1793199452802
+      "updatedAt": 1793199464882
     },
     {
       "id": 242,
@@ -7139,7 +7139,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793199452802,
+  "_savedAt": 1793199464882,
   "nextOrderId": 76,
   "nextQuoteId": 212,
   "nextItemId": 314,
