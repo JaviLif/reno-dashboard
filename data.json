@@ -970,43 +970,6 @@
       "updatedAt": 1791137651478
     },
     {
-      "id": 290,
-      "phaseId": 31,
-      "categoryId": 4,
-      "name": "Isolation",
-      "description": "Dak & Vloer",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 181,
-          "supplier": "",
-          "unitPrice": 5070,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "name": "IsoGuard",
-          "documents": [],
-          "link": ""
-        }
-      ],
-      "orders": [],
-      "documents": [
-        {
-          "id": 17,
-          "name": "Offerte 27387.pdf",
-          "type": "application/pdf",
-          "size": 435640,
-          "ghPath": "quotes/Offerte_27387.pdf",
-          "uploadedDate": "2026-09-22"
-        }
-      ],
-      "status": "ordered",
-      "updatedAt": 1791137501854
-    },
-    {
       "id": 289,
       "phaseId": 70,
       "categoryId": 3,
@@ -7139,7 +7102,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793199467658,
+  "_savedAt": 1793199499488,
   "nextOrderId": 76,
   "nextQuoteId": 212,
   "nextItemId": 314,
