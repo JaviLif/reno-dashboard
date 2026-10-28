@@ -215,7 +215,7 @@
       "phaseId": 81,
       "categoryId": 1,
       "name": "Parking ",
-      "description": "Gemeent",
+      "description": "Gemeente",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -253,7 +253,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1792594292519,
+      "updatedAt": 1793199540323,
       "status": "ordered",
       "spentOverride": 136
     },
@@ -7102,7 +7102,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793199516149,
+  "_savedAt": 1793199540323,
   "nextOrderId": 76,
   "nextQuoteId": 212,
   "nextItemId": 314,
