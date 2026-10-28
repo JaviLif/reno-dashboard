@@ -362,7 +362,7 @@
           "orderDate": "2026-10-10",
           "unitPrice": 130,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 10,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -374,8 +374,8 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1791614915585,
-      "status": "ordered"
+      "updatedAt": 1793199326706,
+      "status": "delivered"
     },
     {
       "id": 305,
@@ -7112,7 +7112,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793199324459,
+  "_savedAt": 1793199326706,
   "nextOrderId": 75,
   "nextQuoteId": 211,
   "nextItemId": 314,
