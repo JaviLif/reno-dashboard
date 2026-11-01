@@ -5017,34 +5017,6 @@
       "qty": 1
     },
     {
-      "categoryId": 3,
-      "quotes": [
-        {
-          "id": 31,
-          "notes": "",
-          "unitPrice": 1000,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.hornbach.nl/p/qboard-liquid-douche-element-1200x900x40-mm/12234114/",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "qty": 1,
-      "notes": "",
-      "name": "Shower",
-      "status": "not-ordered",
-      "link": "",
-      "description": "Qboard liquid douche element 1200x900",
-      "id": 129,
-      "documents": [],
-      "unit": "pcs",
-      "phaseId": 70
-    },
-    {
       "notes": "",
       "name": "Gips  Toilet (Interior)",
       "categoryId": 3,
@@ -7124,7 +7096,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793523622465,
+  "_savedAt": 1793523627017,
   "nextOrderId": 77,
   "nextQuoteId": 213,
   "nextItemId": 315,
