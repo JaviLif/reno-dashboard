@@ -77,7 +77,7 @@
       "orders": [
         {
           "id": 76,
-          "supplier": "",
+          "supplier": "Ledstripkoning",
           "poNumber": "",
           "orderDate": "2026-11-01",
           "unitPrice": 51.4,
@@ -93,7 +93,8 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793496819964
+      "updatedAt": 1793496838465,
+      "status": "ordered"
     },
     {
       "id": 313,
@@ -7147,7 +7148,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793496819964,
+  "_savedAt": 1793496838466,
   "nextOrderId": 77,
   "nextQuoteId": 213,
   "nextItemId": 315,
@@ -7766,6 +7767,7 @@
     "Hornbach",
     "IsoGuard",
     "jandeisolatieman.nl",
+    "Ledstripkoning",
     "lichtkoepeltje.nl",
     "Lidl",
     "Markplaats",
