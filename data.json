@@ -5017,34 +5017,6 @@
       "qty": 1
     },
     {
-      "name": "Toilette",
-      "notes": "",
-      "qty": 2,
-      "quotes": [
-        {
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "unitPrice": 325,
-          "notes": "",
-          "id": 30,
-          "documents": [],
-          "link": "https://sanitairkamer.nl/sanigoods-andes-toiletset-met-saniclear-itsie-randloos-toilet-wit-glans-sk101869.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 3,
-      "phaseId": 70,
-      "unit": "pcs",
-      "documents": [],
-      "description": "Sanigoods Andes toiletset",
-      "id": 128,
-      "link": "",
-      "status": "not-ordered"
-    },
-    {
       "categoryId": 3,
       "quotes": [
         {
@@ -7152,7 +7124,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793523563727,
+  "_savedAt": 1793523622465,
   "nextOrderId": 77,
   "nextQuoteId": 213,
   "nextItemId": 315,
@@ -7651,10 +7623,10 @@
       "qty",
       "price",
       "total",
-      "netspent",
       "quote",
       "status",
       "delivery",
+      "netspent",
       "phase",
       "category"
     ],
@@ -7672,7 +7644,7 @@
       "price": 60,
       "link": 60,
       "status": 137,
-      "netspent": 99
+      "netspent": 81
     },
     "sortKey": "status",
     "sortDir": "desc"
