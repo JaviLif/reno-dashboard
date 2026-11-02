@@ -6941,6 +6941,21 @@
       "updatedAt": 1792327174215
     },
     {
+      "id": 75,
+      "phaseId": 70,
+      "name": "Cut beams 2.5degreee for shower floor",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1792327827807
+    },
+    {
       "id": 76,
       "phaseId": 32,
       "name": "Make pics of everything before closing walls",
@@ -7110,21 +7125,6 @@
       "parentTaskId": null,
       "spaceIds": [],
       "updatedAt": 1793047157490
-    },
-    {
-      "id": 75,
-      "phaseId": 70,
-      "name": "Cut beams 2.5degreee for shower floor",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1792327827807
     }
   ],
   "nextTaskId": 77,
@@ -7138,7 +7138,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793633646630,
+  "_savedAt": 1793633648949,
   "nextOrderId": 78,
   "nextQuoteId": 214,
   "nextItemId": 316,
