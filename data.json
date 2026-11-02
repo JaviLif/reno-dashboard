@@ -6077,6 +6077,20 @@
       "spaceIds": []
     },
     {
+      "id": 66,
+      "phaseId": 78,
+      "name": "Bitumen video corners",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "assigneeIds": [],
+      "notes": "https://m.youtube.com/watch?v=Z1Pl0EDysws",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1791923497077,
+      "kanbanOrder": 60
+    },
+    {
       "id": 34,
       "phaseId": 32,
       "name": "Install electricity to HeatPump",
@@ -7038,20 +7052,6 @@
       "spaceIds": []
     },
     {
-      "id": 66,
-      "phaseId": 78,
-      "name": "Bitumen video corners",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "https://m.youtube.com/watch?v=Z1Pl0EDysws",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1791923497077,
-      "kanbanOrder": 60
-    },
-    {
       "id": 69,
       "phaseId": 33,
       "name": "Install shower sink",
@@ -7138,7 +7138,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793633571643,
+  "_savedAt": 1793633639026,
   "nextOrderId": 78,
   "nextQuoteId": 214,
   "nextItemId": 316,
