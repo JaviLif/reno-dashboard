@@ -6926,6 +6926,21 @@
       "updatedAt": 1793047185324
     },
     {
+      "id": 74,
+      "phaseId": 80,
+      "name": "Install reinforcemwnt beams for skylight",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        14
+      ],
+      "updatedAt": 1792327174215
+    },
+    {
       "id": 76,
       "phaseId": 32,
       "name": "Make pics of everything before closing walls",
@@ -7097,21 +7112,6 @@
       "updatedAt": 1793047157490
     },
     {
-      "id": 74,
-      "phaseId": 80,
-      "name": "Install reinforcemwnt beams for skylight",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        14
-      ],
-      "updatedAt": 1792327174215
-    },
-    {
       "id": 75,
       "phaseId": 70,
       "name": "Cut beams 2.5degreee for shower floor",
@@ -7138,7 +7138,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793633639026,
+  "_savedAt": 1793633646630,
   "nextOrderId": 78,
   "nextQuoteId": 214,
   "nextItemId": 316,
