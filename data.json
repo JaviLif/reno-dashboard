@@ -55,6 +55,49 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 316,
+      "phaseId": 33,
+      "categoryId": null,
+      "name": "Materials",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [
+        {
+          "id": 80,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-03",
+          "unitPrice": 140.78,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-03",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
+        }
+      ],
+      "documents": [],
+      "updatedAt": 1793715990780,
+      "status": "delivered",
+      "changelog": [
+        {
+          "ts": 1793715990780,
+          "oldSpent": 0,
+          "newSpent": 140.78,
+          "oldBudget": 0,
+          "newBudget": 0
+        }
+      ]
+    },
+    {
       "id": 315,
       "phaseId": 81,
       "categoryId": null,
@@ -1337,12 +1380,113 @@
           "notes": "",
           "documents": [],
           "_quick": true
+        },
+        {
+          "id": 81,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-03",
+          "unitPrice": 663.31,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-03",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
+        },
+        {
+          "id": 84,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-03",
+          "unitPrice": 69.29,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-03",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
+        },
+        {
+          "id": 85,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-03",
+          "unitPrice": 23.94,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-03",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
         }
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1792594600991,
-      "spentOverride": 744.81
+      "updatedAt": 1793716187300,
+      "changelog": [
+        {
+          "ts": 1793716187300,
+          "oldSpent": 915.8999999999999,
+          "newSpent": 939.8399999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716173476,
+          "oldSpent": 846.6099999999999,
+          "newSpent": 915.8999999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716095525,
+          "oldSpent": 948.4099999999999,
+          "newSpent": 846.6099999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716090012,
+          "oldSpent": 846.6099999999999,
+          "newSpent": 948.4099999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716057229,
+          "oldSpent": 896.6099999999999,
+          "newSpent": 846.6099999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716045797,
+          "oldSpent": 846.6099999999999,
+          "newSpent": 896.6099999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        },
+        {
+          "ts": 1793716007397,
+          "oldSpent": 744.81,
+          "newSpent": 846.6099999999999,
+          "oldBudget": 30.55,
+          "newBudget": 30.55
+        }
+      ]
     },
     {
       "id": 283,
@@ -7183,10 +7327,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793713253538,
-  "nextOrderId": 79,
+  "_savedAt": 1793716187300,
+  "nextOrderId": 86,
   "nextQuoteId": 214,
-  "nextItemId": 316,
+  "nextItemId": 317,
   "_version": "dashboard-v1",
   "phases": [
     {
