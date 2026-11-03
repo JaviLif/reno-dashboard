@@ -399,6 +399,7 @@ body.col-resizing *{cursor:col-resize!important}
   <button class="nav-btn" data-tab="calendar">🗓 Calendar</button>
   <button class="nav-btn" data-tab="heatpump">🔥 Heat Pump</button>
   <button class="nav-btn" data-tab="vergoeding">⚖️ Vergoeding</button>
+  <button class="nav-btn" data-tab="joist">🪵 Joist Sizer</button>
       <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
   <div class="nav-ver" onclick="document.querySelector('.nav-btn[data-tab=settings]').click()" title="Changelog"><span style="font-size:14px;flex-shrink:0;width:26px;text-align:center">&#x1F4CB;</span><span class="nav-ver-lbl" style="white-space:nowrap;font-size:10px;color:var(--g500)"></span></div>
 </nav>
@@ -833,7 +834,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.89</span><span>Financial: 💸 Quick Expenses tab — all quick expenses from the last 90 days in one table (date, phase, item, amount, note); click item name to jump to BOM row</span></div><div class="ver-row"><span class="ver-tag">v1.0.88</span><span>BOM: typing +22 (or any positive delta) in the Net Spent field auto-creates a Quick Expense for that amount; Quick Expense button now also clears any manual override so orders own the total</span></div><div class="ver-row"><span class="ver-tag">v1.0.87</span><span>BOM: 💸 Quick Expense button on each item — add a dated cost entry (amount + note) without the full order form; shows as a compact green row</span></div><div class="ver-row"><span class="ver-tag">v1.0.86</span><span>BOM: item change log — every time Spent or Budget changes, the delta and old→new values are recorded and shown in the expanded item panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.85</span><span>Fix: filtered Budget total now correctly includes sub-phase budgets (was always 0 for parent phases)</span></div><div class="ver-row"><span class="ver-tag">v1.0.84</span><span>Financial: Spending Over Time tab — bar chart + table of spent per week or month, with cumulative line</span></div><div class="ver-row"><span class="ver-tag">v1.0.83</span><span>UX: clicking any text or number input selects the full value instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.82</span><span>Dashboard: Recent Tasks list, Budget/Spent switch on the pie, collapsible Phases panel. Financial: bar/pie switch, excluded filter chips struck through, header Spent/Remaining now follow the filter instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.90</span><span>New tab: 🪵 Joist Sizer — EC5 bending/shear/deflection check across full NL timber catalogue; returns lightest passing section with spacing comparison table</span></div><div class="ver-row"><span class="ver-tag">v1.0.89</span><span>Financial: 💸 Quick Expenses tab — all quick expenses from the last 90 days in one table (date, phase, item, amount, note); click item name to jump to BOM row</span></div><div class="ver-row"><span class="ver-tag">v1.0.88</span><span>BOM: typing +22 (or any positive delta) in the Net Spent field auto-creates a Quick Expense for that amount; Quick Expense button now also clears any manual override so orders own the total</span></div><div class="ver-row"><span class="ver-tag">v1.0.87</span><span>BOM: 💸 Quick Expense button on each item — add a dated cost entry (amount + note) without the full order form; shows as a compact green row</span></div><div class="ver-row"><span class="ver-tag">v1.0.86</span><span>BOM: item change log — every time Spent or Budget changes, the delta and old→new values are recorded and shown in the expanded item panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.85</span><span>Fix: filtered Budget total now correctly includes sub-phase budgets (was always 0 for parent phases)</span></div><div class="ver-row"><span class="ver-tag">v1.0.84</span><span>Financial: Spending Over Time tab — bar chart + table of spent per week or month, with cumulative line</span></div><div class="ver-row"><span class="ver-tag">v1.0.83</span><span>UX: clicking any text or number input selects the full value instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.82</span><span>Dashboard: Recent Tasks list, Budget/Spent switch on the pie, collapsible Phases panel. Financial: bar/pie switch, excluded filter chips struck through, header Spent/Remaining now follow the filter instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -6244,6 +6245,195 @@ setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </div>
 </div>
 </div>
+<style>
+#tab-joist{padding:0 0 64px}
+#tab-joist .jw{max-width:940px;margin:0 auto;padding:0 16px}
+#tab-joist .jhdr{padding:32px 0 20px;border-bottom:2px solid #0F4F44;margin-bottom:24px}
+#tab-joist .jhdr h1{font-size:clamp(22px,4vw,32px);line-height:1.15;margin:0 0 4px;font-weight:600;letter-spacing:-.015em;color:var(--text)}
+#tab-joist .jhdr p{margin:0;color:var(--g500);max-width:62ch;font-size:15px}
+#tab-joist .jpanel{background:var(--surface);border:1px solid var(--border);padding:20px;margin-bottom:14px;border-radius:0}
+#tab-joist .jpanel h2{font-size:13px;font-weight:600;margin:0 0 14px;color:#0F4F44;letter-spacing:.02em}
+#tab-joist .jpanel h2 span{color:var(--g500);font-weight:400}
+#tab-joist .jrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+#tab-joist .jrow label{display:block;font-size:13px;color:var(--g500);margin-bottom:4px}
+#tab-joist .jrow input,#tab-joist .jrow select{width:100%;padding:8px 10px;font:inherit;font-size:15px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:0}
+#tab-joist .jrow input:focus,#tab-joist .jrow select:focus{outline:2px solid #0F4F44;outline-offset:-1px}
+#tab-joist .jhint{font-size:12px;color:var(--g500);margin:8px 0 0;max-width:66ch}
+#tab-joist .jcheck{display:flex;gap:8px;align-items:flex-start;margin-top:12px;font-size:13px;color:var(--g500)}
+#tab-joist .jcheck input{width:auto;margin-top:3px}
+#tab-joist .jans{border:2px solid #0F4F44;background:var(--surface);padding:20px;margin-bottom:14px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+#tab-joist .jans.jnone{border-color:#9C2E17;grid-template-columns:1fr}
+#tab-joist .jsize{font-size:clamp(26px,5vw,42px);font-weight:600;letter-spacing:-.02em;line-height:1.05;margin:0}
+#tab-joist .jsize em{font-style:normal;font-size:.5em;font-weight:400;color:var(--g500)}
+#tab-joist .jans p{margin:8px 0 0;font-size:14px;color:var(--g500);max-width:48ch}
+#tab-joist .jans.jnone .jsize{color:#9C2E17;font-size:20px}
+#tab-joist .jgov{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:#0F5A3C;background:#DFEDE4;padding:3px 8px}
+#tab-joist svg.jsect{width:110px;height:auto}
+#tab-joist .jtbl{width:100%;border-collapse:collapse;font-size:14px}
+#tab-joist .jtbl th{text-align:left;font-weight:500;color:var(--g500);font-size:12px;padding:0 0 6px;border-bottom:1px solid var(--border)}
+#tab-joist .jtbl th.n,#tab-joist .jtbl td.n{text-align:right}
+#tab-joist .jtbl td{padding:9px 0;border-bottom:1px solid var(--border);white-space:nowrap}
+#tab-joist .jtbl tr:last-child td{border-bottom:none}
+#tab-joist .jtbl tr.jbest td{font-weight:600}
+#tab-joist .jtbl tr.jbest td:first-child::before{content:"\203A  ";color:#0F4F44}
+#tab-joist .ju{color:var(--g500);font-size:13px}
+#tab-joist .jfooter{font-size:12.5px;color:var(--g500);max-width:70ch;border-top:1px solid var(--border);padding-top:14px;margin-top:6px}
+#tab-joist .jfooter b{color:var(--text);font-weight:600}
+#tab-joist .jscroll{overflow-x:auto}
+@media(max-width:620px){#tab-joist .jpanel{padding:14px}#tab-joist .jans{grid-template-columns:1fr}#tab-joist svg.jsect{display:none}}
+</style>
+<div id="tab-joist" class="tab">
+<div class="jw">
+<div class="jhdr">
+  <h1>Joist sizer <span style="font-size:16px;font-weight:400;color:var(--g500);margin-left:8px">NEN-EN 1995 (Eurocode 5)</span></h1>
+  <p>Span, spacing and load in — section out. Works through a catalogue of timber you can actually buy in the Netherlands and returns the lightest one that passes bending, shear and deflection.</p>
+</div>
+
+<div class="jpanel">
+  <h2>The floor</h2>
+  <div class="jrow">
+    <div><label for="jL">Clear span (m)</label><input id="jL" type="number" value="4.0" step="0.1" min="0.5"></div>
+    <div><label for="js">Joist spacing h.o.h. (mm)</label>
+      <select id="js"><option>300</option><option selected>400</option><option>500</option><option>600</option></select></div>
+    <div><label for="jfam">Timber family</label>
+      <select id="jfam">
+        <option value="all" selected>All — anything I can order</option>
+        <option value="geschaafd">Geschaafd vuren (planed, in stock)</option>
+        <option value="balk">Balkhout / constructief</option>
+        <option value="glulam">Gelamineerd (glulam)</option>
+      </select></div>
+    <div><label for="jcls">Strength grade</label>
+      <select id="jcls">
+        <option value="C18">C18 vuren</option>
+        <option value="C24" selected>C24 vuren (standard)</option>
+        <option value="C30">C30</option>
+        <option value="GL24h">GL24h glulam</option>
+        <option value="GL28h">GL28h glulam</option>
+      </select></div>
+  </div>
+  <div class="jrow" style="margin-top:12px">
+    <div><label for="jw">Lock the width (mm)</label><select id="jw"><option value="0" selected>Any width</option></select></div>
+    <div><label for="jmaxh">Maximum depth available (mm)</label><input id="jmaxh" type="number" value="400" step="5" min="50"></div>
+  </div>
+  <p class="jhint">Lock the width when you need it to match something already there — an existing joist, a steel shoe, a 63 mm hanger.</p>
+</div>
+
+<div class="jpanel">
+  <h2>The load</h2>
+  <div class="jrow">
+    <div><label for="jgpreset">Floor build-up (permanent)</label>
+      <select id="jgpreset">
+        <option value="0.6">Boards + vinyl / laminate — 0.6 kN/m²</option>
+        <option value="0.9">Boards + underlay + laminate — 0.9</option>
+        <option value="1.4">OSB + cement board + tiles — 1.4</option>
+        <option value="2.0" selected>OSB + board + screed + tiles — 2.0</option>
+        <option value="2.6">Natural stone / thick screed — 2.6</option>
+        <option value="3.4">Bathroom, tiled, filled bath — 3.4</option>
+        <option value="custom">Custom…</option>
+      </select></div>
+    <div><label for="jg">Permanent load g (kN/m²)</label><input id="jg" type="number" value="2.0" step="0.1" min="0"></div>
+    <div><label for="jp">Variable load p (kN/m²)</label>
+      <select id="jp">
+        <option value="1.75" selected>Home, floor A — 1.75</option>
+        <option value="2.0">Bathroom / kitchen — 2.0</option>
+        <option value="3.0">Attic storage — 3.0</option>
+        <option value="5.0">Assembly / heavy — 5.0</option>
+      </select></div>
+    <div><label for="jlim">Deflection limit</label>
+      <select id="jlim">
+        <option value="300">L/300 — timber or vinyl finish</option>
+        <option value="400">L/400 — laminate</option>
+        <option value="600" selected>L/600 — ceramic tiles</option>
+        <option value="720">L/720 — natural stone</option>
+      </select></div>
+  </div>
+  <div class="jcheck">
+    <input id="jcreep" type="checkbox" checked>
+    <label for="jcreep" style="margin:0">Include long-term creep (k<sub>def</sub> 0.8, service class 2 — correct for a bathroom)</label>
+  </div>
+  <p class="jhint">A filled bath is really a point load. The 3.4 kN/m² preset is a rough smear — if the bath lands on only two joists, double those two up regardless of what this says.</p>
+</div>
+
+<div id="jout"></div>
+
+<div class="jfooter">
+  <b>Read this before you order timber.</b> Single simply-supported joist, uniform load, Eurocode 5 with k<sub>mod</sub> 0.8 and γ<sub>M</sub> 1.3. Not checked: bearing length, notches and holes, point loads, trimmers around a stairwell or bath, lateral restraint, vibration, fire. Section availability varies by supplier — confirm before you order. For anything structural you are changing, have a <b>constructeur</b> produce a signed berekening; the gemeente and your insurer will want it.
+</div>
+</div>
+</div>
+
+<script>
+(function(){
+const GRADES={C18:{fm:18,fv:3.4,E:9000,rho:320},C24:{fm:24,fv:4.0,E:11000,rho:350},C30:{fm:30,fv:4.0,E:12000,rho:380},GL24h:{fm:24,fv:3.5,E:11500,rho:385},GL28h:{fm:28,fv:3.5,E:12600,rho:410}};
+const CAT=[];
+function add(fam,b,hs){hs.forEach(h=>CAT.push({b,h,fam}));}
+add('geschaafd',18,[44,69,95]);add('geschaafd',22,[69,95,120]);add('geschaafd',27,[69,95,120,145]);add('geschaafd',32,[69,95,120,145]);add('geschaafd',38,[57,69,89,95,120,140,145,170,184,195]);add('geschaafd',44,[69,94,119,144,169,194,219,244,269,294]);add('geschaafd',63,[119,144,169,194,219,244,269]);add('geschaafd',71,[146,171,196,221,246,271,296]);
+add('balk',50,[100,125,150,175,200,225,250]);add('balk',63,[150,175,200,225,250,275]);add('balk',75,[150,175,200,225,250,275,300]);add('balk',96,[196,221,246,271]);add('balk',100,[100,150,200,250,300,350]);add('balk',125,[250,300,350]);
+add('glulam',60,[160,200,240,280,320,360,400,440,480]);add('glulam',80,[160,200,240,280,320,360,400,440,480,520]);add('glulam',100,[200,240,280,320,360,400,440,480,520,560,600]);add('glulam',120,[240,280,320,360,400,440,480,520,560,600]);add('glulam',140,[280,320,360,400,440,480,520,560,600]);
+const KMOD=0.8,GM=1.3,KDEF=0.8,PSI2=0.3,KCR=0.67;
+const $J=id=>document.getElementById(id);
+function fillJWidths(){
+  const fam=$J('jfam').value,keep=$J('jw').value;
+  const ws=[...new Set(CAT.filter(x=>fam==='all'||x.fam===fam).map(x=>x.b))].sort((a,b)=>a-b);
+  $J('jw').innerHTML='<option value="0">Any width</option>'+ws.map(b=>'<option value="'+b+'">'+b+' mm</option>').join('');
+  if(ws.indexOf(+keep)>-1)$J('jw').value=keep;
+}
+function jcheck(L_m,s_mm,b,h,grade,g,p,ratio,creep){
+  const G=GRADES[grade],L=L_m*1000,sp=s_mm/1000;
+  const gl=g*sp,pl=p*sp,qd=1.35*gl+1.5*pl;
+  const uM=(qd*L*L/8)/(b*h*h/6)/(G.fm*KMOD/GM);
+  const uV=(1.5*(qd*L/2)/(KCR*b*h))/(G.fv*KMOD/GM);
+  const I=b*h*h*h/12;
+  const wg=5*gl*Math.pow(L,4)/(384*G.E*I),wp=5*pl*Math.pow(L,4)/(384*G.E*I);
+  const w=creep?wg*(1+KDEF)+wp*(1+PSI2*KDEF):wg+wp;
+  const uD=w/(L/ratio);
+  const max=Math.max(uM,uV,uD);
+  return{uM,uV,uD,max,w,wlim:L/ratio,gov:max===uD?'deflection':max===uM?'bending':'shear',kgm:b*h*G.rho/1e6};
+}
+function jrun(){
+  const L=+$J('jL').value,s=+$J('js').value,grade=$J('jcls').value;
+  const wsel=+$J('jw').value,fam=$J('jfam').value,maxh=+$J('jmaxh').value;
+  const g=+$J('jg').value,p=+$J('jp').value,ratio=+$J('jlim').value,creep=$J('jcreep').checked;
+  if(!(L>0&&s>0&&g>=0))return;
+  const pool=CAT.filter(x=>(fam==='all'||x.fam===fam)&&(!wsel||x.b===wsel)&&x.h<=maxh);
+  const passing=pool.map(x=>Object.assign({},x,jcheck(L,s,x.b,x.h,grade,g,p,ratio,creep))).filter(x=>x.max<=1);
+  const byWidth={};
+  passing.forEach(x=>{if(!byWidth[x.b]||x.h<byWidth[x.b].h)byWidth[x.b]=x;});
+  const opts=Object.values(byWidth).sort((a,c)=>a.kgm-c.kgm||a.h-c.h);
+  const famName={geschaafd:'geschaafd vuren',balk:'balkhout',glulam:'glulam'};
+  if(!opts.length){
+    $J('jout').innerHTML='<div class="jans jnone"><p class="jsize">Nothing in the catalogue spans '+L.toFixed(2)+' m under this load.</p><p>Raise the maximum depth, drop to 300 mm spacing, add an intermediate support, or switch the family to glulam.</p></div>';
+    return;
+  }
+  const best=opts[0];
+  const sc=Math.min(90/best.b,150/best.h);
+  const bw=wsel||best.b;
+  const spacings=[300,400,500,600].map(function(sp){
+    const list=pool.filter(x=>x.b===bw).map(x=>Object.assign({},x,jcheck(L,sp,x.b,x.h,grade,g,p,ratio,creep))).filter(x=>x.max<=1).sort((a,c)=>a.h-c.h);
+    return{sp,h:list.length?list[0].h:null};
+  });
+  $J('jout').innerHTML=
+    '<div class="jans"><div><p class="jsize">'+best.b+' &times; '+best.h+' <em>mm '+grade+'</em></p>'
+    +'<p>'+(famName[best.fam]||'')+', spanning '+L.toFixed(2)+' m at '+s+' mm h.o.h. under '+g.toFixed(1)+' + '+p.toFixed(2)+' kN/m². Deflects '+best.w.toFixed(1)+' mm against a '+best.wlim.toFixed(1)+' mm limit.</p>'
+    +'<span class="jgov">'+best.gov+' governs — '+Math.round(best.max*100)+'% used</span></div>'
+    +'<svg class="jsect" viewBox="0 0 '+(best.b*sc+4)+' '+(best.h*sc+4)+'">'
+    +'<rect x="2" y="2" width="'+best.b*sc+'" height="'+best.h*sc+'" fill="#B5813F" stroke="#8A5F28" stroke-width="2"/></svg></div>'
+    +'<div class="jpanel"><h2>Shallowest section at each width <span>— lightest first</span></h2><div class="jscroll"><table class="jtbl">'
+    +'<tr><th>Section</th><th>Family</th><th class="n">Bending</th><th class="n">Shear</th><th class="n">Deflection</th><th class="n">Governs</th><th class="n">kg/m</th></tr>'
+    +opts.map(function(o){return'<tr class="'+(o===best?'jbest':'')+'"><td>'+o.b+' &times; '+o.h+' mm</td><td class="ju">'+(famName[o.fam]||o.fam)+'</td><td class="n ju">'+Math.round(o.uM*100)+'%</td><td class="n ju">'+Math.round(o.uV*100)+'%</td><td class="n ju">'+Math.round(o.uD*100)+'%</td><td class="n ju">'+o.gov+'</td><td class="n ju">'+o.kgm.toFixed(1)+'</td></tr>';}).join('')
+    +'</table></div><p class="jhint">'+passing.length+' sections in the catalogue pass; this lists the shallowest one per width. Deflection governs almost every domestic floor, which is why depth beats width: doubling the height stiffens the joist eight times, doubling the width only twice.</p></div>'
+    +'<div class="jpanel"><h2>What spacing costs you <span>— at '+bw+' mm width</span></h2><table class="jtbl">'
+    +'<tr><th>Spacing h.o.h.</th><th class="n">Shallowest section</th><th class="n">Joists per 5 m of floor</th></tr>'
+    +spacings.map(function(x){return'<tr class="'+(x.sp===s?'jbest':'')+'"><td>'+x.sp+' mm</td><td class="n">'+(x.h?bw+' &times; '+x.h+' mm':'<span style="color:#9C2E17">none fits</span>')+'</td><td class="n ju">'+(Math.floor(5000/x.sp)+1)+'</td></tr>';}).join('')
+    +'</table><p class="jhint">Closer spacing buys a shallower joist but more timber and more cutting. 400 mm is the usual sweet spot and it suits 1220 mm sheet widths exactly.</p></div>';
+}
+['jL','js','jcls','jw','jg','jp','jlim','jcreep','jgpreset','jmaxh'].forEach(i=>{const el=$J(i);if(el)el.addEventListener('input',jrun);});
+$J('jfam').addEventListener('change',()=>{fillJWidths();jrun();});
+$J('jgpreset').addEventListener('change',e=>{if(e.target.value!=='custom')$J('jg').value=e.target.value;});
+fillJWidths(); jrun();
+})();
+</script>
+
 <!-- Version badge -->
 
 </body>
