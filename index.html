@@ -399,7 +399,7 @@ body.col-resizing *{cursor:col-resize!important}
   <button class="nav-btn" data-tab="calendar">🗓 Calendar</button>
   <button class="nav-btn" data-tab="heatpump">🔥 Heat Pump</button>
   <button class="nav-btn" data-tab="vergoeding">⚖️ Vergoeding</button>
-  <button class="nav-btn" data-tab="joist">🪵 Joist Sizer</button>
+  <button class="nav-btn" data-tab="joist">📐 Deflection</button>
       <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
   <div class="nav-ver" onclick="document.querySelector('.nav-btn[data-tab=settings]').click()" title="Changelog"><span style="font-size:14px;flex-shrink:0;width:26px;text-align:center">&#x1F4CB;</span><span class="nav-ver-lbl" style="white-space:nowrap;font-size:10px;color:var(--g500)"></span></div>
 </nav>
@@ -6294,191 +6294,261 @@ setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </div>
 </div>
 <style>
-#tab-joist{padding:0 0 64px}
-#tab-joist .jw{max-width:940px;margin:0 auto;padding:0 16px}
-#tab-joist .jhdr{padding:32px 0 20px;border-bottom:2px solid #0F4F44;margin-bottom:24px}
-#tab-joist .jhdr h1{font-size:clamp(22px,4vw,32px);line-height:1.15;margin:0 0 4px;font-weight:600;letter-spacing:-.015em;color:var(--text)}
-#tab-joist .jhdr p{margin:0;color:var(--g500);max-width:62ch;font-size:15px}
-#tab-joist .jpanel{background:var(--surface);border:1px solid var(--border);padding:20px;margin-bottom:14px;border-radius:0}
-#tab-joist .jpanel h2{font-size:13px;font-weight:600;margin:0 0 14px;color:#0F4F44;letter-spacing:.02em}
-#tab-joist .jpanel h2 span{color:var(--g500);font-weight:400}
-#tab-joist .jrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
-#tab-joist .jrow label{display:block;font-size:13px;color:var(--g500);margin-bottom:4px}
-#tab-joist .jrow input,#tab-joist .jrow select{width:100%;padding:8px 10px;font:inherit;font-size:15px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:0}
-#tab-joist .jrow input:focus,#tab-joist .jrow select:focus{outline:2px solid #0F4F44;outline-offset:-1px}
-#tab-joist .jhint{font-size:12px;color:var(--g500);margin:8px 0 0;max-width:66ch}
-#tab-joist .jcheck{display:flex;gap:8px;align-items:flex-start;margin-top:12px;font-size:13px;color:var(--g500)}
-#tab-joist .jcheck input{width:auto;margin-top:3px}
-#tab-joist .jans{border:2px solid #0F4F44;background:var(--surface);padding:20px;margin-bottom:14px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
-#tab-joist .jans.jnone{border-color:#9C2E17;grid-template-columns:1fr}
-#tab-joist .jsize{font-size:clamp(26px,5vw,42px);font-weight:600;letter-spacing:-.02em;line-height:1.05;margin:0}
-#tab-joist .jsize em{font-style:normal;font-size:.5em;font-weight:400;color:var(--g500)}
-#tab-joist .jans p{margin:8px 0 0;font-size:14px;color:var(--g500);max-width:48ch}
-#tab-joist .jans.jnone .jsize{color:#9C2E17;font-size:20px}
-#tab-joist .jgov{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:#0F5A3C;background:#DFEDE4;padding:3px 8px}
-#tab-joist svg.jsect{width:110px;height:auto}
-#tab-joist .jtbl{width:100%;border-collapse:collapse;font-size:14px}
-#tab-joist .jtbl th{text-align:left;font-weight:500;color:var(--g500);font-size:12px;padding:0 0 6px;border-bottom:1px solid var(--border)}
-#tab-joist .jtbl th.n,#tab-joist .jtbl td.n{text-align:right}
-#tab-joist .jtbl td{padding:9px 0;border-bottom:1px solid var(--border);white-space:nowrap}
-#tab-joist .jtbl tr:last-child td{border-bottom:none}
-#tab-joist .jtbl tr.jbest td{font-weight:600}
-#tab-joist .jtbl tr.jbest td:first-child::before{content:"\203A  ";color:#0F4F44}
-#tab-joist .ju{color:var(--g500);font-size:13px}
-#tab-joist .jfooter{font-size:12.5px;color:var(--g500);max-width:70ch;border-top:1px solid var(--border);padding-top:14px;margin-top:6px}
-#tab-joist .jfooter b{color:var(--text);font-weight:600}
-#tab-joist .jscroll{overflow-x:auto}
-@media(max-width:620px){#tab-joist .jpanel{padding:14px}#tab-joist .jans{grid-template-columns:1fr}#tab-joist svg.jsect{display:none}}
+/* === Live Deflection — scoped to #tab-joist === */
+#tab-joist{
+  --jd-paper:#F1F4F2;--jd-grid:#D6E0DA;--jd-line:#C2D0C8;--jd-ink:#16262A;--jd-soft:#5E7176;
+  --jd-rule:#0F4F44;--jd-pass:#0F5A3C;--jd-passbg:#DFEDE4;--jd-fail:#9C2E17;--jd-failbg:#F6E1DB;
+  --jd-warn:#8A6A12;--jd-warnbg:#F3EBD6;--jd-field:#fff;
+  font-feature-settings:"tnum" 1;
+}
+#tab-joist .jd-wrap{max-width:880px;margin:0 auto;padding:0 16px 56px}
+#tab-joist .jd-hdr{padding:32px 0 18px;border-bottom:2px solid var(--jd-rule);margin-bottom:22px}
+#tab-joist .jd-hdr h1{margin:0;font-size:clamp(22px,4.5vw,32px);font-weight:600;letter-spacing:-.015em}
+#tab-joist .jd-hdr p{margin:6px 0 0;color:var(--jd-soft);font-size:15px;max-width:60ch}
+#tab-joist .jd-panel{background:var(--jd-field);border:1px solid var(--jd-line);padding:18px;margin-bottom:14px}
+#tab-joist .jd-panel h2{font-size:12px;font-weight:600;margin:0 0 14px;color:var(--jd-rule);letter-spacing:.03em}
+#tab-joist .jd-panel h2 em{font-style:normal;color:var(--jd-soft);font-weight:400}
+#tab-joist .jd-sl{margin-bottom:15px}
+#tab-joist .jd-sl .jd-top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--jd-soft)}
+#tab-joist .jd-sl .jd-top b{font-size:16px;font-weight:600;color:var(--jd-ink)}
+#tab-joist .jd-sl input[type=range]{width:100%;margin:5px 0 0;accent-color:var(--jd-rule)}
+#tab-joist .jd-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+#tab-joist .jd-row label{display:block;font-size:13px;color:var(--jd-soft);margin-bottom:4px}
+#tab-joist .jd-row select{width:100%;padding:8px 9px;font:inherit;font-size:14px;border:1px solid var(--jd-line);background:var(--jd-field);color:var(--jd-ink);border-radius:0}
+#tab-joist .jd-chk{display:flex;gap:8px;align-items:flex-start;margin-top:12px;font-size:13px;color:var(--jd-soft)}
+#tab-joist .jd-chk input{margin-top:3px}
+#tab-joist .jd-res{border:2px solid;padding:18px;margin-bottom:14px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+#tab-joist .jd-res.ok{border-color:var(--jd-pass);background:var(--jd-passbg)}
+#tab-joist .jd-res.no{border-color:var(--jd-fail);background:var(--jd-failbg)}
+#tab-joist .jd-res.warn{border-color:var(--jd-warn);background:var(--jd-warnbg)}
+#tab-joist .jd-big{font-size:clamp(26px,6.5vw,40px);font-weight:600;line-height:1;margin:0;letter-spacing:-.02em}
+#tab-joist .jd-res.ok .jd-big{color:var(--jd-pass)}
+#tab-joist .jd-res.no .jd-big{color:var(--jd-fail)}
+#tab-joist .jd-res.warn .jd-big{color:var(--jd-warn)}
+#tab-joist .jd-big span{font-size:.4em;font-weight:400}
+#tab-joist .jd-lbl{font-size:12px;color:var(--jd-soft);margin:0 0 3px}
+#tab-joist .jd-note{grid-column:1/-1;font-size:14px;margin:0;padding-top:4px;border-top:1px solid rgba(0,0,0,.08)}
+#tab-joist .jd-f{font-size:12.5px;color:var(--jd-soft);margin:0 0 14px;font-family:ui-monospace,SFMono-Regular,monospace}
+#tab-joist .jd-tbl{width:100%;border-collapse:collapse;font-size:14px}
+#tab-joist .jd-tbl th{text-align:left;font-size:12px;font-weight:500;color:var(--jd-soft);padding:0 0 8px;border-bottom:1px solid var(--jd-line)}
+#tab-joist .jd-tbl th.n,#tab-joist .jd-tbl td.n{text-align:right}
+#tab-joist .jd-tbl td{padding:9px 0;border-bottom:1px solid var(--jd-grid)}
+#tab-joist .jd-tbl tr:last-child td{border-bottom:none}
+#tab-joist .jd-u{color:var(--jd-soft);font-size:13px}
+#tab-joist .jd-bad{color:var(--jd-fail)}
+#tab-joist .jd-good{color:var(--jd-pass)}
+#tab-joist details{border-top:1px solid var(--jd-grid);padding:12px 0}
+#tab-joist details:first-of-type{border-top:none}
+#tab-joist details summary{cursor:pointer;font-weight:500;font-size:14.5px;list-style:none}
+#tab-joist details summary::-webkit-details-marker{display:none}
+#tab-joist details summary::before{content:"+ ";color:var(--jd-rule);font-weight:600}
+#tab-joist details[open] summary::before{content:"\2212 "}
+#tab-joist details p{font-size:14px;margin:10px 0 0;max-width:68ch}
+#tab-joist details p.eq{font-family:ui-monospace,monospace;background:var(--jd-paper);padding:8px 10px}
+#tab-joist .jd-info{font-size:13.5px;color:var(--jd-soft);margin:12px 0 0;padding-left:12px;border-left:3px solid var(--jd-rule)}
+#tab-joist .jd-footer{font-size:12px;color:var(--jd-soft);border-top:1px solid var(--jd-line);padding-top:12px;max-width:70ch;margin-top:8px}
+@media(max-width:620px){#tab-joist .jd-res{grid-template-columns:1fr 1fr}#tab-joist .jd-res>div:nth-child(3){grid-column:1/-1}}
+@media(max-width:420px){#tab-joist .jd-res{grid-template-columns:1fr}}
 </style>
 <div id="tab-joist" class="tab">
-<div class="jw">
-<div class="jhdr">
-  <h1>Joist sizer <span style="font-size:16px;font-weight:400;color:var(--g500);margin-left:8px">NEN-EN 1995 (Eurocode 5)</span></h1>
-  <p>Span, spacing and load in — section out. Works through a catalogue of timber you can actually buy in the Netherlands and returns the lightest one that passes bending, shear and deflection.</p>
+<div class="jd-wrap">
+<div class="jd-hdr">
+  <h1>Live deflection <span style="font-size:16px;font-weight:400;color:var(--jd-soft);margin-left:8px">drag anything</span></h1>
+  <p>How far a beam sags, and why. Drag any slider — the numbers, the verdict and the bent shape all follow. The explanations at the bottom unpack each term.</p>
 </div>
 
-<div class="jpanel">
-  <h2>The floor</h2>
-  <div class="jrow">
-    <div><label for="jL">Clear span (m)</label><input id="jL" type="number" value="4.0" step="0.1" min="0.5"></div>
-    <div><label for="js">Joist spacing h.o.h. (mm)</label>
-      <select id="js"><option>300</option><option selected>400</option><option>500</option><option>600</option></select></div>
-    <div><label for="jfam">Timber family</label>
-      <select id="jfam">
-        <option value="all" selected>All — anything I can order</option>
-        <option value="geschaafd">Geschaafd vuren (planed, in stock)</option>
-        <option value="balk">Balkhout / constructief</option>
-        <option value="glulam">Gelamineerd (glulam)</option>
-      </select></div>
-    <div><label for="jcls">Strength grade</label>
-      <select id="jcls">
-        <option value="C18">C18 vuren</option>
-        <option value="C24" selected>C24 vuren (standard)</option>
-        <option value="C30">C30</option>
-        <option value="GL24h">GL24h glulam</option>
-        <option value="GL28h">GL28h glulam</option>
+<div class="jd-panel">
+  <h2>GEOMETRY &amp; LOAD <em>&mdash; drag these</em></h2>
+  <div class="jd-row" style="margin-bottom:16px">
+    <div><label for="jd_mode">How do you know the load?</label>
+      <select id="jd_mode">
+        <option value="area" selected>Per m&sup2; &mdash; a floor (kg/m&sup2; + spacing)</option>
+        <option value="total">Total weight &mdash; a known object (kg + number of beams)</option>
       </select></div>
   </div>
-  <div class="jrow" style="margin-top:12px">
-    <div><label for="jw">Lock the width (mm)</label><select id="jw"><option value="0" selected>Any width</option></select></div>
-    <div><label for="jmaxh">Maximum depth available (mm)</label><input id="jmaxh" type="number" value="400" step="5" min="50"></div>
+  <div id="jd_totalbox" style="display:none">
+    <div class="jd-sl"><div class="jd-top"><span>Total weight carried</span><b><span id="jd_Wv">1200</span> kg</b></div>
+      <input type="range" id="jd_W" min="20" max="5000" step="10" value="1200"></div>
+    <div class="jd-sl"><div class="jd-top"><span>Number of beams sharing it</span><b><span id="jd_Nv">6</span></b></div>
+      <input type="range" id="jd_N" min="1" max="30" step="1" value="6"></div>
+    <p class="jd-info" id="jd_nnote"></p>
   </div>
-  <p class="jhint">Lock the width when you need it to match something already there — an existing joist, a steel shoe, a 63 mm hanger.</p>
+  <div class="jd-sl"><div class="jd-top"><span>Span L &mdash; distance between supports</span><b><span id="jd_Lv">4.00</span> m</b></div>
+    <input type="range" id="jd_L" min="0.5" max="9" step="0.05" value="4"></div>
+  <div id="jd_areabox">
+    <div class="jd-sl"><div class="jd-top"><span>Load &mdash; floor build-up plus people, per m&sup2;</span><b><span id="jd_qv">380</span> kg/m&sup2;</b></div>
+      <input type="range" id="jd_q" min="25" max="1200" step="5" value="380">
+      <p class="jd-info" id="jd_qnote" style="margin-top:8px"></p></div>
+    <div class="jd-sl"><div class="jd-top"><span>Spacing &mdash; centre to centre (h.o.h.)</span><b><span id="jd_sv">400</span> mm</b></div>
+      <input type="range" id="jd_s" min="200" max="900" step="10" value="400"></div>
+  </div>
+  <div class="jd-sl"><div class="jd-top"><span>Width b</span><b><span id="jd_bv">63</span> mm</b></div>
+    <input type="range" id="jd_b" min="20" max="200" step="1" value="63"></div>
+  <div class="jd-sl"><div class="jd-top"><span>Height h &mdash; the one that matters</span><b><span id="jd_hv">200</span> mm</b></div>
+    <input type="range" id="jd_h" min="40" max="700" step="1" value="200"></div>
 </div>
 
-<div class="jpanel">
-  <h2>The load</h2>
-  <div class="jrow">
-    <div><label for="jgpreset">Floor build-up (permanent)</label>
-      <select id="jgpreset">
-        <option value="0.6">Boards + vinyl / laminate — 0.6 kN/m²</option>
-        <option value="0.9">Boards + underlay + laminate — 0.9</option>
-        <option value="1.4">OSB + cement board + tiles — 1.4</option>
-        <option value="2.0" selected>OSB + board + screed + tiles — 2.0</option>
-        <option value="2.6">Natural stone / thick screed — 2.6</option>
-        <option value="3.4">Bathroom, tiled, filled bath — 3.4</option>
-        <option value="custom">Custom…</option>
-      </select></div>
-    <div><label for="jg">Permanent load g (kN/m²)</label><input id="jg" type="number" value="2.0" step="0.1" min="0"></div>
-    <div><label for="jp">Variable load p (kN/m²)</label>
-      <select id="jp">
-        <option value="1.75" selected>Home, floor A — 1.75</option>
-        <option value="2.0">Bathroom / kitchen — 2.0</option>
-        <option value="3.0">Attic storage — 3.0</option>
-        <option value="5.0">Assembly / heavy — 5.0</option>
-      </select></div>
-    <div><label for="jlim">Deflection limit</label>
-      <select id="jlim">
-        <option value="300">L/300 — timber or vinyl finish</option>
-        <option value="400">L/400 — laminate</option>
-        <option value="600" selected>L/600 — ceramic tiles</option>
-        <option value="720">L/720 — natural stone</option>
-      </select></div>
+<div class="jd-panel">
+  <h2>MATERIAL</h2>
+  <div class="jd-row">
+    <div><label for="jd_mat">Timber / beam material</label>
+      <select id="jd_mat">
+        <optgroup label="Naaldhout — softwood, solid (EN 338)">
+          <option value="7000|290|C14">C14 — lowest graded softwood</option>
+          <option value="8000|310|C16">C16 — UK/DIY structural</option>
+          <option value="9000|320|C18">C18 — ungraded vuren, assume at best</option>
+          <option value="9500|330|C20">C20</option>
+          <option value="10000|340|C22">C22</option>
+          <option value="11000|350|C24">C24 — NL standard constructiehout (vuren, grenen)</option>
+          <option value="11500|360|C27">C27</option>
+          <option value="12000|380|C30">C30 — douglas, lariks, select grades</option>
+          <option value="13000|400|C35">C35</option>
+          <option value="14000|420|C40">C40</option>
+        </optgroup>
+        <optgroup label="Loofhout — hardwood, solid (EN 338)">
+          <option value="10000|530|D30">D30 — eiken (oak), meranti</option>
+          <option value="10000|560|D35">D35 — eiken, robinia</option>
+          <option value="11000|590|D40">D40 — bangkirai, keruing</option>
+          <option value="14000|650|D50">D50 — teak-class tropical</option>
+          <option value="17000|700|D60">D60 — basralocus</option>
+          <option value="20000|900|D70">D70 — azob&eacute;, greenheart</option>
+        </optgroup>
+        <optgroup label="Gelamineerd — glulam (EN 14080)">
+          <option value="11000|365|GL24c">GL24c — combined layup</option>
+          <option value="11500|385|GL24h">GL24h — homogeneous</option>
+          <option value="12500|390|GL28c">GL28c</option>
+          <option value="12600|410|GL28h">GL28h</option>
+          <option value="13600|430|GL30h">GL30h</option>
+          <option value="14200|440|GL32h">GL32h</option>
+        </optgroup>
+        <optgroup label="Engineered">
+          <option value="13800|510|Kerto-S LVL">Kerto-S LVL — very stiff, very straight</option>
+          <option value="10500|510|Kerto-Q LVL">Kerto-Q LVL — cross-banded</option>
+          <option value="4500|600|OSB/3">OSB/3 panel — web/sheathing only</option>
+        </optgroup>
+        <optgroup label="For comparison">
+          <option value="210000|7850|Steel S235">Steel S235 — 19&times; stiffer than C24</option>
+          <option value="70000|2700|Aluminium">Aluminium 6061</option>
+          <option value="30000|2400|Concrete C30/37">Concrete C30/37</option>
+        </optgroup>
+      </select>
+      <p class="jd-info" id="jd_matnote"></p>
+    </div>
+    <div><label for="jd_lim">Deflection limit &mdash; what the finish tolerates</label>
+      <select id="jd_lim">
+        <option value="150">L/150 — temporary works, scaffold deck</option>
+        <option value="200">L/200 — garden structure, shed, carport</option>
+        <option value="250">L/250 — Eurocode general minimum</option>
+        <option value="300">L/300 — timber floor, vinyl, carpet</option>
+        <option value="350">L/350 — plastered ceiling below (no cracks)</option>
+        <option value="400">L/400 — laminate, careful finish</option>
+        <option value="500">L/500 — large-format tiles</option>
+        <option value="600" selected>L/600 — ceramic tiles, bathroom</option>
+        <option value="720">L/720 — natural stone, marble</option>
+        <option value="1000">L/1000 — glass partition on top</option>
+      </select>
+      <p class="jd-info" id="jd_limnote"></p>
+    </div>
   </div>
-  <div class="jcheck">
-    <input id="jcreep" type="checkbox" checked>
-    <label for="jcreep" style="margin:0">Include long-term creep (k<sub>def</sub> 0.8, service class 2 — correct for a bathroom)</label>
-  </div>
-  <p class="jhint">A filled bath is really a point load. The 3.4 kN/m² preset is a rough smear — if the bath lands on only two joists, double those two up regardless of what this says.</p>
+  <div class="jd-chk"><input type="checkbox" id="jd_creep" checked>
+    <label for="jd_creep" style="margin:0">Include long-term creep &mdash; timber keeps sagging for years under permanent load (k<sub>def</sub> 0.8, service class 2). Uncheck to see the day-one figure.</label></div>
 </div>
 
-<div id="jout"></div>
+<div id="jd_res"></div>
+<p class="jd-f" id="jd_work"></p>
 
-<div class="jfooter">
-  <b>Read this before you order timber.</b> Single simply-supported joist, uniform load, Eurocode 5 with k<sub>mod</sub> 0.8 and γ<sub>M</sub> 1.3. Not checked: bearing length, notches and holes, point loads, trimmers around a stairwell or bath, lateral restraint, vibration, fire. Section availability varies by supplier — confirm before you order. For anything structural you are changing, have a <b>constructeur</b> produce a signed berekening; the gemeente and your insurer will want it.
+<div class="jd-panel">
+  <h2>THE SHAPE <em>&mdash; sag exaggerated so you can see it</em></h2>
+  <svg id="jd_bend" viewBox="0 0 600 160" style="display:block;width:100%;height:auto"></svg>
 </div>
+
+<div class="jd-panel">
+  <h2>WHAT IF <em>&mdash; change one thing, see what happens</em></h2>
+  <table id="jd_sens" class="jd-tbl"></table>
+  <p class="jd-info">Height wins. Everything else is a rounding error.</p>
+</div>
+
+<div class="jd-panel">
+  <h2>LEARN IT PROPERLY</h2>
+  <details open><summary>The formula, term by term</summary>
+    <p class="eq">&delta; = 5 &middot; q &middot; L&#8308; / (384 &middot; E &middot; I)</p>
+    <p><strong>&delta;</strong> is the sag at midspan. <strong>q</strong> is the load on one beam in N/mm — a beam only carries the strip of floor it sits under, so 380 kg/m&sup2; at 400 mm h.o.h. is 152 kg/m. <strong>L</strong> is the span in mm. <strong>E</strong> is the material stiffness. <strong>I</strong> is the shape stiffness. The 5/384 is the constant for a simply-supported beam under uniform load; a point load in the middle would give 1/48 instead.</p>
+  </details>
+  <details><summary>Why height beats width, always</summary>
+    <p class="eq">I = b &middot; h&sup3; / 12</p>
+    <p>Width enters once, height enters three times. Double the width → 2&times; stiffer. Double the height → <strong>8&times;</strong> stiffer, for the same timber. That is why joists are tall and thin, and why you never lay one flat.</p>
+  </details>
+  <details><summary>Why span is brutal</summary>
+    <p>L is to the <strong>fourth power</strong>. Going from 3 m to 4 m is 33% longer but <strong>3.2&times;</strong> the deflection. Any support you can add in the middle is worth more than any beam you can buy — halving the span cuts deflection to one sixteenth.</p>
+  </details>
+  <details><summary>E: material stiffness, not strength</summary>
+    <p>E (Young's modulus) says how much a material stretches under stress. It is <strong>not</strong> the same as strength. Oak is far stronger than spruce yet barely stiffer. Switching species almost never solves a deflection problem; adding depth does.</p>
+  </details>
+  <details><summary>Creep: timber keeps moving</summary>
+    <p class="eq">w<sub>fin</sub> = w<sub>g</sub>(1 + k<sub>def</sub>) + w<sub>p</sub>(1 + &psi;&#8322; k<sub>def</sub>)</p>
+    <p>Load a timber beam and it sags immediately — then keeps sagging for years. k<sub>def</sub> 0.8 in a bathroom or unheated space. The permanent load creeps fully; the variable load only partly (&psi;&#8322; = 0.3 for a home). Roughly: long-term sag is <strong>1.6&ndash;1.8&times;</strong> the day-one figure.</p>
+  </details>
+  <details><summary>Strength and deflection are two different checks</summary>
+    <p>A beam can be nowhere near breaking and still be unusable. Deflection (SLS) governs almost every domestic floor; bending and shear (ULS) govern short heavily-loaded spans. This tool only does deflection. A joist that passes here can still fail in bending — check both.</p>
+  </details>
+  <details><summary>What this tool ignores</summary>
+    <p>Shear deformation, vibration and bounce, point loads (a filled bath, a stove), notches and drilled holes, bearing length, lateral buckling, and continuity over multiple spans.</p>
+  </details>
+</div>
+
+<p class="jd-footer">Instantaneous and creep deflection of a single simply-supported beam under uniform load, Euler–Bernoulli formula with EN 338 / EN 14080 mean stiffness values. Serviceability only — no strength, shear, bearing or vibration check. Not a structural calculation.</p>
+
 </div>
 </div>
 
 <script>
 (function(){
-const GRADES={C18:{fm:18,fv:3.4,E:9000,rho:320},C24:{fm:24,fv:4.0,E:11000,rho:350},C30:{fm:30,fv:4.0,E:12000,rho:380},GL24h:{fm:24,fv:3.5,E:11500,rho:385},GL28h:{fm:28,fv:3.5,E:12600,rho:410}};
-const CAT=[];
-function add(fam,b,hs){hs.forEach(h=>CAT.push({b,h,fam}));}
-add('geschaafd',18,[44,69,95]);add('geschaafd',22,[69,95,120]);add('geschaafd',27,[69,95,120,145]);add('geschaafd',32,[69,95,120,145]);add('geschaafd',38,[57,69,89,95,120,140,145,170,184,195]);add('geschaafd',44,[69,94,119,144,169,194,219,244,269,294]);add('geschaafd',63,[119,144,169,194,219,244,269]);add('geschaafd',71,[146,171,196,221,246,271,296]);
-add('balk',50,[100,125,150,175,200,225,250]);add('balk',63,[150,175,200,225,250,275]);add('balk',75,[150,175,200,225,250,275,300]);add('balk',96,[196,221,246,271]);add('balk',100,[100,150,200,250,300,350]);add('balk',125,[250,300,350]);
-add('glulam',60,[160,200,240,280,320,360,400,440,480]);add('glulam',80,[160,200,240,280,320,360,400,440,480,520]);add('glulam',100,[200,240,280,320,360,400,440,480,520,560,600]);add('glulam',120,[240,280,320,360,400,440,480,520,560,600]);add('glulam',140,[280,320,360,400,440,480,520,560,600]);
-const KMOD=0.8,GM=1.3,KDEF=0.8,PSI2=0.3,KCR=0.67;
-const $J=id=>document.getElementById(id);
-function fillJWidths(){
-  const fam=$J('jfam').value,keep=$J('jw').value;
-  const ws=[...new Set(CAT.filter(x=>fam==='all'||x.fam===fam).map(x=>x.b))].sort((a,b)=>a-b);
-  $J('jw').innerHTML='<option value="0">Any width</option>'+ws.map(b=>'<option value="'+b+'">'+b+' mm</option>').join('');
-  if(ws.indexOf(+keep)>-1)$J('jw').value=keep;
+var ids=['jd_L','jd_q','jd_s','jd_b','jd_h','jd_mat','jd_lim','jd_creep','jd_mode','jd_W','jd_N'];
+var LIMNOTE={150:"Barely controlled. Fine for a temporary platform, nothing else.",200:"Visible sag under load, but nothing cracks. Garden-grade.",250:"The Eurocode baseline. A 4 m span at this limit sags 16 mm — you would notice.",300:"Normal domestic floor with a forgiving finish.",350:"Driven by the ceiling below: plaster cracks before the floor feels bad.",400:"Laminate click joints open up if the floor moves too much.",500:"Large tiles span further across any dip, opening a wider crack at grout.",600:"The standard for ceramic tiles. Grout tolerates ~1–2 mm differential movement.",720:"Natural stone is more brittle than ceramic.",1000:"Effectively 'do not move'. Glass partitions need near-zero deflection."};
+var MATNOTE={"C14":"Bottom of the graded range. Rarely sold in NL.","C16":"Common in UK/DIY. 27% more sag than C24 for the same beam.","C18":"Best you may assume for ungraded planed vuren.","C20":"Intermediate grade, uncommon in NL.","C22":"Intermediate grade, uncommon in NL.","C24":"The NL default. Stamped C24, CE-marked, sold as constructiehout.","C27":"Only 5% stiffer than C24 — rarely worth hunting for.","C30":"Douglas and lariks reach this. 9% stiffer than C24.","C35":"Machine-graded, special order.","C40":"Top softwood. Still only 27% stiffer than C24 — depth is cheaper than grade.","D30":"Oak. Much stronger than spruce, barely stiffer. Switching to oak does not fix sag.","D35":"Oak, select grade. Same lesson: strength up, stiffness about the same.","D40":"Bangkirai. Dense tropical, usually used outdoors for durability, not stiffness.","D50":"Dense tropical. 27% stiffer than C24.","D60":"Basralocus. Heavy, expensive, used in marine and civil work.","D70":"Azobé. Nearly twice as stiff as C24, three times the weight.","GL24c":"Glulam, combined layup. Dead straight, available in long deep sections.","GL24h":"Glulam, homogeneous. Usual choice when solid beams run too deep.","GL28c":"Stronger glulam, combined layup.","GL28h":"15% stiffer than C24, up to 600 mm deep and 20 m long.","GL30h":"High-grade glulam.","GL32h":"Top glulam. 29% stiffer than C24, no knots.","Kerto-S LVL":"25% stiffer than C24, perfectly straight, expensive.","Kerto-Q LVL":"Cross-banded veneers: less stiff along the span, stable across it.","OSB/3":"Far too flexible to act as a beam — it belongs as a web or deck.","Steel S235":"19× stiffer than C24. One steel beam does the work of a wall full of timber.","Aluminium":"A third of steel's stiffness at a third of its weight.","Concrete C30/37":"Nearly 3× stiffer than C24, but 7× heavier — and it creeps too."};
+function $JD(i){return document.getElementById(i);}
+ids.forEach(function(i){var el=$JD(i);if(el){el.addEventListener('input',jdRun);el.addEventListener('change',jdRun);}});
+function jdDefl(L_m,qa,sp,b,h,E,creep,qLine){
+  var L=L_m*1000,q=(qLine!==undefined?qLine:qa*(sp/1000)),I=b*h*h*h/12;
+  var w=5*q*Math.pow(L,4)/(384*E*I);
+  if(creep){var wg=w*0.55,wp=w*0.45;w=wg*1.8+wp*1.24;}
+  return{w:w,q:q,I:I,L:L};
 }
-function jcheck(L_m,s_mm,b,h,grade,g,p,ratio,creep){
-  const G=GRADES[grade],L=L_m*1000,sp=s_mm/1000;
-  const gl=g*sp,pl=p*sp,qd=1.35*gl+1.5*pl;
-  const uM=(qd*L*L/8)/(b*h*h/6)/(G.fm*KMOD/GM);
-  const uV=(1.5*(qd*L/2)/(KCR*b*h))/(G.fv*KMOD/GM);
-  const I=b*h*h*h/12;
-  const wg=5*gl*Math.pow(L,4)/(384*G.E*I),wp=5*pl*Math.pow(L,4)/(384*G.E*I);
-  const w=creep?wg*(1+KDEF)+wp*(1+PSI2*KDEF):wg+wp;
-  const uD=w/(L/ratio);
-  const max=Math.max(uM,uV,uD);
-  return{uM,uV,uD,max,w,wlim:L/ratio,gov:max===uD?'deflection':max===uM?'bending':'shear',kgm:b*h*G.rho/1e6};
+function jdRun(){
+  var L=+$JD('jd_L').value,kg=+$JD('jd_q').value,sp=+$JD('jd_s').value,b=+$JD('jd_b').value,h=+$JD('jd_h').value;
+  var qa=kg*9.81/1000;
+  var mode=$JD('jd_mode').value,W=+$JD('jd_W').value,N=+$JD('jd_N').value;
+  $JD('jd_areabox').style.display=mode==='area'?'':'none';
+  $JD('jd_totalbox').style.display=mode==='area'?'none':'';
+  $JD('jd_Wv').textContent=W;$JD('jd_Nv').textContent=N;
+  var qLine=mode==='area'?undefined:(W/N)*9.81/(L*1000);
+  if(mode!=='area')$JD('jd_nnote').innerHTML='<strong>'+(W/N).toFixed(0)+' kg per beam</strong>, spread along '+L.toFixed(2)+' m = '+qLine.toFixed(3)+' N/mm.';
+  var mv=$JD('jd_mat').value.split('|'),E=+mv[0],rho=+mv[1],name=mv[2];
+  var ratio=+$JD('jd_lim').value,creep=$JD('jd_creep').checked;
+  $JD('jd_Lv').textContent=L.toFixed(2);$JD('jd_qv').textContent=kg;$JD('jd_sv').textContent=sp;$JD('jd_bv').textContent=b;$JD('jd_hv').textContent=h;
+  $JD('jd_qnote').innerHTML='Each beam carries '+(sp/1000).toFixed(2)+' m &rarr; <strong>'+(kg*sp/1000).toFixed(0)+' kg/m</strong>. Typical: 150 kg/m&sup2; boards+laminate, 280 tiled screed, 380 tiled bathroom, 550 with bath.';
+  $JD('jd_matnote').textContent=MATNOTE[name]||'';$JD('jd_limnote').textContent=LIMNOTE[ratio]||'';
+  var r=jdDefl(L,qa,sp,b,h,E,creep,qLine);
+  var lim=r.L/ratio,u=r.w/lim;
+  var cls=u<=0.85?'ok':(u<=1?'warn':'no');
+  var kcreep=creep?(0.55*1.8+0.45*1.24):1;
+  var maxL=Math.pow(384*E*r.I/(5*r.q*ratio*kcreep),1/3)/1000;
+  var hReq=Math.ceil(h*Math.pow(u,1/3));
+  var mass=b*h*rho/1e6;
+  $JD('jd_res').innerHTML='<div class="jd-res '+cls+'"><div><p class="jd-lbl">Sag at midspan</p><p class="jd-big">'+r.w.toFixed(1)+'<span> mm</span></p></div><div><p class="jd-lbl">Allowed, L/'+ratio+'</p><p class="jd-big">'+lim.toFixed(1)+'<span> mm</span></p></div><div><p class="jd-lbl">Used</p><p class="jd-big">'+Math.round(u*100)+'<span>%</span></p></div><p class="jd-note">'+(cls==='ok'?'<strong>Passes.</strong> Good to '+maxL.toFixed(2)+' m at this load. You could go as shallow as '+hReq+' mm deep and still pass.':cls==='warn'?'<strong>Passes, barely.</strong> Good to '+maxL.toFixed(2)+' m. Go one size up to have some margin.':'<strong>Fails.</strong> Need <strong>'+b+'&times;'+hReq+'mm</strong>, or shorten span to '+maxL.toFixed(2)+' m, or halve the spacing.')+'</p></div>';
+  $JD('jd_work').innerHTML=name+' &middot; E='+E.toLocaleString()+' N/mm&sup2; &middot; '+kg+' kg/m&sup2;&times;'+(sp/1000).toFixed(2)+'m = q='+r.q.toFixed(3)+' N/mm &middot; I='+(r.I/1e6).toFixed(2)+'&times;10<sup>6</sup>mm&#8308; &middot; '+mass.toFixed(1)+' kg/m'+(creep?' &middot; incl. creep':' &middot; day-one');
+  /* what-if table */
+  var base=r.w;
+  var QL=function(nL){return mode==='area'?undefined:(W/N)*9.81/(nL*1000);};
+  var cases=[['Double height ('+h+'→'+(h*2)+' mm)',jdDefl(L,qa,sp,b,h*2,E,creep,qLine).w],['Double width ('+b+'→'+(b*2)+' mm)',jdDefl(L,qa,sp,b*2,h,E,creep,qLine).w],(mode==='area'?['Halve spacing ('+sp+'→'+(sp/2)+' mm)',jdDefl(L,qa,sp/2,b,h,E,creep).w]:['Double beams ('+N+'→'+(N*2)+')',jdDefl(L,qa,sp,b,h,E,creep,qLine/2).w]),['Halve span ('+L.toFixed(2)+'→'+(L/2).toFixed(2)+'m)',jdDefl(L/2,qa,sp,b,h,E,creep,QL(L/2)).w],['+1m span ('+L.toFixed(2)+'→'+(L+1).toFixed(2)+'m)',jdDefl(L+1,qa,sp,b,h,E,creep,QL(L+1)).w],['Switch to steel S235',jdDefl(L,qa,sp,b,h,210000,false,qLine).w],['+10mm height',jdDefl(L,qa,sp,b,h+10,E,creep,qLine).w]];
+  $JD('jd_sens').innerHTML='<thead><tr><th>Change</th><th class="n">New sag</th><th class="n">vs now</th></tr></thead><tbody>'+cases.map(function(c){var f=c[1]/base,txt=(f<1?(1/f).toFixed(1)+'&times; less':f.toFixed(1)+'&times; more');return'<tr><td>'+c[0]+'</td><td class="n">'+c[1].toFixed(1)+' mm</td><td class="n '+(f<1?'jd-good':'jd-bad')+'">'+txt+'</td></tr>';}).join('')+'</tbody>';
+  /* SVG curve */
+  var svgW=600,M=44,svgSp=svgW-2*M,amp=Math.min(70,Math.max(3,u*55)),P=[];
+  for(var j=0;j<=48;j++){var t=j/48;var shape=(t*(1-t))*(1+t-t*t)/0.3125;P.push((M+t*svgSp).toFixed(1)+','+(46+shape*amp).toFixed(1));}
+  var col=cls==='no'?'var(--jd-fail)':'#B5813F';
+  $JD('jd_bend').innerHTML='<line x1="'+M+'" y1="46" x2="'+(svgW-M)+'" y2="46" stroke="var(--jd-line)" stroke-dasharray="5 5"/><polyline points="'+P.join(' ')+'" fill="none" stroke="'+col+'" stroke-width="8" stroke-linecap="round"/><path d="M'+M+',46 l-10,18 h20 z" fill="var(--jd-ink)"/><path d="M'+(svgW-M)+',46 l-10,18 h20 z" fill="var(--jd-ink)"/><text x="300" y="140" text-anchor="middle" font-size="13" fill="var(--jd-soft)" font-family="inherit">'+L.toFixed(2)+' m span &nbsp;&middot;&nbsp; '+r.w.toFixed(1)+' mm sag</text>';
 }
-function jrun(){
-  const L=+$J('jL').value,s=+$J('js').value,grade=$J('jcls').value;
-  const wsel=+$J('jw').value,fam=$J('jfam').value,maxh=+$J('jmaxh').value;
-  const g=+$J('jg').value,p=+$J('jp').value,ratio=+$J('jlim').value,creep=$J('jcreep').checked;
-  if(!(L>0&&s>0&&g>=0))return;
-  const pool=CAT.filter(x=>(fam==='all'||x.fam===fam)&&(!wsel||x.b===wsel)&&x.h<=maxh);
-  const passing=pool.map(x=>Object.assign({},x,jcheck(L,s,x.b,x.h,grade,g,p,ratio,creep))).filter(x=>x.max<=1);
-  const byWidth={};
-  passing.forEach(x=>{if(!byWidth[x.b]||x.h<byWidth[x.b].h)byWidth[x.b]=x;});
-  const opts=Object.values(byWidth).sort((a,c)=>a.kgm-c.kgm||a.h-c.h);
-  const famName={geschaafd:'geschaafd vuren',balk:'balkhout',glulam:'glulam'};
-  if(!opts.length){
-    $J('jout').innerHTML='<div class="jans jnone"><p class="jsize">Nothing in the catalogue spans '+L.toFixed(2)+' m under this load.</p><p>Raise the maximum depth, drop to 300 mm spacing, add an intermediate support, or switch the family to glulam.</p></div>';
-    return;
-  }
-  const best=opts[0];
-  const sc=Math.min(90/best.b,150/best.h);
-  const bw=wsel||best.b;
-  const spacings=[300,400,500,600].map(function(sp){
-    const list=pool.filter(x=>x.b===bw).map(x=>Object.assign({},x,jcheck(L,sp,x.b,x.h,grade,g,p,ratio,creep))).filter(x=>x.max<=1).sort((a,c)=>a.h-c.h);
-    return{sp,h:list.length?list[0].h:null};
-  });
-  $J('jout').innerHTML=
-    '<div class="jans"><div><p class="jsize">'+best.b+' &times; '+best.h+' <em>mm '+grade+'</em></p>'
-    +'<p>'+(famName[best.fam]||'')+', spanning '+L.toFixed(2)+' m at '+s+' mm h.o.h. under '+g.toFixed(1)+' + '+p.toFixed(2)+' kN/m². Deflects '+best.w.toFixed(1)+' mm against a '+best.wlim.toFixed(1)+' mm limit.</p>'
-    +'<span class="jgov">'+best.gov+' governs — '+Math.round(best.max*100)+'% used</span></div>'
-    +'<svg class="jsect" viewBox="0 0 '+(best.b*sc+4)+' '+(best.h*sc+4)+'">'
-    +'<rect x="2" y="2" width="'+best.b*sc+'" height="'+best.h*sc+'" fill="#B5813F" stroke="#8A5F28" stroke-width="2"/></svg></div>'
-    +'<div class="jpanel"><h2>Shallowest section at each width <span>— lightest first</span></h2><div class="jscroll"><table class="jtbl">'
-    +'<tr><th>Section</th><th>Family</th><th class="n">Bending</th><th class="n">Shear</th><th class="n">Deflection</th><th class="n">Governs</th><th class="n">kg/m</th></tr>'
-    +opts.map(function(o){return'<tr class="'+(o===best?'jbest':'')+'"><td>'+o.b+' &times; '+o.h+' mm</td><td class="ju">'+(famName[o.fam]||o.fam)+'</td><td class="n ju">'+Math.round(o.uM*100)+'%</td><td class="n ju">'+Math.round(o.uV*100)+'%</td><td class="n ju">'+Math.round(o.uD*100)+'%</td><td class="n ju">'+o.gov+'</td><td class="n ju">'+o.kgm.toFixed(1)+'</td></tr>';}).join('')
-    +'</table></div><p class="jhint">'+passing.length+' sections in the catalogue pass; this lists the shallowest one per width. Deflection governs almost every domestic floor, which is why depth beats width: doubling the height stiffens the joist eight times, doubling the width only twice.</p></div>'
-    +'<div class="jpanel"><h2>What spacing costs you <span>— at '+bw+' mm width</span></h2><table class="jtbl">'
-    +'<tr><th>Spacing h.o.h.</th><th class="n">Shallowest section</th><th class="n">Joists per 5 m of floor</th></tr>'
-    +spacings.map(function(x){return'<tr class="'+(x.sp===s?'jbest':'')+'"><td>'+x.sp+' mm</td><td class="n">'+(x.h?bw+' &times; '+x.h+' mm':'<span style="color:#9C2E17">none fits</span>')+'</td><td class="n ju">'+(Math.floor(5000/x.sp)+1)+'</td></tr>';}).join('')
-    +'</table><p class="jhint">Closer spacing buys a shallower joist but more timber and more cutting. 400 mm is the usual sweet spot and it suits 1220 mm sheet widths exactly.</p></div>';
-}
-['jL','js','jcls','jw','jg','jp','jlim','jcreep','jgpreset','jmaxh'].forEach(i=>{const el=$J(i);if(el)el.addEventListener('input',jrun);});
-$J('jfam').addEventListener('change',()=>{fillJWidths();jrun();});
-$J('jgpreset').addEventListener('change',e=>{if(e.target.value!=='custom')$J('jg').value=e.target.value;});
-fillJWidths(); jrun();
+jdRun();
 })();
 </script>
 
