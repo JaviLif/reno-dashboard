@@ -58,16 +58,33 @@
       "id": 316,
       "phaseId": 33,
       "categoryId": null,
-      "name": "",
+      "name": "Materials",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [],
-      "orders": [],
+      "orders": [
+        {
+          "id": 79,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-03",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1793715969165
+      "updatedAt": 1793715981382
     },
     {
       "id": 315,
@@ -7198,8 +7215,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793715969165,
-  "nextOrderId": 79,
+  "_savedAt": 1793715981382,
+  "nextOrderId": 80,
   "nextQuoteId": 214,
   "nextItemId": 317,
   "_version": "dashboard-v1",
