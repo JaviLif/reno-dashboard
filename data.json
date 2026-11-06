@@ -55,48 +55,6 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
-      "id": 318,
-      "phaseId": 60,
-      "categoryId": null,
-      "name": "TEST",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [
-        {
-          "id": 91,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-06",
-          "unitPrice": 10000,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
-      "documents": [],
-      "updatedAt": 1793965363781,
-      "status": "ordered",
-      "changelog": [
-        {
-          "ts": 1793965363781,
-          "oldSpent": 0,
-          "newSpent": 10000,
-          "oldBudget": 0,
-          "newBudget": 0
-        }
-      ]
-    },
-    {
       "id": 317,
       "phaseId": 65,
       "categoryId": null,
@@ -7574,7 +7532,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793965363781,
+  "_savedAt": 1793966417023,
   "nextOrderId": 92,
   "nextQuoteId": 215,
   "nextItemId": 319,
