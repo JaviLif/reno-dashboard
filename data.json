@@ -430,12 +430,12 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "Hornbach",
           "_quick": true
         }
       ],
       "documents": [],
-      "updatedAt": 1793961290786,
+      "updatedAt": 1793961295162,
       "status": "delivered",
       "changelog": [
         {
@@ -7483,7 +7483,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961290786,
+  "_savedAt": 1793961295162,
   "nextOrderId": 91,
   "nextQuoteId": 215,
   "nextItemId": 318,
