@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏠 Renovation Dashboard v1.0.39</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>🏠 Renovation Dashboard v1.0.98</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -6010,6 +6013,23 @@ initItemSnaps();
 renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
+// Async fallback: if sync XHR bootstrap was blocked by the browser (common on mobile),
+// the page renders with no data. Detect that, fetch async, reload once to recover.
+(function asyncBootstrapFallback(){
+  if(S&&S.items&&S.items.length) return; // already have data — nothing to do
+  if(sessionStorage.getItem('_asyncBootstrapDone')) return; // prevent reload loop
+  fetch('data.json?t='+Date.now())
+    .then(function(r){return r.json();})
+    .then(function(remote){
+      if(remote&&remote.items&&remote.items.length){
+        try{localStorage.setItem('reno_v4',JSON.stringify(remote));}catch(e){}
+        sessionStorage.setItem('_asyncBootstrapDone','1');
+        console.log('[asyncFallback] Restored '+remote.items.length+' items, reloading');
+        location.reload();
+      }
+    })
+    .catch(function(e){console.error('[asyncFallback] Failed:',e);});
+})();
 // Show a brief toast if bootstrap loaded from data.json (phone, new device, cleared cache)
 if(window._bootstrapSource==='data.json'){
   setTimeout(function(){
