@@ -58,7 +58,7 @@
       "id": 317,
       "phaseId": 65,
       "categoryId": null,
-      "name": "",
+      "name": "Extraction Fan Bathroom",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1793961008134
+      "updatedAt": 1793961021656
     },
     {
       "id": 316,
@@ -7364,7 +7364,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961008134,
+  "_savedAt": 1793961021656,
   "nextOrderId": 87,
   "nextQuoteId": 214,
   "nextItemId": 318,
