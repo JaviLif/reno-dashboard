@@ -71,12 +71,13 @@
           "unitPrice": 79.99,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/soler-palau-silent-design-100cz-badkamerventilator-85m-wit/9300000026121484/"
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1793961050161,
+      "updatedAt": 1793961053557,
       "changelog": [
         {
           "ts": 1793961050161,
@@ -7382,7 +7383,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961050161,
+  "_savedAt": 1793961053557,
   "nextOrderId": 87,
   "nextQuoteId": 215,
   "nextItemId": 318,
