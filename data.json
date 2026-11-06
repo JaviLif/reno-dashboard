@@ -76,10 +76,34 @@
           "name": "bol.com"
         }
       ],
-      "orders": [],
+      "orders": [
+        {
+          "id": 87,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 79.99,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1793961058201,
+      "updatedAt": 1793961061237,
       "changelog": [
+        {
+          "ts": 1793961061237,
+          "oldSpent": 0,
+          "newSpent": 79.99,
+          "oldBudget": 79.99,
+          "newBudget": 79.99
+        },
         {
           "ts": 1793961050161,
           "oldSpent": 0,
@@ -7384,8 +7408,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961058201,
-  "nextOrderId": 87,
+  "_savedAt": 1793961061237,
+  "nextOrderId": 88,
   "nextQuoteId": 215,
   "nextItemId": 318,
   "_version": "dashboard-v1",
