@@ -73,7 +73,8 @@
           "notes": "",
           "chosen": true,
           "link": "https://www.bol.com/nl/nl/p/soler-palau-silent-design-100cz-badkamerventilator-85m-wit/9300000026121484/",
-          "name": "bol.com"
+          "name": "bol.com",
+          "documents": []
         }
       ],
       "orders": [
@@ -91,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -397,7 +399,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "Elektramaat",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 89,
@@ -414,7 +417,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "Hotnbach",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 90,
@@ -431,7 +435,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "Hornbach",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2158,7 +2163,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
