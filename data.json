@@ -81,7 +81,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -240,7 +241,6 @@
       ],
       "documents": [],
       "updatedAt": 1793713253538,
-      "spentOverride": 163.55,
       "status": "delivered",
       "changelog": [
         {
@@ -325,8 +325,7 @@
       ],
       "documents": [],
       "updatedAt": 1793199505422,
-      "status": "delivered",
-      "spentOverride": 760.62
+      "status": "delivered"
     },
     {
       "id": 310,
@@ -420,8 +419,7 @@
       ],
       "documents": [],
       "updatedAt": 1793199543021,
-      "status": "delivered",
-      "spentOverride": 136
+      "status": "delivered"
     },
     {
       "id": 308,
@@ -670,8 +668,7 @@
       ],
       "documents": [],
       "updatedAt": 1792958208657,
-      "status": "returned",
-      "spentOverride": 195.67
+      "status": "returned"
     },
     {
       "id": 302,
@@ -718,8 +715,7 @@
       ],
       "documents": [],
       "updatedAt": 1791138275842,
-      "status": "delivered",
-      "spentOverride": 252.8
+      "status": "delivered"
     },
     {
       "id": 301,
@@ -812,8 +808,7 @@
       ],
       "documents": [],
       "updatedAt": 1793712269937,
-      "status": "delivered",
-      "spentOverride": 679.48
+      "status": "delivered"
     },
     {
       "id": 299,
@@ -860,8 +855,7 @@
       ],
       "documents": [],
       "updatedAt": 1791803539484,
-      "status": "delivered",
-      "spentOverride": 47.39
+      "status": "delivered"
     },
     {
       "id": 298,
@@ -1396,7 +1390,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 84,
@@ -1413,7 +1408,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 85,
@@ -1430,7 +1426,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2015,8 +2012,7 @@
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1792958158115,
-      "spentOverride": 148
+      "updatedAt": 1792958158115
     },
     {
       "id": 270,
@@ -7327,7 +7323,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793716187300,
+  "_savedAt": 1793960555307,
   "nextOrderId": 86,
   "nextQuoteId": 214,
   "nextItemId": 317,
