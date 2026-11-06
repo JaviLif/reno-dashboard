@@ -1570,16 +1570,31 @@ async function ghRestoreVersion(sha,label){
 
 
 // ===================== STATE =====================
-// v1.0.92: If localStorage is empty, restore from data.json (covers browser cache clears)
+// v1.0.95: Always fetch data.json on load; restore if localStorage is empty or remote is newer
 (function bootstrapFromDataJson(){
-  if(localStorage.getItem('reno_v4')||localStorage.getItem('reno_v3')) return;
   try{
     const xhr=new XMLHttpRequest();
     xhr.open('GET','data.json',false);
     xhr.send();
-    if(xhr.status===200){
+    if(xhr.status!==200) return;
+    const remote=JSON.parse(xhr.responseText);
+    if(!(remote&&remote.items&&remote.items.length)) return; // don't overwrite good local data with empty remote
+    const localRaw=localStorage.getItem('reno_v4');
+    if(!localRaw){
       localStorage.setItem('reno_v4',xhr.responseText);
-      console.log('[bootstrap] Restored '+JSON.parse(xhr.responseText).items.length+' items from data.json');
+      console.log('[bootstrap] Restored '+remote.items.length+' items from data.json (empty storage)');
+      return;
+    }
+    try{
+      const local=JSON.parse(localRaw);
+      if((remote._savedAt||0)>(local._savedAt||0)){
+        localStorage.setItem('reno_v4',xhr.responseText);
+        console.log('[bootstrap] Updated from data.json (remote newer by '+Math.round(((remote._savedAt||0)-(local._savedAt||0))/1000)+'s)');
+      }
+    }catch(e){
+      // corrupt local JSON — overwrite with remote
+      localStorage.setItem('reno_v4',xhr.responseText);
+      console.log('[bootstrap] Restored '+remote.items.length+' items from data.json (corrupt local)');
     }
   }catch(e){console.error('[bootstrap] Restore failed:',e);}
 })();
@@ -1610,7 +1625,11 @@ let S = loadState();
       });
     });
   });
-  if(changed){saveState();console.log('[migration] Fixed mojibake fields');}
+  if(changed){
+    S._savedAt=Date.now();
+    try{localStorage.setItem('reno_v4',JSON.stringify(S));}catch(e){}
+    console.log('[migration] Fixed mojibake fields');
+  }
 })();
 // Migration: retroactively tag 14 orders as quick expenses (v1.0.91)
 (function tagQuickExpenses(){
@@ -1619,7 +1638,11 @@ let S = loadState();
   (S.items||[]).forEach(it=>(it.orders||[]).forEach(o=>{
     if(quickIds.has(o.id)&&!o._quick){o._quick=true;tagged++;}
   }));
-  if(tagged){saveState();console.log('[migration] Tagged '+tagged+' orders as quick expenses');}
+  if(tagged){
+    S._savedAt=Date.now();
+    try{localStorage.setItem('reno_v4',JSON.stringify(S));}catch(e){}
+    console.log('[migration] Tagged '+tagged+' orders as quick expenses');
+  }
 })();
 // Migration v1.0.93: Reconcile items that have both spentOverride AND _quick orders.
 // If override > calcNet, the delta is untracked — create a quick expense for it and delete the override.
@@ -1645,7 +1668,12 @@ let S = loadState();
     delete it.spentOverride;
     changed++;
   });
-  if(changed){saveState();console.log('[migration] Reconciled '+changed+' items with override+quick conflict');}
+  if(changed){
+    // Save directly to localStorage (saveState() not safe this early — render helpers not yet defined)
+    S._savedAt=Date.now();
+    try{localStorage.setItem('reno_v4',JSON.stringify(S));}catch(e){}
+    console.log('[migration] Reconciled '+changed+' items with override+quick conflict');
+  }
 })();
 let calDate = new Date();
 let donutChart = null, donutMode = 'phase', donutMetric = 'budget';
