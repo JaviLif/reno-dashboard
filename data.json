@@ -413,7 +413,7 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "Hotnbach",
           "_quick": true
         },
         {
@@ -435,7 +435,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793961284908,
+      "updatedAt": 1793961290786,
       "status": "delivered",
       "changelog": [
         {
@@ -7483,7 +7483,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961284908,
+  "_savedAt": 1793961290786,
   "nextOrderId": 91,
   "nextQuoteId": 215,
   "nextItemId": 318,
