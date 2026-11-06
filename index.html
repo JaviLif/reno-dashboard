@@ -1439,7 +1439,9 @@ async function _ghSaveImmediate(){
 async function _ghInit(){
   if(!_ghToken){ _setCloudStatus('notoken'); return; }
   _setCloudStatus('connecting');
-  const remoteData = await _ghLoadData();
+  // Reuse data fetched by bootstrap to avoid a second network round-trip on startup
+  const remoteData = window._bootstrapRemote || await _ghLoadData();
+  window._bootstrapRemote = null; // consume it
   if(!remoteData){ _setCloudStatus('error'); return; }
   // Use cumulative ID scores as primary signal of "most work done".
   // A device with stale cached data may have a newer _savedAt timestamp,
@@ -1570,7 +1572,7 @@ async function ghRestoreVersion(sha,label){
 
 
 // ===================== STATE =====================
-// v1.0.95: Always fetch data.json on load; restore if localStorage is empty or remote is newer
+// v1.0.97: Bootstrap — always fetch data.json; use ID scores (same logic as _ghInit) to pick winner
 (function bootstrapFromDataJson(){
   try{
     const xhr=new XMLHttpRequest();
@@ -1578,22 +1580,33 @@ async function ghRestoreVersion(sha,label){
     xhr.send();
     if(xhr.status!==200) return;
     const remote=JSON.parse(xhr.responseText);
-    if(!(remote&&remote.items&&remote.items.length)) return; // don't overwrite good local data with empty remote
+    if(!(remote&&remote.items&&remote.items.length)) return;
+    window._bootstrapRemote=remote; // reuse in _ghInit to avoid a second network fetch
     const localRaw=localStorage.getItem('reno_v4');
     if(!localRaw){
       localStorage.setItem('reno_v4',xhr.responseText);
+      window._bootstrapSource='data.json';
       console.log('[bootstrap] Restored '+remote.items.length+' items from data.json (empty storage)');
       return;
     }
     try{
       const local=JSON.parse(localRaw);
-      if((remote._savedAt||0)>(local._savedAt||0)){
+      // Use cumulative ID scores as primary signal — same logic as _ghInit — to avoid overwriting
+      // newer local data just because data.json has a slightly newer _savedAt timestamp.
+      const remoteScore=(remote.nextPhaseId||1)+(remote.nextTaskId||1)+(remote.nextItemId||1);
+      const localScore=(local.nextPhaseId||1)+(local.nextTaskId||1)+(local.nextItemId||1);
+      const remoteTs=remote._savedAt||0, localTs=local._savedAt||0;
+      if(remoteScore>localScore||(remoteScore===localScore&&remoteTs>localTs+5000)){
         localStorage.setItem('reno_v4',xhr.responseText);
-        console.log('[bootstrap] Updated from data.json (remote newer by '+Math.round(((remote._savedAt||0)-(local._savedAt||0))/1000)+'s)');
+        window._bootstrapSource='data.json';
+        console.log('[bootstrap] Updated from data.json (score '+remoteScore+' vs local '+localScore+')');
+      } else {
+        window._bootstrapSource='localStorage';
+        console.log('[bootstrap] Keeping local data (score '+localScore+' vs remote '+remoteScore+')');
       }
     }catch(e){
-      // corrupt local JSON — overwrite with remote
       localStorage.setItem('reno_v4',xhr.responseText);
+      window._bootstrapSource='data.json';
       console.log('[bootstrap] Restored '+remote.items.length+' items from data.json (corrupt local)');
     }
   }catch(e){console.error('[bootstrap] Restore failed:',e);}
@@ -1649,7 +1662,6 @@ let S = loadState();
 // If override == calcNet (within 1 cent), just delete the override (redundant).
 (function reconcileOverrideVsQuick(){
   let changed=0;
-  const today=new Date().toISOString().slice(0,10);
   (S.items||[]).forEach(it=>{
     if(it.spentOverride==null) return;
     const hasQuick=(it.orders||[]).some(o=>o._quick&&o.status!=='cancelled');
@@ -1658,10 +1670,12 @@ let S = loadState();
       a+(Number(o.qtyOrdered||0)-Number(o.qtyReturned||0))*Number(o.unitPrice||0)+Number(o.shippingCost||0),0);
     const delta=Math.round((Number(it.spentOverride)-calcNet)*100)/100;
     if(delta>0.01){
-      // Add a reconciliation quick expense for the gap
-      it.orders.push({id:S.nextOrderId++,supplier:'',poNumber:'',orderDate:today,
+      // Use the oldest existing order date so the reconciliation entry doesn't skew time-based charts
+      const existingDates=(it.orders||[]).filter(o=>o.orderDate).map(o=>o.orderDate).sort();
+      const refDate=existingDates[0]||new Date().toISOString().slice(0,10);
+      it.orders.push({id:S.nextOrderId++,supplier:'',poNumber:'',orderDate:refDate,
         unitPrice:delta,qtyOrdered:1,status:'delivered',shippingCost:0,
-        qtyDelivered:1,deliveredDate:today,qtyReturned:0,returnDate:'',
+        qtyDelivered:1,deliveredDate:refDate,qtyReturned:0,returnDate:'',
         returnReason:'',notes:'reconciled from manual override',_quick:true});
       console.log('[migration] Reconciled',it.name,'delta €'+delta);
     }
@@ -5996,6 +6010,16 @@ initItemSnaps();
 renderDashboard();
 renderItems();
 _ghInit(); // connect to GitHub after first render
+// Show a brief toast if bootstrap loaded from data.json (phone, new device, cleared cache)
+if(window._bootstrapSource==='data.json'){
+  setTimeout(function(){
+    const t=document.createElement('div');
+    t.style.cssText='position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0F4F44;color:#fff;padding:10px 22px;border-radius:8px;font-size:14px;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none';
+    t.textContent='✓ Data restored from cloud backup';
+    document.body.appendChild(t);
+    setTimeout(function(){t.style.transition='opacity .5s';t.style.opacity='0';setTimeout(function(){t.remove();},600);},3500);
+  },800);
+}
 setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 </script>
 <div id="doc-preview-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.85);cursor:pointer;align-items:center;justify-content:center">
