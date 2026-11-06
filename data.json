@@ -58,16 +58,33 @@
       "id": 318,
       "phaseId": 60,
       "categoryId": null,
-      "name": "",
+      "name": "TEST",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [],
-      "orders": [],
+      "orders": [
+        {
+          "id": 91,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 0,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "documents": [],
-      "updatedAt": 1793965337853
+      "updatedAt": 1793965345749
     },
     {
       "id": 317,
@@ -7547,8 +7564,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793965337853,
-  "nextOrderId": 91,
+  "_savedAt": 1793965345749,
+  "nextOrderId": 92,
   "nextQuoteId": 215,
   "nextItemId": 319,
   "_version": "dashboard-v1",
