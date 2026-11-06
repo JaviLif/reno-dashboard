@@ -440,11 +440,11 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793964679113,
+      "updatedAt": 1793964779347,
       "status": "delivered",
       "changelog": [
         {
-          "ts": 1793964679113,
+          "ts": 1793964779347,
           "oldSpent": 1321.92,
           "newSpent": 736.4699999999999,
           "oldBudget": 170.63,
@@ -7532,7 +7532,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793964679113,
+  "_savedAt": 1793964779347,
   "nextOrderId": 91,
   "nextQuoteId": 215,
   "nextItemId": 318,
