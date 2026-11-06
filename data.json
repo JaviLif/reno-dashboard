@@ -378,7 +378,7 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "elektramaat",
           "documents": [],
           "_quick": true
         },
@@ -435,7 +435,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793961264168,
+      "updatedAt": 1793961281095,
       "status": "delivered",
       "changelog": [
         {
@@ -7483,7 +7483,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961264168,
+  "_savedAt": 1793961281095,
   "nextOrderId": 91,
   "nextQuoteId": 215,
   "nextItemId": 318,
