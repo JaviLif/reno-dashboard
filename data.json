@@ -55,6 +55,66 @@
   "originalBudgetImportedV1": true,
   "items": [
     {
+      "id": 317,
+      "phaseId": 65,
+      "categoryId": null,
+      "name": "Extraction Fan Bathroom",
+      "description": "Soler&Palau Silent 100",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 214,
+          "supplier": "",
+          "unitPrice": 79.99,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.bol.com/nl/nl/p/soler-palau-silent-design-100cz-badkamerventilator-85m-wit/9300000026121484/",
+          "name": "bol.com"
+        }
+      ],
+      "orders": [
+        {
+          "id": 87,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 79.99,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
+      "documents": [],
+      "updatedAt": 1793961071813,
+      "changelog": [
+        {
+          "ts": 1793961061237,
+          "oldSpent": 0,
+          "newSpent": 79.99,
+          "oldBudget": 79.99,
+          "newBudget": 79.99
+        },
+        {
+          "ts": 1793961050161,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 0,
+          "newBudget": 79.99
+        }
+      ],
+      "status": "delivered"
+    },
+    {
       "id": 316,
       "phaseId": 33,
       "categoryId": null,
@@ -81,7 +141,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -174,7 +235,7 @@
           "orderDate": "2026-11-01",
           "unitPrice": 51.4,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -186,8 +247,8 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793496838465,
-      "status": "ordered"
+      "updatedAt": 1793960762535,
+      "status": "delivered"
     },
     {
       "id": 313,
@@ -240,7 +301,6 @@
       ],
       "documents": [],
       "updatedAt": 1793713253538,
-      "spentOverride": 163.55,
       "status": "delivered",
       "changelog": [
         {
@@ -318,15 +378,88 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "elektramaat",
           "documents": [],
+          "_quick": true
+        },
+        {
+          "id": 88,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 190,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-06",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "Elektramaat",
+          "_quick": true
+        },
+        {
+          "id": 89,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 136.91,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-06",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "Hotnbach",
+          "_quick": true
+        },
+        {
+          "id": 90,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 234.39,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-06",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "Hornbach",
           "_quick": true
         }
       ],
       "documents": [],
-      "updatedAt": 1793199505422,
+      "updatedAt": 1793961295162,
       "status": "delivered",
-      "spentOverride": 760.62
+      "changelog": [
+        {
+          "ts": 1793961264168,
+          "oldSpent": 502.0799999999999,
+          "newSpent": 736.4699999999999,
+          "oldBudget": 170.63,
+          "newBudget": 170.63
+        },
+        {
+          "ts": 1793961247292,
+          "oldSpent": 365.16999999999996,
+          "newSpent": 502.0799999999999,
+          "oldBudget": 170.63,
+          "newBudget": 170.63
+        },
+        {
+          "ts": 1793961191627,
+          "oldSpent": 175.17,
+          "newSpent": 365.16999999999996,
+          "oldBudget": 170.63,
+          "newBudget": 170.63
+        }
+      ]
     },
     {
       "id": 310,
@@ -420,8 +553,7 @@
       ],
       "documents": [],
       "updatedAt": 1793199543021,
-      "status": "delivered",
-      "spentOverride": 136
+      "status": "delivered"
     },
     {
       "id": 308,
@@ -670,8 +802,7 @@
       ],
       "documents": [],
       "updatedAt": 1792958208657,
-      "status": "returned",
-      "spentOverride": 195.67
+      "status": "returned"
     },
     {
       "id": 302,
@@ -718,8 +849,7 @@
       ],
       "documents": [],
       "updatedAt": 1791138275842,
-      "status": "delivered",
-      "spentOverride": 252.8
+      "status": "delivered"
     },
     {
       "id": 301,
@@ -812,8 +942,7 @@
       ],
       "documents": [],
       "updatedAt": 1793712269937,
-      "status": "delivered",
-      "spentOverride": 679.48
+      "status": "delivered"
     },
     {
       "id": 299,
@@ -860,8 +989,7 @@
       ],
       "documents": [],
       "updatedAt": 1791803539484,
-      "status": "delivered",
-      "spentOverride": 47.39
+      "status": "delivered"
     },
     {
       "id": 298,
@@ -1396,7 +1524,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 84,
@@ -1413,7 +1542,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 85,
@@ -1430,7 +1560,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2011,12 +2142,37 @@
           "notes": "",
           "documents": [],
           "_quick": true
+        },
+        {
+          "id": 86,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-06",
+          "unitPrice": 18,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-06",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
         }
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1792958158115,
-      "spentOverride": 148
+      "updatedAt": 1793960961308,
+      "changelog": [
+        {
+          "ts": 1793960961308,
+          "oldSpent": 35,
+          "newSpent": 53,
+          "oldBudget": 20,
+          "newBudget": 20
+        }
+      ]
     },
     {
       "id": 270,
@@ -7327,10 +7483,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793716187300,
-  "nextOrderId": 86,
-  "nextQuoteId": 214,
-  "nextItemId": 317,
+  "_savedAt": 1793961295162,
+  "nextOrderId": 91,
+  "nextQuoteId": 215,
+  "nextItemId": 318,
   "_version": "dashboard-v1",
   "phases": [
     {
