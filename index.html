@@ -1574,7 +1574,7 @@ async function ghRestoreVersion(sha,label){
 (function bootstrapFromDataJson(){
   try{
     const xhr=new XMLHttpRequest();
-    xhr.open('GET','data.json',false);
+    xhr.open('GET','data.json?t='+Date.now(),false);
     xhr.send();
     if(xhr.status!==200) return;
     const remote=JSON.parse(xhr.responseText);
