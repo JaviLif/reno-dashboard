@@ -59,7 +59,7 @@
       "phaseId": 65,
       "categoryId": null,
       "name": "Extraction Fan Bathroom",
-      "description": "",
+      "description": "Soler&Palau Silent 100",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1793961021656
+      "updatedAt": 1793961033504
     },
     {
       "id": 316,
@@ -7364,7 +7364,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793961021656,
+  "_savedAt": 1793961033504,
   "nextOrderId": 87,
   "nextQuoteId": 214,
   "nextItemId": 318,
