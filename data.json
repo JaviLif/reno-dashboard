@@ -6290,7 +6290,24 @@
       "notes": "",
       "name": "Isolation Gemeente Subsidy",
       "categoryId": 7,
-      "orders": [],
+      "orders": [
+        {
+          "id": 92,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-09",
+          "unitPrice": -2500,
+          "qtyOrdered": 1,
+          "status": "ordered",
+          "shippingCost": 0,
+          "qtyDelivered": 0,
+          "deliveredDate": "",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": ""
+        }
+      ],
       "quotes": [
         {
           "supplier": "Classifier estimate",
@@ -6306,7 +6323,16 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1791137635098
+      "updatedAt": 1794236362190,
+      "changelog": [
+        {
+          "ts": 1794236362189,
+          "oldSpent": 0,
+          "newSpent": -2500,
+          "oldBudget": -2500,
+          "newBudget": -2500
+        }
+      ]
     },
     {
       "orders": [],
@@ -7532,8 +7558,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1793966417023,
-  "nextOrderId": 92,
+  "_savedAt": 1794236362190,
+  "nextOrderId": 93,
   "nextQuoteId": 215,
   "nextItemId": 319,
   "_version": "dashboard-v1",
