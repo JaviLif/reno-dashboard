@@ -68,7 +68,7 @@
         {
           "id": 215,
           "supplier": "",
-          "unitPrice": 0,
+          "unitPrice": 1750,
           "date": "",
           "notes": "",
           "chosen": true
@@ -76,7 +76,16 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794407791734
+      "updatedAt": 1794407798001,
+      "changelog": [
+        {
+          "ts": 1794407798001,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 0,
+          "newBudget": 1750
+        }
+      ]
     },
     {
       "id": 317,
@@ -7579,7 +7588,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794407791734,
+  "_savedAt": 1794407798001,
   "nextOrderId": 93,
   "nextQuoteId": 216,
   "nextItemId": 320,
