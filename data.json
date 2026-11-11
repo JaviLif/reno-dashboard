@@ -64,10 +64,19 @@
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 215,
+          "supplier": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": true
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794407765911
+      "updatedAt": 1794407769893
     },
     {
       "id": 317,
@@ -6303,7 +6312,7 @@
       "status": "ordered",
       "link": "",
       "notes": "",
-      "name": "Isolation Gemeente Subsidy",
+      "name": "-1750",
       "categoryId": 7,
       "orders": [],
       "quotes": [
@@ -6321,7 +6330,7 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794407754685,
+      "updatedAt": 1794407771258,
       "changelog": [
         {
           "ts": 1794407719784,
@@ -7570,9 +7579,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794407765911,
+  "_savedAt": 1794407771258,
   "nextOrderId": 93,
-  "nextQuoteId": 215,
+  "nextQuoteId": 216,
   "nextItemId": 320,
   "_version": "dashboard-v1",
   "phases": [
