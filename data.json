@@ -71,7 +71,10 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -116,7 +120,8 @@
           "oldBudget": 0,
           "newBudget": 1750
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 317,
@@ -6362,7 +6367,7 @@
           "chosen": true,
           "notes": "",
           "id": 66,
-          "unitPrice": 0,
+          "unitPrice": -1750,
           "documents": [],
           "link": "",
           "shippingCost": 0,
@@ -6370,8 +6375,15 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794407775450,
+      "updatedAt": 1794408831204,
       "changelog": [
+        {
+          "ts": 1794408831204,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 0,
+          "newBudget": -1750
+        },
         {
           "ts": 1794407719784,
           "oldSpent": -2500,
@@ -7619,7 +7631,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794407822514,
+  "_savedAt": 1794408831204,
   "nextOrderId": 94,
   "nextQuoteId": 216,
   "nextItemId": 320,
