@@ -6324,7 +6324,7 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794407736813,
+      "updatedAt": 1794407743065,
       "changelog": [
         {
           "ts": 1794407719784,
@@ -7573,7 +7573,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794407736813,
+  "_savedAt": 1794407743065,
   "nextOrderId": 93,
   "nextQuoteId": 215,
   "nextItemId": 319,
