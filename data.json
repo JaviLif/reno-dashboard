@@ -6350,7 +6350,7 @@
     },
     {
       "id": 165,
-      "description": " Gemeende Subside Amsterdam. APPLY FIRST THEN DO THE WORK! ",
+      "description": "1 Part",
       "documents": [],
       "unit": "pcs",
       "phaseId": 66,
@@ -6392,7 +6392,7 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794408836271,
+      "updatedAt": 1794408842059,
       "changelog": [
         {
           "ts": 1794408836271,
@@ -7655,7 +7655,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794408836271,
+  "_savedAt": 1794408842059,
   "nextOrderId": 95,
   "nextQuoteId": 216,
   "nextItemId": 320,
