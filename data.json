@@ -6305,7 +6305,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "quotes": [
@@ -6315,7 +6316,7 @@
           "chosen": true,
           "notes": "",
           "id": 66,
-          "unitPrice": -2500,
+          "unitPrice": 0,
           "documents": [],
           "link": "",
           "shippingCost": 0,
@@ -6323,8 +6324,15 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794236362190,
+      "updatedAt": 1794407712682,
       "changelog": [
+        {
+          "ts": 1794407712682,
+          "oldSpent": -2500,
+          "newSpent": -2500,
+          "oldBudget": -2500,
+          "newBudget": 0
+        },
         {
           "ts": 1794236362189,
           "oldSpent": 0,
@@ -7558,7 +7566,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794236362190,
+  "_savedAt": 1794407712682,
   "nextOrderId": 93,
   "nextQuoteId": 215,
   "nextItemId": 319,
