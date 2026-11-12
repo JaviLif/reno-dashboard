@@ -59,7 +59,7 @@
       "phaseId": 81,
       "categoryId": null,
       "name": "Gas and Electricity Contract",
-      "description": "",
+      "description": "Borgsom",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794485206763
+      "updatedAt": 1794485210596
     },
     {
       "id": 321,
@@ -7724,7 +7724,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794485206763,
+  "_savedAt": 1794485210596,
   "nextOrderId": 95,
   "nextQuoteId": 217,
   "nextItemId": 323,
