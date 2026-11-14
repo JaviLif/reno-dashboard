@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>🏠 Renovation Dashboard v1.0.102</title>
+<title>🏠 Renovation Dashboard v1.0.103</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -402,6 +402,7 @@ body.col-resizing *{cursor:col-resize!important}
   <button class="nav-btn" data-tab="calendar">🗓 Calendar</button>
   <button class="nav-btn" data-tab="heatpump">🔥 Heat Pump</button>
   <button class="nav-btn" data-tab="vergoeding">⚖️ Vergoeding</button>
+  <button class="nav-btn" data-tab="subsidie">🏛️ Subsidie</button>
   <button class="nav-btn" data-tab="joist">📐 Deflection</button>
       <button class="nav-btn" data-tab="settings">⚙️ Settings</button>
   <div class="nav-ver" onclick="document.querySelector('.nav-btn[data-tab=settings]').click()" title="Changelog"><span style="font-size:14px;flex-shrink:0;width:26px;text-align:center">&#x1F4CB;</span><span class="nav-ver-lbl" style="white-space:nowrap;font-size:10px;color:var(--g500)"></span></div>
@@ -837,7 +838,7 @@ body.col-resizing *{cursor:col-resize!important}
   <div style="margin-top:24px;max-width:960px">
     <div class="set-title">Version History</div>
     <div class="card"><div class="card-body" style="padding:12px 14px;display:flex;flex-direction:column;gap:2px">
-<div class="ver-row"><span class="ver-tag">v1.0.102</span><span>Fix: negative unit prices now allowed in BOM options, orders, and inline price column — subsidy items (rebates) can be entered as negative values</span></div><div class="ver-row"><span class="ver-tag">v1.0.101</span><span>Fix: version history panel and commit link now target gh-pages branch (were showing main history)</span></div><div class="ver-row"><span class="ver-tag">v1.0.100</span><span>Fix: sync was writing to main branch instead of gh-pages — desktop saves were never visible on phone or other devices; all GitHub API calls now target gh-pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.99</span><span>Fix: deploy pipeline corrected (gh-pages was stuck at v1.0.93); data merge — phone + desktop orders reconciled (170 items, 72 orders)</span></div><div class="ver-row"><span class="ver-tag">v1.0.98</span><span>Fix: async fallback bootstrap for mobile browsers that block sync XHR; no-cache headers prevent stale HTML on phone</span></div><div class="ver-row"><span class="ver-tag">v1.0.97</span><span>Fix: bootstrap now uses ID scores (not timestamps) to pick winning data; _ghInit reuses bootstrap fetch; reconciliation orders use original purchase date; cloud-restore toast</span></div><div class="ver-row"><span class="ver-tag">v1.0.96</span><span>Fix: cache-bust data.json fetch in bootstrap (mobile was getting stale cached backup)</span></div><div class="ver-row"><span class="ver-tag">v1.0.95</span><span>Fix: migration crash (saveState called before render helpers defined); bootstrap always fetches data.json on every load</span></div><div class="ver-row"><span class="ver-tag">v1.0.94</span><span>New tab: 📐 Live Deflection — beam sag calculator with sliders, material picker, what-if table, SVG diagram, and learn section; replaces Joist Sizer</span></div><div class="ver-row"><span class="ver-tag">v1.0.93</span><span>Fix: reconcile items that had both a manual override and quick-expense orders — delta becomes a reconciliation quick expense, override is cleared; Quick Expenses tab and BOM net now always agree</span></div><div class="ver-row"><span class="ver-tag">v1.0.92</span><span>Fix: auto-restore from data.json when localStorage is empty (browser cache clear, new device, private mode) — prevents data loss on cache wipe</span></div><div class="ver-row"><span class="ver-tag">v1.0.91</span><span>Fix: retroactive quick-expense migration — 14 existing orders now correctly tagged as quick expenses in localStorage on first load</span></div><div class="ver-row"><span class="ver-tag">v1.0.90</span><span>New tab: 🪵 Joist Sizer — EC5 bending/shear/deflection check across full NL timber catalogue; returns lightest passing section with spacing comparison table</span></div><div class="ver-row"><span class="ver-tag">v1.0.89</span><span>Financial: 💸 Quick Expenses tab — all quick expenses from the last 90 days in one table (date, phase, item, amount, note); click item name to jump to BOM row</span></div><div class="ver-row"><span class="ver-tag">v1.0.88</span><span>BOM: typing +22 (or any positive delta) in the Net Spent field auto-creates a Quick Expense for that amount; Quick Expense button now also clears any manual override so orders own the total</span></div><div class="ver-row"><span class="ver-tag">v1.0.87</span><span>BOM: 💸 Quick Expense button on each item — add a dated cost entry (amount + note) without the full order form; shows as a compact green row</span></div><div class="ver-row"><span class="ver-tag">v1.0.86</span><span>BOM: item change log — every time Spent or Budget changes, the delta and old→new values are recorded and shown in the expanded item panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.85</span><span>Fix: filtered Budget total now correctly includes sub-phase budgets (was always 0 for parent phases)</span></div><div class="ver-row"><span class="ver-tag">v1.0.84</span><span>Financial: Spending Over Time tab — bar chart + table of spent per week or month, with cumulative line</span></div><div class="ver-row"><span class="ver-tag">v1.0.83</span><span>UX: clicking any text or number input selects the full value instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.82</span><span>Dashboard: Recent Tasks list, Budget/Spent switch on the pie, collapsible Phases panel. Financial: bar/pie switch, excluded filter chips struck through, header Spent/Remaining now follow the filter instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
+<div class="ver-row"><span class="ver-tag">v1.0.103</span><span>New tab: 🏛️ Subsidie — subsidiedossier Cornelis de Grootpad 1 (SVW, EISA, ISDE, maatregelen, aannemerseisen, deadlines)</span></div><div class="ver-row"><span class="ver-tag">v1.0.102</span><span>Fix: negative unit prices now allowed in BOM options, orders, and inline price column — subsidy items (rebates) can be entered as negative values</span></div><div class="ver-row"><span class="ver-tag">v1.0.101</span><span>Fix: version history panel and commit link now target gh-pages branch (were showing main history)</span></div><div class="ver-row"><span class="ver-tag">v1.0.100</span><span>Fix: sync was writing to main branch instead of gh-pages — desktop saves were never visible on phone or other devices; all GitHub API calls now target gh-pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.99</span><span>Fix: deploy pipeline corrected (gh-pages was stuck at v1.0.93); data merge — phone + desktop orders reconciled (170 items, 72 orders)</span></div><div class="ver-row"><span class="ver-tag">v1.0.98</span><span>Fix: async fallback bootstrap for mobile browsers that block sync XHR; no-cache headers prevent stale HTML on phone</span></div><div class="ver-row"><span class="ver-tag">v1.0.97</span><span>Fix: bootstrap now uses ID scores (not timestamps) to pick winning data; _ghInit reuses bootstrap fetch; reconciliation orders use original purchase date; cloud-restore toast</span></div><div class="ver-row"><span class="ver-tag">v1.0.96</span><span>Fix: cache-bust data.json fetch in bootstrap (mobile was getting stale cached backup)</span></div><div class="ver-row"><span class="ver-tag">v1.0.95</span><span>Fix: migration crash (saveState called before render helpers defined); bootstrap always fetches data.json on every load</span></div><div class="ver-row"><span class="ver-tag">v1.0.94</span><span>New tab: 📐 Live Deflection — beam sag calculator with sliders, material picker, what-if table, SVG diagram, and learn section; replaces Joist Sizer</span></div><div class="ver-row"><span class="ver-tag">v1.0.93</span><span>Fix: reconcile items that had both a manual override and quick-expense orders — delta becomes a reconciliation quick expense, override is cleared; Quick Expenses tab and BOM net now always agree</span></div><div class="ver-row"><span class="ver-tag">v1.0.92</span><span>Fix: auto-restore from data.json when localStorage is empty (browser cache clear, new device, private mode) — prevents data loss on cache wipe</span></div><div class="ver-row"><span class="ver-tag">v1.0.91</span><span>Fix: retroactive quick-expense migration — 14 existing orders now correctly tagged as quick expenses in localStorage on first load</span></div><div class="ver-row"><span class="ver-tag">v1.0.90</span><span>New tab: 🪵 Joist Sizer — EC5 bending/shear/deflection check across full NL timber catalogue; returns lightest passing section with spacing comparison table</span></div><div class="ver-row"><span class="ver-tag">v1.0.89</span><span>Financial: 💸 Quick Expenses tab — all quick expenses from the last 90 days in one table (date, phase, item, amount, note); click item name to jump to BOM row</span></div><div class="ver-row"><span class="ver-tag">v1.0.88</span><span>BOM: typing +22 (or any positive delta) in the Net Spent field auto-creates a Quick Expense for that amount; Quick Expense button now also clears any manual override so orders own the total</span></div><div class="ver-row"><span class="ver-tag">v1.0.87</span><span>BOM: 💸 Quick Expense button on each item — add a dated cost entry (amount + note) without the full order form; shows as a compact green row</span></div><div class="ver-row"><span class="ver-tag">v1.0.86</span><span>BOM: item change log — every time Spent or Budget changes, the delta and old→new values are recorded and shown in the expanded item panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.85</span><span>Fix: filtered Budget total now correctly includes sub-phase budgets (was always 0 for parent phases)</span></div><div class="ver-row"><span class="ver-tag">v1.0.84</span><span>Financial: Spending Over Time tab — bar chart + table of spent per week or month, with cumulative line</span></div><div class="ver-row"><span class="ver-tag">v1.0.83</span><span>UX: clicking any text or number input selects the full value instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.82</span><span>Dashboard: Recent Tasks list, Budget/Spent switch on the pie, collapsible Phases panel. Financial: bar/pie switch, excluded filter chips struck through, header Spent/Remaining now follow the filter instantly</span></div><div class="ver-row"><span class="ver-tag">v1.0.81</span><span>Recent Items shows the last 100 changed items in a scrollable list (was 8)</span></div><div class="ver-row"><span class="ver-tag">v1.0.80</span><span>Spent is editable per BOM line: type a value to override the order-based calculation (marked with a dot), clear the field to go back to calculated</span></div><div class="ver-row"><span class="ver-tag">v1.0.79</span><span>BOM number fields are now calculators: type +5, -2, *3 or 120/4 and it computes from the current value; arrow keys step by 1 (Shift 10, Ctrl 0.01)</span></div><div class="ver-row"><span class="ver-tag">v1.0.78</span><span>Recent Items now lists items you changed (options, orders, prices, documents), not only newly added ones, with a &ldquo;Changed&rdquo; column</span></div><div class="ver-row"><span class="ver-tag">v1.0.77</span><span>Settings &#8594; Suppliers: rename (updates all options and orders), merge by renaming onto an existing name, delete from the suggestions, and add suppliers manually</span></div><div class="ver-row"><span class="ver-tag">v1.0.76</span><span>Suppliers: one-time backfill — empty supplier fields filled from the option link (e.g. hornbach.nl &#8594; Hornbach); orders inherit the supplier of their chosen option</span></div><div class="ver-row"><span class="ver-tag">v1.0.75</span><span>Suppliers: Order and Option fields now offer a type-ahead list of suppliers you already used; new names are added automatically and the spelling stays consistent</span></div><div class="ver-row"><span class="ver-tag">v1.0.74</span><span>Deploy pipeline test — no functional changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.73</span><span>Financial: filter now propagates to all charts, tables, and totals — unchecking a phase/category updates everything</span></div><div class="ver-row"><span class="ver-tag">v1.0.72</span><span>Kanban: board re-renders instantly on column move; column color shown as top border</span></div><div class="ver-row"><span class="ver-tag">v1.0.71</span><span>Kanban: column reordering via ← → buttons in board config panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.70</span><span>Kanban: fix add-column duplicate error (auto-suffix slug); column colors now preloaded correctly in picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.69</span><span>Kanban: configurable columns — add, rename, recolor, delete; saved to JSON</span></div><div class="ver-row"><span class="ver-tag">v1.0.68</span><span>Enter key: saves and closes item panel, phase modal, task modal</span></div><div class="ver-row"><span class="ver-tag">v1.0.67</span><span>Order date auto-filled with today on order creation</span></div><div class="ver-row"><span class="ver-tag">v1.0.66</span><span>Status: single source of truth — item status always derives from orders; changing item status propagates to all active orders</span></div><div class="ver-row"><span class="ver-tag">v1.0.65</span><span>Fix: header filter indicator now works on all tabs (not only after visiting Financial)</span></div><div class="ver-row"><span class="ver-tag">v1.0.64</span><span>Header + KPI cards reflect financial filter (Filtered Spent/Remaining)</span></div><div class="ver-row"><span class="ver-tag">v1.0.63</span><span>Financial: filtered Budget column now tracks category-filtered BOM plan</span></div><div class="ver-row"><span class="ver-tag">v1.0.62</span><span>Mobile: bom sidebar hidden; BOM phase header: net spent; Budget cat exclusion fixed</span></div><div class="ver-row"><span class="ver-tag">v1.0.61</span><span>BOM column layout baked as default; Financial tab: phase+category exclusion filter panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.60</span><span>BOM: Uncategorised filter in top bar and sidebar panel</span></div><div class="ver-row"><span class="ver-tag">v1.0.59</span><span>BOM link column: reads chosen option link (it.link was cleared in v1.0.54 migration)</span></div><div class="ver-row"><span class="ver-tag">v1.0.58</span><span>BOM: link column restored on mobile; Options: open-link button on left of each option row</span></div><div class="ver-row"><span class="ver-tag">v1.0.57</span><span>BOM: all columns sortable (name/desc/qty/price/total/netspent); mobile layout (≤600px) with compact header, touch scroll, hidden verbose columns</span></div><div class="ver-row"><span class="ver-tag">v1.0.56</span><span>Status fix: pure status-based derivation (no qty override); phase header shows shipping cost</span></div><div class="ver-row"><span class="ver-tag">v1.0.55b</span><span>Fix: order status not-ordered now correctly maps to item status not-ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.55</span><span>BOM expanded panel: Options→Orders→Documents order; distinct colored section backgrounds; fix status derivation (returned/partial); fix manual item status override</span></div><div class="ver-row"><span class="ver-tag">v1.0.54</span><span>BOM: Options panel (merged Notes+Quotes) with per-option prefill; data migration preserves existing notes/link; Shipping row in items table + budget tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.53</span><span>BOM: status color visible as colored left border on item and order dropdowns; option labels use full names (Not Ordered etc.)</span></div><div class="ver-row"><span class="ver-tag">v1.0.52</span><span>BOM: unified item + order statuses â€” Shipped added to items; Not Ordered + Partial added to orders; shipped item auto-derived from shipped order</span></div><div class="ver-row"><span class="ver-tag">v1.0.51</span><span>BOM: fix order status shipped wrongly showing item as Partial; shipped now keeps item as Ordered</span></div><div class="ver-row"><span class="ver-tag">v1.0.50</span><span>BOM: item status always re-derived from orders on render (fixes stale status on page load); direct DOM patch for instant visual update when order status changes</span></div><div class="ver-row"><span class="ver-tag">v1.0.49</span><span>BOM: item status updates immediately when order status changes; order status (delivered/shipped) now drives item status</span></div><div class="ver-row"><span class="ver-tag">v1.0.48</span><span>BOM: order status dropdown now updates item status in the list immediately</span></div><div class="ver-row"><span class="ver-tag">v1.0.47</span><span>BOM: shipping cost moved to orders; included in Actual spent; Shipping line in footer</span></div><div class="ver-row"><span class="ver-tag">v1.0.46</span><span>BOM: order fields labeled; status dropdown color-coded by state</span></div><div class="ver-row"><span class="ver-tag">v1.0.45</span><span>BOM: quote fields now labeled (Supplier, Unit price, Shipping, Date, Notes, Link)</span></div><div class="ver-row"><span class="ver-tag">v1.0.44</span><span>BOM: shipping/delivery cost field on quotes; Prefill button always visible</span></div><div class="ver-row"><span class="ver-tag">v1.0.43</span><span>HP: removed scenario presets; neutralised copy; Settings: reorganised into logical sections</span></div><div class="ver-row"><span class="ver-tag">v1.0.42</span><span>HP: fixed garbled characters (m², °C, ΔT, –) in heat pump output</span></div><div class="ver-row"><span class="ver-tag">v1.0.41</span><span>HP + Vergoedingsrecht: inputs now persisted to localStorage and restored on reload</span></div><div class="ver-row"><span class="ver-tag">v1.0.40</span><span>BOM picker: items grouped by phase; create-item phase dropdown ordered by phase number</span></div><div class="ver-row"><span class="ver-tag">v1.0.39</span><span>BOM: tab order fix; qty any-decimal step; multi-quote queue; create-from-search</span></div><div class="ver-row"><span class="ver-tag">v1.0.38</span><span>BOM: create new item from quote picker; bookmarklet panel inside BOM tab</span></div><div class="ver-row"><span class="ver-tag">v1.0.37</span><span>BOM: bookmarklet to capture quotes from supplier pages</span></div><div class="ver-row"><span class="ver-tag">v1.0.36</span><span>BOM: link field on quotes to save supplier URLs</span></div><div class="ver-row"><span class="ver-tag">v1.0.35</span><span>HP: light-theme integration; Vergoedingsrecht: CPI-indexed payout calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.34</span><span>Heat Pump: ISSO 51 heat loss &amp; pump sizing calculator</span></div><div class="ver-row"><span class="ver-tag">v1.0.33</span><span>BOM: Tab key cycles through cells; Settings: localStorage usage bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.32</span><span>Spaces: auto-cycling palette colors on create</span></div><div class="ver-row"><span class="ver-tag">v1.0.31</span><span>Spaces/Areas: multi-space task assignment, kanban chips, area filter bar</span></div><div class="ver-row"><span class="ver-tag">v1.0.30</span><span>Subtasks: Kanban nesting, X/Y done badge, phase-grouped parent picker</span></div><div class="ver-row"><span class="ver-tag">v1.0.29</span><span>Fin: normal width; ver hidden collapsed; encoding fixes</span></div><div class="ver-row"><span class="ver-tag">v1.0.25</span><span>Fin: subsidy fix; nav version badge</span></div><div class="ver-row"><span class="ver-tag">v1.0.24</span><span>Fin: wider+collapse; Cal: zoom fix</span></div><div class="ver-row"><span class="ver-tag">v1.0.23</span><span>BOM: phase group headers always visible</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.22</span><span>BOM: sub-phase group headers when top-level phase selected</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.21</span><span>Sidebar: larger icons, more spacing, settings pinned to bottom</span></div>
           <div class="ver-row"><span class="ver-tag">v1.0.20</span><span>Sidebar nav; Timeline full width; Calendar zoom stable; BOM/Tasks height fixes</span></div>
@@ -6364,6 +6365,224 @@ setTimeout(function(){_initKanbanNest();_nestKanban();},0);
 
   </main>
 </div>
+</div>
+</div>
+<!-- SUBSIDIE (Subsidiedossier Grootpad) -->
+<style>
+#tab-subsidie{--sb-bg:#f3f4f2;--sb-surface:#ffffff;--sb-ink:#1b1f1d;--sb-soft:#5d6763;--sb-line:#d7dbd6;--sb-accent:#9a5b1f;--sb-go:#2f6b4a;--sb-warn:#9c6b12;--sb-stop:#8d2f2a;color:var(--sb-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.5}
+#tab-subsidie *{box-sizing:border-box}
+#tab-subsidie .sb-wrap{max-width:1180px;margin:0 auto;padding:8px 0 56px}
+#tab-subsidie h1,#tab-subsidie h2,#tab-subsidie h3{text-wrap:balance;margin:0;color:var(--sb-ink)}
+#tab-subsidie h1{font-size:1.65rem;font-weight:600;letter-spacing:-.02em}
+#tab-subsidie h2{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
+#tab-subsidie h3{font-size:.92rem;font-weight:600}
+#tab-subsidie .sb-eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--sb-soft)}
+#tab-subsidie .sb-top{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--sb-ink);padding-bottom:16px;margin-bottom:8px}
+#tab-subsidie .sb-top p{margin:6px 0 0;color:var(--sb-soft);font-size:.9rem}
+#tab-subsidie .sb-totals{display:flex;gap:22px;flex-wrap:wrap}
+#tab-subsidie .sb-total .sb-num{font-family:'IBM Plex Mono',monospace;font-size:1.3rem;font-weight:600;font-variant-numeric:tabular-nums;display:block}
+#tab-subsidie .sb-total .sb-cap{font-size:.72rem;color:var(--sb-soft);text-transform:uppercase;letter-spacing:.08em}
+#tab-subsidie .sb-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px;align-items:start}
+#tab-subsidie .sb-col{display:flex;flex-direction:column;gap:16px;min-width:0}
+#tab-subsidie .sb-colhead{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--sb-line);padding-bottom:8px}
+#tab-subsidie .sb-card{background:var(--sb-surface);border:1px solid var(--sb-line);border-radius:4px;padding:16px;min-width:0}
+#tab-subsidie .sb-card.sb-lead{border-left:3px solid var(--sb-accent)}
+#tab-subsidie .sb-card>header{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between;margin-bottom:12px}
+#tab-subsidie .sb-amount{font-family:'IBM Plex Mono',monospace;font-weight:600;font-variant-numeric:tabular-nums}
+#tab-subsidie .sb-chip{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+#tab-subsidie .sb-chip.go{color:var(--sb-go)}
+#tab-subsidie .sb-chip.warn{color:var(--sb-warn)}
+#tab-subsidie .sb-chip.stop{color:var(--sb-stop)}
+#tab-subsidie .sb-chip.idle{color:var(--sb-soft)}
+#tab-subsidie td .sb-chip{white-space:normal;display:inline-block}
+#tab-subsidie td .sb-eyebrow{letter-spacing:.06em}
+#tab-subsidie dl.sb-kv{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:0;font-size:.86rem}
+#tab-subsidie dl.sb-kv dt{color:var(--sb-soft)}
+#tab-subsidie dl.sb-kv dd{margin:0;font-variant-numeric:tabular-nums}
+#tab-subsidie .sb-sub{font-size:.85rem;color:var(--sb-soft);margin:12px 0 0}
+#tab-subsidie ul.sb-ticks{margin:12px 0 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px;font-size:.86rem}
+#tab-subsidie ul.sb-ticks li{display:grid;grid-template-columns:14px 1fr;gap:9px}
+#tab-subsidie ul.sb-ticks li::before{content:"";width:6px;height:6px;margin-top:7px;border-radius:50%;background:var(--sb-accent)}
+#tab-subsidie ul.sb-ticks li.must::before{background:var(--sb-stop)}
+#tab-subsidie .sb-tablewrap{overflow-x:auto}
+#tab-subsidie table{border-collapse:collapse;width:100%;font-size:.85rem}
+#tab-subsidie th,#tab-subsidie td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--sb-line);vertical-align:top}
+#tab-subsidie th{font-family:'IBM Plex Mono',monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--sb-soft);font-weight:500}
+#tab-subsidie td.sb-n{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+#tab-subsidie tr.sb-group td{background:var(--sb-bg);font-family:'IBM Plex Mono',monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--sb-soft)}
+#tab-subsidie tfoot td{font-family:'IBM Plex Mono',monospace;font-weight:600;font-variant-numeric:tabular-nums;border-bottom:none;border-top:2px solid var(--sb-ink)}
+#tab-subsidie .sb-rail{margin-top:34px;border-top:2px solid var(--sb-ink);padding-top:18px}
+#tab-subsidie .sb-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:14px}
+#tab-subsidie .sb-step{border-top:3px solid var(--sb-line);padding-top:9px;min-width:0}
+#tab-subsidie .sb-step.now{border-top-color:var(--sb-accent)}
+#tab-subsidie .sb-step .d{font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:600;display:block}
+#tab-subsidie .sb-step p{margin:3px 0 0;font-size:.84rem;color:var(--sb-soft)}
+#tab-subsidie .sb-risk{background:var(--sb-surface);border:1px solid var(--sb-line);border-left:3px solid var(--sb-stop);border-radius:4px;padding:16px}
+#tab-subsidie .sb-risk ol{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:9px;font-size:.87rem}
+#tab-subsidie .sb-note{margin-top:30px;padding-top:14px;border-top:1px solid var(--sb-line);font-size:.78rem;color:var(--sb-soft)}
+@media(max-width:760px){#tab-subsidie .sb-cols{grid-template-columns:1fr}#tab-subsidie h1{font-size:1.35rem}}
+</style>
+<div id="tab-subsidie" class="tab">
+<div class="sb-wrap">
+
+  <header class="sb-top">
+    <div>
+      <span class="sb-eyebrow">Cornelis de Grootpad 1 &middot; 1063 HJ Amsterdam &middot; hoekwoning 1955 &middot; 81 m&sup2;</span>
+      <h1>Subsidiedossier</h1>
+      <p>Energielabel C (961103425, 8 mei 2026) &middot; WOZ 2024 &euro;&thinsp;460.000 &middot; Arondeusbuurt, Nieuw-West</p>
+    </div>
+    <div class="sb-totals">
+      <div class="sb-total"><span class="sb-num">&euro;&thinsp;16.265</span><span class="sb-cap">verleend</span></div>
+      <div class="sb-total"><span class="sb-num">&euro;&thinsp;1.750</span><span class="sb-cap">ontvangen</span></div>
+      <div class="sb-total"><span class="sb-num">&euro;&thinsp;43.320</span><span class="sb-cap">begroting</span></div>
+    </div>
+  </header>
+
+  <div class="sb-cols">
+
+    <div class="sb-col">
+      <div class="sb-colhead"><h2>De subsidies</h2><span class="sb-eyebrow">drie regelingen</span></div>
+
+      <section class="sb-card sb-lead">
+        <header>
+          <div><h3>SVW Nieuw-West</h3><span class="sb-eyebrow">kenmerk 2026/05791 &middot; hoofdstuk 6A</span></div>
+          <span class="sb-chip go">verleend</span>
+        </header>
+        <dl class="sb-kv">
+          <dt>Bedrag</dt><dd class="sb-amount">&euro;&thinsp;13.765 &mdash; het maximum</dd>
+          <dt>Grondslag</dt><dd>50% van &euro;&thinsp;43.320, afgetopt</dd>
+          <dt>Periode</dt><dd>3 okt 2026 &ndash; 1 okt 2029</dd>
+          <dt>Start uiterlijk</dt><dd>13 nov 2027</dd>
+          <dt>Klaar uiterlijk</dt><dd>13 nov 2029</dd>
+          <dt>Voorschot</dt><dd>&euro;&thinsp;6.882,50 &mdash; geblokkeerd</dd>
+          <dt>Behandelaar</dt><dd>Quinten Rijsdijk &middot; 06-54420521</dd>
+        </dl>
+        <ul class="sb-ticks">
+          <li class="must">Label B of drie labelstappen halen &mdash; harde voorwaarde</li>
+          <li class="must">Buitendakisolatie door NVI-gecertificeerd bouwbedrijf</li>
+          <li class="must">Vijf jaar lang geen achterstallig onderhoud, kwaliteitsniveau in stand houden</li>
+          <li>Nieuw glas: kozijn moet nog 25 jaar mee, met bewijs</li>
+          <li>Kwaliteit van constructie, ventilatie, luchtkwaliteit en vocht mag niet achteruitgaan</li>
+          <li>Geen strijd met redelijke eisen van welstand (orde 2-WA3)</li>
+          <li>Inspecteur toelaten; afgemeld label moet kloppen met de werkelijkheid</li>
+        </ul>
+        <p class="sb-sub">Voorschot is eenmalig en betaalt max. 50% per offerte uit. Voor de volle &euro;&thinsp;6.882,50 moet je offertes van samen minstens &euro;&thinsp;13.765 indienen &mdash; dus dak, vloer en ventilatie in &eacute;&eacute;n keer.</p>
+      </section>
+
+      <section class="sb-card">
+        <header>
+          <div><h3>EISA</h3><span class="sb-eyebrow">kenmerk 2026/04698 &middot; hoofdstuk 7</span></div>
+          <span class="sb-chip go">deels betaald</span>
+        </header>
+        <dl class="sb-kv">
+          <dt>Bedrag</dt><dd class="sb-amount">&euro;&thinsp;2.500</dd>
+          <dt>Verdeling</dt><dd>dak &euro;&thinsp;1.250 &middot; vloer &euro;&thinsp;1.250</dd>
+          <dt>Periode</dt><dd>2 okt 2026 &ndash; 31 dec 2027 <span class="sb-chip idle">verlengd</span></dd>
+          <dt>Betaald</dt><dd>&euro;&thinsp;1.750 op 12 nov 2026</dd>
+          <dt>Rest</dt><dd>&euro;&thinsp;750 op 25 mrt 2028</dd>
+          <dt>Behandelaar</dt><dd>Babette de Zeeuw-Kedde &middot; 06-31469183</dd>
+        </dl>
+        <ul class="sb-ticks">
+          <li class="must">Buitendakisolatie door NVI-gecertificeerd bouwbedrijf</li>
+          <li>Materiaal toegelaten op de Nederlandse markt, met meldcode</li>
+          <li>Eindverantwoording 31 dec 2027 &ndash; 25 mrt 2028, &eacute;n binnen 12 weken na afloop werk</li>
+        </ul>
+        <p class="sb-sub">Geen labeleis, geen m&sup2;-eis. Dit is de makkelijke van de twee &mdash; het geld staat al op de rekening en moet worden waargemaakt.</p>
+      </section>
+
+      <section class="sb-card">
+        <header>
+          <div><h3>ISDE</h3><span class="sb-eyebrow">RVO &middot; nog aan te vragen</span></div>
+          <span class="sb-chip warn">na uitvoering</span>
+        </header>
+        <dl class="sb-kv">
+          <dt>Dakisolatie</dt><dd>&euro;&thinsp;32,50/m&sup2; bij 2+ maatregelen</dd>
+          <dt>Meldcode</dt><dd>KA18340 &mdash; Eurothane Silver, alle woningen</dd>
+          <dt>Indienen</dt><dd>binnen 24 mnd na de 1e maatregel</dd>
+          <dt>Warmtepomp</dt><dd>vervalt bij zelfinstallatie</dd>
+        </dl>
+        <p class="sb-sub">Als enige achteraf aan te vragen. Bij 41 m&sup2; is dat &euro;&thinsp;1.332,50; bij de 48 m&sup2; uit de offerte &euro;&thinsp;1.560. Het verschil moet kloppen met het label.</p>
+      </section>
+
+      <div class="sb-risk">
+        <h3>Wat het geld nog kan kosten</h3>
+        <ol>
+          <li><strong>Label B.</strong> Marianne rekent EP2 = 185, de grens ligt op 190. Vijf punten marge op &euro;&thinsp;13.765, berekend met een kopgevel die niet klopt. Laat herrekenen en vraag een voorlopig label aan.</li>
+          <li><strong>Scope versus beschikking.</strong> Val je kozijnen of kopgevel weg, dan zakt de grondslag &eacute;n het label. Elke wijziging schriftelijk naar Quinten.</li>
+          <li><strong>De m&sup2; van het dak.</strong> 41 op het label, 48 en 52 in de offerte. Gemeente en RVO zien beide stukken.</li>
+          <li><strong>Factuureisen.</strong> Zonder uitsplitsing, m&sup2;, Rd, meldcode, offertebedrag, KvK en IBAN wordt er niet vastgesteld.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="sb-col">
+      <div class="sb-colhead"><h2>Het werk</h2><span class="sb-eyebrow">uit het verbeterplan</span></div>
+
+      <section class="sb-card">
+        <div class="sb-tablewrap">
+          <table>
+            <thead>
+              <tr><th>Maatregel</th><th>Omvang</th><th>Doel</th><th>Raming</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr class="sb-group"><td colspan="5">In beide beschikkingen &mdash; dit moet gebeuren</td></tr>
+              <tr><td>Dakisolatie buitenzijde<br><span class="sb-eyebrow">incl. nieuwe dakbedekking</span></td><td class="sb-n">41 m&sup2;</td><td class="sb-n">Rc 0,35 &rarr; Rd 5,45</td><td class="sb-n">&euro;&thinsp;9.960</td><td><span class="sb-chip go">15&ndash;16 mrt</span></td></tr>
+              <tr><td>Vloerisolatie onderzijde<br><span class="sb-eyebrow">geen kruipluik, toegang van buiten</span></td><td class="sb-n">40 m&sup2;</td><td class="sb-n">Rc 0,15 &rarr; Rd &ge; 3,5</td><td class="sb-n">&euro;&thinsp;4.800</td><td><span class="sb-chip stop">geen bedrijf</span></td></tr>
+              <tr class="sb-group"><td colspan="5">Alleen SVW &mdash; nodig voor label B</td></tr>
+              <tr><td>Kopgevel isoleren binnenzijde<br><span class="sb-eyebrow">voorzetwand 2 cm piepschuim eruit</span></td><td class="sb-n">44 m&sup2;</td><td class="sb-n">Rc 0,8 &rarr; 1,6</td><td class="sb-n">&euro;&thinsp;9.240</td><td><span class="sb-chip warn">herrekenen</span></td></tr>
+              <tr><td>Kozijnen achtergevel vernieuwen<br><span class="sb-eyebrow">woonkamer + 1e verdieping</span></td><td class="sb-n">7 m&sup2;</td><td class="sb-n">kunststof, HR++</td><td class="sb-n">&euro;&thinsp;10.680</td><td><span class="sb-chip idle">open</span></td></tr>
+              <tr><td>Beglazing vervangen HR++<br><span class="sb-eyebrow">bestaande kozijnen, 25-jaarsbewijs</span></td><td class="sb-n">7 m&sup2;</td><td class="sb-n">Ug 3,0 &rarr; Uw 1,1</td><td class="sb-n">&euro;&thinsp;2.880</td><td><span class="sb-chip idle">open</span></td></tr>
+              <tr><td>Vraaggestuurde ventilatie<br><span class="sb-eyebrow">unit op zolder, kanalen in schoorsteen</span></td><td class="sb-n">81 m&sup2;</td><td class="sb-n">natuurlijk &rarr; sensor</td><td class="sb-n">&euro;&thinsp;4.200</td><td><span class="sb-chip warn">vocht i.p.v. CO&#8322;</span></td></tr>
+              <tr><td>Naden en kieren dichten<br><span class="sb-eyebrow">dakvoet, kozijnen, dak&ndash;kopgevel</span></td><td class="sb-n">81 m&sup2;</td><td class="sb-n">qv;10 = 1,0</td><td class="sb-n">&euro;&thinsp;1.560</td><td><span class="sb-chip idle">open</span></td></tr>
+              <tr class="sb-group"><td colspan="5">Achterstallig onderhoud &mdash; nu op &euro;&thinsp;0 in het formulier</td></tr>
+              <tr><td>Voegwerk herstellen<br><span class="sb-eyebrow">scheurvorming voor- en achtergevel</span></td><td class="sb-n">&mdash;</td><td class="sb-n">subsidiabel</td><td class="sb-n">&euro;&thinsp;1.800</td><td><span class="sb-chip warn">laten opnemen</span></td></tr>
+              <tr><td>Lood schoorsteen vervangen<br><span class="sb-eyebrow">vochtplekken zolder</span></td><td class="sb-n">&mdash;</td><td class="sb-n">subsidiabel</td><td class="sb-n">&euro;&thinsp;700</td><td><span class="sb-chip warn">laten opnemen</span></td></tr>
+              <tr class="sb-group"><td colspan="5">Buiten de subsidie &mdash; eigen beheer</td></tr>
+              <tr><td>Warmtepomp lucht/water<br><span class="sb-eyebrow">buffervat + opslagvat zolder</span></td><td class="sb-n">4,3 kW</td><td class="sb-n">van het gas af</td><td class="sb-n">&euro;&thinsp;11.000</td><td><span class="sb-chip idle">zelf</span></td></tr>
+              <tr><td>Vloerverwarming begane grond</td><td class="sb-n">35 m&sup2;</td><td class="sb-n">35 &deg;C aanvoer</td><td class="sb-n">&euro;&thinsp;3.500</td><td><span class="sb-chip idle">zelf</span></td></tr>
+              <tr><td>LT-convectoren verdieping</td><td class="sb-n">3 st.</td><td class="sb-n">lage temperatuur</td><td class="sb-n">&euro;&thinsp;3.240</td><td><span class="sb-chip idle">zelf</span></td></tr>
+              <tr><td>Zonnepanelen + thuisbatterij</td><td class="sb-n">6 panelen</td><td class="sb-n">0% &rarr; hernieuwbaar</td><td class="sb-n">&euro;&thinsp;3.000</td><td><span class="sb-chip idle">zelf</span></td></tr>
+              <tr><td>Groepenkast, 3-fasen, inductie</td><td class="sb-n">&mdash;</td><td class="sb-n">voorwaarde WP</td><td class="sb-n">&euro;&thinsp;2.500</td><td><span class="sb-chip idle">zelf</span></td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td>Subsidiabel (SVW-begroting)</td><td class="sb-n">&nbsp;</td><td class="sb-n">&nbsp;</td><td class="sb-n">&euro;&thinsp;43.320</td><td>&nbsp;</td></tr>
+            </tfoot>
+          </table>
+        </div>
+        <p class="sb-sub">Eigen arbeid telt nergens mee. Alles wat je zelf doet valt uit de 50%, dus houd het bij de posten onder &lsquo;eigen beheer&rsquo;.</p>
+      </section>
+
+      <section class="sb-card">
+        <h3>Eisen aan elke aannemer</h3>
+        <ul class="sb-ticks">
+          <li>KvK-inschrijving in de bouwnijverheid, SBI 41&ndash;43</li>
+          <li class="must">NVI-certificaat bij dak en gevel &mdash; op naam van wie er werkt. Dak123: Eric Verberne, 28 mrt 2025</li>
+          <li>Factuur met uitsplitsing, m&sup2;, Rd-waarde, meldcode, offertebedrag, KvK en IBAN</li>
+          <li>Uurtarief meerwerk vooraf vast, schriftelijke goedkeuring boven &euro;&thinsp;250</li>
+          <li>9% btw op isolatie-arbeid, 21% op materiaal</li>
+          <li>Geen materiaal kopen v&oacute;&oacute;r de aanvraag binnen is</li>
+          <li>Foto&rsquo;s voor, tijdens en na &mdash; voor gemeente &eacute;n RVO</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="sb-rail">
+    <span class="sb-eyebrow">Wat wanneer moet</span>
+    <div class="sb-steps">
+      <div class="sb-step now"><span class="d">nu</span><p>Label B laten herrekenen met de juiste kopgevel en Rd 5,45. Voorlopig label aanvragen.</p></div>
+      <div class="sb-step now"><span class="d">v&oacute;&oacute;r 15 mrt 2027</span><p>Vloer- en ventilatieofferte binnen, dan voorschot SVW aanvragen met offertes &ge; &euro;&thinsp;13.765.</p></div>
+      <div class="sb-step"><span class="d">15&ndash;16 mrt 2027</span><p>Dak123 op het dak. Foto&rsquo;s v&oacute;&oacute;r de eerste plaat.</p></div>
+      <div class="sb-step"><span class="d">binnen 12 weken na het werk</span><p>Vaststelling EISA indienen. Niet wachten op het venster van december.</p></div>
+      <div class="sb-step"><span class="d">binnen 24 mnd na 1e maatregel</span><p>ISDE aanvragen bij RVO, met meldcode KA18340 op de factuur.</p></div>
+      <div class="sb-step"><span class="d">13 nov 2027 / 13 nov 2029</span><p>SVW: start uiterlijk, oplevering uiterlijk. Verlenging alleen v&oacute;&oacute;r afloop.</p></div>
+    </div>
+  </section>
+
+  <footer class="sb-note">
+    Bedragen uit het activiteitenformulier SVW van Energiepaleis (opname 29 sept 2026, prijspeil 2024) en de beschikkingen van 6, 9 en 13 november 2026. Ramingen, geen offertebedragen &mdash; behalve het dak, waar Dak123 op &euro;&thinsp;10.921,73 incl. btw uitkomt. Geen juridisch advies.
+  </footer>
+
 </div>
 </div>
 <style>
