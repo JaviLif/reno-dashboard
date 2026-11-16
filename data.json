@@ -79,7 +79,7 @@
       "orders": [
         {
           "id": 96,
-          "supplier": "",
+          "supplier": "Markplaats",
           "poNumber": "",
           "orderDate": "2026-11-16",
           "unitPrice": 2000,
@@ -95,7 +95,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1794834183486,
+      "updatedAt": 1794834190856,
       "changelog": [
         {
           "ts": 1794834183486,
@@ -111,7 +111,8 @@
           "oldBudget": 0,
           "newBudget": 2000
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 322,
@@ -7733,7 +7734,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794834183486,
+  "_savedAt": 1794834190856,
   "nextOrderId": 97,
   "nextQuoteId": 219,
   "nextItemId": 324,
