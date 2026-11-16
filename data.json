@@ -6339,34 +6339,6 @@
       "unit": "pcs"
     },
     {
-      "link": "",
-      "status": "not-ordered",
-      "unit": "pcs",
-      "phaseId": 66,
-      "documents": [],
-      "id": 160,
-      "description": "ISDE subsidy ΓÇö negative cost",
-      "qty": 1,
-      "orders": [],
-      "quotes": [
-        {
-          "notes": "",
-          "id": 61,
-          "unitPrice": -400,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 7,
-      "name": "MVHR Subsidy",
-      "notes": ""
-    },
-    {
       "qty": 1,
       "categoryId": 7,
       "quotes": [
@@ -7702,7 +7674,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794834069431,
+  "_savedAt": 1794834090526,
   "nextOrderId": 96,
   "nextQuoteId": 218,
   "nextItemId": 323,
