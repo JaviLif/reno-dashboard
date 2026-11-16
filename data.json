@@ -2121,6 +2121,13 @@
       "status": "delivered",
       "changelog": [
         {
+          "ts": 1794838990115,
+          "oldSpent": 79.6,
+          "newSpent": 451.41,
+          "oldBudget": 167.93,
+          "newBudget": 167.93
+        },
+        {
           "ts": 1794838979403,
           "oldSpent": 39.8,
           "newSpent": 79.6,
@@ -2163,8 +2170,8 @@
           "newBudget": 167.93
         }
       ],
-      "updatedAt": 1794838979403,
-      "spentOverride": 79.6
+      "updatedAt": 1794838990115,
+      "spentOverride": 451.41
     },
     {
       "id": 281,
@@ -8010,7 +8017,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794838979403,
+  "_savedAt": 1794838990115,
   "nextOrderId": 107,
   "nextQuoteId": 220,
   "nextItemId": 325,
