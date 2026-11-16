@@ -4423,7 +4423,7 @@
           "notes": "",
           "chosen": true,
           "documents": [],
-          "link": "https://www.warmteservice.nl/Duurzaam/Warmtepomp/Warmtepomp-buffervat/Remeha-Centra-buffervat-voor-verwarming-en-koeling/p/V1000135",
+          "link": "https://www.groenehoedduurzaam.nl/indirect-gestookte-boiler-150l-digi.html",
           "shippingCost": 0,
           "name": ""
         }
@@ -4431,7 +4431,7 @@
       "orders": [],
       "documents": [],
       "status": "not-ordered",
-      "updatedAt": 1794845043795
+      "updatedAt": 1794845047331
     },
     {
       "id": 215,
@@ -8106,7 +8106,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794845043795,
+  "_savedAt": 1794845047331,
   "nextOrderId": 110,
   "nextQuoteId": 220,
   "nextItemId": 325,
