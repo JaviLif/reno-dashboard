@@ -8105,7 +8105,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794844063792,
+  "_savedAt": 1794844070600,
   "nextOrderId": 110,
   "nextQuoteId": 220,
   "nextItemId": 325,
@@ -8366,7 +8366,7 @@
     {
       "end": "",
       "color": "#EAB308",
-      "status": "planned",
+      "status": "completed",
       "start": "",
       "parentId": 3,
       "budget": 2000,
