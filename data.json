@@ -4408,7 +4408,7 @@
       "id": 219,
       "phaseId": 34,
       "categoryId": 3,
-      "name": "Remeha Centra buffervat ",
+      "name": "",
       "description": "",
       "link": "",
       "qty": 1,
@@ -4430,7 +4430,8 @@
       ],
       "orders": [],
       "documents": [],
-      "status": "not-ordered"
+      "status": "not-ordered",
+      "updatedAt": 1794845043795
     },
     {
       "id": 215,
@@ -8105,7 +8106,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794844070600,
+  "_savedAt": 1794845043795,
   "nextOrderId": 110,
   "nextQuoteId": 220,
   "nextItemId": 325,
