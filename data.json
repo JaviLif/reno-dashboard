@@ -71,7 +71,10 @@
           "unitPrice": 343,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -109,7 +113,8 @@
           "oldBudget": 0,
           "newBudget": 343
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 321,
@@ -6464,7 +6469,7 @@
       "documents": [],
       "unit": "pcs",
       "phaseId": 66,
-      "status": "ordered",
+      "status": "delivered",
       "link": "",
       "notes": "",
       "name": "Isolation Gemeente Subsidy",
@@ -6477,7 +6482,7 @@
           "orderDate": "2026-11-11",
           "unitPrice": -1750,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -6503,7 +6508,7 @@
         }
       ],
       "qty": 1,
-      "updatedAt": 1794408842059,
+      "updatedAt": 1794834054519,
       "changelog": [
         {
           "ts": 1794408836271,
@@ -7766,7 +7771,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794485251502,
+  "_savedAt": 1794834054519,
   "nextOrderId": 96,
   "nextQuoteId": 218,
   "nextItemId": 323,
