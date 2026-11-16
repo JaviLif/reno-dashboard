@@ -170,75 +170,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 319,
-      "phaseId": 66,
-      "categoryId": 7,
-      "name": "Isolation Gemeente Subsidy",
-      "description": "1 Part",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 215,
-          "supplier": "",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "name": ""
-        }
-      ],
-      "orders": [
-        {
-          "id": 93,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-11",
-          "unitPrice": 1750,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 0,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "documents": []
-        }
-      ],
-      "documents": [],
-      "updatedAt": 1794407822514,
-      "changelog": [
-        {
-          "ts": 1794407817344,
-          "oldSpent": 1750,
-          "newSpent": 1750,
-          "oldBudget": 1750,
-          "newBudget": 0
-        },
-        {
-          "ts": 1794407806450,
-          "oldSpent": 0,
-          "newSpent": 1750,
-          "oldBudget": 1750,
-          "newBudget": 1750
-        },
-        {
-          "ts": 1794407798001,
-          "oldSpent": 0,
-          "newSpent": 0,
-          "oldBudget": 0,
-          "newBudget": 1750
-        }
-      ],
-      "status": "ordered"
-    },
-    {
       "id": 317,
       "phaseId": 65,
       "categoryId": null,
@@ -7771,7 +7702,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794834054519,
+  "_savedAt": 1794834069431,
   "nextOrderId": 96,
   "nextQuoteId": 218,
   "nextItemId": 323,
