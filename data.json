@@ -59,7 +59,7 @@
       "phaseId": 34,
       "categoryId": null,
       "name": "HeatPump",
-      "description": "",
+      "description": "LG HM051MR U44",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -78,7 +78,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794834172102
+      "updatedAt": 1794834175135
     },
     {
       "id": 322,
@@ -7700,7 +7700,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794834172102,
+  "_savedAt": 1794834175135,
   "nextOrderId": 96,
   "nextQuoteId": 219,
   "nextItemId": 324,
