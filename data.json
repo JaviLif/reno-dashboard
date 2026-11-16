@@ -71,7 +71,10 @@
           "unitPrice": 22.45,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -89,7 +92,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -149,7 +153,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -552,8 +557,7 @@
           "oldBudget": 0,
           "newBudget": 0
         }
-      ],
-      "spentOverride": 155.75
+      ]
     },
     {
       "id": 312,
@@ -818,7 +822,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -1316,7 +1321,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2063,7 +2069,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 103,
@@ -2080,7 +2087,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 105,
@@ -2097,7 +2105,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 106,
@@ -2114,7 +2123,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 107,
@@ -2131,7 +2141,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 108,
@@ -2148,7 +2159,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 109,
@@ -2165,7 +2177,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2709,7 +2722,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 98,
@@ -2726,7 +2740,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 101,
@@ -2743,7 +2758,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -8089,7 +8105,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794841177795,
+  "_savedAt": 1794844063792,
   "nextOrderId": 110,
   "nextQuoteId": 220,
   "nextItemId": 325,
@@ -8510,7 +8526,7 @@
       "number": "3.9",
       "start": "",
       "end": "",
-      "status": "planned",
+      "status": "completed",
       "color": "#FEF9C3",
       "notes": "",
       "budget": 1000
