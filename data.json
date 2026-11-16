@@ -71,14 +71,14 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.lg.com/nl/lucht-water-warmtepompen/hm051mr-u44/",
           "chosen": true,
           "documents": []
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794834157086
+      "updatedAt": 1794834159487
     },
     {
       "id": 322,
@@ -7700,7 +7700,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794834157086,
+  "_savedAt": 1794834159487,
   "nextOrderId": 96,
   "nextQuoteId": 219,
   "nextItemId": 324,
