@@ -68,7 +68,7 @@
         {
           "id": 221,
           "name": "",
-          "unitPrice": 0,
+          "unitPrice": 295,
           "date": "",
           "notes": "",
           "link": "https://www.ventilatieshop.com/badkamer-toilet-ventilator-renson-waves-o-100-125mm/",
@@ -78,7 +78,16 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794930794490
+      "updatedAt": 1794930800658,
+      "changelog": [
+        {
+          "ts": 1794930800658,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 0,
+          "newBudget": 295
+        }
+      ]
     },
     {
       "id": 326,
@@ -8280,7 +8289,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1794930794490,
+  "_savedAt": 1794930800658,
   "nextOrderId": 113,
   "nextQuoteId": 222,
   "nextItemId": 328,
