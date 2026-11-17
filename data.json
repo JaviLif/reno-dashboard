@@ -59,7 +59,7 @@
       "phaseId": 70,
       "categoryId": 3,
       "name": "Tiles",
-      "description": "",
+      "description": "Green wall",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794882970332
+      "updatedAt": 1794882978437
     },
     {
       "id": 324,
@@ -8130,7 +8130,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794882970332,
+  "_savedAt": 1794882978437,
   "nextOrderId": 110,
   "nextQuoteId": 220,
   "nextItemId": 326,
