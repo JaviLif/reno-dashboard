@@ -59,7 +59,7 @@
       "phaseId": 65,
       "categoryId": null,
       "name": "Extraction Fan",
-      "description": "",
+      "description": "Energie Palais Recommendation",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -78,7 +78,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794930784009
+      "updatedAt": 1794930794490
     },
     {
       "id": 326,
@@ -8280,7 +8280,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1794930784009,
+  "_savedAt": 1794930794490,
   "nextOrderId": 113,
   "nextQuoteId": 222,
   "nextItemId": 328,
