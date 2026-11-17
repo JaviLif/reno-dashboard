@@ -71,7 +71,8 @@
           "unitPrice": 196,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "link": "https://www.tegeldepot.nl/wandclosetset-bws-tado-tornado-spoeling-glans-wit-49-cm-incl-zitting?tw_source=google&tw_adid=&tw_campaign=19352405423&tw_kwdid=&gad_source=1&gad_campaignid=19345146147&gbraid=0AAAAAD55d_KaF_9cvbJuVuOSQW5cXl1ch&gclid=EAIaIQobChMIkNGmnMjmlwMVIq2DBx1S7ioYEAQYAiABEgIhkvD_BwE"
         }
       ],
       "orders": [
@@ -93,7 +94,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1794883193572,
+      "updatedAt": 1794883328952,
       "changelog": [
         {
           "ts": 1794883193572,
@@ -8224,7 +8225,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794883193572,
+  "_savedAt": 1794883328952,
   "nextOrderId": 113,
   "nextQuoteId": 221,
   "nextItemId": 327,
