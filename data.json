@@ -58,7 +58,7 @@
       "id": 327,
       "phaseId": 65,
       "categoryId": null,
-      "name": "",
+      "name": "Extraction Fan",
       "description": "",
       "link": "",
       "qty": 1,
@@ -78,7 +78,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1794930771938
+      "updatedAt": 1794930784009
     },
     {
       "id": 326,
@@ -8280,7 +8280,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1794930771938,
+  "_savedAt": 1794930784009,
   "nextOrderId": 113,
   "nextQuoteId": 222,
   "nextItemId": 328,
