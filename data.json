@@ -72,7 +72,9 @@
           "date": "",
           "notes": "",
           "chosen": true,
-          "link": "https://www.tegeldepot.nl/wandclosetset-bws-tado-tornado-spoeling-glans-wit-49-cm-incl-zitting?tw_source=google&tw_adid=&tw_campaign=19352405423&tw_kwdid=&gad_source=1&gad_campaignid=19345146147&gbraid=0AAAAAD55d_KaF_9cvbJuVuOSQW5cXl1ch&gclid=EAIaIQobChMIkNGmnMjmlwMVIq2DBx1S7ioYEAQYAiABEgIhkvD_BwE"
+          "link": "https://www.tegeldepot.nl/wandclosetset-bws-tado-tornado-spoeling-glans-wit-49-cm-incl-zitting?tw_source=google&tw_adid=&tw_campaign=19352405423&tw_kwdid=&gad_source=1&gad_campaignid=19345146147&gbraid=0AAAAAD55d_KaF_9cvbJuVuOSQW5cXl1ch&gclid=EAIaIQobChMIkNGmnMjmlwMVIq2DBx1S7ioYEAQYAiABEgIhkvD_BwE",
+          "documents": [],
+          "name": ""
         }
       ],
       "orders": [
@@ -90,11 +92,21 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
-      "documents": [],
-      "updatedAt": 1794883328952,
+      "documents": [
+        {
+          "id": 19,
+          "name": "Factuur_100900167.pdf",
+          "type": "application/pdf",
+          "size": 107516,
+          "ghPath": "quotes/Factuur_100900167.pdf",
+          "uploadedDate": "2026-11-17"
+        }
+      ],
+      "updatedAt": 1794914547022,
       "changelog": [
         {
           "ts": 1794883193572,
@@ -110,7 +122,8 @@
           "oldBudget": 0,
           "newBudget": 392
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 324,
@@ -4014,7 +4027,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "Red wall shower",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 111,
@@ -4031,7 +4045,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "Green wall bathroom",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -8224,8 +8239,8 @@
     "endDate": "2027-06-30"
   },
   "nextCategoryId": 13,
-  "nextDocId": 19,
-  "_savedAt": 1794883328952,
+  "nextDocId": 20,
+  "_savedAt": 1794914547022,
   "nextOrderId": 113,
   "nextQuoteId": 221,
   "nextItemId": 327,
