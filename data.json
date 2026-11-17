@@ -3955,13 +3955,13 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "Red wall shower",
           "_quick": true
         }
       ],
       "documents": [],
-      "status": "not-ordered",
-      "updatedAt": 1794883036287
+      "status": "delivered",
+      "updatedAt": 1794883056643
     },
     {
       "id": 243,
@@ -8134,7 +8134,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794883036287,
+  "_savedAt": 1794883056643,
   "nextOrderId": 111,
   "nextQuoteId": 220,
   "nextItemId": 326,
