@@ -4035,7 +4035,7 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "2026-11-17",
-          "unitPrice": 391.6,
+          "unitPrice": 317.78,
           "qtyOrdered": 1,
           "status": "delivered",
           "shippingCost": 0,
@@ -4051,8 +4051,15 @@
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1794916068679,
+      "updatedAt": 1794916105391,
       "changelog": [
+        {
+          "ts": 1794916105391,
+          "oldSpent": 898.78,
+          "newSpent": 824.96,
+          "oldBudget": 0,
+          "newBudget": 0
+        },
         {
           "ts": 1794916068679,
           "oldSpent": 824.96,
@@ -8247,7 +8254,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1794916068679,
+  "_savedAt": 1794916105391,
   "nextOrderId": 113,
   "nextQuoteId": 221,
   "nextItemId": 327,
