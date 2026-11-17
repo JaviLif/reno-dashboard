@@ -3972,13 +3972,13 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": "",
+          "notes": "Green wall bathroom",
           "_quick": true
         }
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1794883102856,
+      "updatedAt": 1794883112845,
       "changelog": [
         {
           "ts": 1794883102856,
@@ -8167,7 +8167,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 19,
-  "_savedAt": 1794883102856,
+  "_savedAt": 1794883112845,
   "nextOrderId": 112,
   "nextQuoteId": 220,
   "nextItemId": 326,
