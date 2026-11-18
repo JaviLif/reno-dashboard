@@ -3690,7 +3690,7 @@
       "name": "Solar panel",
       "description": "Cels",
       "link": "",
-      "qty": 1,
+      "qty": 8,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -3708,7 +3708,8 @@
       ],
       "orders": [],
       "documents": [],
-      "status": "not-ordered"
+      "status": "not-ordered",
+      "updatedAt": 1795012700421
     },
     {
       "id": 249,
@@ -7980,7 +7981,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012690635,
+  "_savedAt": 1795012700421,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
