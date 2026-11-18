@@ -2492,30 +2492,6 @@
       "status": "delivered"
     },
     {
-      "id": 278,
-      "phaseId": 65,
-      "categoryId": null,
-      "name": "Offerete",
-      "description": "Alpha Ventilatie",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [],
-      "documents": [
-        {
-          "id": 15,
-          "name": "Offerte - J. Franco Linares.pdf",
-          "type": "application/pdf",
-          "size": 321967,
-          "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
-          "uploadedDate": "2026-09-15"
-        }
-      ],
-      "status": "not-ordered"
-    },
-    {
       "id": 277,
       "phaseId": 74,
       "categoryId": 8,
@@ -8032,7 +8008,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012683525,
+  "_savedAt": 1795012686060,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
