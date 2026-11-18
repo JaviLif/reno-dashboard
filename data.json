@@ -57,7 +57,7 @@
     {
       "id": 328,
       "phaseId": 63,
-      "categoryId": null,
+      "categoryId": 4,
       "name": "Stukkador Opper Floor",
       "description": "",
       "link": "",
@@ -76,7 +76,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795012173225,
+      "updatedAt": 1795012902887,
       "changelog": [
         {
           "ts": 1795012173225,
@@ -6609,34 +6609,6 @@
       ]
     },
     {
-      "orders": [],
-      "quotes": [
-        {
-          "id": 67,
-          "notes": "",
-          "unitPrice": 10000,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 4,
-      "qty": 1,
-      "name": "Rene (Contractor)",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "id": 167,
-      "description": "Works per project",
-      "unit": "lump sum",
-      "phaseId": 63
-    },
-    {
       "qty": 500,
       "categoryId": 4,
       "quotes": [
@@ -7833,7 +7805,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012900159,
+  "_savedAt": 1795012906277,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
