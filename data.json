@@ -7705,6 +7705,19 @@
       "spaceIds": []
     },
     {
+      "id": 56,
+      "phaseId": 32,
+      "name": "Helpers. To carve chanel on the wall for cables",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1793047157490
+    },
+    {
       "id": 57,
       "phaseId": 73,
       "name": "Helpers. Remove remaining wooden frame of attic",
@@ -7952,19 +7965,6 @@
       ],
       "updatedAt": 1791923572341,
       "kanbanOrder": 80
-    },
-    {
-      "id": 56,
-      "phaseId": 32,
-      "name": "Helpers. To carve chanel on the wall for cables",
-      "start": "",
-      "end": "",
-      "status": "this-week",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1793047157490
     }
   ],
   "nextTaskId": 77,
@@ -7978,7 +7978,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795015839337,
+  "_savedAt": 1795015842050,
   "nextOrderId": 119,
   "nextQuoteId": 223,
   "nextItemId": 330,
