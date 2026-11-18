@@ -6058,34 +6058,6 @@
       "name": "Oven"
     },
     {
-      "quotes": [
-        {
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "id": 42,
-          "notes": "",
-          "unitPrice": 338,
-          "documents": [],
-          "link": "https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "categoryId": 3,
-      "qty": 1,
-      "name": "Spoelbak",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
-      "description": "Sapho 97x50cm zwart graniet",
-      "id": 141,
-      "phaseId": 70,
-      "unit": "pcs"
-    },
-    {
       "phaseId": 69,
       "unit": "pcs",
       "id": 142,
@@ -7897,7 +7869,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012834709,
+  "_savedAt": 1795012846701,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
