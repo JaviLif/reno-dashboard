@@ -221,7 +221,7 @@
           "orderDate": "2026-11-17",
           "unitPrice": 196,
           "qtyOrdered": 2,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -242,7 +242,7 @@
           "uploadedDate": "2026-11-17"
         }
       ],
-      "updatedAt": 1794914547022,
+      "updatedAt": 1795015768438,
       "changelog": [
         {
           "ts": 1794883193572,
@@ -259,7 +259,7 @@
           "newBudget": 392
         }
       ],
-      "status": "ordered"
+      "status": "delivered"
     },
     {
       "id": 324,
@@ -7968,7 +7968,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795015731621,
+  "_savedAt": 1795015768438,
   "nextOrderId": 119,
   "nextQuoteId": 223,
   "nextItemId": 330,
@@ -8479,10 +8479,10 @@
       "qty",
       "price",
       "total",
+      "netspent",
       "quote",
       "status",
       "delivery",
-      "netspent",
       "phase",
       "category"
     ],
@@ -8500,9 +8500,9 @@
       "price": 60,
       "link": 60,
       "status": 137,
-      "netspent": 81
+      "netspent": 99
     },
-    "sortKey": "status",
+    "sortKey": "netspent",
     "sortDir": "desc"
   },
   "spaces": [
