@@ -6203,49 +6203,6 @@
       "notes": ""
     },
     {
-      "qty": 20,
-      "categoryId": 3,
-      "quotes": [
-        {
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "unitPrice": 6.8,
-          "notes": "",
-          "id": 38,
-          "documents": [],
-          "link": "https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "notes": "",
-      "name": "Water Pipe Fittings (Perskoppeling)",
-      "status": "not-ordered",
-      "link": "",
-      "phaseId": 33,
-      "unit": "pcs",
-      "description": "Henco Press T-stuk",
-      "id": 136,
-      "documents": []
-    },
-    {
-      "qty": 1,
-      "categoryId": 8,
-      "quotes": [],
-      "orders": [],
-      "notes": "",
-      "name": "Persstange",
-      "status": "not-ordered",
-      "link": "",
-      "phaseId": 33,
-      "unit": "pcs",
-      "id": 137,
-      "description": "Crimping tool for pipe fittings",
-      "documents": []
-    },
-    {
       "documents": [],
       "description": "",
       "id": 138,
@@ -8197,7 +8154,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012610503,
+  "_savedAt": 1795012629252,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
