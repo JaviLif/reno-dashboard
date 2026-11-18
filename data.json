@@ -58,7 +58,7 @@
       "id": 328,
       "phaseId": 63,
       "categoryId": null,
-      "name": "",
+      "name": "Stukkador Opper Floor",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795012155906
+      "updatedAt": 1795012163555
     },
     {
       "id": 327,
@@ -8305,7 +8305,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012155906,
+  "_savedAt": 1795012163555,
   "nextOrderId": 113,
   "nextQuoteId": 222,
   "nextItemId": 329,
