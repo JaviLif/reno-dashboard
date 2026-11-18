@@ -6637,7 +6637,7 @@
       "phaseId": 63
     },
     {
-      "qty": 240,
+      "qty": 500,
       "categoryId": 4,
       "quotes": [
         {
@@ -6662,7 +6662,8 @@
       "phaseId": 63,
       "id": 168,
       "description": "6 weeks @ 40 h",
-      "documents": []
+      "documents": [],
+      "updatedAt": 1795012900159
     },
     {
       "status": "delivered",
@@ -7832,7 +7833,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012875005,
+  "_savedAt": 1795012900159,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
