@@ -58,7 +58,7 @@
       "id": 329,
       "phaseId": 82,
       "categoryId": null,
-      "name": "",
+      "name": "Materials",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,8 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795015621589
+      "updatedAt": 1795015638446,
+      "status": "delivered"
     },
     {
       "id": 328,
@@ -7844,7 +7845,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795015621589,
+  "_savedAt": 1795015638446,
   "nextOrderId": 114,
   "nextQuoteId": 223,
   "nextItemId": 330,
