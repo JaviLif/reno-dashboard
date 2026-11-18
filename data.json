@@ -2597,44 +2597,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 273,
-      "phaseId": 65,
-      "categoryId": 3,
-      "name": "Ventialtion Unit",
-      "description": "Itho Daalderop CVE-S OPTIMA2 pakket met ventilatie unit 468 m3/h, geintegreerde RV sensor",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 162,
-          "name": "",
-          "unitPrice": 669,
-          "date": "",
-          "notes": "",
-          "link": "https://www.elektramat.nl/itho-daalderop-cve-s-optima2-pakket-met-ventilatie-unit-468-m3-h-geintegreerde-rv-sensor-en-2-co2-sensoren-03-00477/?_gl=1*18xbquh*_up*MQ..*_gs*MQ..*_ga*MjExODczNDQxNC4xNzg5MTQzNTk5*_ga_WPXDT6EWYX*czE3ODkxNDM1OTkkbzEkZzAkdDE3ODkxNDM4MjQkajYwJGwwJGgxNjY5MzYyMDEwJGRCUlNUbXlrMDZMSlllblNCT3NXMWlndUJPMlc3Ql9oUEJR&gclid=Cj0KCQjwzY7VBhDwARIsAFtPvBSVv6qmc_fEJzLYuDbjxQEUAe3EGUELCl0dauP3xgEz84GU_RSUFpEaAl5uEALw_wcB&gbraid=0AAAAAD5RVIckWO1hGkBrFuM0jPWjqd8h-",
-          "chosen": true,
-          "documents": [],
-          "supplier": "Elektramat"
-        },
-        {
-          "id": 163,
-          "name": "",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
-          "chosen": false,
-          "documents": [],
-          "supplier": "bol.com"
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 272,
       "phaseId": 78,
       "categoryId": 3,
@@ -8070,7 +8032,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012680996,
+  "_savedAt": 1795012683525,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
