@@ -6201,34 +6201,6 @@
       "link": "",
       "status": "not-ordered",
       "documents": [],
-      "description": "",
-      "id": 144,
-      "unit": "pcs",
-      "phaseId": 4,
-      "orders": [],
-      "quotes": [
-        {
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "id": 45,
-          "notes": "",
-          "unitPrice": 1000,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 8,
-      "qty": 1,
-      "name": "Tools Extras (Finishes)",
-      "notes": ""
-    },
-    {
-      "link": "",
-      "status": "not-ordered",
-      "documents": [],
       "description": "Powerdek muurverf wit ΓÇö 235m┬▓ wall",
       "id": 145,
       "unit": "pcs",
@@ -7981,7 +7953,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012700421,
+  "_savedAt": 1795012718549,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
