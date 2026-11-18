@@ -5946,34 +5946,6 @@
       "documents": []
     },
     {
-      "qty": 1,
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "unitPrice": 384,
-          "id": 35,
-          "notes": "",
-          "documents": [],
-          "link": "https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "name": "Kraan Big Toilet",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "phaseId": 70,
-      "unit": "pcs",
-      "documents": [],
-      "id": 133,
-      "description": "Mueller single flat 80x46cm"
-    },
-    {
       "link": "",
       "status": "not-ordered",
       "documents": [],
@@ -7925,7 +7897,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012831277,
+  "_savedAt": 1795012834709,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
