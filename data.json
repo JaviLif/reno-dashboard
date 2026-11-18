@@ -5918,34 +5918,6 @@
       "qty": 1
     },
     {
-      "notes": "",
-      "name": "Gips  Toilet (Interior)",
-      "categoryId": 3,
-      "quotes": [
-        {
-          "id": 32,
-          "notes": "",
-          "unitPrice": 18.59,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "qty": 20,
-      "id": 130,
-      "description": "",
-      "documents": [],
-      "unit": "pcs",
-      "phaseId": 70,
-      "status": "not-ordered",
-      "link": ""
-    },
-    {
       "qty": 1,
       "categoryId": 3,
       "quotes": [
@@ -7953,7 +7925,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795012718549,
+  "_savedAt": 1795012831277,
   "nextOrderId": 113,
   "nextQuoteId": 223,
   "nextItemId": 329,
