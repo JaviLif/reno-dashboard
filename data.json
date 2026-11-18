@@ -51,7 +51,7 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 82,
+  "nextPhaseId": 83,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -7829,7 +7829,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795015587612,
+  "_savedAt": 1795015605076,
   "nextOrderId": 114,
   "nextQuoteId": 223,
   "nextItemId": 329,
@@ -8288,6 +8288,18 @@
       "end": "",
       "status": "planned",
       "color": "#BE185D",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 82,
+      "name": "Toilette",
+      "parentId": 4,
+      "number": "4.5",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#22C55E",
       "notes": "",
       "budget": 0
     }
