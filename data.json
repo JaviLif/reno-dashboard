@@ -7102,27 +7102,6 @@
       "kanbanOrder": 0
     },
     {
-      "id": 23,
-      "phaseId": 74,
-      "name": "Build new walls",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 40,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7,
-        9,
-        12
-      ],
-      "updatedAt": 1793047104299
-    },
-    {
       "id": 71,
       "phaseId": 70,
       "name": "Make carves for electricity in bathroom",
@@ -7358,6 +7337,27 @@
       ],
       "updatedAt": 1792148867392,
       "kanbanOrder": 30
+    },
+    {
+      "id": 23,
+      "phaseId": 74,
+      "name": "Build new walls",
+      "start": "",
+      "end": "",
+      "status": "completed",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 40,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7,
+        9,
+        12
+      ],
+      "updatedAt": 1793047104299
     },
     {
       "notes": "",
@@ -7978,7 +7978,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795015842050,
+  "_savedAt": 1795184317045,
   "nextOrderId": 119,
   "nextQuoteId": 223,
   "nextItemId": 330,
