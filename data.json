@@ -82,7 +82,7 @@
           "supplier": "",
           "poNumber": "",
           "orderDate": "2026-11-22",
-          "unitPrice": 134.99,
+          "unitPrice": 128.45,
           "qtyOrdered": 1,
           "status": "ordered",
           "shippingCost": 0,
@@ -95,8 +95,15 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1795375061065,
+      "updatedAt": 1795375064218,
       "changelog": [
+        {
+          "ts": 1795375064218,
+          "oldSpent": 134.99,
+          "newSpent": 128.45,
+          "oldBudget": 128.44,
+          "newBudget": 128.44
+        },
         {
           "ts": 1795375061065,
           "oldSpent": 134.99,
@@ -118,7 +125,8 @@
           "oldBudget": 0,
           "newBudget": 134.99
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 329,
@@ -8044,7 +8052,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795375061065,
+  "_savedAt": 1795375064218,
   "nextOrderId": 120,
   "nextQuoteId": 224,
   "nextItemId": 331,
