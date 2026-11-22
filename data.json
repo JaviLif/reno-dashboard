@@ -58,16 +58,27 @@
       "id": 330,
       "phaseId": 70,
       "categoryId": null,
-      "name": "",
+      "name": "Sliding Door",
       "description": "",
       "link": "",
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 223,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795374977746
+      "updatedAt": 1795374986728
     },
     {
       "id": 329,
@@ -7993,9 +8004,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795374977746,
+  "_savedAt": 1795374986728,
   "nextOrderId": 119,
-  "nextQuoteId": 223,
+  "nextQuoteId": 224,
   "nextItemId": 331,
   "_version": "dashboard-v1",
   "phases": [
