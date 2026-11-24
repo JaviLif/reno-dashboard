@@ -5603,34 +5603,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 190,
-      "phaseId": 67,
-      "categoryId": 3,
-      "name": "Doors",
-      "description": "",
-      "link": "",
-      "qty": 5,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 81,
-          "supplier": "",
-          "unitPrice": 140,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": ""
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 189,
       "phaseId": 67,
       "categoryId": 3,
@@ -8672,7 +8644,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517321282,
+  "_savedAt": 1795517324210,
   "nextOrderId": 131,
   "nextQuoteId": 222,
   "nextItemId": 329,
