@@ -509,7 +509,7 @@
       "phaseId": 81,
       "categoryId": null,
       "name": "PlafondLifter Huren",
-      "description": "",
+      "description": "BoRent",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -547,7 +547,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1793633571643,
+      "updatedAt": 1795516968243,
       "status": "delivered"
     },
     {
@@ -8484,7 +8484,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795516960786,
+  "_savedAt": 1795516968243,
   "nextOrderId": 121,
   "nextQuoteId": 222,
   "nextItemId": 328,
