@@ -85,7 +85,7 @@
           "unitPrice": 134.99,
           "qtyOrdered": 1,
           "status": "ordered",
-          "shippingCost": 0,
+          "shippingCost": 14.87,
           "qtyDelivered": 0,
           "deliveredDate": "",
           "qtyReturned": 0,
@@ -95,9 +95,16 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1795519037491,
-      "status": "not-ordered",
+      "updatedAt": 1795519063867,
+      "status": "ordered",
       "changelog": [
+        {
+          "ts": 1795519063867,
+          "oldSpent": 134.99,
+          "newSpent": 149.86,
+          "oldBudget": 134.99,
+          "newBudget": 134.99
+        },
         {
           "ts": 1795519037491,
           "oldSpent": 0,
@@ -8846,7 +8853,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795519037491,
+  "_savedAt": 1795519063867,
   "nextOrderId": 135,
   "nextQuoteId": 225,
   "nextItemId": 332,
