@@ -115,11 +115,35 @@
           "returnReason": "",
           "notes": "",
           "_quick": true
+        },
+        {
+          "id": 128,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-24",
+          "unitPrice": 133.8,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-24",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
         }
       ],
       "documents": [],
-      "updatedAt": 1795517218793,
+      "updatedAt": 1795517226017,
       "changelog": [
+        {
+          "ts": 1795517226017,
+          "oldSpent": 139.61,
+          "newSpent": 273.41,
+          "oldBudget": 0,
+          "newBudget": 0
+        },
         {
           "ts": 1795517218793,
           "oldSpent": 85.09,
@@ -8637,8 +8661,8 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517218793,
-  "nextOrderId": 128,
+  "_savedAt": 1795517226017,
+  "nextOrderId": 129,
   "nextQuoteId": 222,
   "nextItemId": 329,
   "_version": "dashboard-v1",
