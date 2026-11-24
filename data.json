@@ -165,7 +165,7 @@
       "phaseId": 81,
       "categoryId": null,
       "name": "Heater",
-      "description": "",
+      "description": "Hornbach",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -203,7 +203,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1794838916859,
+      "updatedAt": 1795516981970,
       "changelog": [
         {
           "ts": 1794838913842,
@@ -8484,7 +8484,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795516968243,
+  "_savedAt": 1795516981970,
   "nextOrderId": 121,
   "nextQuoteId": 222,
   "nextItemId": 328,
