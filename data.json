@@ -51,196 +51,9 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 83,
+  "nextPhaseId": 82,
   "originalBudgetImportedV1": true,
   "items": [
-    {
-      "id": 330,
-      "phaseId": 70,
-      "categoryId": 3,
-      "name": "Sliding Door",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 223,
-          "name": "",
-          "unitPrice": 128.44,
-          "date": "",
-          "notes": "",
-          "link": "https://www.wovar.nl/onzichtbaar-schuifdeursysteem-verborgen-rails-montage/?_gl=1*175c5n8*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAworYBhDoARIsAP5ft3LQ3ICMz8YEcjpV-RqLkUWnWIPEvHbJdPlmk-CZ7RVG_0w2Bn0Z6PMaAuEdEALw_wcB&gbraid=0AAAAADDOmUMSfCIBCTl0ZZGzKRfeG3TMJ",
-          "chosen": true,
-          "documents": []
-        }
-      ],
-      "orders": [
-        {
-          "id": 119,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-22",
-          "unitPrice": 128.45,
-          "qtyOrdered": 1,
-          "status": "ordered",
-          "shippingCost": 17.99,
-          "qtyDelivered": 0,
-          "deliveredDate": "",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": ""
-        }
-      ],
-      "documents": [],
-      "updatedAt": 1795375091082,
-      "changelog": [
-        {
-          "ts": 1795375091082,
-          "oldSpent": 128.45,
-          "newSpent": 146.44,
-          "oldBudget": 128.44,
-          "newBudget": 128.44
-        },
-        {
-          "ts": 1795375064218,
-          "oldSpent": 134.99,
-          "newSpent": 128.45,
-          "oldBudget": 128.44,
-          "newBudget": 128.44
-        },
-        {
-          "ts": 1795375061065,
-          "oldSpent": 134.99,
-          "newSpent": 134.99,
-          "oldBudget": 134.99,
-          "newBudget": 128.44
-        },
-        {
-          "ts": 1795375008840,
-          "oldSpent": 0,
-          "newSpent": 134.99,
-          "oldBudget": 134.99,
-          "newBudget": 134.99
-        },
-        {
-          "ts": 1795375002395,
-          "oldSpent": 0,
-          "newSpent": 0,
-          "oldBudget": 0,
-          "newBudget": 134.99
-        }
-      ],
-      "status": "ordered"
-    },
-    {
-      "id": 329,
-      "phaseId": 82,
-      "categoryId": 3,
-      "name": "Materials",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [],
-      "orders": [
-        {
-          "id": 114,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 36.95,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
-        },
-        {
-          "id": 118,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 137,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
-        }
-      ],
-      "documents": [],
-      "updatedAt": 1795015731621,
-      "status": "delivered",
-      "changelog": [
-        {
-          "ts": 1795015731621,
-          "oldSpent": 36.95,
-          "newSpent": 173.95,
-          "oldBudget": 0,
-          "newBudget": 0
-        },
-        {
-          "ts": 1795015645093,
-          "oldSpent": 0,
-          "newSpent": 36.95,
-          "oldBudget": 0,
-          "newBudget": 0
-        }
-      ]
-    },
-    {
-      "id": 328,
-      "phaseId": 63,
-      "categoryId": 4,
-      "name": "Stukkador Opper Floor",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 222,
-          "supplier": "",
-          "unitPrice": 3327.3,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "name": ""
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "updatedAt": 1795012902887,
-      "changelog": [
-        {
-          "ts": 1795012173225,
-          "oldSpent": 0,
-          "newSpent": 0,
-          "oldBudget": 0,
-          "newBudget": 3327.3
-        }
-      ],
-      "status": "not-ordered"
-    },
     {
       "id": 327,
       "phaseId": 65,
@@ -274,8 +87,7 @@
           "oldBudget": 0,
           "newBudget": 295
         }
-      ],
-      "status": "not-ordered"
+      ]
     },
     {
       "id": 326,
@@ -308,7 +120,7 @@
           "orderDate": "2026-11-17",
           "unitPrice": 196,
           "qtyOrdered": 2,
-          "status": "delivered",
+          "status": "ordered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -329,7 +141,7 @@
           "uploadedDate": "2026-11-17"
         }
       ],
-      "updatedAt": 1795015768438,
+      "updatedAt": 1794914547022,
       "changelog": [
         {
           "ts": 1794883193572,
@@ -346,7 +158,7 @@
           "newBudget": 392
         }
       ],
-      "status": "delivered"
+      "status": "ordered"
     },
     {
       "id": 324,
@@ -571,6 +383,22 @@
       "status": "not-ordered"
     },
     {
+      "id": 320,
+      "phaseId": 60,
+      "categoryId": null,
+      "name": "",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1794408847492,
+      "status": "not-ordered"
+    },
+    {
       "id": 317,
       "phaseId": 65,
       "categoryId": null,
@@ -635,7 +463,7 @@
     {
       "id": 316,
       "phaseId": 33,
-      "categoryId": 3,
+      "categoryId": null,
       "name": "Materials",
       "description": "",
       "link": "",
@@ -664,7 +492,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1795012610503,
+      "updatedAt": 1793715990780,
       "status": "delivered",
       "changelog": [
         {
@@ -1164,6 +992,34 @@
       "status": "delivered"
     },
     {
+      "id": 307,
+      "phaseId": 65,
+      "categoryId": null,
+      "name": "Ventil",
+      "description": "Bathroom",
+      "link": "",
+      "qty": 2,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 204,
+          "supplier": "",
+          "unitPrice": 90,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "link": "https://www.ventilatieshop.com/pradovent-ventiel-toevoer-afvoer-o-125mm/?yg_src=google&yg_mdm=cpc&yg_cpn=%5BNL%5D%20PMax%20-%20Heroes&yg_nmr=18056148192&yg_gc=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE&gad_source=1&gad_campaignid=17335708722&gclid=CjwKCAjw56zWBhB0EiwAdPOQOXzCHgqQceWYngQoha68Gw4f-Wg5VO066_DnbhSpcMrWgNZRgHymNhoCtOIQAvD_BwE",
+          "documents": [],
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1791752811750,
+      "status": "not-ordered"
+    },
+    {
       "id": 306,
       "phaseId": 70,
       "categoryId": 3,
@@ -1208,6 +1064,43 @@
       "documents": [],
       "updatedAt": 1793199326706,
       "status": "delivered"
+    },
+    {
+      "id": 305,
+      "phaseId": 70,
+      "categoryId": 3,
+      "name": "Led Profiel",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 197,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://diamantled.nl/led-profiel-stuc-trimless-3-meter-voor-led-strips-tot-10mm-52-4x13mm-aluminium.html?_gl=1*1c4379z*_up*MQ..*_gs*MQ..*_ga*MTI5MDY1MDU4LjE3OTExNzIzNzY.*_ga_XX7YJN7Z90*czE3OTExNzIzNzUkbzEkZzEkdDE3OTExNzIzODEkajU0JGwwJGgyMDI5OTg1OA..&gclid=Cj0KCQjw8ofWBhCHARIsANBj4LtR-GLla477wWNqkE8IDjXKu6rqVbwrbGUZiT1PaHEp34fSsBFI5YkaAiCUEALw_wcB&gbraid=0AAAAADdafZWcEKpaH0aWm9dq8fkjgRROO",
+          "chosen": true,
+          "documents": []
+        },
+        {
+          "id": 198,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://diamantled.nl/led-profiel-tegel-stuc-trimless-3-meter-voor-led-strips-tot-10mm-12-2x13mm-aluminium.html?_gl=1*rpyw8m*_up*MQ..*_ga*MTkyNzkxMTQ0My4xNzkxMTcyNTA0*_ga_XX7YJN7Z90*czE3OTExNzI1MDMkbzEkZzAkdDE3OTExNzI1MDMkajYwJGwwJGgxMzM5NTU0Mzg2&gbraid=0AAAAADdafZWcEKpaH0aWm9dq8fkjgRROO",
+          "chosen": false,
+          "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1791172595632,
+      "status": "not-ordered"
     },
     {
       "id": 304,
@@ -1550,6 +1443,34 @@
           "newBudget": 27.39
         }
       ]
+    },
+    {
+      "id": 298,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Saw Renting",
+      "description": "",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 189,
+          "supplier": "",
+          "unitPrice": 39.93,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "updatedAt": 1790456041353,
+      "status": "not-ordered"
     },
     {
       "id": 297,
@@ -2094,87 +2015,12 @@
           "notes": "",
           "_quick": true,
           "documents": []
-        },
-        {
-          "id": 115,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 36.95,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
-        },
-        {
-          "id": 116,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 134.78,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
-        },
-        {
-          "id": 117,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 80.02,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
         }
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1795015723973,
+      "updatedAt": 1793716187300,
       "changelog": [
-        {
-          "ts": 1795015723973,
-          "oldSpent": 1111.57,
-          "newSpent": 1191.59,
-          "oldBudget": 30.55,
-          "newBudget": 30.55
-        },
-        {
-          "ts": 1795015692133,
-          "oldSpent": 976.79,
-          "newSpent": 1111.57,
-          "oldBudget": 30.55,
-          "newBudget": 30.55
-        },
-        {
-          "ts": 1795015679118,
-          "oldSpent": 939.8399999999999,
-          "newSpent": 976.79,
-          "oldBudget": 30.55,
-          "newBudget": 30.55
-        },
         {
           "ts": 1793716187300,
           "oldSpent": 915.8999999999999,
@@ -2656,6 +2502,30 @@
       "status": "delivered"
     },
     {
+      "id": 278,
+      "phaseId": 65,
+      "categoryId": null,
+      "name": "Offerete",
+      "description": "Alpha Ventilatie",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [],
+      "orders": [],
+      "documents": [
+        {
+          "id": 15,
+          "name": "Offerte - J. Franco Linares.pdf",
+          "type": "application/pdf",
+          "size": 321967,
+          "ghPath": "quotes/Offerte_-_J._Franco_Linares.pdf",
+          "uploadedDate": "2026-09-15"
+        }
+      ],
+      "status": "not-ordered"
+    },
+    {
       "id": 277,
       "phaseId": 74,
       "categoryId": 8,
@@ -2730,6 +2600,98 @@
           "link": "https://www.youtube.com/watch?v=0YSVajb2ZXc",
           "chosen": false,
           "documents": []
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 275,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "tape membrane to wood",
+      "description": "Material to cover PU foam on roof",
+      "link": "",
+      "qty": 3,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 165,
+          "name": "",
+          "unitPrice": 30,
+          "date": "",
+          "notes": "",
+          "link": "https://benz24.nl/pro-clima-hoekplakband-tescon-profil.html?qs301fi=1&utm_content=dakisolatie%20%3E%20dakisolatie%20accessoires&utm_source=google&utm_medium=cpc&mtm_cid=24067499218&utm_content=&utm_term=&utm_campaign=pmax%20feed-only&gad_source=1&gad_campaignid=24057857904&gbraid=0AAAABEJo_BMTWh8sDcve6T0R1C0KCOa-6&gclid=Cj0KCQjw8JPVBhD-ARIsAO691sGzPYZNflKzEOM5r8sxRbXKhpseND52FjW1d96bNGAZI1LI9njtm-gaAnC_EALw_wcB",
+          "chosen": true,
+          "documents": [],
+          "supplier": "benz24.nl"
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 274,
+      "phaseId": 31,
+      "categoryId": null,
+      "name": "Membrane",
+      "description": "Material to cover PU foam on roof",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 164,
+          "name": "",
+          "unitPrice": 333,
+          "date": "",
+          "notes": "",
+          "link": "https://www.bouwbink.nl/pro-clima-intello-plus-1-5-x-50m/2667010092",
+          "chosen": true,
+          "documents": [],
+          "supplier": "bouwbink.nl"
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 273,
+      "phaseId": 65,
+      "categoryId": 3,
+      "name": "Ventialtion Unit",
+      "description": "Itho Daalderop CVE-S OPTIMA2 pakket met ventilatie unit 468 m3/h, geintegreerde RV sensor",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 162,
+          "name": "",
+          "unitPrice": 669,
+          "date": "",
+          "notes": "",
+          "link": "https://www.elektramat.nl/itho-daalderop-cve-s-optima2-pakket-met-ventilatie-unit-468-m3-h-geintegreerde-rv-sensor-en-2-co2-sensoren-03-00477/?_gl=1*18xbquh*_up*MQ..*_gs*MQ..*_ga*MjExODczNDQxNC4xNzg5MTQzNTk5*_ga_WPXDT6EWYX*czE3ODkxNDM1OTkkbzEkZzAkdDE3ODkxNDM4MjQkajYwJGwwJGgxNjY5MzYyMDEwJGRCUlNUbXlrMDZMSlllblNCT3NXMWlndUJPMlc3Ql9oUEJR&gclid=Cj0KCQjwzY7VBhDwARIsAFtPvBSVv6qmc_fEJzLYuDbjxQEUAe3EGUELCl0dauP3xgEz84GU_RSUFpEaAl5uEALw_wcB&gbraid=0AAAAAD5RVIckWO1hGkBrFuM0jPWjqd8h-",
+          "chosen": true,
+          "documents": [],
+          "supplier": "Elektramat"
+        },
+        {
+          "id": 163,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "https://www.bol.com/nl/nl/checkout/?entryPoint=BUY_NOW&nav=continueToCheckout",
+          "chosen": false,
+          "documents": [],
+          "supplier": "bol.com"
         }
       ],
       "orders": [],
@@ -2904,37 +2866,12 @@
           "notes": "",
           "_quick": true,
           "documents": []
-        },
-        {
-          "id": 113,
-          "supplier": "",
-          "poNumber": "",
-          "orderDate": "2026-11-18",
-          "unitPrice": 24.5,
-          "qtyOrdered": 1,
-          "status": "delivered",
-          "shippingCost": 0,
-          "qtyDelivered": 1,
-          "deliveredDate": "2026-11-18",
-          "qtyReturned": 0,
-          "returnDate": "",
-          "returnReason": "",
-          "notes": "",
-          "_quick": true,
-          "documents": []
         }
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1795015492358,
+      "updatedAt": 1794834512023,
       "changelog": [
-        {
-          "ts": 1795015492358,
-          "oldSpent": 93.45,
-          "newSpent": 117.95,
-          "oldBudget": 20,
-          "newBudget": 20
-        },
         {
           "ts": 1794834512023,
           "oldSpent": 85.45,
@@ -3096,7 +3033,7 @@
     },
     {
       "id": 267,
-      "phaseId": 62,
+      "phaseId": 81,
       "categoryId": 8,
       "name": "Steiger Huren ",
       "description": "",
@@ -3134,10 +3071,37 @@
           "returnReason": "",
           "notes": "",
           "documents": []
+        },
+        {
+          "id": 113,
+          "supplier": "",
+          "poNumber": "",
+          "orderDate": "2026-11-24",
+          "unitPrice": 30,
+          "qtyOrdered": 1,
+          "status": "delivered",
+          "shippingCost": 0,
+          "qtyDelivered": 1,
+          "deliveredDate": "2026-11-24",
+          "qtyReturned": 0,
+          "returnDate": "",
+          "returnReason": "",
+          "notes": "",
+          "_quick": true
         }
       ],
       "documents": [],
-      "status": "delivered"
+      "status": "delivered",
+      "updatedAt": 1795516294641,
+      "changelog": [
+        {
+          "ts": 1795516294641,
+          "oldSpent": 75,
+          "newSpent": 105,
+          "oldBudget": 75,
+          "newBudget": 75
+        }
+      ]
     },
     {
       "id": 266,
@@ -3907,7 +3871,7 @@
       "name": "Solar panel",
       "description": "Cels",
       "link": "",
-      "qty": 8,
+      "qty": 1,
       "unit": "",
       "notes": "",
       "quotes": [
@@ -3925,8 +3889,7 @@
       ],
       "orders": [],
       "documents": [],
-      "status": "not-ordered",
-      "updatedAt": 1795012700421
+      "status": "not-ordered"
     },
     {
       "id": 249,
@@ -5340,6 +5303,90 @@
       "status": "not-ordered"
     },
     {
+      "id": 187,
+      "phaseId": 65,
+      "categoryId": 3,
+      "name": "Itho Daalderop RFT vochtsensor opbo",
+      "description": "Humidity Remote",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 78,
+          "supplier": "Ventilatieland",
+          "unitPrice": 140.26,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
+          "shippingCost": 0,
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 186,
+      "phaseId": 65,
+      "categoryId": 3,
+      "name": "Itho Daalderop AUTO RFT",
+      "description": "Fernbedienung",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 77,
+          "supplier": "Ventilatieland",
+          "unitPrice": 84.51,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-auto-rft-n-draadloze-bediening-wit/19765/",
+          "shippingCost": 0,
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
+      "id": 185,
+      "phaseId": 65,
+      "categoryId": 3,
+      "name": "Itho Daalderop WTW HRU ECO",
+      "description": "WTW",
+      "link": "",
+      "qty": 1,
+      "unit": "",
+      "notes": "",
+      "quotes": [
+        {
+          "id": 76,
+          "supplier": "Ventilatieland",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "chosen": true,
+          "documents": [],
+          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-wtw-hru-eco-350-unit-lr-rft-laagbouw-350-m3-h-euro-stekker/9945/",
+          "shippingCost": 0,
+          "name": ""
+        }
+      ],
+      "orders": [],
+      "documents": [],
+      "status": "not-ordered"
+    },
+    {
       "id": 177,
       "phaseId": 60,
       "categoryId": 11,
@@ -5743,6 +5790,34 @@
       "qty": 45
     },
     {
+      "qty": 45,
+      "categoryId": 3,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 11,
+          "notes": "",
+          "unitPrice": 25,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "notes": "",
+      "name": "Roof Isolation",
+      "status": "not-ordered",
+      "link": "",
+      "unit": "m∩┐╜",
+      "phaseId": 31,
+      "id": 107,
+      "description": "Rd 5,45; 120mm Price per sqm",
+      "documents": []
+    },
+    {
       "documents": [],
       "description": "Only boards",
       "id": 108,
@@ -6135,6 +6210,34 @@
       "qty": 1
     },
     {
+      "notes": "",
+      "name": "Gips  Toilet (Interior)",
+      "categoryId": 3,
+      "quotes": [
+        {
+          "id": 32,
+          "notes": "",
+          "unitPrice": 18.59,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "qty": 20,
+      "id": 130,
+      "description": "",
+      "documents": [],
+      "unit": "pcs",
+      "phaseId": 70,
+      "status": "not-ordered",
+      "link": ""
+    },
+    {
       "qty": 1,
       "categoryId": 3,
       "quotes": [
@@ -6163,6 +6266,34 @@
       "documents": []
     },
     {
+      "qty": 1,
+      "orders": [],
+      "quotes": [
+        {
+          "chosen": true,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "unitPrice": 384,
+          "id": 35,
+          "notes": "",
+          "documents": [],
+          "link": "https://sanitairkamer.nl/mueller-single-flat-natuur-stenen-meubelwastafel-80x46cm-geen-kraangat-sk50899.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "categoryId": 3,
+      "name": "Kraan Big Toilet",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "phaseId": 70,
+      "unit": "pcs",
+      "documents": [],
+      "id": 133,
+      "description": "Mueller single flat 80x46cm"
+    },
+    {
       "link": "",
       "status": "not-ordered",
       "documents": [],
@@ -6189,6 +6320,49 @@
       "qty": 2,
       "name": "Water Pipe Cold & Hot",
       "notes": ""
+    },
+    {
+      "qty": 20,
+      "categoryId": 3,
+      "quotes": [
+        {
+          "chosen": true,
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "unitPrice": 6.8,
+          "notes": "",
+          "id": 38,
+          "documents": [],
+          "link": "https://www.warmteservice.nl/Installatiemateriaal/Koppelingen/Perskoppeling/Henco-Press-Standaard-perskoppeling-T-stuk/p/48681710",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "notes": "",
+      "name": "Water Pipe Fittings (Perskoppeling)",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 33,
+      "unit": "pcs",
+      "description": "Henco Press T-stuk",
+      "id": 136,
+      "documents": []
+    },
+    {
+      "qty": 1,
+      "categoryId": 8,
+      "quotes": [],
+      "orders": [],
+      "notes": "",
+      "name": "Persstange",
+      "status": "not-ordered",
+      "link": "",
+      "phaseId": 33,
+      "unit": "pcs",
+      "id": 137,
+      "description": "Crimping tool for pipe fittings",
+      "documents": []
     },
     {
       "documents": [],
@@ -6275,6 +6449,34 @@
       "name": "Oven"
     },
     {
+      "quotes": [
+        {
+          "date": "2026-07-04",
+          "supplier": "Classifier estimate",
+          "chosen": true,
+          "id": 42,
+          "notes": "",
+          "unitPrice": 338,
+          "documents": [],
+          "link": "https://sanitairkamer.nl/sapho-spoelbak-97x50cm-met-kraangat-zwart-graniet-sk38406.html",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "orders": [],
+      "categoryId": 3,
+      "qty": 1,
+      "name": "Spoelbak",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "Sapho 97x50cm zwart graniet",
+      "id": 141,
+      "phaseId": 70,
+      "unit": "pcs"
+    },
+    {
       "phaseId": 69,
       "unit": "pcs",
       "id": 142,
@@ -6329,6 +6531,34 @@
         }
       ],
       "qty": 1
+    },
+    {
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "description": "",
+      "id": 144,
+      "unit": "pcs",
+      "phaseId": 4,
+      "orders": [],
+      "quotes": [
+        {
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "id": 45,
+          "notes": "",
+          "unitPrice": 1000,
+          "documents": [],
+          "link": "",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "categoryId": 8,
+      "qty": 1,
+      "name": "Tools Extras (Finishes)",
+      "notes": ""
     },
     {
       "link": "",
@@ -6863,7 +7093,35 @@
       ]
     },
     {
-      "qty": 500,
+      "orders": [],
+      "quotes": [
+        {
+          "id": 67,
+          "notes": "",
+          "unitPrice": 10000,
+          "supplier": "Classifier estimate",
+          "date": "2026-07-04",
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "shippingCost": 0,
+          "name": "Classifier estimate"
+        }
+      ],
+      "categoryId": 4,
+      "qty": 1,
+      "name": "Rene (Contractor)",
+      "notes": "",
+      "link": "",
+      "status": "not-ordered",
+      "documents": [],
+      "id": 167,
+      "description": "Works per project",
+      "unit": "lump sum",
+      "phaseId": 63
+    },
+    {
+      "qty": 240,
       "categoryId": 4,
       "quotes": [
         {
@@ -6888,8 +7146,7 @@
       "phaseId": 63,
       "id": 168,
       "description": "6 weeks @ 40 h",
-      "documents": [],
-      "updatedAt": 1795012900159
+      "documents": []
     },
     {
       "status": "delivered",
@@ -7183,6 +7440,27 @@
       "kanbanOrder": 0
     },
     {
+      "id": 23,
+      "phaseId": 74,
+      "name": "Build new walls",
+      "start": "",
+      "end": "",
+      "status": "in-progress",
+      "assignee": "",
+      "notes": "",
+      "assigneeIds": [],
+      "kanbanOrder": 40,
+      "subtasks": [],
+      "parentTaskId": null,
+      "spaceIds": [
+        1,
+        7,
+        9,
+        12
+      ],
+      "updatedAt": 1793047104299
+    },
+    {
       "id": 71,
       "phaseId": 70,
       "name": "Make carves for electricity in bathroom",
@@ -7197,22 +7475,6 @@
       ],
       "updatedAt": 1792594892540,
       "kanbanOrder": 40
-    },
-    {
-      "id": 69,
-      "phaseId": 33,
-      "name": "Install shower sink",
-      "start": "",
-      "end": "",
-      "status": "in-progress",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [
-        7
-      ],
-      "updatedAt": 1791923538206,
-      "kanbanOrder": 70
     },
     {
       "id": 14,
@@ -7418,27 +7680,6 @@
       ],
       "updatedAt": 1792148867392,
       "kanbanOrder": 30
-    },
-    {
-      "id": 23,
-      "phaseId": 74,
-      "name": "Build new walls",
-      "start": "",
-      "end": "",
-      "status": "completed",
-      "assignee": "",
-      "notes": "",
-      "assigneeIds": [],
-      "kanbanOrder": 40,
-      "subtasks": [],
-      "parentTaskId": null,
-      "spaceIds": [
-        1,
-        7,
-        9,
-        12
-      ],
-      "updatedAt": 1793047104299
     },
     {
       "notes": "",
@@ -7786,19 +8027,6 @@
       "spaceIds": []
     },
     {
-      "id": 56,
-      "phaseId": 32,
-      "name": "Helpers. To carve chanel on the wall for cables",
-      "start": "",
-      "end": "",
-      "status": "completed",
-      "assigneeIds": [],
-      "notes": "",
-      "parentTaskId": null,
-      "spaceIds": [],
-      "updatedAt": 1793047157490
-    },
-    {
       "id": 57,
       "phaseId": 73,
       "name": "Helpers. Remove remaining wooden frame of attic",
@@ -8032,6 +8260,22 @@
       "spaceIds": []
     },
     {
+      "id": 69,
+      "phaseId": 33,
+      "name": "Install shower sink",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [
+        7
+      ],
+      "updatedAt": 1791923538206,
+      "kanbanOrder": 70
+    },
+    {
       "id": 70,
       "phaseId": 35,
       "name": "Install heating matt",
@@ -8046,6 +8290,19 @@
       ],
       "updatedAt": 1791923572341,
       "kanbanOrder": 80
+    },
+    {
+      "id": 56,
+      "phaseId": 32,
+      "name": "Helpers. To carve chanel on the wall for cables",
+      "start": "",
+      "end": "",
+      "status": "this-week",
+      "assigneeIds": [],
+      "notes": "",
+      "parentTaskId": null,
+      "spaceIds": [],
+      "updatedAt": 1793047157490
     }
   ],
   "nextTaskId": 77,
@@ -8059,10 +8316,10 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795375091082,
-  "nextOrderId": 120,
-  "nextQuoteId": 224,
-  "nextItemId": 331,
+  "_savedAt": 1795516294641,
+  "nextOrderId": 114,
+  "nextQuoteId": 222,
+  "nextItemId": 328,
   "_version": "dashboard-v1",
   "phases": [
     {
@@ -8109,7 +8366,7 @@
       "status": "planned",
       "budget": 48000,
       "number": "4",
-      "name": "Finishings",
+      "name": "Interior Finishing",
       "id": 4,
       "notes": "Floors, paint, kitchen, bathrooms"
     },
@@ -8432,7 +8689,7 @@
       "number": "2.3",
       "start": "",
       "end": "",
-      "status": "completed",
+      "status": "in-progress",
       "color": "#FDBA74",
       "notes": "",
       "budget": 1000
@@ -8501,11 +8758,11 @@
       "id": 80,
       "name": "Ceiling",
       "parentId": 4,
-      "number": "4.6",
+      "number": "4.5",
       "start": "",
       "end": "",
       "status": "planned",
-      "color": "#22C55E",
+      "color": "#DCFCE7",
       "notes": "",
       "budget": 0
     },
@@ -8518,18 +8775,6 @@
       "end": "",
       "status": "planned",
       "color": "#BE185D",
-      "notes": "",
-      "budget": 0
-    },
-    {
-      "id": 82,
-      "name": "Toilette",
-      "parentId": 4,
-      "number": "4.5",
-      "start": "",
-      "end": "",
-      "status": "planned",
-      "color": "#DCFCE7",
       "notes": "",
       "budget": 0
     }
@@ -8570,10 +8815,10 @@
       "qty",
       "price",
       "total",
-      "netspent",
       "quote",
       "status",
       "delivery",
+      "netspent",
       "phase",
       "category"
     ],
@@ -8591,9 +8836,9 @@
       "price": 60,
       "link": 60,
       "status": 137,
-      "netspent": 99
+      "netspent": 81
     },
-    "sortKey": "netspent",
+    "sortKey": "status",
     "sortDir": "desc"
   },
   "spaces": [
