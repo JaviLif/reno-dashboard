@@ -3204,7 +3204,7 @@
       "phaseId": 81,
       "categoryId": 8,
       "name": "Steiger Huren ",
-      "description": "",
+      "description": "Rick",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -3260,7 +3260,7 @@
       ],
       "documents": [],
       "status": "delivered",
-      "updatedAt": 1795516294641,
+      "updatedAt": 1795516960786,
       "changelog": [
         {
           "ts": 1795516294641,
@@ -8484,7 +8484,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795516940737,
+  "_savedAt": 1795516960786,
   "nextOrderId": 121,
   "nextQuoteId": 222,
   "nextItemId": 328,
