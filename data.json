@@ -73,7 +73,7 @@
           "orderDate": "2026-11-24",
           "unitPrice": 0,
           "qtyOrdered": 1,
-          "status": "ordered",
+          "status": "delivered",
           "shippingCost": 0,
           "qtyDelivered": 0,
           "deliveredDate": "",
@@ -101,7 +101,7 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1795517206361,
+      "updatedAt": 1795517210258,
       "changelog": [
         {
           "ts": 1795517206361,
@@ -110,7 +110,8 @@
           "oldBudget": 0,
           "newBudget": 0
         }
-      ]
+      ],
+      "status": "delivered"
     },
     {
       "id": 327,
@@ -8612,7 +8613,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517206361,
+  "_savedAt": 1795517210258,
   "nextOrderId": 127,
   "nextQuoteId": 222,
   "nextItemId": 329,
