@@ -59,7 +59,7 @@
       "phaseId": 62,
       "categoryId": null,
       "name": "Tools",
-      "description": "",
+      "description": "AliExpress",
       "link": "",
       "qty": 1,
       "unit": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517505625
+      "updatedAt": 1795517509586
     },
     {
       "id": 329,
@@ -8718,7 +8718,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517505625,
+  "_savedAt": 1795517509586,
   "nextOrderId": 132,
   "nextQuoteId": 223,
   "nextItemId": 331,
