@@ -64,10 +64,21 @@
       "qty": 1,
       "unit": "",
       "notes": "",
-      "quotes": [],
+      "quotes": [
+        {
+          "id": 224,
+          "name": "",
+          "unitPrice": 0,
+          "date": "",
+          "notes": "",
+          "link": "",
+          "chosen": true,
+          "documents": []
+        }
+      ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517575010,
+      "updatedAt": 1795518988696,
       "status": "not-ordered"
     },
     {
@@ -8802,9 +8813,9 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517575010,
+  "_savedAt": 1795518988696,
   "nextOrderId": 133,
-  "nextQuoteId": 224,
+  "nextQuoteId": 225,
   "nextItemId": 332,
   "_version": "dashboard-v1",
   "phases": [
