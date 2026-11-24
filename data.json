@@ -68,7 +68,7 @@
         {
           "id": 224,
           "name": "",
-          "unitPrice": 0,
+          "unitPrice": 134.99,
           "date": "",
           "notes": "",
           "link": "https://www.wovar.nl/inbouw-schuifdeursysteem-soft-close-montage/?gad_source=1&gad_campaignid=20869590646&gbraid=0AAAAADDOmUN3C198FCHqfJYxhUGh7PLro&gclid=Cj0KCQiAiJXYBhD_ARIsAAx2AHlqwmt9uIOjkoqr2ZOcoMLMI9LyYvBxrtrofOCRvoi-VWU34rDRq9caApUwEALw_wcB",
@@ -95,8 +95,17 @@
         }
       ],
       "documents": [],
-      "updatedAt": 1795518997434,
-      "status": "not-ordered"
+      "updatedAt": 1795519008538,
+      "status": "not-ordered",
+      "changelog": [
+        {
+          "ts": 1795519008538,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 0,
+          "newBudget": 134.99
+        }
+      ]
     },
     {
       "id": 330,
@@ -8830,7 +8839,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795518997434,
+  "_savedAt": 1795519008538,
   "nextOrderId": 134,
   "nextQuoteId": 225,
   "nextItemId": 332,
