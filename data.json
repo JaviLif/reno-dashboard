@@ -67,7 +67,7 @@
       "quotes": [
         {
           "id": 222,
-          "name": "",
+          "name": "hbm-machines.com",
           "unitPrice": 0,
           "date": "",
           "notes": "",
@@ -78,7 +78,7 @@
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517388642
+      "updatedAt": 1795517395188
     },
     {
       "id": 328,
@@ -8670,7 +8670,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517388642,
+  "_savedAt": 1795517395188,
   "nextOrderId": 131,
   "nextQuoteId": 223,
   "nextItemId": 330,
