@@ -58,7 +58,7 @@
       "id": 329,
       "phaseId": 67,
       "categoryId": null,
-      "name": "",
+      "name": "Airless Paint Sprayer",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517338706
+      "updatedAt": 1795517361494
     },
     {
       "id": 328,
@@ -8659,7 +8659,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517338706,
+  "_savedAt": 1795517361494,
   "nextOrderId": 131,
   "nextQuoteId": 222,
   "nextItemId": 330,
