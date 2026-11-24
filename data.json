@@ -51,7 +51,7 @@
       "color": "#c92626"
     }
   ],
-  "nextPhaseId": 82,
+  "nextPhaseId": 83,
   "originalBudgetImportedV1": true,
   "items": [
     {
@@ -8554,7 +8554,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517138345,
+  "_savedAt": 1795517171425,
   "nextOrderId": 125,
   "nextQuoteId": 222,
   "nextItemId": 328,
@@ -9013,6 +9013,18 @@
       "end": "",
       "status": "planned",
       "color": "#BE185D",
+      "notes": "",
+      "budget": 0
+    },
+    {
+      "id": 82,
+      "name": "Bed Extension",
+      "parentId": 4,
+      "number": "4.6",
+      "start": "",
+      "end": "",
+      "status": "planned",
+      "color": "#22C55E",
       "notes": "",
       "budget": 0
     }
