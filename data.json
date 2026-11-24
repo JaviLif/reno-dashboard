@@ -71,14 +71,14 @@
           "unitPrice": 0,
           "date": "",
           "notes": "",
-          "link": "",
+          "link": "https://www.hbm-machines.com/nl/p/hbm-hogedruk-airless-verfspuitmachine-1010-watt?sku=10130&utm_source=google&utm_medium=cpc&utm_campaign=24409723383&utm_content=&kb=ga_pm_24409723383_&gad_source=1&gad_campaignid=24420624472&gbraid=0AAAAADvcfwLhMZ_Pher8Tsplyilssc7lh&gclid=Cj0KCQiAiJXYBhD_ARIsAAx2AHmx_LBnIEYORcBgJXGqnPXQmLoA8P5HEul6ty-ssJl8xy3hxaDjdssaAnuLEALw_wcB",
           "chosen": true,
           "documents": []
         }
       ],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517386068
+      "updatedAt": 1795517388642
     },
     {
       "id": 328,
@@ -8670,7 +8670,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517386068,
+  "_savedAt": 1795517388642,
   "nextOrderId": 131,
   "nextQuoteId": 223,
   "nextItemId": 330,
