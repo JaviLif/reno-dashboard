@@ -58,7 +58,7 @@
       "id": 331,
       "phaseId": 67,
       "categoryId": null,
-      "name": "sdi",
+      "name": "Sliding door Bathroom",
       "description": "",
       "link": "",
       "qty": 1,
@@ -67,7 +67,8 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517539306
+      "updatedAt": 1795517575010,
+      "status": "not-ordered"
     },
     {
       "id": 330,
@@ -86,7 +87,10 @@
           "unitPrice": 110.47,
           "date": "",
           "notes": "",
-          "chosen": true
+          "chosen": true,
+          "documents": [],
+          "link": "",
+          "name": ""
         }
       ],
       "orders": [
@@ -104,7 +108,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -124,7 +129,8 @@
           "oldBudget": 0,
           "newBudget": 110.47
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 329,
@@ -163,7 +169,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         }
       ],
       "documents": [],
@@ -183,7 +190,8 @@
           "oldBudget": 0,
           "newBudget": 161.95
         }
-      ]
+      ],
+      "status": "ordered"
     },
     {
       "id": 328,
@@ -211,7 +219,8 @@
           "qtyReturned": 0,
           "returnDate": "",
           "returnReason": "",
-          "notes": ""
+          "notes": "",
+          "documents": []
         },
         {
           "id": 126,
@@ -228,7 +237,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 127,
@@ -245,7 +255,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 128,
@@ -262,7 +273,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 129,
@@ -279,7 +291,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 130,
@@ -296,7 +309,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -373,7 +387,8 @@
           "oldBudget": 0,
           "newBudget": 295
         }
-      ]
+      ],
+      "status": "not-ordered"
     },
     {
       "id": 326,
@@ -1167,7 +1182,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -2343,7 +2359,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 122,
@@ -2360,7 +2377,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 123,
@@ -2377,7 +2395,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -3266,7 +3285,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 115,
@@ -3283,7 +3303,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 116,
@@ -3300,7 +3321,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 117,
@@ -3317,7 +3339,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 118,
@@ -3334,7 +3357,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 119,
@@ -3351,7 +3375,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         },
         {
           "id": 120,
@@ -3368,7 +3393,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -3602,7 +3628,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -8775,7 +8802,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517539306,
+  "_savedAt": 1795517575010,
   "nextOrderId": 133,
   "nextQuoteId": 224,
   "nextItemId": 332,
