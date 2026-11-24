@@ -3370,43 +3370,6 @@
       "updatedAt": 1794841177795
     },
     {
-      "id": 269,
-      "phaseId": 67,
-      "categoryId": null,
-      "name": "Stuck",
-      "description": "Knauf Goldband E 20 kg",
-      "link": "",
-      "qty": 4,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 157,
-          "name": "",
-          "unitPrice": 11.9,
-          "date": "",
-          "notes": "",
-          "link": "https://www.gamma.nl/assortiment/knauf-goldband-e-20-kg/p/B303601?store=HOONO&gclsrc=aw.ds&&utm_source=google&utm_medium=cpc&utm_campaign=PPC%20-%20PMAX%20(Shopping%20Only)%20-%20NB%20-%20CONSTRUCTIEF%20-%20119%20BOUWMATERIALEN%20-%20High%20Value&utm_id=22773079570&gad_source=1&gad_campaignid=22763396148&gbraid=0AAAAADqUGn_Sud7Rcx7AHWBl--RgcZpDV&gclid=CjwKCAjwnvTUBhBoEiwAZNDxZx_ptsHPNd9mOk-QYKRU_u4XstmlO3BplWblM8Z1ckXSJNBpK4Ja7xoCsRYQAvD_BwE",
-          "chosen": true,
-          "documents": [],
-          "supplier": "Gamma"
-        },
-        {
-          "id": 158,
-          "name": "Video",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "link": "https://www.youtube.com/watch?v=HFQQPpdeQWs",
-          "chosen": false,
-          "documents": []
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 268,
       "phaseId": 62,
       "categoryId": 5,
@@ -8709,7 +8672,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517260473,
+  "_savedAt": 1795517321282,
   "nextOrderId": 131,
   "nextQuoteId": 222,
   "nextItemId": 329,
