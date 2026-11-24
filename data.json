@@ -57,7 +57,7 @@
     {
       "id": 328,
       "phaseId": 82,
-      "categoryId": null,
+      "categoryId": 3,
       "name": "Materials ",
       "description": "Hornbach",
       "link": "",
@@ -67,7 +67,7 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795517191714
+      "updatedAt": 1795517196234
     },
     {
       "id": 327,
@@ -8569,7 +8569,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795517191714,
+  "_savedAt": 1795517196234,
   "nextOrderId": 125,
   "nextQuoteId": 222,
   "nextItemId": 329,
