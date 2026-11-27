@@ -67,7 +67,8 @@
       "quotes": [],
       "orders": [],
       "documents": [],
-      "updatedAt": 1795520646917
+      "updatedAt": 1795520646917,
+      "status": "not-ordered"
     },
     {
       "id": 331,
@@ -3104,33 +3105,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 274,
-      "phaseId": 31,
-      "categoryId": null,
-      "name": "Membrane",
-      "description": "Material to cover PU foam on roof",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 164,
-          "name": "",
-          "unitPrice": 333,
-          "date": "",
-          "notes": "",
-          "link": "https://www.bouwbink.nl/pro-clima-intello-plus-1-5-x-50m/2667010092",
-          "chosen": true,
-          "documents": [],
-          "supplier": "bouwbink.nl"
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 273,
       "phaseId": 65,
       "categoryId": 3,
@@ -3603,7 +3577,8 @@
           "returnDate": "",
           "returnReason": "",
           "notes": "",
-          "_quick": true
+          "_quick": true,
+          "documents": []
         }
       ],
       "documents": [],
@@ -8895,7 +8870,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795520673005,
+  "_savedAt": 1795816625785,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
