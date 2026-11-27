@@ -6091,34 +6091,6 @@
       "documents": []
     },
     {
-      "qty": 1,
-      "orders": [],
-      "quotes": [
-        {
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "chosen": true,
-          "id": 13,
-          "notes": "",
-          "unitPrice": 1000,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "name": "Filler etc",
-      "notes": "",
-      "link": "",
-      "status": "not-ordered",
-      "unit": "pcs",
-      "phaseId": 67,
-      "documents": [],
-      "id": 109,
-      "description": "Filler etc"
-    },
-    {
       "name": "Extras, Glue, Material (Isolation)",
       "notes": "",
       "qty": 1,
@@ -8477,7 +8449,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816848669,
+  "_savedAt": 1795816852042,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
