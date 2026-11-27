@@ -6205,34 +6205,6 @@
       "name": "Electric Cables, Fuses"
     },
     {
-      "notes": "",
-      "name": "Renovation Sockets & Lighting",
-      "categoryId": 3,
-      "quotes": [
-        {
-          "unitPrice": 1000,
-          "id": 6,
-          "notes": "",
-          "chosen": true,
-          "supplier": "Classifier estimate",
-          "date": "2026-07-04",
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "orders": [],
-      "qty": 1,
-      "description": "Optional",
-      "id": 102,
-      "documents": [],
-      "unit": "pcs",
-      "phaseId": 32,
-      "status": "not-ordered",
-      "link": ""
-    },
-    {
       "categoryId": 3,
       "quotes": [
         {
@@ -8815,7 +8787,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816633716,
+  "_savedAt": 1795816662539,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
