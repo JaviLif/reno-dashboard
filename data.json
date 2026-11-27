@@ -6091,34 +6091,6 @@
       "documents": []
     },
     {
-      "documents": [],
-      "description": "Only boards",
-      "id": 108,
-      "phaseId": 67,
-      "unit": "pcs",
-      "link": "",
-      "status": "not-ordered",
-      "name": "Plaster Boards",
-      "notes": "",
-      "orders": [],
-      "quotes": [
-        {
-          "notes": "",
-          "id": 12,
-          "unitPrice": 6,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.isolatiemateriaal.nl/p/gipsplaten-3000x600x125mm-ak-180-m2",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 3,
-      "qty": 200
-    },
-    {
       "qty": 1,
       "orders": [],
       "quotes": [
@@ -8505,7 +8477,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816804481,
+  "_savedAt": 1795816848669,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
