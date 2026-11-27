@@ -5830,34 +5830,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 187,
-      "phaseId": 65,
-      "categoryId": 3,
-      "name": "Itho Daalderop RFT vochtsensor opbo",
-      "description": "Humidity Remote",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 78,
-          "supplier": "Ventilatieland",
-          "unitPrice": 140.26,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-rft-vochtsensor-opbouw-met-bediening-batterij/8925/",
-          "shippingCost": 0,
-          "name": ""
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 186,
       "phaseId": 65,
       "categoryId": 3,
@@ -8731,7 +8703,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816698375,
+  "_savedAt": 1795816744771,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
