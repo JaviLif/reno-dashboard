@@ -1841,34 +1841,6 @@
       ]
     },
     {
-      "id": 298,
-      "phaseId": 31,
-      "categoryId": null,
-      "name": "Saw Renting",
-      "description": "",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 189,
-          "supplier": "",
-          "unitPrice": 39.93,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "",
-          "name": ""
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "updatedAt": 1790456041353,
-      "status": "not-ordered"
-    },
-    {
       "id": 297,
       "phaseId": 31,
       "categoryId": 8,
@@ -8843,7 +8815,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816629058,
+  "_savedAt": 1795816633716,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
