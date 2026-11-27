@@ -6808,34 +6808,6 @@
       "documents": []
     },
     {
-      "documents": [],
-      "description": "",
-      "id": 138,
-      "phaseId": 33,
-      "unit": "pcs",
-      "link": "",
-      "status": "not-ordered",
-      "name": "Tools Extras (Kitchen/Bath)",
-      "notes": "",
-      "orders": [],
-      "quotes": [
-        {
-          "chosen": true,
-          "date": "2026-07-04",
-          "supplier": "Classifier estimate",
-          "unitPrice": 2000,
-          "notes": "",
-          "id": 39,
-          "documents": [],
-          "link": "",
-          "shippingCost": 0,
-          "name": "Classifier estimate"
-        }
-      ],
-      "categoryId": 8,
-      "qty": 1
-    },
-    {
       "qty": 1,
       "quotes": [
         {
@@ -8759,7 +8731,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816686372,
+  "_savedAt": 1795816698375,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
