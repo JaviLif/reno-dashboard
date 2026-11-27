@@ -5858,34 +5858,6 @@
       "status": "not-ordered"
     },
     {
-      "id": 185,
-      "phaseId": 65,
-      "categoryId": 3,
-      "name": "Itho Daalderop WTW HRU ECO",
-      "description": "WTW",
-      "link": "",
-      "qty": 1,
-      "unit": "",
-      "notes": "",
-      "quotes": [
-        {
-          "id": 76,
-          "supplier": "Ventilatieland",
-          "unitPrice": 0,
-          "date": "",
-          "notes": "",
-          "chosen": true,
-          "documents": [],
-          "link": "https://www.ventilatieland.nl/nl_NL/p/itho-daalderop-wtw-hru-eco-350-unit-lr-rft-laagbouw-350-m3-h-euro-stekker/9945/",
-          "shippingCost": 0,
-          "name": ""
-        }
-      ],
-      "orders": [],
-      "documents": [],
-      "status": "not-ordered"
-    },
-    {
       "id": 177,
       "phaseId": 60,
       "categoryId": 11,
@@ -8703,7 +8675,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816744771,
+  "_savedAt": 1795816748891,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
