@@ -7187,7 +7187,7 @@
         {
           "id": 67,
           "notes": "",
-          "unitPrice": 10000,
+          "unitPrice": 5000,
           "supplier": "Classifier estimate",
           "date": "2026-07-04",
           "chosen": true,
@@ -7207,7 +7207,17 @@
       "id": 167,
       "description": "Works per project",
       "unit": "lump sum",
-      "phaseId": 63
+      "phaseId": 63,
+      "changelog": [
+        {
+          "ts": 1795817019775,
+          "oldSpent": 0,
+          "newSpent": 0,
+          "oldBudget": 10000,
+          "newBudget": 5000
+        }
+      ],
+      "updatedAt": 1795817019775
     },
     {
       "qty": 240,
@@ -8405,7 +8415,7 @@
   },
   "nextCategoryId": 13,
   "nextDocId": 20,
-  "_savedAt": 1795816876381,
+  "_savedAt": 1795817019775,
   "nextOrderId": 136,
   "nextQuoteId": 225,
   "nextItemId": 333,
